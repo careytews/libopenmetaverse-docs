@@ -1,0 +1,2863 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NetworkManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NetworkManager
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.NetworkManager">
+  
+  
+  <h1 id="OpenMetaverse_NetworkManager" data-uid="OpenMetaverse.NetworkManager" class="text-break">Class NetworkManager
+  </h1>
+  <div class="markdown level0 summary"><p>Login Routines</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NetworkManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_NetworkManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NetworkManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager__ctor_OpenMetaverse_GridClient_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.%23ctor(OpenMetaverse.GridClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L362">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager__ctor_" data-uid="OpenMetaverse.NetworkManager.#ctor*"></a>
+  <h4 id="OpenMetaverse_NetworkManager__ctor_OpenMetaverse_GridClient_" data-uid="OpenMetaverse.NetworkManager.#ctor(OpenMetaverse.GridClient)">NetworkManager(GridClient)</h4>
+  <div class="markdown level1 summary"><p>Default constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkManager(GridClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>Reference to the GridClient object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_AgentAppearanceServiceURL.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.AgentAppearanceServiceURL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L899">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_AgentAppearanceServiceURL" data-uid="OpenMetaverse.NetworkManager.AgentAppearanceServiceURL">AgentAppearanceServiceURL</h4>
+  <div class="markdown level1 summary"><p>Server side baking service URL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AgentAppearanceServiceURL</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_LoginResponseData.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.LoginResponseData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L901">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_LoginResponseData" data-uid="OpenMetaverse.NetworkManager.LoginResponseData">LoginResponseData</h4>
+  <div class="markdown level1 summary"><p>Parsed login response data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoginResponseData LoginResponseData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.LoginResponseData.html">LoginResponseData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_LoginSeedCapability.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.LoginSeedCapability%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L882">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_LoginSeedCapability" data-uid="OpenMetaverse.NetworkManager.LoginSeedCapability">LoginSeedCapability</h4>
+  <div class="markdown level1 summary"><p>Seed CAPS URL returned from the login server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LoginSeedCapability</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_MaxAgentGroups.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.MaxAgentGroups%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L897">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_MaxAgentGroups" data-uid="OpenMetaverse.NetworkManager.MaxAgentGroups">MaxAgentGroups</h4>
+  <div class="markdown level1 summary"><p>Maximum number of groups an agent can belong to, -1 for unlimited</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxAgentGroups</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_Simulators.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.Simulators%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L341">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_Simulators" data-uid="OpenMetaverse.NetworkManager.Simulators">Simulators</h4>
+  <div class="markdown level1 summary"><p>All of the simulators we are currently connected to</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Simulator&gt; Simulators</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_CircuitCode.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.CircuitCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L318">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_CircuitCode_" data-uid="OpenMetaverse.NetworkManager.CircuitCode*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_CircuitCode" data-uid="OpenMetaverse.NetworkManager.CircuitCode">CircuitCode</h4>
+  <div class="markdown level1 summary"><p>Unique identifier associated with our connections to
+simulators</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint CircuitCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_Connected.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.Connected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L332">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_Connected_" data-uid="OpenMetaverse.NetworkManager.Connected*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_Connected" data-uid="OpenMetaverse.NetworkManager.Connected">Connected</h4>
+  <div class="markdown level1 summary"><p>Shows whether the network layer is logged in to the
+grid or not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Connected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_CurrentSim.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.CurrentSim%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L325">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_CurrentSim_" data-uid="OpenMetaverse.NetworkManager.CurrentSim*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_CurrentSim" data-uid="OpenMetaverse.NetworkManager.CurrentSim">CurrentSim</h4>
+  <div class="markdown level1 summary"><p>The simulator that the logged in avatar is currently
+occupying</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Simulator CurrentSim { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_InboxCount.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.InboxCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L334">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_InboxCount_" data-uid="OpenMetaverse.NetworkManager.InboxCount*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_InboxCount" data-uid="OpenMetaverse.NetworkManager.InboxCount">InboxCount</h4>
+  <div class="markdown level1 summary"><p>Number of packets in the incoming queue</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int InboxCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_LoginErrorKey.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.LoginErrorKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L887">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_LoginErrorKey_" data-uid="OpenMetaverse.NetworkManager.LoginErrorKey*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_LoginErrorKey" data-uid="OpenMetaverse.NetworkManager.LoginErrorKey">LoginErrorKey</h4>
+  <div class="markdown level1 summary"><p>Upon login failure, contains a short string key for the
+type of login error that occurred</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LoginErrorKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_LoginMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.LoginMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L895">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_LoginMessage_" data-uid="OpenMetaverse.NetworkManager.LoginMessage*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_LoginMessage" data-uid="OpenMetaverse.NetworkManager.LoginMessage">LoginMessage</h4>
+  <div class="markdown level1 summary"><p>During login this contains a descriptive version of
+LoginStatusCode. After a successful login this will contain the
+message of the day, and after a failed login a descriptive error
+message will be returned</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LoginMessage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_LoginStatusCode.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.LoginStatusCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L884">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_LoginStatusCode_" data-uid="OpenMetaverse.NetworkManager.LoginStatusCode*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_LoginStatusCode" data-uid="OpenMetaverse.NetworkManager.LoginStatusCode">LoginStatusCode</h4>
+  <div class="markdown level1 summary"><p>Current state of logging in</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoginStatus LoginStatusCode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.LoginStatus.html">LoginStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_OutboxCount.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.OutboxCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L336">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_OutboxCount_" data-uid="OpenMetaverse.NetworkManager.OutboxCount*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_OutboxCount" data-uid="OpenMetaverse.NetworkManager.OutboxCount">OutboxCount</h4>
+  <div class="markdown level1 summary"><p>Number of packets in the outgoing queue</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OutboxCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_RawLoginReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.RawLoginReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L890">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_RawLoginReply_" data-uid="OpenMetaverse.NetworkManager.RawLoginReply*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_RawLoginReply" data-uid="OpenMetaverse.NetworkManager.RawLoginReply">RawLoginReply</h4>
+  <div class="markdown level1 summary"><p>The raw XML-RPC reply from the login server, exactly as it
+was received (minus the HTTP header)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RawLoginReply { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_AbortLogin.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.AbortLogin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L1046">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_AbortLogin_" data-uid="OpenMetaverse.NetworkManager.AbortLogin*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_AbortLogin" data-uid="OpenMetaverse.NetworkManager.AbortLogin">AbortLogin()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AbortLogin()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_BeginLogin_OpenMetaverse_LoginParams_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.BeginLogin(OpenMetaverse.LoginParams)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L1003">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_BeginLogin_" data-uid="OpenMetaverse.NetworkManager.BeginLogin*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_BeginLogin_OpenMetaverse_LoginParams_" data-uid="OpenMetaverse.NetworkManager.BeginLogin(OpenMetaverse.LoginParams)">BeginLogin(LoginParams)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginLogin(LoginParams loginParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.LoginParams.html">LoginParams</a></td>
+        <td><span class="parametername">loginParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_BeginLogout.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.BeginLogout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L654">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_BeginLogout_" data-uid="OpenMetaverse.NetworkManager.BeginLogout*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_BeginLogout" data-uid="OpenMetaverse.NetworkManager.BeginLogout">BeginLogout()</h4>
+  <div class="markdown level1 summary"><p>Begins the non-blocking logout. Makes sure that the LoggedOut event is
+called even if the server does not send a logout reply, and Shutdown()
+is properly called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginLogout()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_CompletePingCheckHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.CompletePingCheckHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L1046">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_CompletePingCheckHandler_" data-uid="OpenMetaverse.NetworkManager.CompletePingCheckHandler*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_CompletePingCheckHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.NetworkManager.CompletePingCheckHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">CompletePingCheckHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CompletePingCheckHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_Connect_System_Net_IPAddress_System_UInt16_System_UInt64_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.Connect(System.Net.IPAddress%2CSystem.UInt16%2CSystem.UInt64%2CSystem.Boolean%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L511">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_Connect_" data-uid="OpenMetaverse.NetworkManager.Connect*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_Connect_System_Net_IPAddress_System_UInt16_System_UInt64_System_Boolean_System_String_" data-uid="OpenMetaverse.NetworkManager.Connect(System.Net.IPAddress,System.UInt16,System.UInt64,System.Boolean,System.String)">Connect(IPAddress, UInt16, UInt64, Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Connect to a simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Simulator Connect(IPAddress ip, ushort port, ulong handle, bool setDefault, string seedcaps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.IPAddress</span></td>
+        <td><span class="parametername">ip</span></td>
+        <td><p>IP address to connect to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port to connect to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle for this simulator, to identify its
+location in the grid</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">setDefault</span></td>
+        <td><p>Whether to set CurrentSim to this new
+connection, use this if the avatar is moving in to this simulator</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">seedcaps</span></td>
+        <td><p>URL of the capabilities server to use for
+this sim connection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><p>A Simulator object on success, otherwise null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_Connect_System_Net_IPEndPoint_System_UInt64_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.Connect(System.Net.IPEndPoint%2CSystem.UInt64%2CSystem.Boolean%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L528">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_Connect_" data-uid="OpenMetaverse.NetworkManager.Connect*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_Connect_System_Net_IPEndPoint_System_UInt64_System_Boolean_System_String_" data-uid="OpenMetaverse.NetworkManager.Connect(System.Net.IPEndPoint,System.UInt64,System.Boolean,System.String)">Connect(IPEndPoint, UInt64, Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Connect to a simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Simulator Connect(IPEndPoint endPoint, ulong handle, bool setDefault, string seedcaps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.IPEndPoint</span></td>
+        <td><span class="parametername">endPoint</span></td>
+        <td><p>IP address and port to connect to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle for this simulator, to identify its
+location in the grid</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">setDefault</span></td>
+        <td><p>Whether to set CurrentSim to this new
+connection, use this if the avatar is moving in to this simulator</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">seedcaps</span></td>
+        <td><p>URL of the capabilities server to use for
+this sim connection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><p>A Simulator object on success, otherwise null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_DefaultLoginParams_System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.DefaultLoginParams(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L930">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_DefaultLoginParams_" data-uid="OpenMetaverse.NetworkManager.DefaultLoginParams*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_DefaultLoginParams_System_String_System_String_System_String_System_String_System_String_" data-uid="OpenMetaverse.NetworkManager.DefaultLoginParams(System.String,System.String,System.String,System.String,System.String)">DefaultLoginParams(String, String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Generate sane default values for a login request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoginParams DefaultLoginParams(string firstName, string lastName, string password, string channel, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">firstName</span></td>
+        <td><p>Account first name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lastName</span></td>
+        <td><p>Account last name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Account password</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Client application name (channel)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>Client application name + version</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.LoginParams.html">LoginParams</a></td>
+        <td><p>A populated <a class="xref" href="OpenMetaverse.LoginParams.html">LoginParams</a> struct containing
+sane defaults</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_DisableSimulatorHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.DisableSimulatorHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L1239">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_DisableSimulatorHandler_" data-uid="OpenMetaverse.NetworkManager.DisableSimulatorHandler*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_DisableSimulatorHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.NetworkManager.DisableSimulatorHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">DisableSimulatorHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DisableSimulatorHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_DisconnectSim_OpenMetaverse_Simulator_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.DisconnectSim(OpenMetaverse.Simulator%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L740">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_DisconnectSim_" data-uid="OpenMetaverse.NetworkManager.DisconnectSim*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_DisconnectSim_OpenMetaverse_Simulator_System_Boolean_" data-uid="OpenMetaverse.NetworkManager.DisconnectSim(OpenMetaverse.Simulator,System.Boolean)">DisconnectSim(Simulator, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Close a connection to the given simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisconnectSim(Simulator simulator, bool sendCloseCircuit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">sendCloseCircuit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_EnableSimulatorHandler_System_String_OpenMetaverse_Interfaces_IMessage_OpenMetaverse_Simulator_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.EnableSimulatorHandler(System.String%2COpenMetaverse.Interfaces.IMessage%2COpenMetaverse.Simulator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L1212">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_EnableSimulatorHandler_" data-uid="OpenMetaverse.NetworkManager.EnableSimulatorHandler*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_EnableSimulatorHandler_System_String_OpenMetaverse_Interfaces_IMessage_OpenMetaverse_Simulator_" data-uid="OpenMetaverse.NetworkManager.EnableSimulatorHandler(System.String,OpenMetaverse.Interfaces.IMessage,OpenMetaverse.Simulator)">EnableSimulatorHandler(String, IMessage, Simulator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EnableSimulatorHandler(string capsKey, IMessage message, Simulator simulator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">capsKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Interfaces.IMessage.html">IMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_FindSimulator_System_Net_IPEndPoint_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.FindSimulator(System.Net.IPEndPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L839">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_FindSimulator_" data-uid="OpenMetaverse.NetworkManager.FindSimulator*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_FindSimulator_System_Net_IPEndPoint_" data-uid="OpenMetaverse.NetworkManager.FindSimulator(System.Net.IPEndPoint)">FindSimulator(IPEndPoint)</h4>
+  <div class="markdown level1 summary"><p>Searches through the list of currently connected simulators to find
+one attached to the given IPEndPoint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Simulator FindSimulator(IPEndPoint endPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.IPEndPoint</span></td>
+        <td><span class="parametername">endPoint</span></td>
+        <td><p>IPEndPoint of the Simulator to search for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><p>A Simulator reference on success, otherwise null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_GetMAC.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.GetMAC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L1601">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_GetMAC_" data-uid="OpenMetaverse.NetworkManager.GetMAC*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_GetMAC" data-uid="OpenMetaverse.NetworkManager.GetMAC">GetMAC()</h4>
+  <div class="markdown level1 summary"><p>Get clients default Mac Address</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetMAC()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string containing the first found Mac Address</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_GetPlatform.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.GetPlatform%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L1575">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_GetPlatform_" data-uid="OpenMetaverse.NetworkManager.GetPlatform*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_GetPlatform" data-uid="OpenMetaverse.NetworkManager.GetPlatform">GetPlatform()</h4>
+  <div class="markdown level1 summary"><p>Get current OS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPlatform()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Either &quot;Win&quot; or &quot;Linux&quot;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_GetPlatformVersion.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.GetPlatformVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L1592">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_GetPlatformVersion_" data-uid="OpenMetaverse.NetworkManager.GetPlatformVersion*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_GetPlatformVersion" data-uid="OpenMetaverse.NetworkManager.GetPlatformVersion">GetPlatformVersion()</h4>
+  <div class="markdown level1 summary"><p>Gets the current OS version number</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPlatformVersion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The platform version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_KickUserHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.KickUserHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L1247">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_KickUserHandler_" data-uid="OpenMetaverse.NetworkManager.KickUserHandler*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_KickUserHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.NetworkManager.KickUserHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">KickUserHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void KickUserHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_Login_OpenMetaverse_LoginParams_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.Login(OpenMetaverse.LoginParams)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L986">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_Login_" data-uid="OpenMetaverse.NetworkManager.Login*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_Login_OpenMetaverse_LoginParams_" data-uid="OpenMetaverse.NetworkManager.Login(OpenMetaverse.LoginParams)">Login(LoginParams)</h4>
+  <div class="markdown level1 summary"><p>Login that takes a struct of all the values that will be passed to
+the login server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Login(LoginParams loginParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.LoginParams.html">LoginParams</a></td>
+        <td><span class="parametername">loginParams</span></td>
+        <td><p>The values that will be passed to the login
+server, all fields must be set even if they are String.Empty</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the login was successful or not. On failure the
+LoginErrorKey string will contain the error code and LoginMessage
+will contain a description of the error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_Login_System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.Login(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L947">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_Login_" data-uid="OpenMetaverse.NetworkManager.Login*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_Login_System_String_System_String_System_String_System_String_System_String_" data-uid="OpenMetaverse.NetworkManager.Login(System.String,System.String,System.String,System.String,System.String)">Login(String, String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Simplified login that takes the most common and required fields</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Login(string firstName, string lastName, string password, string channel, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">firstName</span></td>
+        <td><p>Account first name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lastName</span></td>
+        <td><p>Account last name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Account password</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Client application name (channel)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>Client application name + version</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the login was successful or not. On failure the
+LoginErrorKey string will contain the error code and LoginMessage
+will contain a description of the error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_Login_System_String_System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.Login(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L968">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_Login_" data-uid="OpenMetaverse.NetworkManager.Login*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_Login_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="OpenMetaverse.NetworkManager.Login(System.String,System.String,System.String,System.String,System.String,System.String)">Login(String, String, String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Simplified login that takes the most common fields along with a
+starting location URI, and can accept an MD5 string instead of a
+plaintext password</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Login(string firstName, string lastName, string password, string channel, string start, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">firstName</span></td>
+        <td><p>Account first name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lastName</span></td>
+        <td><p>Account last name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Account password or MD5 hash of the password
+such as $1$1682a1e45e9f957dcdf0bb56eb43319c</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">channel</span></td>
+        <td><p>Client application name (channel)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>Starting location URI that can be built with
+StartLocation()</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>Client application name + version</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the login was successful or not. On failure the
+LoginErrorKey string will contain the error code and LoginMessage
+will contain a description of the error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_Logout.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.Logout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L687">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_Logout_" data-uid="OpenMetaverse.NetworkManager.Logout*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_Logout" data-uid="OpenMetaverse.NetworkManager.Logout">Logout()</h4>
+  <div class="markdown level1 summary"><p>Initiate a blocking logout request. This will return when the logout
+handshake has completed or when <pre><code>Settings.LOGOUT_TIMEOUT</code></pre>
+has expired and the network layer is manually shut down</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Logout()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_LogoutReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.LogoutReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L997">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_LogoutReplyHandler_" data-uid="OpenMetaverse.NetworkManager.LogoutReplyHandler*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_LogoutReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.NetworkManager.LogoutReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">LogoutReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogoutReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_OnDisconnected_OpenMetaverse_DisconnectedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.OnDisconnected(OpenMetaverse.DisconnectedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L246">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_OnDisconnected_" data-uid="OpenMetaverse.NetworkManager.OnDisconnected*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_OnDisconnected_OpenMetaverse_DisconnectedEventArgs_" data-uid="OpenMetaverse.NetworkManager.OnDisconnected(OpenMetaverse.DisconnectedEventArgs)">OnDisconnected(DisconnectedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the Disconnected Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDisconnected(DisconnectedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.DisconnectedEventArgs.html">DisconnectedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A DisconnectedEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_OnEventQueueRunning_OpenMetaverse_EventQueueRunningEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.OnEventQueueRunning(OpenMetaverse.EventQueueRunningEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L294">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_OnEventQueueRunning_" data-uid="OpenMetaverse.NetworkManager.OnEventQueueRunning*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_OnEventQueueRunning_OpenMetaverse_EventQueueRunningEventArgs_" data-uid="OpenMetaverse.NetworkManager.OnEventQueueRunning(OpenMetaverse.EventQueueRunningEventArgs)">OnEventQueueRunning(EventQueueRunningEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the EventQueueRunning Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEventQueueRunning(EventQueueRunningEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.EventQueueRunningEventArgs.html">EventQueueRunningEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A EventQueueRunningEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_OnLoggedOut_OpenMetaverse_LoggedOutEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.OnLoggedOut(OpenMetaverse.LoggedOutEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L150">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_OnLoggedOut_" data-uid="OpenMetaverse.NetworkManager.OnLoggedOut*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_OnLoggedOut_OpenMetaverse_LoggedOutEventArgs_" data-uid="OpenMetaverse.NetworkManager.OnLoggedOut(OpenMetaverse.LoggedOutEventArgs)">OnLoggedOut(LoggedOutEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the LoggedOut Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnLoggedOut(LoggedOutEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.LoggedOutEventArgs.html">LoggedOutEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A LoggedOutEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_OnLoginProgress_OpenMetaverse_LoginProgressEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.OnLoginProgress(OpenMetaverse.LoginProgressEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L818">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_OnLoginProgress_" data-uid="OpenMetaverse.NetworkManager.OnLoginProgress*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_OnLoginProgress_OpenMetaverse_LoginProgressEventArgs_" data-uid="OpenMetaverse.NetworkManager.OnLoginProgress(OpenMetaverse.LoginProgressEventArgs)">OnLoginProgress(LoginProgressEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the LoginProgress Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnLoginProgress(LoginProgressEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.LoginProgressEventArgs.html">LoginProgressEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A LoginProgressEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_OnPacketSent_OpenMetaverse_PacketSentEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.OnPacketSent(OpenMetaverse.PacketSentEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L126">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_OnPacketSent_" data-uid="OpenMetaverse.NetworkManager.OnPacketSent*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_OnPacketSent_OpenMetaverse_PacketSentEventArgs_" data-uid="OpenMetaverse.NetworkManager.OnPacketSent(OpenMetaverse.PacketSentEventArgs)">OnPacketSent(PacketSentEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the PacketSent Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPacketSent(PacketSentEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketSentEventArgs.html">PacketSentEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A PacketSentEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_OnSimChanged_OpenMetaverse_SimChangedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.OnSimChanged(OpenMetaverse.SimChangedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L270">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_OnSimChanged_" data-uid="OpenMetaverse.NetworkManager.OnSimChanged*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_OnSimChanged_OpenMetaverse_SimChangedEventArgs_" data-uid="OpenMetaverse.NetworkManager.OnSimChanged(OpenMetaverse.SimChangedEventArgs)">OnSimChanged(SimChangedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the SimChanged Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSimChanged(SimChangedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.SimChangedEventArgs.html">SimChangedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A SimChangedEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_OnSimConnected_OpenMetaverse_SimConnectedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.OnSimConnected(OpenMetaverse.SimConnectedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L198">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_OnSimConnected_" data-uid="OpenMetaverse.NetworkManager.OnSimConnected*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_OnSimConnected_OpenMetaverse_SimConnectedEventArgs_" data-uid="OpenMetaverse.NetworkManager.OnSimConnected(OpenMetaverse.SimConnectedEventArgs)">OnSimConnected(SimConnectedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the SimConnected Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSimConnected(SimConnectedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.SimConnectedEventArgs.html">SimConnectedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A SimConnectedEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_OnSimConnecting_OpenMetaverse_SimConnectingEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.OnSimConnecting(OpenMetaverse.SimConnectingEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L174">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_OnSimConnecting_" data-uid="OpenMetaverse.NetworkManager.OnSimConnecting*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_OnSimConnecting_OpenMetaverse_SimConnectingEventArgs_" data-uid="OpenMetaverse.NetworkManager.OnSimConnecting(OpenMetaverse.SimConnectingEventArgs)">OnSimConnecting(SimConnectingEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the SimConnecting Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSimConnecting(SimConnectingEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.SimConnectingEventArgs.html">SimConnectingEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A SimConnectingEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_OnSimDisconnected_OpenMetaverse_SimDisconnectedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.OnSimDisconnected(OpenMetaverse.SimDisconnectedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L222">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_OnSimDisconnected_" data-uid="OpenMetaverse.NetworkManager.OnSimDisconnected*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_OnSimDisconnected_OpenMetaverse_SimDisconnectedEventArgs_" data-uid="OpenMetaverse.NetworkManager.OnSimDisconnected(OpenMetaverse.SimDisconnectedEventArgs)">OnSimDisconnected(SimDisconnectedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the SimDisconnected Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSimDisconnected(SimDisconnectedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.SimDisconnectedEventArgs.html">SimDisconnectedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A SimDisconnectedEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_RegionHandshakeHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.RegionHandshakeHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L1155">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_RegionHandshakeHandler_" data-uid="OpenMetaverse.NetworkManager.RegionHandshakeHandler*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_RegionHandshakeHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.NetworkManager.RegionHandshakeHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">RegionHandshakeHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RegionHandshakeHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_RegisterCallback_OpenMetaverse_Packets_PacketType_System_EventHandler_OpenMetaverse_PacketReceivedEventArgs__.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.RegisterCallback(OpenMetaverse.Packets.PacketType%2CSystem.EventHandler%7BOpenMetaverse.PacketReceivedEventArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L393">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_RegisterCallback_" data-uid="OpenMetaverse.NetworkManager.RegisterCallback*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_RegisterCallback_OpenMetaverse_Packets_PacketType_System_EventHandler_OpenMetaverse_PacketReceivedEventArgs__" data-uid="OpenMetaverse.NetworkManager.RegisterCallback(OpenMetaverse.Packets.PacketType,System.EventHandler{OpenMetaverse.PacketReceivedEventArgs})">RegisterCallback(PacketType, EventHandler&lt;PacketReceivedEventArgs&gt;)</h4>
+  <div class="markdown level1 summary"><p>Register an event handler for a packet. This is a low level event
+interface and should only be used if you are doing something not
+supported in the library</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterCallback(PacketType type, EventHandler&lt;PacketReceivedEventArgs&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.PacketType.html">PacketType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Packet type to trigger events for</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Callback to fire when a packet of this type
+is received</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_RegisterCallback_OpenMetaverse_Packets_PacketType_System_EventHandler_OpenMetaverse_PacketReceivedEventArgs__System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.RegisterCallback(OpenMetaverse.Packets.PacketType%2CSystem.EventHandler%7BOpenMetaverse.PacketReceivedEventArgs%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L412">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_RegisterCallback_" data-uid="OpenMetaverse.NetworkManager.RegisterCallback*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_RegisterCallback_OpenMetaverse_Packets_PacketType_System_EventHandler_OpenMetaverse_PacketReceivedEventArgs__System_Boolean_" data-uid="OpenMetaverse.NetworkManager.RegisterCallback(OpenMetaverse.Packets.PacketType,System.EventHandler{OpenMetaverse.PacketReceivedEventArgs},System.Boolean)">RegisterCallback(PacketType, EventHandler&lt;PacketReceivedEventArgs&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Register an event handler for a packet. This is a low level event
+interface and should only be used if you are doing something not
+supported in the library</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterCallback(PacketType type, EventHandler&lt;PacketReceivedEventArgs&gt; callback, bool isAsync)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.PacketType.html">PacketType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Packet type to trigger events for</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Callback to fire when a packet of this type
+is received</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isAsync</span></td>
+        <td><p>True if the callback should be ran
+asynchronously. Only set this to false (synchronous for callbacks
+that will always complete quickly)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_NetworkManager_RegisterCallback_OpenMetaverse_Packets_PacketType_System_EventHandler_OpenMetaverse_PacketReceivedEventArgs__System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If any callback for a packet type is marked as
+asynchronous, all callbacks for that packet type will be fired
+asynchronously</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_RegisterEventCallback_System_String_OpenMetaverse_Caps_EventQueueCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.RegisterEventCallback(System.String%2COpenMetaverse.Caps.EventQueueCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L436">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_RegisterEventCallback_" data-uid="OpenMetaverse.NetworkManager.RegisterEventCallback*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_RegisterEventCallback_System_String_OpenMetaverse_Caps_EventQueueCallback_" data-uid="OpenMetaverse.NetworkManager.RegisterEventCallback(System.String,OpenMetaverse.Caps.EventQueueCallback)">RegisterEventCallback(String, Caps.EventQueueCallback)</h4>
+  <div class="markdown level1 summary"><p>Register a CAPS event handler. This is a low level event interface
+and should only be used if you are doing something not supported in
+the library</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterEventCallback(string capsEvent, Caps.EventQueueCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">capsEvent</span></td>
+        <td><p>Name of the CAPS event to register a handler for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Caps.EventQueueCallback.html">Caps.EventQueueCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Callback to fire when a CAPS event is received</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_RegisterLoginResponseCallback_OpenMetaverse_NetworkManager_LoginResponseCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.RegisterLoginResponseCallback(OpenMetaverse.NetworkManager.LoginResponseCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L1015">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_RegisterLoginResponseCallback_" data-uid="OpenMetaverse.NetworkManager.RegisterLoginResponseCallback*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_RegisterLoginResponseCallback_OpenMetaverse_NetworkManager_LoginResponseCallback_" data-uid="OpenMetaverse.NetworkManager.RegisterLoginResponseCallback(OpenMetaverse.NetworkManager.LoginResponseCallback)">RegisterLoginResponseCallback(NetworkManager.LoginResponseCallback)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterLoginResponseCallback(NetworkManager.LoginResponseCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.NetworkManager.LoginResponseCallback.html">NetworkManager.LoginResponseCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_RegisterLoginResponseCallback_OpenMetaverse_NetworkManager_LoginResponseCallback_System_String___.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.RegisterLoginResponseCallback(OpenMetaverse.NetworkManager.LoginResponseCallback%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L1021">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_RegisterLoginResponseCallback_" data-uid="OpenMetaverse.NetworkManager.RegisterLoginResponseCallback*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_RegisterLoginResponseCallback_OpenMetaverse_NetworkManager_LoginResponseCallback_System_String___" data-uid="OpenMetaverse.NetworkManager.RegisterLoginResponseCallback(OpenMetaverse.NetworkManager.LoginResponseCallback,System.String[])">RegisterLoginResponseCallback(NetworkManager.LoginResponseCallback, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterLoginResponseCallback(NetworkManager.LoginResponseCallback callback, string[] options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.NetworkManager.LoginResponseCallback.html">NetworkManager.LoginResponseCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_RemoteLoginHandler_OpenMetaverse_LoginResponseData_OpenMetaverse_LoginParams_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.RemoteLoginHandler(OpenMetaverse.LoginResponseData%2COpenMetaverse.LoginParams)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L1279">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_RemoteLoginHandler_" data-uid="OpenMetaverse.NetworkManager.RemoteLoginHandler*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_RemoteLoginHandler_OpenMetaverse_LoginResponseData_OpenMetaverse_LoginParams_" data-uid="OpenMetaverse.NetworkManager.RemoteLoginHandler(OpenMetaverse.LoginResponseData,OpenMetaverse.LoginParams)">RemoteLoginHandler(LoginResponseData, LoginParams)</h4>
+  <div class="markdown level1 summary"><p>LoginParams and the initial login XmlRpcRequest were made on a remote machine.
+This method now initializes libomv with the results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoteLoginHandler(LoginResponseData response, LoginParams newContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.LoginResponseData.html">LoginResponseData</a></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.LoginParams.html">LoginParams</a></td>
+        <td><span class="parametername">newContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_RequestLogout.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.RequestLogout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L710">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_RequestLogout_" data-uid="OpenMetaverse.NetworkManager.RequestLogout*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_RequestLogout" data-uid="OpenMetaverse.NetworkManager.RequestLogout">RequestLogout()</h4>
+  <div class="markdown level1 summary"><p>Initiate the logout process. The <pre><code>Shutdown()</code></pre> function
+needs to be manually called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestLogout()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_SendPacket_OpenMetaverse_Packets_Packet_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.SendPacket(OpenMetaverse.Packets.Packet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L458">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_SendPacket_" data-uid="OpenMetaverse.NetworkManager.SendPacket*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_SendPacket_OpenMetaverse_Packets_Packet_" data-uid="OpenMetaverse.NetworkManager.SendPacket(OpenMetaverse.Packets.Packet)">SendPacket(Packet)</h4>
+  <div class="markdown level1 summary"><p>Send a packet to the simulator the avatar is currently occupying</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendPacket(Packet packet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Packet.html">Packet</a></td>
+        <td><span class="parametername">packet</span></td>
+        <td><p>Packet to send</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_SendPacket_OpenMetaverse_Packets_Packet_OpenMetaverse_Simulator_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.SendPacket(OpenMetaverse.Packets.Packet%2COpenMetaverse.Simulator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L487">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_SendPacket_" data-uid="OpenMetaverse.NetworkManager.SendPacket*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_SendPacket_OpenMetaverse_Packets_Packet_OpenMetaverse_Simulator_" data-uid="OpenMetaverse.NetworkManager.SendPacket(OpenMetaverse.Packets.Packet,OpenMetaverse.Simulator)">SendPacket(Packet, Simulator)</h4>
+  <div class="markdown level1 summary"><p>Send a packet to a specified simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendPacket(Packet packet, Simulator simulator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Packet.html">Packet</a></td>
+        <td><span class="parametername">packet</span></td>
+        <td><p>Packet to send</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator to send the packet to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_Shutdown_OpenMetaverse_NetworkManager_DisconnectType_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.Shutdown(OpenMetaverse.NetworkManager.DisconnectType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L769">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_Shutdown_" data-uid="OpenMetaverse.NetworkManager.Shutdown*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_Shutdown_OpenMetaverse_NetworkManager_DisconnectType_" data-uid="OpenMetaverse.NetworkManager.Shutdown(OpenMetaverse.NetworkManager.DisconnectType)">Shutdown(NetworkManager.DisconnectType)</h4>
+  <div class="markdown level1 summary"><p>Shutdown will disconnect all the sims except for the current sim
+first, and then kill the connection to CurrentSim. This should only
+be called if the logout process times out on <pre><code>RequestLogout</code></pre></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shutdown(NetworkManager.DisconnectType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.NetworkManager.DisconnectType.html">NetworkManager.DisconnectType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type of shutdown</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_Shutdown_OpenMetaverse_NetworkManager_DisconnectType_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.Shutdown(OpenMetaverse.NetworkManager.DisconnectType%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L781">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_Shutdown_" data-uid="OpenMetaverse.NetworkManager.Shutdown*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_Shutdown_OpenMetaverse_NetworkManager_DisconnectType_System_String_" data-uid="OpenMetaverse.NetworkManager.Shutdown(OpenMetaverse.NetworkManager.DisconnectType,System.String)">Shutdown(NetworkManager.DisconnectType, String)</h4>
+  <div class="markdown level1 summary"><p>Shutdown will disconnect all the sims except for the current sim
+first, and then kill the connection to CurrentSim. This should only
+be called if the logout process times out on <pre><code>RequestLogout</code></pre></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shutdown(NetworkManager.DisconnectType type, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.NetworkManager.DisconnectType.html">NetworkManager.DisconnectType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type of shutdown</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Shutdown message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_SimStatsHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.SimStatsHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L1061">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_SimStatsHandler_" data-uid="OpenMetaverse.NetworkManager.SimStatsHandler*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_SimStatsHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.NetworkManager.SimStatsHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">SimStatsHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SimStatsHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_StartLocation_System_String_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.StartLocation(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L1042">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_StartLocation_" data-uid="OpenMetaverse.NetworkManager.StartLocation*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_StartLocation_System_String_System_Int32_System_Int32_System_Int32_" data-uid="OpenMetaverse.NetworkManager.StartLocation(System.String,System.Int32,System.Int32,System.Int32)">StartLocation(String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Build a start location URI for passing to the Login function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string StartLocation(string sim, int x, int y, int z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sim</span></td>
+        <td><p>Name of the simulator to start in</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X coordinate to start at</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y coordinate to start at</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z coordinate to start at</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String with a URI that can be used to login to a specified
+location</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_StartPingCheckHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.StartPingCheckHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L1030">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_StartPingCheckHandler_" data-uid="OpenMetaverse.NetworkManager.StartPingCheckHandler*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_StartPingCheckHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.NetworkManager.StartPingCheckHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">StartPingCheckHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void StartPingCheckHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_UnregisterCallback_OpenMetaverse_Packets_PacketType_System_EventHandler_OpenMetaverse_PacketReceivedEventArgs__.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.UnregisterCallback(OpenMetaverse.Packets.PacketType%2CSystem.EventHandler%7BOpenMetaverse.PacketReceivedEventArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L424">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_UnregisterCallback_" data-uid="OpenMetaverse.NetworkManager.UnregisterCallback*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_UnregisterCallback_OpenMetaverse_Packets_PacketType_System_EventHandler_OpenMetaverse_PacketReceivedEventArgs__" data-uid="OpenMetaverse.NetworkManager.UnregisterCallback(OpenMetaverse.Packets.PacketType,System.EventHandler{OpenMetaverse.PacketReceivedEventArgs})">UnregisterCallback(PacketType, EventHandler&lt;PacketReceivedEventArgs&gt;)</h4>
+  <div class="markdown level1 summary"><p>Unregister an event handler for a packet. This is a low level event
+interface and should only be used if you are doing something not
+supported in the library</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterCallback(PacketType type, EventHandler&lt;PacketReceivedEventArgs&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.PacketType.html">PacketType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Packet type this callback is registered with</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Callback to stop firing events for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_UnregisterEventCallback_System_String_OpenMetaverse_Caps_EventQueueCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.UnregisterEventCallback(System.String%2COpenMetaverse.Caps.EventQueueCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L449">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_UnregisterEventCallback_" data-uid="OpenMetaverse.NetworkManager.UnregisterEventCallback*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_UnregisterEventCallback_System_String_OpenMetaverse_Caps_EventQueueCallback_" data-uid="OpenMetaverse.NetworkManager.UnregisterEventCallback(System.String,OpenMetaverse.Caps.EventQueueCallback)">UnregisterEventCallback(String, Caps.EventQueueCallback)</h4>
+  <div class="markdown level1 summary"><p>Unregister a CAPS event handler. This is a low level event interface
+and should only be used if you are doing something not supported in
+the library</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterEventCallback(string capsEvent, Caps.EventQueueCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">capsEvent</span></td>
+        <td><p>Name of the CAPS event this callback is
+registered with</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Caps.EventQueueCallback.html">Caps.EventQueueCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Callback to stop firing events for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_UnregisterLoginResponseCallback_OpenMetaverse_NetworkManager_LoginResponseCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.UnregisterLoginResponseCallback(OpenMetaverse.NetworkManager.LoginResponseCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L1027">View Source</a>
+  </span>
+  <a id="OpenMetaverse_NetworkManager_UnregisterLoginResponseCallback_" data-uid="OpenMetaverse.NetworkManager.UnregisterLoginResponseCallback*"></a>
+  <h4 id="OpenMetaverse_NetworkManager_UnregisterLoginResponseCallback_OpenMetaverse_NetworkManager_LoginResponseCallback_" data-uid="OpenMetaverse.NetworkManager.UnregisterLoginResponseCallback(OpenMetaverse.NetworkManager.LoginResponseCallback)">UnregisterLoginResponseCallback(NetworkManager.LoginResponseCallback)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterLoginResponseCallback(NetworkManager.LoginResponseCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.NetworkManager.LoginResponseCallback.html">NetworkManager.LoginResponseCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_Disconnected.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.Disconnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L258">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_Disconnected" data-uid="OpenMetaverse.NetworkManager.Disconnected">Disconnected</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;DisconnectedEventArgs&gt; Disconnected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.DisconnectedEventArgs.html">DisconnectedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_EventQueueRunning.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.EventQueueRunning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L306">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_EventQueueRunning" data-uid="OpenMetaverse.NetworkManager.EventQueueRunning">EventQueueRunning</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventQueueRunningEventArgs&gt; EventQueueRunning</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.EventQueueRunningEventArgs.html">EventQueueRunningEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_LoggedOut.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.LoggedOut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L162">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_LoggedOut" data-uid="OpenMetaverse.NetworkManager.LoggedOut">LoggedOut</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;LoggedOutEventArgs&gt; LoggedOut</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.LoggedOutEventArgs.html">LoggedOutEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_LoginProgress.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.LoginProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Login.cs/#L830">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_LoginProgress" data-uid="OpenMetaverse.NetworkManager.LoginProgress">LoginProgress</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;LoginProgressEventArgs&gt; LoginProgress</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.LoginProgressEventArgs.html">LoginProgressEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_PacketSent.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.PacketSent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L138">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_PacketSent" data-uid="OpenMetaverse.NetworkManager.PacketSent">PacketSent</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PacketSentEventArgs&gt; PacketSent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.PacketSentEventArgs.html">PacketSentEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_SimChanged.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.SimChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L282">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_SimChanged" data-uid="OpenMetaverse.NetworkManager.SimChanged">SimChanged</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SimChangedEventArgs&gt; SimChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.SimChangedEventArgs.html">SimChangedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_SimConnected.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.SimConnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L210">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_SimConnected" data-uid="OpenMetaverse.NetworkManager.SimConnected">SimConnected</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SimConnectedEventArgs&gt; SimConnected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.SimConnectedEventArgs.html">SimConnectedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_SimConnecting.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.SimConnecting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L186">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_SimConnecting" data-uid="OpenMetaverse.NetworkManager.SimConnecting">SimConnecting</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SimConnectingEventArgs&gt; SimConnecting</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.SimConnectingEventArgs.html">SimConnectingEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager_SimDisconnected.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager.SimDisconnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L234">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_NetworkManager_SimDisconnected" data-uid="OpenMetaverse.NetworkManager.SimDisconnected">SimDisconnected</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SimDisconnectedEventArgs&gt; SimDisconnected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.SimDisconnectedEventArgs.html">SimDisconnectedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_NetworkManager.md&amp;value=---%0Auid%3A%20OpenMetaverse.NetworkManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/NetworkManager.cs/#L48" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

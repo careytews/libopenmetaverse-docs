@@ -1,0 +1,848 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MeshmerizerR
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MeshmerizerR
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.Rendering.MeshmerizerR">
+  
+  
+  <h1 id="OpenMetaverse_Rendering_MeshmerizerR" data-uid="OpenMetaverse.Rendering.MeshmerizerR" class="text-break">Class MeshmerizerR
+  </h1>
+  <div class="markdown level0 summary"><p>Meshing code based on the Idealist Viewer (20081213).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MeshmerizerR</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="OpenMetaverse.Rendering.IRendering.html">IRendering</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.Rendering.html">OpenMetaverse.Rendering</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.Rendering.Meshmerizer.dll</h6>
+  <h5 id="OpenMetaverse_Rendering_MeshmerizerR_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RendererName(&quot;MeshmerizerR&quot;)]
+public class MeshmerizerR : IRendering</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedMesh_OpenMetaverse_Primitive_OpenMetaverse_Rendering_DetailLevel_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedMesh(OpenMetaverse.Primitive%2COpenMetaverse.Rendering.DetailLevel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L128">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedMesh_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedMesh_OpenMetaverse_Primitive_OpenMetaverse_Rendering_DetailLevel_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedMesh(OpenMetaverse.Primitive,OpenMetaverse.Rendering.DetailLevel)">GenerateFacetedMesh(Primitive, DetailLevel)</h4>
+  <div class="markdown level1 summary"><p>Create a faceted mesh from prim shape parameters.
+Generates a a series of faces, each face containing a mesh and
+material metadata.
+A prim will turn into multiple faces with each being independent
+meshes and each having different material information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FacetedMesh GenerateFacetedMesh(Primitive prim, DetailLevel lod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a></td>
+        <td><span class="parametername">prim</span></td>
+        <td><p>Primitive to generate the mesh from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.DetailLevel.html">DetailLevel</a></td>
+        <td><span class="parametername">lod</span></td>
+        <td><p>Level of detail to generate the mesh at</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.FacetedMesh.html">FacetedMesh</a></td>
+        <td><p>The generated mesh</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedMeshMesh_OpenMetaverse_Primitive_System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedMeshMesh(OpenMetaverse.Primitive%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L362">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedMeshMesh_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedMeshMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedMeshMesh_OpenMetaverse_Primitive_System_Byte___" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedMeshMesh(OpenMetaverse.Primitive,System.Byte[])">GenerateFacetedMeshMesh(Primitive, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Create a mesh faceted mesh from the compressed mesh data.
+This returns the highest LOD renderable version of the mesh.</p>
+<p>The actual mesh data is fetched and passed to this
+routine since all the context for finding the data is elsewhere.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FacetedMesh GenerateFacetedMeshMesh(Primitive prim, byte[] meshData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a></td>
+        <td><span class="parametername">prim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">meshData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.FacetedMesh.html">FacetedMesh</a></td>
+        <td><p>The faceted mesh or null if can't do it</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedMeshMesh_OpenMetaverse_Primitive_System_Byte___OpenMetaverse_Rendering_DetailLevel_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedMeshMesh(OpenMetaverse.Primitive%2CSystem.Byte%5B%5D%2COpenMetaverse.Rendering.DetailLevel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L389">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedMeshMesh_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedMeshMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedMeshMesh_OpenMetaverse_Primitive_System_Byte___OpenMetaverse_Rendering_DetailLevel_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedMeshMesh(OpenMetaverse.Primitive,System.Byte[],OpenMetaverse.Rendering.DetailLevel)">GenerateFacetedMeshMesh(Primitive, Byte[], DetailLevel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FacetedMesh GenerateFacetedMeshMesh(Primitive prim, byte[] meshData, DetailLevel lod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a></td>
+        <td><span class="parametername">prim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">meshData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.DetailLevel.html">DetailLevel</a></td>
+        <td><span class="parametername">lod</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.FacetedMesh.html">FacetedMesh</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedSculptMesh_OpenMetaverse_Primitive_System_Drawing_Bitmap_OpenMetaverse_Rendering_DetailLevel_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedSculptMesh(OpenMetaverse.Primitive%2CSystem.Drawing.Bitmap%2COpenMetaverse.Rendering.DetailLevel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L184">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedSculptMesh_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedSculptMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_GenerateFacetedSculptMesh_OpenMetaverse_Primitive_System_Drawing_Bitmap_OpenMetaverse_Rendering_DetailLevel_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateFacetedSculptMesh(OpenMetaverse.Primitive,System.Drawing.Bitmap,OpenMetaverse.Rendering.DetailLevel)">GenerateFacetedSculptMesh(Primitive, Bitmap, DetailLevel)</h4>
+  <div class="markdown level1 summary"><p>Create a sculpty faceted mesh. The actual scuplt texture is fetched and passed to this
+routine since all the context for finding teh texture is elsewhere.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FacetedMesh GenerateFacetedSculptMesh(Primitive prim, Bitmap scupltTexture, DetailLevel lod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a></td>
+        <td><span class="parametername">prim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Drawing.Bitmap</span></td>
+        <td><span class="parametername">scupltTexture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.DetailLevel.html">DetailLevel</a></td>
+        <td><span class="parametername">lod</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.FacetedMesh.html">FacetedMesh</a></td>
+        <td><p>The faceted mesh or null if can't do it</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_GenerateSimpleMesh_OpenMetaverse_Primitive_OpenMetaverse_Rendering_DetailLevel_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.GenerateSimpleMesh(OpenMetaverse.Primitive%2COpenMetaverse.Rendering.DetailLevel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L59">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_GenerateSimpleMesh_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateSimpleMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_GenerateSimpleMesh_OpenMetaverse_Primitive_OpenMetaverse_Rendering_DetailLevel_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateSimpleMesh(OpenMetaverse.Primitive,OpenMetaverse.Rendering.DetailLevel)">GenerateSimpleMesh(Primitive, DetailLevel)</h4>
+  <div class="markdown level1 summary"><p>Generates a basic mesh structure from a primitive
+A 'SimpleMesh' is just the prim's overall shape with no material information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleMesh GenerateSimpleMesh(Primitive prim, DetailLevel lod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a></td>
+        <td><span class="parametername">prim</span></td>
+        <td><p>Primitive to generate the mesh from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.DetailLevel.html">DetailLevel</a></td>
+        <td><span class="parametername">lod</span></td>
+        <td><p>Level of detail to generate the mesh at</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.SimpleMesh.html">SimpleMesh</a></td>
+        <td><p>The generated mesh or null on failure</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_GenerateSimpleSculptMesh_OpenMetaverse_Primitive_System_Drawing_Bitmap_OpenMetaverse_Rendering_DetailLevel_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.GenerateSimpleSculptMesh(OpenMetaverse.Primitive%2CSystem.Drawing.Bitmap%2COpenMetaverse.Rendering.DetailLevel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L96">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_GenerateSimpleSculptMesh_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateSimpleSculptMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_GenerateSimpleSculptMesh_OpenMetaverse_Primitive_System_Drawing_Bitmap_OpenMetaverse_Rendering_DetailLevel_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.GenerateSimpleSculptMesh(OpenMetaverse.Primitive,System.Drawing.Bitmap,OpenMetaverse.Rendering.DetailLevel)">GenerateSimpleSculptMesh(Primitive, Bitmap, DetailLevel)</h4>
+  <div class="markdown level1 summary"><p>Generates a basic mesh structure from a sculpted primitive.
+'SimpleMesh's have a single mesh and no faces or material information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleMesh GenerateSimpleSculptMesh(Primitive prim, Bitmap sculptTexture, DetailLevel lod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a></td>
+        <td><span class="parametername">prim</span></td>
+        <td><p>Sculpted primitive to generate the mesh from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Drawing.Bitmap</span></td>
+        <td><span class="parametername">sculptTexture</span></td>
+        <td><p>Sculpt texture</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.DetailLevel.html">DetailLevel</a></td>
+        <td><span class="parametername">lod</span></td>
+        <td><p>Level of detail to generate the mesh at</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.SimpleMesh.html">SimpleMesh</a></td>
+        <td><p>The generated mesh or null on failure</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_MeshSubMeshAsConvexHulls_OpenMetaverse_Primitive_System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.MeshSubMeshAsConvexHulls(OpenMetaverse.Primitive%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L465">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_MeshSubMeshAsConvexHulls_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.MeshSubMeshAsConvexHulls*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_MeshSubMeshAsConvexHulls_OpenMetaverse_Primitive_System_Byte___" data-uid="OpenMetaverse.Rendering.MeshmerizerR.MeshSubMeshAsConvexHulls(OpenMetaverse.Primitive,System.Byte[])">MeshSubMeshAsConvexHulls(Primitive, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;List&lt;Vector3&gt;&gt; MeshSubMeshAsConvexHulls(Primitive prim, byte[] compressedMeshData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a></td>
+        <td><span class="parametername">prim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">compressedMeshData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_MeshSubMeshAsFacetedMesh_OpenMetaverse_Primitive_System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.MeshSubMeshAsFacetedMesh(OpenMetaverse.Primitive%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L422">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_MeshSubMeshAsFacetedMesh_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.MeshSubMeshAsFacetedMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_MeshSubMeshAsFacetedMesh_OpenMetaverse_Primitive_System_Byte___" data-uid="OpenMetaverse.Rendering.MeshmerizerR.MeshSubMeshAsFacetedMesh(OpenMetaverse.Primitive,System.Byte[])">MeshSubMeshAsFacetedMesh(Primitive, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FacetedMesh MeshSubMeshAsFacetedMesh(Primitive prim, byte[] compressedMeshData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a></td>
+        <td><span class="parametername">prim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">compressedMeshData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.FacetedMesh.html">FacetedMesh</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_MeshSubMeshAsSimpleMesh_OpenMetaverse_Primitive_System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.MeshSubMeshAsSimpleMesh(OpenMetaverse.Primitive%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L445">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_MeshSubMeshAsSimpleMesh_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.MeshSubMeshAsSimpleMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_MeshSubMeshAsSimpleMesh_OpenMetaverse_Primitive_System_Byte___" data-uid="OpenMetaverse.Rendering.MeshmerizerR.MeshSubMeshAsSimpleMesh(OpenMetaverse.Primitive,System.Byte[])">MeshSubMeshAsSimpleMesh(Primitive, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleMesh MeshSubMeshAsSimpleMesh(Primitive prim, byte[] compressedMeshData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a></td>
+        <td><span class="parametername">prim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">compressedMeshData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.SimpleMesh.html">SimpleMesh</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_TerrainMesh_System_Single_0__0___System_Single_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.TerrainMesh(System.Single%5B0%3A%2C0%3A%5D%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L853">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_TerrainMesh_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.TerrainMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_TerrainMesh_System_Single_0__0___System_Single_System_Single_System_Single_System_Single_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.TerrainMesh(System.Single[0:,0:],System.Single,System.Single,System.Single,System.Single)">TerrainMesh(Single[,], Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Method for generating mesh Face from a heightmap</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Face TerrainMesh(float[, ] zMap, float xBegin, float xEnd, float yBegin, float yEnd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span>[,]</td>
+        <td><span class="parametername">zMap</span></td>
+        <td><p>Two dimension array of floats containing height information</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">xBegin</span></td>
+        <td><p>Starting value for X</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">xEnd</span></td>
+        <td><p>Max value for X</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">yBegin</span></td>
+        <td><p>Starting value for Y</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">yEnd</span></td>
+        <td><p>Max value of Y</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.Face.html">Face</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_TransformTexCoords_System_Collections_Generic_List_OpenMetaverse_Rendering_Vertex__OpenMetaverse_Vector3_OpenMetaverse_Primitive_TextureEntryFace_OpenMetaverse_Vector3_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.TransformTexCoords(System.Collections.Generic.List%7BOpenMetaverse.Rendering.Vertex%7D%2COpenMetaverse.Vector3%2COpenMetaverse.Primitive.TextureEntryFace%2COpenMetaverse.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L288">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_TransformTexCoords_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.TransformTexCoords*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_TransformTexCoords_System_Collections_Generic_List_OpenMetaverse_Rendering_Vertex__OpenMetaverse_Vector3_OpenMetaverse_Primitive_TextureEntryFace_OpenMetaverse_Vector3_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.TransformTexCoords(System.Collections.Generic.List{OpenMetaverse.Rendering.Vertex},OpenMetaverse.Vector3,OpenMetaverse.Primitive.TextureEntryFace,OpenMetaverse.Vector3)">TransformTexCoords(List&lt;Vertex&gt;, Vector3, Primitive.TextureEntryFace, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Apply texture coordinate modifications from a
+<seealso cref="!:TextureEntryFace"></seealso> to a list of vertices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransformTexCoords(List&lt;Vertex&gt; vertices, Vector3 center, Primitive.TextureEntryFace teFace, Vector3 primScale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenMetaverse.Rendering.Vertex.html">Vertex</a>&gt;</td>
+        <td><span class="parametername">vertices</span></td>
+        <td><p>Vertex list to modify texture coordinates for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">center</span></td>
+        <td><p>Center-point of the face</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Primitive.TextureEntryFace.html">Primitive.TextureEntryFace</a></td>
+        <td><span class="parametername">teFace</span></td>
+        <td><p>Face texture parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">primScale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR_UnpackMesh_System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR.UnpackMesh(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L688">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_MeshmerizerR_UnpackMesh_" data-uid="OpenMetaverse.Rendering.MeshmerizerR.UnpackMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_MeshmerizerR_UnpackMesh_System_Byte___" data-uid="OpenMetaverse.Rendering.MeshmerizerR.UnpackMesh(System.Byte[])">UnpackMesh(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OSDMap UnpackMesh(byte[] assetData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">assetData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSDMap.html">OSDMap</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="OpenMetaverse.Rendering.IRendering.html">IRendering</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_MeshmerizerR.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.MeshmerizerR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Rendering.Meshmerizer/MeshmerizerR.cs/#L49" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

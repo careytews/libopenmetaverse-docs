@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StdEntropyDecoder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StdEntropyDecoder
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.entropy.decoder.StdEntropyDecoder">
+  
+  
+  <h1 id="CSJ2K_j2k_entropy_decoder_StdEntropyDecoder" data-uid="CSJ2K.j2k.entropy.decoder.StdEntropyDecoder" class="text-break">Class StdEntropyDecoder
+  </h1>
+  <div class="markdown level0 summary"><p>This class implements the JPEG 2000 entropy decoder, which codes stripes in
+code-blocks. This entropy decoding engine decodes one code-block at a time.</p>
+<p>The code-blocks are rectangular and their dimensions must be powers of
+2. Each dimension cannot be smaller than 4 and larger than 256. The product
+of the two dimensions (i.e. area of the code-block) cannot exceed 4096.</p>
+<p>Context 0 of the MQ-coder is used as the uniform one (uniform,
+non-adaptive probability distribution). Context 1 is used for RLC
+coding. Contexts 2-10 are used for zero-coding (ZC), contexts 11-15 are
+used for sign-coding (SC) and contexts 16-18 are used for
+magnitude-refinement (MR).</p>
+<p>This implementation also provides some timing features. They can be
+enabled by setting the &apos;DO_TIMING&apos; constant of this class to true and
+recompiling. The timing uses the &apos;System.currentTimeMillis()&apos; Java API
+call, which returns wall clock time, not the actual CPU time used. The
+timing results will be printed on the message output. Since the times
+reported are wall clock times and not CPU usage times they can not be added
+to find the total used time (i.e. some time might be counted in several
+places). When timing is disabled (&apos;DO_TIMING&apos; is false) there is no penalty
+if the compiler performs some basic optimizations. Even if not the penalty
+should be negligeable.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html">MultiResImgDataAdapter</a></div>
+    <div class="level2"><a class="xref" href="CSJ2K.j2k.entropy.decoder.EntropyDecoder.html">EntropyDecoder</a></div>
+    <div class="level3"><span class="xref">StdEntropyDecoder</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec.html">CBlkQuantDataSrcDec</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTData.html">InvWTData</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.decoder.EntropyDecoder.html#CSJ2K_j2k_entropy_decoder_EntropyDecoder_CbULX">EntropyDecoder.CbULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.decoder.EntropyDecoder.html#CSJ2K_j2k_entropy_decoder_EntropyDecoder_CbULY">EntropyDecoder.CbULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.decoder.EntropyDecoder.html#CSJ2K_j2k_entropy_decoder_EntropyDecoder_ParameterInfo">EntropyDecoder.ParameterInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.decoder.EntropyDecoder.html#CSJ2K_j2k_entropy_decoder_EntropyDecoder_OPT_PREFIX">EntropyDecoder.OPT_PREFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.decoder.EntropyDecoder.html#CSJ2K_j2k_entropy_decoder_EntropyDecoder_src">EntropyDecoder.src</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.decoder.EntropyDecoder.html#CSJ2K_j2k_entropy_decoder_EntropyDecoder_getSynSubbandTree_System_Int32_System_Int32_">EntropyDecoder.getSynSubbandTree(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileWidth">MultiResImgDataAdapter.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileHeight">MultiResImgDataAdapter.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NumComps">MultiResImgDataAdapter.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TileIdx">MultiResImgDataAdapter.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULX">MultiResImgDataAdapter.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULY">MultiResImgDataAdapter.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_tIdx">MultiResImgDataAdapter.tIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_mressrc">MultiResImgDataAdapter.mressrc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileWidth_System_Int32_">MultiResImgDataAdapter.getTileWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileHeight_System_Int32_">MultiResImgDataAdapter.getTileHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgWidth_System_Int32_">MultiResImgDataAdapter.getImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgHeight_System_Int32_">MultiResImgDataAdapter.getImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsX_System_Int32_">MultiResImgDataAdapter.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsY_System_Int32_">MultiResImgDataAdapter.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_System_Int32_">MultiResImgDataAdapter.getTileCompWidth(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_System_Int32_">MultiResImgDataAdapter.getTileCompHeight(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgWidth_System_Int32_System_Int32_">MultiResImgDataAdapter.getCompImgWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgHeight_System_Int32_System_Int32_">MultiResImgDataAdapter.getCompImgHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_setTile_System_Int32_System_Int32_">MultiResImgDataAdapter.setTile(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_nextTile">MultiResImgDataAdapter.nextTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_">MultiResImgDataAdapter.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULX_System_Int32_System_Int32_">MultiResImgDataAdapter.getResULX(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULY_System_Int32_System_Int32_">MultiResImgDataAdapter.getResULY(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULX_System_Int32_">MultiResImgDataAdapter.getImgULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULY_System_Int32_">MultiResImgDataAdapter.getImgULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_">MultiResImgDataAdapter.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles">MultiResImgDataAdapter.getNumTiles()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.entropy.decoder.html">CSJ2K.j2k.entropy.decoder</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_entropy_decoder_StdEntropyDecoder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StdEntropyDecoder : EntropyDecoder, CBlkQuantDataSrcDec, InvWTData, MultiResImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_StdEntropyDecoder__ctor_CSJ2K_j2k_entropy_decoder_CodedCBlkDataSrcDec_CSJ2K_j2k_decoder_DecoderSpecs_System_Boolean_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.StdEntropyDecoder.%23ctor(CSJ2K.j2k.entropy.decoder.CodedCBlkDataSrcDec%2CCSJ2K.j2k.decoder.DecoderSpecs%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/StdEntropyDecoder.cs/#L486">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_StdEntropyDecoder__ctor_" data-uid="CSJ2K.j2k.entropy.decoder.StdEntropyDecoder.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_StdEntropyDecoder__ctor_CSJ2K_j2k_entropy_decoder_CodedCBlkDataSrcDec_CSJ2K_j2k_decoder_DecoderSpecs_System_Boolean_System_Boolean_System_Int32_" data-uid="CSJ2K.j2k.entropy.decoder.StdEntropyDecoder.#ctor(CSJ2K.j2k.entropy.decoder.CodedCBlkDataSrcDec,CSJ2K.j2k.decoder.DecoderSpecs,System.Boolean,System.Boolean,System.Int32)">StdEntropyDecoder(CodedCBlkDataSrcDec, DecoderSpecs, Boolean, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a new entropy decoder engine, with the specified source of
+data, nominal block width and height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StdEntropyDecoder(CodedCBlkDataSrcDec src, DecoderSpecs decSpec, bool doer, bool verber, int mQuit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.decoder.CodedCBlkDataSrcDec.html">CodedCBlkDataSrcDec</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>The source of data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.decoder.DecoderSpecs.html">DecoderSpecs</a></td>
+        <td><span class="parametername">decSpec</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">doer</span></td>
+        <td><p>If true error detection will be performed, if any error
+detection features have been enabled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">verber</span></td>
+        <td><p>This flag indicates if the entropy decoder should be
+verbose about bit stream errors that are detected and concealed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mQuit</span></td>
+        <td><p>the maximum number of bit planes to decode according to
+the m quit condition</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_StdEntropyDecoder_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.StdEntropyDecoder.getCodeBlock(System.Int32%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.wavelet.synthesis.SubbandSyn%2CCSJ2K.j2k.image.DataBlk)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/StdEntropyDecoder.cs/#L582">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_StdEntropyDecoder_getCodeBlock_" data-uid="CSJ2K.j2k.entropy.decoder.StdEntropyDecoder.getCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_StdEntropyDecoder_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_" data-uid="CSJ2K.j2k.entropy.decoder.StdEntropyDecoder.getCodeBlock(System.Int32,System.Int32,System.Int32,CSJ2K.j2k.wavelet.synthesis.SubbandSyn,CSJ2K.j2k.image.DataBlk)">getCodeBlock(Int32, Int32, Int32, SubbandSyn, DataBlk)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataBlk getCodeBlock(int c, int m, int n, SubbandSyn sb, DataBlk cblk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">m</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td><span class="parametername">sb</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">cblk</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.decoder.EntropyDecoder.html#CSJ2K_j2k_entropy_decoder_EntropyDecoder_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_">EntropyDecoder.getCodeBlock(Int32, Int32, Int32, SubbandSyn, DataBlk)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_StdEntropyDecoder_getInternCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.StdEntropyDecoder.getInternCodeBlock(System.Int32%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.wavelet.synthesis.SubbandSyn%2CCSJ2K.j2k.image.DataBlk)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/StdEntropyDecoder.cs/#L853">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_StdEntropyDecoder_getInternCodeBlock_" data-uid="CSJ2K.j2k.entropy.decoder.StdEntropyDecoder.getInternCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_StdEntropyDecoder_getInternCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_" data-uid="CSJ2K.j2k.entropy.decoder.StdEntropyDecoder.getInternCodeBlock(System.Int32,System.Int32,System.Int32,CSJ2K.j2k.wavelet.synthesis.SubbandSyn,CSJ2K.j2k.image.DataBlk)">getInternCodeBlock(Int32, Int32, Int32, SubbandSyn, DataBlk)</h4>
+  <div class="markdown level1 summary"><p>Returns the specified code-block in the current tile for the specified
+component (as a reference or copy).</p>
+<p>The returned code-block may be progressive, which is indicated by
+the &apos;progressive&apos; variable of the returned &apos;DataBlk&apos; object. If a
+code-block is progressive it means that in a later request to this
+method for the same code-block it is possible to retrieve data which is
+a better approximation, since meanwhile more data to decode for the
+code-block could have been received. If the code-block is not
+progressive then later calls to this method for the same code-block
+will return the exact same data values.</p>
+<p>The data returned by this method can be the data in the internal
+buffer of this object, if any, and thus can not be modified by the
+caller. The &apos;offset&apos; and &apos;scanw&apos; of the returned data can be
+arbitrary. See the &apos;DataBlk&apos; class.</p>
+<p>The &apos;ulx&apos; and &apos;uly&apos; members of the returned &apos;DataBlk&apos; object contain
+the coordinates of the top-left corner of the block, with respect to
+the tile, not the subband.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataBlk getInternCodeBlock(int c, int m, int n, SubbandSyn sb, DataBlk cblk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component for which to return the next code-block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The vertical index of the code-block to return, in the
+specified subband.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The horizontal index of the code-block to return, in the
+specified subband.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td><span class="parametername">sb</span></td>
+        <td><p>The subband in which the code-block to return is.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">cblk</span></td>
+        <td><p>If non-null this object will be used to return the new
+code-block. If null a new one will be allocated and returned. If the
+&quot;data&quot; array of the object is non-null it will be reused, if possible,
+to return the data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><p>The next code-block in the current tile for component 'n', or
+null if all code-blocks for the current tile have been returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.decoder.EntropyDecoder.html#CSJ2K_j2k_entropy_decoder_EntropyDecoder_getInternCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_">EntropyDecoder.getInternCodeBlock(Int32, Int32, Int32, SubbandSyn, DataBlk)</a></div>
+  <h5 id="CSJ2K_j2k_entropy_decoder_StdEntropyDecoder_getInternCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></div>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec.html">CBlkQuantDataSrcDec</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTData.html">InvWTData</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_StdEntropyDecoder.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.StdEntropyDecoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/StdEntropyDecoder.cs/#L80" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

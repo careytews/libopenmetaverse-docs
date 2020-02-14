@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ByteInputBuffer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ByteInputBuffer
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer">
+  
+  
+  <h1 id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer" class="text-break">Class ByteInputBuffer
+  </h1>
+  <div class="markdown level0 summary"><p>This class provides a byte input facility from byte buffers. It is similar
+to the ByteArrayInputStream class, but adds the possibility to add data to
+the stream after the creation of the object.</p>
+<p>Unlike the ByteArrayInputStream this class is not thread safe (i.e. no
+two threads can use the same object at the same time, but different objects
+may be used in different threads).</p>
+<p>This class can modify the contents of the buffer given to the
+constructor, when the addByteArray() method is called.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ByteInputBuffer</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.entropy.decoder.html">CSJ2K.j2k.entropy.decoder</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ByteInputBuffer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_ByteInputBuffer__ctor_System_Byte___.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.ByteInputBuffer.%23ctor(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/ByteInputBuffer.cs/#L88">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer__ctor_" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer__ctor_System_Byte___" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.#ctor(System.Byte[])">ByteInputBuffer(Byte[])</h4>
+  <div class="markdown level1 summary"><p>Creates a new byte array input stream that reads data from the
+specified byte array. The byte array is not copied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ByteInputBuffer(byte[] buf)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buf</span></td>
+        <td><p>the input buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_ByteInputBuffer__ctor_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.ByteInputBuffer.%23ctor(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/ByteInputBuffer.cs/#L110">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer__ctor_" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer__ctor_System_Byte___System_Int32_System_Int32_" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.#ctor(System.Byte[],System.Int32,System.Int32)">ByteInputBuffer(Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a new byte array input stream that reads data from the
+specified byte array. Up to length characters are to be read from the
+byte array, starting at the indicated offset.</p>
+<p>The byte array is not copied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ByteInputBuffer(byte[] buf, int offset, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buf</span></td>
+        <td><p>the input buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>the offset in the buffer of the first byte to read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>the maximum number of bytes to read from the buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_ByteInputBuffer_addByteArray_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.ByteInputBuffer.addByteArray(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/ByteInputBuffer.cs/#L186">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer_addByteArray_" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.addByteArray*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer_addByteArray_System_Byte___System_Int32_System_Int32_" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.addByteArray(System.Byte[],System.Int32,System.Int32)">addByteArray(Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified data to the end of the byte array stream. This
+method modifies the byte array buffer. It can also discard the already
+read input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void addByteArray(byte[] data, int off, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data to add. The data is copied.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">off</span></td>
+        <td><p>The index, in data, of the first element to add to the
+stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td><p>The number of elements to add to the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_ByteInputBuffer_read.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.ByteInputBuffer.read%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/ByteInputBuffer.cs/#L264">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer_read_" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.read*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer_read" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.read">read()</h4>
+  <div class="markdown level1 summary"><p>Reads the next byte of data from this input stream. The value byte is
+returned as an int in the range 0 to 255. If no byte is available
+because the end of the stream has been reached, -1 is returned.</p>
+<p>This method is not synchronized, so it is not thread safe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int read()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The byte read in the range 0-255, or -1 if the end of stream
+has been reached.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_ByteInputBuffer_readChecked.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.ByteInputBuffer.readChecked%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/ByteInputBuffer.cs/#L241">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer_readChecked_" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.readChecked*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer_readChecked" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.readChecked">readChecked()</h4>
+  <div class="markdown level1 summary"><p>Reads the next byte of data from this input stream. The value byte is
+returned as an int in the range 0 to 255. If no byte is available
+because the end of the stream has been reached, the EOFException
+exception is thrown.</p>
+<p>This method is not synchronized, so it is not thread safe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int readChecked()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The byte read in the range 0-255.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_ByteInputBuffer_setByteArray_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.ByteInputBuffer.setByteArray(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/ByteInputBuffer.cs/#L137">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer_setByteArray_" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.setByteArray*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_ByteInputBuffer_setByteArray_System_Byte___System_Int32_System_Int32_" data-uid="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.setByteArray(System.Byte[],System.Int32,System.Int32)">setByteArray(Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the underlying buffer byte array to the given one, with the given
+offset and length. If 'buf' is null then the current byte buffer is
+assumed. If 'offset' is negative, then it will be assumed to be
+'off+len', where 'off' and 'len' are the offset and length of the
+current byte buffer.</p>
+<p>The byte array is not copied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void setByteArray(byte[] buf, int offset, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buf</span></td>
+        <td><p>the input buffer. If null it is the current input buffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>the offset in the buffer of the first byte to read. If
+negative it is assumed to be the byte just after the end of the current
+input buffer, only permitted if 'buf' is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>the maximum number of bytes to read frmo the buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_ByteInputBuffer.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.ByteInputBuffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/ByteInputBuffer.cs/#L65" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

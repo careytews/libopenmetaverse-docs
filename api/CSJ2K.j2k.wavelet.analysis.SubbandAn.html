@@ -1,0 +1,936 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SubbandAn
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SubbandAn
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn">
+  
+  
+  <h1 id="CSJ2K_j2k_wavelet_analysis_SubbandAn" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn" class="text-break">Class SubbandAn
+  </h1>
+  <div class="markdown level0 summary"><p>This class represents a subband in a bidirectional tree structure that
+describes the subband decomposition for a wavelet transform, specifically
+for the analysis side.</p>
+<p>The element can be either a node or a leaf of the tree. If it is a node
+then ther are 4 descendants (LL, HL, LH and HH). If it is a leaf there are
+no descendants.</p>
+<p>The tree is bidirectional. Each element in the tree structure has a
+&quot;parent&quot;, which is the subband from which the element was obtained by
+decomposition. The only exception is the root element which has no parent
+(i.e.it&apos;s null), for obvious reasons.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html">Subband</a></div>
+    <div class="level2"><span class="xref">SubbandAn</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_NextResLevel">Subband.NextResLevel</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_WT_ORIENT_LL">Subband.WT_ORIENT_LL</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_WT_ORIENT_HL">Subband.WT_ORIENT_HL</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_WT_ORIENT_LH">Subband.WT_ORIENT_LH</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_WT_ORIENT_HH">Subband.WT_ORIENT_HH</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_isNode">Subband.isNode</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_orientation">Subband.orientation</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_level">Subband.level</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_resLvl">Subband.resLvl</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_numCb">Subband.numCb</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_anGainExp">Subband.anGainExp</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_sbandIdx">Subband.sbandIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_ulcx">Subband.ulcx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_ulcy">Subband.ulcy</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_ulx">Subband.ulx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_uly">Subband.uly</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_w">Subband.w</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_h">Subband.h</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_nomCBlkW">Subband.nomCBlkW</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_nomCBlkH">Subband.nomCBlkH</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_initChilds">Subband.initChilds()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_nextSubband">Subband.nextSubband()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_getSubbandByIdx_System_Int32_System_Int32_">Subband.getSubbandByIdx(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_getSubband_System_Int32_System_Int32_">Subband.getSubband(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_ToString">Subband.ToString()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.wavelet.analysis.html">CSJ2K.j2k.wavelet.analysis</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SubbandAn : Subband</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn__ctor.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L227">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_SubbandAn__ctor_" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn__ctor" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.#ctor">SubbandAn()</h4>
+  <div class="markdown level1 summary"><p>Creates a SubbandAn element with all the default values. The dimensions
+are (0,0) and the upper left corner is (0,0).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubbandAn()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_WaveletFilter___CSJ2K_j2k_wavelet_WaveletFilter___.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.wavelet.WaveletFilter%5B%5D%2CCSJ2K.j2k.wavelet.WaveletFilter%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L275">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_SubbandAn__ctor_" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_WaveletFilter___CSJ2K_j2k_wavelet_WaveletFilter___" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,CSJ2K.j2k.wavelet.WaveletFilter[],CSJ2K.j2k.wavelet.WaveletFilter[])">SubbandAn(Int32, Int32, Int32, Int32, Int32, WaveletFilter[], WaveletFilter[])</h4>
+  <div class="markdown level1 summary"><p>Creates the top-level node and the entire subband tree, with the
+top-level dimensions, the number of decompositions, and the
+decomposition tree as specified.</p>
+<p>This constructor just calls the same constructor of the super class,
+and then calculates the L2-norm (or energy weight) of each leaf.</p>
+<p>This constructor does not initialize the value of the magBits or
+stepWMSE member variables. This variables are normally initialized by
+the quantizer (see Quantizer).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubbandAn(int w, int h, int ulcx, int ulcy, int lvls, WaveletFilter[] hfilters, WaveletFilter[] vfilters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The top-level width</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">h</span></td>
+        <td><p>The top-level height</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ulcx</span></td>
+        <td><p>The horizontal coordinate of the upper-left corner with
+respect to the canvas origin, in the component grid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ulcy</span></td>
+        <td><p>The vertical coordinate of the upper-left corner with
+respect to the canvas origin, in the component grid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lvls</span></td>
+        <td><p>The number of levels (or LL decompositions) in the tree.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.WaveletFilter.html">WaveletFilter</a>[]</td>
+        <td><span class="parametername">hfilters</span></td>
+        <td><p>The horizontal wavelet analysis filters for each
+resolution level, starting at resolution level 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.WaveletFilter.html">WaveletFilter</a>[]</td>
+        <td><span class="parametername">vfilters</span></td>
+        <td><p>The vertical wavelet analysis filters for each
+resolution level, starting at resolution level 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_hFilter.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.hFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L197">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_hFilter" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.hFilter">hFilter</h4>
+  <div class="markdown level1 summary"><p>The horizontal analysis filter used to decompose this subband. This is
+applicable to &quot;node&quot; elements only. The default value is null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnWTFilter hFilter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html">AnWTFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_l2Norm.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.l2Norm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L209">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_l2Norm" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.l2Norm">l2Norm</h4>
+  <div class="markdown level1 summary"><p>The L2-norm of the synthesis basis waveform of this subband,
+applicable to &quot;leafs&quot; only. By default it is -1 (i.e. not calculated
+yet).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float l2Norm</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_parentband.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.parentband%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L171">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_parentband" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.parentband">parentband</h4>
+  <div class="markdown level1 summary"><p>The reference to the parent of this subband. It is null for the root
+element. It is null by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubbandAn parentband</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html">SubbandAn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_stepWMSE.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.stepWMSE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L221">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_stepWMSE" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.stepWMSE">stepWMSE</h4>
+  <div class="markdown level1 summary"><p>The contribution to the MSE or WMSE error that would result in the
+image if there was an error of exactly one quantization step size in
+the sample of the subband. This value is expressed relative to a
+nominal dynamic range in the image domain of exactly 1.0. This field
+contains valid data only after quantization 9See Quantizer).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float stepWMSE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_subb_HH.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.subb_HH%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L192">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_subb_HH" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.subb_HH">subb_HH</h4>
+  <div class="markdown level1 summary"><p>The reference to the HH subband resulting from the decomposition of
+this subband. It is null by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubbandAn subb_HH</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html">SubbandAn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_subb_HL.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.subb_HL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L181">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_subb_HL" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.subb_HL">subb_HL</h4>
+  <div class="markdown level1 summary"><p>The reference to the HL subband (horizontal high-pass) resulting from
+the decomposition of this subband. It is null by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubbandAn subb_HL</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html">SubbandAn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_subb_LH.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.subb_LH%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L187">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_subb_LH" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.subb_LH">subb_LH</h4>
+  <div class="markdown level1 summary"><p>The reference to the LH subband (vertical high-pass) resulting from
+the decomposition of this subband. It is null by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubbandAn subb_LH</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html">SubbandAn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_subb_LL.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.subb_LL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L176">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_subb_LL" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.subb_LL">subb_LL</h4>
+  <div class="markdown level1 summary"><p>The reference to the LL subband resulting from the decomposition of
+this subband. It is null by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubbandAn subb_LL</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html">SubbandAn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_vFilter.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.vFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L202">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_vFilter" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.vFilter">vFilter</h4>
+  <div class="markdown level1 summary"><p>The vertical analysis filter used to decompose this subband. This is
+applicable to &quot;node&quot; elements only. The default value is null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnWTFilter vFilter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html">AnWTFilter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_HH.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.HH%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L129">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_SubbandAn_HH_" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.HH*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_HH" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.HH">HH</h4>
+  <div class="markdown level1 summary"><p>Returns the HH child subband of this subband.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Subband HH { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html">Subband</a></td>
+        <td><p>The HH child subband, or null if there are no childs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_HH">Subband.HH</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_HL.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.HL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L101">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_SubbandAn_HL_" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.HL*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_HL" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.HL">HL</h4>
+  <div class="markdown level1 summary"><p>Returns the HL (horizontal high-pass) child subband of this subband.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Subband HL { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html">Subband</a></td>
+        <td><p>The HL child subband, or null if there are no childs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_HL">Subband.HL</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_HorWFilter.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.HorWFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L144">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_SubbandAn_HorWFilter_" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.HorWFilter*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_HorWFilter" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.HorWFilter">HorWFilter</h4>
+  <div class="markdown level1 summary"><p>This function returns the horizontal wavelet filter relevant to this
+subband</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override WaveletFilter HorWFilter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.WaveletFilter.html">WaveletFilter</a></td>
+        <td><p>The horizontal wavelet filter</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_HorWFilter">Subband.HorWFilter</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_LH.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.LH%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L115">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_SubbandAn_LH_" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.LH*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_LH" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.LH">LH</h4>
+  <div class="markdown level1 summary"><p>Returns the LH (vertical high-pass) child subband of this subband.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Subband LH { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html">Subband</a></td>
+        <td><p>The LH child subband, or null if there are no childs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_LH">Subband.LH</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_LL.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.LL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L87">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_SubbandAn_LL_" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.LL*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_LL" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.LL">LL</h4>
+  <div class="markdown level1 summary"><p>Returns the LL child subband of this subband.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Subband LL { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html">Subband</a></td>
+        <td><p>The LL child subband, or null if there are no childs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_LL">Subband.LL</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_Parent.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.Parent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L73">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_SubbandAn_Parent_" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.Parent*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_Parent" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>Returns the parent of this subband. The parent of a subband is the
+subband from which this one was obtained by decomposition. The root
+element has no parent subband (null).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Subband Parent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html">Subband</a></td>
+        <td><p>The parent subband, or null for the root one.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_Parent">Subband.Parent</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_VerWFilter.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.VerWFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L159">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_SubbandAn_VerWFilter_" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.VerWFilter*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_VerWFilter" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.VerWFilter">VerWFilter</h4>
+  <div class="markdown level1 summary"><p>This function returns the vertical wavelet filter relevant to this
+subband</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override WaveletFilter VerWFilter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.WaveletFilter.html">WaveletFilter</a></td>
+        <td><p>The vertical wavelet filter</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_VerWFilter">Subband.VerWFilter</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn_split_CSJ2K_j2k_wavelet_WaveletFilter_CSJ2K_j2k_wavelet_WaveletFilter_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn.split(CSJ2K.j2k.wavelet.WaveletFilter%2CCSJ2K.j2k.wavelet.WaveletFilter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L303">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_SubbandAn_split_" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.split*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_split_CSJ2K_j2k_wavelet_WaveletFilter_CSJ2K_j2k_wavelet_WaveletFilter_" data-uid="CSJ2K.j2k.wavelet.analysis.SubbandAn.split(CSJ2K.j2k.wavelet.WaveletFilter,CSJ2K.j2k.wavelet.WaveletFilter)">split(WaveletFilter, WaveletFilter)</h4>
+  <div class="markdown level1 summary"><p>Splits the current subband in its four subbands. It changes the status
+of this element (from a leaf to a node, and sets the filters), creates
+the childs and initializes them. An IllegalArgumentException is thrown
+if this subband is not a leaf.</p>
+<p>It uses the initChilds() method to initialize the childs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Subband split(WaveletFilter hfilter, WaveletFilter vfilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.WaveletFilter.html">WaveletFilter</a></td>
+        <td><span class="parametername">hfilter</span></td>
+        <td><p>The horizontal wavelet filter used to decompose this
+subband. It has to be a AnWTFilter object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.WaveletFilter.html">WaveletFilter</a></td>
+        <td><span class="parametername">vfilter</span></td>
+        <td><p>The vertical wavelet filter used to decompose this
+subband. It has to be a AnWTFilter object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html">Subband</a></td>
+        <td><p>A reference to the LL leaf (subb_LL).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_split_CSJ2K_j2k_wavelet_WaveletFilter_CSJ2K_j2k_wavelet_WaveletFilter_">Subband.split(WaveletFilter, WaveletFilter)</a></div>
+  <h5 id="CSJ2K_j2k_wavelet_analysis_SubbandAn_split_CSJ2K_j2k_wavelet_WaveletFilter_CSJ2K_j2k_wavelet_WaveletFilter__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html#CSJ2K_j2k_wavelet_Subband_initChilds">initChilds</a>()</div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_SubbandAn.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.SubbandAn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/SubbandAn.cs/#L63" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

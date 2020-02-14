@@ -1,0 +1,1221 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct UUID
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct UUID
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.UUID">
+  
+  
+  <h1 id="OpenMetaverse_UUID" data-uid="OpenMetaverse.UUID" class="text-break">Struct UUID
+  </h1>
+  <div class="markdown level0 summary"><p>A 128-bit Universally Unique Identifier, used throughout the Second
+Life networking protocol</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverseTypes.dll</h6>
+  <h5 id="OpenMetaverse_UUID_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct UUID : IComparable&lt;UUID&gt;, IEquatable&lt;UUID&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID__ctor_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.%23ctor(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L96">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID__ctor_" data-uid="OpenMetaverse.UUID.#ctor*"></a>
+  <h4 id="OpenMetaverse_UUID__ctor_OpenMetaverse_UUID_" data-uid="OpenMetaverse.UUID.#ctor(OpenMetaverse.UUID)">UUID(UUID)</h4>
+  <div class="markdown level1 summary"><p>Copy constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID(UUID val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>UUID to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID__ctor_System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.%23ctor(System.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L72">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID__ctor_" data-uid="OpenMetaverse.UUID.#ctor*"></a>
+  <h4 id="OpenMetaverse_UUID__ctor_System_Byte___System_Int32_" data-uid="OpenMetaverse.UUID.#ctor(System.Byte[],System.Int32)">UUID(Byte[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructor that takes a byte array containing a UUID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID(byte[] source, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Byte array containing a 16 byte UUID</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>Beginning offset in the array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID__ctor_System_Guid_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.%23ctor(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L62">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID__ctor_" data-uid="OpenMetaverse.UUID.#ctor*"></a>
+  <h4 id="OpenMetaverse_UUID__ctor_System_Guid_" data-uid="OpenMetaverse.UUID.#ctor(System.Guid)">UUID(Guid)</h4>
+  <div class="markdown level1 summary"><p>Constructor that takes a System.Guid object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID(Guid val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>A Guid object that contains the unique identifier
+to be represented by this UUID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID__ctor_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L49">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID__ctor_" data-uid="OpenMetaverse.UUID.#ctor*"></a>
+  <h4 id="OpenMetaverse_UUID__ctor_System_String_" data-uid="OpenMetaverse.UUID.#ctor(System.String)">UUID(String)</h4>
+  <div class="markdown level1 summary"><p>Constructor that takes a string UUID representation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID(string val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>A string representation of a UUID, case
+insensitive and can either be hyphenated or non-hyphenated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_UUID__ctor_System_String__examples">Examples</h5>
+  <p>UUID(&quot;11f8aa9c-b071-4242-836b-13b7abe0d489&quot;)</p>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID__ctor_System_UInt64_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.%23ctor(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L83">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID__ctor_" data-uid="OpenMetaverse.UUID.#ctor*"></a>
+  <h4 id="OpenMetaverse_UUID__ctor_System_UInt64_" data-uid="OpenMetaverse.UUID.#ctor(System.UInt64)">UUID(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Constructor that takes an unsigned 64-bit unsigned integer to
+convert to a UUID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID(ulong val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>64-bit unsigned integer to convert to a UUID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_Guid.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.Guid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L39">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_UUID_Guid" data-uid="OpenMetaverse.UUID.Guid">Guid</h4>
+  <div class="markdown level1 summary"><p>The System.Guid object this struct wraps around</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid Guid</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_Zero.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.Zero%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L377">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_UUID_Zero" data-uid="OpenMetaverse.UUID.Zero">Zero</h4>
+  <div class="markdown level1 summary"><p>An UUID with a value of all zeroes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly UUID Zero</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_Combine_OpenMetaverse_UUID_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.Combine(OpenMetaverse.UUID%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L248">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_Combine_" data-uid="OpenMetaverse.UUID.Combine*"></a>
+  <h4 id="OpenMetaverse_UUID_Combine_OpenMetaverse_UUID_OpenMetaverse_UUID_" data-uid="OpenMetaverse.UUID.Combine(OpenMetaverse.UUID,OpenMetaverse.UUID)">Combine(UUID, UUID)</h4>
+  <div class="markdown level1 summary"><p>Combine two UUIDs together by taking the MD5 hash of a byte array
+containing both UUIDs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UUID Combine(UUID first, UUID second)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">first</span></td>
+        <td><p>First UUID to combine</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">second</span></td>
+        <td><p>Second UUID to combine</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>The UUID product of the combination</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_CompareTo_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.CompareTo(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L108">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_CompareTo_" data-uid="OpenMetaverse.UUID.CompareTo*"></a>
+  <h4 id="OpenMetaverse_UUID_CompareTo_OpenMetaverse_UUID_" data-uid="OpenMetaverse.UUID.CompareTo(OpenMetaverse.UUID)">CompareTo(UUID)</h4>
+  <div class="markdown level1 summary"><p>IComparable.CompareTo implementation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(UUID id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_CRC.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.CRC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L163">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_CRC_" data-uid="OpenMetaverse.UUID.CRC*"></a>
+  <h4 id="OpenMetaverse_UUID_CRC" data-uid="OpenMetaverse.UUID.CRC">CRC()</h4>
+  <div class="markdown level1 summary"><p>Calculate an LLCRC (cyclic redundancy check) for this UUID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint CRC()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>The CRC checksum for this UUID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_Equals_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.Equals(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L298">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_Equals_" data-uid="OpenMetaverse.UUID.Equals*"></a>
+  <h4 id="OpenMetaverse_UUID_Equals_OpenMetaverse_UUID_" data-uid="OpenMetaverse.UUID.Equals(OpenMetaverse.UUID)">Equals(UUID)</h4>
+  <div class="markdown level1 summary"><p>Comparison function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(UUID uuid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">uuid</span></td>
+        <td><p>UUID to compare to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the UUIDs are equal, otherwise false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L285">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_Equals_" data-uid="OpenMetaverse.UUID.Equals*"></a>
+  <h4 id="OpenMetaverse_UUID_Equals_System_Object_" data-uid="OpenMetaverse.UUID.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Comparison function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object o)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">o</span></td>
+        <td><p>An object to compare to this UUID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the object is a UUID and both UUIDs are equal</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_FromBytes_System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.FromBytes(System.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L118">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_FromBytes_" data-uid="OpenMetaverse.UUID.FromBytes*"></a>
+  <h4 id="OpenMetaverse_UUID_FromBytes_System_Byte___System_Int32_" data-uid="OpenMetaverse.UUID.FromBytes(System.Byte[],System.Int32)">FromBytes(Byte[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Assigns this UUID from 16 bytes out of a byte array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FromBytes(byte[] source, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Byte array containing the UUID to assign this UUID to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>Starting position of the UUID in the byte array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_GetBytes.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.GetBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L132">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_GetBytes_" data-uid="OpenMetaverse.UUID.GetBytes*"></a>
+  <h4 id="OpenMetaverse_UUID_GetBytes" data-uid="OpenMetaverse.UUID.GetBytes">GetBytes()</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the raw bytes for this UUID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetBytes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>A 16 byte array containing this UUID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_GetHashCode.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L275">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_GetHashCode_" data-uid="OpenMetaverse.UUID.GetHashCode*"></a>
+  <h4 id="OpenMetaverse_UUID_GetHashCode" data-uid="OpenMetaverse.UUID.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Return a hash code for this UUID, used by .NET for hash tables</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>An integer composed of all the UUID bytes XORed together</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_GetULong.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.GetULong%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L180">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_GetULong_" data-uid="OpenMetaverse.UUID.GetULong*"></a>
+  <h4 id="OpenMetaverse_UUID_GetULong" data-uid="OpenMetaverse.UUID.GetULong">GetULong()</h4>
+  <div class="markdown level1 summary"><p>Create a 64-bit integer representation from the second half of this UUID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong GetULong()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><p>An integer created from the last eight bytes of this UUID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_Parse_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L205">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_Parse_" data-uid="OpenMetaverse.UUID.Parse*"></a>
+  <h4 id="OpenMetaverse_UUID_Parse_System_String_" data-uid="OpenMetaverse.UUID.Parse(System.String)">Parse(String)</h4>
+  <div class="markdown level1 summary"><p>Generate a UUID from a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UUID Parse(string val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>A string representation of a UUID, case
+insensitive and can either be hyphenated or non-hyphenated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_UUID_Parse_System_String__examples">Examples</h5>
+  <p>UUID.Parse(&quot;11f8aa9c-b071-4242-836b-13b7abe0d489&quot;)</p>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_Random.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.Random%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L262">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_Random_" data-uid="OpenMetaverse.UUID.Random*"></a>
+  <h4 id="OpenMetaverse_UUID_Random" data-uid="OpenMetaverse.UUID.Random">Random()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UUID Random()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_ToBytes_System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.ToBytes(System.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L145">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_ToBytes_" data-uid="OpenMetaverse.UUID.ToBytes*"></a>
+  <h4 id="OpenMetaverse_UUID_ToBytes_System_Byte___System_Int32_" data-uid="OpenMetaverse.UUID.ToBytes(System.Byte[],System.Int32)">ToBytes(Byte[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes the raw bytes for this UUID to a byte array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToBytes(byte[] dest, int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">dest</span></td>
+        <td><p>Destination byte array</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>Position in the destination array to start
+writing. Must be at least 16 bytes before the end of the array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_ToString.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L309">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_ToString_" data-uid="OpenMetaverse.UUID.ToString*"></a>
+  <h4 id="OpenMetaverse_UUID_ToString" data-uid="OpenMetaverse.UUID.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Get a hyphenated string representation of this UUID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string representation of this UUID, lowercase and
+with hyphens</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
+  <h5 id="OpenMetaverse_UUID_ToString_examples">Examples</h5>
+  <p>11f8aa9c-b071-4242-836b-13b7abe0d489</p>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_TryParse_System_String_OpenMetaverse_UUID__.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.TryParse(System.String%2COpenMetaverse.UUID%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L219">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_TryParse_" data-uid="OpenMetaverse.UUID.TryParse*"></a>
+  <h4 id="OpenMetaverse_UUID_TryParse_System_String_OpenMetaverse_UUID__" data-uid="OpenMetaverse.UUID.TryParse(System.String,OpenMetaverse.UUID@)">TryParse(String, out UUID)</h4>
+  <div class="markdown level1 summary"><p>Generate a UUID from a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string val, out UUID result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>A string representation of a UUID, case
+insensitive and can either be hyphenated or non-hyphenated</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>Will contain the parsed UUID if successful,
+otherwise null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the string was successfully parse, otherwise false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_UUID_TryParse_System_String_OpenMetaverse_UUID___examples">Examples</h5>
+  <p>UUID.TryParse(&quot;11f8aa9c-b071-4242-836b-13b7abe0d489&quot;, result)</p>
+
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_op_Equality_OpenMetaverse_UUID_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.op_Equality(OpenMetaverse.UUID%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L327">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_op_Equality_" data-uid="OpenMetaverse.UUID.op_Equality*"></a>
+  <h4 id="OpenMetaverse_UUID_op_Equality_OpenMetaverse_UUID_OpenMetaverse_UUID_" data-uid="OpenMetaverse.UUID.op_Equality(OpenMetaverse.UUID,OpenMetaverse.UUID)">Equality(UUID, UUID)</h4>
+  <div class="markdown level1 summary"><p>Equals operator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(UUID lhs, UUID rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>First UUID for comparison</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>Second UUID for comparison</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the UUIDs are byte for byte equal, otherwise false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_op_ExclusiveOr_OpenMetaverse_UUID_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.op_ExclusiveOr(OpenMetaverse.UUID%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L349">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_op_ExclusiveOr_" data-uid="OpenMetaverse.UUID.op_ExclusiveOr*"></a>
+  <h4 id="OpenMetaverse_UUID_op_ExclusiveOr_OpenMetaverse_UUID_OpenMetaverse_UUID_" data-uid="OpenMetaverse.UUID.op_ExclusiveOr(OpenMetaverse.UUID,OpenMetaverse.UUID)">ExclusiveOr(UUID, UUID)</h4>
+  <div class="markdown level1 summary"><p>XOR operator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UUID operator ^(UUID lhs, UUID rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>First UUID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>Second UUID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>A UUID that is a XOR combination of the two input UUIDs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_op_Explicit_System_String__OpenMetaverse_UUID.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.op_Explicit(System.String)~OpenMetaverse.UUID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L369">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_op_Explicit_" data-uid="OpenMetaverse.UUID.op_Explicit*"></a>
+  <h4 id="OpenMetaverse_UUID_op_Explicit_System_String__OpenMetaverse_UUID" data-uid="OpenMetaverse.UUID.op_Explicit(System.String)~OpenMetaverse.UUID">Explicit(String to UUID)</h4>
+  <div class="markdown level1 summary"><p>String typecasting operator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator UUID(string val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>A UUID in string form. Case insensitive,
+hyphenated or non-hyphenated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>A UUID built from the string representation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID_op_Inequality_OpenMetaverse_UUID_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID.op_Inequality(OpenMetaverse.UUID%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L338">View Source</a>
+  </span>
+  <a id="OpenMetaverse_UUID_op_Inequality_" data-uid="OpenMetaverse.UUID.op_Inequality*"></a>
+  <h4 id="OpenMetaverse_UUID_op_Inequality_OpenMetaverse_UUID_OpenMetaverse_UUID_" data-uid="OpenMetaverse.UUID.op_Inequality(OpenMetaverse.UUID,OpenMetaverse.UUID)">Inequality(UUID, UUID)</h4>
+  <div class="markdown level1 summary"><p>Not equals operator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(UUID lhs, UUID rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">lhs</span></td>
+        <td><p>First UUID for comparison</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td><p>Second UUID for comparison</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the UUIDs are not equal, otherwise true</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IComparable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_UUID.md&amp;value=---%0Auid%3A%20OpenMetaverse.UUID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/UUID.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

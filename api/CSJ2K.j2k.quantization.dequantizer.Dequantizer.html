@@ -1,0 +1,886 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Dequantizer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Dequantizer
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer">
+  
+  
+  <h1 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer" class="text-break">Class Dequantizer
+  </h1>
+  <div class="markdown level0 summary"><p>This is the abstract class from which all dequantizers must inherit. This
+class has the concept of a current tile and all operations are performed on
+the current tile.</p>
+<p>This class provides default implemenations for most of the methods
+(wherever it makes sense), under the assumption that the image and
+component dimensions, and the tiles, are not modifed by the dequantizer. If
+that is not the case for a particular implementation then the methods
+should be overriden.</p>
+<p>Sign magnitude representation is used (instead of two&apos;s complement) for
+the input data. The most significant bit is used for the sign (0 if
+positive, 1 if negative). Then the magnitude of the quantized coefficient
+is stored in the next most significat bits. The most significant magnitude
+bit corresponds to the most significant bit-plane and so on.</p>
+<p>The output data is either in floating-point, or in fixed-point two&apos;s
+complement. In case of floating-point data the the value returned by
+getFixedPoint() must be 0. If the case of fixed-point data the number of
+fractional bits must be defined at the constructor of the implementing
+class and all operations must be performed accordingly. Each component may
+have a different number of fractional bits.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html">MultiResImgDataAdapter</a></div>
+    <div class="level2"><span class="xref">Dequantizer</span></div>
+      <div class="level3"><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.StdDequantizer.html">StdDequantizer</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.CBlkWTDataSrcDec.html">CBlkWTDataSrcDec</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTData.html">InvWTData</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileWidth">MultiResImgDataAdapter.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileHeight">MultiResImgDataAdapter.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NumComps">MultiResImgDataAdapter.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TileIdx">MultiResImgDataAdapter.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULX">MultiResImgDataAdapter.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULY">MultiResImgDataAdapter.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_tIdx">MultiResImgDataAdapter.tIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_mressrc">MultiResImgDataAdapter.mressrc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileWidth_System_Int32_">MultiResImgDataAdapter.getTileWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileHeight_System_Int32_">MultiResImgDataAdapter.getTileHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgWidth_System_Int32_">MultiResImgDataAdapter.getImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgHeight_System_Int32_">MultiResImgDataAdapter.getImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsX_System_Int32_">MultiResImgDataAdapter.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsY_System_Int32_">MultiResImgDataAdapter.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_System_Int32_">MultiResImgDataAdapter.getTileCompWidth(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_System_Int32_">MultiResImgDataAdapter.getTileCompHeight(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgWidth_System_Int32_System_Int32_">MultiResImgDataAdapter.getCompImgWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgHeight_System_Int32_System_Int32_">MultiResImgDataAdapter.getCompImgHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_">MultiResImgDataAdapter.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULX_System_Int32_System_Int32_">MultiResImgDataAdapter.getResULX(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULY_System_Int32_System_Int32_">MultiResImgDataAdapter.getResULY(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULX_System_Int32_">MultiResImgDataAdapter.getImgULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULY_System_Int32_">MultiResImgDataAdapter.getImgULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_">MultiResImgDataAdapter.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles">MultiResImgDataAdapter.getNumTiles()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.quantization.dequantizer.html">CSJ2K.j2k.quantization.dequantizer</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Dequantizer : MultiResImgDataAdapter, CBlkWTDataSrcDec, InvWTData, MultiResImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer__ctor_CSJ2K_j2k_quantization_dequantizer_CBlkQuantDataSrcDec_System_Int32___CSJ2K_j2k_decoder_DecoderSpecs_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.%23ctor(CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec%2CSystem.Int32%5B%5D%2CCSJ2K.j2k.decoder.DecoderSpecs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L171">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_dequantizer_Dequantizer__ctor_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer__ctor_CSJ2K_j2k_quantization_dequantizer_CBlkQuantDataSrcDec_System_Int32___CSJ2K_j2k_decoder_DecoderSpecs_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.#ctor(CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec,System.Int32[],CSJ2K.j2k.decoder.DecoderSpecs)">Dequantizer(CBlkQuantDataSrcDec, Int32[], DecoderSpecs)</h4>
+  <div class="markdown level1 summary"><p>Initializes the source of compressed data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dequantizer(CBlkQuantDataSrcDec src, int[] utrb, DecoderSpecs decSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec.html">CBlkQuantDataSrcDec</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>From where to obtain the quantized data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">utrb</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.decoder.DecoderSpecs.html">DecoderSpecs</a></td>
+        <td><span class="parametername">decSpec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer__ctor_CSJ2K_j2k_quantization_dequantizer_CBlkQuantDataSrcDec_System_Int32___CSJ2K_j2k_decoder_DecoderSpecs__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.Dequantizer.html#CSJ2K_j2k_quantization_dequantizer_Dequantizer_getNomRangeBits_System_Int32_">getNomRangeBits(Int32)</a></div>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_OPT_PREFIX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.OPT_PREFIX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L132">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_OPT_PREFIX" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.OPT_PREFIX">OPT_PREFIX</h4>
+  <div class="markdown level1 summary"><p>The prefix for dequantizer options: 'Q'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const char OPT_PREFIX = 'Q'</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_rb.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.rb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L146">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_rb" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.rb">rb</h4>
+  <div class="markdown level1 summary"><p>The &quot;range bits&quot; for each transformed component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] rb</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_src.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.src%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L143">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_src" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.src">src</h4>
+  <div class="markdown level1 summary"><p>The entropy decoder from where to get the quantized data (the
+source).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CBlkQuantDataSrcDec src</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec.html">CBlkQuantDataSrcDec</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_utrb.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.utrb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L149">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_utrb" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.utrb">utrb</h4>
+  <div class="markdown level1 summary"><p>The &quot;range bits&quot; for each un-transformed component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] utrb</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_CbULX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.CbULX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L87">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_CbULX_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.CbULX*"></a>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_CbULX" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.CbULX">CbULX</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal code-block partition origin. Allowable values
+are 0 and 1, nothing else.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CbULX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_CbULY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.CbULY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L99">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_CbULY_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.CbULY*"></a>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_CbULY" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.CbULY">CbULY</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical code-block partition origin. Allowable values are
+0 and 1, nothing else.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CbULY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_ParameterInfo.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.ParameterInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L122">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_ParameterInfo_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.ParameterInfo*"></a>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_ParameterInfo" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.ParameterInfo">ParameterInfo</h4>
+  <div class="markdown level1 summary"><p>Returns the parameters that are used in this class and
+implementing classes. It returns a 2D String array. Each of the
+1D arrays is for a different option, and they have 3
+elements. The first element is the option name, the second one
+is the synopsis and the third one is a long description of what
+the parameter is. The synopsis or description may be 'null', in
+which case it is assumed that there is no synopsis or
+description of the option, respectively. Null may be returned
+if no options are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[][] ParameterInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[][]</td>
+        <td><p>the options name, their synopsis and their explanation,
+or null if no options are supported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.getCodeBlock(System.Int32%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.wavelet.synthesis.SubbandSyn%2CCSJ2K.j2k.image.DataBlk)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L341">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_getCodeBlock_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.getCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.getCodeBlock(System.Int32,System.Int32,System.Int32,CSJ2K.j2k.wavelet.synthesis.SubbandSyn,CSJ2K.j2k.image.DataBlk)">getCodeBlock(Int32, Int32, Int32, SubbandSyn, DataBlk)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DataBlk getCodeBlock(int param1, int param2, int param3, SubbandSyn param4, DataBlk param5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td><span class="parametername">param4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">param5</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_getFixedPoint_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.getFixedPoint(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L342">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_getFixedPoint_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.getFixedPoint*"></a>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_getFixedPoint_System_Int32_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.getFixedPoint(System.Int32)">getFixedPoint(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int getFixedPoint(int param1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_getInternCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.getInternCodeBlock(System.Int32%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.wavelet.synthesis.SubbandSyn%2CCSJ2K.j2k.image.DataBlk)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L343">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_getInternCodeBlock_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.getInternCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_getInternCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.getInternCodeBlock(System.Int32,System.Int32,System.Int32,CSJ2K.j2k.wavelet.synthesis.SubbandSyn,CSJ2K.j2k.image.DataBlk)">getInternCodeBlock(Int32, Int32, Int32, SubbandSyn, DataBlk)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DataBlk getInternCodeBlock(int param1, int param2, int param3, SubbandSyn param4, DataBlk param5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td><span class="parametername">param4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">param5</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_getNomRangeBits_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.getNomRangeBits(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L210">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_getNomRangeBits_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.getNomRangeBits*"></a>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_getNomRangeBits_System_Int32_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.getNomRangeBits(System.Int32)">getNomRangeBits(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getNomRangeBits(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_getSynSubbandTree_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.getSynSubbandTree(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L234">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_getSynSubbandTree_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.getSynSubbandTree*"></a>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_getSynSubbandTree_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.getSynSubbandTree(System.Int32,System.Int32)">getSynSubbandTree(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SubbandSyn getSynSubbandTree(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getSynSubbandTree_System_Int32_System_Int32_">MultiResImgDataAdapter.getSynSubbandTree(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_nextTile.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.nextTile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L314">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_nextTile_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.nextTile*"></a>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_nextTile" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.nextTile">nextTile()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void nextTile()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_nextTile">MultiResImgDataAdapter.nextTile()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer_setTile_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer.setTile(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L253">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_setTile_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.setTile*"></a>
+  <h4 id="CSJ2K_j2k_quantization_dequantizer_Dequantizer_setTile_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.quantization.dequantizer.Dequantizer.setTile(System.Int32,System.Int32)">setTile(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void setTile(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_setTile_System_Int32_System_Int32_">MultiResImgDataAdapter.setTile(Int32, Int32)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.CBlkWTDataSrcDec.html">CBlkWTDataSrcDec</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTData.html">InvWTData</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_dequantizer_Dequantizer.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.dequantizer.Dequantizer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/dequantizer/Dequantizer.cs/#L81" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

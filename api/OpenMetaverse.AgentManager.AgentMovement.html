@@ -1,0 +1,1867 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AgentManager.AgentMovement
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AgentManager.AgentMovement
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.AgentManager.AgentMovement">
+  
+  
+  <h1 id="OpenMetaverse_AgentManager_AgentMovement" data-uid="OpenMetaverse.AgentManager.AgentMovement" class="text-break">Class AgentManager.AgentMovement
+  </h1>
+  <div class="markdown level0 summary"><p>Agent movement and camera control</p>
+<p>Agent movement is controlled by setting specific <span class="xref">AgentManager.ControlFlags</span>
+After the control flags are set, An AgentUpdate is required to update the simulator of the specified flags
+This is most easily accomplished by setting one or more of the AgentMovement properties</p>
+<p>Movement of an avatar is always based on a compass direction, for example AtPos will move the
+agent from West to East or forward on the X Axis, AtNeg will of course move agent from
+East to West or backward on the X Axis, LeftPos will be South to North or forward on the Y Axis
+The Z axis is Up, finer grained control of movements can be done using the Nudge properties</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AgentManager.AgentMovement</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_AgentManager_AgentMovement_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AgentMovement</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement__ctor_OpenMetaverse_GridClient_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.%23ctor(OpenMetaverse.GridClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L472">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement__ctor_" data-uid="OpenMetaverse.AgentManager.AgentMovement.#ctor*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement__ctor_OpenMetaverse_GridClient_" data-uid="OpenMetaverse.AgentManager.AgentMovement.#ctor(OpenMetaverse.GridClient)">AgentMovement(GridClient)</h4>
+  <div class="markdown level1 summary"><p>Default constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AgentMovement(GridClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_BodyRotation.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.BodyRotation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L440">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_BodyRotation" data-uid="OpenMetaverse.AgentManager.AgentMovement.BodyRotation">BodyRotation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion BodyRotation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Quaternion.html">Quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_Camera.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.Camera%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L433">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_Camera" data-uid="OpenMetaverse.AgentManager.AgentMovement.Camera">Camera</h4>
+  <div class="markdown level1 summary"><p>Agent camera controls</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AgentManager.AgentMovement.AgentCamera Camera</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AgentManager.AgentMovement.AgentCamera.html">AgentManager.AgentMovement.AgentCamera</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_Flags.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L435">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_Flags" data-uid="OpenMetaverse.AgentManager.AgentMovement.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>Currently only used for hiding your group title</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AgentFlags Flags</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AgentFlags.html">AgentFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_HeadRotation.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.HeadRotation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L442">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_HeadRotation" data-uid="OpenMetaverse.AgentManager.AgentMovement.HeadRotation">HeadRotation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion HeadRotation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Quaternion.html">Quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_State.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L438">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_State" data-uid="OpenMetaverse.AgentManager.AgentMovement.State">State</h4>
+  <div class="markdown level1 summary"><p>Action state of the avatar, which can currently be
+typing and editing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AgentState State</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AgentState.html">AgentState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_AgentControls.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.AgentControls%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L381">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_AgentControls_" data-uid="OpenMetaverse.AgentManager.AgentMovement.AgentControls*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_AgentControls" data-uid="OpenMetaverse.AgentManager.AgentMovement.AgentControls">AgentControls</h4>
+  <div class="markdown level1 summary"><p>The current value of the agent control flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint AgentControls { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_AlwaysRun.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.AlwaysRun%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L364">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_AlwaysRun_" data-uid="OpenMetaverse.AgentManager.AgentMovement.AlwaysRun*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_AlwaysRun" data-uid="OpenMetaverse.AgentManager.AgentMovement.AlwaysRun">AlwaysRun</h4>
+  <div class="markdown level1 summary"><p>Returns &quot;always run&quot; value, or changes it by sending a SetAlwaysRunPacket</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlwaysRun { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_AtNeg.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.AtNeg%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L176">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_AtNeg_" data-uid="OpenMetaverse.AgentManager.AgentMovement.AtNeg*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_AtNeg" data-uid="OpenMetaverse.AgentManager.AgentMovement.AtNeg">AtNeg</h4>
+  <div class="markdown level1 summary"><p>Move agent negative along the X axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AtNeg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_AtPos.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.AtPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L170">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_AtPos_" data-uid="OpenMetaverse.AgentManager.AgentMovement.AtPos*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_AtPos" data-uid="OpenMetaverse.AgentManager.AgentMovement.AtPos">AtPos</h4>
+  <div class="markdown level1 summary"><p>Move agent positive along the X axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AtPos { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_AutoResetControls.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.AutoResetControls%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L424">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_AutoResetControls_" data-uid="OpenMetaverse.AgentManager.AgentMovement.AutoResetControls*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_AutoResetControls" data-uid="OpenMetaverse.AgentManager.AgentMovement.AutoResetControls">AutoResetControls</h4>
+  <div class="markdown level1 summary"><p>Reset movement controls every time we send an update</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoResetControls { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_Away.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.Away%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L332">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_Away_" data-uid="OpenMetaverse.AgentManager.AgentMovement.Away*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_Away" data-uid="OpenMetaverse.AgentManager.AgentMovement.Away">Away</h4>
+  <div class="markdown level1 summary"><p>Tell simulator to mark agent as away</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Away { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_FastAt.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.FastAt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L230">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_FastAt_" data-uid="OpenMetaverse.AgentManager.AgentMovement.FastAt*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_FastAt" data-uid="OpenMetaverse.AgentManager.AgentMovement.FastAt">FastAt</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FastAt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_FastLeft.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.FastLeft%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L236">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_FastLeft_" data-uid="OpenMetaverse.AgentManager.AgentMovement.FastLeft*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_FastLeft" data-uid="OpenMetaverse.AgentManager.AgentMovement.FastLeft">FastLeft</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FastLeft { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_FastUp.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.FastUp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L242">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_FastUp_" data-uid="OpenMetaverse.AgentManager.AgentMovement.FastUp*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_FastUp" data-uid="OpenMetaverse.AgentManager.AgentMovement.FastUp">FastUp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FastUp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_FinishAnim.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.FinishAnim%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L260">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_FinishAnim_" data-uid="OpenMetaverse.AgentManager.AgentMovement.FinishAnim*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_FinishAnim" data-uid="OpenMetaverse.AgentManager.AgentMovement.FinishAnim">FinishAnim</h4>
+  <div class="markdown level1 summary"><p>Finish animation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FinishAnim { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_Fly.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.Fly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L248">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_Fly_" data-uid="OpenMetaverse.AgentManager.AgentMovement.Fly*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_Fly" data-uid="OpenMetaverse.AgentManager.AgentMovement.Fly">Fly</h4>
+  <div class="markdown level1 summary"><p>Causes simulator to make agent fly</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Fly { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_LButtonDown.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.LButtonDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L338">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_LButtonDown_" data-uid="OpenMetaverse.AgentManager.AgentMovement.LButtonDown*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_LButtonDown" data-uid="OpenMetaverse.AgentManager.AgentMovement.LButtonDown">LButtonDown</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LButtonDown { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_LButtonUp.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.LButtonUp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L344">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_LButtonUp_" data-uid="OpenMetaverse.AgentManager.AgentMovement.LButtonUp*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_LButtonUp" data-uid="OpenMetaverse.AgentManager.AgentMovement.LButtonUp">LButtonUp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LButtonUp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_LeftNeg.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.LeftNeg%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L188">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_LeftNeg_" data-uid="OpenMetaverse.AgentManager.AgentMovement.LeftNeg*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_LeftNeg" data-uid="OpenMetaverse.AgentManager.AgentMovement.LeftNeg">LeftNeg</h4>
+  <div class="markdown level1 summary"><p>Move agent negative along the Y axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LeftNeg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_LeftPos.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.LeftPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L182">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_LeftPos_" data-uid="OpenMetaverse.AgentManager.AgentMovement.LeftPos*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_LeftPos" data-uid="OpenMetaverse.AgentManager.AgentMovement.LeftPos">LeftPos</h4>
+  <div class="markdown level1 summary"><p>Move agent positive along the Y axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LeftPos { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_MLButtonDown.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.MLButtonDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L350">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_MLButtonDown_" data-uid="OpenMetaverse.AgentManager.AgentMovement.MLButtonDown*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_MLButtonDown" data-uid="OpenMetaverse.AgentManager.AgentMovement.MLButtonDown">MLButtonDown</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MLButtonDown { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_MLButtonUp.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.MLButtonUp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L356">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_MLButtonUp_" data-uid="OpenMetaverse.AgentManager.AgentMovement.MLButtonUp*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_MLButtonUp" data-uid="OpenMetaverse.AgentManager.AgentMovement.MLButtonUp">MLButtonUp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MLButtonUp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_Mouselook.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.Mouselook%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L278">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_Mouselook_" data-uid="OpenMetaverse.AgentManager.AgentMovement.Mouselook*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_Mouselook" data-uid="OpenMetaverse.AgentManager.AgentMovement.Mouselook">Mouselook</h4>
+  <div class="markdown level1 summary"><p>Place agent into mouselook mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Mouselook { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_NudgeAtNeg.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.NudgeAtNeg%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L290">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_NudgeAtNeg_" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeAtNeg*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_NudgeAtNeg" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeAtNeg">NudgeAtNeg</h4>
+  <div class="markdown level1 summary"><p>Nudge agent negative along the X axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NudgeAtNeg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_NudgeAtPos.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.NudgeAtPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L284">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_NudgeAtPos_" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeAtPos*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_NudgeAtPos" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeAtPos">NudgeAtPos</h4>
+  <div class="markdown level1 summary"><p>Nudge agent positive along the X axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NudgeAtPos { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_NudgeLeftNeg.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.NudgeLeftNeg%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L302">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_NudgeLeftNeg_" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeLeftNeg*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_NudgeLeftNeg" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeLeftNeg">NudgeLeftNeg</h4>
+  <div class="markdown level1 summary"><p>Nudge agent negative along the Y axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NudgeLeftNeg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_NudgeLeftPos.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.NudgeLeftPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L296">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_NudgeLeftPos_" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeLeftPos*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_NudgeLeftPos" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeLeftPos">NudgeLeftPos</h4>
+  <div class="markdown level1 summary"><p>Nudge agent positive along the Y axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NudgeLeftPos { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_NudgeUpNeg.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.NudgeUpNeg%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L314">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_NudgeUpNeg_" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeUpNeg*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_NudgeUpNeg" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeUpNeg">NudgeUpNeg</h4>
+  <div class="markdown level1 summary"><p>Nudge agent negative along the Z axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NudgeUpNeg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_NudgeUpPos.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.NudgeUpPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L308">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_NudgeUpPos_" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeUpPos*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_NudgeUpPos" data-uid="OpenMetaverse.AgentManager.AgentMovement.NudgeUpPos">NudgeUpPos</h4>
+  <div class="markdown level1 summary"><p>Nudge agent positive along the Z axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NudgeUpPos { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_PitchNeg.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.PitchNeg%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L212">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_PitchNeg_" data-uid="OpenMetaverse.AgentManager.AgentMovement.PitchNeg*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_PitchNeg" data-uid="OpenMetaverse.AgentManager.AgentMovement.PitchNeg">PitchNeg</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PitchNeg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_PitchPos.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.PitchPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L206">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_PitchPos_" data-uid="OpenMetaverse.AgentManager.AgentMovement.PitchPos*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_PitchPos" data-uid="OpenMetaverse.AgentManager.AgentMovement.PitchPos">PitchPos</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PitchPos { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_SitOnGround.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.SitOnGround%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L272">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_SitOnGround_" data-uid="OpenMetaverse.AgentManager.AgentMovement.SitOnGround*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_SitOnGround" data-uid="OpenMetaverse.AgentManager.AgentMovement.SitOnGround">SitOnGround</h4>
+  <div class="markdown level1 summary"><p>Tells simulator to sit agent on ground</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SitOnGround { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_StandUp.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.StandUp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L266">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_StandUp_" data-uid="OpenMetaverse.AgentManager.AgentMovement.StandUp*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_StandUp" data-uid="OpenMetaverse.AgentManager.AgentMovement.StandUp">StandUp</h4>
+  <div class="markdown level1 summary"><p>Stand up from a sit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StandUp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_Stop.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L254">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_Stop_" data-uid="OpenMetaverse.AgentManager.AgentMovement.Stop*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_Stop" data-uid="OpenMetaverse.AgentManager.AgentMovement.Stop">Stop</h4>
+  <div class="markdown level1 summary"><p>Stop movement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Stop { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_TurnLeft.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.TurnLeft%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L320">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_TurnLeft_" data-uid="OpenMetaverse.AgentManager.AgentMovement.TurnLeft*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_TurnLeft" data-uid="OpenMetaverse.AgentManager.AgentMovement.TurnLeft">TurnLeft</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TurnLeft { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_TurnRight.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.TurnRight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L326">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_TurnRight_" data-uid="OpenMetaverse.AgentManager.AgentMovement.TurnRight*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_TurnRight" data-uid="OpenMetaverse.AgentManager.AgentMovement.TurnRight">TurnRight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TurnRight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_UpdateEnabled.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.UpdateEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L418">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_UpdateEnabled_" data-uid="OpenMetaverse.AgentManager.AgentMovement.UpdateEnabled*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_UpdateEnabled" data-uid="OpenMetaverse.AgentManager.AgentMovement.UpdateEnabled">UpdateEnabled</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether AgentUpdate packets are sent to
+the current simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_UpdateInterval.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.UpdateInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L390">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_UpdateInterval_" data-uid="OpenMetaverse.AgentManager.AgentMovement.UpdateInterval*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_UpdateInterval" data-uid="OpenMetaverse.AgentManager.AgentMovement.UpdateInterval">UpdateInterval</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the interval in milliseconds at which
+AgentUpdate packets are sent to the current simulator. Setting
+this to a non-zero value will also enable the packet sending if
+it was previously off, and setting it to zero will disable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateInterval { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_UpNeg.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.UpNeg%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L200">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_UpNeg_" data-uid="OpenMetaverse.AgentManager.AgentMovement.UpNeg*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_UpNeg" data-uid="OpenMetaverse.AgentManager.AgentMovement.UpNeg">UpNeg</h4>
+  <div class="markdown level1 summary"><p>Move agent negative along the Z axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpNeg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_UpPos.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.UpPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L194">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_UpPos_" data-uid="OpenMetaverse.AgentManager.AgentMovement.UpPos*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_UpPos" data-uid="OpenMetaverse.AgentManager.AgentMovement.UpPos">UpPos</h4>
+  <div class="markdown level1 summary"><p>Move agent positive along the Z axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpPos { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_YawNeg.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.YawNeg%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L224">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_YawNeg_" data-uid="OpenMetaverse.AgentManager.AgentMovement.YawNeg*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_YawNeg" data-uid="OpenMetaverse.AgentManager.AgentMovement.YawNeg">YawNeg</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool YawNeg { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_YawPos.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.YawPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L218">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_YawPos_" data-uid="OpenMetaverse.AgentManager.AgentMovement.YawPos*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_YawPos" data-uid="OpenMetaverse.AgentManager.AgentMovement.YawPos">YawPos</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool YawPos { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_ResetControlFlags.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.ResetControlFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L723">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_ResetControlFlags_" data-uid="OpenMetaverse.AgentManager.AgentMovement.ResetControlFlags*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_ResetControlFlags" data-uid="OpenMetaverse.AgentManager.AgentMovement.ResetControlFlags">ResetControlFlags()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetControlFlags()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_SendManualUpdate_OpenMetaverse_AgentManager_ControlFlags_OpenMetaverse_Vector3_OpenMetaverse_Vector3_OpenMetaverse_Vector3_OpenMetaverse_Vector3_OpenMetaverse_Quaternion_OpenMetaverse_Quaternion_System_Single_OpenMetaverse_AgentFlags_OpenMetaverse_AgentState_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.SendManualUpdate(OpenMetaverse.AgentManager.ControlFlags%2COpenMetaverse.Vector3%2COpenMetaverse.Vector3%2COpenMetaverse.Vector3%2COpenMetaverse.Vector3%2COpenMetaverse.Quaternion%2COpenMetaverse.Quaternion%2CSystem.Single%2COpenMetaverse.AgentFlags%2COpenMetaverse.AgentState%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L683">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_SendManualUpdate_" data-uid="OpenMetaverse.AgentManager.AgentMovement.SendManualUpdate*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_SendManualUpdate_OpenMetaverse_AgentManager_ControlFlags_OpenMetaverse_Vector3_OpenMetaverse_Vector3_OpenMetaverse_Vector3_OpenMetaverse_Vector3_OpenMetaverse_Quaternion_OpenMetaverse_Quaternion_System_Single_OpenMetaverse_AgentFlags_OpenMetaverse_AgentState_System_Boolean_" data-uid="OpenMetaverse.AgentManager.AgentMovement.SendManualUpdate(OpenMetaverse.AgentManager.ControlFlags,OpenMetaverse.Vector3,OpenMetaverse.Vector3,OpenMetaverse.Vector3,OpenMetaverse.Vector3,OpenMetaverse.Quaternion,OpenMetaverse.Quaternion,System.Single,OpenMetaverse.AgentFlags,OpenMetaverse.AgentState,System.Boolean)">SendManualUpdate(AgentManager.ControlFlags, Vector3, Vector3, Vector3, Vector3, Quaternion, Quaternion, Single, AgentFlags, AgentState, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Builds an AgentUpdate packet entirely from parameters. This
+will not touch the state of Self.Movement or
+Self.Movement.Camera in any way</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendManualUpdate(AgentManager.ControlFlags controlFlags, Vector3 position, Vector3 forwardAxis, Vector3 leftAxis, Vector3 upAxis, Quaternion bodyRotation, Quaternion headRotation, float farClip, AgentFlags flags, AgentState state, bool reliable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AgentManager.ControlFlags.html">AgentManager.ControlFlags</a></td>
+        <td><span class="parametername">controlFlags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">forwardAxis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">leftAxis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">upAxis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">bodyRotation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Quaternion.html">Quaternion</a></td>
+        <td><span class="parametername">headRotation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">farClip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AgentFlags.html">AgentFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AgentState.html">AgentState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">reliable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_SendUpdate.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.SendUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L577">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_SendUpdate_" data-uid="OpenMetaverse.AgentManager.AgentMovement.SendUpdate*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_SendUpdate" data-uid="OpenMetaverse.AgentManager.AgentMovement.SendUpdate">SendUpdate()</h4>
+  <div class="markdown level1 summary"><p>Send new AgentUpdate packet to update our current camera
+position and rotation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendUpdate()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_SendUpdate_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.SendUpdate(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L588">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_SendUpdate_" data-uid="OpenMetaverse.AgentManager.AgentMovement.SendUpdate*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_SendUpdate_System_Boolean_" data-uid="OpenMetaverse.AgentManager.AgentMovement.SendUpdate(System.Boolean)">SendUpdate(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Send new AgentUpdate packet to update our current camera
+position and rotation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendUpdate(bool reliable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">reliable</span></td>
+        <td><p>Whether to require server acknowledgement
+of this packet</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_SendUpdate_System_Boolean_OpenMetaverse_Simulator_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.SendUpdate(System.Boolean%2COpenMetaverse.Simulator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L600">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_SendUpdate_" data-uid="OpenMetaverse.AgentManager.AgentMovement.SendUpdate*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_SendUpdate_System_Boolean_OpenMetaverse_Simulator_" data-uid="OpenMetaverse.AgentManager.AgentMovement.SendUpdate(System.Boolean,OpenMetaverse.Simulator)">SendUpdate(Boolean, Simulator)</h4>
+  <div class="markdown level1 summary"><p>Send new AgentUpdate packet to update our current camera
+position and rotation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendUpdate(bool reliable, Simulator simulator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">reliable</span></td>
+        <td><p>Whether to require server acknowledgement
+of this packet</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator to send the update to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_SetFOVVerticalAngle_System_Single_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.SetFOVVerticalAngle(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L739">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_SetFOVVerticalAngle_" data-uid="OpenMetaverse.AgentManager.AgentMovement.SetFOVVerticalAngle*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_SetFOVVerticalAngle_System_Single_" data-uid="OpenMetaverse.AgentManager.AgentMovement.SetFOVVerticalAngle(System.Single)">SetFOVVerticalAngle(Single)</h4>
+  <div class="markdown level1 summary"><p>Sends update of Field of Vision vertical angle to the simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFOVVerticalAngle(float angle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angle</span></td>
+        <td><p>Angle in radians</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_TurnToward_OpenMetaverse_Vector3_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.TurnToward(OpenMetaverse.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L528">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_TurnToward_" data-uid="OpenMetaverse.AgentManager.AgentMovement.TurnToward*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_TurnToward_OpenMetaverse_Vector3_" data-uid="OpenMetaverse.AgentManager.AgentMovement.TurnToward(OpenMetaverse.Vector3)">TurnToward(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Rotates the avatar body and camera toward a target position.
+This will also anchor the camera position on the avatar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TurnToward(Vector3 target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Region coordinates to turn toward</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_TurnToward_OpenMetaverse_Vector3_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.TurnToward(OpenMetaverse.Vector3%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L539">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_TurnToward_" data-uid="OpenMetaverse.AgentManager.AgentMovement.TurnToward*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_TurnToward_OpenMetaverse_Vector3_System_Boolean_" data-uid="OpenMetaverse.AgentManager.AgentMovement.TurnToward(OpenMetaverse.Vector3,System.Boolean)">TurnToward(Vector3, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Rotates the avatar body and camera toward a target position.
+This will also anchor the camera position on the avatar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TurnToward(Vector3 target, bool sendUpdate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Region coordinates to turn toward</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">sendUpdate</span></td>
+        <td><p>whether to send update or not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement_UpdateFromHeading_System_Double_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement.UpdateFromHeading(System.Double%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerMovement.cs/#L511">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AgentManager_AgentMovement_UpdateFromHeading_" data-uid="OpenMetaverse.AgentManager.AgentMovement.UpdateFromHeading*"></a>
+  <h4 id="OpenMetaverse_AgentManager_AgentMovement_UpdateFromHeading_System_Double_System_Boolean_" data-uid="OpenMetaverse.AgentManager.AgentMovement.UpdateFromHeading(System.Double,System.Boolean)">UpdateFromHeading(Double, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Send an AgentUpdate with the camera set at the current agent
+position and pointing towards the heading specified</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateFromHeading(double heading, bool reliable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">heading</span></td>
+        <td><p>Camera rotation in radians</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">reliable</span></td>
+        <td><p>Whether to send the AgentUpdate reliable
+or not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AgentManager_AgentMovement.md&amp;value=---%0Auid%3A%20OpenMetaverse.AgentManager.AgentMovement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AgentManagerCamera.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

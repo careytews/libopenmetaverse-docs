@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FriendInfo
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FriendInfo
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.FriendInfo">
+  
+  
+  <h1 id="OpenMetaverse_FriendInfo" data-uid="OpenMetaverse.FriendInfo" class="text-break">Class FriendInfo
+  </h1>
+  <div class="markdown level0 summary"><p>This class holds information about an avatar in the friends list.  There are two ways
+to interface to this class.  The first is through the set of boolean properties.  This is the typical
+way clients of this class will use it.  The second interface is through two bitflag properties,
+TheirFriendsRights and MyFriendsRights</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FriendInfo</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_FriendInfo_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FriendInfo</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_CanModifyMyObjects.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.CanModifyMyObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L125">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_CanModifyMyObjects_" data-uid="OpenMetaverse.FriendInfo.CanModifyMyObjects*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_CanModifyMyObjects" data-uid="OpenMetaverse.FriendInfo.CanModifyMyObjects">CanModifyMyObjects</h4>
+  <div class="markdown level1 summary"><p>True if the freind can modify my objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanModifyMyObjects { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_CanModifyTheirObjects.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.CanModifyTheirObjects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L144">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_CanModifyTheirObjects_" data-uid="OpenMetaverse.FriendInfo.CanModifyTheirObjects*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_CanModifyTheirObjects" data-uid="OpenMetaverse.FriendInfo.CanModifyTheirObjects">CanModifyTheirObjects</h4>
+  <div class="markdown level1 summary"><p>True if I can modify my friend's objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanModifyTheirObjects { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_CanSeeMeOnline.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.CanSeeMeOnline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L95">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_CanSeeMeOnline_" data-uid="OpenMetaverse.FriendInfo.CanSeeMeOnline*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_CanSeeMeOnline" data-uid="OpenMetaverse.FriendInfo.CanSeeMeOnline">CanSeeMeOnline</h4>
+  <div class="markdown level1 summary"><p>True if the friend can see if I am online</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSeeMeOnline { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_CanSeeMeOnMap.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.CanSeeMeOnMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L111">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_CanSeeMeOnMap_" data-uid="OpenMetaverse.FriendInfo.CanSeeMeOnMap*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_CanSeeMeOnMap" data-uid="OpenMetaverse.FriendInfo.CanSeeMeOnMap">CanSeeMeOnMap</h4>
+  <div class="markdown level1 summary"><p>True if the friend can see me on the map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSeeMeOnMap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_CanSeeThemOnline.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.CanSeeThemOnline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L134">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_CanSeeThemOnline_" data-uid="OpenMetaverse.FriendInfo.CanSeeThemOnline*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_CanSeeThemOnline" data-uid="OpenMetaverse.FriendInfo.CanSeeThemOnline">CanSeeThemOnline</h4>
+  <div class="markdown level1 summary"><p>True if I can see if my friend is online</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSeeThemOnline { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_CanSeeThemOnMap.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.CanSeeThemOnMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L139">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_CanSeeThemOnMap_" data-uid="OpenMetaverse.FriendInfo.CanSeeThemOnMap*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_CanSeeThemOnMap" data-uid="OpenMetaverse.FriendInfo.CanSeeThemOnMap">CanSeeThemOnMap</h4>
+  <div class="markdown level1 summary"><p>True if I can see if my friend is on the map</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSeeThemOnMap { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_IsOnline.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.IsOnline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L86">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_IsOnline_" data-uid="OpenMetaverse.FriendInfo.IsOnline*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_IsOnline" data-uid="OpenMetaverse.FriendInfo.IsOnline">IsOnline</h4>
+  <div class="markdown level1 summary"><p>True if the avatar is online</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOnline { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_MyFriendRights.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.MyFriendRights%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L174">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_MyFriendRights_" data-uid="OpenMetaverse.FriendInfo.MyFriendRights*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_MyFriendRights" data-uid="OpenMetaverse.FriendInfo.MyFriendRights">MyFriendRights</h4>
+  <div class="markdown level1 summary"><p>My rights represented as bitmapped flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FriendRights MyFriendRights { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.FriendRights.html">FriendRights</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_Name.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L77">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_Name_" data-uid="OpenMetaverse.FriendInfo.Name*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_Name" data-uid="OpenMetaverse.FriendInfo.Name">Name</h4>
+  <div class="markdown level1 summary"><p>full name of the avatar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_TheirFriendRights.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.TheirFriendRights%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L149">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_TheirFriendRights_" data-uid="OpenMetaverse.FriendInfo.TheirFriendRights*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_TheirFriendRights" data-uid="OpenMetaverse.FriendInfo.TheirFriendRights">TheirFriendRights</h4>
+  <div class="markdown level1 summary"><p>My friend's rights represented as bitmapped flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FriendRights TheirFriendRights { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.FriendRights.html">FriendRights</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_UUID.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.UUID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L72">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_UUID_" data-uid="OpenMetaverse.FriendInfo.UUID*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_UUID" data-uid="OpenMetaverse.FriendInfo.UUID">UUID</h4>
+  <div class="markdown level1 summary"><p>System ID of the avatar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID UUID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo_ToString.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L220">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendInfo_ToString_" data-uid="OpenMetaverse.FriendInfo.ToString*"></a>
+  <h4 id="OpenMetaverse_FriendInfo_ToString" data-uid="OpenMetaverse.FriendInfo.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>FriendInfo represented as a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string reprentation of both my rights and my friends rights</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendInfo.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L55" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImgWriter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImgWriter
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.image.output.ImgWriter">
+  
+  
+  <h1 id="CSJ2K_j2k_image_output_ImgWriter" data-uid="CSJ2K.j2k.image.output.ImgWriter" class="text-break">Class ImgWriter
+  </h1>
+  <div class="markdown level0 summary"><p>This is the generic interface to be implemented by all image file (or other
+resource) writers for different formats.</p>
+<p>Each object inheriting from this class should have a source ImgData
+object associated with it. The image data to write to the file is obtained
+from the associated ImgData object. In general this object would be
+specified at construction time.</p>
+<p>Depending on the actual type of file that is written a call to any
+write() or writeAll() method will write data from one component, several
+components or all components. For example, a PGM writer will write data
+from only one component (defined in the constructor) while a PPM writer
+will write 3 components (normally R,G,B).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ImgWriter</span></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.image.output.ImgWriterPGM.html">ImgWriterPGM</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.image.output.ImgWriterPGX.html">ImgWriterPGX</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.image.output.ImgWriterPPM.html">ImgWriterPPM</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.image.output.html">CSJ2K.j2k.image.output</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_image_output_ImgWriter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ImgWriter</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_output_ImgWriter_DEF_STRIP_HEIGHT.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.output.ImgWriter.DEF_STRIP_HEIGHT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/output/ImgWriter.cs/#L72">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_image_output_ImgWriter_DEF_STRIP_HEIGHT" data-uid="CSJ2K.j2k.image.output.ImgWriter.DEF_STRIP_HEIGHT">DEF_STRIP_HEIGHT</h4>
+  <div class="markdown level1 summary"><p>The defaukt height used when writing strip by strip in the 'write()'
+method. It is 64.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DEF_STRIP_HEIGHT = 64</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_output_ImgWriter_h.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.output.ImgWriter.h%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/output/ImgWriter.cs/#L81">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_image_output_ImgWriter_h" data-uid="CSJ2K.j2k.image.output.ImgWriter.h">h</h4>
+  <div class="markdown level1 summary"><p>The height of the image</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int h</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_output_ImgWriter_src.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.output.ImgWriter.src%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/output/ImgWriter.cs/#L75">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_image_output_ImgWriter_src" data-uid="CSJ2K.j2k.image.output.ImgWriter.src">src</h4>
+  <div class="markdown level1 summary"><p>The source ImagaData object, from where to get the image data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BlkImgDataSrc src</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_output_ImgWriter_w.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.output.ImgWriter.w%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/output/ImgWriter.cs/#L78">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_image_output_ImgWriter_w" data-uid="CSJ2K.j2k.image.output.ImgWriter.w">w</h4>
+  <div class="markdown level1 summary"><p>The width of the image</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int w</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_output_ImgWriter_close.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.output.ImgWriter.close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/output/ImgWriter.cs/#L92">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_output_ImgWriter_close_" data-uid="CSJ2K.j2k.image.output.ImgWriter.close*"></a>
+  <h4 id="CSJ2K_j2k_image_output_ImgWriter_close" data-uid="CSJ2K.j2k.image.output.ImgWriter.close">close()</h4>
+  <div class="markdown level1 summary"><p>Closes the underlying file or netwrok connection to where the data is
+written. The implementing class must write all buffered data before
+closing the file or resource. Any call to other methods of the class
+become illegal after a call to this one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void close()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_output_ImgWriter_Finalize.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.output.ImgWriter.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/output/ImgWriter.cs/#L115">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_output_ImgWriter_Finalize_" data-uid="CSJ2K.j2k.image.output.ImgWriter.Finalize*"></a>
+  <h4 id="CSJ2K_j2k_image_output_ImgWriter_Finalize" data-uid="CSJ2K.j2k.image.output.ImgWriter.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Flushes the buffered data before the object is garbage collected. If an
+exception is thrown the object finalization is halted, but is otherwise
+ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_output_ImgWriter_flush.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.output.ImgWriter.flush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/output/ImgWriter.cs/#L101">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_output_ImgWriter_flush_" data-uid="CSJ2K.j2k.image.output.ImgWriter.flush*"></a>
+  <h4 id="CSJ2K_j2k_image_output_ImgWriter_flush" data-uid="CSJ2K.j2k.image.output.ImgWriter.flush">flush()</h4>
+  <div class="markdown level1 summary"><p>Writes all buffered data to the file or resource. If the implementing
+class does onot use buffering nothing should be done.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void flush()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_output_ImgWriter_write.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.output.ImgWriter.write%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/output/ImgWriter.cs/#L135">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_output_ImgWriter_write_" data-uid="CSJ2K.j2k.image.output.ImgWriter.write*"></a>
+  <h4 id="CSJ2K_j2k_image_output_ImgWriter_write" data-uid="CSJ2K.j2k.image.output.ImgWriter.write">write()</h4>
+  <div class="markdown level1 summary"><p>Writes the source's current tile to the output. The requests of data
+issued by the implementing class to the source ImgData object should be
+done by blocks or strips, in order to reduce memory usage.</p>
+<p>The implementing class should only write data that is not
+&quot;progressive&quot; (in other words that it is final), see DataBlk for
+details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void write()</code></pre>
+  </div>
+  <h5 id="CSJ2K_j2k_image_output_ImgWriter_write_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_output_ImgWriter_write_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.output.ImgWriter.write(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/output/ImgWriter.cs/#L191">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_output_ImgWriter_write_" data-uid="CSJ2K.j2k.image.output.ImgWriter.write*"></a>
+  <h4 id="CSJ2K_j2k_image_output_ImgWriter_write_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.image.output.ImgWriter.write(System.Int32,System.Int32,System.Int32,System.Int32)">write(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes the data of the specified area to the file, coordinates are
+relative to the current tile of the source.</p>
+<p>The implementing class should only write data that is not
+&quot;progressive&quot; (in other words that is final), see DataBlk for
+details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void write(int ulx, int uly, int w, int h)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ulx</span></td>
+        <td><p>The horizontal coordinate of the upper-left corner of the
+area to write, relative to the current tile.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">uly</span></td>
+        <td><p>The vertical coordinate of the upper-left corner of the area
+to write, relative to the current tile.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">w</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">h</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_output_ImgWriter_writeAll.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.output.ImgWriter.writeAll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/output/ImgWriter.cs/#L149">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_output_ImgWriter_writeAll_" data-uid="CSJ2K.j2k.image.output.ImgWriter.writeAll*"></a>
+  <h4 id="CSJ2K_j2k_image_output_ImgWriter_writeAll" data-uid="CSJ2K.j2k.image.output.ImgWriter.writeAll">writeAll()</h4>
+  <div class="markdown level1 summary"><p>Writes the entire image or only specified tiles to the output. The
+implementation in this class calls the write() method for each tile
+starting with the upper-left one and proceding in standard scanline
+order. It changes the current tile of the source data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void writeAll()</code></pre>
+  </div>
+  <h5 id="CSJ2K_j2k_image_output_ImgWriter_writeAll_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_output_ImgWriter.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.output.ImgWriter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/output/ImgWriter.cs/#L66" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MQDecoder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MQDecoder
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder">
+  
+  
+  <h1 id="CSJ2K_j2k_entropy_decoder_MQDecoder" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder" class="text-break">Class MQDecoder
+  </h1>
+  <div class="markdown level0 summary"><p>This class implements the MQ arithmetic decoder. It is implemented using
+the software conventions decoder for better performance (i.e. execution
+time performance). The initial states for each context of the MQ-coder are
+specified in the constructor.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MQDecoder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.entropy.decoder.html">CSJ2K.j2k.entropy.decoder</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_entropy_decoder_MQDecoder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MQDecoder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_MQDecoder__ctor_CSJ2K_j2k_entropy_decoder_ByteInputBuffer_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.MQDecoder.%23ctor(CSJ2K.j2k.entropy.decoder.ByteInputBuffer%2CSystem.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/MQDecoder.cs/#L158">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_MQDecoder__ctor_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_MQDecoder__ctor_CSJ2K_j2k_entropy_decoder_ByteInputBuffer_System_Int32_System_Int32___" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.#ctor(CSJ2K.j2k.entropy.decoder.ByteInputBuffer,System.Int32,System.Int32[])">MQDecoder(ByteInputBuffer, Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p>Instantiates a new MQ-decoder, with the specified number of contexts
+and initial states. The compressed bytestream is read from the
+'iStream' object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MQDecoder(ByteInputBuffer iStream, int nrOfContexts, int[] initStates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.html">ByteInputBuffer</a></td>
+        <td><span class="parametername">iStream</span></td>
+        <td><p>the stream that contains the coded bits</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nrOfContexts</span></td>
+        <td><p>The number of contexts used</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">initStates</span></td>
+        <td><p>The initial state for each context. A reference is
+kept to this array to reinitialize the contexts whenever 'reset()' or
+'resetCtxts()' is called.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_MQDecoder_ByteInputBuffer.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.MQDecoder.ByteInputBuffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/MQDecoder.cs/#L89">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_MQDecoder_ByteInputBuffer_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.ByteInputBuffer*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_MQDecoder_ByteInputBuffer" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.ByteInputBuffer">ByteInputBuffer</h4>
+  <div class="markdown level1 summary"><p>Returns the underlying 'ByteInputBuffer' from where the MQ coded input
+bytes are read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ByteInputBuffer ByteInputBuffer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.html">ByteInputBuffer</a></td>
+        <td><p>The underlying ByteInputBuffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_MQDecoder_NumCtxts.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.MQDecoder.NumCtxts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/MQDecoder.cs/#L74">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_MQDecoder_NumCtxts_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.NumCtxts*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_MQDecoder_NumCtxts" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.NumCtxts">NumCtxts</h4>
+  <div class="markdown level1 summary"><p>Returns the number of contexts in the arithmetic coder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NumCtxts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of contexts</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_MQDecoder_checkPredTerm.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.MQDecoder.checkPredTerm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/MQDecoder.cs/#L615">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_MQDecoder_checkPredTerm_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.checkPredTerm*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_MQDecoder_checkPredTerm" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.checkPredTerm">checkPredTerm()</h4>
+  <div class="markdown level1 summary"><p>Checks for past errors in the decoding process using the predictable
+error resilient termination. This works only if the encoder used the
+predictable error resilient MQ termination, otherwise it reports wrong
+results. If an error is detected it means that the MQ bit stream has
+been wrongly decoded or that the MQ terminated segment length is too
+long. If no errors are detected it does not necessarily mean that the
+MQ bit stream has been correctly decoded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool checkPredTerm()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if errors are found, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_MQDecoder_decodeSymbol_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.MQDecoder.decodeSymbol(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/MQDecoder.cs/#L496">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_MQDecoder_decodeSymbol_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.decodeSymbol*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_MQDecoder_decodeSymbol_System_Int32_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.decodeSymbol(System.Int32)">decodeSymbol(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int decodeSymbol(int context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_MQDecoder_decodeSymbols_System_Int32___System_Int32___System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.MQDecoder.decodeSymbols(System.Int32%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/MQDecoder.cs/#L369">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_MQDecoder_decodeSymbols_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.decodeSymbols*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_MQDecoder_decodeSymbols_System_Int32___System_Int32___System_Int32_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.decodeSymbols(System.Int32[],System.Int32[],System.Int32)">decodeSymbols(Int32[], Int32[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void decodeSymbols(int[] bits, int[] cX, int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">bits</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">cX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_MQDecoder_nextSegment_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.MQDecoder.nextSegment(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/MQDecoder.cs/#L780">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_MQDecoder_nextSegment_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.nextSegment*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_MQDecoder_nextSegment_System_Byte___System_Int32_System_Int32_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.nextSegment(System.Byte[],System.Int32,System.Int32)">nextSegment(Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Resets the MQ decoder to start a new segment. This is like recreating a
+new MQDecoder object with new input data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void nextSegment(byte[] buf, int off, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buf</span></td>
+        <td><p>The byte array containing the MQ encoded data. If null the
+current byte array is assumed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">off</span></td>
+        <td><p>The index of the first element in 'buf' to be decoded. If
+negative the byte just after the previous segment is assumed, only
+valid if 'buf' is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td><p>The number of bytes in 'buf' to be decoded. Any subsequent
+bytes are taken to be 0xFF.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_MQDecoder_resetCtxt_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.MQDecoder.resetCtxt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/MQDecoder.cs/#L743">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_MQDecoder_resetCtxt_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.resetCtxt*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_MQDecoder_resetCtxt_System_Int32_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.resetCtxt(System.Int32)">resetCtxt(Int32)</h4>
+  <div class="markdown level1 summary"><p>Resets a context to the original probability distribution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void resetCtxt(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The number of the context (it starts at 0).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_MQDecoder_resetCtxts.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.MQDecoder.resetCtxts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/MQDecoder.cs/#L757">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_MQDecoder_resetCtxts_" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.resetCtxts*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_MQDecoder_resetCtxts" data-uid="CSJ2K.j2k.entropy.decoder.MQDecoder.resetCtxts">resetCtxts()</h4>
+  <div class="markdown level1 summary"><p>Resets a context to the original probability distribution. The original
+probability distribution depends on the actual implementation of the
+arithmetic coder or decoder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void resetCtxts()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_MQDecoder.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.MQDecoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/MQDecoder.cs/#L66" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

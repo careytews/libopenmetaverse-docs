@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.j2k.entropy.decoder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.j2k.entropy.decoder
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.entropy.decoder">
+  
+  <h1 id="CSJ2K_j2k_entropy_decoder" data-uid="CSJ2K.j2k.entropy.decoder" class="text-break">Namespace CSJ2K.j2k.entropy.decoder
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.decoder.ByteInputBuffer.html">ByteInputBuffer</a></h4>
+      <section><p>This class provides a byte input facility from byte buffers. It is similar
+to the ByteArrayInputStream class, but adds the possibility to add data to
+the stream after the creation of the object.</p>
+<p>Unlike the ByteArrayInputStream this class is not thread safe (i.e. no
+two threads can use the same object at the same time, but different objects
+may be used in different threads).</p>
+<p>This class can modify the contents of the buffer given to the
+constructor, when the addByteArray() method is called.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.decoder.ByteToBitInput.html">ByteToBitInput</a></h4>
+      <section><p>This class provides an adapter to perform bit based input on byte based
+output obejcts that inherit from a 'ByteInputBuffer' class. This class also
+performs the bit unstuffing procedure specified for the 'selective
+arithmetic coding bypass' mode of the JPEG 2000 entropy coder.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.html">DecLyrdCBlk</a></h4>
+      <section><p>This class stores coded (compressed) code-blocks that are organized in
+layers. This object can contain either all code-block data (i.e. all
+layers), or a subset of all the layers that make up the whole compressed
+code-block. It is applicable to the decoder engine only. Some data of the
+coded-block is stored in the super class, see CodedCBlk.</p>
+<p>A code-block may have its progressive attribute set (i.e. the &apos;prog&apos;
+flag is true). If a code-block is progressive then it means that more data
+for it may be obtained for an improved quality. If the progressive flag is
+false then no more data is available from the source for this
+code-block.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.decoder.EntropyDecoder.html">EntropyDecoder</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.decoder.MQDecoder.html">MQDecoder</a></h4>
+      <section><p>This class implements the MQ arithmetic decoder. It is implemented using
+the software conventions decoder for better performance (i.e. execution
+time performance). The initial states for each context of the MQ-coder are
+specified in the constructor.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.decoder.StdEntropyDecoder.html">StdEntropyDecoder</a></h4>
+      <section><p>This class implements the JPEG 2000 entropy decoder, which codes stripes in
+code-blocks. This entropy decoding engine decodes one code-block at a time.</p>
+<p>The code-blocks are rectangular and their dimensions must be powers of
+2. Each dimension cannot be smaller than 4 and larger than 256. The product
+of the two dimensions (i.e. area of the code-block) cannot exceed 4096.</p>
+<p>Context 0 of the MQ-coder is used as the uniform one (uniform,
+non-adaptive probability distribution). Context 1 is used for RLC
+coding. Contexts 2-10 are used for zero-coding (ZC), contexts 11-15 are
+used for sign-coding (SC) and contexts 16-18 are used for
+magnitude-refinement (MR).</p>
+<p>This implementation also provides some timing features. They can be
+enabled by setting the &apos;DO_TIMING&apos; constant of this class to true and
+recompiling. The timing uses the &apos;System.currentTimeMillis()&apos; Java API
+call, which returns wall clock time, not the actual CPU time used. The
+timing results will be printed on the message output. Since the times
+reported are wall clock times and not CPU usage times they can not be added
+to find the total used time (i.e. some time might be counted in several
+places). When timing is disabled (&apos;DO_TIMING&apos; is false) there is no penalty
+if the compiler performs some basic optimizations. Even if not the penalty
+should be negligeable.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.decoder.CodedCBlkDataSrcDec.html">CodedCBlkDataSrcDec</a></h4>
+      <section><p>This interface defines a source of entropy coded data and methods to
+transfer it in a code-block by code-block basis. In each call to
+'geCodeBlock()' a specified coded code-block is returned.</p>
+<p>This interface is the source of data for the entropy decoder. See the
+&apos;EntropyDecoder&apos; class.</p>
+<p>For each coded-code-block the entropy-coded data is returned along with
+its truncation point information in a &apos;DecLyrdCBlk&apos; object.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

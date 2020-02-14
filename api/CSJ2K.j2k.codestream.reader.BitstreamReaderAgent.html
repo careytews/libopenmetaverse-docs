@@ -1,0 +1,3076 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BitstreamReaderAgent
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BitstreamReaderAgent
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent">
+  
+  
+  <h1 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent" class="text-break">Class BitstreamReaderAgent
+  </h1>
+  <div class="markdown level0 summary"><p>This is the generic interface for bit stream reader agents. A bit stream
+reader agent is an entity that allows reading from a bit stream and
+requesting compressed code-blocks. It can be a simple file reader, or a
+network connection, or anything else.</p>
+<p>The bit stream reader agent allows to make request for compressed block
+data in any order. The amount of data returned would normally depend on the
+data available at the time of the request, be it from a file or from a
+network connection.</p>
+<p>The bit stream reader agent has the notion of a current tile, and
+coordinates are relative to the current tile, where applicable.</p>
+<p>Resolution level 0 is the lowest resolution level, i.e. the LL subband
+alone.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BitstreamReaderAgent</span></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.html">FileBitstreamReaderAgent</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.entropy.decoder.CodedCBlkDataSrcDec.html">CodedCBlkDataSrcDec</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTData.html">InvWTData</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.codestream.reader.html">CSJ2K.j2k.codestream.reader</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BitstreamReaderAgent : CodedCBlkDataSrcDec, InvWTData, MultiResImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent__ctor_CSJ2K_j2k_codestream_reader_HeaderDecoder_CSJ2K_j2k_decoder_DecoderSpecs_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.%23ctor(CSJ2K.j2k.codestream.reader.HeaderDecoder%2CCSJ2K.j2k.decoder.DecoderSpecs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L441">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent__ctor_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent__ctor_CSJ2K_j2k_codestream_reader_HeaderDecoder_CSJ2K_j2k_decoder_DecoderSpecs_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.#ctor(CSJ2K.j2k.codestream.reader.HeaderDecoder,CSJ2K.j2k.decoder.DecoderSpecs)">BitstreamReaderAgent(HeaderDecoder, DecoderSpecs)</h4>
+  <div class="markdown level1 summary"><p>Initializes members of this class. This constructor takes a
+HeaderDecoder object. This object must be initialized by the
+constructor of the implementing class from the header of the bit
+stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BitstreamReaderAgent(HeaderDecoder hd, DecoderSpecs decSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.reader.HeaderDecoder.html">HeaderDecoder</a></td>
+        <td><span class="parametername">hd</span></td>
+        <td><p>The decoded header of the bit stream from where to initialize
+the values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.decoder.DecoderSpecs.html">DecoderSpecs</a></td>
+        <td><span class="parametername">decSpec</span></td>
+        <td><p>The decoder specifications</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_anbytes.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.anbytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L420">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_anbytes" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.anbytes">anbytes</h4>
+  <div class="markdown level1 summary"><p>Actual number of read bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int anbytes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_arate.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.arate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L426">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_arate" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.arate">arate</h4>
+  <div class="markdown level1 summary"><p>Actual decoding rate in bpp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float arate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ax.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L338">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ax" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ax">ax</h4>
+  <div class="markdown level1 summary"><p>The horizontal coordinate of the image origin in the canvas system, on
+the reference grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ax</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ay.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L344">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ay" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ay">ay</h4>
+  <div class="markdown level1 summary"><p>The vertical coordinate of the image origin in the canvas system, on
+the reference grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ay</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ctX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ctX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L407">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ctX" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ctX">ctX</h4>
+  <div class="markdown level1 summary"><p>The current tile horizontal index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ctX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ctY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ctY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L410">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ctY" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ctY">ctY</h4>
+  <div class="markdown level1 summary"><p>The current tile vertical index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ctY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_culx.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.culx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L377">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_culx" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.culx">culx</h4>
+  <div class="markdown level1 summary"><p>The horizontal coordinates of the upper-left corner of the active
+tile, with respect to the canvas origin, in the component hi-res grid,
+for each component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] culx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_culy.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.culy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L384">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_culy" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.culy">culy</h4>
+  <div class="markdown level1 summary"><p>The vertical coordinates of the upper-left corner of the active tile,
+with respect to the canvas origin, in the component hi-res grid, for
+each component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] culy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_decSpec.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.decSpec%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L263">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_decSpec" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.decSpec">decSpec</h4>
+  <div class="markdown level1 summary"><p>The decoder specifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DecoderSpecs decSpec</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.decoder.DecoderSpecs.html">DecoderSpecs</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_derived.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.derived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L274">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_derived" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.derived">derived</h4>
+  <div class="markdown level1 summary"><p>Whether or not the components in the current tile uses a derived
+quantization step size (only relevant in non reversible quantization
+mode). This field is actualized by the setTile method in
+FileBitstreamReaderAgent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool[] derived</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_gb.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.gb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L283">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_gb" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.gb">gb</h4>
+  <div class="markdown level1 summary"><p>Number of guard bits off all component in the current tile. This field
+is actualized by the setTile method in FileBitstreamReaderAgent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] gb</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_hd.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.hd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L414">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_hd" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.hd">hd</h4>
+  <div class="markdown level1 summary"><p>The decoded bit stream header</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HeaderDecoder hd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.reader.HeaderDecoder.html">HeaderDecoder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_imgH.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.imgH%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L332">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_imgH" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.imgH">imgH</h4>
+  <div class="markdown level1 summary"><p>The image width on the hi-res reference grid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int imgH</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_imgW.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.imgW%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L328">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_imgW" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.imgW">imgW</h4>
+  <div class="markdown level1 summary"><p>The image width on the hi-res reference grid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int imgW</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_mdl.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.mdl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L309">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_mdl" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.mdl">mdl</h4>
+  <div class="markdown level1 summary"><p>The maximum number of decompostion levels for each component of the
+current tile. It means that component c has mdl[c]+1 resolution levels
+(indexed from 0 to mdl[c])</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] mdl</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_nc.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.nc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L313">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_nc" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.nc">nc</h4>
+  <div class="markdown level1 summary"><p>The number of components</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int nc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_nt.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.nt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L404">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_nt" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.nt">nt</h4>
+  <div class="markdown level1 summary"><p>The total number of tiles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int nt</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntH.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ntH%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L392">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntH" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ntH">ntH</h4>
+  <div class="markdown level1 summary"><p>The nominal tile height, in the hi-res reference grid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ntH</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntW.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ntW%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L388">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntW" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ntW">ntW</h4>
+  <div class="markdown level1 summary"><p>The nominal tile width, in the hi-res reference grid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ntW</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ntX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L396">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntX" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ntX">ntX</h4>
+  <div class="markdown level1 summary"><p>The number of tile in the horizontal direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ntX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ntY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L400">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntY" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ntY">ntY</h4>
+  <div class="markdown level1 summary"><p>The number of tiles in the vertical direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ntY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_offX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.offX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L363">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_offX" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.offX">offX</h4>
+  <div class="markdown level1 summary"><p>The horizontal offsets of the upper-left corner of the current tile
+(not active tile) with respect to the canvas origin, in the component
+hi-res grid, for each component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] offX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_offY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.offY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L370">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_offY" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.offY">offY</h4>
+  <div class="markdown level1 summary"><p>The vertical offsets of the upper-left corner of the current tile (not
+active tile) with respect to the canvas origin, in the component hi-res
+grid, for each component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int[] offY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_OPT_PREFIX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.OPT_PREFIX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L296">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_OPT_PREFIX" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.OPT_PREFIX">OPT_PREFIX</h4>
+  <div class="markdown level1 summary"><p>The prefix for bit stream reader options: 'B'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const char OPT_PREFIX = 'B'</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_params_Renamed.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.params_Renamed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L293">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_params_Renamed" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.params_Renamed">params_Renamed</h4>
+  <div class="markdown level1 summary"><p>Dequantization parameters of all subbands and all components in the
+current tile. The value is actualized by the setTile method in
+FileBitstreamReaderAgent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected StdDequantizerParams[] params_Renamed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.StdDequantizerParams.html">StdDequantizerParams</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_px.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.px%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L350">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_px" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.px">px</h4>
+  <div class="markdown level1 summary"><p>The horizontal coordinate of the tiling origin in the canvas system, on
+the reference grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int px</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_py.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.py%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L356">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_py" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.py">py</h4>
+  <div class="markdown level1 summary"><p>The vertical coordinate of the tiling origin in the canvas system, on
+the reference grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int py</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_subbTrees.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.subbTrees%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L324">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_subbTrees" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.subbTrees">subbTrees</h4>
+  <div class="markdown level1 summary"><p>The subband trees for each component in the current tile. Each element
+in the array is the root element of the subband tree for a
+component. The number of magnitude bits in each subband (magBits member
+variable) is not initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SubbandSyn[] subbTrees</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_targetRes.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.targetRes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L316">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_targetRes" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.targetRes">targetRes</h4>
+  <div class="markdown level1 summary"><p>Image resolution level to generate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int targetRes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_tnbytes.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.tnbytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L417">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_tnbytes" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.tnbytes">tnbytes</h4>
+  <div class="markdown level1 summary"><p>Number of bytes targeted to be read</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int tnbytes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_trate.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.trate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L423">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_trate" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.trate">trate</h4>
+  <div class="markdown level1 summary"><p>Target decoding rate in bpp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float trate</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ActualNbytes.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ActualNbytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L217">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ActualNbytes_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ActualNbytes*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ActualNbytes" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ActualNbytes">ActualNbytes</h4>
+  <div class="markdown level1 summary"><p>Return the actual number of read bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ActualNbytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Actual decoding rate in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ActualRate.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ActualRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L188">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ActualRate_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ActualRate*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ActualRate" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ActualRate">ActualRate</h4>
+  <div class="markdown level1 summary"><p>Return the actual decoding rate in bits per pixel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float ActualRate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Actual decoding rate in bpp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_CbULX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.CbULX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L81">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_CbULX_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.CbULX*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_CbULX" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.CbULX">CbULX</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal code-block partition origin. Allowable values
+are 0 and 1, nothing else.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CbULX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_CbULY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.CbULY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L93">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_CbULY_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.CbULY*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_CbULY" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.CbULY">CbULY</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical code-block partition origin. Allowable values are
+0 and 1, nothing else.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CbULY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ImgRes.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ImgRes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L160">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ImgRes_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ImgRes*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ImgRes" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ImgRes">ImgRes</h4>
+  <div class="markdown level1 summary"><p>Returns the image resolution level to reconstruct from the
+codestream. This value cannot be computed before every main and tile
+headers are read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ImgRes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The image  resolution level</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NomTileHeight.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.NomTileHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L253">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NomTileHeight_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.NomTileHeight*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NomTileHeight" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.NomTileHeight">NomTileHeight</h4>
+  <div class="markdown level1 summary"><p>Returns the nominal tile height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NomTileHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NomTileWidth.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.NomTileWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L244">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NomTileWidth_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.NomTileWidth*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NomTileWidth" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.NomTileWidth">NomTileWidth</h4>
+  <div class="markdown level1 summary"><p>Returns the nominal tile width</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NomTileWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NumComps.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.NumComps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L107">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NumComps_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.NumComps*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NumComps" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.NumComps">NumComps</h4>
+  <div class="markdown level1 summary"><p>Returns the number of components in the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NumComps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of components in the image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ParameterInfo.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ParameterInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L144">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ParameterInfo_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ParameterInfo*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ParameterInfo" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.ParameterInfo">ParameterInfo</h4>
+  <div class="markdown level1 summary"><p>Returns the parameters that are used in this class and implementing
+classes. It returns a 2D String array. Each of the 1D arrays is for a
+different option, and they have 3 elements. The first element is the
+option name, the second one is the synopsis and the third one is a long
+description of what the parameter is. The synopsis or description may
+be 'null', in which case it is assumed that there is no synopsis or
+description of the option, respectively. Null may be returned if no
+options are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[][] ParameterInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[][]</td>
+        <td><p>the options name, their synopsis and their explanation, or null
+if no options are supported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TargetNbytes.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TargetNbytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L203">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TargetNbytes_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TargetNbytes*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TargetNbytes" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TargetNbytes">TargetNbytes</h4>
+  <div class="markdown level1 summary"><p>Return the target number of read bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TargetNbytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Target decoding rate in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TargetRate.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TargetRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L174">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TargetRate_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TargetRate*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TargetRate" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TargetRate">TargetRate</h4>
+  <div class="markdown level1 summary"><p>Return the target decoding rate in bits per pixel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float TargetRate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>Target decoding rate in bpp.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TileIdx.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TileIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L122">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TileIdx_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TileIdx*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TileIdx" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TileIdx">TileIdx</h4>
+  <div class="markdown level1 summary"><p>Returns the index of the current tile, relative to a standard scan-line
+order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TileIdx { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The current tile's index (starts at 0).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TilePartULX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TilePartULX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L226">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TilePartULX_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TilePartULX*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TilePartULX" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TilePartULX">TilePartULX</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal offset of tile partition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TilePartULX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TilePartULY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TilePartULY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L235">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TilePartULY_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TilePartULY*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TilePartULY" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.TilePartULY">TilePartULY</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical offset of tile partition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TilePartULY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_createInstance_CSJ2K_j2k_io_RandomAccessIO_CSJ2K_j2k_codestream_reader_HeaderDecoder_CSJ2K_j2k_util_ParameterList_CSJ2K_j2k_decoder_DecoderSpecs_System_Boolean_CSJ2K_j2k_codestream_HeaderInfo_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.createInstance(CSJ2K.j2k.io.RandomAccessIO%2CCSJ2K.j2k.codestream.reader.HeaderDecoder%2CCSJ2K.j2k.util.ParameterList%2CCSJ2K.j2k.decoder.DecoderSpecs%2CSystem.Boolean%2CCSJ2K.j2k.codestream.HeaderInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L1081">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_createInstance_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.createInstance*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_createInstance_CSJ2K_j2k_io_RandomAccessIO_CSJ2K_j2k_codestream_reader_HeaderDecoder_CSJ2K_j2k_util_ParameterList_CSJ2K_j2k_decoder_DecoderSpecs_System_Boolean_CSJ2K_j2k_codestream_HeaderInfo_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.createInstance(CSJ2K.j2k.io.RandomAccessIO,CSJ2K.j2k.codestream.reader.HeaderDecoder,CSJ2K.j2k.util.ParameterList,CSJ2K.j2k.decoder.DecoderSpecs,System.Boolean,CSJ2K.j2k.codestream.HeaderInfo)">createInstance(RandomAccessIO, HeaderDecoder, ParameterList, DecoderSpecs, Boolean, HeaderInfo)</h4>
+  <div class="markdown level1 summary"><p>Creates a bit stream reader of the correct type that works on the
+provided RandomAccessIO, with the special parameters from the parameter
+list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BitstreamReaderAgent createInstance(RandomAccessIO in_Renamed, HeaderDecoder hd, ParameterList pl, DecoderSpecs decSpec, bool cdstrInfo, HeaderInfo hi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.io.RandomAccessIO.html">RandomAccessIO</a></td>
+        <td><span class="parametername">in_Renamed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.reader.HeaderDecoder.html">HeaderDecoder</a></td>
+        <td><span class="parametername">hd</span></td>
+        <td><p>Header of the codestream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.util.ParameterList.html">ParameterList</a></td>
+        <td><span class="parametername">pl</span></td>
+        <td><p>The parameter list containing parameters applicable to the
+bit stream read (other parameters may also be present).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.decoder.DecoderSpecs.html">DecoderSpecs</a></td>
+        <td><span class="parametername">decSpec</span></td>
+        <td><p>The decoder specifications</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cdstrInfo</span></td>
+        <td><p>Whether or not to print information found in
+codestream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.html">HeaderInfo</a></td>
+        <td><span class="parametername">hi</span></td>
+        <td><p>Reference to the HeaderInfo instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html">BitstreamReaderAgent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_System_Int32_System_Int32_CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCodeBlock(System.Int32%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.wavelet.synthesis.SubbandSyn%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.entropy.decoder.DecLyrdCBlk)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L1273">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCodeBlock_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_System_Int32_System_Int32_CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCodeBlock(System.Int32,System.Int32,System.Int32,CSJ2K.j2k.wavelet.synthesis.SubbandSyn,System.Int32,System.Int32,CSJ2K.j2k.entropy.decoder.DecLyrdCBlk)">getCodeBlock(Int32, Int32, Int32, SubbandSyn, Int32, Int32, DecLyrdCBlk)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DecLyrdCBlk getCodeBlock(int param1, int param2, int param3, SubbandSyn param4, int param5, int param6, DecLyrdCBlk param7)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td><span class="parametername">param4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.html">DecLyrdCBlk</a></td>
+        <td><span class="parametername">param7</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.html">DecLyrdCBlk</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompImgHeight_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompImgHeight(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L874">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompImgHeight_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompImgHeight*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompImgHeight_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompImgHeight(System.Int32,System.Int32)">getCompImgHeight(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the height in pixels of the specified component in the overall
+image, for the given (component) resolution level.</p>
+<p>Note: Component resolution level indexes may differ from
+tile-component resolution index. They are indeed indexed starting from
+the lowest number of decomposition levels of same component of each
+tile.</p>
+<p>Example: For an image (2 tiles) with 1 component (tile 0 having 2
+decomposition levels and tile 1 having 3 decomposition levels), the
+first tile(-component) has 3 resolution levels and the second one has 4
+resolution levels, whereas the component has only 3 resolution levels
+available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getCompImgHeight(int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The height in pixels of component <tt>c</tt> in the overall
+image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompImgWidth_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompImgWidth(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L836">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompImgWidth_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompImgWidth*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompImgWidth_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompImgWidth(System.Int32,System.Int32)">getCompImgWidth(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the width in pixels of the specified component in the overall
+image, for the given (component) resolution level.</p>
+<p>Note: Component resolution level indexes may differ from
+tile-component resolution index. They are indeed indexed starting from
+the lowest number of decomposition levels of same component of each
+tile.</p>
+<p>Example: For an image (2 tiles) with 1 component (tile 0 having 2
+decomposition levels and tile 1 having 3 decomposition levels), the
+first tile(-component) has 3 resolution levels and the second one has 4
+resolution levels, whereas the component has only 3 resolution levels
+available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getCompImgWidth(int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The width in pixels of component <tt>c</tt> in the overall
+image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompSubsX_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompSubsX(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L488">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompSubsX_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompSubsX*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompSubsX_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompSubsX(System.Int32)">getCompSubsX(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the component subsampling factor in the horizontal direction,
+for the specified component. This is, approximately, the ratio of
+dimensions between the reference grid and the component itself, see the
+'ImgData' interface desription for details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getCompSubsX(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component (between 0 and N-1)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The horizontal subsampling factor of component 'c'</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompSubsY_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompSubsY(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L508">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompSubsY_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompSubsY*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompSubsY_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getCompSubsY(System.Int32)">getCompSubsY(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the component subsampling factor in the vertical direction, for
+the specified component. This is, approximately, the ratio of
+dimensions between the reference grid and the component itself, see the
+'ImgData' interface desription for details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getCompSubsY(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component (between 0 and C-1)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The vertical subsampling factor of component 'c'</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgHeight_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgHeight(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L658">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgHeight_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgHeight*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgHeight_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgHeight(System.Int32)">getImgHeight(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the overall height of the image in pixels, for the given
+resolution level. This is the image's height without accounting for any
+component subsampling or tiling.</p>
+<p>Note: Image resolution level indexes may differ from tile-component
+resolution index. They are indeed indexed starting from the lowest
+number of decomposition levels of each component of each tile.</p>
+<p>Example: For an image (1 tile) with 2 components (component 0 having
+2 decomposition levels and component 1 having 3 decomposition levels),
+the first (tile-) component has 3 resolution levels and the second one
+has 4 resolution levels, whereas the image has only 3 resolution levels
+available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getImgHeight(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The image resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total image's height in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgULX_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgULX(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L693">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgULX_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgULX*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgULX_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgULX(System.Int32)">getImgULX(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal coordinate of the image origin, the top-left
+corner, in the canvas system, on the reference grid at the specified
+resolution level.</p>
+<p>Note: Image resolution level indexes may differ from tile-component
+resolution index. They are indeed indexed starting from the lowest
+number of decomposition levels of each component of each tile.</p>
+<p>Example: For an image (1 tile) with 2 components (component 0 having
+2 decomposition levels and component 1 having 3 decomposition levels),
+the first (tile-) component has 3 resolution levels and the second one
+has 4 resolution levels, whereas the image has only 3 resolution levels
+available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getImgULX(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The horizontal coordinate of the image origin in the canvas
+system, on the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgULY_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgULY(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L728">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgULY_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgULY*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgULY_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgULY(System.Int32)">getImgULY(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical coordinate of the image origin, the top-left
+corner, in the canvas system, on the reference grid at the specified
+resolution level.</p>
+<p>Note: Image resolution level indexes may differ from tile-component
+resolution index. They are indeed indexed starting from the lowest
+number of decomposition levels of each component of each tile.</p>
+<p>Example: For an image (1 tile) with 2 components (component 0 having
+2 decomposition levels and component 1 having 3 decomposition levels),
+the first (tile-) component has 3 resolution levels and the second one
+has 4 resolution levels, whereas the image has only 3 resolution levels
+available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getImgULY(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The vertical coordinate of the image origin in the canvas
+system, on the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgWidth_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgWidth(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L622">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgWidth_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgWidth*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgWidth_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getImgWidth(System.Int32)">getImgWidth(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the overall width of the image in pixels, for the given (image)
+resolution level. This is the image's width without accounting for any
+component subsampling or tiling.</p>
+<p>Note: Image resolution level indexes may differ from tile-component
+resolution index. They are indeed indexed starting from the lowest
+number of decomposition levels of each component of each tile.</p>
+<p>Example: For an image (1 tile) with 2 components (component 0 having
+2 decomposition levels and component 1 having 3 decomposition levels),
+the first (tile-) component has 3 resolution levels and the second one
+has 4 resolution levels, whereas the image has only 3 resolution levels
+available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getImgWidth(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The image resolution level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total image's width in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getNumTiles.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getNumTiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L1011">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getNumTiles_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getNumTiles*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getNumTiles" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getNumTiles">getNumTiles()</h4>
+  <div class="markdown level1 summary"><p>Returns the total number of tiles in the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getNumTiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total number of tiles in the image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getNumTiles_CSJ2K_j2k_image_Coord_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getNumTiles(CSJ2K.j2k.image.Coord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L991">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getNumTiles_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getNumTiles*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getNumTiles_CSJ2K_j2k_image_Coord_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getNumTiles(CSJ2K.j2k.image.Coord)">getNumTiles(Coord)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of tiles in the horizontal and vertical directions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coord getNumTiles(Coord co)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><span class="parametername">co</span></td>
+        <td><p>If not null this object is used to return the information. If
+null a new one is created and returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><p>The number of tiles in the horizontal (Coord.x) and vertical
+(Coord.y) directions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getPPX_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getPPX(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L1107">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getPPX_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getPPX*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getPPX_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getPPX(System.Int32,System.Int32,System.Int32)">getPPX(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the precinct partition width for the specified tile-component
+and (tile-component) resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getPPX(int t, int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>the tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component (between 0 and N-1)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>the precinct partition width for the specified component,
+resolution level and tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getPPY_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getPPY(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L1129">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getPPY_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getPPY*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getPPY_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getPPY(System.Int32,System.Int32,System.Int32)">getPPY(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the precinct partition height for the specified tile-component
+and (tile-component) resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getPPY(int t, int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component (between 0 and N-1)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The precinct partition height in the specified component, for
+the specified resolution level, for the current tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getResULX_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getResULX(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L942">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getResULX_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getResULX*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getResULX_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getResULX(System.Int32,System.Int32)">getResULX(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal coordinate of the upper-left corner of the
+specified resolution in the given component of the current tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getResULX(int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getResULY_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getResULY(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L966">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getResULY_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getResULY*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getResULY_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getResULY(System.Int32,System.Int32)">getResULY(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical coordinate of the upper-left corner of the
+specified component in the given component of the current tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getResULY(int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getSynSubbandTree_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getSynSubbandTree(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L1036">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getSynSubbandTree_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getSynSubbandTree*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getSynSubbandTree_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getSynSubbandTree(System.Int32,System.Int32)">getSynSubbandTree(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the subband tree, for the specified tile-component. This method
+returns the root element of the subband tree structure, see Subband and
+SubbandSyn. The tree comprises all the available resolution levels.</p>
+<p>Note: this method is not able to return subband tree for a tile
+different than the current one.</p>
+<p>The number of magnitude bits (&apos;magBits&apos; member variable) for each
+subband is not initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubbandSyn getSynSubbandTree(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to C-1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td><p>The root of the tree structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTile_CSJ2K_j2k_image_Coord_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTile(CSJ2K.j2k.image.Coord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L918">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTile_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTile*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTile_CSJ2K_j2k_image_Coord_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTile(CSJ2K.j2k.image.Coord)">getTile(Coord)</h4>
+  <div class="markdown level1 summary"><p>Returns the indexes of the current tile. These are the horizontal and
+vertical indexes of the current tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coord getTile(Coord co)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><span class="parametername">co</span></td>
+        <td><p>If not null this object is used to return the information. If
+null a new one is created and returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><p>The current tile's indexes (vertical and horizontal indexes).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileCompHeight_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileCompHeight(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L793">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileCompHeight_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileCompHeight*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileCompHeight_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileCompHeight(System.Int32,System.Int32,System.Int32)">getTileCompHeight(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the height in pixels of the specified tile-component for the
+given (tile-component) resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getTileCompHeight(int t, int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The height in pixels of component <tt>c</tt> in the current
+tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileCompWidth_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileCompWidth(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L758">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileCompWidth_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileCompWidth*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileCompWidth_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileCompWidth(System.Int32,System.Int32,System.Int32)">getTileCompWidth(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the width in pixels of the specified tile-component for the
+given (tile-component) resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int getTileCompWidth(int t, int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The width in pixels of component <tt>c</tt> in tile <tt>t</tt>
+for resolution level <tt>rl</tt>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileHeight_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileHeight(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L579">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileHeight_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileHeight*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileHeight_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileHeight(System.Int32)">getTileHeight(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the overall height of the current tile in pixels, for the given
+resolution level. This is the tile's height without accounting for any
+component subsampling.</p>
+<p>Note: Tile resolution level indexes may be different from
+tile-component resolution index. They are indeed indexed starting from
+the lowest number of decomposition levels of each component of the
+tile.</p>
+<p>For an image (1 tile) with 2 components (component 0 having 2
+decomposition levels and component 1 having 3 decomposition levels),
+the first (tile-)component has 3 resolution levels and the second one
+has 4 resolution levels, whereas the tile has only 3 resolution levels
+available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getTileHeight(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The (tile) resolution level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total current tile's height in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileWidth_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileWidth(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L535">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileWidth_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileWidth*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileWidth_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.getTileWidth(System.Int32)">getTileWidth(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the overall width of the current tile in pixels for the given
+(tile) resolution level. This is the tile's width without accounting
+for any component subsampling.</p>
+<p>Note: Tile resolution level indexes may be different from
+tile-component resolution index. They are indeed indexed starting from
+the lowest number of decomposition levels of each component of the
+tile.</p>
+<p>For an image (1 tile) with 2 components (component 0 having 2
+decomposition levels and component 1 having 3 decomposition levels),
+the first (tile-)component has 3 resolution levels and the second one
+has 4 resolution levels, whereas the tile has only 3 resolution levels
+available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getTileWidth(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The (tile) resolution level.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The current tile's width in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_initSubbandsFields_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.initSubbandsFields(System.Int32%2CCSJ2K.j2k.wavelet.synthesis.SubbandSyn)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L1147">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_initSubbandsFields_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.initSubbandsFields*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_initSubbandsFields_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.initSubbandsFields(System.Int32,CSJ2K.j2k.wavelet.synthesis.SubbandSyn)">initSubbandsFields(Int32, SubbandSyn)</h4>
+  <div class="markdown level1 summary"><p>Initialises subbands fields, such as number of code-blocks, code-blocks
+dimension and number of magnitude bits, in the subband tree. The
+nominal code-block width/height depends on the precincts dimensions if
+used. The way the number of magnitude bits is computed depends on the
+quantization type (reversible, derived, expounded).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void initSubbandsFields(int c, SubbandSyn sb)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component index</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td><span class="parametername">sb</span></td>
+        <td><p>The subband tree to be initialised.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_nextTile.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.nextTile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L905">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_nextTile_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.nextTile*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_nextTile" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.nextTile">nextTile()</h4>
+  <div class="markdown level1 summary"><p>Advances to the next tile, in standard scan-line order (by rows then
+columns). An NoNextElementException is thrown if the current tile is
+the last one (i.e. there is no next tile).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void nextTile()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_setTile_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.setTile(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L898">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_setTile_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.setTile*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_setTile_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.setTile(System.Int32,System.Int32)">setTile(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Changes the current tile, given the new indexes. An
+IllegalArgumentException is thrown if the indexes do not correspond to
+a valid tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void setTile(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The horizontal indexes the tile.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The vertical indexes of the new tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.decoder.CodedCBlkDataSrcDec.html">CodedCBlkDataSrcDec</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTData.html">InvWTData</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_BitstreamReaderAgent.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.BitstreamReaderAgent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/BitstreamReaderAgent.cs/#L75" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.j2k.codestream.writer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.j2k.codestream.writer
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.codestream.writer">
+  
+  <h1 id="CSJ2K_j2k_codestream_writer" data-uid="CSJ2K.j2k.codestream.writer" class="text-break">Namespace CSJ2K.j2k.codestream.writer
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.writer.BitOutputBuffer.html">BitOutputBuffer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.writer.CodestreamWriter.html">CodestreamWriter</a></h4>
+      <section><p>This is the abstract class for writing to a codestream. A codestream
+corresponds to headers (main and tile-parts) and packets. Each packet has a
+head and a body. The codestream always has a maximum number of bytes that
+can be written to it. After that many number of bytes no more data is
+written to the codestream but the number of bytes is counted so that the
+value returned by getMaxAvailableBytes() is negative. If the number of
+bytes is unlimited a ridicoulosly large value, such as Integer.MAX_VALUE,
+is equivalent.</p>
+<p>Data writting to the codestream can be simulated. In this case, no byto
+is effectively written to the codestream but the resulting number of bytes
+is calculated and returned (although it is not accounted in the bit
+stream). This can be used in rate control loops.</p>
+<p>Implementing classes should write the header of the bit stream before
+writing any packets. The bit stream header can be written with the help of
+the HeaderEncoder class.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.writer.FileCodestreamWriter.html">FileCodestreamWriter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.writer.HeaderEncoder.html">HeaderEncoder</a></h4>
+      <section><p>This class writes almost of the markers and marker segments in main header
+and in tile-part headers. It is created by the run() method of the Encoder
+instance.</p>
+<p>A marker segment includes a marker and eventually marker segment
+parameters. It is designed by the three letter code of the marker
+associated with the marker segment. JPEG 2000 part I defines 6 types of
+markers:
+<ul> 
+<li>Delimiting : SOC,SOT,SOD,EOC (written in FileCodestreamWriter).</li>
+<li>Fixed information: SIZ.</li> 
+<li>Functional: COD,COC,RGN,QCD,QCC,POC.</li>
+<li> In bit-stream: SOP,EPH.</li>
+<li> Pointer: TLM,PLM,PLT,PPM,PPT.</li> 
+<li> Informational: CRG,COM.</li>
+</ul></p>
+<p>Main Header is written when Encoder instance calls encodeMainHeader
+whereas tile-part headers are written when the EBCOTRateAllocator instance
+calls encodeTilePartHeader.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.writer.PktEncoder.html">PktEncoder</a></h4>
+      <section><p>This class builds packets and keeps the state information of packet
+interdependencies. It also supports saving the state and reverting
+(restoring) to the last saved state, with the save() and restore() methods.</p>
+<p>Each time the encodePacket() method is called a new packet is encoded,
+the packet header is returned by the method, and the packet body can be
+obtained with the getLastBodyBuf() and getLastBodyLen() methods.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.writer.TagTreeEncoder.html">TagTreeEncoder</a></h4>
+      <section><p>This class implements the tag tree encoder. A tag tree codes a 2D matrix of
+integer elements in an efficient way. The encoding procedure 'encode()'
+codes information about a value of the matrix, given a threshold. The
+procedure encodes the sufficient information to identify whether or not the
+value is greater than or equal to the threshold.</p>
+<p>The tag tree saves encoded information to a BitOutputBuffer.</p>
+<p>A particular and useful property of tag trees is that it is possible to
+change a value of the matrix, provided both new and old values of the
+element are both greater than or equal to the largest threshold which has
+yet been supplied to the coding procedure &apos;encode()&apos;. This property can be
+exploited through the &apos;setValue()&apos; method.</p>
+<p>This class allows saving the state of the tree at any point and
+restoring it at a later time, by calling save() and restore().</p>
+<p>A tag tree can also be reused, or restarted, if one of the reset()
+methods is called.</p>
+<p>The TagTreeDecoder class implements the tag tree decoder.</p>
+<p>Tag trees that have one dimension, or both, as 0 are allowed for
+convenience. Of course no values can be set or coded in such cases.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

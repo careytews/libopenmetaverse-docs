@@ -1,0 +1,1292 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Packet
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Packet
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.Packets.Packet">
+  
+  
+  <h1 id="OpenMetaverse_Packets_Packet" data-uid="OpenMetaverse.Packets.Packet" class="text-break">Class Packet
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Packet</span></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AbortXferPacket.html">AbortXferPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AcceptCallingCardPacket.html">AcceptCallingCardPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AcceptFriendshipPacket.html">AcceptFriendshipPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ActivateGesturesPacket.html">ActivateGesturesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ActivateGroupPacket.html">ActivateGroupPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentAlertMessagePacket.html">AgentAlertMessagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentAnimationPacket.html">AgentAnimationPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentCachedTexturePacket.html">AgentCachedTexturePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentCachedTextureResponsePacket.html">AgentCachedTextureResponsePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentDataUpdatePacket.html">AgentDataUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentDataUpdateRequestPacket.html">AgentDataUpdateRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentDropGroupPacket.html">AgentDropGroupPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentFOVPacket.html">AgentFOVPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentGroupDataUpdatePacket.html">AgentGroupDataUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentHeightWidthPacket.html">AgentHeightWidthPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentIsNowWearingPacket.html">AgentIsNowWearingPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentMovementCompletePacket.html">AgentMovementCompletePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentPausePacket.html">AgentPausePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentQuitCopyPacket.html">AgentQuitCopyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentRequestSitPacket.html">AgentRequestSitPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentResumePacket.html">AgentResumePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentSetAppearancePacket.html">AgentSetAppearancePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentSitPacket.html">AgentSitPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentThrottlePacket.html">AgentThrottlePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentUpdatePacket.html">AgentUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentWearablesRequestPacket.html">AgentWearablesRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AgentWearablesUpdatePacket.html">AgentWearablesUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AlertMessagePacket.html">AlertMessagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AssetUploadCompletePacket.html">AssetUploadCompletePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AssetUploadRequestPacket.html">AssetUploadRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AttachedSoundGainChangePacket.html">AttachedSoundGainChangePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AttachedSoundPacket.html">AttachedSoundPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarAnimationPacket.html">AvatarAnimationPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarAppearancePacket.html">AvatarAppearancePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarClassifiedReplyPacket.html">AvatarClassifiedReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarGroupsReplyPacket.html">AvatarGroupsReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarInterestsReplyPacket.html">AvatarInterestsReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarInterestsUpdatePacket.html">AvatarInterestsUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarNotesReplyPacket.html">AvatarNotesReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarNotesUpdatePacket.html">AvatarNotesUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarPickerReplyPacket.html">AvatarPickerReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarPickerRequestPacket.html">AvatarPickerRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarPicksReplyPacket.html">AvatarPicksReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarPropertiesReplyPacket.html">AvatarPropertiesReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarPropertiesRequestPacket.html">AvatarPropertiesRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarPropertiesUpdatePacket.html">AvatarPropertiesUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.AvatarSitResponsePacket.html">AvatarSitResponsePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.BulkUpdateInventoryPacket.html">BulkUpdateInventoryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.BuyObjectInventoryPacket.html">BuyObjectInventoryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CameraConstraintPacket.html">CameraConstraintPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ChangeInventoryItemFlagsPacket.html">ChangeInventoryItemFlagsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ChangeUserRightsPacket.html">ChangeUserRightsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ChatFromSimulatorPacket.html">ChatFromSimulatorPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ChatFromViewerPacket.html">ChatFromViewerPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ChildAgentAlivePacket.html">ChildAgentAlivePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ChildAgentDyingPacket.html">ChildAgentDyingPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ChildAgentPositionUpdatePacket.html">ChildAgentPositionUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ChildAgentUnknownPacket.html">ChildAgentUnknownPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ChildAgentUpdatePacket.html">ChildAgentUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ClassifiedDeletePacket.html">ClassifiedDeletePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ClassifiedGodDeletePacket.html">ClassifiedGodDeletePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ClassifiedInfoReplyPacket.html">ClassifiedInfoReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ClassifiedInfoRequestPacket.html">ClassifiedInfoRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ClassifiedInfoUpdatePacket.html">ClassifiedInfoUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ClearFollowCamPropertiesPacket.html">ClearFollowCamPropertiesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CloseCircuitPacket.html">CloseCircuitPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CoarseLocationUpdatePacket.html">CoarseLocationUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CompleteAgentMovementPacket.html">CompleteAgentMovementPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CompletePingCheckPacket.html">CompletePingCheckPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ConfirmEnableSimulatorPacket.html">ConfirmEnableSimulatorPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ConfirmXferPacketPacket.html">ConfirmXferPacketPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CopyInventoryFromNotecardPacket.html">CopyInventoryFromNotecardPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CopyInventoryItemPacket.html">CopyInventoryItemPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CreateGroupReplyPacket.html">CreateGroupReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CreateGroupRequestPacket.html">CreateGroupRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CreateInventoryFolderPacket.html">CreateInventoryFolderPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CreateInventoryItemPacket.html">CreateInventoryItemPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CreateLandmarkForEventPacket.html">CreateLandmarkForEventPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CreateNewOutfitAttachmentsPacket.html">CreateNewOutfitAttachmentsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.CrossedRegionPacket.html">CrossedRegionPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DeactivateGesturesPacket.html">DeactivateGesturesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DeclineCallingCardPacket.html">DeclineCallingCardPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DeclineFriendshipPacket.html">DeclineFriendshipPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DeRezAckPacket.html">DeRezAckPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DerezContainerPacket.html">DerezContainerPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DeRezObjectPacket.html">DeRezObjectPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DetachAttachmentIntoInvPacket.html">DetachAttachmentIntoInvPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirClassifiedQueryPacket.html">DirClassifiedQueryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirClassifiedReplyPacket.html">DirClassifiedReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirEventsReplyPacket.html">DirEventsReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirFindQueryPacket.html">DirFindQueryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirGroupsReplyPacket.html">DirGroupsReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirLandQueryPacket.html">DirLandQueryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirLandReplyPacket.html">DirLandReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirPeopleReplyPacket.html">DirPeopleReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirPlacesQueryPacket.html">DirPlacesQueryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirPlacesReplyPacket.html">DirPlacesReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirPopularQueryPacket.html">DirPopularQueryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DirPopularReplyPacket.html">DirPopularReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.DisableSimulatorPacket.html">DisableSimulatorPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EconomyDataPacket.html">EconomyDataPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EconomyDataRequestPacket.html">EconomyDataRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EjectGroupMemberReplyPacket.html">EjectGroupMemberReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EjectGroupMemberRequestPacket.html">EjectGroupMemberRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EjectUserPacket.html">EjectUserPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EnableSimulatorPacket.html">EnableSimulatorPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ErrorPacket.html">ErrorPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EstateCovenantReplyPacket.html">EstateCovenantReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EstateCovenantRequestPacket.html">EstateCovenantRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EstateOwnerMessagePacket.html">EstateOwnerMessagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EventGodDeletePacket.html">EventGodDeletePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EventInfoReplyPacket.html">EventInfoReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EventInfoRequestPacket.html">EventInfoRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EventNotificationAddRequestPacket.html">EventNotificationAddRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.EventNotificationRemoveRequestPacket.html">EventNotificationRemoveRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.FetchInventoryDescendentsPacket.html">FetchInventoryDescendentsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.FetchInventoryPacket.html">FetchInventoryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.FetchInventoryReplyPacket.html">FetchInventoryReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.FindAgentPacket.html">FindAgentPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ForceObjectSelectPacket.html">ForceObjectSelectPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ForceScriptControlReleasePacket.html">ForceScriptControlReleasePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.FreezeUserPacket.html">FreezeUserPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GenericMessagePacket.html">GenericMessagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GetScriptRunningPacket.html">GetScriptRunningPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GodKickUserPacket.html">GodKickUserPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GodlikeMessagePacket.html">GodlikeMessagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GodUpdateRegionInfoPacket.html">GodUpdateRegionInfoPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GrantGodlikePowersPacket.html">GrantGodlikePowersPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GrantUserRightsPacket.html">GrantUserRightsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupAccountDetailsReplyPacket.html">GroupAccountDetailsReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupAccountDetailsRequestPacket.html">GroupAccountDetailsRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupAccountSummaryReplyPacket.html">GroupAccountSummaryReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupAccountSummaryRequestPacket.html">GroupAccountSummaryRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupAccountTransactionsReplyPacket.html">GroupAccountTransactionsReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupAccountTransactionsRequestPacket.html">GroupAccountTransactionsRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupActiveProposalItemReplyPacket.html">GroupActiveProposalItemReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupActiveProposalsRequestPacket.html">GroupActiveProposalsRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupDataUpdatePacket.html">GroupDataUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupMembersReplyPacket.html">GroupMembersReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupMembersRequestPacket.html">GroupMembersRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupNoticeRequestPacket.html">GroupNoticeRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupNoticesListReplyPacket.html">GroupNoticesListReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupNoticesListRequestPacket.html">GroupNoticesListRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupProfileReplyPacket.html">GroupProfileReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupProfileRequestPacket.html">GroupProfileRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupProposalBallotPacket.html">GroupProposalBallotPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupRoleChangesPacket.html">GroupRoleChangesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupRoleDataReplyPacket.html">GroupRoleDataReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupRoleDataRequestPacket.html">GroupRoleDataRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupRoleMembersReplyPacket.html">GroupRoleMembersReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupRoleMembersRequestPacket.html">GroupRoleMembersRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupRoleUpdatePacket.html">GroupRoleUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupTitlesReplyPacket.html">GroupTitlesReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupTitlesRequestPacket.html">GroupTitlesRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupTitleUpdatePacket.html">GroupTitleUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupVoteHistoryItemReplyPacket.html">GroupVoteHistoryItemReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.GroupVoteHistoryRequestPacket.html">GroupVoteHistoryRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.HealthMessagePacket.html">HealthMessagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ImageDataPacket.html">ImageDataPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ImageNotInDatabasePacket.html">ImageNotInDatabasePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ImagePacketPacket.html">ImagePacketPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ImprovedInstantMessagePacket.html">ImprovedInstantMessagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ImprovedTerseObjectUpdatePacket.html">ImprovedTerseObjectUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.InitiateDownloadPacket.html">InitiateDownloadPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.InventoryDescendentsPacket.html">InventoryDescendentsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.InviteGroupRequestPacket.html">InviteGroupRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.JoinGroupReplyPacket.html">JoinGroupReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.JoinGroupRequestPacket.html">JoinGroupRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.KickUserPacket.html">KickUserPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.KillObjectPacket.html">KillObjectPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.LandStatReplyPacket.html">LandStatReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.LandStatRequestPacket.html">LandStatRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.LayerDataPacket.html">LayerDataPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.LeaveGroupReplyPacket.html">LeaveGroupReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.LeaveGroupRequestPacket.html">LeaveGroupRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.LinkInventoryItemPacket.html">LinkInventoryItemPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.LiveHelpGroupReplyPacket.html">LiveHelpGroupReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.LiveHelpGroupRequestPacket.html">LiveHelpGroupRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.LoadURLPacket.html">LoadURLPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.LogoutReplyPacket.html">LogoutReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.LogoutRequestPacket.html">LogoutRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MapBlockReplyPacket.html">MapBlockReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MapBlockRequestPacket.html">MapBlockRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MapItemReplyPacket.html">MapItemReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MapItemRequestPacket.html">MapItemRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MapLayerReplyPacket.html">MapLayerReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MapLayerRequestPacket.html">MapLayerRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MapNameRequestPacket.html">MapNameRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MeanCollisionAlertPacket.html">MeanCollisionAlertPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ModifyLandPacket.html">ModifyLandPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MoneyBalanceReplyPacket.html">MoneyBalanceReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MoneyBalanceRequestPacket.html">MoneyBalanceRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MoneyTransferRequestPacket.html">MoneyTransferRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MoveInventoryFolderPacket.html">MoveInventoryFolderPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MoveInventoryItemPacket.html">MoveInventoryItemPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MoveTaskInventoryPacket.html">MoveTaskInventoryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MultipleObjectUpdatePacket.html">MultipleObjectUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MuteListRequestPacket.html">MuteListRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.MuteListUpdatePacket.html">MuteListUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectAddPacket.html">ObjectAddPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectAttachPacket.html">ObjectAttachPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectBuyPacket.html">ObjectBuyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectCategoryPacket.html">ObjectCategoryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectClickActionPacket.html">ObjectClickActionPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectDeGrabPacket.html">ObjectDeGrabPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectDeletePacket.html">ObjectDeletePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectDelinkPacket.html">ObjectDelinkPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectDescriptionPacket.html">ObjectDescriptionPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectDeselectPacket.html">ObjectDeselectPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectDetachPacket.html">ObjectDetachPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectDropPacket.html">ObjectDropPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectDuplicateOnRayPacket.html">ObjectDuplicateOnRayPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectDuplicatePacket.html">ObjectDuplicatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectExportSelectedPacket.html">ObjectExportSelectedPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectExtraParamsPacket.html">ObjectExtraParamsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectFlagUpdatePacket.html">ObjectFlagUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectGrabPacket.html">ObjectGrabPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectGrabUpdatePacket.html">ObjectGrabUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectGroupPacket.html">ObjectGroupPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectImagePacket.html">ObjectImagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectIncludeInSearchPacket.html">ObjectIncludeInSearchPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectLinkPacket.html">ObjectLinkPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectMaterialPacket.html">ObjectMaterialPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectNamePacket.html">ObjectNamePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectOwnerPacket.html">ObjectOwnerPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectPermissionsPacket.html">ObjectPermissionsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectPositionPacket.html">ObjectPositionPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectPropertiesFamilyPacket.html">ObjectPropertiesFamilyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectPropertiesPacket.html">ObjectPropertiesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectRotationPacket.html">ObjectRotationPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectSaleInfoPacket.html">ObjectSaleInfoPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectScalePacket.html">ObjectScalePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectSelectPacket.html">ObjectSelectPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectShapePacket.html">ObjectShapePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectSpinStartPacket.html">ObjectSpinStartPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectSpinStopPacket.html">ObjectSpinStopPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectSpinUpdatePacket.html">ObjectSpinUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectUpdateCachedPacket.html">ObjectUpdateCachedPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectUpdateCompressedPacket.html">ObjectUpdateCompressedPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ObjectUpdatePacket.html">ObjectUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.OfferCallingCardPacket.html">OfferCallingCardPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.OfflineNotificationPacket.html">OfflineNotificationPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.OnlineNotificationPacket.html">OnlineNotificationPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.OpenCircuitPacket.html">OpenCircuitPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.PacketAckPacket.html">PacketAckPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelAccessListReplyPacket.html">ParcelAccessListReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelAccessListRequestPacket.html">ParcelAccessListRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelAccessListUpdatePacket.html">ParcelAccessListUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelBuyPacket.html">ParcelBuyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelBuyPassPacket.html">ParcelBuyPassPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelClaimPacket.html">ParcelClaimPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelDeedToGroupPacket.html">ParcelDeedToGroupPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelDisableObjectsPacket.html">ParcelDisableObjectsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelDividePacket.html">ParcelDividePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelDwellReplyPacket.html">ParcelDwellReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelDwellRequestPacket.html">ParcelDwellRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelGodForceOwnerPacket.html">ParcelGodForceOwnerPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelGodMarkAsContentPacket.html">ParcelGodMarkAsContentPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelInfoReplyPacket.html">ParcelInfoReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelInfoRequestPacket.html">ParcelInfoRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelJoinPacket.html">ParcelJoinPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelMediaCommandMessagePacket.html">ParcelMediaCommandMessagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelMediaUpdatePacket.html">ParcelMediaUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelObjectOwnersReplyPacket.html">ParcelObjectOwnersReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelObjectOwnersRequestPacket.html">ParcelObjectOwnersRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelOverlayPacket.html">ParcelOverlayPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelPropertiesPacket.html">ParcelPropertiesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelPropertiesRequestByIDPacket.html">ParcelPropertiesRequestByIDPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelPropertiesRequestPacket.html">ParcelPropertiesRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelPropertiesUpdatePacket.html">ParcelPropertiesUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelReclaimPacket.html">ParcelReclaimPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelReleasePacket.html">ParcelReleasePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelReturnObjectsPacket.html">ParcelReturnObjectsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelSelectObjectsPacket.html">ParcelSelectObjectsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ParcelSetOtherCleanTimePacket.html">ParcelSetOtherCleanTimePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.PayPriceReplyPacket.html">PayPriceReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.PickDeletePacket.html">PickDeletePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.PickGodDeletePacket.html">PickGodDeletePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.PickInfoReplyPacket.html">PickInfoReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.PickInfoUpdatePacket.html">PickInfoUpdatePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.PlacesQueryPacket.html">PlacesQueryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.PlacesReplyPacket.html">PlacesReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.PreloadSoundPacket.html">PreloadSoundPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.PurgeInventoryDescendentsPacket.html">PurgeInventoryDescendentsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RebakeAvatarTexturesPacket.html">RebakeAvatarTexturesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RedoPacket.html">RedoPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RegionHandleRequestPacket.html">RegionHandleRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RegionHandshakePacket.html">RegionHandshakePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RegionHandshakeReplyPacket.html">RegionHandshakeReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RegionIDAndHandleReplyPacket.html">RegionIDAndHandleReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RegionInfoPacket.html">RegionInfoPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RemoveInventoryFolderPacket.html">RemoveInventoryFolderPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RemoveInventoryItemPacket.html">RemoveInventoryItemPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RemoveInventoryObjectsPacket.html">RemoveInventoryObjectsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RemoveMuteListEntryPacket.html">RemoveMuteListEntryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RemoveTaskInventoryPacket.html">RemoveTaskInventoryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ReplyTaskInventoryPacket.html">ReplyTaskInventoryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ReportAutosaveCrashPacket.html">ReportAutosaveCrashPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RequestGodlikePowersPacket.html">RequestGodlikePowersPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RequestImagePacket.html">RequestImagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RequestMultipleObjectsPacket.html">RequestMultipleObjectsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RequestObjectPropertiesFamilyPacket.html">RequestObjectPropertiesFamilyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RequestPayPricePacket.html">RequestPayPricePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RequestRegionInfoPacket.html">RequestRegionInfoPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RequestTaskInventoryPacket.html">RequestTaskInventoryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RequestXferPacket.html">RequestXferPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RetrieveInstantMessagesPacket.html">RetrieveInstantMessagesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RevokePermissionsPacket.html">RevokePermissionsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RezMultipleAttachmentsFromInvPacket.html">RezMultipleAttachmentsFromInvPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RezObjectFromNotecardPacket.html">RezObjectFromNotecardPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RezObjectPacket.html">RezObjectPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RezRestoreToWorldPacket.html">RezRestoreToWorldPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RezScriptPacket.html">RezScriptPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RezSingleAttachmentFromInvPacket.html">RezSingleAttachmentFromInvPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.RoutedMoneyBalanceReplyPacket.html">RoutedMoneyBalanceReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SaveAssetIntoInventoryPacket.html">SaveAssetIntoInventoryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ScriptAnswerYesPacket.html">ScriptAnswerYesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ScriptControlChangePacket.html">ScriptControlChangePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ScriptDialogPacket.html">ScriptDialogPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ScriptDialogReplyPacket.html">ScriptDialogReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ScriptQuestionPacket.html">ScriptQuestionPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ScriptResetPacket.html">ScriptResetPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ScriptRunningReplyPacket.html">ScriptRunningReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ScriptSensorReplyPacket.html">ScriptSensorReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ScriptSensorRequestPacket.html">ScriptSensorRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ScriptTeleportRequestPacket.html">ScriptTeleportRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SendPostcardPacket.html">SendPostcardPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SendXferPacketPacket.html">SendXferPacketPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SetAlwaysRunPacket.html">SetAlwaysRunPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SetFollowCamPropertiesPacket.html">SetFollowCamPropertiesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SetGroupAcceptNoticesPacket.html">SetGroupAcceptNoticesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SetGroupContributionPacket.html">SetGroupContributionPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SetScriptRunningPacket.html">SetScriptRunningPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SetStartLocationRequestPacket.html">SetStartLocationRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SimStatsPacket.html">SimStatsPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SimulatorViewerTimeMessagePacket.html">SimulatorViewerTimeMessagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SimWideDeletesPacket.html">SimWideDeletesPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.SoundTriggerPacket.html">SoundTriggerPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.StartGroupProposalPacket.html">StartGroupProposalPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.StartLurePacket.html">StartLurePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.StartPingCheckPacket.html">StartPingCheckPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.StateSavePacket.html">StateSavePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TelehubInfoPacket.html">TelehubInfoPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TeleportCancelPacket.html">TeleportCancelPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TeleportFailedPacket.html">TeleportFailedPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TeleportFinishPacket.html">TeleportFinishPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TeleportLandmarkRequestPacket.html">TeleportLandmarkRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TeleportLocalPacket.html">TeleportLocalPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TeleportLocationRequestPacket.html">TeleportLocationRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TeleportLureRequestPacket.html">TeleportLureRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TeleportProgressPacket.html">TeleportProgressPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TeleportRequestPacket.html">TeleportRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TeleportStartPacket.html">TeleportStartPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TerminateFriendshipPacket.html">TerminateFriendshipPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TestMessagePacket.html">TestMessagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TrackAgentPacket.html">TrackAgentPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TransferAbortPacket.html">TransferAbortPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TransferInfoPacket.html">TransferInfoPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TransferPacketPacket.html">TransferPacketPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.TransferRequestPacket.html">TransferRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UndoLandPacket.html">UndoLandPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UndoPacket.html">UndoPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UpdateCreateInventoryItemPacket.html">UpdateCreateInventoryItemPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UpdateGroupInfoPacket.html">UpdateGroupInfoPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UpdateInventoryFolderPacket.html">UpdateInventoryFolderPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UpdateInventoryItemPacket.html">UpdateInventoryItemPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UpdateMuteListEntryPacket.html">UpdateMuteListEntryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UpdateTaskInventoryPacket.html">UpdateTaskInventoryPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UpdateUserInfoPacket.html">UpdateUserInfoPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UseCachedMuteListPacket.html">UseCachedMuteListPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UseCircuitCodePacket.html">UseCircuitCodePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UserInfoReplyPacket.html">UserInfoReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UserInfoRequestPacket.html">UserInfoRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UserReportPacket.html">UserReportPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UUIDGroupNameReplyPacket.html">UUIDGroupNameReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UUIDGroupNameRequestPacket.html">UUIDGroupNameRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UUIDNameReplyPacket.html">UUIDNameReplyPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.UUIDNameRequestPacket.html">UUIDNameRequestPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.VelocityInterpolateOffPacket.html">VelocityInterpolateOffPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.VelocityInterpolateOnPacket.html">VelocityInterpolateOnPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ViewerEffectPacket.html">ViewerEffectPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ViewerFrozenMessagePacket.html">ViewerFrozenMessagePacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ViewerStartAuctionPacket.html">ViewerStartAuctionPacket</a></div>
+      <div class="level2"><a class="xref" href="OpenMetaverse.Packets.ViewerStatsPacket.html">ViewerStatsPacket</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.Packets.html">OpenMetaverse.Packets</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_Packets_Packet_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Packet</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_HasVariableBlocks.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.HasVariableBlocks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L650">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Packets_Packet_HasVariableBlocks" data-uid="OpenMetaverse.Packets.Packet.HasVariableBlocks">HasVariableBlocks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasVariableBlocks</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_Header.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.Header%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L649">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Packets_Packet_Header" data-uid="OpenMetaverse.Packets.Packet.Header">Header</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Header Header</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Header.html">Header</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_MTU.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.MTU%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L647">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Packets_Packet_MTU" data-uid="OpenMetaverse.Packets.Packet.MTU">MTU</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MTU = 1200</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_Type.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L651">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Packets_Packet_Type" data-uid="OpenMetaverse.Packets.Packet.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PacketType Type</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.PacketType.html">PacketType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_Length.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L652">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_Length_" data-uid="OpenMetaverse.Packets.Packet.Length*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_Length" data-uid="OpenMetaverse.Packets.Packet.Length">Length</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_BuildPacket_OpenMetaverse_Packets_PacketType_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.BuildPacket(OpenMetaverse.Packets.PacketType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L1066">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_BuildPacket_" data-uid="OpenMetaverse.Packets.Packet.BuildPacket*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_BuildPacket_OpenMetaverse_Packets_PacketType_" data-uid="OpenMetaverse.Packets.Packet.BuildPacket(OpenMetaverse.Packets.PacketType)">BuildPacket(PacketType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Packet BuildPacket(PacketType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.PacketType.html">PacketType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Packet.html">Packet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_BuildPacket_System_Byte___System_Int32__System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.BuildPacket(System.Byte%5B%5D%2CSystem.Int32%40%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L1456">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_BuildPacket_" data-uid="OpenMetaverse.Packets.Packet.BuildPacket*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_BuildPacket_System_Byte___System_Int32__System_Byte___" data-uid="OpenMetaverse.Packets.Packet.BuildPacket(System.Byte[],System.Int32@,System.Byte[])">BuildPacket(Byte[], ref Int32, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Packet BuildPacket(byte[] packetBuffer, ref int packetEnd, byte[] zeroBuffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">packetBuffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">packetEnd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">zeroBuffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Packet.html">Packet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_BuildPacket_System_String_OpenMetaverse_StructuredData_OSDMap_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.BuildPacket(System.String%2COpenMetaverse.StructuredData.OSDMap)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/CapsToPacket.cs/#L109">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_BuildPacket_" data-uid="OpenMetaverse.Packets.Packet.BuildPacket*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_BuildPacket_System_String_OpenMetaverse_StructuredData_OSDMap_" data-uid="OpenMetaverse.Packets.Packet.BuildPacket(System.String,OpenMetaverse.StructuredData.OSDMap)">BuildPacket(String, OSDMap)</h4>
+  <div class="markdown level1 summary"><p>Attempts to convert an LLSD structure to a known Packet type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Packet BuildPacket(string capsEventName, OSDMap body)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">capsEventName</span></td>
+        <td><p>Event name, this must match an actual
+packet name for a Packet to be successfully built</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSDMap.html">OSDMap</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>LLSD to convert to a Packet</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Packet.html">Packet</a></td>
+        <td><p>A Packet on success, otherwise null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_FromBytes_OpenMetaverse_Packets_Header_System_Byte___System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.FromBytes(OpenMetaverse.Packets.Header%2CSystem.Byte%5B%5D%2CSystem.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L654">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_FromBytes_" data-uid="OpenMetaverse.Packets.Packet.FromBytes*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_FromBytes_OpenMetaverse_Packets_Header_System_Byte___System_Int32__System_Int32__" data-uid="OpenMetaverse.Packets.Packet.FromBytes(OpenMetaverse.Packets.Header,System.Byte[],System.Int32@,System.Int32@)">FromBytes(Header, Byte[], ref Int32, ref Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void FromBytes(Header header, byte[] bytes, ref int i, ref int packetEnd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Header.html">Header</a></td>
+        <td><span class="parametername">header</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">packetEnd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_FromBytes_System_Byte___System_Int32__System_Int32__System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.FromBytes(System.Byte%5B%5D%2CSystem.Int32%40%2CSystem.Int32%40%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L653">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_FromBytes_" data-uid="OpenMetaverse.Packets.Packet.FromBytes*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_FromBytes_System_Byte___System_Int32__System_Int32__System_Byte___" data-uid="OpenMetaverse.Packets.Packet.FromBytes(System.Byte[],System.Int32@,System.Int32@,System.Byte[])">FromBytes(Byte[], ref Int32, ref Int32, Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void FromBytes(byte[] bytes, ref int i, ref int packetEnd, byte[] zeroBuffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">packetEnd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">zeroBuffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_FromLLSD_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.FromLLSD(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/CapsToPacket.cs/#L94">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_FromLLSD_" data-uid="OpenMetaverse.Packets.Packet.FromLLSD*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_FromLLSD_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.Packets.Packet.FromLLSD(OpenMetaverse.StructuredData.OSD)">FromLLSD(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Packet FromLLSD(OSD osd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">osd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Packet.html">Packet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_FromXmlString_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.FromXmlString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/CapsToPacket.cs/#L86">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_FromXmlString_" data-uid="OpenMetaverse.Packets.Packet.FromXmlString*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_FromXmlString_System_String_" data-uid="OpenMetaverse.Packets.Packet.FromXmlString(System.String)">FromXmlString(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Packet FromXmlString(string xml)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xml</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Packet.html">Packet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_GetLLSD_OpenMetaverse_Packets_Packet_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.GetLLSD(OpenMetaverse.Packets.Packet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/CapsToPacket.cs/#L44">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_GetLLSD_" data-uid="OpenMetaverse.Packets.Packet.GetLLSD*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_GetLLSD_OpenMetaverse_Packets_Packet_" data-uid="OpenMetaverse.Packets.Packet.GetLLSD(OpenMetaverse.Packets.Packet)">GetLLSD(Packet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD GetLLSD(Packet packet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Packet.html">Packet</a></td>
+        <td><span class="parametername">packet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_GetType_System_UInt16_OpenMetaverse_PacketFrequency_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.GetType(System.UInt16%2COpenMetaverse.PacketFrequency)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L658">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_GetType_" data-uid="OpenMetaverse.Packets.Packet.GetType*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_GetType_System_UInt16_OpenMetaverse_PacketFrequency_" data-uid="OpenMetaverse.Packets.Packet.GetType(System.UInt16,OpenMetaverse.PacketFrequency)">GetType(UInt16, PacketFrequency)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PacketType GetType(ushort id, PacketFrequency frequency)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketFrequency.html">PacketFrequency</a></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.PacketType.html">PacketType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_ToBinary_OpenMetaverse_Packets_Packet_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.ToBinary(OpenMetaverse.Packets.Packet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/CapsToPacket.cs/#L81">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_ToBinary_" data-uid="OpenMetaverse.Packets.Packet.ToBinary*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_ToBinary_OpenMetaverse_Packets_Packet_" data-uid="OpenMetaverse.Packets.Packet.ToBinary(OpenMetaverse.Packets.Packet)">ToBinary(Packet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToBinary(Packet packet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Packet.html">Packet</a></td>
+        <td><span class="parametername">packet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_ToBytes.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.ToBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L655">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_ToBytes_" data-uid="OpenMetaverse.Packets.Packet.ToBytes*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_ToBytes" data-uid="OpenMetaverse.Packets.Packet.ToBytes">ToBytes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract byte[] ToBytes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_ToBytesMultiple.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.ToBytesMultiple%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L656">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_ToBytesMultiple_" data-uid="OpenMetaverse.Packets.Packet.ToBytesMultiple*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_ToBytesMultiple" data-uid="OpenMetaverse.Packets.Packet.ToBytesMultiple">ToBytesMultiple()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract byte[][] ToBytesMultiple()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[][]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet_ToXmlString_OpenMetaverse_Packets_Packet_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet.ToXmlString(OpenMetaverse.Packets.Packet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/CapsToPacket.cs/#L39">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Packets_Packet_ToXmlString_" data-uid="OpenMetaverse.Packets.Packet.ToXmlString*"></a>
+  <h4 id="OpenMetaverse_Packets_Packet_ToXmlString_OpenMetaverse_Packets_Packet_" data-uid="OpenMetaverse.Packets.Packet.ToXmlString(OpenMetaverse.Packets.Packet)">ToXmlString(Packet)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToXmlString(Packet packet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Packets.Packet.html">Packet</a></td>
+        <td><span class="parametername">packet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Packets_Packet.md&amp;value=---%0Auid%3A%20OpenMetaverse.Packets.Packet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/_Packets_.cs/#L645" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

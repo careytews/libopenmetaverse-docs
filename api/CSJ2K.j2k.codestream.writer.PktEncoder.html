@@ -1,0 +1,702 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PktEncoder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PktEncoder
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder">
+  
+  
+  <h1 id="CSJ2K_j2k_codestream_writer_PktEncoder" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder" class="text-break">Class PktEncoder
+  </h1>
+  <div class="markdown level0 summary"><p>This class builds packets and keeps the state information of packet
+interdependencies. It also supports saving the state and reverting
+(restoring) to the last saved state, with the save() and restore() methods.</p>
+<p>Each time the encodePacket() method is called a new packet is encoded,
+the packet header is returned by the method, and the packet body can be
+obtained with the getLastBodyBuf() and getLastBodyLen() methods.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PktEncoder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.codestream.writer.html">CSJ2K.j2k.codestream.writer</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_codestream_writer_PktEncoder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PktEncoder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder__ctor_CSJ2K_j2k_entropy_encoder_CodedCBlkDataSrcEnc_CSJ2K_j2k_encoder_EncoderSpecs_CSJ2K_j2k_image_Coord_______CSJ2K_j2k_util_ParameterList_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.%23ctor(CSJ2K.j2k.entropy.encoder.CodedCBlkDataSrcEnc%2CCSJ2K.j2k.encoder.EncoderSpecs%2CCSJ2K.j2k.image.Coord%5B%5D%5B%5D%5B%5D%2CCSJ2K.j2k.util.ParameterList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L345">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder__ctor_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder__ctor_CSJ2K_j2k_entropy_encoder_CodedCBlkDataSrcEnc_CSJ2K_j2k_encoder_EncoderSpecs_CSJ2K_j2k_image_Coord_______CSJ2K_j2k_util_ParameterList_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.#ctor(CSJ2K.j2k.entropy.encoder.CodedCBlkDataSrcEnc,CSJ2K.j2k.encoder.EncoderSpecs,CSJ2K.j2k.image.Coord[][][],CSJ2K.j2k.util.ParameterList)">PktEncoder(CodedCBlkDataSrcEnc, EncoderSpecs, Coord[][][], ParameterList)</h4>
+  <div class="markdown level1 summary"><p>Creates a new packet encoder object, using the information from the
+'infoSrc' object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PktEncoder(CodedCBlkDataSrcEnc infoSrc, EncoderSpecs encSpec, Coord[][][] numPrec, ParameterList pl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.encoder.CodedCBlkDataSrcEnc.html">CodedCBlkDataSrcEnc</a></td>
+        <td><span class="parametername">infoSrc</span></td>
+        <td><p>The source of information to construct the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.encoder.EncoderSpecs.html">EncoderSpecs</a></td>
+        <td><span class="parametername">encSpec</span></td>
+        <td><p>The encoding parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a>[][][]</td>
+        <td><span class="parametername">numPrec</span></td>
+        <td><p>Maximum number of precincts in each tile, component
+and resolution level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.util.ParameterList.html">ParameterList</a></td>
+        <td><span class="parametername">pl</span></td>
+        <td><p>ParameterList instance that holds command line options</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_OPT_PREFIX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.OPT_PREFIX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L172">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_OPT_PREFIX" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.OPT_PREFIX">OPT_PREFIX</h4>
+  <div class="markdown level1 summary"><p>The prefix for packet encoding options: 'P'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const char OPT_PREFIX = 'P'</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_LastBodyBuf.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.LastBodyBuf%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L83">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder_LastBodyBuf_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.LastBodyBuf*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_LastBodyBuf" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.LastBodyBuf">LastBodyBuf</h4>
+  <div class="markdown level1 summary"><p>Returns the buffer of the body of the last encoded packet. The length
+of the body can be retrieved with the getLastBodyLen() method. The
+length of the array returned by this method may be larger than the
+actual body length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] LastBodyBuf { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>The buffer of body of the last encoded packet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_LastBodyLen.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.LastBodyLen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L106">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder_LastBodyLen_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.LastBodyLen*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_LastBodyLen" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.LastBodyLen">LastBodyLen</h4>
+  <div class="markdown level1 summary"><p>Returns the length of the body of the last encoded packet, in
+bytes. The body itself can be retrieved with the getLastBodyBuf()
+method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int LastBodyLen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The length of the body of last encoded packet, in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_PacketWritable.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.PacketWritable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L118">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder_PacketWritable_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.PacketWritable*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_PacketWritable" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.PacketWritable">PacketWritable</h4>
+  <div class="markdown level1 summary"><p>Returns true if the current packet is writable i.e. should be written.
+Returns false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool PacketWritable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_ParameterInfo.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.ParameterInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L162">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder_ParameterInfo_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.ParameterInfo*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_ParameterInfo" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.ParameterInfo">ParameterInfo</h4>
+  <div class="markdown level1 summary"><p>Returns the parameters that are used in this class and implementing
+classes. It returns a 2D String array. Each of the 1D arrays is for a
+different option, and they have 3 elements. The first element is the
+option name, the second one is the synopsis, the third one is a long
+description of what the parameter is and the fourth is its default
+value. The synopsis or description may be 'null', in which case it is
+assumed that there is no synopsis or description of the option,
+respectively. Null may be returned if no options are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[][] ParameterInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[][]</td>
+        <td><p>the options name, their synopsis and their explanation,
+or null if no options are supported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_ROIinPkt.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.ROIinPkt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L129">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder_ROIinPkt_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.ROIinPkt*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_ROIinPkt" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.ROIinPkt">ROIinPkt</h4>
+  <div class="markdown level1 summary"><p>Tells if there was ROI information in the last written packet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ROIinPkt { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_ROILen.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.ROILen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L140">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder_ROILen_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.ROILen*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_ROILen" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.ROILen">ROILen</h4>
+  <div class="markdown level1 summary"><p>Gives the length to read in current packet body to get all ROI
+information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ROILen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_encodePacket_System_Int32_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_____System_Int32_____CSJ2K_j2k_codestream_writer_BitOutputBuffer_System_Byte___System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.encodePacket(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.entropy.encoder.CBlkRateDistStats%5B%5D%5B%5D%2CSystem.Int32%5B%5D%5B%5D%2CCSJ2K.j2k.codestream.writer.BitOutputBuffer%2CSystem.Byte%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L897">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder_encodePacket_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.encodePacket*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_encodePacket_System_Int32_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_____System_Int32_____CSJ2K_j2k_codestream_writer_BitOutputBuffer_System_Byte___System_Int32_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.encodePacket(System.Int32,System.Int32,System.Int32,System.Int32,CSJ2K.j2k.entropy.encoder.CBlkRateDistStats[][],System.Int32[][],CSJ2K.j2k.codestream.writer.BitOutputBuffer,System.Byte[],System.Int32)">encodePacket(Int32, Int32, Int32, Int32, CBlkRateDistStats[][], Int32[][], BitOutputBuffer, Byte[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Encodes a packet and returns the buffer containing the encoded packet
+header. The code-blocks appear in a 3D array of CBlkRateDistStats,
+'cbs'. The first index is the tile index in lexicographical order, the
+second index is the subband index (as defined in the Subband class),
+and the third index is the code-block index (whithin the subband tile)
+in lexicographical order as well. The indexes of the new truncation
+points for each code-block are specified by the 3D array of int
+'tIndx'. The indices of this array are the same as for cbs. The
+truncation point indices in 'tIndx' are the indices of the elements of
+the 'truncIdxs' array, of the CBlkRateDistStats class, that give the
+real truncation points. If a truncation point index is negative it
+means that the code-block has not been included in any layer yet. If
+the truncation point is less than or equal to the highest truncation
+point used in previous layers then the code-block is not included in
+the packet. Otherwise, if larger, the code-block is included in the
+packet. The body of the packet can be obtained with the
+getLastBodyBuf() and getLastBodyLen() methods.</p>
+<p>Layers must be coded in increasing order, in consecutive manner, for
+each tile, component and resolution level (e.g., layer 1, then layer 2,
+etc.). For different tile, component and/or resolution level no
+particular order must be followed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BitOutputBuffer encodePacket(int ly, int c, int r, int t, CBlkRateDistStats[][] cbs, int[][] tIndx, BitOutputBuffer hbuf, byte[] bbuf, int pIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ly</span></td>
+        <td><p>The layer index (starts at 1).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>The resolution level</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Index of the current tile</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.html">CBlkRateDistStats</a>[][]</td>
+        <td><span class="parametername">cbs</span></td>
+        <td><p>The 3D array of coded code-blocks.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[][]</td>
+        <td><span class="parametername">tIndx</span></td>
+        <td><p>The truncation point indices for each code-block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.writer.BitOutputBuffer.html">BitOutputBuffer</a></td>
+        <td><span class="parametername">hbuf</span></td>
+        <td><p>The header buffer. If null a new BitOutputBuffer is created
+and returned. This buffer is reset before anything is written to it.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bbuf</span></td>
+        <td><p>The body buffer. If null a new one is created. If not large
+enough a new one is created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pIdx</span></td>
+        <td><p>The precinct index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.writer.BitOutputBuffer.html">BitOutputBuffer</a></td>
+        <td><p>The buffer containing the packet header.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_getPrecInfo_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.getPrecInfo(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L1556">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder_getPrecInfo_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.getPrecInfo*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_getPrecInfo_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.getPrecInfo(System.Int32,System.Int32,System.Int32,System.Int32)">getPrecInfo(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns information about a given precinct</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PrecInfo getPrecInfo(int t, int c, int r, int p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">r</span></td>
+        <td><p>Resolution level index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">p</span></td>
+        <td><p>Precinct index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.PrecInfo.html">PrecInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_reset.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L1477">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder_reset_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.reset*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_reset" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.reset">reset()</h4>
+  <div class="markdown level1 summary"><p>Resets the state of the object to the initial state, as if the object
+was just created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void reset()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_restore.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.restore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L1404">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder_restore_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.restore*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_restore" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.restore">restore()</h4>
+  <div class="markdown level1 summary"><p>Restores the last saved state of this object. An
+IllegalArgumentException is thrown if no state has been saved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void restore()</code></pre>
+  </div>
+  <h5 id="CSJ2K_j2k_codestream_writer_PktEncoder_restore_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.codestream.writer.PktEncoder.html#CSJ2K_j2k_codestream_writer_PktEncoder_save">save()</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder_save.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder.save%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L1303">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_PktEncoder_save_" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.save*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_PktEncoder_save" data-uid="CSJ2K.j2k.codestream.writer.PktEncoder.save">save()</h4>
+  <div class="markdown level1 summary"><p>Saves the current state of this object. The last saved state
+can be restored with the restore() method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void save()</code></pre>
+  </div>
+  <h5 id="CSJ2K_j2k_codestream_writer_PktEncoder_save_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.codestream.writer.PktEncoder.html#CSJ2K_j2k_codestream_writer_PktEncoder_restore">restore()</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_PktEncoder.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.PktEncoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/PktEncoder.cs/#L65" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3319 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GroupManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GroupManager
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.GroupManager">
+  
+  
+  <h1 id="OpenMetaverse_GroupManager" data-uid="OpenMetaverse.GroupManager" class="text-break">Class GroupManager
+  </h1>
+  <div class="markdown level0 summary"><p>Handles all network traffic related to reading and writing group
+information</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">GroupManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_GroupManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GroupManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager__ctor_OpenMetaverse_GridClient_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.%23ctor(OpenMetaverse.GridClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L888">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager__ctor_" data-uid="OpenMetaverse.GroupManager.#ctor*"></a>
+  <h4 id="OpenMetaverse_GroupManager__ctor_OpenMetaverse_GridClient_" data-uid="OpenMetaverse.GroupManager.#ctor(OpenMetaverse.GridClient)">GroupManager(GridClient)</h4>
+  <div class="markdown level1 summary"><p>Construct a new instance of the GroupManager class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GroupManager(GridClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>A reference to the current <a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a> instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupName2KeyCache.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupName2KeyCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L882">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupName2KeyCache" data-uid="OpenMetaverse.GroupManager.GroupName2KeyCache">GroupName2KeyCache</h4>
+  <div class="markdown level1 summary"><p>Caches group name lookups</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InternalDictionary&lt;UUID, string&gt; GroupName2KeyCache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.InternalDictionary-2.html">InternalDictionary</a>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_ActivateGroup_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.ActivateGroup(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1187">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_ActivateGroup_" data-uid="OpenMetaverse.GroupManager.ActivateGroup*"></a>
+  <h4 id="OpenMetaverse_GroupManager_ActivateGroup_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.ActivateGroup(OpenMetaverse.UUID)">ActivateGroup(UUID)</h4>
+  <div class="markdown level1 summary"><p>Set a group as the current active group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ActivateGroup(UUID id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>group ID (UUID)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_ActivateTitle_OpenMetaverse_UUID_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.ActivateTitle(OpenMetaverse.UUID%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1200">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_ActivateTitle_" data-uid="OpenMetaverse.GroupManager.ActivateTitle*"></a>
+  <h4 id="OpenMetaverse_GroupManager_ActivateTitle_OpenMetaverse_UUID_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.ActivateTitle(OpenMetaverse.UUID,OpenMetaverse.UUID)">ActivateTitle(UUID, UUID)</h4>
+  <div class="markdown level1 summary"><p>Change the role that determines your active title</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ActivateTitle(UUID group, UUID role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Group ID to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>Role ID to change to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_AddToRole_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.AddToRole(OpenMetaverse.UUID%2COpenMetaverse.UUID%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1409">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_AddToRole_" data-uid="OpenMetaverse.GroupManager.AddToRole*"></a>
+  <h4 id="OpenMetaverse_GroupManager_AddToRole_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.AddToRole(OpenMetaverse.UUID,OpenMetaverse.UUID,OpenMetaverse.UUID)">AddToRole(UUID, UUID, UUID)</h4>
+  <div class="markdown level1 summary"><p>Assign an avatar to a role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddToRole(UUID group, UUID role, UUID member)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Group ID to update</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>Role ID to assign to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>Avatar's ID to assign to role</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_AgentDropGroupHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.AgentDropGroupHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1651">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_AgentDropGroupHandler_" data-uid="OpenMetaverse.GroupManager.AgentDropGroupHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_AgentDropGroupHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.AgentDropGroupHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">AgentDropGroupHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AgentDropGroupHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_AgentDropGroupMessageHandler_System_String_OpenMetaverse_Interfaces_IMessage_OpenMetaverse_Simulator_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.AgentDropGroupMessageHandler(System.String%2COpenMetaverse.Interfaces.IMessage%2COpenMetaverse.Simulator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1660">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_AgentDropGroupMessageHandler_" data-uid="OpenMetaverse.GroupManager.AgentDropGroupMessageHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_AgentDropGroupMessageHandler_System_String_OpenMetaverse_Interfaces_IMessage_OpenMetaverse_Simulator_" data-uid="OpenMetaverse.GroupManager.AgentDropGroupMessageHandler(System.String,OpenMetaverse.Interfaces.IMessage,OpenMetaverse.Simulator)">AgentDropGroupMessageHandler(String, IMessage, Simulator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AgentDropGroupMessageHandler(string capsKey, IMessage message, Simulator simulator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">capsKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Interfaces.IMessage.html">IMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_AgentGroupDataUpdateMessageHandler_System_String_OpenMetaverse_Interfaces_IMessage_OpenMetaverse_Simulator_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.AgentGroupDataUpdateMessageHandler(System.String%2COpenMetaverse.Interfaces.IMessage%2COpenMetaverse.Simulator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1618">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_AgentGroupDataUpdateMessageHandler_" data-uid="OpenMetaverse.GroupManager.AgentGroupDataUpdateMessageHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_AgentGroupDataUpdateMessageHandler_System_String_OpenMetaverse_Interfaces_IMessage_OpenMetaverse_Simulator_" data-uid="OpenMetaverse.GroupManager.AgentGroupDataUpdateMessageHandler(System.String,OpenMetaverse.Interfaces.IMessage,OpenMetaverse.Simulator)">AgentGroupDataUpdateMessageHandler(String, IMessage, Simulator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AgentGroupDataUpdateMessageHandler(string capsKey, IMessage message, Simulator simulator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">capsKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Interfaces.IMessage.html">IMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_CreateGroupReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.CreateGroupReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L2015">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_CreateGroupReplyHandler_" data-uid="OpenMetaverse.GroupManager.CreateGroupReplyHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_CreateGroupReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.CreateGroupReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">CreateGroupReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CreateGroupReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_CreateRole_OpenMetaverse_UUID_OpenMetaverse_GroupRole_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.CreateRole(OpenMetaverse.UUID%2COpenMetaverse.GroupRole)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1348">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_CreateRole_" data-uid="OpenMetaverse.GroupManager.CreateRole*"></a>
+  <h4 id="OpenMetaverse_GroupManager_CreateRole_OpenMetaverse_UUID_OpenMetaverse_GroupRole_" data-uid="OpenMetaverse.GroupManager.CreateRole(OpenMetaverse.UUID,OpenMetaverse.GroupRole)">CreateRole(UUID, GroupRole)</h4>
+  <div class="markdown level1 summary"><p>Create a new group role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateRole(UUID group, GroupRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Group ID to update</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupRole.html">GroupRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>Role to create</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_DeleteRole_OpenMetaverse_UUID_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.DeleteRole(OpenMetaverse.UUID%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1368">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_DeleteRole_" data-uid="OpenMetaverse.GroupManager.DeleteRole*"></a>
+  <h4 id="OpenMetaverse_GroupManager_DeleteRole_OpenMetaverse_UUID_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.DeleteRole(OpenMetaverse.UUID,OpenMetaverse.UUID)">DeleteRole(UUID, UUID)</h4>
+  <div class="markdown level1 summary"><p>Delete a group role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteRole(UUID group, UUID roleID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Group ID to update</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">roleID</span></td>
+        <td><p>Role to delete</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_EjectGroupMemberReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.EjectGroupMemberReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L2083">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_EjectGroupMemberReplyHandler_" data-uid="OpenMetaverse.GroupManager.EjectGroupMemberReplyHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_EjectGroupMemberReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.EjectGroupMemberReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">EjectGroupMemberReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EjectGroupMemberReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_EjectUser_OpenMetaverse_UUID_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.EjectUser(OpenMetaverse.UUID%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1309">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_EjectUser_" data-uid="OpenMetaverse.GroupManager.EjectUser*"></a>
+  <h4 id="OpenMetaverse_GroupManager_EjectUser_OpenMetaverse_UUID_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.EjectUser(OpenMetaverse.UUID,OpenMetaverse.UUID)">EjectUser(UUID, UUID)</h4>
+  <div class="markdown level1 summary"><p>Eject a user from a group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EjectUser(UUID group, UUID member)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Group ID to eject the user from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>Avatar's key to eject</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GetGroupAPIUri_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GetGroupAPIUri(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1491">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_GetGroupAPIUri_" data-uid="OpenMetaverse.GroupManager.GetGroupAPIUri*"></a>
+  <h4 id="OpenMetaverse_GroupManager_GetGroupAPIUri_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.GetGroupAPIUri(OpenMetaverse.UUID)">GetGroupAPIUri(UUID)</h4>
+  <div class="markdown level1 summary"><p>Gets the URI of the cpability for handling group bans</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri GetGroupAPIUri(UUID groupID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td><p>Group ID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><p>null, if the feature is not supported, or URI of the capability</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupAccountSummaryReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupAccountSummaryReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1980">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_GroupAccountSummaryReplyHandler_" data-uid="OpenMetaverse.GroupManager.GroupAccountSummaryReplyHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_GroupAccountSummaryReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.GroupAccountSummaryReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">GroupAccountSummaryReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GroupAccountSummaryReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupActiveProposalItemHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupActiveProposalItemHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1960">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_GroupActiveProposalItemHandler_" data-uid="OpenMetaverse.GroupManager.GroupActiveProposalItemHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_GroupActiveProposalItemHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.GroupActiveProposalItemHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">GroupActiveProposalItemHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GroupActiveProposalItemHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupMembersHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupMembersHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1763">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_GroupMembersHandler_" data-uid="OpenMetaverse.GroupManager.GroupMembersHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_GroupMembersHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.GroupMembersHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">GroupMembersHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GroupMembersHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupMembersHandlerCaps_OpenMetaverse_UUID_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupMembersHandlerCaps(OpenMetaverse.UUID%2COpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1811">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_GroupMembersHandlerCaps_" data-uid="OpenMetaverse.GroupManager.GroupMembersHandlerCaps*"></a>
+  <h4 id="OpenMetaverse_GroupManager_GroupMembersHandlerCaps_OpenMetaverse_UUID_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.GroupManager.GroupMembersHandlerCaps(OpenMetaverse.UUID,OpenMetaverse.StructuredData.OSD)">GroupMembersHandlerCaps(UUID, OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GroupMembersHandlerCaps(UUID requestID, OSD result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">requestID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupNoticesListReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupNoticesListReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1708">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_GroupNoticesListReplyHandler_" data-uid="OpenMetaverse.GroupManager.GroupNoticesListReplyHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_GroupNoticesListReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.GroupNoticesListReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">GroupNoticesListReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GroupNoticesListReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupProfileReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupProfileReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1676">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_GroupProfileReplyHandler_" data-uid="OpenMetaverse.GroupManager.GroupProfileReplyHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_GroupProfileReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.GroupProfileReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">GroupProfileReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GroupProfileReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupRoleDataReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupRoleDataReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1857">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_GroupRoleDataReplyHandler_" data-uid="OpenMetaverse.GroupManager.GroupRoleDataReplyHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_GroupRoleDataReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.GroupRoleDataReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">GroupRoleDataReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GroupRoleDataReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupRoleMembersReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupRoleMembersReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1908">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_GroupRoleMembersReplyHandler_" data-uid="OpenMetaverse.GroupManager.GroupRoleMembersReplyHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_GroupRoleMembersReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.GroupRoleMembersReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">GroupRoleMembersReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GroupRoleMembersReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupTitlesReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupTitlesReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1737">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_GroupTitlesReplyHandler_" data-uid="OpenMetaverse.GroupManager.GroupTitlesReplyHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_GroupTitlesReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.GroupTitlesReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">GroupTitlesReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GroupTitlesReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupVoteHistoryItemHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupVoteHistoryItemHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1970">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_GroupVoteHistoryItemHandler_" data-uid="OpenMetaverse.GroupManager.GroupVoteHistoryItemHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_GroupVoteHistoryItemHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.GroupVoteHistoryItemHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">GroupVoteHistoryItemHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GroupVoteHistoryItemHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_Invite_OpenMetaverse_UUID_System_Collections_Generic_List_OpenMetaverse_UUID__OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.Invite(OpenMetaverse.UUID%2CSystem.Collections.Generic.List%7BOpenMetaverse.UUID%7D%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1162">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_Invite_" data-uid="OpenMetaverse.GroupManager.Invite*"></a>
+  <h4 id="OpenMetaverse_GroupManager_Invite_OpenMetaverse_UUID_System_Collections_Generic_List_OpenMetaverse_UUID__OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.Invite(OpenMetaverse.UUID,System.Collections.Generic.List{OpenMetaverse.UUID},OpenMetaverse.UUID)">Invite(UUID, List&lt;UUID&gt;, UUID)</h4>
+  <div class="markdown level1 summary"><p>Invites a user to a group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Invite(UUID group, List&lt;UUID&gt; roles, UUID personkey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>The group to invite to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>&gt;</td>
+        <td><span class="parametername">roles</span></td>
+        <td><p>A list of roles to invite a person to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">personkey</span></td>
+        <td><p>Key of person to invite</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_JoinGroupReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.JoinGroupReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L2031">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_JoinGroupReplyHandler_" data-uid="OpenMetaverse.GroupManager.JoinGroupReplyHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_JoinGroupReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.JoinGroupReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">JoinGroupReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void JoinGroupReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_LeaveGroup_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.LeaveGroup(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1476">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_LeaveGroup_" data-uid="OpenMetaverse.GroupManager.LeaveGroup*"></a>
+  <h4 id="OpenMetaverse_GroupManager_LeaveGroup_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.LeaveGroup(OpenMetaverse.UUID)">LeaveGroup(UUID)</h4>
+  <div class="markdown level1 summary"><p>Request to leave a group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LeaveGroup(UUID groupID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td><p>The group to leave</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_GroupManager_LeaveGroup_OpenMetaverse_UUID__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Subscribe to <pre><code>OnGroupLeft</code></pre> event to receive confirmation</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_LeaveGroupReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.LeaveGroupReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L2045">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_LeaveGroupReplyHandler_" data-uid="OpenMetaverse.GroupManager.LeaveGroupReplyHandler*"></a>
+  <h4 id="OpenMetaverse_GroupManager_LeaveGroupReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.GroupManager.LeaveGroupReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">LeaveGroupReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LeaveGroupReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnBannedAgents_OpenMetaverse_BannedAgentsEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnBannedAgents(OpenMetaverse.BannedAgentsEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L847">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnBannedAgents_" data-uid="OpenMetaverse.GroupManager.OnBannedAgents*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnBannedAgents_OpenMetaverse_BannedAgentsEventArgs_" data-uid="OpenMetaverse.GroupManager.OnBannedAgents(OpenMetaverse.BannedAgentsEventArgs)">OnBannedAgents(BannedAgentsEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the BannedAgents event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnBannedAgents(BannedAgentsEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.BannedAgentsEventArgs.html">BannedAgentsEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>An BannedAgentsEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnCurrentGroups_OpenMetaverse_CurrentGroupsEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnCurrentGroups(OpenMetaverse.CurrentGroupsEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L494">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnCurrentGroups_" data-uid="OpenMetaverse.GroupManager.OnCurrentGroups*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnCurrentGroups_OpenMetaverse_CurrentGroupsEventArgs_" data-uid="OpenMetaverse.GroupManager.OnCurrentGroups(OpenMetaverse.CurrentGroupsEventArgs)">OnCurrentGroups(CurrentGroupsEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the CurrentGroups event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnCurrentGroups(CurrentGroupsEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.CurrentGroupsEventArgs.html">CurrentGroupsEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A CurrentGroupsEventArgs object containing the
+data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupAccountSummaryReply_OpenMetaverse_GroupAccountSummaryReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupAccountSummaryReply(OpenMetaverse.GroupAccountSummaryReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L658">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupAccountSummaryReply_" data-uid="OpenMetaverse.GroupManager.OnGroupAccountSummaryReply*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupAccountSummaryReply_OpenMetaverse_GroupAccountSummaryReplyEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupAccountSummaryReply(OpenMetaverse.GroupAccountSummaryReplyEventArgs)">OnGroupAccountSummaryReply(GroupAccountSummaryReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupAccountSummary event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupAccountSummaryReply(GroupAccountSummaryReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupAccountSummaryReplyEventArgs.html">GroupAccountSummaryReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A GroupAccountSummaryReplyEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupCreatedReply_OpenMetaverse_GroupCreatedReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupCreatedReply(OpenMetaverse.GroupCreatedReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L682">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupCreatedReply_" data-uid="OpenMetaverse.GroupManager.OnGroupCreatedReply*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupCreatedReply_OpenMetaverse_GroupCreatedReplyEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupCreatedReply(OpenMetaverse.GroupCreatedReplyEventArgs)">OnGroupCreatedReply(GroupCreatedReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupCreated event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupCreatedReply(GroupCreatedReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupCreatedReplyEventArgs.html">GroupCreatedReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>An GroupCreatedEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupDropped_OpenMetaverse_GroupDroppedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupDropped(OpenMetaverse.GroupDroppedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L750">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupDropped_" data-uid="OpenMetaverse.GroupManager.OnGroupDropped*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupDropped_OpenMetaverse_GroupDroppedEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupDropped(OpenMetaverse.GroupDroppedEventArgs)">OnGroupDropped(GroupDroppedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupDropped event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupDropped(GroupDroppedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupDroppedEventArgs.html">GroupDroppedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>An GroupDroppedEventArgs object containing the
+the group your agent left</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupInvitation_OpenMetaverse_GroupInvitationEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupInvitation(OpenMetaverse.GroupInvitationEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L819">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupInvitation_" data-uid="OpenMetaverse.GroupManager.OnGroupInvitation*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupInvitation_OpenMetaverse_GroupInvitationEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupInvitation(OpenMetaverse.GroupInvitationEventArgs)">OnGroupInvitation(GroupInvitationEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupInvitation event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupInvitation(GroupInvitationEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupInvitationEventArgs.html">GroupInvitationEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>An GroupInvitationEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupJoinedReply_OpenMetaverse_GroupOperationEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupJoinedReply(OpenMetaverse.GroupOperationEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L704">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupJoinedReply_" data-uid="OpenMetaverse.GroupManager.OnGroupJoinedReply*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupJoinedReply_OpenMetaverse_GroupOperationEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupJoinedReply(OpenMetaverse.GroupOperationEventArgs)">OnGroupJoinedReply(GroupOperationEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupJoined event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupJoinedReply(GroupOperationEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupOperationEventArgs.html">GroupOperationEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A GroupOperationEventArgs object containing the
+result of the operation returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupLeaveReply_OpenMetaverse_GroupOperationEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupLeaveReply(OpenMetaverse.GroupOperationEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L727">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupLeaveReply_" data-uid="OpenMetaverse.GroupManager.OnGroupLeaveReply*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupLeaveReply_OpenMetaverse_GroupOperationEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupLeaveReply(OpenMetaverse.GroupOperationEventArgs)">OnGroupLeaveReply(GroupOperationEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupLeft event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupLeaveReply(GroupOperationEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupOperationEventArgs.html">GroupOperationEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A GroupOperationEventArgs object containing the
+result of the operation returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupMemberEjected_OpenMetaverse_GroupOperationEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupMemberEjected(OpenMetaverse.GroupOperationEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L772">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupMemberEjected_" data-uid="OpenMetaverse.GroupManager.OnGroupMemberEjected*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupMemberEjected_OpenMetaverse_GroupOperationEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupMemberEjected(OpenMetaverse.GroupOperationEventArgs)">OnGroupMemberEjected(GroupOperationEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupMemberEjected event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupMemberEjected(GroupOperationEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupOperationEventArgs.html">GroupOperationEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>An GroupMemberEjectedEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupMembersReply_OpenMetaverse_GroupMembersReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupMembersReply(OpenMetaverse.GroupMembersReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L565">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupMembersReply_" data-uid="OpenMetaverse.GroupManager.OnGroupMembersReply*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupMembersReply_OpenMetaverse_GroupMembersReplyEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupMembersReply(OpenMetaverse.GroupMembersReplyEventArgs)">OnGroupMembersReply(GroupMembersReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupMembers event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupMembersReply(GroupMembersReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupMembersReplyEventArgs.html">GroupMembersReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A GroupMembersEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupNamesReply_OpenMetaverse_GroupNamesEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupNamesReply(OpenMetaverse.GroupNamesEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L518">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupNamesReply_" data-uid="OpenMetaverse.GroupManager.OnGroupNamesReply*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupNamesReply_OpenMetaverse_GroupNamesEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupNamesReply(OpenMetaverse.GroupNamesEventArgs)">OnGroupNamesReply(GroupNamesEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupNamesReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupNamesReply(GroupNamesEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupNamesEventArgs.html">GroupNamesEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A GroupNamesEventArgs object containing the
+data response from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupNoticesListReply_OpenMetaverse_GroupNoticesListReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupNoticesListReply(OpenMetaverse.GroupNoticesListReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L795">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupNoticesListReply_" data-uid="OpenMetaverse.GroupManager.OnGroupNoticesListReply*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupNoticesListReply_OpenMetaverse_GroupNoticesListReplyEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupNoticesListReply(OpenMetaverse.GroupNoticesListReplyEventArgs)">OnGroupNoticesListReply(GroupNoticesListReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupNoticesListReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupNoticesListReply(GroupNoticesListReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupNoticesListReplyEventArgs.html">GroupNoticesListReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>An GroupNoticesListReplyEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupProfile_OpenMetaverse_GroupProfileEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupProfile(OpenMetaverse.GroupProfileEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L542">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupProfile_" data-uid="OpenMetaverse.GroupManager.OnGroupProfile*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupProfile_OpenMetaverse_GroupProfileEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupProfile(OpenMetaverse.GroupProfileEventArgs)">OnGroupProfile(GroupProfileEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupProfile event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupProfile(GroupProfileEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupProfileEventArgs.html">GroupProfileEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>An GroupProfileEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupRoleDataReply_OpenMetaverse_GroupRolesDataReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupRoleDataReply(OpenMetaverse.GroupRolesDataReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L588">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupRoleDataReply_" data-uid="OpenMetaverse.GroupManager.OnGroupRoleDataReply*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupRoleDataReply_OpenMetaverse_GroupRolesDataReplyEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupRoleDataReply(OpenMetaverse.GroupRolesDataReplyEventArgs)">OnGroupRoleDataReply(GroupRolesDataReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupRolesDataReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupRoleDataReply(GroupRolesDataReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupRolesDataReplyEventArgs.html">GroupRolesDataReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A GroupRolesDataReplyEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupRoleMembers_OpenMetaverse_GroupRolesMembersReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupRoleMembers(OpenMetaverse.GroupRolesMembersReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L611">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupRoleMembers_" data-uid="OpenMetaverse.GroupManager.OnGroupRoleMembers*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupRoleMembers_OpenMetaverse_GroupRolesMembersReplyEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupRoleMembers(OpenMetaverse.GroupRolesMembersReplyEventArgs)">OnGroupRoleMembers(GroupRolesMembersReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupRoleMembersReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupRoleMembers(GroupRolesMembersReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupRolesMembersReplyEventArgs.html">GroupRolesMembersReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A GroupRolesRoleMembersReplyEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_OnGroupTitles_OpenMetaverse_GroupTitlesReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.OnGroupTitles(OpenMetaverse.GroupTitlesReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L635">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_OnGroupTitles_" data-uid="OpenMetaverse.GroupManager.OnGroupTitles*"></a>
+  <h4 id="OpenMetaverse_GroupManager_OnGroupTitles_OpenMetaverse_GroupTitlesReplyEventArgs_" data-uid="OpenMetaverse.GroupManager.OnGroupTitles(OpenMetaverse.GroupTitlesReplyEventArgs)">OnGroupTitles(GroupTitlesReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the GroupTitlesReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnGroupTitles(GroupTitlesReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupTitlesReplyEventArgs.html">GroupTitlesReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A GroupTitlesReplyEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RemoveFromRole_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RemoveFromRole(OpenMetaverse.UUID%2COpenMetaverse.UUID%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1389">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RemoveFromRole_" data-uid="OpenMetaverse.GroupManager.RemoveFromRole*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RemoveFromRole_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.RemoveFromRole(OpenMetaverse.UUID,OpenMetaverse.UUID,OpenMetaverse.UUID)">RemoveFromRole(UUID, UUID, UUID)</h4>
+  <div class="markdown level1 summary"><p>Remove an avatar from a role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFromRole(UUID group, UUID role, UUID member)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Group ID to update</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>Role ID to be removed from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">member</span></td>
+        <td><p>Avatar's Key to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestBanAction_OpenMetaverse_UUID_OpenMetaverse_GroupBanAction_OpenMetaverse_UUID___.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestBanAction(OpenMetaverse.UUID%2COpenMetaverse.GroupBanAction%2COpenMetaverse.UUID%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1576">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestBanAction_" data-uid="OpenMetaverse.GroupManager.RequestBanAction*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestBanAction_OpenMetaverse_UUID_OpenMetaverse_GroupBanAction_OpenMetaverse_UUID___" data-uid="OpenMetaverse.GroupManager.RequestBanAction(OpenMetaverse.UUID,OpenMetaverse.GroupBanAction,OpenMetaverse.UUID[])">RequestBanAction(UUID, GroupBanAction, UUID[])</h4>
+  <div class="markdown level1 summary"><p>Request that group of agents be banned or unbanned from the group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestBanAction(UUID groupID, GroupBanAction action, UUID[] agents)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td><p>Group ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupBanAction.html">GroupBanAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Ban/Unban action</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a>[]</td>
+        <td><span class="parametername">agents</span></td>
+        <td><p>Array of agents UUIDs to ban</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestBanAction_OpenMetaverse_UUID_OpenMetaverse_GroupBanAction_OpenMetaverse_UUID___System_EventHandler_System_EventArgs__.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestBanAction(OpenMetaverse.UUID%2COpenMetaverse.GroupBanAction%2COpenMetaverse.UUID%5B%5D%2CSystem.EventHandler%7BSystem.EventArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1588">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestBanAction_" data-uid="OpenMetaverse.GroupManager.RequestBanAction*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestBanAction_OpenMetaverse_UUID_OpenMetaverse_GroupBanAction_OpenMetaverse_UUID___System_EventHandler_System_EventArgs__" data-uid="OpenMetaverse.GroupManager.RequestBanAction(OpenMetaverse.UUID,OpenMetaverse.GroupBanAction,OpenMetaverse.UUID[],System.EventHandler{System.EventArgs})">RequestBanAction(UUID, GroupBanAction, UUID[], EventHandler&lt;EventArgs&gt;)</h4>
+  <div class="markdown level1 summary"><p>Request that group of agents be banned or unbanned from the group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestBanAction(UUID groupID, GroupBanAction action, UUID[] agents, EventHandler&lt;EventArgs&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td><p>Group ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupBanAction.html">GroupBanAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Ban/Unban action</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a>[]</td>
+        <td><span class="parametername">agents</span></td>
+        <td><p>Array of agents UUIDs to ban</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.EventArgs</span>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Callback</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestBannedAgents_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestBannedAgents(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1513">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestBannedAgents_" data-uid="OpenMetaverse.GroupManager.RequestBannedAgents*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestBannedAgents_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.RequestBannedAgents(OpenMetaverse.UUID)">RequestBannedAgents(UUID)</h4>
+  <div class="markdown level1 summary"><p>Request a list of residents banned from joining a group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestBannedAgents(UUID groupID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td><p>UUID of the group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestBannedAgents_OpenMetaverse_UUID_System_EventHandler_OpenMetaverse_BannedAgentsEventArgs__.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestBannedAgents(OpenMetaverse.UUID%2CSystem.EventHandler%7BOpenMetaverse.BannedAgentsEventArgs%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1523">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestBannedAgents_" data-uid="OpenMetaverse.GroupManager.RequestBannedAgents*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestBannedAgents_OpenMetaverse_UUID_System_EventHandler_OpenMetaverse_BannedAgentsEventArgs__" data-uid="OpenMetaverse.GroupManager.RequestBannedAgents(OpenMetaverse.UUID,System.EventHandler{OpenMetaverse.BannedAgentsEventArgs})">RequestBannedAgents(UUID, EventHandler&lt;BannedAgentsEventArgs&gt;)</h4>
+  <div class="markdown level1 summary"><p>Request a list of residents banned from joining a group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestBannedAgents(UUID groupID, EventHandler&lt;BannedAgentsEventArgs&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td><p>UUID of the group</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.BannedAgentsEventArgs.html">BannedAgentsEventArgs</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Callback on request completition</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestCreateGroup_OpenMetaverse_Group_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestCreateGroup(OpenMetaverse.Group)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1263">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestCreateGroup_" data-uid="OpenMetaverse.GroupManager.RequestCreateGroup*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestCreateGroup_OpenMetaverse_Group_" data-uid="OpenMetaverse.GroupManager.RequestCreateGroup(OpenMetaverse.Group)">RequestCreateGroup(Group)</h4>
+  <div class="markdown level1 summary"><p>Request to create a new group. If the group is successfully
+created, L$100 will automatically be deducted</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestCreateGroup(Group group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Group.html">Group</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Group struct containing the new group info</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_GroupManager_RequestCreateGroup_OpenMetaverse_Group__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Subscribe to <pre><code>OnGroupCreated</code></pre> event to receive confirmation.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestCurrentGroups.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestCurrentGroups%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L951">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestCurrentGroups_" data-uid="OpenMetaverse.GroupManager.RequestCurrentGroups*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestCurrentGroups" data-uid="OpenMetaverse.GroupManager.RequestCurrentGroups">RequestCurrentGroups()</h4>
+  <div class="markdown level1 summary"><p>Request a current list of groups the avatar is a member of.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestCurrentGroups()</code></pre>
+  </div>
+  <h5 id="OpenMetaverse_GroupManager_RequestCurrentGroups_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>CAPS Event Queue must be running for this to work since the results
+come across CAPS.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestGroupAccountSummary_OpenMetaverse_UUID_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestGroupAccountSummary(OpenMetaverse.UUID%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1146">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestGroupAccountSummary_" data-uid="OpenMetaverse.GroupManager.RequestGroupAccountSummary*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestGroupAccountSummary_OpenMetaverse_UUID_System_Int32_System_Int32_" data-uid="OpenMetaverse.GroupManager.RequestGroupAccountSummary(OpenMetaverse.UUID,System.Int32,System.Int32)">RequestGroupAccountSummary(UUID, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Begin to get the group account summary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestGroupAccountSummary(UUID group, int intervalDays, int currentInterval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>group ID (UUID)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">intervalDays</span></td>
+        <td><p>How long of an interval</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">currentInterval</span></td>
+        <td><p>Which interval (0 for current, 1 for last)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_GroupManager_RequestGroupAccountSummary_OpenMetaverse_UUID_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Subscribe to the <pre><code>OnGroupAccountSummary</code></pre> event to receive the results.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestGroupMembers_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestGroupMembers(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1047">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestGroupMembers_" data-uid="OpenMetaverse.GroupManager.RequestGroupMembers*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestGroupMembers_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.RequestGroupMembers(OpenMetaverse.UUID)">RequestGroupMembers(UUID)</h4>
+  <div class="markdown level1 summary"><p>Request a list of group members.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID RequestGroupMembers(UUID group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>group ID (UUID)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>UUID of the request, use to index into cache</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_GroupManager_RequestGroupMembers_OpenMetaverse_UUID__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Subscribe to <pre><code>OnGroupMembers</code></pre> event to receive the results.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestGroupName_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestGroupName(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L965">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestGroupName_" data-uid="OpenMetaverse.GroupManager.RequestGroupName*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestGroupName_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.RequestGroupName(OpenMetaverse.UUID)">RequestGroupName(UUID)</h4>
+  <div class="markdown level1 summary"><p>Lookup name of group based on groupID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestGroupName(UUID groupID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td><p>groupID of group to lookup name for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestGroupNames_System_Collections_Generic_List_OpenMetaverse_UUID__.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestGroupNames(System.Collections.Generic.List%7BOpenMetaverse.UUID%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L995">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestGroupNames_" data-uid="OpenMetaverse.GroupManager.RequestGroupNames*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestGroupNames_System_Collections_Generic_List_OpenMetaverse_UUID__" data-uid="OpenMetaverse.GroupManager.RequestGroupNames(System.Collections.Generic.List{OpenMetaverse.UUID})">RequestGroupNames(List&lt;UUID&gt;)</h4>
+  <div class="markdown level1 summary"><p>Request lookup of multiple group names</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestGroupNames(List&lt;UUID&gt; groupIDs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>&gt;</td>
+        <td><span class="parametername">groupIDs</span></td>
+        <td><p>List of group IDs to request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestGroupNotice_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestGroupNotice(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1438">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestGroupNotice_" data-uid="OpenMetaverse.GroupManager.RequestGroupNotice*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestGroupNotice_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.RequestGroupNotice(OpenMetaverse.UUID)">RequestGroupNotice(UUID)</h4>
+  <div class="markdown level1 summary"><p>Request a group notice by key</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestGroupNotice(UUID noticeID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">noticeID</span></td>
+        <td><p>ID of group notice</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestGroupNoticesList_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestGroupNoticesList(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1427">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestGroupNoticesList_" data-uid="OpenMetaverse.GroupManager.RequestGroupNoticesList*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestGroupNoticesList_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.RequestGroupNoticesList(OpenMetaverse.UUID)">RequestGroupNoticesList(UUID)</h4>
+  <div class="markdown level1 summary"><p>Request the group notices list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestGroupNoticesList(UUID group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Group ID to fetch notices for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestGroupProfile_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestGroupProfile(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1032">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestGroupProfile_" data-uid="OpenMetaverse.GroupManager.RequestGroupProfile*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestGroupProfile_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.RequestGroupProfile(OpenMetaverse.UUID)">RequestGroupProfile(UUID)</h4>
+  <div class="markdown level1 summary"><p>Lookup group profile data such as name, enrollment, founder, logo, etc</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestGroupProfile(UUID group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>group ID (UUID)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_GroupManager_RequestGroupProfile_OpenMetaverse_UUID__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Subscribe to <pre><code>OnGroupProfile</code></pre> event to receive the results.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestGroupRoles_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestGroupRoles(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1088">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestGroupRoles_" data-uid="OpenMetaverse.GroupManager.RequestGroupRoles*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestGroupRoles_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.RequestGroupRoles(OpenMetaverse.UUID)">RequestGroupRoles(UUID)</h4>
+  <div class="markdown level1 summary"><p>Request group roles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID RequestGroupRoles(UUID group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>group ID (UUID)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>UUID of the request, use to index into cache</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_GroupManager_RequestGroupRoles_OpenMetaverse_UUID__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Subscribe to <pre><code>OnGroupRoles</code></pre> event to receive the results.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestGroupRolesMembers_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestGroupRolesMembers(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1108">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestGroupRolesMembers_" data-uid="OpenMetaverse.GroupManager.RequestGroupRolesMembers*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestGroupRolesMembers_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.RequestGroupRolesMembers(OpenMetaverse.UUID)">RequestGroupRolesMembers(UUID)</h4>
+  <div class="markdown level1 summary"><p>Request members (members,role) role mapping for a group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID RequestGroupRolesMembers(UUID group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>group ID (UUID)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>UUID of the request, use to index into cache</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_GroupManager_RequestGroupRolesMembers_OpenMetaverse_UUID__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Subscribe to <pre><code>OnGroupRolesMembers</code></pre> event to receive the results.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestGroupTitles_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestGroupTitles(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1126">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestGroupTitles_" data-uid="OpenMetaverse.GroupManager.RequestGroupTitles*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestGroupTitles_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.RequestGroupTitles(OpenMetaverse.UUID)">RequestGroupTitles(UUID)</h4>
+  <div class="markdown level1 summary"><p>Request a groups Titles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID RequestGroupTitles(UUID group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>group ID (UUID)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>UUID of the request, use to index into cache</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_GroupManager_RequestGroupTitles_OpenMetaverse_UUID__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Subscribe to <pre><code>OnGroupTitles</code></pre> event to receive the results.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_RequestJoinGroup_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.RequestJoinGroup(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1246">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_RequestJoinGroup_" data-uid="OpenMetaverse.GroupManager.RequestJoinGroup*"></a>
+  <h4 id="OpenMetaverse_GroupManager_RequestJoinGroup_OpenMetaverse_UUID_" data-uid="OpenMetaverse.GroupManager.RequestJoinGroup(OpenMetaverse.UUID)">RequestJoinGroup(UUID)</h4>
+  <div class="markdown level1 summary"><p>Request to join a group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestJoinGroup(UUID id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>group ID (UUID) to join.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_GroupManager_RequestJoinGroup_OpenMetaverse_UUID__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Subscribe to <pre><code>OnGroupJoined</code></pre> event for confirmation.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_SendGroupNotice_OpenMetaverse_UUID_OpenMetaverse_GroupNotice_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.SendGroupNotice(OpenMetaverse.UUID%2COpenMetaverse.GroupNotice)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1450">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_SendGroupNotice_" data-uid="OpenMetaverse.GroupManager.SendGroupNotice*"></a>
+  <h4 id="OpenMetaverse_GroupManager_SendGroupNotice_OpenMetaverse_UUID_OpenMetaverse_GroupNotice_" data-uid="OpenMetaverse.GroupManager.SendGroupNotice(OpenMetaverse.UUID,OpenMetaverse.GroupNotice)">SendGroupNotice(UUID, GroupNotice)</h4>
+  <div class="markdown level1 summary"><p>Send out a group notice</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendGroupNotice(UUID group, GroupNotice notice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Group ID to update</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupNotice.html">GroupNotice</a></td>
+        <td><span class="parametername">notice</span></td>
+        <td><pre><code>GroupNotice</code></pre> structure containing notice data
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_SetGroupAcceptNotices_OpenMetaverse_UUID_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.SetGroupAcceptNotices(OpenMetaverse.UUID%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1231">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_SetGroupAcceptNotices_" data-uid="OpenMetaverse.GroupManager.SetGroupAcceptNotices*"></a>
+  <h4 id="OpenMetaverse_GroupManager_SetGroupAcceptNotices_OpenMetaverse_UUID_System_Boolean_System_Boolean_" data-uid="OpenMetaverse.GroupManager.SetGroupAcceptNotices(OpenMetaverse.UUID,System.Boolean,System.Boolean)">SetGroupAcceptNotices(UUID, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Save wheather agent wants to accept group notices and list this group in their profile</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGroupAcceptNotices(UUID groupID, bool acceptNotices, bool listInProfile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td><p>Group <a class="xref" href="OpenMetaverse.UUID.html">UUID</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">acceptNotices</span></td>
+        <td><p>Accept notices from this group</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">listInProfile</span></td>
+        <td><p>List this group in the profile</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_SetGroupContribution_OpenMetaverse_UUID_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.SetGroupContribution(OpenMetaverse.UUID%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1214">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_SetGroupContribution_" data-uid="OpenMetaverse.GroupManager.SetGroupContribution*"></a>
+  <h4 id="OpenMetaverse_GroupManager_SetGroupContribution_OpenMetaverse_UUID_System_Int32_" data-uid="OpenMetaverse.GroupManager.SetGroupContribution(OpenMetaverse.UUID,System.Int32)">SetGroupContribution(UUID, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set this avatar's tier contribution</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGroupContribution(UUID group, int contribution)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Group ID to change tier in</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">contribution</span></td>
+        <td><p>amount of tier to donate</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_StartProposal_OpenMetaverse_UUID_OpenMetaverse_GroupProposal_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.StartProposal(OpenMetaverse.UUID%2COpenMetaverse.GroupProposal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1460">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_StartProposal_" data-uid="OpenMetaverse.GroupManager.StartProposal*"></a>
+  <h4 id="OpenMetaverse_GroupManager_StartProposal_OpenMetaverse_UUID_OpenMetaverse_GroupProposal_" data-uid="OpenMetaverse.GroupManager.StartProposal(OpenMetaverse.UUID,OpenMetaverse.GroupProposal)">StartProposal(UUID, GroupProposal)</h4>
+  <div class="markdown level1 summary"><p>Start a group proposal (vote)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartProposal(UUID group, GroupProposal prop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>The Group ID to send proposal to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupProposal.html">GroupProposal</a></td>
+        <td><span class="parametername">prop</span></td>
+        <td><pre><code>GroupProposal</code></pre> structure containing the proposal
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_UpdateGroup_OpenMetaverse_UUID_OpenMetaverse_Group_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.UpdateGroup(OpenMetaverse.UUID%2COpenMetaverse.Group)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1286">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_UpdateGroup_" data-uid="OpenMetaverse.GroupManager.UpdateGroup*"></a>
+  <h4 id="OpenMetaverse_GroupManager_UpdateGroup_OpenMetaverse_UUID_OpenMetaverse_Group_" data-uid="OpenMetaverse.GroupManager.UpdateGroup(OpenMetaverse.UUID,OpenMetaverse.Group)">UpdateGroup(UUID, Group)</h4>
+  <div class="markdown level1 summary"><p>Update a group's profile and other information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateGroup(UUID id, Group group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Groups ID (UUID) to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Group.html">Group</a></td>
+        <td><span class="parametername">group</span></td>
+        <td><p>Group struct to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_UpdateRole_OpenMetaverse_GroupRole_.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.UpdateRole(OpenMetaverse.GroupRole)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L1328">View Source</a>
+  </span>
+  <a id="OpenMetaverse_GroupManager_UpdateRole_" data-uid="OpenMetaverse.GroupManager.UpdateRole*"></a>
+  <h4 id="OpenMetaverse_GroupManager_UpdateRole_OpenMetaverse_GroupRole_" data-uid="OpenMetaverse.GroupManager.UpdateRole(OpenMetaverse.GroupRole)">UpdateRole(GroupRole)</h4>
+  <div class="markdown level1 summary"><p>Update role information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateRole(GroupRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GroupRole.html">GroupRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>Modified role to be updated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_BannedAgents.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.BannedAgents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L858">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_BannedAgents" data-uid="OpenMetaverse.GroupManager.BannedAgents">BannedAgents</h4>
+  <div class="markdown level1 summary"><p>Raised when another agent invites our avatar to join a group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;BannedAgentsEventArgs&gt; BannedAgents</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.BannedAgentsEventArgs.html">BannedAgentsEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_CurrentGroups.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.CurrentGroups%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L506">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_CurrentGroups" data-uid="OpenMetaverse.GroupManager.CurrentGroups">CurrentGroups</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+our current group membership</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;CurrentGroupsEventArgs&gt; CurrentGroups</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.CurrentGroupsEventArgs.html">CurrentGroupsEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupAccountSummaryReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupAccountSummaryReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L670">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupAccountSummaryReply" data-uid="OpenMetaverse.GroupManager.GroupAccountSummaryReply">GroupAccountSummaryReply</h4>
+  <div class="markdown level1 summary"><p>Raised when a response to a RequestGroupAccountSummary is returned
+by the simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupAccountSummaryReplyEventArgs&gt; GroupAccountSummaryReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupAccountSummaryReplyEventArgs.html">GroupAccountSummaryReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupCreatedReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupCreatedReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L692">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupCreatedReply" data-uid="OpenMetaverse.GroupManager.GroupCreatedReply">GroupCreatedReply</h4>
+  <div class="markdown level1 summary"><p>Raised when a request to create a group is successful</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupCreatedReplyEventArgs&gt; GroupCreatedReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupCreatedReplyEventArgs.html">GroupCreatedReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupDropped.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupDropped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L760">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupDropped" data-uid="OpenMetaverse.GroupManager.GroupDropped">GroupDropped</h4>
+  <div class="markdown level1 summary"><p>Raised when A group is removed from the group server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupDroppedEventArgs&gt; GroupDropped</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupDroppedEventArgs.html">GroupDroppedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupInvitation.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupInvitation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L830">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupInvitation" data-uid="OpenMetaverse.GroupManager.GroupInvitation">GroupInvitation</h4>
+  <div class="markdown level1 summary"><p>Raised when another agent invites our avatar to join a group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupInvitationEventArgs&gt; GroupInvitation</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupInvitationEventArgs.html">GroupInvitationEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupJoinedReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupJoinedReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L715">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupJoinedReply" data-uid="OpenMetaverse.GroupManager.GroupJoinedReply">GroupJoinedReply</h4>
+  <div class="markdown level1 summary"><p>Raised when a request to join a group either
+fails or succeeds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupOperationEventArgs&gt; GroupJoinedReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupOperationEventArgs.html">GroupOperationEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupLeaveReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupLeaveReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L738">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupLeaveReply" data-uid="OpenMetaverse.GroupManager.GroupLeaveReply">GroupLeaveReply</h4>
+  <div class="markdown level1 summary"><p>Raised when a request to leave a group either
+fails or succeeds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupOperationEventArgs&gt; GroupLeaveReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupOperationEventArgs.html">GroupOperationEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupMemberEjected.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupMemberEjected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L783">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupMemberEjected" data-uid="OpenMetaverse.GroupManager.GroupMemberEjected">GroupMemberEjected</h4>
+  <div class="markdown level1 summary"><p>Raised when a request to eject a member from a group either
+fails or succeeds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupOperationEventArgs&gt; GroupMemberEjected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupOperationEventArgs.html">GroupOperationEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupMembersReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupMembersReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L576">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupMembersReply" data-uid="OpenMetaverse.GroupManager.GroupMembersReply">GroupMembersReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <a class="xref" href="OpenMetaverse.GroupManager.html#OpenMetaverse_GroupManager_RequestGroupMembers_OpenMetaverse_UUID_">RequestGroupMembers(UUID)</a> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupMembersReplyEventArgs&gt; GroupMembersReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupMembersReplyEventArgs.html">GroupMembersReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupNamesReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupNamesReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L530">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupNamesReply" data-uid="OpenMetaverse.GroupManager.GroupNamesReply">GroupNamesReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a RequestGroupName
+or RequestGroupNames request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupNamesEventArgs&gt; GroupNamesReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupNamesEventArgs.html">GroupNamesEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupNoticesListReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupNoticesListReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L807">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupNoticesListReply" data-uid="OpenMetaverse.GroupManager.GroupNoticesListReply">GroupNoticesListReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us group notices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupNoticesListReplyEventArgs&gt; GroupNoticesListReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupNoticesListReplyEventArgs.html">GroupNoticesListReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_GroupManager_GroupNoticesListReply_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenMetaverse.GroupManager.html#OpenMetaverse_GroupManager_RequestGroupNoticesList_OpenMetaverse_UUID_">RequestGroupNoticesList(UUID)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupProfile.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupProfile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L553">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupProfile" data-uid="OpenMetaverse.GroupManager.GroupProfile">GroupProfile</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <a class="xref" href="OpenMetaverse.GroupManager.html#OpenMetaverse_GroupManager_RequestGroupProfile_OpenMetaverse_UUID_">RequestGroupProfile(UUID)</a> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupProfileEventArgs&gt; GroupProfile</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupProfileEventArgs.html">GroupProfileEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupRoleDataReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupRoleDataReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L599">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupRoleDataReply" data-uid="OpenMetaverse.GroupManager.GroupRoleDataReply">GroupRoleDataReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <see cref="!:RequestGroupRoleData"></see> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupRolesDataReplyEventArgs&gt; GroupRoleDataReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupRolesDataReplyEventArgs.html">GroupRolesDataReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupRoleMembersReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupRoleMembersReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L622">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupRoleMembersReply" data-uid="OpenMetaverse.GroupManager.GroupRoleMembersReply">GroupRoleMembersReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <a class="xref" href="OpenMetaverse.GroupManager.html#OpenMetaverse_GroupManager_RequestGroupRolesMembers_OpenMetaverse_UUID_">RequestGroupRolesMembers(UUID)</a> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupRolesMembersReplyEventArgs&gt; GroupRoleMembersReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupRolesMembersReplyEventArgs.html">GroupRolesMembersReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager_GroupTitlesReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager.GroupTitlesReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L646">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_GroupManager_GroupTitlesReply" data-uid="OpenMetaverse.GroupManager.GroupTitlesReply">GroupTitlesReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <a class="xref" href="OpenMetaverse.GroupManager.html#OpenMetaverse_GroupManager_RequestGroupTitles_OpenMetaverse_UUID_">RequestGroupTitles(UUID)</a> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;GroupTitlesReplyEventArgs&gt; GroupTitlesReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.GroupTitlesReplyEventArgs.html">GroupTitlesReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_GroupManager.md&amp;value=---%0Auid%3A%20OpenMetaverse.GroupManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/GroupManager.cs/#L484" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

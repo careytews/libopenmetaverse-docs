@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum RegionFlags
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum RegionFlags
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.RegionFlags">
+  
+  
+  <h1 id="OpenMetaverse_RegionFlags" data-uid="OpenMetaverse.RegionFlags" class="text-break">Enum RegionFlags
+  </h1>
+  <div class="markdown level0 summary"><p>Simulator (region) properties</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_RegionFlags_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
+public enum RegionFlags : ulong</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_AbuseEmailToEstateOwner">AbuseEmailToEstateOwner</td>
+        <td><p>Abuse reports sent from within this region are sent to the estate owner defined email.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_AllowDamage">AllowDamage</td>
+        <td><p>Agents can take damage and be killed</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_AllowDirectTeleport">AllowDirectTeleport</td>
+        <td><p>Allow direct (p2p) teleporting</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_AllowLandmark">AllowLandmark</td>
+        <td><p>Landmarks can be created here</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_AllowParcelChanges">AllowParcelChanges</td>
+        <td><p>Parcels within the region may be joined or divided by anyone, not just estate owners/managers.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_AllowSetHome">AllowSetHome</td>
+        <td><p>Home position can be set in this sim</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_AllowVoice">AllowVoice</td>
+        <td><p>Region is Voice Enabled</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_BlockDwell">BlockDwell</td>
+        <td><p>Traffic calculations are not run across entire region, overrides parcel settings.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_BlockLandResell">BlockLandResell</td>
+        <td><p>Land cannot be released, sold, or purchased</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_BlockParcelSearch">BlockParcelSearch</td>
+        <td><p>Removes the ability from parcel owners to set their parcels to show in search.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_BlockTerraform">BlockTerraform</td>
+        <td><p>Disable heightmap alterations (agents can still plant
+foliage)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_DenyAgeUnverified">DenyAgeUnverified</td>
+        <td><p>Deny agents who have not been age verified from entering the region.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_DenyAnonymous">DenyAnonymous</td>
+        <td><p>Deny agents with no payment info on file</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_DenyIdentified">DenyIdentified</td>
+        <td><p>Deny agents with payment info on file</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_DenyTransacted">DenyTransacted</td>
+        <td><p>Deny agents who have made a monetary transaction</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_EstateSkipScripts">EstateSkipScripts</td>
+        <td><p>Estate owner has temporarily disabled scripting</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_ExternallyVisible">ExternallyVisible</td>
+        <td><p>Region can be seen from other regions on world map. (Legacy world map option?)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_MainlandVisible">MainlandVisible</td>
+        <td><p>Region can be seen from mainland on world map. (Legacy world map option?)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_NoFly">NoFly</td>
+        <td><p>Flight is disabled (not currently enforced by the sim)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_None">None</td>
+        <td><p>No flags set</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_NullLayer">NullLayer</td>
+        <td><p>Unknown: Related to the availability of an overview world map tile.(Think mainland images when zoomed out.)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_PublicAllowed">PublicAllowed</td>
+        <td><p>Agents not explicitly on the access list can visit the region.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_ResetHomeOnTeleport">ResetHomeOnTeleport</td>
+        <td><p>Home position is reset when an agent teleports away</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_RestrictPushObject">RestrictPushObject</td>
+        <td><p>Restricts the usage of the LSL llPushObject function, applies to whole region.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_Sandbox">Sandbox</td>
+        <td><p>All content is wiped nightly</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_SkipAgentAction">SkipAgentAction</td>
+        <td><p>Unknown: Related to region debug flags. Possibly to skip processing of agent interaction with world.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_SkipCollisions">SkipCollisions</td>
+        <td><p>No collision detection for non-agent objects</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_SkipPhysics">SkipPhysics</td>
+        <td><p>All physics processing is turned off</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_SkipScripts">SkipScripts</td>
+        <td><p>No scripts are ran</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_SkipUpdateInterestList">SkipUpdateInterestList</td>
+        <td><p>Region does not update agent prim interest lists. Internal debugging option.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_SunFixed">SunFixed</td>
+        <td><p>Sun does not move</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenMetaverse_RegionFlags_TaxFree">TaxFree</td>
+        <td><p>No object, land, etc. taxes</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_RegionFlags.md&amp;value=---%0Auid%3A%20OpenMetaverse.RegionFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Simulator.cs/#L41" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

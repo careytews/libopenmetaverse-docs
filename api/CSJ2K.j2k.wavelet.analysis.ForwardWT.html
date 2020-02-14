@@ -1,0 +1,1102 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ForwardWT
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ForwardWT
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT">
+  
+  
+  <h1 id="CSJ2K_j2k_wavelet_analysis_ForwardWT" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT" class="text-break">Class ForwardWT
+  </h1>
+  <div class="markdown level0 summary"><p>This abstract class represents the forward wavelet transform functional
+block. The functional block may actually be comprised of several classes
+linked together, but a subclass of this abstract class is the one that is
+returned as the functional block that performs the forward wavelet
+transform.</p>
+<p>This class assumes that data is transferred in code-blocks, as defined
+by the &apos;CBlkWTDataSrc&apos; interface. The internal calculation of the wavelet
+transform may be done differently but a buffering class should convert to
+that type of transfer.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html">ImgDataAdapter</a></div>
+    <div class="level2"><span class="xref">ForwardWT</span></div>
+      <div class="level3"><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTFull.html">ForwWTFull</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWT.html">ForwWT</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.WaveletTransform.html">WaveletTransform</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc.html">CBlkWTDataSrc</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html">ForwWTDataProps</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileWidth">ImgDataAdapter.TileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileHeight">ImgDataAdapter.TileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileWidth">ImgDataAdapter.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileHeight">ImgDataAdapter.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgWidth">ImgDataAdapter.ImgWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgHeight">ImgDataAdapter.ImgHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NumComps">ImgDataAdapter.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileIdx">ImgDataAdapter.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULX">ImgDataAdapter.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULY">ImgDataAdapter.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULX">ImgDataAdapter.ImgULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULY">ImgDataAdapter.ImgULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_tIdx">ImgDataAdapter.tIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_imgdatasrc">ImgDataAdapter.imgdatasrc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsX_System_Int32_">ImgDataAdapter.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsY_System_Int32_">ImgDataAdapter.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_">ImgDataAdapter.getTileCompWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_">ImgDataAdapter.getTileCompHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgWidth_System_Int32_">ImgDataAdapter.getCompImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgHeight_System_Int32_">ImgDataAdapter.getCompImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNomRangeBits_System_Int32_">ImgDataAdapter.getNomRangeBits(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_setTile_System_Int32_System_Int32_">ImgDataAdapter.setTile(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_nextTile">ImgDataAdapter.nextTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULX_System_Int32_">ImgDataAdapter.getCompULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULY_System_Int32_">ImgDataAdapter.getCompULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles">ImgDataAdapter.getNumTiles()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.wavelet.analysis.html">CSJ2K.j2k.wavelet.analysis</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ForwardWT : ImgDataAdapter, ForwWT, WaveletTransform, CBlkWTDataSrc, ForwWTDataProps, ImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT__ctor_CSJ2K_j2k_image_ImgData_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.%23ctor(CSJ2K.j2k.image.ImgData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L116">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT__ctor_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT__ctor_CSJ2K_j2k_image_ImgData_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.#ctor(CSJ2K.j2k.image.ImgData)">ForwardWT(ImgData)</h4>
+  <div class="markdown level1 summary"><p>Initializes this object for the specified number of tiles 'nt' and
+components 'nc'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ForwardWT(ImgData src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>The source of ImgData</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_OPT_PREFIX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.OPT_PREFIX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L101">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_OPT_PREFIX" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.OPT_PREFIX">OPT_PREFIX</h4>
+  <div class="markdown level1 summary"><p>The prefix for wavelet transform options: 'W'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const char OPT_PREFIX = 'W'</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_WT_DECOMP_DYADIC.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.WT_DECOMP_DYADIC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L98">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_WT_DECOMP_DYADIC" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.WT_DECOMP_DYADIC">WT_DECOMP_DYADIC</h4>
+  <div class="markdown level1 summary"><p>ID for the dyadic wavelet tree decomposition (also called &quot;Mallat&quot; in
+JPEG 2000): 0x00.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int WT_DECOMP_DYADIC = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_CbULX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.CbULX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L92">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_CbULX_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.CbULX*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_CbULX" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.CbULX">CbULX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int CbULX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_CbULY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.CbULY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L91">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_CbULY_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.CbULY*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_CbULY" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.CbULY">CbULY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int CbULY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_ParameterInfo.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.ParameterInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L83">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_ParameterInfo_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.ParameterInfo*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_ParameterInfo" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.ParameterInfo">ParameterInfo</h4>
+  <div class="markdown level1 summary"><p>Returns the parameters that are used in this class and implementing
+classes. It returns a 2D String array. Each of the 1D arrays is for a
+different option, and they have 3 elements. The first element is the
+option name, the second one is the synopsis and the third one is a long
+description of what the parameter is. The synopsis or description may
+be 'null', in which case it is assumed that there is no synopsis or
+description of the option, respectively. Null may be returned if no
+options are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[][] ParameterInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[][]</td>
+        <td><p>the options name, their synopsis and their explanation, or null
+if no options are supported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_createInstance_CSJ2K_j2k_image_BlkImgDataSrc_CSJ2K_j2k_util_ParameterList_CSJ2K_j2k_encoder_EncoderSpecs_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.createInstance(CSJ2K.j2k.image.BlkImgDataSrc%2CCSJ2K.j2k.util.ParameterList%2CCSJ2K.j2k.encoder.EncoderSpecs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L141">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_createInstance_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.createInstance*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_createInstance_CSJ2K_j2k_image_BlkImgDataSrc_CSJ2K_j2k_util_ParameterList_CSJ2K_j2k_encoder_EncoderSpecs_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.createInstance(CSJ2K.j2k.image.BlkImgDataSrc,CSJ2K.j2k.util.ParameterList,CSJ2K.j2k.encoder.EncoderSpecs)">createInstance(BlkImgDataSrc, ParameterList, EncoderSpecs)</h4>
+  <div class="markdown level1 summary"><p>Creates a ForwardWT object with the specified filters, and with other
+options specified in the parameter list 'pl'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ForwardWT createInstance(BlkImgDataSrc src, ParameterList pl, EncoderSpecs encSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>The source of data to be transformed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.util.ParameterList.html">ParameterList</a></td>
+        <td><span class="parametername">pl</span></td>
+        <td><p>The parameter list (or options).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.encoder.EncoderSpecs.html">EncoderSpecs</a></td>
+        <td><span class="parametername">encSpec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwardWT.html">ForwardWT</a></td>
+        <td><p>A new ForwardWT object with the specified filters and options
+from 'pl'.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_getAnSubbandTree_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.getAnSubbandTree(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L207">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getAnSubbandTree_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getAnSubbandTree*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getAnSubbandTree_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getAnSubbandTree(System.Int32,System.Int32)">getAnSubbandTree(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract SubbandAn getAnSubbandTree(int param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html">SubbandAn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_getDataType_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.getDataType(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L211">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getDataType_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getDataType*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getDataType_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getDataType(System.Int32,System.Int32)">getDataType(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int getDataType(int param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_getDecomp_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.getDecomp(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L212">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getDecomp_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getDecomp*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getDecomp_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getDecomp(System.Int32,System.Int32)">getDecomp(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int getDecomp(int param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_getDecompLevels_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.getDecompLevels(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L208">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getDecompLevels_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getDecompLevels*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getDecompLevels_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getDecompLevels(System.Int32,System.Int32)">getDecompLevels(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int getDecompLevels(int param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_getFixedPoint_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.getFixedPoint(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L204">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getFixedPoint_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getFixedPoint*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getFixedPoint_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getFixedPoint(System.Int32)">getFixedPoint(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int getFixedPoint(int param1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_getHorAnWaveletFilters_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.getHorAnWaveletFilters(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L205">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getHorAnWaveletFilters_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getHorAnWaveletFilters*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getHorAnWaveletFilters_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getHorAnWaveletFilters(System.Int32,System.Int32)">getHorAnWaveletFilters(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract AnWTFilter[] getHorAnWaveletFilters(int param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html">AnWTFilter</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_getImplementationType_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.getImplementationType(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L210">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getImplementationType_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getImplementationType*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getImplementationType_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getImplementationType(System.Int32)">getImplementationType(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int getImplementationType(int param1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_getNextCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.getNextCodeBlock(System.Int32%2CCSJ2K.j2k.wavelet.analysis.CBlkWTData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L209">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getNextCodeBlock_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getNextCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getNextCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getNextCodeBlock(System.Int32,CSJ2K.j2k.wavelet.analysis.CBlkWTData)">getNextCodeBlock(Int32, CBlkWTData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract CBlkWTData getNextCodeBlock(int param1, CBlkWTData param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_getNextInternCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.getNextInternCodeBlock(System.Int32%2CCSJ2K.j2k.wavelet.analysis.CBlkWTData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L203">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getNextInternCodeBlock_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getNextInternCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getNextInternCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getNextInternCodeBlock(System.Int32,CSJ2K.j2k.wavelet.analysis.CBlkWTData)">getNextInternCodeBlock(Int32, CBlkWTData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract CBlkWTData getNextInternCodeBlock(int param1, CBlkWTData param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_getVertAnWaveletFilters_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.getVertAnWaveletFilters(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L206">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getVertAnWaveletFilters_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getVertAnWaveletFilters*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_getVertAnWaveletFilters_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.getVertAnWaveletFilters(System.Int32,System.Int32)">getVertAnWaveletFilters(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract AnWTFilter[] getVertAnWaveletFilters(int param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html">AnWTFilter</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT_isReversible_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT.isReversible(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L202">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_ForwardWT_isReversible_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.isReversible*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_ForwardWT_isReversible_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.ForwardWT.isReversible(System.Int32,System.Int32)">isReversible(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool isReversible(int param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWT.html">ForwWT</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.WaveletTransform.html">WaveletTransform</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc.html">CBlkWTDataSrc</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html">ForwWTDataProps</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_ForwardWT.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.ForwardWT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/ForwardWT.cs/#L67" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

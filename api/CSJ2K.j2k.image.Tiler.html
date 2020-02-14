@@ -1,0 +1,1332 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Tiler
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Tiler
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.image.Tiler">
+  
+  
+  <h1 id="CSJ2K_j2k_image_Tiler" data-uid="CSJ2K.j2k.image.Tiler" class="text-break">Class Tiler
+  </h1>
+  <div class="markdown level0 summary"><p>This class places an image in the canvas coordinate system, tiles it, if so
+specified, and performs the coordinate conversions transparently. The
+source must be a 'BlkImgDataSrc' which is not tiled and has a the image
+origin at the canvas origin (i.e. it is not &quot;canvased&quot;), or an exception is
+thrown by the constructor. A tiled and &quot;canvased&quot; output is given through
+the 'BlkImgDataSrc' interface. See the 'ImgData' interface for a
+description of the canvas and tiling.</p>
+<p>All tiles produced are rectangular, non-overlapping and their union
+covers all the image. However, the tiling may not be uniform, depending on
+the nominal tile size, tiling origin, component subsampling and other
+factors. Therefore it might not be assumed that all tiles are of the same
+width and height.</p>
+<p>The nominal dimension of the tiles is the maximal one, in the reference
+grid. All the components of the image have the same number of tiles.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html">ImgDataAdapter</a></div>
+    <div class="level2"><span class="xref">Tiler</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgWidth">ImgDataAdapter.ImgWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgHeight">ImgDataAdapter.ImgHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NumComps">ImgDataAdapter.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_tIdx">ImgDataAdapter.tIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_imgdatasrc">ImgDataAdapter.imgdatasrc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsX_System_Int32_">ImgDataAdapter.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsY_System_Int32_">ImgDataAdapter.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgWidth_System_Int32_">ImgDataAdapter.getCompImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgHeight_System_Int32_">ImgDataAdapter.getCompImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNomRangeBits_System_Int32_">ImgDataAdapter.getNomRangeBits(Int32)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.image.html">CSJ2K.j2k.image</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_image_Tiler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Tiler : ImgDataAdapter, BlkImgDataSrc, ImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler__ctor_CSJ2K_j2k_image_BlkImgDataSrc_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.%23ctor(CSJ2K.j2k.image.BlkImgDataSrc%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L301">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler__ctor_" data-uid="CSJ2K.j2k.image.Tiler.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler__ctor_CSJ2K_j2k_image_BlkImgDataSrc_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.image.Tiler.#ctor(CSJ2K.j2k.image.BlkImgDataSrc,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">Tiler(BlkImgDataSrc, Int32, Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tiler(BlkImgDataSrc src, int ax, int ay, int px, int py, int nw, int nh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ax</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ay</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">px</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">py</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nw</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nh</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_ImgULX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.ImgULX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L146">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_ImgULX_" data-uid="CSJ2K.j2k.image.Tiler.ImgULX*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_ImgULX" data-uid="CSJ2K.j2k.image.Tiler.ImgULX">ImgULX</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal coordinate of the image origin, the top-left
+corner, in the canvas system, on the reference grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int ImgULX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The horizontal coordinate of the image origin in the canvas
+system, on the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULX">ImgDataAdapter.ImgULX</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_ImgULY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.ImgULY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L162">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_ImgULY_" data-uid="CSJ2K.j2k.image.Tiler.ImgULY*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_ImgULY" data-uid="CSJ2K.j2k.image.Tiler.ImgULY">ImgULY</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical coordinate of the image origin, the top-left
+corner, in the canvas system, on the reference grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int ImgULY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The vertical coordinate of the image origin in the canvas
+system, on the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULY">ImgDataAdapter.ImgULY</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_NomTileHeight.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.NomTileHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L190">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_NomTileHeight_" data-uid="CSJ2K.j2k.image.Tiler.NomTileHeight*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_NomTileHeight" data-uid="CSJ2K.j2k.image.Tiler.NomTileHeight">NomTileHeight</h4>
+  <div class="markdown level1 summary"><p>Returns the nominal width of the tiles in the reference grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int NomTileHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The nominal tile width, in the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileHeight">ImgDataAdapter.NomTileHeight</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_NomTileWidth.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.NomTileWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L176">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_NomTileWidth_" data-uid="CSJ2K.j2k.image.Tiler.NomTileWidth*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_NomTileWidth" data-uid="CSJ2K.j2k.image.Tiler.NomTileWidth">NomTileWidth</h4>
+  <div class="markdown level1 summary"><p>Returns the nominal width of the tiles in the reference grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int NomTileWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The nominal tile width, in the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileWidth">ImgDataAdapter.NomTileWidth</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_TileHeight.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.TileHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L97">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_TileHeight_" data-uid="CSJ2K.j2k.image.Tiler.TileHeight*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_TileHeight" data-uid="CSJ2K.j2k.image.Tiler.TileHeight">TileHeight</h4>
+  <div class="markdown level1 summary"><p>Returns the overall height of the current tile in pixels. This is the
+tile's width without accounting for any component subsampling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int TileHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total current tile height in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileHeight">ImgDataAdapter.TileHeight</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_TileIdx.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.TileIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L112">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_TileIdx_" data-uid="CSJ2K.j2k.image.Tiler.TileIdx*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_TileIdx" data-uid="CSJ2K.j2k.image.Tiler.TileIdx">TileIdx</h4>
+  <div class="markdown level1 summary"><p>Returns the index of the current tile, relative to a standard scan-line
+order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int TileIdx { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The current tile's index (starts at 0).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileIdx">ImgDataAdapter.TileIdx</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_TilePartULX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.TilePartULX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L121">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_TilePartULX_" data-uid="CSJ2K.j2k.image.Tiler.TilePartULX*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_TilePartULX" data-uid="CSJ2K.j2k.image.Tiler.TilePartULX">TilePartULX</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal tile partition offset in the reference grid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int TilePartULX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULX">ImgDataAdapter.TilePartULX</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_TilePartULY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.TilePartULY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L130">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_TilePartULY_" data-uid="CSJ2K.j2k.image.Tiler.TilePartULY*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_TilePartULY" data-uid="CSJ2K.j2k.image.Tiler.TilePartULY">TilePartULY</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical tile partition offset in the reference grid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int TilePartULY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULY">ImgDataAdapter.TilePartULY</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_TileWidth.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.TileWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L82">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_TileWidth_" data-uid="CSJ2K.j2k.image.Tiler.TileWidth*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_TileWidth" data-uid="CSJ2K.j2k.image.Tiler.TileWidth">TileWidth</h4>
+  <div class="markdown level1 summary"><p>Returns the overall width of the current tile in pixels. This is the
+tile's width without accounting for any component subsampling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int TileWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total current tile width in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileWidth">ImgDataAdapter.TileWidth</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.getCompData(CSJ2K.j2k.image.DataBlk%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L527">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_getCompData_" data-uid="CSJ2K.j2k.image.Tiler.getCompData*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_" data-uid="CSJ2K.j2k.image.Tiler.getCompData(CSJ2K.j2k.image.DataBlk,System.Int32)">getCompData(DataBlk, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns, in the blk argument, a block of image data containing the
+specifed rectangular area, in the specified component. The data is
+returned, as a copy of the internal data, therefore the returned data
+can be modified &quot;in place&quot;.</p>
+<p>The rectangular area to return is specified by the &apos;ulx&apos;, &apos;uly&apos;, &apos;w&apos;
+and &apos;h&apos; members of the &apos;blk&apos; argument, relative to the current
+tile. These members are not modified by this method. The &apos;offset&apos; of
+the returned data is 0, and the &apos;scanw&apos; is the same as the block&apos;s
+width. See the &apos;DataBlk&apos; class.</p>
+<p>This method, in general, is less efficient than the
+&apos;getInternCompData()&apos; method since, in general, it copies the
+data. However if the array of returned data is to be modified by the
+caller then this method is preferable.</p>
+<p>If the data array in &apos;blk&apos; is &apos;null&apos;, then a new one is created. If
+the data array is not &apos;null&apos; then it is reused, and it must be large
+enough to contain the block&apos;s data. Otherwise an &apos;ArrayStoreException&apos;
+or an &apos;IndexOutOfBoundsException&apos; is thrown by the Java system.</p>
+<p>The returned data may have its &apos;progressive&apos; attribute set. In this
+case the returned data is only an approximation of the &quot;final&quot;
+data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataBlk getCompData(DataBlk blk, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">blk</span></td>
+        <td><p>Its coordinates and dimensions specify the area to return,
+relative to the current tile. If it contains a non-null data array,
+then it must be large enough. If it contains a null data array a new
+one is created. Some fields in this object are modified to return the
+data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component from which to get the data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><p>The requested DataBlk</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_image_Tiler_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.Tiler.html#CSJ2K_j2k_image_Tiler_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_">getInternCompData(DataBlk, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_getCompULX_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.getCompULX(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L656">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_getCompULX_" data-uid="CSJ2K.j2k.image.Tiler.getCompULX*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_getCompULX_System_Int32_" data-uid="CSJ2K.j2k.image.Tiler.getCompULX(System.Int32)">getCompULX(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal coordinate of the upper-left corner of the
+specified component in the current tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getCompULX(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULX_System_Int32_">ImgDataAdapter.getCompULX(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_getCompULY_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.getCompULY(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L668">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_getCompULY_" data-uid="CSJ2K.j2k.image.Tiler.getCompULY*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_getCompULY_System_Int32_" data-uid="CSJ2K.j2k.image.Tiler.getCompULY(System.Int32)">getCompULY(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical coordinate of the upper-left corner of the
+specified component in the current tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getCompULY(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULY_System_Int32_">ImgDataAdapter.getCompULY(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_getFixedPoint_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.getFixedPoint(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L416">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_getFixedPoint_" data-uid="CSJ2K.j2k.image.Tiler.getFixedPoint*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_getFixedPoint_System_Int32_" data-uid="CSJ2K.j2k.image.Tiler.getFixedPoint(System.Int32)">getFixedPoint(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the position of the fixed point in the specified
+component. This is the position of the least significant integral
+(i.e. non-fractional) bit, which is equivalent to the number of
+fractional bits. For instance, for fixed-point values with 2 fractional
+bits, 2 is returned. For floating-point data this value does not apply
+and 0 should be returned. Position 0 is the position of the least
+significant bit in the data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getFixedPoint(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The position of the fixed-point, which is the same as the
+number of fractional bits. For floating-point data 0 is returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.getInternCompData(CSJ2K.j2k.image.DataBlk%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L464">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_getInternCompData_" data-uid="CSJ2K.j2k.image.Tiler.getInternCompData*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_" data-uid="CSJ2K.j2k.image.Tiler.getInternCompData(CSJ2K.j2k.image.DataBlk,System.Int32)">getInternCompData(DataBlk, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns, in the blk argument, a block of image data containing the
+specifed rectangular area, in the specified component. The data is
+returned, as a reference to the internal data, if any, instead of as a
+copy, therefore the returned data should not be modified.</p>
+<p>The rectangular area to return is specified by the &apos;ulx&apos;, &apos;uly&apos;, &apos;w&apos;
+and &apos;h&apos; members of the &apos;blk&apos; argument, relative to the current
+tile. These members are not modified by this method. The &apos;offset&apos; and
+&apos;scanw&apos; of the returned data can be arbitrary. See the &apos;DataBlk&apos;
+class.</p>
+<p>This method, in general, is more efficient than the &apos;getCompData()&apos;
+method since it may not copy the data. However if the array of returned
+data is to be modified by the caller then the other method is probably
+preferable.</p>
+<p>If the data array in <tt>blk</tt> is <tt>null</tt>, then a new one
+is created if necessary. The implementation of this interface may
+choose to return the same array or a new one, depending on what is more
+efficient. Therefore, the data array in <tt>blk</tt> prior to the
+method call should not be considered to contain the returned data, a
+new array may have been created. Instead, get the array from
+<tt>blk</tt> after the method has returned.</p>
+<p>The returned data may have its &apos;progressive&apos; attribute set. In this
+case the returned data is only an approximation of the &quot;final&quot;
+data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataBlk getInternCompData(DataBlk blk, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">blk</span></td>
+        <td><p>Its coordinates and dimensions specify the area to return,
+relative to the current tile. Some fields in this object are modified
+to return the data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component from which to get the data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><p>The requested DataBlk</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_image_Tiler_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.Tiler.html#CSJ2K_j2k_image_Tiler_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_">getCompData(DataBlk, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_getNumTiles.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.getNumTiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L704">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_getNumTiles_" data-uid="CSJ2K.j2k.image.Tiler.getNumTiles*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_getNumTiles" data-uid="CSJ2K.j2k.image.Tiler.getNumTiles">getNumTiles()</h4>
+  <div class="markdown level1 summary"><p>Returns the total number of tiles in the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getNumTiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total number of tiles in the image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles">ImgDataAdapter.getNumTiles()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_getNumTiles_CSJ2K_j2k_image_Coord_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.getNumTiles(CSJ2K.j2k.image.Coord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L684">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_getNumTiles_" data-uid="CSJ2K.j2k.image.Tiler.getNumTiles*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_getNumTiles_CSJ2K_j2k_image_Coord_" data-uid="CSJ2K.j2k.image.Tiler.getNumTiles(CSJ2K.j2k.image.Coord)">getNumTiles(Coord)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of tiles in the horizontal and vertical directions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Coord getNumTiles(Coord co)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><span class="parametername">co</span></td>
+        <td><p>If not null this object is used to return the information. If
+null a new one is created and returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><p>The number of tiles in the horizontal (Coord.x) and vertical
+(Coord.y) directions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getNumTiles(Coord)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_getTile_CSJ2K_j2k_image_Coord_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.getTile(CSJ2K.j2k.image.Coord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L635">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_getTile_" data-uid="CSJ2K.j2k.image.Tiler.getTile*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_getTile_CSJ2K_j2k_image_Coord_" data-uid="CSJ2K.j2k.image.Tiler.getTile(CSJ2K.j2k.image.Coord)">getTile(Coord)</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal and vertical indexes of the current tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Coord getTile(Coord co)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><span class="parametername">co</span></td>
+        <td><p>If not null this object is used to return the
+information. If null a new one is created and returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><p>The current tile's horizontal and vertical indexes..</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getTile(Coord)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_getTileCompHeight_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.getTileCompHeight(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L391">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_getTileCompHeight_" data-uid="CSJ2K.j2k.image.Tiler.getTileCompHeight*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_getTileCompHeight_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.image.Tiler.getTileCompHeight(System.Int32,System.Int32)">getTileCompHeight(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the height in pixels of the specified tile-component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getTileCompHeight(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The height of specified tile-component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_">ImgDataAdapter.getTileCompHeight(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_getTileCompWidth_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.getTileCompWidth(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L370">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_getTileCompWidth_" data-uid="CSJ2K.j2k.image.Tiler.getTileCompWidth*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_getTileCompWidth_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.image.Tiler.getTileCompWidth(System.Int32,System.Int32)">getTileCompWidth(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the width in pixels of the specified tile-component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getTileCompWidth(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The width of specified tile-component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_">ImgDataAdapter.getTileCompWidth(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_getTilingOrigin_CSJ2K_j2k_image_Coord_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.getTilingOrigin(CSJ2K.j2k.image.Coord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L724">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_getTilingOrigin_" data-uid="CSJ2K.j2k.image.Tiler.getTilingOrigin*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_getTilingOrigin_CSJ2K_j2k_image_Coord_" data-uid="CSJ2K.j2k.image.Tiler.getTilingOrigin(CSJ2K.j2k.image.Coord)">getTilingOrigin(Coord)</h4>
+  <div class="markdown level1 summary"><p>Returns the tiling origin, referred to as '(xt0siz,yt0siz)' in the
+codestream header (SIZ marker segment).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coord getTilingOrigin(Coord co)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><span class="parametername">co</span></td>
+        <td><p>If not null this object is used to return the information. If
+null a new one is created and returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><p>The coordinate of the tiling origin, in the canvas system, on
+the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_image_Tiler_getTilingOrigin_CSJ2K_j2k_image_Coord__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_nextTile.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.nextTile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L606">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_nextTile_" data-uid="CSJ2K.j2k.image.Tiler.nextTile*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_nextTile" data-uid="CSJ2K.j2k.image.Tiler.nextTile">nextTile()</h4>
+  <div class="markdown level1 summary"><p>Advances to the next tile, in standard scan-line order (by rows then
+columns). An NoNextElementException is thrown if the current tile is
+the last one (i.e. there is no next tile).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void nextTile()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_nextTile">ImgDataAdapter.nextTile()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_setTile_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.setTile(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L559">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_setTile_" data-uid="CSJ2K.j2k.image.Tiler.setTile*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_setTile_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.image.Tiler.setTile(System.Int32,System.Int32)">setTile(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Changes the current tile, given the new tile indexes. An
+IllegalArgumentException is thrown if the coordinates do not correspond
+to a valid tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void setTile(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The horizontal index of the tile.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The vertical index of the new tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_setTile_System_Int32_System_Int32_">ImgDataAdapter.setTile(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler_ToString.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L744">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_Tiler_ToString_" data-uid="CSJ2K.j2k.image.Tiler.ToString*"></a>
+  <h4 id="CSJ2K_j2k_image_Tiler_ToString" data-uid="CSJ2K.j2k.image.Tiler.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a String object representing Tiler's informations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Tiler's infos in a string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_Tiler.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.Tiler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/Tiler.cs/#L73" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

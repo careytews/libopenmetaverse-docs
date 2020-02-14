@@ -1,0 +1,784 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileBitstreamReaderAgent
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileBitstreamReaderAgent
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent">
+  
+  
+  <h1 id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent" class="text-break">Class FileBitstreamReaderAgent
+  </h1>
+  <div class="markdown level0 summary"><p>This class reads the bit stream (with the help of HeaderDecoder for tile
+headers and PktDecoder for packets header and body) and retrives location
+of all code-block's codewords.</p>
+<p>Note: All tile-parts headers are read by the constructor whereas packets
+are processed when decoding related tile (when setTile method is
+called).</p>
+<p>In parsing mode, the reader simulates a virtual layer-resolution
+progressive bit stream with the same truncation points in each code-block,
+whereas in truncation mode, only the first bytes are taken into account (it
+behaves like if it is a real truncated codestream).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html">BitstreamReaderAgent</a></div>
+    <div class="level2"><span class="xref">FileBitstreamReaderAgent</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.entropy.decoder.CodedCBlkDataSrcDec.html">CodedCBlkDataSrcDec</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTData.html">InvWTData</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_CbULX">BitstreamReaderAgent.CbULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_CbULY">BitstreamReaderAgent.CbULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NumComps">BitstreamReaderAgent.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TileIdx">BitstreamReaderAgent.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ParameterInfo">BitstreamReaderAgent.ParameterInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ImgRes">BitstreamReaderAgent.ImgRes</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TargetRate">BitstreamReaderAgent.TargetRate</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ActualRate">BitstreamReaderAgent.ActualRate</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TargetNbytes">BitstreamReaderAgent.TargetNbytes</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ActualNbytes">BitstreamReaderAgent.ActualNbytes</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TilePartULX">BitstreamReaderAgent.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_TilePartULY">BitstreamReaderAgent.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NomTileWidth">BitstreamReaderAgent.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_NomTileHeight">BitstreamReaderAgent.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_decSpec">BitstreamReaderAgent.decSpec</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_derived">BitstreamReaderAgent.derived</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_gb">BitstreamReaderAgent.gb</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_params_Renamed">BitstreamReaderAgent.params_Renamed</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_OPT_PREFIX">BitstreamReaderAgent.OPT_PREFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_mdl">BitstreamReaderAgent.mdl</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_nc">BitstreamReaderAgent.nc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_targetRes">BitstreamReaderAgent.targetRes</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_subbTrees">BitstreamReaderAgent.subbTrees</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_imgW">BitstreamReaderAgent.imgW</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_imgH">BitstreamReaderAgent.imgH</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ax">BitstreamReaderAgent.ax</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ay">BitstreamReaderAgent.ay</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_px">BitstreamReaderAgent.px</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_py">BitstreamReaderAgent.py</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_offX">BitstreamReaderAgent.offX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_offY">BitstreamReaderAgent.offY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_culx">BitstreamReaderAgent.culx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_culy">BitstreamReaderAgent.culy</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntW">BitstreamReaderAgent.ntW</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntH">BitstreamReaderAgent.ntH</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntX">BitstreamReaderAgent.ntX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ntY">BitstreamReaderAgent.ntY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_nt">BitstreamReaderAgent.nt</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ctX">BitstreamReaderAgent.ctX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_ctY">BitstreamReaderAgent.ctY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_hd">BitstreamReaderAgent.hd</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_tnbytes">BitstreamReaderAgent.tnbytes</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_anbytes">BitstreamReaderAgent.anbytes</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_trate">BitstreamReaderAgent.trate</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_arate">BitstreamReaderAgent.arate</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompSubsX_System_Int32_">BitstreamReaderAgent.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompSubsY_System_Int32_">BitstreamReaderAgent.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileWidth_System_Int32_">BitstreamReaderAgent.getTileWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileHeight_System_Int32_">BitstreamReaderAgent.getTileHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgWidth_System_Int32_">BitstreamReaderAgent.getImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgHeight_System_Int32_">BitstreamReaderAgent.getImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgULX_System_Int32_">BitstreamReaderAgent.getImgULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getImgULY_System_Int32_">BitstreamReaderAgent.getImgULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileCompWidth_System_Int32_System_Int32_System_Int32_">BitstreamReaderAgent.getTileCompWidth(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTileCompHeight_System_Int32_System_Int32_System_Int32_">BitstreamReaderAgent.getTileCompHeight(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompImgWidth_System_Int32_System_Int32_">BitstreamReaderAgent.getCompImgWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCompImgHeight_System_Int32_System_Int32_">BitstreamReaderAgent.getCompImgHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getTile_CSJ2K_j2k_image_Coord_">BitstreamReaderAgent.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getResULX_System_Int32_System_Int32_">BitstreamReaderAgent.getResULX(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getResULY_System_Int32_System_Int32_">BitstreamReaderAgent.getResULY(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getNumTiles_CSJ2K_j2k_image_Coord_">BitstreamReaderAgent.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getNumTiles">BitstreamReaderAgent.getNumTiles()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getSynSubbandTree_System_Int32_System_Int32_">BitstreamReaderAgent.getSynSubbandTree(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_createInstance_CSJ2K_j2k_io_RandomAccessIO_CSJ2K_j2k_codestream_reader_HeaderDecoder_CSJ2K_j2k_util_ParameterList_CSJ2K_j2k_decoder_DecoderSpecs_System_Boolean_CSJ2K_j2k_codestream_HeaderInfo_">BitstreamReaderAgent.createInstance(RandomAccessIO, HeaderDecoder, ParameterList, DecoderSpecs, Boolean, HeaderInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getPPX_System_Int32_System_Int32_System_Int32_">BitstreamReaderAgent.getPPX(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getPPY_System_Int32_System_Int32_System_Int32_">BitstreamReaderAgent.getPPY(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_initSubbandsFields_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_">BitstreamReaderAgent.initSubbandsFields(Int32, SubbandSyn)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.codestream.reader.html">CSJ2K.j2k.codestream.reader</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FileBitstreamReaderAgent : BitstreamReaderAgent, CodedCBlkDataSrcDec, InvWTData, MultiResImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent__ctor_CSJ2K_j2k_codestream_reader_HeaderDecoder_CSJ2K_j2k_io_RandomAccessIO_CSJ2K_j2k_decoder_DecoderSpecs_CSJ2K_j2k_util_ParameterList_System_Boolean_CSJ2K_j2k_codestream_HeaderInfo_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.%23ctor(CSJ2K.j2k.codestream.reader.HeaderDecoder%2CCSJ2K.j2k.io.RandomAccessIO%2CCSJ2K.j2k.decoder.DecoderSpecs%2CCSJ2K.j2k.util.ParameterList%2CSystem.Boolean%2CCSJ2K.j2k.codestream.HeaderInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/FileBitstreamReaderAgent.cs/#L240">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent__ctor_" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent__ctor_CSJ2K_j2k_codestream_reader_HeaderDecoder_CSJ2K_j2k_io_RandomAccessIO_CSJ2K_j2k_decoder_DecoderSpecs_CSJ2K_j2k_util_ParameterList_System_Boolean_CSJ2K_j2k_codestream_HeaderInfo_" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.#ctor(CSJ2K.j2k.codestream.reader.HeaderDecoder,CSJ2K.j2k.io.RandomAccessIO,CSJ2K.j2k.decoder.DecoderSpecs,CSJ2K.j2k.util.ParameterList,System.Boolean,CSJ2K.j2k.codestream.HeaderInfo)">FileBitstreamReaderAgent(HeaderDecoder, RandomAccessIO, DecoderSpecs, ParameterList, Boolean, HeaderInfo)</h4>
+  <div class="markdown level1 summary"><p>Reads all tiles headers and keep offset of their first
+packet. Finally it calls the rate allocation method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileBitstreamReaderAgent(HeaderDecoder hd, RandomAccessIO ehs, DecoderSpecs decSpec, ParameterList pl, bool cdstrInfo, HeaderInfo hi)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.reader.HeaderDecoder.html">HeaderDecoder</a></td>
+        <td><span class="parametername">hd</span></td>
+        <td><p>HeaderDecoder of the codestream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.io.RandomAccessIO.html">RandomAccessIO</a></td>
+        <td><span class="parametername">ehs</span></td>
+        <td><p>The input stream where to read bit-stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.decoder.DecoderSpecs.html">DecoderSpecs</a></td>
+        <td><span class="parametername">decSpec</span></td>
+        <td><p>The decoder specifications</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.util.ParameterList.html">ParameterList</a></td>
+        <td><span class="parametername">pl</span></td>
+        <td><p>The ParameterList instance created from the
+command-line arguments.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">cdstrInfo</span></td>
+        <td><p>Whether or not to print information found in
+codestream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.html">HeaderInfo</a></td>
+        <td><span class="parametername">hi</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent__ctor_CSJ2K_j2k_codestream_reader_HeaderDecoder_CSJ2K_j2k_io_RandomAccessIO_CSJ2K_j2k_decoder_DecoderSpecs_CSJ2K_j2k_util_ParameterList_System_Boolean_CSJ2K_j2k_codestream_HeaderInfo__seealso">See Also</h5>
+  <div class="seealso">
+      <div><span class="xref">CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.allocateRate</span></div>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_layerStarts.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.layerStarts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/FileBitstreamReaderAgent.cs/#L166">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_layerStarts" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.layerStarts">layerStarts</h4>
+  <div class="markdown level1 summary"><p>Layer starting positions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;int&gt; layerStarts</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_pktDec.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.pktDec%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/FileBitstreamReaderAgent.cs/#L94">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_pktDec" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.pktDec">pktDec</h4>
+  <div class="markdown level1 summary"><p>Reference to the PktDecoder instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PktDecoder pktDec</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.reader.PktDecoder.html">PktDecoder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_CBlkInfo.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.CBlkInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/FileBitstreamReaderAgent.cs/#L79">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_CBlkInfo_" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.CBlkInfo*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_CBlkInfo" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.CBlkInfo">CBlkInfo</h4>
+  <div class="markdown level1 summary"><p>Gets the reference to the CBlkInfo array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual CBlkInfo[][][][][] CBlkInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.reader.CBlkInfo.html">CBlkInfo</a>[][][][][]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_System_Int32_System_Int32_CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.getCodeBlock(System.Int32%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.wavelet.synthesis.SubbandSyn%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.entropy.decoder.DecLyrdCBlk)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/FileBitstreamReaderAgent.cs/#L2455">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_getCodeBlock_" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.getCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_System_Int32_System_Int32_CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.getCodeBlock(System.Int32,System.Int32,System.Int32,CSJ2K.j2k.wavelet.synthesis.SubbandSyn,System.Int32,System.Int32,CSJ2K.j2k.entropy.decoder.DecLyrdCBlk)">getCodeBlock(Int32, Int32, Int32, SubbandSyn, Int32, Int32, DecLyrdCBlk)</h4>
+  <div class="markdown level1 summary"><p>Returns the specified coded code-block, for the specified component, in
+the current tile. The first layer to return is indicated by 'fl'. The
+number of layers that is returned depends on 'nl' and the amount of
+available data.</p>
+<p>The argument &apos;fl&apos; is to be used by subsequent calls to this method
+for the same code-block. In this way supplemental data can be retrieved
+at a later time. The fact that data from more than one layer can be
+returned means that several packets from the same code-block, of the
+same component, and the same tile, have been concatenated.</p>
+<p>The returned compressed code-block can have its progressive
+attribute set. If this attribute is set it means that more data can be
+obtained by subsequent calls to this method (subject to transmission
+delays, etc). If the progressive attribute is not set it means that the
+returned data is all the data that can be obtained for the specified
+code-block.</p>
+<p>The compressed code-block is uniquely specified by the current tile,
+the component (identified by &apos;c&apos;), the subband (indentified by &apos;sb&apos;)
+and the code-block vertical and horizontal indexes &apos;n&apos; and &apos;m&apos;.</p>
+<p>The &apos;ulx&apos; and &apos;uly&apos; members of the returned &apos;DecLyrdCBlk&apos; object
+contain the coordinates of the top-left corner of the block, with
+respect to the tile, not the subband.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DecLyrdCBlk getCodeBlock(int c, int m, int n, SubbandSyn sb, int fl, int nl, DecLyrdCBlk ccb)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The vertical index of the code-block to return, in the
+specified subband.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The horizontal index of the code-block to return, in the
+specified subband.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td><span class="parametername">sb</span></td>
+        <td><p>The subband in whic the requested code-block is.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fl</span></td>
+        <td><p>The first layer to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nl</span></td>
+        <td><p>The number of layers to return, if negative all available
+layers are returned, starting at 'fl'.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.html">DecLyrdCBlk</a></td>
+        <td><span class="parametername">ccb</span></td>
+        <td><p>If not null this object is used to return the compressed
+code-block. If null a new object is created and returned. If the data
+array in ccb is not null then it can be reused to return the compressed
+data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.html">DecLyrdCBlk</a></td>
+        <td><p>The compressed code-block, with a certain number of layers
+determined by the available data and 'nl'.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_System_Int32_System_Int32_CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_">BitstreamReaderAgent.getCodeBlock(Int32, Int32, Int32, SubbandSyn, Int32, Int32, DecLyrdCBlk)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_getNumTileParts_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.getNumTileParts(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/FileBitstreamReaderAgent.cs/#L112">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_getNumTileParts_" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.getNumTileParts*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_getNumTileParts_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.getNumTileParts(System.Int32)">getNumTileParts(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of tile-part found for a given tile</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getNumTileParts(int t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_nextTile.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.nextTile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/FileBitstreamReaderAgent.cs/#L2378">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_nextTile_" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.nextTile*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_nextTile" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.nextTile">nextTile()</h4>
+  <div class="markdown level1 summary"><p>Advances to the next tile, in standard scan-line order (by rows then
+columns). A NoNextElementException is thrown if the current tile is the
+last one (i.e. there is no next tile).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void nextTile()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_nextTile">BitstreamReaderAgent.nextTile()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_setTile_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.setTile(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/FileBitstreamReaderAgent.cs/#L2303">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_setTile_" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.setTile*"></a>
+  <h4 id="CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent_setTile_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.setTile(System.Int32,System.Int32)">setTile(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Changes the current tile, given the new indexes. An
+IllegalArgumentException is thrown if the indexes do not correspond to
+a valid tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void setTile(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The horizontal indexes the tile.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The vertical indexes of the new tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html#CSJ2K_j2k_codestream_reader_BitstreamReaderAgent_setTile_System_Int32_System_Int32_">BitstreamReaderAgent.setTile(Int32, Int32)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.decoder.CodedCBlkDataSrcDec.html">CodedCBlkDataSrcDec</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTData.html">InvWTData</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.codestream.reader.HeaderDecoder.html">HeaderDecoder</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.codestream.reader.PktDecoder.html">PktDecoder</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_reader_FileBitstreamReaderAgent.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/reader/FileBitstreamReaderAgent.cs/#L76" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

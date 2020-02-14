@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.j2k.codestream.reader
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.j2k.codestream.reader
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.codestream.reader">
+  
+  <h1 id="CSJ2K_j2k_codestream_reader" data-uid="CSJ2K.j2k.codestream.reader" class="text-break">Namespace CSJ2K.j2k.codestream.reader
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.reader.BitstreamReaderAgent.html">BitstreamReaderAgent</a></h4>
+      <section><p>This is the generic interface for bit stream reader agents. A bit stream
+reader agent is an entity that allows reading from a bit stream and
+requesting compressed code-blocks. It can be a simple file reader, or a
+network connection, or anything else.</p>
+<p>The bit stream reader agent allows to make request for compressed block
+data in any order. The amount of data returned would normally depend on the
+data available at the time of the request, be it from a file or from a
+network connection.</p>
+<p>The bit stream reader agent has the notion of a current tile, and
+coordinates are relative to the current tile, where applicable.</p>
+<p>Resolution level 0 is the lowest resolution level, i.e. the LL subband
+alone.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.reader.CBlkInfo.html">CBlkInfo</a></h4>
+      <section><p>This class contains location of code-blocks' piece of codewords (there is
+one piece per layer) and some other information.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.reader.FileBitstreamReaderAgent.html">FileBitstreamReaderAgent</a></h4>
+      <section><p>This class reads the bit stream (with the help of HeaderDecoder for tile
+headers and PktDecoder for packets header and body) and retrives location
+of all code-block's codewords.</p>
+<p>Note: All tile-parts headers are read by the constructor whereas packets
+are processed when decoding related tile (when setTile method is
+called).</p>
+<p>In parsing mode, the reader simulates a virtual layer-resolution
+progressive bit stream with the same truncation points in each code-block,
+whereas in truncation mode, only the first bytes are taken into account (it
+behaves like if it is a real truncated codestream).</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.reader.HeaderDecoder.html">HeaderDecoder</a></h4>
+      <section><p>This class reads main and tile-part headers from the codestream given a
+RandomAccessIO instance located at the beginning of the codestream (i.e
+just before the SOC marker) or at the beginning of a tile-part (i.e. just
+before a SOT marker segment) respectively.</p>
+<p>A marker segment includes a marker and eventually marker segment
+parameters. It is designed by the three letters code of the marker
+associated with the marker segment. JPEG 2000 part 1 defines 6 types of
+markers segments:
+<ul> 
+<li> Delimiting : SOC, SOT, SOD, EOC</li> 
+<li> Fixed information: SIZ.</li>
+<li> Functional: COD, COC, RGN, QCD, QCC,POC.</li> 
+<li> In bit-stream: SOP, EPH.</li>
+<li> Pointer: TLM, PLM, PLT, PPM, PPT.</li>
+<li> Informational: CRG, COM.</li>
+</ul></p>
+<p>The main header is read when the constructor is called whereas tile-part
+headers are read when the FileBitstreamReaderAgent instance is created. The
+reading is done in 2 passes:
+<ol> 
+<li>All marker segments are buffered and their corresponding flag is
+activated (extractMainMarkSeg and extractTilePartMarkSeg methods).</li>
+<li>Buffered marker segment are analyzed in a logical way and
+specifications are stored in appropriate member of DecoderSpecs instance
+(readFoundMainMarkSeg and readFoundTilePartMarkSeg methods).</li>
+</ol></p>
+<p>Whenever a marker segment is not recognized a warning message is
+displayed and its length parameter is used to skip it.</p>
+<p>The information found in this header is stored in HeaderInfo and
+DecoderSpecs instances.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.reader.PktDecoder.html">PktDecoder</a></h4>
+      <section><p>This class is used to read packet's head and body. All the members must be
+re-initialized at the beginning of each tile thanks to the restart()
+method.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.reader.PktHeaderBitReader.html">PktHeaderBitReader</a></h4>
+      <section><p>This class provides a bit based reading facility from a byte based one,
+applying the bit unstuffing procedure as required by the packet headers.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.reader.PktInfo.html">PktInfo</a></h4>
+      <section><p>This class defines an object used to countain informations about a packet
+to which the current code-block belongs.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.reader.TagTreeDecoder.html">TagTreeDecoder</a></h4>
+      <section><p>This class implements the tag tree decoder. A tag tree codes a 2D matrix of
+integer elements in an efficient way. The decoding procedure 'update()'
+updates a value of the matrix from a stream of coded data, given a
+threshold. This procedure decodes enough information to identify whether or
+not the value is greater than or equal to the threshold, and updates the
+value accordingly.</p>
+<p>In general the decoding procedure must follow the same sequence of
+elements and thresholds as the encoding one. The encoder is implemented by
+the TagTreeEncoder class.</p>
+<p>Tag trees that have one dimension, or both, as 0 are allowed for
+convenience. Of course no values can be set or coded in such cases.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

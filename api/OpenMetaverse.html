@@ -1,0 +1,1487 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace OpenMetaverse
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace OpenMetaverse
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse">
+  
+  <h1 id="OpenMetaverse" data-uid="OpenMetaverse" class="text-break">Namespace OpenMetaverse
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="OpenMetaverse.AgentAccessEventArgs.html">AgentAccessEventArgs</a></h4>
+      <section><p>Class for sending info on the success of the opration
+of setting the maturity access level</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AgentCachedBakesReplyEventArgs.html">AgentCachedBakesReplyEventArgs</a></h4>
+      <section><p>Contains the Event data returned from the data server from an AgentCachedTextureResponse</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AgentDataReplyEventArgs.html">AgentDataReplyEventArgs</a></h4>
+      <section><p>Data sent from the simulator containing information about your agent and active group information</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AgentDisplayName.html">AgentDisplayName</a></h4>
+      <section><p>Information about agents display name</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AgentManager.html">AgentManager</a></h4>
+      <section><p>Manager class for our own avatar</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AgentManager.AgentMovement.html">AgentManager.AgentMovement</a></h4>
+      <section><p>Agent movement and camera control</p>
+<p>Agent movement is controlled by setting specific <span class="xref">AgentManager.ControlFlags</span>
+After the control flags are set, An AgentUpdate is required to update the simulator of the specified flags
+This is most easily accomplished by setting one or more of the AgentMovement properties</p>
+<p>Movement of an avatar is always based on a compass direction, for example AtPos will move the
+agent from West to East or forward on the X Axis, AtNeg will of course move agent from
+East to West or backward on the X Axis, LeftPos will be South to North or forward on the Y Axis
+The Z axis is Up, finer grained control of movements can be done using the Nudge properties</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AgentManager.AgentMovement.AgentCamera.html">AgentManager.AgentMovement.AgentCamera</a></h4>
+      <section><p>Camera controls for the agent, mostly a thin wrapper around
+CoordinateFrame. This class is only responsible for state
+tracking and math, it does not send any packets</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AgentThrottle.html">AgentThrottle</a></h4>
+      <section><p>Throttles the network traffic for various different traffic types.
+Access this class through GridClient.Throttle</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AgentWearablesReplyEventArgs.html">AgentWearablesReplyEventArgs</a></h4>
+      <section><p>Contains the Event data returned from the data server from an AgentWearablesRequest</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AlertMessageEventArgs.html">AlertMessageEventArgs</a></h4>
+      <section><p>Data sent by the simulator containing urgent messages</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Animations.html">Animations</a></h4>
+      <section><p>Static pre-defined animations available to all agents</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AnimationsChangedEventArgs.html">AnimationsChangedEventArgs</a></h4>
+      <section><p>Data sent by the simulator to indicate the active/changed animations
+applied to your agent</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AppearanceManager.html">AppearanceManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.AppearanceManager.WearableData.html">AppearanceManager.WearableData</a></h4>
+      <section><p>Contains information about a wearable inventory item</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AppearanceSetEventArgs.html">AppearanceSetEventArgs</a></h4>
+      <section><p>Contains the Event data returned from an AppearanceSetRequest</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AssetCache.html">AssetCache</a></h4>
+      <section><p>Class that handles the local asset cache</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AssetDownload.html">AssetDownload</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.AssetManager.html">AssetManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.AssetUpload.html">AssetUpload</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.AssetUploadEventArgs.html">AssetUploadEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.AttachedSoundEventArgs.html">AttachedSoundEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="OpenMetaverse.SoundManager.html#OpenMetaverse_SoundManager_AttachedSound">AttachedSound</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AttachedSoundGainChangeEventArgs.html">AttachedSoundGainChangeEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="OpenMetaverse.SoundManager.html#OpenMetaverse_SoundManager_AttachedSoundGainChange">AttachedSoundGainChange</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Avatar.html">Avatar</a></h4>
+      <section><p>Represents an avatar (other than your own)</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarAnimationEventArgs.html">AvatarAnimationEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="OpenMetaverse.AvatarManager.html#OpenMetaverse_AvatarManager_AvatarAnimation">AvatarAnimation</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarAppearanceEventArgs.html">AvatarAppearanceEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="OpenMetaverse.AvatarManager.html#OpenMetaverse_AvatarManager_AvatarAppearance">AvatarAppearance</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarClassifiedReplyEventArgs.html">AvatarClassifiedReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarGroupsReplyEventArgs.html">AvatarGroupsReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarInterestsReplyEventArgs.html">AvatarInterestsReplyEventArgs</a></h4>
+      <section><p>Represents the interests from the profile of an agent</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarManager.html">AvatarManager</a></h4>
+      <section><p>Retrieve friend status notifications, and retrieve avatar names and
+profiles</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarPickerReplyEventArgs.html">AvatarPickerReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarPicksReplyEventArgs.html">AvatarPicksReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarPropertiesReplyEventArgs.html">AvatarPropertiesReplyEventArgs</a></h4>
+      <section><p>The properties of an agent</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarSitChangedEventArgs.html">AvatarSitChangedEventArgs</a></h4>
+      <section><p>Provides updates sit position data</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarSitResponseEventArgs.html">AvatarSitResponseEventArgs</a></h4>
+      <section><p>Contains the response data returned from the simulator in response to a <see cref="!:RequestSit"></see></p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarUpdateEventArgs.html">AvatarUpdateEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_AvatarUpdate">AvatarUpdate</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.BalanceEventArgs.html">BalanceEventArgs</a></h4>
+      <section><p>Contains the currency balance</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.BannedAgentsEventArgs.html">BannedAgentsEventArgs</a></h4>
+      <section><p>Result of the request for list of agents banned from a group</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.BinBVHAnimationReader.html">BinBVHAnimationReader</a></h4>
+      <section><p>Reads in a byte array of an Animation Asset created by the SecondLife(tm) client.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.BitPack.html">BitPack</a></h4>
+      <section><p>Wrapper around a byte array that allows bit to be packed and unpacked
+one at a time or by a variable amount. Useful for very tightly packed
+data like LayerData packets</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.BlockingQueue-1.html">BlockingQueue&lt;T&gt;</a></h4>
+      <section><p>Same as Queue except Dequeue function blocks until there is an object to return.
+Note: This class does not need to be synchronized</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.CameraConstraintEventArgs.html">CameraConstraintEventArgs</a></h4>
+      <section><p>Data sent from the simulator to an agent to indicate its view limits</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Caps.html">Caps</a></h4>
+      <section><p>Capabilities is the name of the bi-directional HTTP REST protocol
+used to communicate non real-time transactions such as teleporting or
+group messaging</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.CapsEventDictionary.html">CapsEventDictionary</a></h4>
+      <section><p>Registers, unregisters, and fires events generated by the Capabilities
+event queue</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ChatEventArgs.html">ChatEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ChatSessionMemberAddedEventArgs.html">ChatSessionMemberAddedEventArgs</a></h4>
+      <section><p>Data sent when an agent joins a chat session your agent is currently participating in</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ChatSessionMemberLeftEventArgs.html">ChatSessionMemberLeftEventArgs</a></h4>
+      <section><p>Data sent when an agent exits a chat session your agent is currently participating in</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.CircularQueue-1.html">CircularQueue&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ClassifiedInfoReplyEventArgs.html">ClassifiedInfoReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.CoarseLocationUpdateEventArgs.html">CoarseLocationUpdateEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.CoordinateFrame.html">CoordinateFrame</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.CRC32.html">CRC32</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.CurrentGroupsEventArgs.html">CurrentGroupsEventArgs</a></h4>
+      <section><p>Contains the current groups your agent is a member of</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirClassifiedsReplyEventArgs.html">DirClassifiedsReplyEventArgs</a></h4>
+      <section><p>Contains the classified data returned from the data server</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.html">DirectoryManager</a></h4>
+      <section><p>Access to the data server which allows searching for land, events, people, etc</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirEventsReplyEventArgs.html">DirEventsReplyEventArgs</a></h4>
+      <section><p>Contains the &quot;Event&quot; detail data returned from the data server</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirGroupsReplyEventArgs.html">DirGroupsReplyEventArgs</a></h4>
+      <section><p>Contains the group data returned from the data server</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirLandReplyEventArgs.html">DirLandReplyEventArgs</a></h4>
+      <section><p>Contains the land sales data returned from the data server</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirPeopleReplyEventArgs.html">DirPeopleReplyEventArgs</a></h4>
+      <section><p>Contains the people data returned from the data server</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirPlacesReplyEventArgs.html">DirPlacesReplyEventArgs</a></h4>
+      <section><p>Contains the places data returned from the data server</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DisconnectedEventArgs.html">DisconnectedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.DisplayNameUpdateEventArgs.html">DisplayNameUpdateEventArgs</a></h4>
+      <section><p>Event args class for display name notification messages</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DoubleDictionary-3.html">DoubleDictionary&lt;TKey1, TKey2, TValue&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.DownloadManager.html">DownloadManager</a></h4>
+      <section><p>Manages async HTTP downloads with a limit on maximum
+concurrent downloads</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DownloadRequest.html">DownloadRequest</a></h4>
+      <section><p>Represends individual HTTP Download request</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EnumInfoAttribute.html">EnumInfoAttribute</a></h4>
+      <section><p>Attribute class that allows extra attributes to be attached to ENUMs</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateBansReplyEventArgs.html">EstateBansReplyEventArgs</a></h4>
+      <section><p>Returned, along with other info, upon a successful .RequestInfo()</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateCovenantReplyEventArgs.html">EstateCovenantReplyEventArgs</a></h4>
+      <section><p>Returned, along with other info, upon a successful .RequestInfo()</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateGroupsReplyEventArgs.html">EstateGroupsReplyEventArgs</a></h4>
+      <section><p>Returned, along with other info, upon a successful .RequestInfo()</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateManagersReplyEventArgs.html">EstateManagersReplyEventArgs</a></h4>
+      <section><p>Returned, along with other info, upon a successful .RequestInfo()</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateTask.html">EstateTask</a></h4>
+      <section><p>Describes tasks returned in LandStatReply</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateTools.html">EstateTools</a></h4>
+      <section><p>Estate level administration and utilities</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateUpdateInfoReplyEventArgs.html">EstateUpdateInfoReplyEventArgs</a></h4>
+      <section><p>Returned, along with other info, upon a successful .RequestInfo()</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateUsersReplyEventArgs.html">EstateUsersReplyEventArgs</a></h4>
+      <section><p>Returned, along with other info, upon a successful .RequestInfo()</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EventInfoReplyEventArgs.html">EventInfoReplyEventArgs</a></h4>
+      <section><p>Contains the Event data returned from the data server from an EventInfoRequest</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EventQueueRunningEventArgs.html">EventQueueRunningEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ExpiringCache-2.html">ExpiringCache&lt;TKey, TValue&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.FindObjectByPathReplyEventArgs.html">FindObjectByPathReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.FolderUpdatedEventArgs.html">FolderUpdatedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ForceSelectObjectsReplyEventArgs.html">ForceSelectObjectsReplyEventArgs</a></h4>
+      <section><p>Contains the data returned when a <see cref="!:RequestForceSelectObjects"></see> request</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.FriendFoundReplyEventArgs.html">FriendFoundReplyEventArgs</a></h4>
+      <section><p>Data sent in response to a <see cref="!:FindFriend"></see> request which contains the information to allow us to map the friends location</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.FriendInfo.html">FriendInfo</a></h4>
+      <section><p>This class holds information about an avatar in the friends list.  There are two ways
+to interface to this class.  The first is through the set of boolean properties.  This is the typical
+way clients of this class will use it.  The second interface is through two bitflag properties,
+TheirFriendsRights and MyFriendsRights</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.FriendInfoEventArgs.html">FriendInfoEventArgs</a></h4>
+      <section><p>Contains information on a member of our friends list</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.FriendNamesEventArgs.html">FriendNamesEventArgs</a></h4>
+      <section><p>Contains Friend Names</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.FriendshipOfferedEventArgs.html">FriendshipOfferedEventArgs</a></h4>
+      <section><p>Sent when another agent requests a friendship with our agent</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.FriendshipResponseEventArgs.html">FriendshipResponseEventArgs</a></h4>
+      <section><p>A response containing the results of our request to form a friendship with another agent</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.FriendshipTerminatedEventArgs.html">FriendshipTerminatedEventArgs</a></h4>
+      <section><p>Contains data sent when a friend terminates a friendship with us</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.FriendsManager.html">FriendsManager</a></h4>
+      <section><p>This class is used to add and remove avatars from your friends list and to manage their permission.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a></h4>
+      <section><p>Main class to expose grid functionality to clients. All of the
+classes needed for sending and receiving data are accessible through
+this class.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GridItemsEventArgs.html">GridItemsEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.GridLayerEventArgs.html">GridLayerEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.GridManager.html">GridManager</a></h4>
+      <section><p>Manages grid-wide tasks such as the world map</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GridRegionEventArgs.html">GridRegionEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.GroupAccountSummaryReplyEventArgs.html">GroupAccountSummaryReplyEventArgs</a></h4>
+      <section><p>Represents the summary data for a group</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupChatJoinedEventArgs.html">GroupChatJoinedEventArgs</a></h4>
+      <section><p>Data sent from the simulator when your agent joins a group chat session</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupCreatedReplyEventArgs.html">GroupCreatedReplyEventArgs</a></h4>
+      <section><p>A response to a group create request</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupDroppedEventArgs.html">GroupDroppedEventArgs</a></h4>
+      <section><p>Represents your agent leaving a group</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupInvitationEventArgs.html">GroupInvitationEventArgs</a></h4>
+      <section><p>Provides notification of a group invitation request sent by another Avatar</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupManager.html">GroupManager</a></h4>
+      <section><p>Handles all network traffic related to reading and writing group
+information</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupMembersReplyEventArgs.html">GroupMembersReplyEventArgs</a></h4>
+      <section><p>Represents the members of a group</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupNamesEventArgs.html">GroupNamesEventArgs</a></h4>
+      <section><p>A Dictionary of group names, where the Key is the groups ID and the value is the groups name</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupNoticesListReplyEventArgs.html">GroupNoticesListReplyEventArgs</a></h4>
+      <section><p>Represents a list of active group notices</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupOperationEventArgs.html">GroupOperationEventArgs</a></h4>
+      <section><p>Represents a response to a request</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupProfileEventArgs.html">GroupProfileEventArgs</a></h4>
+      <section><p>Represents the profile of a group</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupRolesDataReplyEventArgs.html">GroupRolesDataReplyEventArgs</a></h4>
+      <section><p>Represents the roles associated with a group</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupRolesMembersReplyEventArgs.html">GroupRolesMembersReplyEventArgs</a></h4>
+      <section><p>Represents the Role to Member mappings for a group</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupTitlesReplyEventArgs.html">GroupTitlesReplyEventArgs</a></h4>
+      <section><p>Represents the titles for a group</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Helpers.html">Helpers</a></h4>
+      <section><p>Static helper functions and global variables</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ImageDownload.html">ImageDownload</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ImageReceiveProgressEventArgs.html">ImageReceiveProgressEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ImageRequest.html">ImageRequest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.IncomingPacketIDCollection.html">IncomingPacketIDCollection</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.InitiateDownloadEventArgs.html">InitiateDownloadEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.InstantMessageEventArgs.html">InstantMessageEventArgs</a></h4>
+      <section><p>The date received from an ImprovedInstantMessage</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InternalDictionary-2.html">InternalDictionary&lt;TKey, TValue&gt;</a></h4>
+      <section><p>The InternalDictionary class is used through the library for storing key/value pairs.
+It is intended to be a replacement for the generic Dictionary class and should
+be used in its place. It contains several methods for allowing access to the data from
+outside the library that are read only and thread safe.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Inventory.html">Inventory</a></h4>
+      <section><p>Responsible for maintaining inventory structure. Inventory constructs nodes
+and manages node children as is necessary to maintain a coherant hirarchy.
+Other classes should not manipulate or create InventoryNodes explicitly. When
+A node's parent changes (when a folder is moved, for example) simply pass
+Inventory the updated InventoryFolder and it will make the appropriate changes
+to its internal representation.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryAnimation.html">InventoryAnimation</a></h4>
+      <section><p>InventoryAnimation Class, A bvh encoded object which animates an avatar</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryAttachment.html">InventoryAttachment</a></h4>
+      <section><p>InventoryAttachment Class, contains details on an attachable object</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryBase.html">InventoryBase</a></h4>
+      <section><p>Base Class for Inventory Items</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryCallingCard.html">InventoryCallingCard</a></h4>
+      <section><p>InventoryCallingCard Class, contains information on another avatar</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryCategory.html">InventoryCategory</a></h4>
+      <section><p>InventoryCategory Class</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryException.html">InventoryException</a></h4>
+      <section><p>Exception class to identify inventory exceptions</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryFolder.html">InventoryFolder</a></h4>
+      <section><p>A folder contains <a class="xref" href="OpenMetaverse.InventoryItem.html">InventoryItem</a>s and has certain attributes specific
+to itself</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryGesture.html">InventoryGesture</a></h4>
+      <section><p>InventoryGesture Class, details on a series of animations, sounds, and actions</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryItem.html">InventoryItem</a></h4>
+      <section><p>An Item in Inventory</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryLandmark.html">InventoryLandmark</a></h4>
+      <section><p>InventoryLandmark Class, contains details on a specific location</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryLSL.html">InventoryLSL</a></h4>
+      <section><p>InventoryLSL Class, represents a Linden Scripting Language object</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryManager.html">InventoryManager</a></h4>
+      <section><p>Tools for dealing with agents inventory</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryNode.html">InventoryNode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryNodeDictionary.html">InventoryNodeDictionary</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryNotecard.html">InventoryNotecard</a></h4>
+      <section><p>InventoryNotecard Class, contains details on an encoded text document</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryObject.html">InventoryObject</a></h4>
+      <section><p>InventoryObject Class contains details on a primitive or coalesced set of primitives</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryObjectAddedEventArgs.html">InventoryObjectAddedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryObjectOfferedEventArgs.html">InventoryObjectOfferedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryObjectRemovedEventArgs.html">InventoryObjectRemovedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryObjectUpdatedEventArgs.html">InventoryObjectUpdatedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.InventorySnapshot.html">InventorySnapshot</a></h4>
+      <section><p>InventorySnapshot Class, an image taken with the viewer</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventorySound.html">InventorySound</a></h4>
+      <section><p>InventorySound Class representing a playable sound</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryTexture.html">InventoryTexture</a></h4>
+      <section><p>InventoryTexture Class representing a graphical image</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryWearable.html">InventoryWearable</a></h4>
+      <section><p>InventoryWearable Class, details on a clothing item or body part</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ItemReceivedEventArgs.html">ItemReceivedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.KillObjectEventArgs.html">KillObjectEventArgs</a></h4>
+      <section><p>Provides notification when an Avatar, Object or Attachment is DeRezzed or moves out of the avatars view for the
+<a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_KillObject">KillObject</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.KillObjectsEventArgs.html">KillObjectsEventArgs</a></h4>
+      <section><p>Provides notification when an Avatar, Object or Attachment is DeRezzed or moves out of the avatars view for the
+<a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_KillObjects">KillObjects</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.LandPatchReceivedEventArgs.html">LandPatchReceivedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Lazy-1.html">Lazy&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.LoadUrlEventArgs.html">LoadUrlEventArgs</a></h4>
+      <section><p>Contains the data sent when a primitive sends a request
+to an agent to open the specified URL</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.LocklessQueue-1.html">LocklessQueue&lt;T&gt;</a></h4>
+      <section><p>A thread-safe lockless queue that supports multiple readers and
+multiple writers</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.LockRecursionException.html">LockRecursionException</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.LoggedOutEventArgs.html">LoggedOutEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Logger.html">Logger</a></h4>
+      <section><p>Singleton logging class for the entire library</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.LoginParams.html">LoginParams</a></h4>
+      <section><p>Login Request Parameters</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.LoginProgressEventArgs.html">LoginProgressEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.MapAdultEvent.html">MapAdultEvent</a></h4>
+      <section><p>Represents an Adult event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MapAdultLandForSale.html">MapAdultLandForSale</a></h4>
+      <section><p>Represents an Adult parcel of land for sale</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MapAgentLocation.html">MapAgentLocation</a></h4>
+      <section><p>Represents an agent or group of agents location</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MapBlock.html">MapBlock</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.MapField.html">MapField</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.MapItem.html">MapItem</a></h4>
+      <section><p>Base class for Map Items</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MapLandForSale.html">MapLandForSale</a></h4>
+      <section><p>Represents a non-adult parcel of land for sale</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MapMatureEvent.html">MapMatureEvent</a></h4>
+      <section><p>Represents a Mature event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MapPacket.html">MapPacket</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.MapPGEvent.html">MapPGEvent</a></h4>
+      <section><p>Represents a PG Event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MapTelehub.html">MapTelehub</a></h4>
+      <section><p>Represents a Telehub location</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MeanCollisionEventArgs.html">MeanCollisionEventArgs</a></h4>
+      <section><p>Data sent from a simulator indicating a collision with your agent</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MediaEntry.html">MediaEntry</a></h4>
+      <section><p>Class representing media data for a single face</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MoneyBalanceReplyEventArgs.html">MoneyBalanceReplyEventArgs</a></h4>
+      <section><p>Contains the transaction summary when an item is purchased,
+money is given, or land is purchased</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MuteEntry.html">MuteEntry</a></h4>
+      <section><p>Represents muted object or resident</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.NetworkManager.html">NetworkManager</a></h4>
+      <section><p>Login Routines</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.NetworkManager.OutgoingPacket.html">NetworkManager.OutgoingPacket</a></h4>
+      <section><p>Holds a simulator reference and a serialized packet, these structs are put in
+the packet outbox for sending</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ObjectDataBlockUpdateEventArgs.html">ObjectDataBlockUpdateEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ObjectManager.html">ObjectManager</a></h4>
+      <section><p>Handles all network traffic related to prims and avatar positions and
+movement.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ObjectMediaEventArgs.html">ObjectMediaEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ObjectPoolBase-1.html">ObjectPoolBase&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ObjectPropertiesEventArgs.html">ObjectPropertiesEventArgs</a></h4>
+      <section><p>Provides additional primitive data for the <a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_ObjectProperties">ObjectProperties</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ObjectPropertiesFamilyEventArgs.html">ObjectPropertiesFamilyEventArgs</a></h4>
+      <section><p>Provides additional primitive data, permissions and sale info for the <a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_ObjectPropertiesFamily">ObjectPropertiesFamily</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ObjectPropertiesUpdatedEventArgs.html">ObjectPropertiesUpdatedEventArgs</a></h4>
+      <section><p>Provides additional primitive data for the <a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_ObjectPropertiesUpdated">ObjectPropertiesUpdated</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ObservableDictionary-2.html">ObservableDictionary&lt;TKey, TValue&gt;</a></h4>
+      <section><p>The ObservableDictionary class is used for storing key/value pairs. It has methods for firing
+events to subscribers when items are added, removed, or changed.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PacketBufferPool.html">PacketBufferPool</a></h4>
+      <section><p>Object pool for packet buffers. This is used to allocate memory for all
+incoming and outgoing packets, and zerocoding buffers for those packets</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PacketEventDictionary.html">PacketEventDictionary</a></h4>
+      <section><p>Registers, unregisters, and fires events generated by incoming packets</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.PacketSentEventArgs.html">PacketSentEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Parallel.html">Parallel</a></h4>
+      <section><p>Provides helper methods for parallelizing loops</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Parcel.html">Parcel</a></h4>
+      <section><p>Parcel of land, a portion of virtual real estate in a simulator</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelAccessListReplyEventArgs.html">ParcelAccessListReplyEventArgs</a></h4>
+      <section><p>Contains blacklist and whitelist data returned from the simulator in response to an <see cref="!:RequestParcelAccesslist"></see> request</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelDwellReplyEventArgs.html">ParcelDwellReplyEventArgs</a></h4>
+      <section><p>Contains a parcels dwell data returned from the simulator in response to an <see cref="!:RequestParcelDwell"></see></p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelInfoReplyEventArgs.html">ParcelInfoReplyEventArgs</a></h4>
+      <section><p>Contains basic parcel information data returned from the
+simulator in response to an <see cref="!:RequestParcelInfo"></see> request</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelManager.html">ParcelManager</a></h4>
+      <section><p>Parcel (subdivided simulator lots) subsystem</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelMediaCommandEventArgs.html">ParcelMediaCommandEventArgs</a></h4>
+      <section><p>Contains the media command for a parcel the agent is currently on</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelMediaUpdateReplyEventArgs.html">ParcelMediaUpdateReplyEventArgs</a></h4>
+      <section><p>Contains data when the media data for a parcel the avatar is on changes</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelObjectOwnersReplyEventArgs.html">ParcelObjectOwnersReplyEventArgs</a></h4>
+      <section><p>Contains blacklist and whitelist data returned from the
+simulator in response to an <see cref="!:RequestParcelAccesslist"></see> request</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelPropertiesEventArgs.html">ParcelPropertiesEventArgs</a></h4>
+      <section><p>Contains basic parcel information data returned from the simulator in response to an <see cref="!:RequestParcelInfo"></see> request</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParticleUpdateEventArgs.html">ParticleUpdateEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.PayPriceReplyEventArgs.html">PayPriceReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.PhysicsPropertiesEventArgs.html">PhysicsPropertiesEventArgs</a></h4>
+      <section><p>Set when simulator sends us infomation on primitive's physical properties</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PickInfoReplyEventArgs.html">PickInfoReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.PlacesReplyEventArgs.html">PlacesReplyEventArgs</a></h4>
+      <section><p>Contains the &quot;Event&quot; list data returned from the data server</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Pool.html">Pool</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.PreloadSoundEventArgs.html">PreloadSoundEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="OpenMetaverse.AvatarManager.html#OpenMetaverse_AvatarManager_AvatarAppearance">AvatarAppearance</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PrimEventArgs.html">PrimEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_ObjectUpdate">ObjectUpdate</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a></h4>
+      <section><p>Particle system specific enumerators, flags and methods.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.FlexibleData.html">Primitive.FlexibleData</a></h4>
+      <section><p>Information on the flexible properties of a primitive</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.LightData.html">Primitive.LightData</a></h4>
+      <section><p>Information on the light properties of a primitive</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.LightImage.html">Primitive.LightImage</a></h4>
+      <section><p>Information on the light properties of a primitive as texture map</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.ObjectProperties.html">Primitive.ObjectProperties</a></h4>
+      <section><p>Extended properties to describe an object</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.PhysicsProperties.html">Primitive.PhysicsProperties</a></h4>
+      <section><p>Describes physics attributes of the prim</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.SculptData.html">Primitive.SculptData</a></h4>
+      <section><p>Information on the sculpt properties of a sculpted primitive</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.TextureEntry.html">Primitive.TextureEntry</a></h4>
+      <section><p>Represents all of the texturable faces for an object</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.TextureEntryFace.html">Primitive.TextureEntryFace</a></h4>
+      <section><p>A single textured face. Don't instantiate this class yourself, use the
+methods in TextureEntry</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ProtocolManager.html">ProtocolManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ReaderWriterLockSlim.html">ReaderWriterLockSlim</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.RebakeAvatarTexturesEventArgs.html">RebakeAvatarTexturesEventArgs</a></h4>
+      <section><p>Contains the Event data returned from the data server from an RebakeAvatarTextures</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.RegionCrossedEventArgs.html">RegionCrossedEventArgs</a></h4>
+      <section><p>Data sent to your agent when it crosses region boundaries</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.RegionHandleReplyEventArgs.html">RegionHandleReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.RegistrationApi.html">RegistrationApi</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.RegistrationApi.CreateUserParam.html">RegistrationApi.CreateUserParam</a></h4>
+      <section><p>See <a href="https://secure-web6.secondlife.com/developers/third_party_reg/#service_create_user">https://secure-web6.secondlife.com/developers/third_party_reg/#service_create_user</a> or
+<a href="https://wiki.secondlife.com/wiki/RegAPIDoc">https://wiki.secondlife.com/wiki/RegAPIDoc</a> for description</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.SaveAssetToInventoryEventArgs.html">SaveAssetToInventoryEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ScriptControlEventArgs.html">ScriptControlEventArgs</a></h4>
+      <section><p>Data sent by a script requesting to take or release specified controls to your agent</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ScriptDialogEventArgs.html">ScriptDialogEventArgs</a></h4>
+      <section><p>Contains the data sent when a primitive opens a dialog with this agent</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ScriptQuestionEventArgs.html">ScriptQuestionEventArgs</a></h4>
+      <section><p>Contains the data sent when a primitive requests debit or other permissions
+requesting a YES or NO answer</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ScriptRunningReplyEventArgs.html">ScriptRunningReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ScriptSensorReplyEventArgs.html">ScriptSensorReplyEventArgs</a></h4>
+      <section><p>Data containing script sensor requests which allow an agent to know the specific details
+of a primitive sending script sensor requests</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.SetDisplayNameReplyEventArgs.html">SetDisplayNameReplyEventArgs</a></h4>
+      <section><p>Event arguments with the result of setting display name operation</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Settings.html">Settings</a></h4>
+      <section><p>Class for controlling various system settings.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.SimChangedEventArgs.html">SimChangedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.SimConnectedEventArgs.html">SimConnectedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.SimConnectingEventArgs.html">SimConnectingEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.SimDisconnectedEventArgs.html">SimDisconnectedEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.SimParcelsDownloadedEventArgs.html">SimParcelsDownloadedEventArgs</a></h4>
+      <section><p>Contains the data returned when all parcel data has been retrieved from a simulator</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.SimulatorDataPool.html">SimulatorDataPool</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.SoundManager.html">SoundManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Sounds.html">Sounds</a></h4>
+      <section><p>pre-defined built in sounds</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.SoundTriggerEventArgs.html">SoundTriggerEventArgs</a></h4>
+      <section><p>Provides data for the <a class="xref" href="OpenMetaverse.SoundManager.html#OpenMetaverse_SoundManager_SoundTrigger">SoundTrigger</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TaskInventoryReplyEventArgs.html">TaskInventoryReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TaskItemReceivedEventArgs.html">TaskItemReceivedEventArgs</a></h4>
+      <section><p>Callback when an inventory object is accepted and received from a
+task inventory. This is the callback in which you actually get
+the ItemID, as in ObjectOfferedCallback it is null when received
+from a task.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TeleportEventArgs.html">TeleportEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TerrainCompressor.html">TerrainCompressor</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TerrainManager.html">TerrainManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TerrainPatch.html">TerrainPatch</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TerseObjectUpdateEventArgs.html">TerseObjectUpdateEventArgs</a></h4>
+      <section><p>Provides primitive data containing updated location, velocity, rotation, textures for the <a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_TerseObjectUpdate">TerseObjectUpdate</a> event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TexturePipeline.html">TexturePipeline</a></h4>
+      <section><p>Texture request download handler, allows a configurable number of download slots which manage multiple
+concurrent texture downloads from the <a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ThreadSafeDictionary-2.html">ThreadSafeDictionary&lt;TKey, TValue&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TokenBucket.html">TokenBucket</a></h4>
+      <section><p>A hierarchical token bucket for bandwidth throttling. See
+<a href="http://en.wikipedia.org/wiki/Token_bucket">http://en.wikipedia.org/wiki/Token_bucket</a> for more information</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TopCollidersReplyEventArgs.html">TopCollidersReplyEventArgs</a></h4>
+      <section><p>Raised on LandStatReply when the report type is for &quot;top colliders&quot;</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TopScriptsReplyEventArgs.html">TopScriptsReplyEventArgs</a></h4>
+      <section><p>Raised on LandStatReply when the report type is for &quot;top Scripts&quot;</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TransactionInfo.html">TransactionInfo</a></h4>
+      <section><p>Transaction detail sent with MoneyBalanceReply message</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Transfer.html">Transfer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.UDPBase.html">UDPBase</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.UDPPacketBuffer.html">UDPPacketBuffer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Utils.html">Utils</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.UUIDNameReplyEventArgs.html">UUIDNameReplyEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ViewerEffectEventArgs.html">ViewerEffectEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ViewerEffectLookAtEventArgs.html">ViewerEffectLookAtEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ViewerEffectPointAtEventArgs.html">ViewerEffectPointAtEventArgs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.VisualParams.html">VisualParams</a></h4>
+      <section><p>Holds the Params array of all the avatar appearance parameters</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.WorkPool.html">WorkPool</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.WrappedObject-1.html">WrappedObject&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.XferDownload.html">XferDownload</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.XferReceivedEventArgs.html">XferReceivedEventArgs</a></h4>
+      <section></section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="OpenMetaverse.Animation.html">Animation</a></h4>
+      <section><p>Contains an animation currently being played by an agent</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AppearanceManager.ColorParamInfo.html">AppearanceManager.ColorParamInfo</a></h4>
+      <section><p>Data collected from visual params for each wearable
+needed for the calculation of the color</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AppearanceManager.TextureData.html">AppearanceManager.TextureData</a></h4>
+      <section><p>Holds a texture assetID and the data needed to bake this layer into
+an outfit texture. Used to keep track of currently worn textures
+and baking data</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Avatar.AvatarProperties.html">Avatar.AvatarProperties</a></h4>
+      <section><p>Avatar properties including about text, profile URL, image IDs and
+publishing settings</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Avatar.Interests.html">Avatar.Interests</a></h4>
+      <section><p>Avatar interests including spoken languages, skills, and &quot;want to&quot;
+choices</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Avatar.Statistics.html">Avatar.Statistics</a></h4>
+      <section><p>Positive and negative ratings</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarGroup.html">AvatarGroup</a></h4>
+      <section><p>Holds group information for Avatars such as those you might find in a profile</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.binBVHJoint.html">binBVHJoint</a></h4>
+      <section><p>A Joint and it's associated meta data and keyframes</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.binBVHJointKey.html">binBVHJointKey</a></h4>
+      <section><p>A Joint Keyframe.  This is either a position or a rotation.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.BuddyListEntry.html">BuddyListEntry</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ChatSessionMember.html">ChatSessionMember</a></h4>
+      <section><p>Struct representing a member of a group chat session and their settings</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ClassifiedAd.html">ClassifiedAd</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Color4.html">Color4</a></h4>
+      <section><p>An 8-bit color structure including an alpha channel</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.AgentSearchData.html">DirectoryManager.AgentSearchData</a></h4>
+      <section><p>An Avatar returned from the dataserver</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.Classified.html">DirectoryManager.Classified</a></h4>
+      <section><p>A classified ad on the grid</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.DirectoryParcel.html">DirectoryManager.DirectoryParcel</a></h4>
+      <section><p>A parcel retrieved from the dataserver such as results from the
+&quot;For-Sale&quot; listings or &quot;Places&quot; Search</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.EventInfo.html">DirectoryManager.EventInfo</a></h4>
+      <section><p>The details of an &quot;Event&quot;</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.EventsSearchData.html">DirectoryManager.EventsSearchData</a></h4>
+      <section><p>An &quot;Event&quot; Listing summary</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.GroupSearchData.html">DirectoryManager.GroupSearchData</a></h4>
+      <section><p>Response to a &quot;Groups&quot; Search</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.PlacesSearchData.html">DirectoryManager.PlacesSearchData</a></h4>
+      <section><p>Parcel information returned from a <a class="xref" href="OpenMetaverse.DirectoryManager.html#OpenMetaverse_DirectoryManager_StartPlacesSearch">StartPlacesSearch()</a> request</p>
+<p>
+Represents one of the following:
+A parcel of land on the grid that has its Show In Search flag set
+A parcel of land owned by the agent making the request
+A parcel of land owned by a group the agent making the request is a member of
+</p>
+<p>
+In a request for Group Land, the First record will contain an empty record
+</p>
+Note: This is not the same as searching the land for sale data source
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateTools.GroundTextureHeight.html">EstateTools.GroundTextureHeight</a></h4>
+      <section><p>Used by GroundTextureHeightSettings</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateTools.GroundTextureHeightSettings.html">EstateTools.GroundTextureHeightSettings</a></h4>
+      <section><p>The high and low texture thresholds for each corner of the sim</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateTools.GroundTextureSettings.html">EstateTools.GroundTextureSettings</a></h4>
+      <section><p>Ground texture settings for each corner of the region</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GridLayer.html">GridLayer</a></h4>
+      <section><p>Visual chunk of the grid map</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GridRegion.html">GridRegion</a></h4>
+      <section><p>Information about a region on the grid map</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Group.html">Group</a></h4>
+      <section><p>Represents a group on the grid</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupAccountSummary.html">GroupAccountSummary</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.GroupMember.html">GroupMember</a></h4>
+      <section><p>Avatar group management</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupNotice.html">GroupNotice</a></h4>
+      <section><p>Struct representing a group notice</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupNoticesListEntry.html">GroupNoticesListEntry</a></h4>
+      <section><p>Struct representing a group notice list entry</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupProposal.html">GroupProposal</a></h4>
+      <section><p>A group proposal</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupRole.html">GroupRole</a></h4>
+      <section><p>Role manager for a group</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupTitle.html">GroupTitle</a></h4>
+      <section><p>Class to represent Group Title</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InstantMessage.html">InstantMessage</a></h4>
+      <section><p>Instant Message</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryManager.InventorySearch.html">InventoryManager.InventorySearch</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.LoginResponseData.html">LoginResponseData</a></h4>
+      <section><p>The decoded data returned from the login server after a successful login</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Matrix4.html">Matrix4</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.NameValue.html">NameValue</a></h4>
+      <section><p>A Name Value pair with additional settings, used in the protocol
+primarily to transmit avatar names and active group in object packets</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.NetworkManager.IncomingPacket.html">NetworkManager.IncomingPacket</a></h4>
+      <section><p>Holds a simulator reference and a decoded packet, these structs are put in
+the packet inbox for event handling</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ObjectMovementUpdate.html">ObjectMovementUpdate</a></h4>
+      <section><p>Contains the variables sent in an object update packet for objects.
+Used to track position and movement of prims and avatars</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelInfo.html">ParcelInfo</a></h4>
+      <section><p>Some information about a parcel of land returned from a DirectoryManager search</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelManager.ParcelAccessEntry.html">ParcelManager.ParcelAccessEntry</a></h4>
+      <section><p>Parcel Accesslist</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelManager.ParcelPrimOwners.html">ParcelManager.ParcelPrimOwners</a></h4>
+      <section><p>Owners of primitives on parcel</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelMedia.html">ParcelMedia</a></h4>
+      <section><p>Parcel Media Information</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Permissions.html">Permissions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.ConstructionData.html">Primitive.ConstructionData</a></h4>
+      <section><p>Parameters used to construct a visual representation of a primitive</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.ParticleSystem.html">Primitive.ParticleSystem</a></h4>
+      <section><p>Complete structure for the particle system</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.TextureAnimation.html">Primitive.TextureAnimation</a></h4>
+      <section><p>Controls the texture animation of a particular prim</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ProfilePick.html">ProfilePick</a></h4>
+      <section><p>Holds group information on an individual profile pick</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Quaternion.html">Quaternion</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Ray.html">Ray</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.RegistrationApi.LastName.html">RegistrationApi.LastName</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Simulator.SimStats.html">Simulator.SimStats</a></h4>
+      <section><p>Simulator Statistics</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TerrainPatch.GroupHeader.html">TerrainPatch.GroupHeader</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TerrainPatch.Header.html">TerrainPatch.Header</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></h4>
+      <section><p>A 128-bit Universally Unique Identifier, used throughout the Second
+Life networking protocol</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Vector2.html">Vector2</a></h4>
+      <section><p>A two-dimensional vector with floating-point values</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></h4>
+      <section><p>A three-dimensional vector with floating-point values</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Vector3d.html">Vector3d</a></h4>
+      <section><p>A three-dimensional vector with doubleing-point values</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Vector4.html">Vector4</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.VisualAlphaParam.html">VisualAlphaParam</a></h4>
+      <section><p>Represents alpha blending and bump infor for a visual parameter
+such as sleive length</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.VisualColorParam.html">VisualColorParam</a></h4>
+      <section><p>Information needed to translate visual param value to RGBA color</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.VisualParam.html">VisualParam</a></h4>
+      <section><p>A single visual characteristic of an avatar mesh, such as eyebrow height</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Vote.html">Vote</a></h4>
+      <section><p>A group Vote</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="OpenMetaverse.AccessDeniedReason.html">AccessDeniedReason</a></h4>
+      <section><p>Reasons agent is denied access to a parcel on the simulator</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AccessList.html">AccessList</a></h4>
+      <section><p>Flags used in the ParcelAccessListRequest packet to specify whether
+we want the access list (whitelist), ban list (blacklist), or both</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AgentFlags.html">AgentFlags</a></h4>
+      <section><p>Currently only used to hide your group title</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AgentManager.ControlFlags.html">AgentManager.ControlFlags</a></h4>
+      <section><p>Used to specify movement actions for your agent</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AgentState.html">AgentState</a></h4>
+      <section><p>Action state of the avatar, which can currently be typing and
+editing</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AppearanceFlags.html">AppearanceFlags</a></h4>
+      <section><p>Appearance Flags, introdued with server side baking, currently unused</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a></h4>
+      <section><p>The different types of grid assets</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AttachmentPoint.html">AttachmentPoint</a></h4>
+      <section><p>Attachment points for objects on avatar bodies</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarTextureIndex.html">AvatarTextureIndex</a></h4>
+      <section><p>Index of TextureEntry slots for avatar appearances</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.BakeType.html">BakeType</a></h4>
+      <section><p>Bake layers for avatar appearance</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Bumpiness.html">Bumpiness</a></h4>
+      <section><p>The type of bump-mapping applied to a face</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ChannelType.html">ChannelType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ChatAudibleLevel.html">ChatAudibleLevel</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ChatSourceType.html">ChatSourceType</a></h4>
+      <section><p>Identifies the source of a chat message</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ChatType.html">ChatType</a></h4>
+      <section><p>Conversion type to denote Chat Packet types in an easier-to-understand format</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ClickAction.html">ClickAction</a></h4>
+      <section><p>Action associated with clicking on an object</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.CompressedFlags.html">CompressedFlags</a></h4>
+      <section><p>Bitflag field for ObjectUpdateCompressed data blocks, describing
+which options are present for each object</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DeRezDestination.html">DeRezDestination</a></h4>
+      <section><p>Possible destinations for DeRezObject request</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DictionaryEventAction.html">DictionaryEventAction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.ClassifiedCategories.html">DirectoryManager.ClassifiedCategories</a></h4>
+      <section><p>Classified Ad categories</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.ClassifiedFlags.html">DirectoryManager.ClassifiedFlags</a></h4>
+      <section><p>Classified Ad Options</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.ClassifiedQueryFlags.html">DirectoryManager.ClassifiedQueryFlags</a></h4>
+      <section><p>Classified ad query options</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.DirFindFlags.html">DirectoryManager.DirFindFlags</a></h4>
+      <section><p>Query Flags used in many of the DirectoryManager methods to specify which query to execute and how to return the results.</p>
+<p>Flags can be combined using the | (pipe) character, not all flags are available in all queries</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.EventCategories.html">DirectoryManager.EventCategories</a></h4>
+      <section><p>Event Categories</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.EventFlags.html">DirectoryManager.EventFlags</a></h4>
+      <section><p>The content rating of the event</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.PlacesFlags.html">DirectoryManager.PlacesFlags</a></h4>
+      <section><p>The For Sale flag in PlacesReplyData</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DirectoryManager.SearchTypeFlags.html">DirectoryManager.SearchTypeFlags</a></h4>
+      <section><p>Land types to search dataserver for</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EffectType.html">EffectType</a></h4>
+      <section><p>Effect type used in ViewerEffect packets</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateAssetType.html">EstateAssetType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.EstateTools.EstateAccessDelta.html">EstateTools.EstateAccessDelta</a></h4>
+      <section><p>Used by EstateOwnerMessage packets</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateTools.EstateAccessReplyDelta.html">EstateTools.EstateAccessReplyDelta</a></h4>
+      <section><p>Used by EstateOwnerMessage packets</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.EstateTools.EstateReturnFlags.html">EstateTools.EstateReturnFlags</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.EstateTools.LandStatReportType.html">EstateTools.LandStatReportType</a></h4>
+      <section><p>Used in the ReportType field of a LandStatRequest</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ExtraParamType.html">ExtraParamType</a></h4>
+      <section><p>Extra parameters for primitives, these flags are for features that have
+been added after the original ObjectFlags that has all eight bits
+reserved already</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.FaceType.html">FaceType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.FieldType.html">FieldType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.FolderType.html">FolderType</a></h4>
+      <section><p>The different types of folder.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.FriendRights.html">FriendRights</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Grass.html">Grass</a></h4>
+      <section><p>Grass foliage types</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GridItemType.html">GridItemType</a></h4>
+      <section><p>Type of grid item, such as telehub, event, populator location, etc.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GridLayerType.html">GridLayerType</a></h4>
+      <section><p>Map layer request type</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupBanAction.html">GroupBanAction</a></h4>
+      <section><p>Ban actions available for group members</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.GroupPowers.html">GroupPowers</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.GroupRoleUpdate.html">GroupRoleUpdate</a></h4>
+      <section><p>Role update flags</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.HandPose.html">HandPose</a></h4>
+      <section><p>Poses set in the animation metadata for the hands.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Helpers.LogLevel.html">Helpers.LogLevel</a></h4>
+      <section><p>Passed to Logger.Log() to identify the severity of a log entry</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.HoleType.html">HoleType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ImageCodec.html">ImageCodec</a></h4>
+      <section><p>Image file format</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ImageType.html">ImageType</a></h4>
+      <section><p>When requesting image download, type of the image requested</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InstantMessageDialog.html">InstantMessageDialog</a></h4>
+      <section><p>Special commands used in Instant Messages</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InstantMessageOnline.html">InstantMessageOnline</a></h4>
+      <section><p>Flag in Instant Messages, whether the IM should be delivered to
+offline avatars as well</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryItemFlags.html">InventoryItemFlags</a></h4>
+      <section><p>Upper half of the Flags field for inventory items</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventorySortOrder.html">InventorySortOrder</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryType.html">InventoryType</a></h4>
+      <section><p>Inventory Item Types, eg Script, Notecard, Folder, etc</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.JointType.html">JointType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.LandingType.html">LandingType</a></h4>
+      <section><p>Type of teleport landing for a parcel</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.LastExecStatus.html">LastExecStatus</a></h4>
+      <section><p>Status of the last application run.
+Used for error reporting to the grid login service for statistical purposes.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.LoginStatus.html">LoginStatus</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.LookAtType.html">LookAtType</a></h4>
+      <section><p>The action an avatar is doing when looking at something, used in
+ViewerEffect packets for the LookAt effect</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MappingType.html">MappingType</a></h4>
+      <section><p>The texture mapping style used for a face</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Material.html">Material</a></h4>
+      <section><p>Material type for a primitive</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MeanCollisionType.html">MeanCollisionType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.MediaControls.html">MediaControls</a></h4>
+      <section><p>Style of cotrols that shold be displayed to the user</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MediaPermission.html">MediaPermission</a></h4>
+      <section><p>Permissions for control of object media</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MoneyTransactionType.html">MoneyTransactionType</a></h4>
+      <section><p>Money transaction types</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MuteFlags.html">MuteFlags</a></h4>
+      <section><p>Flags of mute entry</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.MuteType.html">MuteType</a></h4>
+      <section><p>Type of mute entry</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.NameValue.ClassType.html">NameValue.ClassType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.NameValue.SendtoType.html">NameValue.SendtoType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.NameValue.ValueType.html">NameValue.ValueType</a></h4>
+      <section><p>Type of the value</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.NetworkManager.DisconnectType.html">NetworkManager.DisconnectType</a></h4>
+      <section><p>Explains why a simulator or the grid disconnected from us</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ObjectCategory.html">ObjectCategory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ObjectReturnType.html">ObjectReturnType</a></h4>
+      <section><p>Type of return to use when returning objects from a parcel</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PacketFrequency.html">PacketFrequency</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelAccessFlags.html">ParcelAccessFlags</a></h4>
+      <section><p>Blacklist/Whitelist flags used in parcels Access List</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelCategory.html">ParcelCategory</a></h4>
+      <section><p>Category parcel is listed in under search</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelFlags.html">ParcelFlags</a></h4>
+      <section><p>Various parcel properties</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelMediaCommand.html">ParcelMediaCommand</a></h4>
+      <section><p>Parcel Media Command used in ParcelMediaCommandMessage</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelOverlayType.html">ParcelOverlayType</a></h4>
+      <section><p>Parcel overlay type. This is used primarily for highlighting and
+coloring which is why it is a single integer instead of a set of
+flags</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelPropertiesStatus.html">ParcelPropertiesStatus</a></h4>
+      <section><p>Sequence ID in ParcelPropertiesReply packets (sent when avatar
+tries to cross a parcel border)</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelResult.html">ParcelResult</a></h4>
+      <section><p>The result of a request for parcel properties</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelStatus.html">ParcelStatus</a></h4>
+      <section><p>Parcel ownership status</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PathCurve.html">PathCurve</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.PayPriceType.html">PayPriceType</a></h4>
+      <section><p>Special values in PayPriceReply. If the price is not one of these
+literal value of the price should be use</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PCode.html">PCode</a></h4>
+      <section><p>Identifier code for primitive types</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PermissionMask.html">PermissionMask</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.PermissionWho.html">PermissionWho</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.PhysicsShapeType.html">PhysicsShapeType</a></h4>
+      <section><p>Type of physics representation used for this prim in the simulator</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PointAtType.html">PointAtType</a></h4>
+      <section><p>The action an avatar is doing when pointing at something, used in
+ViewerEffect packets for the PointAt effect</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PrimFlags.html">PrimFlags</a></h4>
+      <section><p>Primary parameters for primitives such as Physics Enabled or Phantom</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.ParticleSystem.BlendFunc.html">Primitive.ParticleSystem.BlendFunc</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.ParticleSystem.ParticleDataFlags.html">Primitive.ParticleSystem.ParticleDataFlags</a></h4>
+      <section><p>Particle Data Flags</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.ParticleSystem.ParticleFlags.html">Primitive.ParticleSystem.ParticleFlags</a></h4>
+      <section><p>Particle Flags Enum</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.ParticleSystem.SourcePattern.html">Primitive.ParticleSystem.SourcePattern</a></h4>
+      <section><p>Particle source pattern</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Primitive.TextureAnimMode.html">Primitive.TextureAnimMode</a></h4>
+      <section><p>Texture animation mode</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.PrimType.html">PrimType</a></h4>
+      <section><p>Used in a helper function to roughly determine prim shape</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ProfileCurve.html">ProfileCurve</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ProfileFlags.html">ProfileFlags</a></h4>
+      <section><p>Avatar profile flags</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.RegionFlags.html">RegionFlags</a></h4>
+      <section><p>Simulator (region) properties</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.RegionProtocols.html">RegionProtocols</a></h4>
+      <section><p>Region protocol flags</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ReportType.html">ReportType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.SaleType.html">SaleType</a></h4>
+      <section><p>Item Sale Status</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ScriptControlChange.html">ScriptControlChange</a></h4>
+      <section><p>Flags sent when a script takes or releases a control</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ScriptPermission.html">ScriptPermission</a></h4>
+      <section><p>Permission request flags, asked when a script wants to control an Avatar</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ScriptSensorTypeFlags.html">ScriptSensorTypeFlags</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.SculptType.html">SculptType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Shininess.html">Shininess</a></h4>
+      <section><p>The level of shininess applied to a face</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.SimAccess.html">SimAccess</a></h4>
+      <section><p>Access level for a simulator</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.SoundFlags.html">SoundFlags</a></h4>
+      <section><p>Sound flags for sounds attached to primitives</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.SourceType.html">SourceType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.StatusCode.html">StatusCode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TargetType.html">TargetType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TeleportFlags.html">TeleportFlags</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TeleportLureFlags.html">TeleportLureFlags</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TeleportStatus.html">TeleportStatus</a></h4>
+      <section><p>Current teleport status</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TerraformAction.html">TerraformAction</a></h4>
+      <section><p>The tool to use when modifying terrain levels</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TerraformBrushSize.html">TerraformBrushSize</a></h4>
+      <section><p>The tool size to use when changing terrain levels</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TerrainPatch.LayerType.html">TerrainPatch.LayerType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TextureAttributes.html">TextureAttributes</a></h4>
+      <section><p>Flags in the TextureEntry block that describe which properties are
+set</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TextureRequestState.html">TextureRequestState</a></h4>
+      <section><p>The current status of a texture request as it moves through the pipeline or final result of a texture request.</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TransactionFlags.html">TransactionFlags</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.TransferError.html">TransferError</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.Tree.html">Tree</a></h4>
+      <section><p>Tree foliage types</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.UpdateType.html">UpdateType</a></h4>
+      <section><p>Specific Flags for MultipleObjectUpdate requests</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Utils.Platform.html">Utils.Platform</a></h4>
+      <section><p>Operating system</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Utils.Runtime.html">Utils.Runtime</a></h4>
+      <section><p>Runtime platform</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.VisualColorOperation.html">VisualColorOperation</a></h4>
+      <section><p>Operation to apply when applying color to texture</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.WearableType.html">WearableType</a></h4>
+      <section><p>Types of wearable assets</p>
+</section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="OpenMetaverse.AgentManager.AgentAccessCallback.html">AgentManager.AgentAccessCallback</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.AgentManager.AttachmentResourcesCallback.html">AgentManager.AttachmentResourcesCallback</a></h4>
+      <section><p>Called once attachment resource usage information has been collected</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AssetCache.ComputeAssetCacheFilenameDelegate.html">AssetCache.ComputeAssetCacheFilenameDelegate</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.AssetManager.AssetReceivedCallback.html">AssetManager.AssetReceivedCallback</a></h4>
+      <section><p>Callback used for various asset download requests</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AssetManager.BakedTextureUploadedCallback.html">AssetManager.BakedTextureUploadedCallback</a></h4>
+      <section><p>Callback used upon competition of baked texture upload</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AssetManager.MeshDownloadCallback.html">AssetManager.MeshDownloadCallback</a></h4>
+      <section><p>A callback that fires upon the completition of the RequestMesh call</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.AvatarManager.DisplayNamesCallback.html">AvatarManager.DisplayNamesCallback</a></h4>
+      <section><p>Callback giving results when fetching display names</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Caps.EventQueueCallback.html">Caps.EventQueueCallback</a></h4>
+      <section><p>Triggered when an event is received via the EventQueueGet
+capability</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.DictionaryChangeCallback.html">DictionaryChangeCallback</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryManager.InventoryUploadedAssetCallback.html">InventoryManager.InventoryUploadedAssetCallback</a></h4>
+      <section><p>Reply received when uploading an inventory asset</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryManager.ItemCopiedCallback.html">InventoryManager.ItemCopiedCallback</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryManager.ItemCreatedCallback.html">InventoryManager.ItemCreatedCallback</a></h4>
+      <section><p>Callback for inventory item creation finishing</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryManager.ItemCreatedFromAssetCallback.html">InventoryManager.ItemCreatedFromAssetCallback</a></h4>
+      <section><p>Callback for an inventory item being create from an uploaded asset</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.InventoryManager.ScriptUpdatedCallback.html">InventoryManager.ScriptUpdatedCallback</a></h4>
+      <section><p>Delegate that is invoked when script upload is completed</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.Logger.LogCallback.html">Logger.LogCallback</a></h4>
+      <section><p>Callback used for client apps to receive log messages from
+the library</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.NetworkManager.LoginResponseCallback.html">NetworkManager.LoginResponseCallback</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenMetaverse.ObjectManager.ObjectMediaCallback.html">ObjectManager.ObjectMediaCallback</a></h4>
+      <section><p>Callback for getting object media data via CAP</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.ParcelManager.LandResourcesCallback.html">ParcelManager.LandResourcesCallback</a></h4>
+      <section><p>Called once parcel resource usage information has been collected</p>
+</section>
+      <h4><a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a></h4>
+      <section><p>A callback fired to indicate the status or final state of the requested texture. For progressive
+downloads this will fire each time new asset data is returned from the simulator.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

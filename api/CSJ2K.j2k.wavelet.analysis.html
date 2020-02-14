@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.j2k.wavelet.analysis
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.j2k.wavelet.analysis
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.wavelet.analysis">
+  
+  <h1 id="CSJ2K_j2k_wavelet_analysis" data-uid="CSJ2K.j2k.wavelet.analysis" class="text-break">Namespace CSJ2K.j2k.wavelet.analysis
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html">AnWTFilter</a></h4>
+      <section><p>This abstract class defines the methods of all analysis wavelet
+   filters. Specialized abstract classes that work on particular data types
+   (int, float) provide more specific method calls while retaining the
+   generality of this one. See the AnWTFilterInt and AnWTFilterFloat
+   classes. Implementations of analysis filters should inherit from one of
+   those classes.</p>
+<p>All analysis wavelet filters should follow the following conventions:</p>
+<ul>
+<li>The first sample to filter is the low-pass one. As a consequence, if
+the input signal is of odd-length then the low-pass output signal is one
+sample longer than the high-pass output one. Therefore, if the length of
+input signal is N, the low-pass output signal is of length N/2 if N is even
+and N/2+1/2 if N is odd, while the high-pass output signal is of length N/2
+if N is even and N/2-1/2 if N is odd.</li>
+<li>The normalization is 1 for the DC gain and 2 for the Nyquist gain (Type
+I normalization), for both reversible and non-reversible filters.</li>
+<li>If the length of input signal is N, the low-pass output signal is of
+length N/2 if N is even and N/2+1/2 if N is odd, while the high-pass output
+sample is of length N/2 if N is even and N/2-1/2 if N is odd.</li>
+<li>The analyze method may seem very complicated, but is designed to
+minimize the amount of data copying and redundant calculations when used
+for block-based or line-based wavelet transform implementations, while
+being applicable to full-frame transforms as well.</li>
+<li>All filters should implement the equals() method of the Object
+class. The call x.equals(y) should test if the &apos;x&apos; and &apos;y&apos; filters are the
+same or not, in what concerns the bit stream header syntax (two filters are
+the same if the same filter code should be output to the bit stream).</li>
+</ul>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterFloat.html">AnWTFilterFloat</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterFloatLift9x7.html">AnWTFilterFloatLift9x7</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterInt.html">AnWTFilterInt</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.html">AnWTFilterIntLift5x3</a></h4>
+      <section><p>This class inherits from the analysis wavelet filter definition for int
+data. It implements the forward wavelet transform specifically for the 5x3
+filter. The implementation is based on the lifting scheme.</p>
+<p>See the AnWTFilter class for details such as normalization, how to split
+odd-length signals, etc. In particular, this method assumes that the
+low-pass coefficient is computed first.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterSpec.html">AnWTFilterSpec</a></h4>
+      <section><p>This class extends ModuleSpec class for analysis filters specification
+holding purpose.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></h4>
+      <section><p>This is a generic abstract class to store a code-block of wavelet data,
+quantized or not. This class does not have the notion of
+components. Therefore, it should be used for data from a single
+component. Subclasses should implement the different types of storage
+(<tt>int</tt>, <tt>float</tt>, etc.).</p>
+<p>The data is always stored in one array, of the type matching the data
+type (i.e. for &apos;int&apos; it&apos;s an &apos;int[]&apos;). The data should be stored in the
+array in standard scan-line order. That is the samples go from the top-left
+corner of the code-block to the lower-right corner by line and then
+column.</p>
+<p>The member variable &apos;offset&apos; gives the index in the array of the first
+data element (i.e. the top-left coefficient). The member variable &apos;scanw&apos;
+gives the width of the scan that is used to store the data, that can be
+different from the width of the block. Element &apos;(x,y)&apos; of the code-block
+(i.e. &apos;(0,0)&apos; is the top-left coefficient), will appear at position
+&apos;offset+y*scanw+x&apos; in the array of data.</p>
+<p>The classes <tt>CBlkWTDataInt</tt> and <tt>CBlkWTDataFloat</tt> provide
+implementations for <tt>int</tt> and <tt>float</tt> types respectively.</p>
+<p>The types of data are the same as those defined by the &apos;DataBlk&apos;
+class.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataFloat.html">CBlkWTDataFloat</a></h4>
+      <section><p>This is an implementation of the 'CBlkWTData' abstract class for 32 bit
+floating point data (float).</p>
+<p>The methods in this class are declared final, so that they can be
+inlined by inlining compilers.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataInt.html">CBlkWTDataInt</a></h4>
+      <section><p>This is an implementation of the 'CBlkWTData' abstract class for signed 32
+bit integer data.</p>
+<p>The methods in this class are declared final, so that they can be
+inlined by inlining compilers.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwardWT.html">ForwardWT</a></h4>
+      <section><p>This abstract class represents the forward wavelet transform functional
+block. The functional block may actually be comprised of several classes
+linked together, but a subclass of this abstract class is the one that is
+returned as the functional block that performs the forward wavelet
+transform.</p>
+<p>This class assumes that data is transferred in code-blocks, as defined
+by the &apos;CBlkWTDataSrc&apos; interface. The internal calculation of the wavelet
+transform may be done differently but a buffering class should convert to
+that type of transfer.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTFull.html">ForwWTFull</a></h4>
+      <section><p>This class implements the ForwardWT abstract class with the full-page
+approach to be used either with integer or floating-point filters</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html">SubbandAn</a></h4>
+      <section><p>This class represents a subband in a bidirectional tree structure that
+describes the subband decomposition for a wavelet transform, specifically
+for the analysis side.</p>
+<p>The element can be either a node or a leaf of the tree. If it is a node
+then ther are 4 descendants (LL, HL, LH and HH). If it is a leaf there are
+no descendants.</p>
+<p>The tree is bidirectional. Each element in the tree structure has a
+&quot;parent&quot;, which is the subband from which the element was obtained by
+decomposition. The only exception is the root element which has no parent
+(i.e.it&apos;s null), for obvious reasons.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc.html">CBlkWTDataSrc</a></h4>
+      <section><p>This abstract class defines methods to transfer wavelet data in a
+code-block by code-block basis. In each call to 'getNextCodeBlock()' or
+'getNextInternCodeBlock()' a new code-block is returned. The code-blocks
+are returned in no specific order.</p>
+<p>This class is the source of data for the quantizer. See the &apos;Quantizer&apos;
+class.</p>
+<p>Note that no more of one object may request data, otherwise one object
+would get some of the data and another one another part, in no defined
+manner.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWT.html">ForwWT</a></h4>
+      <section><p>This interface extends the WaveletTransform with the specifics of forward
+wavelet transforms. Classes that implement forward wavelet transfoms should
+implement this interface.</p>
+<p>This class does not define the methods to transfer data, just the
+specifics to forward wavelet transform. Different data transfer methods are 
+evisageable for different transforms.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html">ForwWTDataProps</a></h4>
+      <section><p>This interface extends the ImgData interface with methods that are
+necessary for forward wavelet data (i.e. data that is produced by a forward
+wavelet transform).</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

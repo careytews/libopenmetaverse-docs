@@ -1,0 +1,752 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CBlkWTData
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CBlkWTData
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData">
+  
+  
+  <h1 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData" class="text-break">Class CBlkWTData
+  </h1>
+  <div class="markdown level0 summary"><p>This is a generic abstract class to store a code-block of wavelet data,
+quantized or not. This class does not have the notion of
+components. Therefore, it should be used for data from a single
+component. Subclasses should implement the different types of storage
+(<tt>int</tt>, <tt>float</tt>, etc.).</p>
+<p>The data is always stored in one array, of the type matching the data
+type (i.e. for &apos;int&apos; it&apos;s an &apos;int[]&apos;). The data should be stored in the
+array in standard scan-line order. That is the samples go from the top-left
+corner of the code-block to the lower-right corner by line and then
+column.</p>
+<p>The member variable &apos;offset&apos; gives the index in the array of the first
+data element (i.e. the top-left coefficient). The member variable &apos;scanw&apos;
+gives the width of the scan that is used to store the data, that can be
+different from the width of the block. Element &apos;(x,y)&apos; of the code-block
+(i.e. &apos;(0,0)&apos; is the top-left coefficient), will appear at position
+&apos;offset+y*scanw+x&apos; in the array of data.</p>
+<p>The classes <tt>CBlkWTDataInt</tt> and <tt>CBlkWTDataFloat</tt> provide
+implementations for <tt>int</tt> and <tt>float</tt> types respectively.</p>
+<p>The types of data are the same as those defined by the &apos;DataBlk&apos;
+class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CBlkWTData</span></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataFloat.html">CBlkWTDataFloat</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataInt.html">CBlkWTDataInt</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.wavelet.analysis.html">CSJ2K.j2k.wavelet.analysis</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CBlkWTData</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_convertFactor.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.convertFactor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L180">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_convertFactor" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.convertFactor">convertFactor</h4>
+  <div class="markdown level1 summary"><p>The value by which the absolute value of the data has to be divided in
+order to get the real absolute value. This value is useful to obtain
+the complement of 2 representation of a coefficient that is currently
+using the sign-magnitude representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double convertFactor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_h.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.h%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L157">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_h" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.h">h</h4>
+  <div class="markdown level1 summary"><p>The height of the code-block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int h</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_m.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.m%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L148">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_m" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.m">m</h4>
+  <div class="markdown level1 summary"><p>The vertical index of the code-block, within the subband</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_magbits.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.magbits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L168">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_magbits" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.magbits">magbits</h4>
+  <div class="markdown level1 summary"><p>The number of magnitude bits in the integer representation. This is
+only used for quantized wavelet data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int magbits</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_n.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.n%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L145">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_n" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.n">n</h4>
+  <div class="markdown level1 summary"><p>The horizontal index of the code-block, within the subband</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int n</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_nROIbp.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.nROIbp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L191">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_nROIbp" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.nROIbp">nROIbp</h4>
+  <div class="markdown level1 summary"><p>Number of ROI magnitude bit-planes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int nROIbp</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_nROIcoeff.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.nROIcoeff%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L188">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_nROIcoeff" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.nROIcoeff">nROIcoeff</h4>
+  <div class="markdown level1 summary"><p>Number of ROI coefficients in the code-block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int nROIcoeff</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_offset.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.offset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L160">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_offset" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.offset">offset</h4>
+  <div class="markdown level1 summary"><p>The offset in the array of the top-left coefficient</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int offset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_sb.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.sb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L151">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_sb" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.sb">sb</h4>
+  <div class="markdown level1 summary"><p>The subband in which this code-block is found</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubbandAn sb</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html">SubbandAn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_scanw.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.scanw%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L163">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_scanw" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.scanw">scanw</h4>
+  <div class="markdown level1 summary"><p>The width of the scanlines used to store the data in the array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int scanw</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_stepSize.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.stepSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L185">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_stepSize" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.stepSize">stepSize</h4>
+  <div class="markdown level1 summary"><p>The quantization step size of the code-block. The value is updated by
+the quantizer module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double stepSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_ulx.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.ulx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L139">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_ulx" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.ulx">ulx</h4>
+  <div class="markdown level1 summary"><p>The horizontal coordinate of the upper-left corner of the code-block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ulx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_uly.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.uly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L142">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_uly" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.uly">uly</h4>
+  <div class="markdown level1 summary"><p>The vertical coordinate of the upper left corner of the code-block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int uly</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_w.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.w%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L154">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_w" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.w">w</h4>
+  <div class="markdown level1 summary"><p>The width of the code-block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int w</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_wmseScaling.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.wmseScaling%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L173">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_wmseScaling" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.wmseScaling">wmseScaling</h4>
+  <div class="markdown level1 summary"><p>The WMSE scaling factor (multiplicative) to apply to the distortion
+measures of the data of this code-block. By default it is 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wmseScaling</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_Data.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.Data%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L136">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_Data_" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.Data*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_Data" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.Data">Data</h4>
+  <div class="markdown level1 summary"><p>Returns the array containing the data, or null if there is no data. The
+returned array is of the type returned by <tt>getDataType()</tt> (e.g.,
+for <tt>TYPE_INT</tt>, it is a <tt>int[]</tt>).</p>
+<p>Each implementing class should provide a type specific equivalent
+method (e.g., <tt>getDataInt()</tt> in <tt>DataBlkInt</tt>) which
+returns an array of the correct type explicitely and not through an
+<tt>Object</tt>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract object Data { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The array containing the data, or <tt>null</tt> if there is no
+data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_DataType.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.DataType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L97">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_DataType_" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.DataType*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_DataType" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.DataType">DataType</h4>
+  <div class="markdown level1 summary"><p>Returns the data type of the <tt>CBlkWTData</tt> object, as defined in
+the DataBlk class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int DataType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The data type of the object, as defined in the DataBlk class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_DataType_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData_ToString.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L199">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_ToString_" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.ToString*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_CBlkWTData_ToString" data-uid="CSJ2K.j2k.wavelet.analysis.CBlkWTData.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string of informations about the DataBlk</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Block dimensions and progressiveness in a string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc.html">CBlkWTDataSrc</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataInt.html">CBlkWTDataInt</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataFloat.html">CBlkWTDataFloat</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_CBlkWTData.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.CBlkWTData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/CBlkWTData.cs/#L85" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,914 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ForwCompTransf
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ForwCompTransf
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf">
+  
+  
+  <h1 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf" class="text-break">Class ForwCompTransf
+  </h1>
+  <div class="markdown level0 summary"><p>This class apply component transformations to the tiles depending on user
+specifications. These transformations can be used to improve compression
+efficiency but are not related to colour transforms used to map colour
+values for display purposes. JPEG 2000 part I defines 2 component
+transformations: RCT (Reversible Component Transformation) and ICT
+(Irreversible Component Transformation).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html">ImgDataAdapter</a></div>
+    <div class="level2"><span class="xref">ForwCompTransf</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileWidth">ImgDataAdapter.TileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileHeight">ImgDataAdapter.TileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileWidth">ImgDataAdapter.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileHeight">ImgDataAdapter.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgWidth">ImgDataAdapter.ImgWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgHeight">ImgDataAdapter.ImgHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NumComps">ImgDataAdapter.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileIdx">ImgDataAdapter.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULX">ImgDataAdapter.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULY">ImgDataAdapter.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULX">ImgDataAdapter.ImgULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULY">ImgDataAdapter.ImgULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_tIdx">ImgDataAdapter.tIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_imgdatasrc">ImgDataAdapter.imgdatasrc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsX_System_Int32_">ImgDataAdapter.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsY_System_Int32_">ImgDataAdapter.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_">ImgDataAdapter.getTileCompWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_">ImgDataAdapter.getTileCompHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgWidth_System_Int32_">ImgDataAdapter.getCompImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgHeight_System_Int32_">ImgDataAdapter.getCompImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULX_System_Int32_">ImgDataAdapter.getCompULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULY_System_Int32_">ImgDataAdapter.getCompULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles">ImgDataAdapter.getNumTiles()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.image.forwcomptransf.html">CSJ2K.j2k.image.forwcomptransf</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ForwCompTransf : ImgDataAdapter, BlkImgDataSrc, ImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf__ctor_CSJ2K_j2k_image_BlkImgDataSrc_CSJ2K_j2k_encoder_EncoderSpecs_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.%23ctor(CSJ2K.j2k.image.BlkImgDataSrc%2CCSJ2K.j2k.encoder.EncoderSpecs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L175">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf__ctor_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf__ctor_CSJ2K_j2k_image_BlkImgDataSrc_CSJ2K_j2k_encoder_EncoderSpecs_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.#ctor(CSJ2K.j2k.image.BlkImgDataSrc,CSJ2K.j2k.encoder.EncoderSpecs)">ForwCompTransf(BlkImgDataSrc, EncoderSpecs)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new ForwCompTransf object that operates on the specified
+source of image data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ForwCompTransf(BlkImgDataSrc imgSrc, EncoderSpecs encSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></td>
+        <td><span class="parametername">imgSrc</span></td>
+        <td><p>The source from where to get the data to be transformed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.encoder.EncoderSpecs.html">EncoderSpecs</a></td>
+        <td><span class="parametername">encSpec</span></td>
+        <td><p>The encoder specifications</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf__ctor_CSJ2K_j2k_image_BlkImgDataSrc_CSJ2K_j2k_encoder_EncoderSpecs__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></div>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_FORW_ICT.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.FORW_ICT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L129">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_FORW_ICT" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.FORW_ICT">FORW_ICT</h4>
+  <div class="markdown level1 summary"><p>Identifier for the Forward Irreversible Component Transformation
+(FORW_ICT). Value is 2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int FORW_ICT = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_FORW_RCT.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.FORW_RCT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L124">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_FORW_RCT" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.FORW_RCT">FORW_RCT</h4>
+  <div class="markdown level1 summary"><p>Identifier for the Forward Reversible Component Transformation
+(FORW_RCT). Value is 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int FORW_RCT = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_NONE.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.NONE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L119">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_NONE" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.NONE">NONE</h4>
+  <div class="markdown level1 summary"><p>Identifier for no component transformation. Value is 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NONE = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_OPT_PREFIX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.OPT_PREFIX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L183">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_OPT_PREFIX" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.OPT_PREFIX">OPT_PREFIX</h4>
+  <div class="markdown level1 summary"><p>The prefix for component transformation type: 'M'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const char OPT_PREFIX = 'M'</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_ParameterInfo.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.ParameterInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L80">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_ParameterInfo_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.ParameterInfo*"></a>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_ParameterInfo" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.ParameterInfo">ParameterInfo</h4>
+  <div class="markdown level1 summary"><p>Returns the parameters that are used in this class and implementing
+classes. It returns a 2D String array. Each of the 1D arrays is for a
+different option, and they have 4 elements. The first element is the
+option name, the second one is the synopsis, the third one is a long
+description of what the parameter is and the fourth is its default
+value. The synopsis or description may be 'null', in which case it is
+assumed that there is no synopsis or description of the option,
+respectively. Null may be returned if no options are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[][] ParameterInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[][]</td>
+        <td><p>the options name, their synopsis and their explanation, or null
+if no options are supported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_Reversible.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.Reversible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L97">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_Reversible_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.Reversible*"></a>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_Reversible" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.Reversible">Reversible</h4>
+  <div class="markdown level1 summary"><p>Returns true if this transform is reversible in current
+tile. Reversible component transformations are those which operation
+can be completely reversed without any loss of information (not even
+due to rounding).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Reversible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Reversibility of component transformation in current tile</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_calcMixedBitDepths_System_Int32___System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.calcMixedBitDepths(System.Int32%5B%5D%2CSystem.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L233">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_calcMixedBitDepths_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.calcMixedBitDepths*"></a>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_calcMixedBitDepths_System_Int32___System_Int32_System_Int32___" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.calcMixedBitDepths(System.Int32[],System.Int32,System.Int32[])">calcMixedBitDepths(Int32[], Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p>Calculates the bitdepths of the transformed components, given the
+bitdepth of the un-transformed components and the component
+transformation type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int[] calcMixedBitDepths(int[] ntdepth, int ttype, int[] tdepth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">ntdepth</span></td>
+        <td><p>The bitdepth of each non-transformed components.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ttype</span></td>
+        <td><p>The type ID of the component transformation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">tdepth</span></td>
+        <td><p>If not null the results are stored in this array,
+otherwise a new array is allocated and returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><p>The bitdepth of each transformed component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getCompData(CSJ2K.j2k.image.DataBlk%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L429">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getCompData_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getCompData*"></a>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getCompData(CSJ2K.j2k.image.DataBlk,System.Int32)">getCompData(DataBlk, Int32)</h4>
+  <div class="markdown level1 summary"><p>Apply forward component transformation associated with the current
+tile. If no component transformation has been requested by the user,
+data are not modified.</p>
+<p>This method calls the getInternCompData() method, but respects the
+definitions of the getCompData() method defined in the BlkImgDataSrc
+interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DataBlk getCompData(DataBlk blk, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">blk</span></td>
+        <td><p>Determines the rectangular area to return, and the data is
+returned in this object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Index of the output component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><p>The requested DataBlk</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html#CSJ2K_j2k_image_BlkImgDataSrc_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_">getCompData</a>(<a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a>, <span class="xref">System.Int32</span>)</div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getFixedPoint_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getFixedPoint(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L210">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getFixedPoint_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getFixedPoint*"></a>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getFixedPoint_System_Int32_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getFixedPoint(System.Int32)">getFixedPoint(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the position of the fixed point in the specified
+component. This is the position of the least significant integral
+(i.e. non-fractional) bit, which is equivalent to the number of
+fractional bits. For instance, for fixed-point values with 2 fractional
+bits, 2 is returned. For floating-point data this value does not apply
+and 0 should be returned. Position 0 is the position of the least
+significant bit in the data.</p>
+<p>This default implementation assumes that the number of fractional
+bits is not modified by the component mixer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getFixedPoint(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The value of the fixed point position of the source since the
+color transform does not affect it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getInternCompData(CSJ2K.j2k.image.DataBlk%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L465">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getInternCompData_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getInternCompData*"></a>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getInternCompData(CSJ2K.j2k.image.DataBlk,System.Int32)">getInternCompData(DataBlk, Int32)</h4>
+  <div class="markdown level1 summary"><p>Apply the component transformation associated with the current tile. If
+no component transformation has been requested by the user, data are
+not modified. Else, appropriate method is called (forwRCT or forwICT).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DataBlk getInternCompData(DataBlk blk, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">blk</span></td>
+        <td><p>Determines the rectangular area to return.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Index of the output component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><p>The requested DataBlk</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><span class="xref">CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.forwRCT(CSJ2K.j2k.image.DataBlk,System.Int32)</span></div>
+      <div><span class="xref">CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.forwICT(CSJ2K.j2k.image.DataBlk,System.Int32)</span></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getNomRangeBits_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getNomRangeBits(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L389">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getNomRangeBits_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getNomRangeBits*"></a>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_getNomRangeBits_System_Int32_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.getNomRangeBits(System.Int32)">getNomRangeBits(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of bits, referred to as the &quot;range bits&quot;,
+corresponding to the nominal range of the data in the specified
+component and in the current tile. If this number is <em>b</em> then for
+unsigned data the nominal range is between 0 and 2^b-1, and for signed
+data it is between -2^(b-1) and 2^(b-1)-1. Note that this value can be
+affected by the multiple component transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getNomRangeBits(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The bitdepth of component 'c' after mixing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNomRangeBits_System_Int32_">ImgDataAdapter.getNomRangeBits(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_nextTile.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.nextTile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L866">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_nextTile_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.nextTile*"></a>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_nextTile" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.nextTile">nextTile()</h4>
+  <div class="markdown level1 summary"><p>Goes to the next tile, in standard scan-line order (by rows then by
+columns). An NoNextElementException is thrown if the current tile is
+the last one (i.e. there is no next tile).</p>
+<p>This default implementation just advances to the next tile in the
+source and re-initializes properly component transformation
+variables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void nextTile()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_nextTile">ImgDataAdapter.nextTile()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_setTile_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.setTile(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L830">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_setTile_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.setTile*"></a>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_setTile_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.setTile(System.Int32,System.Int32)">setTile(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Changes the current tile, given the new indexes. An
+IllegalArgumentException is thrown if the indexes do not correspond to
+a valid tile.</p>
+<p>This default implementation changes the tile in the source and
+re-initializes properly component transformation variables..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void setTile(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The horizontal index of the tile.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The vertical index of the new tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_setTile_System_Int32_System_Int32_">ImgDataAdapter.setTile(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_ToString.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L355">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_ToString_" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.ToString*"></a>
+  <h4 id="CSJ2K_j2k_image_forwcomptransf_ForwCompTransf_ToString" data-uid="CSJ2K.j2k.image.forwcomptransf.ForwCompTransf.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string with a descriptive text of which forward component
+transformation is used. This can be either &quot;Forward RCT&quot; or &quot;Forward
+ICT&quot; or &quot;No component transformation&quot; depending on the current tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A descriptive string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.ModuleSpec.html">ModuleSpec</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_forwcomptransf_ForwCompTransf.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.forwcomptransf.ForwCompTransf%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/forwcomptransf/ForwCompTransf.cs/#L64" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

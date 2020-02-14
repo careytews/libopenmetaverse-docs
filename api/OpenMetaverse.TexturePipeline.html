@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TexturePipeline
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TexturePipeline
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.TexturePipeline">
+  
+  
+  <h1 id="OpenMetaverse_TexturePipeline" data-uid="OpenMetaverse.TexturePipeline" class="text-break">Class TexturePipeline
+  </h1>
+  <div class="markdown level0 summary"><p>Texture request download handler, allows a configurable number of download slots which manage multiple
+concurrent texture downloads from the <a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TexturePipeline</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_TexturePipeline_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TexturePipeline</code></pre>
+  </div>
+  <h5 id="OpenMetaverse_TexturePipeline_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class makes full use of the internal <seealso cref="!:TextureCache"></seealso>
+system for full texture downloads.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TexturePipeline__ctor_OpenMetaverse_GridClient_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TexturePipeline.%23ctor(OpenMetaverse.GridClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/TexturePipeline.cs/#L148">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TexturePipeline__ctor_" data-uid="OpenMetaverse.TexturePipeline.#ctor*"></a>
+  <h4 id="OpenMetaverse_TexturePipeline__ctor_OpenMetaverse_GridClient_" data-uid="OpenMetaverse.TexturePipeline.#ctor(OpenMetaverse.GridClient)">TexturePipeline(GridClient)</h4>
+  <div class="markdown level1 summary"><p>Default constructor, Instantiates a new copy of the TexturePipeline class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TexturePipeline(GridClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>Reference to the instantiated <a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a> object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TexturePipeline_TransferCount.md&amp;value=---%0Auid%3A%20OpenMetaverse.TexturePipeline.TransferCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/TexturePipeline.cs/#L142">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TexturePipeline_TransferCount_" data-uid="OpenMetaverse.TexturePipeline.TransferCount*"></a>
+  <h4 id="OpenMetaverse_TexturePipeline_TransferCount" data-uid="OpenMetaverse.TexturePipeline.TransferCount">TransferCount</h4>
+  <div class="markdown level1 summary"><p>Current number of pending and in-process transfers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TransferCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TexturePipeline_AbortTextureRequest_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TexturePipeline.AbortTextureRequest(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/TexturePipeline.cs/#L421">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TexturePipeline_AbortTextureRequest_" data-uid="OpenMetaverse.TexturePipeline.AbortTextureRequest*"></a>
+  <h4 id="OpenMetaverse_TexturePipeline_AbortTextureRequest_OpenMetaverse_UUID_" data-uid="OpenMetaverse.TexturePipeline.AbortTextureRequest(OpenMetaverse.UUID)">AbortTextureRequest(UUID)</h4>
+  <div class="markdown level1 summary"><p>Cancel a pending or in process texture request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AbortTextureRequest(UUID textureID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">textureID</span></td>
+        <td><p>The texture assets unique ID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TexturePipeline_ImageDataHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TexturePipeline.ImageDataHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/TexturePipeline.cs/#L740">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TexturePipeline_ImageDataHandler_" data-uid="OpenMetaverse.TexturePipeline.ImageDataHandler*"></a>
+  <h4 id="OpenMetaverse_TexturePipeline_ImageDataHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.TexturePipeline.ImageDataHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">ImageDataHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Handle the initial ImageDataPacket sent from the simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ImageDataHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TexturePipeline_ImageNotInDatabaseHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TexturePipeline.ImageNotInDatabaseHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/TexturePipeline.cs/#L619">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TexturePipeline_ImageNotInDatabaseHandler_" data-uid="OpenMetaverse.TexturePipeline.ImageNotInDatabaseHandler*"></a>
+  <h4 id="OpenMetaverse_TexturePipeline_ImageNotInDatabaseHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.TexturePipeline.ImageNotInDatabaseHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">ImageNotInDatabaseHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Handle responses from the simulator that tell us a texture we have requested is unable to be located
+or no longer exists. This will remove the request from the pipeline and free up a slot if one is in use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ImageNotInDatabaseHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TexturePipeline_ImagePacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TexturePipeline.ImagePacketHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/TexturePipeline.cs/#L649">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TexturePipeline_ImagePacketHandler_" data-uid="OpenMetaverse.TexturePipeline.ImagePacketHandler*"></a>
+  <h4 id="OpenMetaverse_TexturePipeline_ImagePacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.TexturePipeline.ImagePacketHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">ImagePacketHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Handles the remaining Image data that did not fit in the initial ImageData packet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ImagePacketHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TexturePipeline_RequestTexture_OpenMetaverse_UUID_OpenMetaverse_ImageType_System_Single_System_Int32_System_UInt32_OpenMetaverse_TextureDownloadCallback_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TexturePipeline.RequestTexture(OpenMetaverse.UUID%2COpenMetaverse.ImageType%2CSystem.Single%2CSystem.Int32%2CSystem.UInt32%2COpenMetaverse.TextureDownloadCallback%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/TexturePipeline.cs/#L292">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TexturePipeline_RequestTexture_" data-uid="OpenMetaverse.TexturePipeline.RequestTexture*"></a>
+  <h4 id="OpenMetaverse_TexturePipeline_RequestTexture_OpenMetaverse_UUID_OpenMetaverse_ImageType_System_Single_System_Int32_System_UInt32_OpenMetaverse_TextureDownloadCallback_System_Boolean_" data-uid="OpenMetaverse.TexturePipeline.RequestTexture(OpenMetaverse.UUID,OpenMetaverse.ImageType,System.Single,System.Int32,System.UInt32,OpenMetaverse.TextureDownloadCallback,System.Boolean)">RequestTexture(UUID, ImageType, Single, Int32, UInt32, TextureDownloadCallback, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Request a texture asset from the simulator using the <a class="xref" href="OpenMetaverse.TexturePipeline.html">TexturePipeline</a> system to
+manage the requests and re-assemble the image from the packets received from the simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestTexture(UUID textureID, ImageType imageType, float priority, int discardLevel, uint packetStart, TextureDownloadCallback callback, bool progressive)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">textureID</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the texture asset to download</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ImageType.html">ImageType</a></td>
+        <td><span class="parametername">imageType</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.ImageType.html">ImageType</a> of the texture asset.
+Use <a class="xref" href="OpenMetaverse.ImageType.html#OpenMetaverse_ImageType_Normal">Normal</a> for most textures, or <a class="xref" href="OpenMetaverse.ImageType.html#OpenMetaverse_ImageType_Baked">Baked</a> for baked layer texture assets</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>A float indicating the requested priority for the transfer. Higher priority values tell the simulator
+to prioritize the request before lower valued requests. An image already being transferred using the <a class="xref" href="OpenMetaverse.TexturePipeline.html">TexturePipeline</a> can have
+its priority changed by resending the request with the new priority value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">discardLevel</span></td>
+        <td><p>Number of quality layers to discard.
+This controls the end marker of the data sent</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">packetStart</span></td>
+        <td><p>The packet number to begin the request at. A value of 0 begins the request
+from the start of the asset texture</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a> callback to fire when the image is retrieved. The callback
+will contain the result of the request and the texture asset data</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">progressive</span></td>
+        <td><p>If true, the callback will be fired for each chunk of the downloaded image.
+The callback asset parameter will contain all previously received chunks of the texture asset starting
+from the beginning of the request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TexturePipeline_Shutdown.md&amp;value=---%0Auid%3A%20OpenMetaverse.TexturePipeline.Shutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/TexturePipeline.cs/#L210">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TexturePipeline_Shutdown_" data-uid="OpenMetaverse.TexturePipeline.Shutdown*"></a>
+  <h4 id="OpenMetaverse_TexturePipeline_Shutdown" data-uid="OpenMetaverse.TexturePipeline.Shutdown">Shutdown()</h4>
+  <div class="markdown level1 summary"><p>Shutdown the TexturePipeline and cleanup any callbacks or transfers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shutdown()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TexturePipeline_Startup.md&amp;value=---%0Auid%3A%20OpenMetaverse.TexturePipeline.Startup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/TexturePipeline.cs/#L180">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TexturePipeline_Startup_" data-uid="OpenMetaverse.TexturePipeline.Startup*"></a>
+  <h4 id="OpenMetaverse_TexturePipeline_Startup" data-uid="OpenMetaverse.TexturePipeline.Startup">Startup()</h4>
+  <div class="markdown level1 summary"><p>Initialize callbacks required for the TexturePipeline to operate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Startup()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TexturePipeline.md&amp;value=---%0Auid%3A%20OpenMetaverse.TexturePipeline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/TexturePipeline.cs/#L78" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

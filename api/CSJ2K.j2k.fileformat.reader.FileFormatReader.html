@@ -1,0 +1,657 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileFormatReader
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileFormatReader
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader">
+  
+  
+  <h1 id="CSJ2K_j2k_fileformat_reader_FileFormatReader" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader" class="text-break">Class FileFormatReader
+  </h1>
+  <div class="markdown level0 summary"><p>This class reads the file format wrapper that may or may not exist around a
+valid JPEG 2000 codestream. Since no information from the file format is
+used in the actual decoding, this class simply goes through the file and
+finds the first valid codestream.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FileFormatReader</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.fileformat.reader.html">CSJ2K.j2k.fileformat.reader</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FileFormatReader</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader__ctor_CSJ2K_j2k_io_RandomAccessIO_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.%23ctor(CSJ2K.j2k.io.RandomAccessIO)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L130">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader__ctor_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader__ctor_CSJ2K_j2k_io_RandomAccessIO_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.#ctor(CSJ2K.j2k.io.RandomAccessIO)">FileFormatReader(RandomAccessIO)</h4>
+  <div class="markdown level1 summary"><p>The constructor of the FileFormatReader</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileFormatReader(RandomAccessIO in_Renamed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.io.RandomAccessIO.html">RandomAccessIO</a></td>
+        <td><span class="parametername">in_Renamed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_JP2FFUsed.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.JP2FFUsed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L122">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_JP2FFUsed" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.JP2FFUsed">JP2FFUsed</h4>
+  <div class="markdown level1 summary"><p>Flag indicating whether or not the JP2 file format is used</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool JP2FFUsed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_CodeStreamPos.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.CodeStreamPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L69">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_CodeStreamPos_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.CodeStreamPos*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_CodeStreamPos" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.CodeStreamPos">CodeStreamPos</h4>
+  <div class="markdown level1 summary"><p>This method creates and returns an array of positions to contiguous
+codestreams in the file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long[] CodeStreamPos { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span>[]</td>
+        <td><p>The positions of the contiguous codestreams in the file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_FirstCodeStreamLength.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.FirstCodeStreamLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L103">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_FirstCodeStreamLength_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.FirstCodeStreamLength*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_FirstCodeStreamLength" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.FirstCodeStreamLength">FirstCodeStreamLength</h4>
+  <div class="markdown level1 summary"><p>This method returns the length of the first contiguous codestreams in
+the file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int FirstCodeStreamLength { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The length of the first contiguous codestream in the file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_FirstCodeStreamPos.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.FirstCodeStreamPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L88">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_FirstCodeStreamPos_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.FirstCodeStreamPos*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_FirstCodeStreamPos" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.FirstCodeStreamPos">FirstCodeStreamPos</h4>
+  <div class="markdown level1 summary"><p>This method returns the position of the first contiguous codestreams in
+the file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int FirstCodeStreamPos { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The position of the first contiguous codestream in the file</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_readContiguousCodeStreamBox_System_Int64_System_Int32_System_Int64_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.readContiguousCodeStreamBox(System.Int64%2CSystem.Int32%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L401">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readContiguousCodeStreamBox_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readContiguousCodeStreamBox*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readContiguousCodeStreamBox_System_Int64_System_Int32_System_Int64_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readContiguousCodeStreamBox(System.Int64,System.Int32,System.Int64)">readContiguousCodeStreamBox(Int64, Int32, Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool readContiguousCodeStreamBox(long pos, int length, long longLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">longLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_readFileFormat.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.readFileFormat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L149">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readFileFormat_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readFileFormat*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readFileFormat" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readFileFormat">readFileFormat()</h4>
+  <div class="markdown level1 summary"><p>This method checks whether the given RandomAccessIO is a valid JP2 file
+and if so finds the first codestream in the file. Currently, the
+information in the codestream is not used</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void readFileFormat()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_readFileTypeBox.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.readFileTypeBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L287">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readFileTypeBox_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readFileTypeBox*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readFileTypeBox" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readFileTypeBox">readFileTypeBox()</h4>
+  <div class="markdown level1 summary"><p>This method reads the File Type box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool readFileTypeBox()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>false if the File Type box was not found or invalid else true</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_readIntPropertyBox_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.readIntPropertyBox(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L422">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readIntPropertyBox_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readIntPropertyBox*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readIntPropertyBox_System_Int32_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readIntPropertyBox(System.Int32)">readIntPropertyBox(Int32)</h4>
+  <div class="markdown level1 summary"><p>This method reads the contents of the Intellectual property box</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void readIntPropertyBox(int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_readJP2HeaderBox_System_Int64_System_Int32_System_Int64_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.readJP2HeaderBox(System.Int64%2CSystem.Int32%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L364">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readJP2HeaderBox_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readJP2HeaderBox*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readJP2HeaderBox_System_Int64_System_Int32_System_Int64_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readJP2HeaderBox(System.Int64,System.Int32,System.Int64)">readJP2HeaderBox(Int64, Int32, Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool readJP2HeaderBox(long pos, int length, long longLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">longLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_readReaderRequirementsBox_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.readReaderRequirementsBox(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L450">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readReaderRequirementsBox_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readReaderRequirementsBox*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readReaderRequirementsBox_System_Int32_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readReaderRequirementsBox(System.Int32)">readReaderRequirementsBox(Int32)</h4>
+  <div class="markdown level1 summary"><p>This method reads the contents of the Reader requirements box</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void readReaderRequirementsBox(int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_readUUIDBox_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.readUUIDBox(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L436">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readUUIDBox_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readUUIDBox*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readUUIDBox_System_Int32_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readUUIDBox(System.Int32)">readUUIDBox(Int32)</h4>
+  <div class="markdown level1 summary"><p>This method reads the contents of the Intellectual property box</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void readUUIDBox(int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_readUUIDInfoBox_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.readUUIDInfoBox(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L443">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readUUIDInfoBox_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readUUIDInfoBox*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readUUIDInfoBox_System_Int32_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readUUIDInfoBox(System.Int32)">readUUIDInfoBox(Int32)</h4>
+  <div class="markdown level1 summary"><p>This method reads the contents of the Intellectual property box</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void readUUIDInfoBox(int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader_readXMLBox_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader.readXMLBox(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L429">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readXMLBox_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readXMLBox*"></a>
+  <h4 id="CSJ2K_j2k_fileformat_reader_FileFormatReader_readXMLBox_System_Int32_" data-uid="CSJ2K.j2k.fileformat.reader.FileFormatReader.readXMLBox(System.Int32)">readXMLBox(Int32)</h4>
+  <div class="markdown level1 summary"><p>This method reads the contents of the XML box</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void readXMLBox(int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_fileformat_reader_FileFormatReader.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.fileformat.reader.FileFormatReader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/fileformat/reader/FileFormatReader.cs/#L60" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

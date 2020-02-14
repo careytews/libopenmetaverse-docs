@@ -1,0 +1,2080 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AssetManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AssetManager
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.AssetManager">
+  
+  
+  <h1 id="OpenMetaverse_AssetManager" data-uid="OpenMetaverse.AssetManager" class="text-break">Class AssetManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AssetManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_AssetManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AssetManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager__ctor_OpenMetaverse_GridClient_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.%23ctor(OpenMetaverse.GridClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L474">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager__ctor_" data-uid="OpenMetaverse.AssetManager.#ctor*"></a>
+  <h4 id="OpenMetaverse_AssetManager__ctor_OpenMetaverse_GridClient_" data-uid="OpenMetaverse.AssetManager.#ctor(OpenMetaverse.GridClient)">AssetManager(GridClient)</h4>
+  <div class="markdown level1 summary"><p>Default constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetManager(GridClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>A reference to the GridClient object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_Cache.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.Cache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L456">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_AssetManager_Cache" data-uid="OpenMetaverse.AssetManager.Cache">Cache</h4>
+  <div class="markdown level1 summary"><p>Texture download cache</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetCache Cache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetCache.html">AssetCache</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_AbortXferHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.AbortXferHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1840">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_AbortXferHandler_" data-uid="OpenMetaverse.AssetManager.AbortXferHandler*"></a>
+  <h4 id="OpenMetaverse_AssetManager_AbortXferHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.AssetManager.AbortXferHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">AbortXferHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AbortXferHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_AssetUploadCompleteHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.AssetUploadCompleteHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1706">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_AssetUploadCompleteHandler_" data-uid="OpenMetaverse.AssetManager.AssetUploadCompleteHandler*"></a>
+  <h4 id="OpenMetaverse_AssetManager_AssetUploadCompleteHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.AssetManager.AssetUploadCompleteHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">AssetUploadCompleteHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AssetUploadCompleteHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_ConfirmXferPacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.ConfirmXferPacketHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1678">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_ConfirmXferPacketHandler_" data-uid="OpenMetaverse.AssetManager.ConfirmXferPacketHandler*"></a>
+  <h4 id="OpenMetaverse_AssetManager_ConfirmXferPacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.AssetManager.ConfirmXferPacketHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">ConfirmXferPacketHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ConfirmXferPacketHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_CreateAssetWrapper_OpenMetaverse_AssetType_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.CreateAssetWrapper(OpenMetaverse.AssetType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1337">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_CreateAssetWrapper_" data-uid="OpenMetaverse.AssetManager.CreateAssetWrapper*"></a>
+  <h4 id="OpenMetaverse_AssetManager_CreateAssetWrapper_OpenMetaverse_AssetType_" data-uid="OpenMetaverse.AssetManager.CreateAssetWrapper(OpenMetaverse.AssetType)">CreateAssetWrapper(AssetType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Asset CreateAssetWrapper(AssetType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Assets.Asset.html">Asset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_InitiateDownloadPacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.InitiateDownloadPacketHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1639">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_InitiateDownloadPacketHandler_" data-uid="OpenMetaverse.AssetManager.InitiateDownloadPacketHandler*"></a>
+  <h4 id="OpenMetaverse_AssetManager_InitiateDownloadPacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.AssetManager.InitiateDownloadPacketHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">InitiateDownloadPacketHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InitiateDownloadPacketHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_OnAssetUploaded_OpenMetaverse_AssetUploadEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.OnAssetUploaded(OpenMetaverse.AssetUploadEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L360">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_OnAssetUploaded_" data-uid="OpenMetaverse.AssetManager.OnAssetUploaded*"></a>
+  <h4 id="OpenMetaverse_AssetManager_OnAssetUploaded_OpenMetaverse_AssetUploadEventArgs_" data-uid="OpenMetaverse.AssetManager.OnAssetUploaded(OpenMetaverse.AssetUploadEventArgs)">OnAssetUploaded(AssetUploadEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the AssetUploaded event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnAssetUploaded(AssetUploadEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetUploadEventArgs.html">AssetUploadEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A AssetUploadedEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_OnImageReceiveProgress_OpenMetaverse_ImageReceiveProgressEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.OnImageReceiveProgress(OpenMetaverse.ImageReceiveProgressEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L435">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_OnImageReceiveProgress_" data-uid="OpenMetaverse.AssetManager.OnImageReceiveProgress*"></a>
+  <h4 id="OpenMetaverse_AssetManager_OnImageReceiveProgress_OpenMetaverse_ImageReceiveProgressEventArgs_" data-uid="OpenMetaverse.AssetManager.OnImageReceiveProgress(OpenMetaverse.ImageReceiveProgressEventArgs)">OnImageReceiveProgress(ImageReceiveProgressEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the ImageReceiveProgress event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnImageReceiveProgress(ImageReceiveProgressEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ImageReceiveProgressEventArgs.html">ImageReceiveProgressEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A ImageReceiveProgressEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_OnInitiateDownload_OpenMetaverse_InitiateDownloadEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.OnInitiateDownload(OpenMetaverse.InitiateDownloadEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L410">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_OnInitiateDownload_" data-uid="OpenMetaverse.AssetManager.OnInitiateDownload*"></a>
+  <h4 id="OpenMetaverse_AssetManager_OnInitiateDownload_OpenMetaverse_InitiateDownloadEventArgs_" data-uid="OpenMetaverse.AssetManager.OnInitiateDownload(OpenMetaverse.InitiateDownloadEventArgs)">OnInitiateDownload(InitiateDownloadEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the InitiateDownload event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnInitiateDownload(InitiateDownloadEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.InitiateDownloadEventArgs.html">InitiateDownloadEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A InitiateDownloadEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_OnUploadProgress_OpenMetaverse_AssetUploadEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.OnUploadProgress(OpenMetaverse.AssetUploadEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L385">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_OnUploadProgress_" data-uid="OpenMetaverse.AssetManager.OnUploadProgress*"></a>
+  <h4 id="OpenMetaverse_AssetManager_OnUploadProgress_OpenMetaverse_AssetUploadEventArgs_" data-uid="OpenMetaverse.AssetManager.OnUploadProgress(OpenMetaverse.AssetUploadEventArgs)">OnUploadProgress(AssetUploadEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the UploadProgress event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnUploadProgress(AssetUploadEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetUploadEventArgs.html">AssetUploadEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A UploadProgressEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_OnXferReceived_OpenMetaverse_XferReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.OnXferReceived(OpenMetaverse.XferReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L335">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_OnXferReceived_" data-uid="OpenMetaverse.AssetManager.OnXferReceived*"></a>
+  <h4 id="OpenMetaverse_AssetManager_OnXferReceived_OpenMetaverse_XferReceivedEventArgs_" data-uid="OpenMetaverse.AssetManager.OnXferReceived(OpenMetaverse.XferReceivedEventArgs)">OnXferReceived(XferReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the XferReceived event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnXferReceived(XferReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.XferReceivedEventArgs.html">XferReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A XferReceivedEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestAsset_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_OpenMetaverse_AssetManager_AssetReceivedCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestAsset(OpenMetaverse.UUID%2COpenMetaverse.AssetType%2CSystem.Boolean%2COpenMetaverse.AssetManager.AssetReceivedCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L506">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestAsset_" data-uid="OpenMetaverse.AssetManager.RequestAsset*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestAsset_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_OpenMetaverse_AssetManager_AssetReceivedCallback_" data-uid="OpenMetaverse.AssetManager.RequestAsset(OpenMetaverse.UUID,OpenMetaverse.AssetType,System.Boolean,OpenMetaverse.AssetManager.AssetReceivedCallback)">RequestAsset(UUID, AssetType, Boolean, AssetManager.AssetReceivedCallback)</h4>
+  <div class="markdown level1 summary"><p>Request an asset download</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestAsset(UUID assetID, AssetType type, bool priority, AssetManager.AssetReceivedCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">assetID</span></td>
+        <td><p>Asset UUID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Asset type, must be correct for the transfer to succeed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>Whether to give this transfer an elevated priority</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetManager.AssetReceivedCallback.html">AssetManager.AssetReceivedCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The callback to fire when the simulator responds with the asset data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestAsset_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_OpenMetaverse_SourceType_OpenMetaverse_AssetManager_AssetReceivedCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestAsset(OpenMetaverse.UUID%2COpenMetaverse.AssetType%2CSystem.Boolean%2COpenMetaverse.SourceType%2COpenMetaverse.AssetManager.AssetReceivedCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L519">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestAsset_" data-uid="OpenMetaverse.AssetManager.RequestAsset*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestAsset_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_OpenMetaverse_SourceType_OpenMetaverse_AssetManager_AssetReceivedCallback_" data-uid="OpenMetaverse.AssetManager.RequestAsset(OpenMetaverse.UUID,OpenMetaverse.AssetType,System.Boolean,OpenMetaverse.SourceType,OpenMetaverse.AssetManager.AssetReceivedCallback)">RequestAsset(UUID, AssetType, Boolean, SourceType, AssetManager.AssetReceivedCallback)</h4>
+  <div class="markdown level1 summary"><p>Request an asset download</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestAsset(UUID assetID, AssetType type, bool priority, SourceType sourceType, AssetManager.AssetReceivedCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">assetID</span></td>
+        <td><p>Asset UUID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Asset type, must be correct for the transfer to succeed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>Whether to give this transfer an elevated priority</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.SourceType.html">SourceType</a></td>
+        <td><span class="parametername">sourceType</span></td>
+        <td><p>Source location of the requested asset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetManager.AssetReceivedCallback.html">AssetManager.AssetReceivedCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The callback to fire when the simulator responds with the asset data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestAsset_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_OpenMetaverse_SourceType_OpenMetaverse_UUID_OpenMetaverse_AssetManager_AssetReceivedCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestAsset(OpenMetaverse.UUID%2COpenMetaverse.AssetType%2CSystem.Boolean%2COpenMetaverse.SourceType%2COpenMetaverse.UUID%2COpenMetaverse.AssetManager.AssetReceivedCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L533">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestAsset_" data-uid="OpenMetaverse.AssetManager.RequestAsset*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestAsset_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_OpenMetaverse_SourceType_OpenMetaverse_UUID_OpenMetaverse_AssetManager_AssetReceivedCallback_" data-uid="OpenMetaverse.AssetManager.RequestAsset(OpenMetaverse.UUID,OpenMetaverse.AssetType,System.Boolean,OpenMetaverse.SourceType,OpenMetaverse.UUID,OpenMetaverse.AssetManager.AssetReceivedCallback)">RequestAsset(UUID, AssetType, Boolean, SourceType, UUID, AssetManager.AssetReceivedCallback)</h4>
+  <div class="markdown level1 summary"><p>Request an asset download</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestAsset(UUID assetID, AssetType type, bool priority, SourceType sourceType, UUID transactionID, AssetManager.AssetReceivedCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">assetID</span></td>
+        <td><p>Asset UUID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Asset type, must be correct for the transfer to succeed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>Whether to give this transfer an elevated priority</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.SourceType.html">SourceType</a></td>
+        <td><span class="parametername">sourceType</span></td>
+        <td><p>Source location of the requested asset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">transactionID</span></td>
+        <td><p>UUID of the transaction</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetManager.AssetReceivedCallback.html">AssetManager.AssetReceivedCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The callback to fire when the simulator responds with the asset data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestAsset_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_OpenMetaverse_SourceType_OpenMetaverse_UUID_OpenMetaverse_AssetManager_AssetReceivedCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestAsset(OpenMetaverse.UUID%2COpenMetaverse.UUID%2COpenMetaverse.UUID%2COpenMetaverse.AssetType%2CSystem.Boolean%2COpenMetaverse.SourceType%2COpenMetaverse.UUID%2COpenMetaverse.AssetManager.AssetReceivedCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L547">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestAsset_" data-uid="OpenMetaverse.AssetManager.RequestAsset*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestAsset_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_OpenMetaverse_SourceType_OpenMetaverse_UUID_OpenMetaverse_AssetManager_AssetReceivedCallback_" data-uid="OpenMetaverse.AssetManager.RequestAsset(OpenMetaverse.UUID,OpenMetaverse.UUID,OpenMetaverse.UUID,OpenMetaverse.AssetType,System.Boolean,OpenMetaverse.SourceType,OpenMetaverse.UUID,OpenMetaverse.AssetManager.AssetReceivedCallback)">RequestAsset(UUID, UUID, UUID, AssetType, Boolean, SourceType, UUID, AssetManager.AssetReceivedCallback)</h4>
+  <div class="markdown level1 summary"><p>Request an asset download</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestAsset(UUID assetID, UUID itemID, UUID taskID, AssetType type, bool priority, SourceType sourceType, UUID transactionID, AssetManager.AssetReceivedCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">assetID</span></td>
+        <td><p>Asset UUID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">itemID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">taskID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Asset type, must be correct for the transfer to succeed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>Whether to give this transfer an elevated priority</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.SourceType.html">SourceType</a></td>
+        <td><span class="parametername">sourceType</span></td>
+        <td><p>Source location of the requested asset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">transactionID</span></td>
+        <td><p>UUID of the transaction</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetManager.AssetReceivedCallback.html">AssetManager.AssetReceivedCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The callback to fire when the simulator responds with the asset data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestAssetXfer_System_String_System_Boolean_System_Boolean_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestAssetXfer(System.String%2CSystem.Boolean%2CSystem.Boolean%2COpenMetaverse.UUID%2COpenMetaverse.AssetType%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L616">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestAssetXfer_" data-uid="OpenMetaverse.AssetManager.RequestAssetXfer*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestAssetXfer_System_String_System_Boolean_System_Boolean_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_" data-uid="OpenMetaverse.AssetManager.RequestAssetXfer(System.String,System.Boolean,System.Boolean,OpenMetaverse.UUID,OpenMetaverse.AssetType,System.Boolean)">RequestAssetXfer(String, Boolean, Boolean, UUID, AssetType, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Request an asset download through the almost deprecated Xfer system</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong RequestAssetXfer(string filename, bool deleteOnCompletion, bool useBigPackets, UUID vFileID, AssetType vFileType, bool fromCache)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>Filename of the asset to request</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">deleteOnCompletion</span></td>
+        <td><p>Whether or not to delete the asset
+off the server after it is retrieved</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useBigPackets</span></td>
+        <td><p>Use large transfer packets or not</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">vFileID</span></td>
+        <td><p>UUID of the file to request, if filename is
+left empty</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a></td>
+        <td><span class="parametername">vFileType</span></td>
+        <td><p>Asset type of <pre><code>vFileID</code></pre>, or</p>
+<pre><code>AssetType.Unknown</code></pre> if filename is not empty
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fromCache</span></td>
+        <td><p>Sets the FilePath in the request to Cache
+(4) if true, otherwise Unknown (0) is used</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestEstateAsset.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestEstateAsset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L716">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestEstateAsset_" data-uid="OpenMetaverse.AssetManager.RequestEstateAsset*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestEstateAsset" data-uid="OpenMetaverse.AssetManager.RequestEstateAsset">RequestEstateAsset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestEstateAsset()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestImage_OpenMetaverse_UUID_OpenMetaverse_ImageType_OpenMetaverse_TextureDownloadCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestImage(OpenMetaverse.UUID%2COpenMetaverse.ImageType%2COpenMetaverse.TextureDownloadCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1073">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestImage_" data-uid="OpenMetaverse.AssetManager.RequestImage*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestImage_OpenMetaverse_UUID_OpenMetaverse_ImageType_OpenMetaverse_TextureDownloadCallback_" data-uid="OpenMetaverse.AssetManager.RequestImage(OpenMetaverse.UUID,OpenMetaverse.ImageType,OpenMetaverse.TextureDownloadCallback)">RequestImage(UUID, ImageType, TextureDownloadCallback)</h4>
+  <div class="markdown level1 summary"><p>Overload: Request a texture asset from the simulator using the <a class="xref" href="OpenMetaverse.TexturePipeline.html">TexturePipeline</a> system to
+manage the requests and re-assemble the image from the packets received from the simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestImage(UUID textureID, ImageType imageType, TextureDownloadCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">textureID</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the texture asset to download</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ImageType.html">ImageType</a></td>
+        <td><span class="parametername">imageType</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.ImageType.html">ImageType</a> of the texture asset.
+Use <a class="xref" href="OpenMetaverse.ImageType.html#OpenMetaverse_ImageType_Normal">Normal</a> for most textures, or <a class="xref" href="OpenMetaverse.ImageType.html#OpenMetaverse_ImageType_Baked">Baked</a> for baked layer texture assets</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a> callback to fire when the image is retrieved. The callback
+will contain the result of the request and the texture asset data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestImage_OpenMetaverse_UUID_OpenMetaverse_ImageType_OpenMetaverse_TextureDownloadCallback_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestImage(OpenMetaverse.UUID%2COpenMetaverse.ImageType%2COpenMetaverse.TextureDownloadCallback%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1090">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestImage_" data-uid="OpenMetaverse.AssetManager.RequestImage*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestImage_OpenMetaverse_UUID_OpenMetaverse_ImageType_OpenMetaverse_TextureDownloadCallback_System_Boolean_" data-uid="OpenMetaverse.AssetManager.RequestImage(OpenMetaverse.UUID,OpenMetaverse.ImageType,OpenMetaverse.TextureDownloadCallback,System.Boolean)">RequestImage(UUID, ImageType, TextureDownloadCallback, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Overload: Request a texture asset from the simulator using the <a class="xref" href="OpenMetaverse.TexturePipeline.html">TexturePipeline</a> system to
+manage the requests and re-assemble the image from the packets received from the simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestImage(UUID textureID, ImageType imageType, TextureDownloadCallback callback, bool progress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">textureID</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the texture asset to download</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ImageType.html">ImageType</a></td>
+        <td><span class="parametername">imageType</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.ImageType.html">ImageType</a> of the texture asset.
+Use <a class="xref" href="OpenMetaverse.ImageType.html#OpenMetaverse_ImageType_Normal">Normal</a> for most textures, or <a class="xref" href="OpenMetaverse.ImageType.html#OpenMetaverse_ImageType_Baked">Baked</a> for baked layer texture assets</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a> callback to fire when the image is retrieved. The callback
+will contain the result of the request and the texture asset data</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">progress</span></td>
+        <td><p>If true, the callback will be fired for each chunk of the downloaded image.
+The callback asset parameter will contain all previously received chunks of the texture asset starting
+from the beginning of the request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestImage_OpenMetaverse_UUID_OpenMetaverse_ImageType_System_Single_System_Int32_System_UInt32_OpenMetaverse_TextureDownloadCallback_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestImage(OpenMetaverse.UUID%2COpenMetaverse.ImageType%2CSystem.Single%2CSystem.Int32%2CSystem.UInt32%2COpenMetaverse.TextureDownloadCallback%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1037">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestImage_" data-uid="OpenMetaverse.AssetManager.RequestImage*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestImage_OpenMetaverse_UUID_OpenMetaverse_ImageType_System_Single_System_Int32_System_UInt32_OpenMetaverse_TextureDownloadCallback_System_Boolean_" data-uid="OpenMetaverse.AssetManager.RequestImage(OpenMetaverse.UUID,OpenMetaverse.ImageType,System.Single,System.Int32,System.UInt32,OpenMetaverse.TextureDownloadCallback,System.Boolean)">RequestImage(UUID, ImageType, Single, Int32, UInt32, TextureDownloadCallback, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Request a texture asset from the simulator using the <a class="xref" href="OpenMetaverse.TexturePipeline.html">TexturePipeline</a> system to
+manage the requests and re-assemble the image from the packets received from the simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestImage(UUID textureID, ImageType imageType, float priority, int discardLevel, uint packetStart, TextureDownloadCallback callback, bool progress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">textureID</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the texture asset to download</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ImageType.html">ImageType</a></td>
+        <td><span class="parametername">imageType</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.ImageType.html">ImageType</a> of the texture asset.
+Use <a class="xref" href="OpenMetaverse.ImageType.html#OpenMetaverse_ImageType_Normal">Normal</a> for most textures, or <a class="xref" href="OpenMetaverse.ImageType.html#OpenMetaverse_ImageType_Baked">Baked</a> for baked layer texture assets</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>A float indicating the requested priority for the transfer. Higher priority values tell the simulator
+to prioritize the request before lower valued requests. An image already being transferred using the <a class="xref" href="OpenMetaverse.TexturePipeline.html">TexturePipeline</a> can have
+its priority changed by resending the request with the new priority value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">discardLevel</span></td>
+        <td><p>Number of quality layers to discard.
+This controls the end marker of the data sent. Sending with value -1 combined with priority of 0 cancels an in-progress
+transfer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">packetStart</span></td>
+        <td><p>The packet number to begin the request at. A value of 0 begins the request
+from the start of the asset texture</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a> callback to fire when the image is retrieved. The callback
+will contain the result of the request and the texture asset data</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">progress</span></td>
+        <td><p>If true, the callback will be fired for each chunk of the downloaded image.
+The callback asset parameter will contain all previously received chunks of the texture asset starting
+from the beginning of the request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_AssetManager_RequestImage_OpenMetaverse_UUID_OpenMetaverse_ImageType_System_Single_System_Int32_System_UInt32_OpenMetaverse_TextureDownloadCallback_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A bug exists in the Linden Simulator where a -1 will occasionally be sent with a non-zero priority
+indicating an off-by-one error.</p>
+</div>
+  <h5 id="OpenMetaverse_AssetManager_RequestImage_OpenMetaverse_UUID_OpenMetaverse_ImageType_System_Single_System_Int32_System_UInt32_OpenMetaverse_TextureDownloadCallback_System_Boolean__examples">Examples</h5>
+  <p>Request an image and fire a callback when the request is complete</p>
+<pre><code>Client.Assets.RequestImage(UUID.Parse(&quot;c307629f-e3a1-4487-5e88-0d96ac9d4965&quot;), ImageType.Normal, TextureDownloader_OnDownloadFinished);
+
+private void TextureDownloader_OnDownloadFinished(TextureRequestState state, AssetTexture asset)
+{
+    if(state == TextureRequestState.Finished)
+    {
+      Console.WriteLine(&quot;Texture {0} ({1} bytes) has been successfully downloaded&quot;, 
+        asset.AssetID,
+        asset.AssetData.Length); 
+    }
+}</code></pre>
+<p>Request an image and use an inline anonymous method to handle the downloaded texture data</p>
+<pre><code>Client.Assets.RequestImage(UUID.Parse(&quot;c307629f-e3a1-4487-5e88-0d96ac9d4965&quot;), ImageType.Normal, delegate(TextureRequestState state, AssetTexture asset) 
+                                        {
+                                            if(state == TextureRequestState.Finished)
+                                            {
+                                                Console.WriteLine(&quot;Texture {0} ({1} bytes) has been successfully downloaded&quot;, 
+                                                asset.AssetID,
+                                                asset.AssetData.Length); 
+                                            }
+                                        }
+);</code></pre>
+<p>Request a texture, decode the texture to a bitmap image and apply it to a imagebox</p>
+<pre><code>Client.Assets.RequestImage(UUID.Parse(&quot;c307629f-e3a1-4487-5e88-0d96ac9d4965&quot;), ImageType.Normal, TextureDownloader_OnDownloadFinished);
+
+private void TextureDownloader_OnDownloadFinished(TextureRequestState state, AssetTexture asset)
+{
+    if(state == TextureRequestState.Finished)
+    {
+        ManagedImage imgData;
+        Image bitmap;
+
+        if (state == TextureRequestState.Finished)
+        {
+            OpenJPEG.DecodeToImage(assetTexture.AssetData, out imgData, out bitmap);
+            picInsignia.Image = bitmap;
+        }               
+    }
+}</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestImage_OpenMetaverse_UUID_OpenMetaverse_TextureDownloadCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestImage(OpenMetaverse.UUID%2COpenMetaverse.TextureDownloadCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1059">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestImage_" data-uid="OpenMetaverse.AssetManager.RequestImage*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestImage_OpenMetaverse_UUID_OpenMetaverse_TextureDownloadCallback_" data-uid="OpenMetaverse.AssetManager.RequestImage(OpenMetaverse.UUID,OpenMetaverse.TextureDownloadCallback)">RequestImage(UUID, TextureDownloadCallback)</h4>
+  <div class="markdown level1 summary"><p>Overload: Request a texture asset from the simulator using the <a class="xref" href="OpenMetaverse.TexturePipeline.html">TexturePipeline</a> system to
+manage the requests and re-assemble the image from the packets received from the simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestImage(UUID textureID, TextureDownloadCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">textureID</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the texture asset to download</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a> callback to fire when the image is retrieved. The callback
+will contain the result of the request and the texture asset data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestImageCancel_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestImageCancel(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1099">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestImageCancel_" data-uid="OpenMetaverse.AssetManager.RequestImageCancel*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestImageCancel_OpenMetaverse_UUID_" data-uid="OpenMetaverse.AssetManager.RequestImageCancel(OpenMetaverse.UUID)">RequestImageCancel(UUID)</h4>
+  <div class="markdown level1 summary"><p>Cancel a texture request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestImageCancel(UUID textureID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">textureID</span></td>
+        <td><p>The texture assets <a class="xref" href="OpenMetaverse.UUID.html">UUID</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestInventoryAsset_OpenMetaverse_InventoryItem_System_Boolean_OpenMetaverse_AssetManager_AssetReceivedCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestInventoryAsset(OpenMetaverse.InventoryItem%2CSystem.Boolean%2COpenMetaverse.AssetManager.AssetReceivedCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L711">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestInventoryAsset_" data-uid="OpenMetaverse.AssetManager.RequestInventoryAsset*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestInventoryAsset_OpenMetaverse_InventoryItem_System_Boolean_OpenMetaverse_AssetManager_AssetReceivedCallback_" data-uid="OpenMetaverse.AssetManager.RequestInventoryAsset(OpenMetaverse.InventoryItem,System.Boolean,OpenMetaverse.AssetManager.AssetReceivedCallback)">RequestInventoryAsset(InventoryItem, Boolean, AssetManager.AssetReceivedCallback)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestInventoryAsset(InventoryItem item, bool priority, AssetManager.AssetReceivedCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.InventoryItem.html">InventoryItem</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetManager.AssetReceivedCallback.html">AssetManager.AssetReceivedCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestInventoryAsset_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_OpenMetaverse_AssetManager_AssetReceivedCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestInventoryAsset(OpenMetaverse.UUID%2COpenMetaverse.UUID%2COpenMetaverse.UUID%2COpenMetaverse.UUID%2COpenMetaverse.AssetType%2CSystem.Boolean%2COpenMetaverse.AssetManager.AssetReceivedCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L658">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestInventoryAsset_" data-uid="OpenMetaverse.AssetManager.RequestInventoryAsset*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestInventoryAsset_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_UUID_OpenMetaverse_AssetType_System_Boolean_OpenMetaverse_AssetManager_AssetReceivedCallback_" data-uid="OpenMetaverse.AssetManager.RequestInventoryAsset(OpenMetaverse.UUID,OpenMetaverse.UUID,OpenMetaverse.UUID,OpenMetaverse.UUID,OpenMetaverse.AssetType,System.Boolean,OpenMetaverse.AssetManager.AssetReceivedCallback)">RequestInventoryAsset(UUID, UUID, UUID, UUID, AssetType, Boolean, AssetManager.AssetReceivedCallback)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestInventoryAsset(UUID assetID, UUID itemID, UUID taskID, UUID ownerID, AssetType type, bool priority, AssetManager.AssetReceivedCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">assetID</span></td>
+        <td><p>Use UUID.Zero if you do not have the
+asset ID but have all the necessary permissions</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">itemID</span></td>
+        <td><p>The item ID of this asset in the inventory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">taskID</span></td>
+        <td><p>Use UUID.Zero if you are not requesting an
+asset from an object inventory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">ownerID</span></td>
+        <td><p>The owner of this asset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Asset type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>Whether to prioritize this asset download or not</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetManager.AssetReceivedCallback.html">AssetManager.AssetReceivedCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestMesh_OpenMetaverse_UUID_OpenMetaverse_AssetManager_MeshDownloadCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestMesh(OpenMetaverse.UUID%2COpenMetaverse.AssetManager.MeshDownloadCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1109">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestMesh_" data-uid="OpenMetaverse.AssetManager.RequestMesh*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestMesh_OpenMetaverse_UUID_OpenMetaverse_AssetManager_MeshDownloadCallback_" data-uid="OpenMetaverse.AssetManager.RequestMesh(OpenMetaverse.UUID,OpenMetaverse.AssetManager.MeshDownloadCallback)">RequestMesh(UUID, AssetManager.MeshDownloadCallback)</h4>
+  <div class="markdown level1 summary"><p>Requests download of a mesh asset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestMesh(UUID meshID, AssetManager.MeshDownloadCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">meshID</span></td>
+        <td><p>UUID of the mesh asset</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetManager.MeshDownloadCallback.html">AssetManager.MeshDownloadCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Callback when the request completes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestServerBakedImage_OpenMetaverse_UUID_OpenMetaverse_UUID_System_String_OpenMetaverse_TextureDownloadCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestServerBakedImage(OpenMetaverse.UUID%2COpenMetaverse.UUID%2CSystem.String%2COpenMetaverse.TextureDownloadCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1166">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestServerBakedImage_" data-uid="OpenMetaverse.AssetManager.RequestServerBakedImage*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestServerBakedImage_OpenMetaverse_UUID_OpenMetaverse_UUID_System_String_OpenMetaverse_TextureDownloadCallback_" data-uid="OpenMetaverse.AssetManager.RequestServerBakedImage(OpenMetaverse.UUID,OpenMetaverse.UUID,System.String,OpenMetaverse.TextureDownloadCallback)">RequestServerBakedImage(UUID, UUID, String, TextureDownloadCallback)</h4>
+  <div class="markdown level1 summary"><p>Fetach avatar texture on a grid capable of server side baking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestServerBakedImage(UUID avatarID, UUID textureID, string bakeName, TextureDownloadCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">avatarID</span></td>
+        <td><p>ID of the avatar</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">textureID</span></td>
+        <td><p>ID of the texture</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">bakeName</span></td>
+        <td><p>Name of the part of the avatar texture applies to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TextureDownloadCallback.html">TextureDownloadCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Callback invoked on operation completion</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestUpload_OpenMetaverse_Assets_Asset_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestUpload(OpenMetaverse.Assets.Asset%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L739">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestUpload_" data-uid="OpenMetaverse.AssetManager.RequestUpload*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestUpload_OpenMetaverse_Assets_Asset_System_Boolean_" data-uid="OpenMetaverse.AssetManager.RequestUpload(OpenMetaverse.Assets.Asset,System.Boolean)">RequestUpload(Asset, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Request an asset be uploaded to the simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID RequestUpload(Asset asset, bool storeLocal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Assets.Asset.html">Asset</a></td>
+        <td><span class="parametername">asset</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.Assets.Asset.html">Asset</a> Object containing the asset data</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">storeLocal</span></td>
+        <td><p>If True, the asset once uploaded will be stored on the simulator
+in which the client was connected in addition to being stored on the asset server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the transfer, can be used to correlate the upload with
+events being fired</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestUpload_OpenMetaverse_AssetType_System_Byte___System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestUpload(OpenMetaverse.AssetType%2CSystem.Byte%5B%5D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L759">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestUpload_" data-uid="OpenMetaverse.AssetManager.RequestUpload*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestUpload_OpenMetaverse_AssetType_System_Byte___System_Boolean_" data-uid="OpenMetaverse.AssetManager.RequestUpload(OpenMetaverse.AssetType,System.Byte[],System.Boolean)">RequestUpload(AssetType, Byte[], Boolean)</h4>
+  <div class="markdown level1 summary"><p>Request an asset be uploaded to the simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID RequestUpload(AssetType type, byte[] data, bool storeLocal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a> of the asset being uploaded</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>A byte array containing the encoded asset data</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">storeLocal</span></td>
+        <td><p>If True, the asset once uploaded will be stored on the simulator
+in which the client was connected in addition to being stored on the asset server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the transfer, can be used to correlate the upload with
+events being fired</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestUpload_OpenMetaverse_UUID__OpenMetaverse_AssetType_System_Byte___System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestUpload(OpenMetaverse.UUID%40%2COpenMetaverse.AssetType%2CSystem.Byte%5B%5D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L775">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestUpload_" data-uid="OpenMetaverse.AssetManager.RequestUpload*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestUpload_OpenMetaverse_UUID__OpenMetaverse_AssetType_System_Byte___System_Boolean_" data-uid="OpenMetaverse.AssetManager.RequestUpload(OpenMetaverse.UUID@,OpenMetaverse.AssetType,System.Byte[],System.Boolean)">RequestUpload(out UUID, AssetType, Byte[], Boolean)</h4>
+  <div class="markdown level1 summary"><p>Request an asset be uploaded to the simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID RequestUpload(out UUID assetID, AssetType type, byte[] data, bool storeLocal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">assetID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Asset type to upload this data as</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>A byte array containing the encoded asset data</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">storeLocal</span></td>
+        <td><p>If True, the asset once uploaded will be stored on the simulator
+in which the client was connected in addition to being stored on the asset server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the transfer, can be used to correlate the upload with
+events being fired</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestUpload_OpenMetaverse_UUID__OpenMetaverse_AssetType_System_Byte___System_Boolean_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestUpload(OpenMetaverse.UUID%40%2COpenMetaverse.AssetType%2CSystem.Byte%5B%5D%2CSystem.Boolean%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L791">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestUpload_" data-uid="OpenMetaverse.AssetManager.RequestUpload*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestUpload_OpenMetaverse_UUID__OpenMetaverse_AssetType_System_Byte___System_Boolean_OpenMetaverse_UUID_" data-uid="OpenMetaverse.AssetManager.RequestUpload(OpenMetaverse.UUID@,OpenMetaverse.AssetType,System.Byte[],System.Boolean,OpenMetaverse.UUID)">RequestUpload(out UUID, AssetType, Byte[], Boolean, UUID)</h4>
+  <div class="markdown level1 summary"><p>Initiate an asset upload</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID RequestUpload(out UUID assetID, AssetType type, byte[] data, bool storeLocal, UUID transactionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">assetID</span></td>
+        <td><p>The ID this asset will have if the
+upload succeeds</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetType.html">AssetType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Asset type to upload this data as</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Raw asset data to upload</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">storeLocal</span></td>
+        <td><p>Whether to store this asset on the local
+simulator or the grid-wide asset server</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">transactionID</span></td>
+        <td><p>The tranaction id for the upload <see cref="!:RequestCreateItem"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>The transaction ID of this transfer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestUploadBakedTexture_System_Byte___OpenMetaverse_AssetManager_BakedTextureUploadedCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestUploadBakedTexture(System.Byte%5B%5D%2COpenMetaverse.AssetManager.BakedTextureUploadedCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L864">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestUploadBakedTexture_" data-uid="OpenMetaverse.AssetManager.RequestUploadBakedTexture*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestUploadBakedTexture_System_Byte___OpenMetaverse_AssetManager_BakedTextureUploadedCallback_" data-uid="OpenMetaverse.AssetManager.RequestUploadBakedTexture(System.Byte[],OpenMetaverse.AssetManager.BakedTextureUploadedCallback)">RequestUploadBakedTexture(Byte[], AssetManager.BakedTextureUploadedCallback)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestUploadBakedTexture(byte[] textureData, AssetManager.BakedTextureUploadedCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">textureData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AssetManager.BakedTextureUploadedCallback.html">AssetManager.BakedTextureUploadedCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_RequestXferHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.RequestXferHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1653">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_RequestXferHandler_" data-uid="OpenMetaverse.AssetManager.RequestXferHandler*"></a>
+  <h4 id="OpenMetaverse_AssetManager_RequestXferHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.AssetManager.RequestXferHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">RequestXferHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RequestXferHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_SendXferPacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.SendXferPacketHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1760">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_SendXferPacketHandler_" data-uid="OpenMetaverse.AssetManager.SendXferPacketHandler*"></a>
+  <h4 id="OpenMetaverse_AssetManager_SendXferPacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.AssetManager.SendXferPacketHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">SendXferPacketHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SendXferPacketHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_TransferInfoHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.TransferInfoHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1462">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_TransferInfoHandler_" data-uid="OpenMetaverse.AssetManager.TransferInfoHandler*"></a>
+  <h4 id="OpenMetaverse_AssetManager_TransferInfoHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.AssetManager.TransferInfoHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">TransferInfoHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void TransferInfoHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_TransferPacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.TransferPacketHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L1540">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AssetManager_TransferPacketHandler_" data-uid="OpenMetaverse.AssetManager.TransferPacketHandler*"></a>
+  <h4 id="OpenMetaverse_AssetManager_TransferPacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.AssetManager.TransferPacketHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">TransferPacketHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void TransferPacketHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_AssetUploaded.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.AssetUploaded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L371">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_AssetManager_AssetUploaded" data-uid="OpenMetaverse.AssetManager.AssetUploaded">AssetUploaded</h4>
+  <div class="markdown level1 summary"><p>Raised during upload completes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;AssetUploadEventArgs&gt; AssetUploaded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.AssetUploadEventArgs.html">AssetUploadEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_ImageReceiveProgress.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.ImageReceiveProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L446">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_AssetManager_ImageReceiveProgress" data-uid="OpenMetaverse.AssetManager.ImageReceiveProgress">ImageReceiveProgress</h4>
+  <div class="markdown level1 summary"><p>Fired when a texture is in the process of being downloaded by the TexturePipeline class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ImageReceiveProgressEventArgs&gt; ImageReceiveProgress</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.ImageReceiveProgressEventArgs.html">ImageReceiveProgressEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_InitiateDownload.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.InitiateDownload%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L421">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_AssetManager_InitiateDownload" data-uid="OpenMetaverse.AssetManager.InitiateDownload">InitiateDownload</h4>
+  <div class="markdown level1 summary"><p>Fired when the simulator sends an InitiateDownloadPacket, used to download terrain .raw files</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;InitiateDownloadEventArgs&gt; InitiateDownload</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.InitiateDownloadEventArgs.html">InitiateDownloadEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_UploadProgress.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.UploadProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L396">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_AssetManager_UploadProgress" data-uid="OpenMetaverse.AssetManager.UploadProgress">UploadProgress</h4>
+  <div class="markdown level1 summary"><p>Raised during upload with progres update</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;AssetUploadEventArgs&gt; UploadProgress</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.AssetUploadEventArgs.html">AssetUploadEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager_XferReceived.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager.XferReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L346">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_AssetManager_XferReceived" data-uid="OpenMetaverse.AssetManager.XferReceived">XferReceived</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds sends</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;XferReceivedEventArgs&gt; XferReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.XferReceivedEventArgs.html">XferReceivedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AssetManager.md&amp;value=---%0Auid%3A%20OpenMetaverse.AssetManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/AssetManager.cs/#L300" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

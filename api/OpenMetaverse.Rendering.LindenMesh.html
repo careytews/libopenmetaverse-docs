@@ -1,0 +1,1075 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LindenMesh
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LindenMesh
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.Rendering.LindenMesh">
+  
+  
+  <h1 id="OpenMetaverse_Rendering_LindenMesh" data-uid="OpenMetaverse.Rendering.LindenMesh" class="text-break">Class LindenMesh
+  </h1>
+  <div class="markdown level0 summary"><p>Load and handle Linden Lab binary meshes.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LindenMesh</span></div>
+      <div class="level2"><a class="xref" href="AvatarPreview.GLMesh.html">GLMesh</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.Rendering.html">OpenMetaverse.Rendering</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_Rendering_LindenMesh_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LindenMesh</code></pre>
+  </div>
+  <h5 id="OpenMetaverse_Rendering_LindenMesh_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The exact definition of this file is a bit sketchy, especially concerning skin weights.
+A good starting point is on the
+<a href="http://wiki.secondlife.com/wiki/Avatar_Appearance#Linden_binary_mesh_file">second life wiki</a></p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh__ctor_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L283">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh__ctor_" data-uid="OpenMetaverse.Rendering.LindenMesh.#ctor*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh__ctor_System_String_" data-uid="OpenMetaverse.Rendering.LindenMesh.#ctor(System.String)">LindenMesh(String)</h4>
+  <div class="markdown level1 summary"><p>Construct a linden mesh with the given name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LindenMesh(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>the name of the mesh</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh__ctor_System_String_OpenMetaverse_Rendering_LindenSkeleton_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.%23ctor(System.String%2COpenMetaverse.Rendering.LindenSkeleton)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L291">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh__ctor_" data-uid="OpenMetaverse.Rendering.LindenMesh.#ctor*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh__ctor_System_String_OpenMetaverse_Rendering_LindenSkeleton_" data-uid="OpenMetaverse.Rendering.LindenMesh.#ctor(System.String,OpenMetaverse.Rendering.LindenSkeleton)">LindenMesh(String, LindenSkeleton)</h4>
+  <div class="markdown level1 summary"><p>Construct a linden mesh with the given name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LindenMesh(string name, LindenSkeleton skeleton)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>the name of the mesh</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.LindenSkeleton.html">LindenSkeleton</a></td>
+        <td><span class="parametername">skeleton</span></td>
+        <td><p>The skeleton governing mesh deformation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_MinPixelWidth.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.MinPixelWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L254">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_MinPixelWidth" data-uid="OpenMetaverse.Rendering.LindenMesh.MinPixelWidth">MinPixelWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinPixelWidth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_Morphs.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.Morphs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L277">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_Morphs" data-uid="OpenMetaverse.Rendering.LindenMesh.Morphs">Morphs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LindenMesh.Morph[] Morphs</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.LindenMesh.Morph.html">LindenMesh.Morph</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_SkinWeights.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.SkinWeights%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L459">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_SkinWeights" data-uid="OpenMetaverse.Rendering.LindenMesh.SkinWeights">SkinWeights</h4>
+  <div class="markdown level1 summary"><p>List of skinweights, in the same order as the mesh vertices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;LindenMesh.SkinWeightElement&gt; SkinWeights</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenMetaverse.Rendering.LindenMesh.SkinWeightElement.html">LindenMesh.SkinWeightElement</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_Faces.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.Faces%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L267">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_Faces_" data-uid="OpenMetaverse.Rendering.LindenMesh.Faces*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_Faces" data-uid="OpenMetaverse.Rendering.LindenMesh.Faces">Faces</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LindenMesh.Face[] Faces { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.LindenMesh.Face.html">LindenMesh.Face</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_HasDetailTexCoords.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.HasDetailTexCoords%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L259">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_HasDetailTexCoords_" data-uid="OpenMetaverse.Rendering.LindenMesh.HasDetailTexCoords*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_HasDetailTexCoords" data-uid="OpenMetaverse.Rendering.LindenMesh.HasDetailTexCoords">HasDetailTexCoords</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasDetailTexCoords { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_HasWeights.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.HasWeights%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L258">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_HasWeights_" data-uid="OpenMetaverse.Rendering.LindenMesh.HasWeights*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_HasWeights" data-uid="OpenMetaverse.Rendering.LindenMesh.HasWeights">HasWeights</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasWeights { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_Header.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.Header%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L257">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_Header_" data-uid="OpenMetaverse.Rendering.LindenMesh.Header*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_Header" data-uid="OpenMetaverse.Rendering.LindenMesh.Header">Header</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Header { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_LodMeshes.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.LodMeshes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L275">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_LodMeshes_" data-uid="OpenMetaverse.Rendering.LindenMesh.LodMeshes*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_LodMeshes" data-uid="OpenMetaverse.Rendering.LindenMesh.LodMeshes">LodMeshes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SortedList&lt;int, object&gt; LodMeshes { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.SortedList</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_Name.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L256">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_Name_" data-uid="OpenMetaverse.Rendering.LindenMesh.Name*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_Name" data-uid="OpenMetaverse.Rendering.LindenMesh.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_NumFaces.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.NumFaces%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L266">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_NumFaces_" data-uid="OpenMetaverse.Rendering.LindenMesh.NumFaces*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_NumFaces" data-uid="OpenMetaverse.Rendering.LindenMesh.NumFaces">NumFaces</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort NumFaces { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_NumRemaps.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.NumRemaps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L270">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_NumRemaps_" data-uid="OpenMetaverse.Rendering.LindenMesh.NumRemaps*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_NumRemaps" data-uid="OpenMetaverse.Rendering.LindenMesh.NumRemaps">NumRemaps</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumRemaps { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_NumSkinJoints.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.NumSkinJoints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L268">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_NumSkinJoints_" data-uid="OpenMetaverse.Rendering.LindenMesh.NumSkinJoints*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_NumSkinJoints" data-uid="OpenMetaverse.Rendering.LindenMesh.NumSkinJoints">NumSkinJoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort NumSkinJoints { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_NumVertices.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.NumVertices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L264">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_NumVertices_" data-uid="OpenMetaverse.Rendering.LindenMesh.NumVertices*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_NumVertices" data-uid="OpenMetaverse.Rendering.LindenMesh.NumVertices">NumVertices</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort NumVertices { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_Position.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L260">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_Position_" data-uid="OpenMetaverse.Rendering.LindenMesh.Position*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_Position" data-uid="OpenMetaverse.Rendering.LindenMesh.Position">Position</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Position { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_RotationAngles.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.RotationAngles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L261">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_RotationAngles_" data-uid="OpenMetaverse.Rendering.LindenMesh.RotationAngles*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_RotationAngles" data-uid="OpenMetaverse.Rendering.LindenMesh.RotationAngles">RotationAngles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RotationAngles { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_Scale.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.Scale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L263">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_Scale_" data-uid="OpenMetaverse.Rendering.LindenMesh.Scale*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_Scale" data-uid="OpenMetaverse.Rendering.LindenMesh.Scale">Scale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Scale { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_Skeleton.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.Skeleton%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L45">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_Skeleton_" data-uid="OpenMetaverse.Rendering.LindenMesh.Skeleton*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_Skeleton" data-uid="OpenMetaverse.Rendering.LindenMesh.Skeleton">Skeleton</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LindenSkeleton Skeleton { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.LindenSkeleton.html">LindenSkeleton</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_SkinJoints.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.SkinJoints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L269">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_SkinJoints_" data-uid="OpenMetaverse.Rendering.LindenMesh.SkinJoints*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_SkinJoints" data-uid="OpenMetaverse.Rendering.LindenMesh.SkinJoints">SkinJoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] SkinJoints { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_VertexRemaps.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.VertexRemaps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L271">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_VertexRemaps_" data-uid="OpenMetaverse.Rendering.LindenMesh.VertexRemaps*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_VertexRemaps" data-uid="OpenMetaverse.Rendering.LindenMesh.VertexRemaps">VertexRemaps</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LindenMesh.VertexRemap[] VertexRemaps { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.LindenMesh.VertexRemap.html">LindenMesh.VertexRemap</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_Vertices.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.Vertices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L265">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_Vertices_" data-uid="OpenMetaverse.Rendering.LindenMesh.Vertices*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_Vertices" data-uid="OpenMetaverse.Rendering.LindenMesh.Vertices">Vertices</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LindenMesh.Vertex[] Vertices { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.LindenMesh.Vertex.html">LindenMesh.Vertex</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_LoadLodMesh_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.LoadLodMesh(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L507">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_LoadLodMesh_" data-uid="OpenMetaverse.Rendering.LindenMesh.LoadLodMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_LoadLodMesh_System_Int32_System_String_" data-uid="OpenMetaverse.Rendering.LindenMesh.LoadLodMesh(System.Int32,System.String)">LoadLodMesh(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object LoadLodMesh(int level, string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_LoadLODMesh_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.LoadLODMesh(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L496">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_LoadLODMesh_" data-uid="OpenMetaverse.Rendering.LindenMesh.LoadLODMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_LoadLODMesh_System_Int32_System_String_" data-uid="OpenMetaverse.Rendering.LindenMesh.LoadLODMesh(System.Int32,System.String)">LoadLODMesh(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use LoadLodMesh&quot;)]
+public virtual void LoadLODMesh(int level, string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_LoadMesh_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.LoadMesh(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L305">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_LoadMesh_" data-uid="OpenMetaverse.Rendering.LindenMesh.LoadMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_LoadMesh_System_String_" data-uid="OpenMetaverse.Rendering.LindenMesh.LoadMesh(System.String)">LoadMesh(String)</h4>
+  <div class="markdown level1 summary"><p>Load the mesh from a stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LoadMesh(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>The filename and path of the file containing the mesh data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_LoadReferenceMesh_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.LoadReferenceMesh(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L529">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_LoadReferenceMesh_" data-uid="OpenMetaverse.Rendering.LindenMesh.LoadReferenceMesh*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_LoadReferenceMesh_System_Int32_System_String_" data-uid="OpenMetaverse.Rendering.LindenMesh.LoadReferenceMesh(System.Int32,System.String)">LoadReferenceMesh(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Load a reference mesh from a given stream</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual LindenMesh.ReferenceMesh LoadReferenceMesh(int lodLevel, string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lodLevel</span></td>
+        <td><p>The lod level of this reference mesh</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filename</span></td>
+        <td><p>the name and path of the file containing the mesh data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Rendering.LindenMesh.ReferenceMesh.html">LindenMesh.ReferenceMesh</a></td>
+        <td><p>the loaded reference mesh</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh_TrimAt0_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh.TrimAt0(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L549">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Rendering_LindenMesh_TrimAt0_" data-uid="OpenMetaverse.Rendering.LindenMesh.TrimAt0*"></a>
+  <h4 id="OpenMetaverse_Rendering_LindenMesh_TrimAt0_System_String_" data-uid="OpenMetaverse.Rendering.LindenMesh.TrimAt0(System.String)">TrimAt0(String)</h4>
+  <div class="markdown level1 summary"><p>Trim a string at the first occurence of NUL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TrimAt0(string s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td><p>The string to trim</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A standard .Net string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_Rendering_LindenMesh_TrimAt0_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The llm file uses null terminated strings (C/C++ style), this is where
+the conversion is made.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Rendering_LindenMesh.md&amp;value=---%0Auid%3A%20OpenMetaverse.Rendering.LindenMesh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Rendering/LindenMesh.cs/#L41" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

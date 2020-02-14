@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class InverseWT
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class InverseWT
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT">
+  
+  
+  <h1 id="CSJ2K_j2k_wavelet_synthesis_InverseWT" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT" class="text-break">Class InverseWT
+  </h1>
+  <div class="markdown level0 summary"><p>This abstract class extends the WaveletTransform one with the specifics of
+inverse wavelet transforms.</p>
+<p>The image can be reconstructed at different resolution levels. This is
+controlled by the setResLevel() method. All the image, tile and component
+dimensions are relative the the resolution level being used. The number of
+resolution levels indicates the number of wavelet recompositions that will
+be used, if it is equal as the number of decomposition levels then the full
+resolution image is reconstructed.</p>
+<p>It is assumed in this class that all tiles and components the same
+reconstruction resolution level. If that where not the case the
+implementing class should have additional data structures to store those
+values for each tile. However, the &apos;recResLvl&apos; member variable always
+contain the values applicable to the current tile, since many methods
+implemented here rely on them.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html">InvWTAdapter</a></div>
+    <div class="level2"><span class="xref">InverseWT</span></div>
+      <div class="level3"><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTFull.html">InvWTFull</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWT.html">InvWT</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.WaveletTransform.html">WaveletTransform</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgResLevel">InvWTAdapter.ImgResLevel</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileWidth">InvWTAdapter.TileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileHeight">InvWTAdapter.TileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NomTileWidth">InvWTAdapter.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NomTileHeight">InvWTAdapter.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgWidth">InvWTAdapter.ImgWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgHeight">InvWTAdapter.ImgHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NumComps">InvWTAdapter.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileIdx">InvWTAdapter.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgULX">InvWTAdapter.ImgULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgULY">InvWTAdapter.ImgULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TilePartULX">InvWTAdapter.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TilePartULY">InvWTAdapter.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_decSpec">InvWTAdapter.decSpec</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_mressrc">InvWTAdapter.mressrc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_reslvl">InvWTAdapter.reslvl</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_maxImgRes">InvWTAdapter.maxImgRes</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompSubsX_System_Int32_">InvWTAdapter.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompSubsY_System_Int32_">InvWTAdapter.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTileCompWidth_System_Int32_System_Int32_">InvWTAdapter.getTileCompWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTileCompHeight_System_Int32_System_Int32_">InvWTAdapter.getTileCompHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompImgWidth_System_Int32_">InvWTAdapter.getCompImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompImgHeight_System_Int32_">InvWTAdapter.getCompImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_setTile_System_Int32_System_Int32_">InvWTAdapter.setTile(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_nextTile">InvWTAdapter.nextTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTile_CSJ2K_j2k_image_Coord_">InvWTAdapter.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompULX_System_Int32_">InvWTAdapter.getCompULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompULY_System_Int32_">InvWTAdapter.getCompULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNumTiles_CSJ2K_j2k_image_Coord_">InvWTAdapter.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNumTiles">InvWTAdapter.getNumTiles()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getSynSubbandTree_System_Int32_System_Int32_">InvWTAdapter.getSynSubbandTree(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_isReversible_System_Int32_System_Int32_">InvWTAdapter.isReversible(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNomRangeBits_System_Int32_">InvWTAdapter.getNomRangeBits(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.html#CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getImplementationType_System_Int32_">InvWTAdapter.getImplementationType(Int32)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.html">CSJ2K.j2k.wavelet.synthesis</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_wavelet_synthesis_InverseWT_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class InverseWT : InvWTAdapter, InvWT, WaveletTransform, BlkImgDataSrc, ImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InverseWT__ctor_CSJ2K_j2k_wavelet_synthesis_MultiResImgData_CSJ2K_j2k_decoder_DecoderSpecs_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InverseWT.%23ctor(CSJ2K.j2k.wavelet.synthesis.MultiResImgData%2CCSJ2K.j2k.decoder.DecoderSpecs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InverseWT.cs/#L91">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InverseWT__ctor_" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InverseWT__ctor_CSJ2K_j2k_wavelet_synthesis_MultiResImgData_CSJ2K_j2k_decoder_DecoderSpecs_" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT.#ctor(CSJ2K.j2k.wavelet.synthesis.MultiResImgData,CSJ2K.j2k.decoder.DecoderSpecs)">InverseWT(MultiResImgData, DecoderSpecs)</h4>
+  <div class="markdown level1 summary"><p>Initializes this object with the given source of wavelet
+coefficients. It initializes the resolution level for full resolutioin
+reconstruction (i.e. the maximum resolution available from the 'src'
+source).</p>
+<p>It is assumed here that all tiles and components have the same
+reconstruction resolution level. If that was not the case it should be
+the value for the current tile of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InverseWT(MultiResImgData src, DecoderSpecs decSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>from where the wavelet coefficinets should be obtained.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.decoder.DecoderSpecs.html">DecoderSpecs</a></td>
+        <td><span class="parametername">decSpec</span></td>
+        <td><p>The decoder specifications</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InverseWT_createInstance_CSJ2K_j2k_wavelet_synthesis_CBlkWTDataSrcDec_CSJ2K_j2k_decoder_DecoderSpecs_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InverseWT.createInstance(CSJ2K.j2k.wavelet.synthesis.CBlkWTDataSrcDec%2CCSJ2K.j2k.decoder.DecoderSpecs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InverseWT.cs/#L109">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InverseWT_createInstance_" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT.createInstance*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InverseWT_createInstance_CSJ2K_j2k_wavelet_synthesis_CBlkWTDataSrcDec_CSJ2K_j2k_decoder_DecoderSpecs_" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT.createInstance(CSJ2K.j2k.wavelet.synthesis.CBlkWTDataSrcDec,CSJ2K.j2k.decoder.DecoderSpecs)">createInstance(CBlkWTDataSrcDec, DecoderSpecs)</h4>
+  <div class="markdown level1 summary"><p>Creates an InverseWT object that works on the data type of the source,
+with the special additional parameters from the parameter
+list. Currently the parameter list is ignored since no special
+parameters can be specified for the inverse wavelet transform yet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InverseWT createInstance(CBlkWTDataSrcDec src, DecoderSpecs decSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.CBlkWTDataSrcDec.html">CBlkWTDataSrcDec</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>The source of data for the inverse wavelet
+transform.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.decoder.DecoderSpecs.html">DecoderSpecs</a></td>
+        <td><span class="parametername">decSpec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InverseWT.html">InverseWT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InverseWT_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InverseWT.getCompData(CSJ2K.j2k.image.DataBlk%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InverseWT.cs/#L117">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InverseWT_getCompData_" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT.getCompData*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InverseWT_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT.getCompData(CSJ2K.j2k.image.DataBlk,System.Int32)">getCompData(DataBlk, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DataBlk getCompData(DataBlk param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InverseWT_getFixedPoint_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InverseWT.getFixedPoint(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InverseWT.cs/#L115">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InverseWT_getFixedPoint_" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT.getFixedPoint*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InverseWT_getFixedPoint_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT.getFixedPoint(System.Int32)">getFixedPoint(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int getFixedPoint(int param1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InverseWT_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InverseWT.getInternCompData(CSJ2K.j2k.image.DataBlk%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InverseWT.cs/#L116">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InverseWT_getInternCompData_" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT.getInternCompData*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InverseWT_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InverseWT.getInternCompData(CSJ2K.j2k.image.DataBlk,System.Int32)">getInternCompData(DataBlk, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract DataBlk getInternCompData(DataBlk param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWT.html">InvWT</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.WaveletTransform.html">WaveletTransform</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InverseWT.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InverseWT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InverseWT.cs/#L72" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

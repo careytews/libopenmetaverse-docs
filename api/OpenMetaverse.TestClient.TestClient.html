@@ -1,0 +1,803 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TestClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TestClient
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.TestClient.TestClient">
+  
+  
+  <h1 id="OpenMetaverse_TestClient_TestClient" data-uid="OpenMetaverse.TestClient.TestClient" class="text-break">Class TestClient
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a></div>
+    <div class="level2"><span class="xref">TestClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Network">GridClient.Network</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Settings">GridClient.Settings</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Parcels">GridClient.Parcels</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Self">GridClient.Self</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Avatars">GridClient.Avatars</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Estate">GridClient.Estate</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Friends">GridClient.Friends</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Grid">GridClient.Grid</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Objects">GridClient.Objects</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Groups">GridClient.Groups</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Assets">GridClient.Assets</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Appearance">GridClient.Appearance</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Inventory">GridClient.Inventory</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Directory">GridClient.Directory</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Terrain">GridClient.Terrain</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Sound">GridClient.Sound</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Throttle">GridClient.Throttle</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_Stats">GridClient.Stats</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.GridClient.html#OpenMetaverse_GridClient_ToString">GridClient.ToString()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.TestClient.html">OpenMetaverse.TestClient</a></h6>
+  <h6><strong>Assembly</strong>: TestClient.dll</h6>
+  <h5 id="OpenMetaverse_TestClient_TestClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TestClient : GridClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient__ctor_OpenMetaverse_TestClient_ClientManager_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.%23ctor(OpenMetaverse.TestClient.ClientManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L36">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TestClient_TestClient__ctor_" data-uid="OpenMetaverse.TestClient.TestClient.#ctor*"></a>
+  <h4 id="OpenMetaverse_TestClient_TestClient__ctor_OpenMetaverse_TestClient_ClientManager_" data-uid="OpenMetaverse.TestClient.TestClient.#ctor(OpenMetaverse.TestClient.ClientManager)">TestClient(ClientManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TestClient(ClientManager manager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TestClient.ClientManager.html">ClientManager</a></td>
+        <td><span class="parametername">manager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_AllowObjectMaster.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.AllowObjectMaster%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L22">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_AllowObjectMaster" data-uid="OpenMetaverse.TestClient.TestClient.AllowObjectMaster">AllowObjectMaster</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowObjectMaster</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_Appearances.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.Appearances%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L16">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_Appearances" data-uid="OpenMetaverse.TestClient.TestClient.Appearances">Appearances</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;UUID, AvatarAppearancePacket&gt; Appearances</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>, <a class="xref" href="OpenMetaverse.Packets.AvatarAppearancePacket.html">AvatarAppearancePacket</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_ClientManager.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.ClientManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L23">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_ClientManager" data-uid="OpenMetaverse.TestClient.TestClient.ClientManager">ClientManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClientManager ClientManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TestClient.ClientManager.html">ClientManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_Commands.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.Commands%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L17">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_Commands" data-uid="OpenMetaverse.TestClient.TestClient.Commands">Commands</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, Command&gt; Commands</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="OpenMetaverse.TestClient.Command.html">Command</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_CurrentDirectory.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.CurrentDirectory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L26">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_CurrentDirectory" data-uid="OpenMetaverse.TestClient.TestClient.CurrentDirectory">CurrentDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InventoryFolder CurrentDirectory</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.InventoryFolder.html">InventoryFolder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_GroupCommands.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.GroupCommands%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L19">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_GroupCommands" data-uid="OpenMetaverse.TestClient.TestClient.GroupCommands">GroupCommands</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GroupCommands</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_GroupID.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.GroupID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L14">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_GroupID" data-uid="OpenMetaverse.TestClient.TestClient.GroupID">GroupID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID GroupID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_GroupMembers.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.GroupMembers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L15">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_GroupMembers" data-uid="OpenMetaverse.TestClient.TestClient.GroupMembers">GroupMembers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;UUID, GroupMember&gt; GroupMembers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>, <a class="xref" href="OpenMetaverse.GroupMember.html">GroupMember</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_GroupsCache.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.GroupsCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L30">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_GroupsCache" data-uid="OpenMetaverse.TestClient.TestClient.GroupsCache">GroupsCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;UUID, Group&gt; GroupsCache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>, <a class="xref" href="OpenMetaverse.Group.html">Group</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_MasterKey.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.MasterKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L21">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_MasterKey" data-uid="OpenMetaverse.TestClient.TestClient.MasterKey">MasterKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID MasterKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_MasterName.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.MasterName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L20">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_MasterName" data-uid="OpenMetaverse.TestClient.TestClient.MasterName">MasterName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MasterName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_Running.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.Running%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L18">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_Running" data-uid="OpenMetaverse.TestClient.TestClient.Running">Running</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Running</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_VoiceManager.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.VoiceManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L24">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_TestClient_TestClient_VoiceManager" data-uid="OpenMetaverse.TestClient.TestClient.VoiceManager">VoiceManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoiceManager VoiceManager</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Utilities.VoiceManager.html">VoiceManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_GroupName2UUID_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.GroupName2UUID(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L193">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TestClient_TestClient_GroupName2UUID_" data-uid="OpenMetaverse.TestClient.TestClient.GroupName2UUID*"></a>
+  <h4 id="OpenMetaverse_TestClient_TestClient_GroupName2UUID_System_String_" data-uid="OpenMetaverse.TestClient.TestClient.GroupName2UUID(System.String)">GroupName2UUID(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID GroupName2UUID(string groupName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">groupName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_LoginHandler_System_Object_OpenMetaverse_LoginProgressEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.LoginHandler(System.Object%2COpenMetaverse.LoginProgressEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L137">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TestClient_TestClient_LoginHandler_" data-uid="OpenMetaverse.TestClient.TestClient.LoginHandler*"></a>
+  <h4 id="OpenMetaverse_TestClient_TestClient_LoginHandler_System_Object_OpenMetaverse_LoginProgressEventArgs_" data-uid="OpenMetaverse.TestClient.TestClient.LoginHandler(System.Object,OpenMetaverse.LoginProgressEventArgs)">LoginHandler(Object, LoginProgressEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Initialize everything that needs to be initialized once we're logged in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoginHandler(object sender, LoginProgressEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.LoginProgressEventArgs.html">LoginProgressEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_RegisterAllCommands_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.RegisterAllCommands(System.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L146">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TestClient_TestClient_RegisterAllCommands_" data-uid="OpenMetaverse.TestClient.TestClient.RegisterAllCommands*"></a>
+  <h4 id="OpenMetaverse_TestClient_TestClient_RegisterAllCommands_System_Reflection_Assembly_" data-uid="OpenMetaverse.TestClient.TestClient.RegisterAllCommands(System.Reflection.Assembly)">RegisterAllCommands(Assembly)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterAllCommands(Assembly assembly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span></td>
+        <td><span class="parametername">assembly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_RegisterCommand_OpenMetaverse_TestClient_Command_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.RegisterCommand(OpenMetaverse.TestClient.Command)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L166">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TestClient_TestClient_RegisterCommand_" data-uid="OpenMetaverse.TestClient.TestClient.RegisterCommand*"></a>
+  <h4 id="OpenMetaverse_TestClient_TestClient_RegisterCommand_OpenMetaverse_TestClient_Command_" data-uid="OpenMetaverse.TestClient.TestClient.RegisterCommand(OpenMetaverse.TestClient.Command)">RegisterCommand(Command)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterCommand(Command command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TestClient.Command.html">Command</a></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_ReloadGroupsCache.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.ReloadGroupsCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L175">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TestClient_TestClient_ReloadGroupsCache_" data-uid="OpenMetaverse.TestClient.TestClient.ReloadGroupsCache*"></a>
+  <h4 id="OpenMetaverse_TestClient_TestClient_ReloadGroupsCache" data-uid="OpenMetaverse.TestClient.TestClient.ReloadGroupsCache">ReloadGroupsCache()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReloadGroupsCache()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient_SetDefaultCamera.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient.SetDefaultCamera%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L91">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TestClient_TestClient_SetDefaultCamera_" data-uid="OpenMetaverse.TestClient.TestClient.SetDefaultCamera*"></a>
+  <h4 id="OpenMetaverse_TestClient_TestClient_SetDefaultCamera" data-uid="OpenMetaverse.TestClient.TestClient.SetDefaultCamera">SetDefaultCamera()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDefaultCamera()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TestClient_TestClient.md&amp;value=---%0Auid%3A%20OpenMetaverse.TestClient.TestClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/Programs/examples/TestClient/TestClient.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

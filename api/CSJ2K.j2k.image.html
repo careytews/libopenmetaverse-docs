@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.j2k.image
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.j2k.image
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.image">
+  
+  <h1 id="CSJ2K_j2k_image" data-uid="CSJ2K.j2k.image" class="text-break">Namespace CSJ2K.j2k.image
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.image.CompTransfSpec.html">CompTransfSpec</a></h4>
+      <section><p>This class extends the ModuleSpec class in order to hold tile
+specifications for multiple component transformation</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></h4>
+      <section><p>This class represents 2-D coordinates.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></h4>
+      <section><p>This is a generic abstract class to store data from a block of an
+image. This class does not have the notion of components. Therefore, it
+should be used for data from a single component. Subclasses should
+implement the different types of storage (<tt>int</tt>, <tt>float</tt>,
+etc.).</p>
+<p>The data is always stored in one array, of the type matching the data
+type (i.e. for &apos;int&apos; it&apos;s an &apos;int[]&apos;). The data should be stored in the
+array in standard scan-line order. That is the samples go from the top-left
+corner of the code-block to the lower-right corner by line and then
+column.</p>
+<p>The member variable &apos;offset&apos; gives the index in the array of the first
+data element (i.e. the top-left coefficient (ulx,uly)). The member variable
+&apos;scanw&apos; gives the width of the scan that is used to store the data, that
+can be different from the width of the block. Element &apos;(x,y)&apos; of the
+code-block (i.e. &apos;(ulx,uly)&apos; is the top-left coefficient), will appear at
+position &apos;offset+(y-uly)*scanw+(x-ulx)&apos; in the array of data.</p>
+<p>A block of data can have the <em>progressive</em> attribute set. Data is
+progressive when it is obtained by successive refinement and the values in
+this block are approximations of the &quot;final&quot; values. When the final values
+are returned the progressive attribute must be turned off.</p>
+<p>The classes <tt>DataBlkInt</tt> and <tt>DataBlkFloat</tt> provide
+implementations for <tt>int</tt> and <tt>float</tt> types respectively.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.image.DataBlkFloat.html">DataBlkFloat</a></h4>
+      <section><p>This is an implementation of the <tt>DataBlk</tt> interface for 32 bit
+floating point data (float).</p>
+<p>The methods in this class are declared final, so that they can be
+inlined by inlining compilers.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.image.DataBlkInt.html">DataBlkInt</a></h4>
+      <section><p>This is an implementation of the <tt>DataBlk</tt> interface for signed 32
+bit integral data.</p>
+<p>The methods in this class are declared final, so that they can be
+inlined by inlining compilers.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html">ImgDataAdapter</a></h4>
+      <section><p>This class provides a default implementation of the methods in the
+'ImgData' interface. The default implementation is just to return the value
+of the source, where the source is another 'ImgData' object.</p>
+<p>This abstract class can be used to facilitate the development of other
+classes that implement &apos;ImgData&apos;. For example a YCbCr color transform can
+inherit from this class and all the trivial methods do not have to be
+re-implemented.</p>
+<p>If the default implementation of a method provided in this class does
+not suit a particular implementation of the &apos;ImgData&apos; interface, the method
+can be overridden to implement the proper behavior.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.image.ImgDataConverter.html">ImgDataConverter</a></h4>
+      <section><p>This class is responsible of all data type conversions. It should be used,
+at encoder side, between Tiler and ForwardWT modules and, at decoder side,
+between InverseWT/CompDemixer and ImgWriter modules. The conversion is
+realized when a block of data is requested: if source and destination data
+type are the same one, it does nothing, else appropriate cast is done. All
+the methods of the 'ImgData' interface are implemented by the
+'ImgDataAdapter' class that is the superclass of this one, so they don't
+need to be reimplemented by subclasses.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.image.ImgDataJoiner.html">ImgDataJoiner</a></h4>
+      <section><p>This class implements the ImgData interface and allows to obtain data from
+different sources. Here, one source is represented by an ImgData and a
+component index. The typical use of this class is when the encoder needs
+different components (Red, Green, Blue, alpha, ...) from different input
+files (i.e. from different ImgReader objects).</p>
+<p>All input ImgData must not be tiled (i.e. must have only 1 tile) and the
+image origin must be the canvas origin. The different inputs can have
+different dimensions though (this will lead to different subsampling
+factors for each component).</p>
+<p>The input ImgData and component index list must be defined when
+constructing this class and can not be modified later.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.image.Tiler.html">Tiler</a></h4>
+      <section><p>This class places an image in the canvas coordinate system, tiles it, if so
+specified, and performs the coordinate conversions transparently. The
+source must be a 'BlkImgDataSrc' which is not tiled and has a the image
+origin at the canvas origin (i.e. it is not &quot;canvased&quot;), or an exception is
+thrown by the constructor. A tiled and &quot;canvased&quot; output is given through
+the 'BlkImgDataSrc' interface. See the 'ImgData' interface for a
+description of the canvas and tiling.</p>
+<p>All tiles produced are rectangular, non-overlapping and their union
+covers all the image. However, the tiling may not be uniform, depending on
+the nominal tile size, tiling origin, component subsampling and other
+factors. Therefore it might not be assumed that all tiles are of the same
+width and height.</p>
+<p>The nominal dimension of the tiles is the maximal one, in the reference
+grid. All the components of the image have the same number of tiles.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></h4>
+      <section><p>This interface defines methods to access image attributes (width, height,
+number of components, etc.). The image can be tiled or not (i.e. if the
+image is not tiled then there is only 1 tile). It should be implemented by
+all classes that provide image data, such as image file readers, color
+transforms, wavelet transforms, etc. This interface, however, does not
+define methods to transfer image data (i.e. pixel data), that is defined by
+other interfaces, such as 'BlkImgDataSrc'.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

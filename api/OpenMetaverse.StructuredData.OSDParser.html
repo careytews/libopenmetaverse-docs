@@ -1,0 +1,2277 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OSDParser
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OSDParser
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.StructuredData.OSDParser">
+  
+  
+  <h1 id="OpenMetaverse_StructuredData_OSDParser" data-uid="OpenMetaverse.StructuredData.OSDParser" class="text-break">Class OSDParser
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OSDParser</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.StructuredData.html">OpenMetaverse.StructuredData</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.StructuredData.dll</h6>
+  <h5 id="OpenMetaverse_StructuredData_OSDParser_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class OSDParser</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_BufferCharactersEqual_System_IO_StringReader_System_Char___System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.BufferCharactersEqual(System.IO.StringReader%2CSystem.Char%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L720">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_BufferCharactersEqual_" data-uid="OpenMetaverse.StructuredData.OSDParser.BufferCharactersEqual*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_BufferCharactersEqual_System_IO_StringReader_System_Char___System_Int32_" data-uid="OpenMetaverse.StructuredData.OSDParser.BufferCharactersEqual(System.IO.StringReader,System.Char[],System.Int32)">BufferCharactersEqual(StringReader, Char[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BufferCharactersEqual(StringReader reader, char[] buffer, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.StringReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_ConsumeBytes_System_IO_Stream_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.ConsumeBytes(System.IO.Stream%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L450">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_ConsumeBytes_" data-uid="OpenMetaverse.StructuredData.OSDParser.ConsumeBytes*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_ConsumeBytes_System_IO_Stream_System_Int32_" data-uid="OpenMetaverse.StructuredData.OSDParser.ConsumeBytes(System.IO.Stream,System.Int32)">ConsumeBytes(Stream, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ConsumeBytes(Stream stream, int consumeBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">consumeBytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_Deserialize_System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.Deserialize(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1211">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_Deserialize_" data-uid="OpenMetaverse.StructuredData.OSDParser.Deserialize*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_Deserialize_System_Byte___" data-uid="OpenMetaverse.StructuredData.OSDParser.Deserialize(System.Byte[])">Deserialize(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD Deserialize(byte[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_Deserialize_System_IO_Stream_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.Deserialize(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1261">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_Deserialize_" data-uid="OpenMetaverse.StructuredData.OSDParser.Deserialize*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_Deserialize_System_IO_Stream_" data-uid="OpenMetaverse.StructuredData.OSDParser.Deserialize(System.IO.Stream)">Deserialize(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD Deserialize(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_Deserialize_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.Deserialize(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1243">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_Deserialize_" data-uid="OpenMetaverse.StructuredData.OSDParser.Deserialize*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_Deserialize_System_String_" data-uid="OpenMetaverse.StructuredData.OSDParser.Deserialize(System.String)">Deserialize(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD Deserialize(string data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_DeserializeJson_LitJson_JsonData_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.DeserializeJson(LitJson.JsonData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/JSON/OSDJson.cs/#L26">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_DeserializeJson_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeJson*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_DeserializeJson_LitJson_JsonData_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeJson(LitJson.JsonData)">DeserializeJson(JsonData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD DeserializeJson(JsonData json)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LitJson.JsonData.html">JsonData</a></td>
+        <td><span class="parametername">json</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_DeserializeJson_System_IO_Stream_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.DeserializeJson(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/JSON/OSDJson.cs/#L12">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_DeserializeJson_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeJson*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_DeserializeJson_System_IO_Stream_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeJson(System.IO.Stream)">DeserializeJson(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD DeserializeJson(Stream json)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">json</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_DeserializeJson_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.DeserializeJson(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/JSON/OSDJson.cs/#L21">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_DeserializeJson_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeJson*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_DeserializeJson_System_String_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeJson(System.String)">DeserializeJson(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD DeserializeJson(string json)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">json</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDBinary_System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDBinary(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L81">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDBinary_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDBinary*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDBinary_System_Byte___" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDBinary(System.Byte[])">DeserializeLLSDBinary(Byte[])</h4>
+  <div class="markdown level1 summary"><p>Deserializes binary LLSD</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD DeserializeLLSDBinary(byte[] binaryData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">binaryData</span></td>
+        <td><p>Serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><p>OSD containting deserialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDBinary_System_IO_Stream_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDBinary(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L95">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDBinary_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDBinary*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDBinary_System_IO_Stream_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDBinary(System.IO.Stream)">DeserializeLLSDBinary(Stream)</h4>
+  <div class="markdown level1 summary"><p>Deserializes binary LLSD</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD DeserializeLLSDBinary(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream to read the data from</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><p>OSD containting deserialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDNotation_System_IO_StringReader_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDNotation(System.IO.StringReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L84">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDNotation_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDNotation*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDNotation_System_IO_StringReader_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDNotation(System.IO.StringReader)">DeserializeLLSDNotation(StringReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD DeserializeLLSDNotation(StringReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.StringReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDNotation_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDNotation(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L76">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDNotation_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDNotation*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDNotation_System_String_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDNotation(System.String)">DeserializeLLSDNotation(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD DeserializeLLSDNotation(string notationData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">notationData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/XmlLLSD.cs/#L51">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_System_Byte___" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml(System.Byte[])">DeserializeLLSDXml(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD DeserializeLLSDXml(byte[] xmlData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">xmlData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_System_IO_Stream_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/XmlLLSD.cs/#L56">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_System_IO_Stream_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml(System.IO.Stream)">DeserializeLLSDXml(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD DeserializeLLSDXml(Stream xmlStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">xmlStream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/XmlLLSD.cs/#L66">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_System_String_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml(System.String)">DeserializeLLSDXml(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD DeserializeLLSDXml(string xmlData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">xmlData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_System_Xml_XmlTextReader_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml(System.Xml.XmlTextReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/XmlLLSD.cs/#L77">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_DeserializeLLSDXml_System_Xml_XmlTextReader_" data-uid="OpenMetaverse.StructuredData.OSDParser.DeserializeLLSDXml(System.Xml.XmlTextReader)">DeserializeLLSDXml(XmlTextReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OSD DeserializeLLSDXml(XmlTextReader xmlData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.XmlTextReader</span></td>
+        <td><span class="parametername">xmlData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_EscapeCharacter_System_String_System_Char_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.EscapeCharacter(System.String%2CSystem.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L765">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_EscapeCharacter_" data-uid="OpenMetaverse.StructuredData.OSDParser.EscapeCharacter*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_EscapeCharacter_System_String_System_Char_" data-uid="OpenMetaverse.StructuredData.OSDParser.EscapeCharacter(System.String,System.Char)">EscapeCharacter(String, Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string EscapeCharacter(string s, char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_FindByte_System_IO_Stream_System_Byte_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.FindByte(System.IO.Stream%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L390">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_FindByte_" data-uid="OpenMetaverse.StructuredData.OSDParser.FindByte*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_FindByte_System_IO_Stream_System_Byte_" data-uid="OpenMetaverse.StructuredData.OSDParser.FindByte(System.IO.Stream,System.Byte)">FindByte(Stream, Byte)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FindByte(Stream stream, byte toFind)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">toFind</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_FindString_System_IO_Stream_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.FindString(System.IO.Stream%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L410">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_FindString_" data-uid="OpenMetaverse.StructuredData.OSDParser.FindString*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_FindString_System_IO_Stream_System_String_" data-uid="OpenMetaverse.StructuredData.OSDParser.FindString(System.IO.Stream,System.String)">FindString(Stream, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FindString(Stream stream, string toFind)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">toFind</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_GetLengthInBrackets_System_IO_StringReader_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.GetLengthInBrackets(System.IO.StringReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L629">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_GetLengthInBrackets_" data-uid="OpenMetaverse.StructuredData.OSDParser.GetLengthInBrackets*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_GetLengthInBrackets_System_IO_StringReader_" data-uid="OpenMetaverse.StructuredData.OSDParser.GetLengthInBrackets(System.IO.StringReader)">GetLengthInBrackets(StringReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetLengthInBrackets(StringReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.StringReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_GetStringDelimitedBy_System_IO_StringReader_System_Char_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.GetStringDelimitedBy(System.IO.StringReader%2CSystem.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L659">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_GetStringDelimitedBy_" data-uid="OpenMetaverse.StructuredData.OSDParser.GetStringDelimitedBy*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_GetStringDelimitedBy_System_IO_StringReader_System_Char_" data-uid="OpenMetaverse.StructuredData.OSDParser.GetStringDelimitedBy(System.IO.StringReader,System.Char)">GetStringDelimitedBy(StringReader, Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStringDelimitedBy(StringReader reader, char delimiter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.StringReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">delimiter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_HostToNetworkIntBytes_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.HostToNetworkIntBytes(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L494">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_HostToNetworkIntBytes_" data-uid="OpenMetaverse.StructuredData.OSDParser.HostToNetworkIntBytes*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_HostToNetworkIntBytes_System_Int32_" data-uid="OpenMetaverse.StructuredData.OSDParser.HostToNetworkIntBytes(System.Int32)">HostToNetworkIntBytes(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] HostToNetworkIntBytes(int intHostEnd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">intHostEnd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_NetworkToHostDouble_System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.NetworkToHostDouble(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L478">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_NetworkToHostDouble_" data-uid="OpenMetaverse.StructuredData.OSDParser.NetworkToHostDouble*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_NetworkToHostDouble_System_Byte___" data-uid="OpenMetaverse.StructuredData.OSDParser.NetworkToHostDouble(System.Byte[])">NetworkToHostDouble(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double NetworkToHostDouble(byte[] binaryNetEnd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">binaryNetEnd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_NetworkToHostInt_System_Byte___.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.NetworkToHostInt(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L463">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_NetworkToHostInt_" data-uid="OpenMetaverse.StructuredData.OSDParser.NetworkToHostInt*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_NetworkToHostInt_System_Byte___" data-uid="OpenMetaverse.StructuredData.OSDParser.NetworkToHostInt(System.Byte[])">NetworkToHostInt(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NetworkToHostInt(byte[] binaryNetEnd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">binaryNetEnd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_PeekAndSkipWhitespace_System_IO_StringReader_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.PeekAndSkipWhitespace(System.IO.StringReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L595">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_PeekAndSkipWhitespace_" data-uid="OpenMetaverse.StructuredData.OSDParser.PeekAndSkipWhitespace*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_PeekAndSkipWhitespace_System_IO_StringReader_" data-uid="OpenMetaverse.StructuredData.OSDParser.PeekAndSkipWhitespace(System.IO.StringReader)">PeekAndSkipWhitespace(StringReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PeekAndSkipWhitespace(StringReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.StringReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_ReadAndSkipWhitespace_System_IO_StringReader_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.ReadAndSkipWhitespace(System.IO.StringReader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L617">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_ReadAndSkipWhitespace_" data-uid="OpenMetaverse.StructuredData.OSDParser.ReadAndSkipWhitespace*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_ReadAndSkipWhitespace_System_IO_StringReader_" data-uid="OpenMetaverse.StructuredData.OSDParser.ReadAndSkipWhitespace(System.IO.StringReader)">ReadAndSkipWhitespace(StringReader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ReadAndSkipWhitespace(StringReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.StringReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeJson_OpenMetaverse_StructuredData_OSD_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeJson(OpenMetaverse.StructuredData.OSD%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/JSON/OSDJson.cs/#L78">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeJson_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeJson*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeJson_OpenMetaverse_StructuredData_OSD_System_Boolean_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeJson(OpenMetaverse.StructuredData.OSD,System.Boolean)">SerializeJson(OSD, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JsonData SerializeJson(OSD osd, bool preserveDefaults)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">osd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">preserveDefaults</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LitJson.JsonData.html">JsonData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeJsonString_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeJsonString(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/JSON/OSDJson.cs/#L63">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeJsonString_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeJsonString*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeJsonString_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeJsonString(OpenMetaverse.StructuredData.OSD)">SerializeJsonString(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeJsonString(OSD osd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">osd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeJsonString_OpenMetaverse_StructuredData_OSD_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeJsonString(OpenMetaverse.StructuredData.OSD%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/JSON/OSDJson.cs/#L68">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeJsonString_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeJsonString*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeJsonString_OpenMetaverse_StructuredData_OSD_System_Boolean_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeJsonString(OpenMetaverse.StructuredData.OSD,System.Boolean)">SerializeJsonString(OSD, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeJsonString(OSD osd, bool preserveDefaults)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">osd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">preserveDefaults</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeJsonString_OpenMetaverse_StructuredData_OSD_System_Boolean_LitJson_JsonWriter__.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeJsonString(OpenMetaverse.StructuredData.OSD%2CSystem.Boolean%2CLitJson.JsonWriter%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/JSON/OSDJson.cs/#L73">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeJsonString_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeJsonString*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeJsonString_OpenMetaverse_StructuredData_OSD_System_Boolean_LitJson_JsonWriter__" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeJsonString(OpenMetaverse.StructuredData.OSD,System.Boolean,LitJson.JsonWriter@)">SerializeJsonString(OSD, Boolean, ref JsonWriter)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SerializeJsonString(OSD osd, bool preserveDefaults, ref JsonWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">osd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">preserveDefaults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LitJson.JsonWriter.html">JsonWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinary_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinary(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L117">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinary_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinary*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinary_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinary(OpenMetaverse.StructuredData.OSD)">SerializeLLSDBinary(OSD)</h4>
+  <div class="markdown level1 summary"><p>Serializes OSD to binary format. It does no prepend header</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] SerializeLLSDBinary(OSD osd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">osd</span></td>
+        <td><p>OSD to serialize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>Serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinary_OpenMetaverse_StructuredData_OSD_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinary(OpenMetaverse.StructuredData.OSD%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L128">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinary_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinary*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinary_OpenMetaverse_StructuredData_OSD_System_Boolean_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinary(OpenMetaverse.StructuredData.OSD,System.Boolean)">SerializeLLSDBinary(OSD, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Serializes OSD to binary format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] SerializeLLSDBinary(OSD osd, bool prependHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">osd</span></td>
+        <td><p>OSD to serialize</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">prependHeader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>Serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinaryStream_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinaryStream(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L143">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinaryStream_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinaryStream*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinaryStream_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinaryStream(OpenMetaverse.StructuredData.OSD)">SerializeLLSDBinaryStream(OSD)</h4>
+  <div class="markdown level1 summary"><p>Serializes OSD to binary format. It does no prepend header</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MemoryStream SerializeLLSDBinaryStream(OSD data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>OSD to serialize</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.MemoryStream</span></td>
+        <td><p>Serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinaryStream_OpenMetaverse_StructuredData_OSD_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinaryStream(OpenMetaverse.StructuredData.OSD%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L153">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinaryStream_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinaryStream*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDBinaryStream_OpenMetaverse_StructuredData_OSD_System_Boolean_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDBinaryStream(OpenMetaverse.StructuredData.OSD,System.Boolean)">SerializeLLSDBinaryStream(OSD, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Serializes OSD to binary format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MemoryStream SerializeLLSDBinaryStream(OSD data, bool prependHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>OSD to serialize</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">prependHeader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.MemoryStream</span></td>
+        <td><p>Serialized data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotation_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotation(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L90">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotation_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotation*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotation_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotation(OpenMetaverse.StructuredData.OSD)">SerializeLLSDNotation(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeLLSDNotation(OSD osd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">osd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotationFormatted_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotationFormatted(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L107">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotationFormatted_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotationFormatted*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotationFormatted_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotationFormatted(OpenMetaverse.StructuredData.OSD)">SerializeLLSDNotationFormatted(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeLLSDNotationFormatted(OSD osd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">osd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotationStream_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotationStream(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L99">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotationStream_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotationStream*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotationStream_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotationStream(OpenMetaverse.StructuredData.OSD)">SerializeLLSDNotationStream(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringWriter SerializeLLSDNotationStream(OSD osd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">osd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.StringWriter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotationStreamFormatted_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotationStreamFormatted(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L116">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotationStreamFormatted_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotationStreamFormatted*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDNotationStreamFormatted_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDNotationStreamFormatted(OpenMetaverse.StructuredData.OSD)">SerializeLLSDNotationStreamFormatted(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringWriter SerializeLLSDNotationStreamFormatted(OSD osd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">osd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.StringWriter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeLLSDXmlBytes_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeLLSDXmlBytes(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/XmlLLSD.cs/#L100">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDXmlBytes_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDXmlBytes*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDXmlBytes_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDXmlBytes(OpenMetaverse.StructuredData.OSD)">SerializeLLSDXmlBytes(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] SerializeLLSDXmlBytes(OSD data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeLLSDXmlElement_System_Xml_XmlTextWriter_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeLLSDXmlElement(System.Xml.XmlTextWriter%2COpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/XmlLLSD.cs/#L130">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDXmlElement_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDXmlElement*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDXmlElement_System_Xml_XmlTextWriter_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDXmlElement(System.Xml.XmlTextWriter,OpenMetaverse.StructuredData.OSD)">SerializeLLSDXmlElement(XmlTextWriter, OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SerializeLLSDXmlElement(XmlTextWriter writer, OSD data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.XmlTextWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SerializeLLSDXmlString_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SerializeLLSDXmlString(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/XmlLLSD.cs/#L110">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDXmlString_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDXmlString*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SerializeLLSDXmlString_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDParser.SerializeLLSDXmlString(OpenMetaverse.StructuredData.OSD)">SerializeLLSDXmlString(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeLLSDXmlString(OSD data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_SkipWhiteSpace_System_IO_Stream_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.SkipWhiteSpace(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/BinaryLLSD.cs/#L371">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_SkipWhiteSpace_" data-uid="OpenMetaverse.StructuredData.OSDParser.SkipWhiteSpace*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_SkipWhiteSpace_System_IO_Stream_" data-uid="OpenMetaverse.StructuredData.OSDParser.SkipWhiteSpace(System.IO.Stream)">SkipWhiteSpace(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SkipWhiteSpace(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_TryValidateLLSDXml_System_Xml_XmlTextReader_System_String__.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.TryValidateLLSDXml(System.Xml.XmlTextReader%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/XmlLLSD.cs/#L212">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_TryValidateLLSDXml_" data-uid="OpenMetaverse.StructuredData.OSDParser.TryValidateLLSDXml*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_TryValidateLLSDXml_System_Xml_XmlTextReader_System_String__" data-uid="OpenMetaverse.StructuredData.OSDParser.TryValidateLLSDXml(System.Xml.XmlTextReader,System.String@)">TryValidateLLSDXml(XmlTextReader, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryValidateLLSDXml(XmlTextReader xmlData, out string error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.XmlTextReader</span></td>
+        <td><span class="parametername">xmlData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser_UnescapeCharacter_System_String_System_Char_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser.UnescapeCharacter(System.String%2CSystem.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/NotationLLSD.cs/#L750">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDParser_UnescapeCharacter_" data-uid="OpenMetaverse.StructuredData.OSDParser.UnescapeCharacter*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDParser_UnescapeCharacter_System_String_System_Char_" data-uid="OpenMetaverse.StructuredData.OSDParser.UnescapeCharacter(System.String,System.Char)">UnescapeCharacter(String, Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string UnescapeCharacter(string s, char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDParser.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDParser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/LLSD/XmlLLSD.cs/#L39" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

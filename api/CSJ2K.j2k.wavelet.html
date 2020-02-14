@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.j2k.wavelet
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.j2k.wavelet
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.wavelet">
+  
+  <h1 id="CSJ2K_j2k_wavelet" data-uid="CSJ2K.j2k.wavelet" class="text-break">Namespace CSJ2K.j2k.wavelet
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html">Subband</a></h4>
+      <section><p>This abstract class represents a subband in a bidirectional tree structure
+that describes the subband decomposition for a wavelet transform. This
+class is implemented by the SubbandAn and SubbandSyn classes, which are for
+the analysis and synthesis sides respectively.</p>
+<p>The element can be either a node or a leaf of the tree. If it is a node,
+it has 4 descendants (LL, HL, LH and HH). If it is a leaf, it has no
+descendant.</p>
+<p>The tree is bidirectional. Each element in the tree structure has a
+&quot;parent&quot;, which is the subband from which the element was obtained by
+decomposition. The only exception is the root element which, for obvious
+reasons, has no parent (i.e. it is null).</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.WTDecompSpec.html">WTDecompSpec</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.WTFilterSpec.html">WTFilterSpec</a></h4>
+      <section></section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.FilterTypes_Fields.html">FilterTypes_Fields</a></h4>
+      <section><p>This interface defines the identifiers for the different types of filters
+that are supported.</p>
+<p>The identifier values are the same as those used in the codestream
+syntax, for the filters that are defined in the standard.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.WaveletFilter_Fields.html">WaveletFilter_Fields</a></h4>
+      <section><p>This interface defines how a wavelet filter implementation should present
+itself. This interface defines only the commonalities between the analysis
+and synthesis filters. The AnWTFilter and SynWTFilter classes provide the
+specifics of analysis and synthesis filters.</p>
+<p>Both analysis and filters must be able to return the extent of the
+negative and positive support for both synthesis and analysis sides. This
+simplifies the sue of some functionalities that need extra information
+about the filters.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.WaveletTransform_Fields.html">WaveletTransform_Fields</a></h4>
+      <section><p>This interface defines how a forward or inverse wavelet transform should
+present itself. As specified in the ImgData interface, from which this
+class inherits, all operations are confined to the current tile, and all
+coordinates are relative to it.</p>
+<p>The definition of the methods in this interface allows for different
+types of implementation, reversibility and levels of decompositions for
+each component and each tile. An implementation of this interface does not
+need to support all this flexibility (e.g., it may provide the same
+implementation type and decomposition levels for all tiles and
+components).</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.FilterTypes.html">FilterTypes</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.WaveletFilter.html">WaveletFilter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.j2k.wavelet.WaveletTransform.html">WaveletTransform</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

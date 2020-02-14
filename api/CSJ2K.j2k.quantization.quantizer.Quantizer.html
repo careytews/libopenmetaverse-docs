@@ -1,0 +1,976 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Quantizer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Quantizer
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer">
+  
+  
+  <h1 id="CSJ2K_j2k_quantization_quantizer_Quantizer" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer" class="text-break">Class Quantizer
+  </h1>
+  <div class="markdown level0 summary"><p>This abstract class provides the general interface for quantizers. The
+input of a quantizer is the output of a wavelet transform. The output of
+the quantizer is the set of quantized wavelet coefficients represented in
+sign-magnitude notation (see below).</p>
+<p>This class provides default implementation for most of the methods
+(wherever it makes sense), under the assumption that the image, component
+dimensions, and the tiles, are not modifed by the quantizer. If it is not
+the case for a particular implementation, then the methods should be
+overriden.</p>
+<p>Sign magnitude representation is used (instead of two&apos;s complement) for
+the output data. The most significant bit is used for the sign (0 if
+positive, 1 if negative). Then the magnitude of the quantized coefficient
+is stored in the next M most significat bits. The rest of the bits (least
+significant bits) can contain a fractional value of the quantized
+coefficient. This fractional value is not to be coded by the entropy
+coder. However, it can be used to compute rate-distortion measures with
+greater precision.</p>
+<p>The value of M is determined for each subband as the sum of the number
+of guard bits G and the nominal range of quantized wavelet coefficients in
+the corresponding subband (Rq), minus 1:</p>
+<p>M = G + Rq -1</p>
+<p>The value of G should be the same for all subbands. The value of Rq
+depends on the quantization step size, the nominal range of the component
+before the wavelet transform and the analysis gain of the subband (see
+Subband).</p>
+<p>The blocks of data that are requested should not cross subband
+boundaries.</p>
+<p>NOTE: At the moment only quantizers that implement the
+&apos;CBlkQuantDataSrcEnc&apos; interface are supported.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html">ImgDataAdapter</a></div>
+    <div class="level2"><span class="xref">Quantizer</span></div>
+      <div class="level3"><a class="xref" href="CSJ2K.j2k.quantization.quantizer.StdQuantizer.html">StdQuantizer</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc.html">CBlkQuantDataSrcEnc</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html">ForwWTDataProps</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileWidth">ImgDataAdapter.TileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileHeight">ImgDataAdapter.TileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileWidth">ImgDataAdapter.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileHeight">ImgDataAdapter.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgWidth">ImgDataAdapter.ImgWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgHeight">ImgDataAdapter.ImgHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NumComps">ImgDataAdapter.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileIdx">ImgDataAdapter.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULX">ImgDataAdapter.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULY">ImgDataAdapter.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULX">ImgDataAdapter.ImgULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULY">ImgDataAdapter.ImgULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_tIdx">ImgDataAdapter.tIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_imgdatasrc">ImgDataAdapter.imgdatasrc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsX_System_Int32_">ImgDataAdapter.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsY_System_Int32_">ImgDataAdapter.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_">ImgDataAdapter.getTileCompWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_">ImgDataAdapter.getTileCompHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgWidth_System_Int32_">ImgDataAdapter.getCompImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgHeight_System_Int32_">ImgDataAdapter.getCompImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNomRangeBits_System_Int32_">ImgDataAdapter.getNomRangeBits(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_setTile_System_Int32_System_Int32_">ImgDataAdapter.setTile(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_nextTile">ImgDataAdapter.nextTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULX_System_Int32_">ImgDataAdapter.getCompULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULY_System_Int32_">ImgDataAdapter.getCompULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles">ImgDataAdapter.getNumTiles()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.quantization.quantizer.html">CSJ2K.j2k.quantization.quantizer</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_quantization_quantizer_Quantizer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Quantizer : ImgDataAdapter, CBlkQuantDataSrcEnc, ForwWTDataProps, ImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer__ctor_CSJ2K_j2k_wavelet_analysis_CBlkWTDataSrc_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.%23ctor(CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L162">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer__ctor_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer__ctor_CSJ2K_j2k_wavelet_analysis_CBlkWTDataSrc_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.#ctor(CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc)">Quantizer(CBlkWTDataSrc)</h4>
+  <div class="markdown level1 summary"><p>Initializes the source of wavelet transform coefficients.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quantizer(CBlkWTDataSrc src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc.html">CBlkWTDataSrc</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>The source of wavelet transform coefficients.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_OPT_PREFIX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.OPT_PREFIX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L145">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_OPT_PREFIX" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.OPT_PREFIX">OPT_PREFIX</h4>
+  <div class="markdown level1 summary"><p>The prefix for quantizer options: 'Q'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const char OPT_PREFIX = 'Q'</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_src.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.src%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L154">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_src" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.src">src</h4>
+  <div class="markdown level1 summary"><p>The source of wavelet transform coefficients</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CBlkWTDataSrc src</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc.html">CBlkWTDataSrc</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_CbULX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.CbULX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L101">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_CbULX_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.CbULX*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_CbULX" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.CbULX">CbULX</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal offset of the code-block partition. Allowable
+values are 0 and 1, nothing else.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CbULX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_CbULY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.CbULY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L113">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_CbULY_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.CbULY*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_CbULY" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.CbULY">CbULY</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical offset of the code-block partition. Allowable
+values are 0 and 1, nothing else.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CbULY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_ParameterInfo.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.ParameterInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L135">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_ParameterInfo_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.ParameterInfo*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_ParameterInfo" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.ParameterInfo">ParameterInfo</h4>
+  <div class="markdown level1 summary"><p>Returns the parameters that are used in this class and implementing
+classes. It returns a 2D String array. Each of the 1D arrays is for a
+different option, and they have 3 elements. The first element is the
+option name, the second one is the synopsis, the third one is a long
+description of what the parameter is and the fourth is its default
+value. The synopsis or description may be 'null', in which case it is
+assumed that there is no synopsis or description of the option,
+respectively. Null may be returned if no options are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[][] ParameterInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[][]</td>
+        <td><p>the options name, their synopsis and their explanation,
+or null if no options are supported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_calcSbParams_CSJ2K_j2k_wavelet_analysis_SubbandAn_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.calcSbParams(CSJ2K.j2k.wavelet.analysis.SubbandAn%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L212">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_calcSbParams_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.calcSbParams*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_calcSbParams_CSJ2K_j2k_wavelet_analysis_SubbandAn_System_Int32_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.calcSbParams(CSJ2K.j2k.wavelet.analysis.SubbandAn,System.Int32)">calcSbParams(SubbandAn, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the parameters of the SubbandAn objects that depend on the
+Quantizer. The 'stepWMSE' field is calculated for each subband which is
+a leaf in the tree rooted at 'sb', for the specified component. The
+subband tree 'sb' must be the one for the component 'n'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void calcSbParams(SubbandAn sb, int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html">SubbandAn</a></td>
+        <td><span class="parametername">sb</span></td>
+        <td><p>The root of the subband tree.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The component index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_quantization_quantizer_Quantizer_calcSbParams_CSJ2K_j2k_wavelet_analysis_SubbandAn_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html#CSJ2K_j2k_wavelet_analysis_SubbandAn_stepWMSE">stepWMSE</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_createInstance_CSJ2K_j2k_wavelet_analysis_CBlkWTDataSrc_CSJ2K_j2k_encoder_EncoderSpecs_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.createInstance(CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc%2CCSJ2K.j2k.encoder.EncoderSpecs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L270">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_createInstance_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.createInstance*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_createInstance_CSJ2K_j2k_wavelet_analysis_CBlkWTDataSrc_CSJ2K_j2k_encoder_EncoderSpecs_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.createInstance(CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc,CSJ2K.j2k.encoder.EncoderSpecs)">createInstance(CBlkWTDataSrc, EncoderSpecs)</h4>
+  <div class="markdown level1 summary"><p>Creates a Quantizer object for the appropriate type of quantization
+specified in the options in the parameter list 'pl', and having 'src'
+as the source of data to be quantized. The 'rev' flag indicates if the
+quantization should be reversible.</p>
+<p>NOTE: At the moment only sources of wavelet data that implement the
+'CBlkWTDataSrc' interface are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quantizer createInstance(CBlkWTDataSrc src, EncoderSpecs encSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc.html">CBlkWTDataSrc</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>The source of data to be quantized</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.encoder.EncoderSpecs.html">EncoderSpecs</a></td>
+        <td><span class="parametername">encSpec</span></td>
+        <td><p>Encoder specifications</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.quantization.quantizer.Quantizer.html">Quantizer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_getAnSubbandTree_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.getAnSubbandTree(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L240">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_getAnSubbandTree_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.getAnSubbandTree*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_getAnSubbandTree_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.getAnSubbandTree(System.Int32,System.Int32)">getAnSubbandTree(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual SubbandAn getAnSubbandTree(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html">SubbandAn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_getMaxMagBits_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.getMaxMagBits(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L287">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_getMaxMagBits_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.getMaxMagBits*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_getMaxMagBits_System_Int32_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.getMaxMagBits(System.Int32)">getMaxMagBits(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the maximum number of magnitude bits in any subband in the
+current tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int getMaxMagBits(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>the component number</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The maximum number of magnitude bits in all subbands of the
+current tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_getNextCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.getNextCodeBlock(System.Int32%2CCSJ2K.j2k.wavelet.analysis.CBlkWTData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L289">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_getNextCodeBlock_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.getNextCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_getNextCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.getNextCodeBlock(System.Int32,CSJ2K.j2k.wavelet.analysis.CBlkWTData)">getNextCodeBlock(Int32, CBlkWTData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract CBlkWTData getNextCodeBlock(int param1, CBlkWTData param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_getNextInternCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.getNextInternCodeBlock(System.Int32%2CCSJ2K.j2k.wavelet.analysis.CBlkWTData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L288">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_getNextInternCodeBlock_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.getNextInternCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_getNextInternCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.getNextInternCodeBlock(System.Int32,CSJ2K.j2k.wavelet.analysis.CBlkWTData)">getNextInternCodeBlock(Int32, CBlkWTData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract CBlkWTData getNextInternCodeBlock(int param1, CBlkWTData param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_getNumGuardBits_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.getNumGuardBits(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L180">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_getNumGuardBits_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.getNumGuardBits*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_getNumGuardBits_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.getNumGuardBits(System.Int32,System.Int32)">getNumGuardBits(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of guard bits used by this quantizer in the
+given tile-component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int getNumGuardBits(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Component index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of guard bits</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_isDerived_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.isDerived(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L195">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_isDerived_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.isDerived*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_isDerived_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.isDerived(System.Int32,System.Int32)">isDerived(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the quantizer of given tile-component uses derived
+quantization step sizes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool isDerived(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Component index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if derived quantization is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer_isReversible_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer.isReversible(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L290">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_Quantizer_isReversible_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.isReversible*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_Quantizer_isReversible_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.quantization.quantizer.Quantizer.isReversible(System.Int32,System.Int32)">isReversible(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool isReversible(int param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc.html">CBlkQuantDataSrcEnc</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html">ForwWTDataProps</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.Subband.html">Subband</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_Quantizer.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.Quantizer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/Quantizer.cs/#L95" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

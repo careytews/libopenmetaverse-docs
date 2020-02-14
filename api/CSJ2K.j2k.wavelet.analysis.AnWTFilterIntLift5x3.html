@@ -1,0 +1,1050 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AnWTFilterIntLift5x3
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AnWTFilterIntLift5x3
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3">
+  
+  
+  <h1 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3" class="text-break">Class AnWTFilterIntLift5x3
+  </h1>
+  <div class="markdown level0 summary"><p>This class inherits from the analysis wavelet filter definition for int
+data. It implements the forward wavelet transform specifically for the 5x3
+filter. The implementation is based on the lifting scheme.</p>
+<p>See the AnWTFilter class for details such as normalization, how to split
+odd-length signals, etc. In particular, this method assumes that the
+low-pass coefficient is computed first.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html">AnWTFilter</a></div>
+    <div class="level2"><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterInt.html">AnWTFilterInt</a></div>
+    <div class="level3"><span class="xref">AnWTFilterIntLift5x3</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.WaveletFilter.html">WaveletFilter</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterInt.html#CSJ2K_j2k_wavelet_analysis_AnWTFilterInt_DataType">AnWTFilterInt.DataType</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterInt.html#CSJ2K_j2k_wavelet_analysis_AnWTFilterInt_analyze_lpf_System_Object_System_Int32_System_Int32_System_Int32_System_Object_System_Int32_System_Int32_System_Object_System_Int32_System_Int32_">AnWTFilterInt.analyze_lpf(Object, Int32, Int32, Int32, Object, Int32, Int32, Object, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterInt.html#CSJ2K_j2k_wavelet_analysis_AnWTFilterInt_analyze_hpf_System_Object_System_Int32_System_Int32_System_Int32_System_Object_System_Int32_System_Int32_System_Object_System_Int32_System_Int32_">AnWTFilterInt.analyze_hpf(Object, Int32, Int32, Int32, Object, Int32, Int32, Object, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_ParameterInfo">AnWTFilter.ParameterInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_OPT_PREFIX">AnWTFilter.OPT_PREFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_getLPSynWaveForm_System_Single___System_Single___">AnWTFilter.getLPSynWaveForm(Single[], Single[])</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_getHPSynWaveForm_System_Single___System_Single___">AnWTFilter.getHPSynWaveForm(Single[], Single[])</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.wavelet.analysis.html">CSJ2K.j2k.wavelet.analysis</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AnWTFilterIntLift5x3 : AnWTFilterInt, WaveletFilter</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnHighNegSupport.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnHighNegSupport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L107">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnHighNegSupport_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnHighNegSupport*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnHighNegSupport" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnHighNegSupport">AnHighNegSupport</h4>
+  <div class="markdown level1 summary"><p>Returns the negative support of the high-pass analysis filter. That is
+the number of taps of the filter in the negative direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int AnHighNegSupport { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of taps of the high-pass analysis filter in
+the negative direction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_AnHighNegSupport">AnWTFilter.AnHighNegSupport</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnHighPosSupport.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnHighPosSupport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L123">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnHighPosSupport_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnHighPosSupport*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnHighPosSupport" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnHighPosSupport">AnHighPosSupport</h4>
+  <div class="markdown level1 summary"><p>Returns the positive support of the high-pass analysis filter. That is
+the number of taps of the filter in the negative direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int AnHighPosSupport { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of taps of the high-pass analysis filter in the
+positive direction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_AnHighPosSupport">AnWTFilter.AnHighPosSupport</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnLowNegSupport.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnLowNegSupport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L75">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnLowNegSupport_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnLowNegSupport*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnLowNegSupport" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnLowNegSupport">AnLowNegSupport</h4>
+  <div class="markdown level1 summary"><p>Returns the negative support of the low-pass analysis filter. That is
+the number of taps of the filter in the negative direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int AnLowNegSupport { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>2</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_AnLowNegSupport">AnWTFilter.AnLowNegSupport</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnLowPosSupport.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnLowPosSupport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L91">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnLowPosSupport_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnLowPosSupport*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_AnLowPosSupport" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.AnLowPosSupport">AnLowPosSupport</h4>
+  <div class="markdown level1 summary"><p>Returns the positive support of the low-pass analysis filter. That is
+the number of taps of the filter in the negative direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int AnLowPosSupport { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of taps of the low-pass analysis filter in the
+positive direction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_AnLowPosSupport">AnWTFilter.AnLowPosSupport</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_FilterType.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.FilterType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L237">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_FilterType_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.FilterType*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_FilterType" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.FilterType">FilterType</h4>
+  <div class="markdown level1 summary"><p>Returns the type of filter used according to the FilterTypes interface
+(W5x3).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int FilterType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The filter type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_FilterType">AnWTFilter.FilterType</a></div>
+  <h5 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_FilterType_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.FilterTypes.html">FilterTypes</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_ImplType.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.ImplType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L203">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_ImplType_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.ImplType*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_ImplType" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.ImplType">ImplType</h4>
+  <div class="markdown level1 summary"><p>Returns the implementation type of this filter, as defined in this
+class, such as WT_FILTER_INT_LIFT, WT_FILTER_FLOAT_LIFT,
+WT_FILTER_FLOAT_CONVOL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int ImplType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>WT_FILTER_INT_LIFT.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_ImplType">AnWTFilter.ImplType</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_Reversible.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.Reversible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L219">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_Reversible_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.Reversible*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_Reversible" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.Reversible">Reversible</h4>
+  <div class="markdown level1 summary"><p>Returns the reversibility of the filter. A filter is considered
+reversible if it is suitable for lossless coding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Reversible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true since the 5x3 is reversible, provided the appropriate
+rounding is performed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_Reversible">AnWTFilter.Reversible</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynHighNegSupport.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynHighNegSupport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L171">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynHighNegSupport_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynHighNegSupport*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynHighNegSupport" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynHighNegSupport">SynHighNegSupport</h4>
+  <div class="markdown level1 summary"><p>Returns the negative support of the high-pass synthesis filter. That is
+the number of taps of the filter in the negative direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int SynHighNegSupport { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of taps of the high-pass synthesis filter in the
+negative direction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_SynHighNegSupport">AnWTFilter.SynHighNegSupport</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynHighPosSupport.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynHighPosSupport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L187">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynHighPosSupport_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynHighPosSupport*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynHighPosSupport" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynHighPosSupport">SynHighPosSupport</h4>
+  <div class="markdown level1 summary"><p>Returns the positive support of the high-pass synthesis filter. That is
+the number of taps of the filter in the negative direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int SynHighPosSupport { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of taps of the high-pass synthesis filter in the
+positive direction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_SynHighPosSupport">AnWTFilter.SynHighPosSupport</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynLowNegSupport.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynLowNegSupport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L139">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynLowNegSupport_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynLowNegSupport*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynLowNegSupport" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynLowNegSupport">SynLowNegSupport</h4>
+  <div class="markdown level1 summary"><p>Returns the negative support of the low-pass synthesis filter. That is
+the number of taps of the filter in the negative direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int SynLowNegSupport { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of taps of the low-pass synthesis filter in the
+negative direction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_SynLowNegSupport">AnWTFilter.SynLowNegSupport</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynLowPosSupport.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynLowPosSupport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L155">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynLowPosSupport_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynLowPosSupport*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_SynLowPosSupport" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.SynLowPosSupport">SynLowPosSupport</h4>
+  <div class="markdown level1 summary"><p>Returns the positive support of the low-pass synthesis filter. That is
+the number of taps of the filter in the negative direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int SynLowPosSupport { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of taps of the low-pass synthesis filter in
+the positive direction</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_SynLowPosSupport">AnWTFilter.SynLowPosSupport</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_analyze_hpf_System_Int32___System_Int32_System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.analyze_hpf(System.Int32%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L422">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_analyze_hpf_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.analyze_hpf*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_analyze_hpf_System_Int32___System_Int32_System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.analyze_hpf(System.Int32[],System.Int32,System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32)">analyze_hpf(Int32[], Int32, Int32, Int32, Int32[], Int32, Int32, Int32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void analyze_hpf(int[] inSig, int inOff, int inLen, int inStep, int[] lowSig, int lowOff, int lowStep, int[] highSig, int highOff, int highStep)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">inSig</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inOff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inLen</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inStep</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">lowSig</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lowOff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lowStep</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">highSig</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">highOff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">highStep</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterInt.html#CSJ2K_j2k_wavelet_analysis_AnWTFilterInt_analyze_hpf_System_Int32___System_Int32_System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_">AnWTFilterInt.analyze_hpf(Int32[], Int32, Int32, Int32, Int32[], Int32, Int32, Int32[], Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_analyze_lpf_System_Int32___System_Int32_System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.analyze_lpf(System.Int32%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L302">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_analyze_lpf_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.analyze_lpf*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_analyze_lpf_System_Int32___System_Int32_System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.analyze_lpf(System.Int32[],System.Int32,System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32)">analyze_lpf(Int32[], Int32, Int32, Int32, Int32[], Int32, Int32, Int32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>An implementation of the analyze_lpf() method that works on int data,
+for the forward 5x3 wavelet transform using the lifting scheme. See the
+general description of the analyze_lpf() method in the AnWTFilter class
+for more details.</p>
+<p>The coefficients of the first lifting step are [-1/2 1 -1/2].</p>
+<p>The coefficients of the second lifting step are [1/4 1 1/4].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void analyze_lpf(int[] inSig, int inOff, int inLen, int inStep, int[] lowSig, int lowOff, int lowStep, int[] highSig, int highOff, int highStep)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">inSig</span></td>
+        <td><p>This is the array that contains the input signal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inOff</span></td>
+        <td><p>This is the index in inSig of the first sample to filter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inLen</span></td>
+        <td><p>This is the number of samples in the input signal to
+filter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inStep</span></td>
+        <td><p>This is the step, or interleave factor, of the input
+signal samples in the inSig array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">lowSig</span></td>
+        <td><p>This is the array where the low-pass output signal is
+placed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lowOff</span></td>
+        <td><p>This is the index in lowSig of the element where to put
+the first low-pass output sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lowStep</span></td>
+        <td><p>This is the step, or interleave factor, of the low-pass
+output samples in the lowSig array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">highSig</span></td>
+        <td><p>This is the array where the high-pass output signal is
+placed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">highOff</span></td>
+        <td><p>This is the index in highSig of the element where to put
+the first high-pass output sample.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">highStep</span></td>
+        <td><p>This is the step, or interleave factor, of the
+high-pass output samples in the highSig array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterInt.html#CSJ2K_j2k_wavelet_analysis_AnWTFilterInt_analyze_lpf_System_Int32___System_Int32_System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_System_Int32___System_Int32_System_Int32_">AnWTFilterInt.analyze_lpf(Int32[], Int32, Int32, Int32, Int32[], Int32, Int32, Int32[], Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_Equals_System_Object_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L592">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_Equals_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.Equals*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_Equals_System_Object_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Tests if the 'obj' object is the same filter as this one. Two filters
+are the same if the same filter code should be output for both filters
+by the encodeFilterCode() method.</p>
+<p>Currently the implementation of this method only tests if &apos;obj&apos; is
+also of the class AnWTFilterIntLift5x3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_GetHashCode.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L604">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_GetHashCode_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.GetHashCode*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_GetHashCode" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_getHPSynthesisFilter.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.getHPSynthesisFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L525">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_getHPSynthesisFilter_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.getHPSynthesisFilter*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_getHPSynthesisFilter" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.getHPSynthesisFilter">getHPSynthesisFilter()</h4>
+  <div class="markdown level1 summary"><p>Returns the time-reversed high-pass synthesis waveform of the filter,
+which is the high-pass filter. This is the time-reversed impulse
+response of the high-pass synthesis filter. It is used to calculate the
+L2-norm of the synthesis basis functions for a particular subband (also
+called energy weight).</p>
+<p>The returned array may not be modified (i.e. a reference to the
+internal array may be returned by the implementation of this
+method).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float[] getHPSynthesisFilter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><p>The time-reversed high-pass synthesis waveform of the filter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_getHPSynthesisFilter">AnWTFilter.getHPSynthesisFilter()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_getLPSynthesisFilter.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.getLPSynthesisFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L506">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_getLPSynthesisFilter_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.getLPSynthesisFilter*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_getLPSynthesisFilter" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.getLPSynthesisFilter">getLPSynthesisFilter()</h4>
+  <div class="markdown level1 summary"><p>Returns the time-reversed low-pass synthesis waveform of the filter,
+which is the low-pass filter. This is the time-reversed impulse
+response of the low-pass synthesis filter. It is used to calculate the
+L2-norm of the synthesis basis functions for a particular subband (also
+called energy weight).</p>
+<p>The returned array may not be modified (i.e. a reference to the
+internal array may be returned by the implementation of this
+method).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float[] getLPSynthesisFilter()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td><p>The time-reversed low-pass synthesis waveform of the filter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_getLPSynthesisFilter">AnWTFilter.getLPSynthesisFilter()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_isSameAsFullWT_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.isSameAsFullWT(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L560">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_isSameAsFullWT_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.isSameAsFullWT*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_isSameAsFullWT_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.isSameAsFullWT(System.Int32,System.Int32,System.Int32)">isSameAsFullWT(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the wavelet filter computes or uses the same &quot;inner&quot;
+subband coefficient as the full frame wavelet transform, and false
+otherwise. In particular, for block based transforms with reduced
+overlap, this method should return false. The term &quot;inner&quot; indicates
+that this applies only with respect to the coefficient that are not
+affected by image boundaries processings such as symmetric extension,
+since there is not reference method for this.</p>
+<p>The result depends on the length of the allowed overlap when
+compared to the overlap required by the wavelet filter. It also depends
+on how overlap processing is implemented in the wavelet filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool isSameAsFullWT(int tailOvrlp, int headOvrlp, int inLen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tailOvrlp</span></td>
+        <td><p>This is the number of samples in the input signal
+before the first sample to filter that can be used for overlap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">headOvrlp</span></td>
+        <td><p>This is the number of samples in the input signal
+after the last sample to filter that can be used for overlap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">inLen</span></td>
+        <td><p>This is the lenght of the input signal to filter.The
+required number of samples in the input signal after the last sample
+depends on the length of the input signal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if both overlaps are greater than 2, and correct
+processing is applied in the analyze() method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html#CSJ2K_j2k_wavelet_analysis_AnWTFilter_isSameAsFullWT_System_Int32_System_Int32_System_Int32_">AnWTFilter.isSameAsFullWT(Int32, Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_ToString.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L599">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_ToString_" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.ToString*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3_ToString" data-uid="CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Debugging method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.WaveletFilter.html">WaveletFilter</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilter.html">AnWTFilter</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterInt.html">AnWTFilterInt</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_analysis_AnWTFilterIntLift5x3.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.analysis.AnWTFilterIntLift5x3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/analysis/AnWTFilterIntLift5x3.cs/#L66" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

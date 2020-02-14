@@ -1,0 +1,959 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Avatar
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Avatar
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.Avatar">
+  
+  
+  <h1 id="OpenMetaverse_Avatar" data-uid="OpenMetaverse.Avatar" class="text-break">Class Avatar
+  </h1>
+  <div class="markdown level0 summary"><p>Represents an avatar (other than your own)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a></div>
+    <div class="level2"><span class="xref">Avatar</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="OpenMetaverse.Primitive.html">Primitive</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_MediaVersion">Primitive.MediaVersion</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_FaceMedia">Primitive.FaceMedia</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Textures">Primitive.Textures</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_TextureAnim">Primitive.TextureAnim</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_CUT_QUANTA">Primitive.CUT_QUANTA</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_SCALE_QUANTA">Primitive.SCALE_QUANTA</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_SHEAR_QUANTA">Primitive.SHEAR_QUANTA</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_TAPER_QUANTA">Primitive.TAPER_QUANTA</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_REV_QUANTA">Primitive.REV_QUANTA</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_HOLLOW_QUANTA">Primitive.HOLLOW_QUANTA</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_ID">Primitive.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_GroupID">Primitive.GroupID</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_LocalID">Primitive.LocalID</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_ParentID">Primitive.ParentID</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_RegionHandle">Primitive.RegionHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Flags">Primitive.Flags</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_TreeSpecies">Primitive.TreeSpecies</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_ScratchPad">Primitive.ScratchPad</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Position">Primitive.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Scale">Primitive.Scale</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Rotation">Primitive.Rotation</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Velocity">Primitive.Velocity</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_AngularVelocity">Primitive.AngularVelocity</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Acceleration">Primitive.Acceleration</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_CollisionPlane">Primitive.CollisionPlane</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Flexible">Primitive.Flexible</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Light">Primitive.Light</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_LightMap">Primitive.LightMap</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Sculpt">Primitive.Sculpt</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_ClickAction">Primitive.ClickAction</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Sound">Primitive.Sound</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_OwnerID">Primitive.OwnerID</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_SoundFlags">Primitive.SoundFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_SoundGain">Primitive.SoundGain</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_SoundRadius">Primitive.SoundRadius</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Text">Primitive.Text</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_TextColor">Primitive.TextColor</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_MediaURL">Primitive.MediaURL</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Joint">Primitive.Joint</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_JointPivot">Primitive.JointPivot</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_JointAxisOrAnchor">Primitive.JointAxisOrAnchor</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_NameValues">Primitive.NameValues</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_PrimData">Primitive.PrimData</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Properties">Primitive.Properties</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_PhysicsProps">Primitive.PhysicsProps</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Tag">Primitive.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_IsAttachment">Primitive.IsAttachment</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_ActiveClients">Primitive.ActiveClients</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Type">Primitive.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_SetExtraParamsFromBytes_System_Byte___System_Int32_">Primitive.SetExtraParamsFromBytes(Byte[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_GetExtraParamsBytes">Primitive.GetExtraParamsBytes()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Equals_System_Object_">Primitive.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_Equals_OpenMetaverse_Primitive_">Primitive.Equals(Primitive)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_ToString">Primitive.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_GetHashCode">Primitive.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_PackBeginCut_System_Single_">Primitive.PackBeginCut(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_PackEndCut_System_Single_">Primitive.PackEndCut(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_PackPathScale_System_Single_">Primitive.PackPathScale(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_PackPathShear_System_Single_">Primitive.PackPathShear(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_PackPathTwist_System_Single_">Primitive.PackPathTwist(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_PackPathTaper_System_Single_">Primitive.PackPathTaper(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_PackPathRevolutions_System_Single_">Primitive.PackPathRevolutions(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_PackProfileHollow_System_Single_">Primitive.PackProfileHollow(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_UnpackBeginCut_System_UInt16_">Primitive.UnpackBeginCut(UInt16)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_UnpackEndCut_System_UInt16_">Primitive.UnpackEndCut(UInt16)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_UnpackPathScale_System_Byte_">Primitive.UnpackPathScale(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_UnpackPathShear_System_SByte_">Primitive.UnpackPathShear(SByte)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_UnpackPathTwist_System_SByte_">Primitive.UnpackPathTwist(SByte)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_UnpackPathTaper_System_SByte_">Primitive.UnpackPathTaper(SByte)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_UnpackPathRevolutions_System_Byte_">Primitive.UnpackPathRevolutions(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_UnpackProfileHollow_System_UInt16_">Primitive.UnpackProfileHollow(UInt16)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_ParticleSys">Primitive.ParticleSys</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_Avatar_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Avatar : Primitive, IEquatable&lt;Primitive&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar__ctor.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L558">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Avatar__ctor_" data-uid="OpenMetaverse.Avatar.#ctor*"></a>
+  <h4 id="OpenMetaverse_Avatar__ctor" data-uid="OpenMetaverse.Avatar.#ctor">Avatar()</h4>
+  <div class="markdown level1 summary"><p>Default constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_Animations.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.Animations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L330">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_Animations" data-uid="OpenMetaverse.Avatar.Animations">Animations</h4>
+  <div class="markdown level1 summary"><p>List of current avatar animations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Animation&gt; Animations</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenMetaverse.Animation.html">Animation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_AppearanceFlags.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.AppearanceFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L325">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_AppearanceFlags" data-uid="OpenMetaverse.Avatar.AppearanceFlags">AppearanceFlags</h4>
+  <div class="markdown level1 summary"><p>Appearance flags. Introduced with server side baking, currently unused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppearanceFlags AppearanceFlags</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AppearanceFlags.html">AppearanceFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_AppearanceVersion.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.AppearanceVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L315">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_AppearanceVersion" data-uid="OpenMetaverse.Avatar.AppearanceVersion">AppearanceVersion</h4>
+  <div class="markdown level1 summary"><p>Appearance version. Value greater than 0 indicates using server side baking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte AppearanceVersion</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_COFVersion.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.COFVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L320">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_COFVersion" data-uid="OpenMetaverse.Avatar.COFVersion">COFVersion</h4>
+  <div class="markdown level1 summary"><p>Version of the Current Outfit Folder that the appearance is based on</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int COFVersion</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_ControlFlags.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.ControlFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L305">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_ControlFlags" data-uid="OpenMetaverse.Avatar.ControlFlags">ControlFlags</h4>
+  <div class="markdown level1 summary"><p>Movement control flags for avatars. Typically not set or used by
+clients. To move your avatar, use Client.Self.Movement instead</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AgentManager.ControlFlags ControlFlags</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AgentManager.ControlFlags.html">AgentManager.ControlFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_groupName.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.groupName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L335">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_groupName" data-uid="OpenMetaverse.Avatar.groupName">groupName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string groupName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_Groups.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.Groups%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L294">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_Groups" data-uid="OpenMetaverse.Avatar.Groups">Groups</h4>
+  <div class="markdown level1 summary"><p>Groups that this avatar is a member of</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;UUID&gt; Groups</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_name.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L334">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_name" data-uid="OpenMetaverse.Avatar.name">name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string name</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_ProfileInterests.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.ProfileInterests%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L302">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_ProfileInterests" data-uid="OpenMetaverse.Avatar.ProfileInterests">ProfileInterests</h4>
+  <div class="markdown level1 summary"><p>Avatar interests including spoken languages, skills, and &quot;want to&quot;
+choices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar.Interests ProfileInterests</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Avatar.Interests.html">Avatar.Interests</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_ProfileProperties.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.ProfileProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L299">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_ProfileProperties" data-uid="OpenMetaverse.Avatar.ProfileProperties">ProfileProperties</h4>
+  <div class="markdown level1 summary"><p>Avatar properties including about text, profile URL, image IDs and
+publishing settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar.AvatarProperties ProfileProperties</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Avatar.AvatarProperties.html">Avatar.AvatarProperties</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_ProfileStatistics.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.ProfileStatistics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L296">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_ProfileStatistics" data-uid="OpenMetaverse.Avatar.ProfileStatistics">ProfileStatistics</h4>
+  <div class="markdown level1 summary"><p>Positive and negative ratings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar.Statistics ProfileStatistics</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Avatar.Statistics.html">Avatar.Statistics</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_VisualParameters.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.VisualParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L310">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Avatar_VisualParameters" data-uid="OpenMetaverse.Avatar.VisualParameters">VisualParameters</h4>
+  <div class="markdown level1 summary"><p>Contains the visual parameters describing the deformation of the avatar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] VisualParameters</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_FirstName.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.FirstName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L340">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Avatar_FirstName_" data-uid="OpenMetaverse.Avatar.FirstName*"></a>
+  <h4 id="OpenMetaverse_Avatar_FirstName" data-uid="OpenMetaverse.Avatar.FirstName">FirstName</h4>
+  <div class="markdown level1 summary"><p>First name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FirstName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_GroupName.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.GroupName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L412">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Avatar_GroupName_" data-uid="OpenMetaverse.Avatar.GroupName*"></a>
+  <h4 id="OpenMetaverse_Avatar_GroupName" data-uid="OpenMetaverse.Avatar.GroupName">GroupName</h4>
+  <div class="markdown level1 summary"><p>Active group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GroupName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_LastName.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.LastName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L355">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Avatar_LastName_" data-uid="OpenMetaverse.Avatar.LastName*"></a>
+  <h4 id="OpenMetaverse_Avatar_LastName" data-uid="OpenMetaverse.Avatar.LastName">LastName</h4>
+  <div class="markdown level1 summary"><p>Last name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LastName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_Name.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L370">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Avatar_Name_" data-uid="OpenMetaverse.Avatar.Name*"></a>
+  <h4 id="OpenMetaverse_Avatar_Name" data-uid="OpenMetaverse.Avatar.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Full name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_FromOSD_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.FromOSD(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L473">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Avatar_FromOSD_" data-uid="OpenMetaverse.Avatar.FromOSD*"></a>
+  <h4 id="OpenMetaverse_Avatar_FromOSD_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.Avatar.FromOSD(OpenMetaverse.StructuredData.OSD)">FromOSD(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Avatar FromOSD(OSD O)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">O</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Avatar.html">Avatar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar_GetOSD.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar.GetOSD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L445">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Avatar_GetOSD_" data-uid="OpenMetaverse.Avatar.GetOSD*"></a>
+  <h4 id="OpenMetaverse_Avatar_GetOSD" data-uid="OpenMetaverse.Avatar.GetOSD">GetOSD()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override OSD GetOSD()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.Primitive.html#OpenMetaverse_Primitive_GetOSD">Primitive.GetOSD()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Avatar.md&amp;value=---%0Auid%3A%20OpenMetaverse.Avatar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Avatar.cs/#L58" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

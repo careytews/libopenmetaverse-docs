@@ -1,0 +1,806 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ParameterList
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ParameterList
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.util.ParameterList">
+  
+  
+  <h1 id="CSJ2K_j2k_util_ParameterList" data-uid="CSJ2K.j2k.util.ParameterList" class="text-break">Class ParameterList
+  </h1>
+  <div class="markdown level0 summary"><p>This class holds modules options and parameters as they are provided to the
+encoder or the decoder. Each option and its associated parameters are
+stored as strings.</p>
+<p>This class is built on the standard Java Properties class. Consequently,
+it offers facilities to load and write parameters from/to a file. In the
+meantime, a ParameterList object can also handle default parameters for
+each option.</p>
+<p>Each parameter can be retrieved as a string or as an specific primitive
+type (int, float, etc).</p>
+<p>For more details see the Properties class.</p>
+<p>Note that this class does not support multiple occurrences of parameters
+(for a parameter name, only one value is possible). Also there is no
+particular order of the parameters.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Collections.Specialized.NameObjectCollectionBase</span></div>
+    <div class="level2"><span class="xref">System.Collections.Specialized.NameValueCollection</span></div>
+    <div class="level3"><span class="xref">ParameterList</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.ICollection</span></div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.IDeserializationCallback</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.Add(System.Collections.Specialized.NameValueCollection)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.Add(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.Clear()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.CopyTo(System.Array, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.Get(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.Get(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.GetKey(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.GetValues(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.GetValues(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.HasKeys()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.InvalidateCachedArrays()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.Remove(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.Set(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.AllKeys</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.Item[System.Int32]</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameValueCollection.Item[System.String]</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseAdd(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseClear()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseGet(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseGet(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllKeys()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllValues()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllValues(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseGetKey(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseHasKeys()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseRemove(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseRemoveAt(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseSet(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.BaseSet(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.OnDeserialization(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.System.Collections.ICollection.CopyTo(System.Array, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.Count</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.IsReadOnly</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.Keys</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.System.Collections.ICollection.IsSynchronized</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Specialized.NameObjectCollectionBase.System.Collections.ICollection.SyncRoot</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.util.html">CSJ2K.j2k.util</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_util_ParameterList_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class ParameterList : NameValueCollection, ICollection, IEnumerable, IDeserializationCallback, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList__ctor.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L99">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_util_ParameterList__ctor_" data-uid="CSJ2K.j2k.util.ParameterList.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_util_ParameterList__ctor" data-uid="CSJ2K.j2k.util.ParameterList.#ctor">ParameterList()</h4>
+  <div class="markdown level1 summary"><p>Constructs an empty ParameterList object. It can be later completed by
+adding elements one by one, by loading them from a file, or by
+initializing them from an argument string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParameterList()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList__ctor_CSJ2K_j2k_util_ParameterList_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList.%23ctor(CSJ2K.j2k.util.ParameterList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L114">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_util_ParameterList__ctor_" data-uid="CSJ2K.j2k.util.ParameterList.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_util_ParameterList__ctor_CSJ2K_j2k_util_ParameterList_" data-uid="CSJ2K.j2k.util.ParameterList.#ctor(CSJ2K.j2k.util.ParameterList)">ParameterList(ParameterList)</h4>
+  <div class="markdown level1 summary"><p>Constructs an empty ParameterList object with the provided default
+parameters. The list can be later updated by adding elements one by
+one, by loading them from a file, or by initializing them from an
+argument string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParameterList(ParameterList def)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.util.ParameterList.html">ParameterList</a></td>
+        <td><span class="parametername">def</span></td>
+        <td><p>The defaults parameters</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList_DefaultParameterList.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList.DefaultParameterList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L82">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_util_ParameterList_DefaultParameterList_" data-uid="CSJ2K.j2k.util.ParameterList.DefaultParameterList*"></a>
+  <h4 id="CSJ2K_j2k_util_ParameterList_DefaultParameterList" data-uid="CSJ2K.j2k.util.ParameterList.DefaultParameterList">DefaultParameterList</h4>
+  <div class="markdown level1 summary"><p>Returns the default ParameterList.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ParameterList DefaultParameterList { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.util.ParameterList.html">ParameterList</a></td>
+        <td><p>Default ParameterList</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList_checkList_System_Char_System_String___.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList.checkList(System.Char%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L453">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_util_ParameterList_checkList_" data-uid="CSJ2K.j2k.util.ParameterList.checkList*"></a>
+  <h4 id="CSJ2K_j2k_util_ParameterList_checkList_System_Char_System_String___" data-uid="CSJ2K.j2k.util.ParameterList.checkList(System.Char,System.String[])">checkList(Char, String[])</h4>
+  <div class="markdown level1 summary"><p>Checks if the parameters which name starts with the prefix 'prfx' in
+the parameter list are all in the list of valid parameter names
+'plist'. If there is a parameter that is not in 'plist' an
+IllegalArgumentException is thrown with an explanation message. The
+default parameters are also included in the check.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void checkList(char prfx, string[] plist)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">prfx</span></td>
+        <td><p>The prefix of parameters to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">plist</span></td>
+        <td><p>The list of valid parameter names for the 'prfx'
+prefix. If null it is considered that no names are valid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList_checkList_System_Char___System_String___.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList.checkList(System.Char%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L508">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_util_ParameterList_checkList_" data-uid="CSJ2K.j2k.util.ParameterList.checkList*"></a>
+  <h4 id="CSJ2K_j2k_util_ParameterList_checkList_System_Char___System_String___" data-uid="CSJ2K.j2k.util.ParameterList.checkList(System.Char[],System.String[])">checkList(Char[], String[])</h4>
+  <div class="markdown level1 summary"><p>Checks if the parameters which names do not start with any of the
+prefixes in 'prfxs' in this ParameterList are all in the list of valid
+parameter names 'plist'. If there is a parameter that is not in 'plist'
+an IllegalArgumentException is thrown with an explanation message. The
+default parameters are also included in the check.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void checkList(char[] prfxs, string[] plist)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td><span class="parametername">prfxs</span></td>
+        <td><p>The prefixes of parameters to ignore.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">plist</span></td>
+        <td><p>The list of valid parameter names. If null it is
+considered that no names are valid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList_getBooleanParameter_System_String_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList.getBooleanParameter(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L323">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_util_ParameterList_getBooleanParameter_" data-uid="CSJ2K.j2k.util.ParameterList.getBooleanParameter*"></a>
+  <h4 id="CSJ2K_j2k_util_ParameterList_getBooleanParameter_System_String_" data-uid="CSJ2K.j2k.util.ParameterList.getBooleanParameter(System.String)">getBooleanParameter(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the named parameter as a boolean. The value &quot;on&quot;
+is interpreted as 'true', while the value &quot;off&quot; is interpreted as
+'false'. If the parameter has another value then an
+StringFormatException is thrown. If the parameter 'pname' is not in the
+parameter list, an IllegalArgumentException is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool getBooleanParameter(string pname)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pname</span></td>
+        <td><p>The parameter name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>the value of the parameter as a boolean.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.util.StringFormatException.html">StringFormatException</a></td>
+        <td><p>If the parameter has a value which is
+neither &quot;on&quot; nor &quot;off&quot;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList_getFloatParameter_System_String_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList.getFloatParameter(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L409">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_util_ParameterList_getFloatParameter_" data-uid="CSJ2K.j2k.util.ParameterList.getFloatParameter*"></a>
+  <h4 id="CSJ2K_j2k_util_ParameterList_getFloatParameter_System_String_" data-uid="CSJ2K.j2k.util.ParameterList.getFloatParameter(System.String)">getFloatParameter(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the named parameter as a float. If the parameter
+has a non-numeric value a NumberFormatException is thrown. If the
+parameter has a multiple word value than the first word is returned as
+an int, others are ignored. If the parameter 'pname' is not in the
+parameter list, an IllegalArgumentException is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float getFloatParameter(string pname)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pname</span></td>
+        <td><p>The parameter name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>the value of the parameter as a float.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList_getIntParameter_System_String_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList.getIntParameter(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L366">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_util_ParameterList_getIntParameter_" data-uid="CSJ2K.j2k.util.ParameterList.getIntParameter*"></a>
+  <h4 id="CSJ2K_j2k_util_ParameterList_getIntParameter_System_String_" data-uid="CSJ2K.j2k.util.ParameterList.getIntParameter(System.String)">getIntParameter(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the named parameter as an int. If the parameter
+has a non-numeric value a NumberFormatException is thrown. If the
+parameter has a multiple word value than the first word is returned as
+an int, others are ignored. If the parameter 'pname' is not in the
+parameter list, an IllegalArgumentException is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getIntParameter(string pname)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pname</span></td>
+        <td><p>The parameter name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>the value of the parameter as an int.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList_getParameter_System_String_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList.getParameter(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L286">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_util_ParameterList_getParameter_" data-uid="CSJ2K.j2k.util.ParameterList.getParameter*"></a>
+  <h4 id="CSJ2K_j2k_util_ParameterList_getParameter_System_String_" data-uid="CSJ2K.j2k.util.ParameterList.getParameter(System.String)">getParameter(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the value of the named parameter, as a string. The value can
+come from teh defaults, if there are.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string getParameter(string pname)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pname</span></td>
+        <td><p>The parameter name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>the value of the parameter as a string, or null if there is no
+parameter with the name 'pname'.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList_parseArgs_System_String___.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList.parseArgs(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L156">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_util_ParameterList_parseArgs_" data-uid="CSJ2K.j2k.util.ParameterList.parseArgs*"></a>
+  <h4 id="CSJ2K_j2k_util_ParameterList_parseArgs_System_String___" data-uid="CSJ2K.j2k.util.ParameterList.parseArgs(System.String[])">parseArgs(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void parseArgs(string[] argv)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">argv</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList_toNameArray_System_String_____.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList.toNameArray(System.String%5B%5D%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L560">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_util_ParameterList_toNameArray_" data-uid="CSJ2K.j2k.util.ParameterList.toNameArray*"></a>
+  <h4 id="CSJ2K_j2k_util_ParameterList_toNameArray_System_String_____" data-uid="CSJ2K.j2k.util.ParameterList.toNameArray(System.String[][])">toNameArray(String[][])</h4>
+  <div class="markdown level1 summary"><p>Converts the usage information to a list of parameter names in a single
+array. The usage information appears in a 2D array of String. The first
+dimensions contains the different options, the second dimension
+contains the name of the option (first element), the synopsis and the
+explanation. This method takes the names of the different options in
+'pinfo' and returns them in a single array of String.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] toNameArray(string[][] pinfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[][]</td>
+        <td><span class="parametername">pinfo</span></td>
+        <td><p>The list of options and their usage info (see above).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>An array with the names of the options in pinfo. If pinfo is
+null, null is returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.ICollection</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.IDeserializationCallback</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_util_ParameterList.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.util.ParameterList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/util/ParameterList.cs/#L70" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

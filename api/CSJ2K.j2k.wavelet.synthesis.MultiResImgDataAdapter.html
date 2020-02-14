@@ -1,0 +1,1510 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MultiResImgDataAdapter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MultiResImgDataAdapter
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter">
+  
+  
+  <h1 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter" class="text-break">Class MultiResImgDataAdapter
+  </h1>
+  <div class="markdown level0 summary"><p>This class provides a default implementation for the methods of the
+'MultiResImgData' interface. The default implementation consists just in
+returning the value of the source, where the source is another
+'MultiResImgData' object.</p>
+<p>This abstract class can be used to facilitate the development of other
+classes that implement &apos;MultiResImgData&apos;. For example a dequantizer can
+inherit from this class and all the trivial methods do not have to be
+reimplemented.</p>
+<p>If the default implementation of a method provided in this class does
+not suit a particular implementation of the &apos;MultiResImgData&apos; interface,
+the method can be overriden to implement the proper behaviour.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MultiResImgDataAdapter</span></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.entropy.decoder.EntropyDecoder.html">EntropyDecoder</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.Dequantizer.html">Dequantizer</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.roi.ROIDeScaler.html">ROIDeScaler</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.html">CSJ2K.j2k.wavelet.synthesis</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class MultiResImgDataAdapter : MultiResImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter__ctor_CSJ2K_j2k_wavelet_synthesis_MultiResImgData_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.%23ctor(CSJ2K.j2k.wavelet.synthesis.MultiResImgData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L153">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter__ctor_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter__ctor_CSJ2K_j2k_wavelet_synthesis_MultiResImgData_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.#ctor(CSJ2K.j2k.wavelet.synthesis.MultiResImgData)">MultiResImgDataAdapter(MultiResImgData)</h4>
+  <div class="markdown level1 summary"><p>Instantiates the MultiResImgDataAdapter object specifying the
+MultiResImgData source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MultiResImgDataAdapter(MultiResImgData src)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>From where to obrtain the MultiResImgData values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_mressrc.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.mressrc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L144">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_mressrc" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.mressrc">mressrc</h4>
+  <div class="markdown level1 summary"><p>The MultiResImgData source</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MultiResImgData mressrc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_tIdx.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.tIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L141">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_tIdx" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.tIdx">tIdx</h4>
+  <div class="markdown level1 summary"><p>Index of the current tile</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int tIdx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileHeight.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.NomTileHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L80">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileHeight_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.NomTileHeight*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileHeight" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.NomTileHeight">NomTileHeight</h4>
+  <div class="markdown level1 summary"><p>Returns the nominal tiles height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NomTileHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileWidth.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.NomTileWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L71">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileWidth_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.NomTileWidth*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileWidth" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.NomTileWidth">NomTileWidth</h4>
+  <div class="markdown level1 summary"><p>Returns the nominal tiles width</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NomTileWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NumComps.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.NumComps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L96">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NumComps_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.NumComps*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NumComps" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.NumComps">NumComps</h4>
+  <div class="markdown level1 summary"><p>Returns the number of components in the image.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NumComps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of components in the image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TileIdx.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.TileIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L113">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TileIdx_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.TileIdx*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TileIdx" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.TileIdx">TileIdx</h4>
+  <div class="markdown level1 summary"><p>Returns the index of the current tile, relative to a standard scan-line
+order.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TileIdx { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The current tile's index (starts at 0).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.TilePartULX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L122">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULX_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.TilePartULX*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULX" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.TilePartULX">TilePartULX</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal tile partition offset in the reference grid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TilePartULX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.TilePartULY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L131">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULY_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.TilePartULY*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULY" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.TilePartULY">TilePartULY</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical tile partition offset in the reference grid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TilePartULY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgHeight_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompImgHeight(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L359">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgHeight_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompImgHeight*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgHeight_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompImgHeight(System.Int32,System.Int32)">getCompImgHeight(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getCompImgHeight(int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgWidth_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompImgWidth(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L338">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgWidth_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompImgWidth*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgWidth_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompImgWidth(System.Int32,System.Int32)">getCompImgWidth(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the width in pixels of the specified component in the overall
+image, for the given resolution level.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getCompImgWidth(int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The width in pixels of component <tt>c</tt> in the overall
+image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsX_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompSubsX(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L247">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsX_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompSubsX*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsX_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompSubsX(System.Int32)">getCompSubsX(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the component subsampling factor in the horizontal direction,
+for the specified component. This is, approximately, the ratio of
+dimensions between the reference grid and the component itself, see the
+'ImgData' interface desription for details.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getCompSubsX(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component (between 0 and N-1)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The horizontal subsampling factor of component 'c'</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsY_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompSubsY(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L269">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsY_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompSubsY*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsY_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getCompSubsY(System.Int32)">getCompSubsY(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the component subsampling factor in the vertical direction, for
+the specified component. This is, approximately, the ratio of
+dimensions between the reference grid and the component itself, see the
+'ImgData' interface desription for details.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getCompSubsY(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component (between 0 and N-1)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The vertical subsampling factor of component 'c'</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgHeight_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgHeight(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L225">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgHeight_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgHeight*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgHeight_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgHeight(System.Int32)">getImgHeight(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the overall height of the image in pixels, for the given
+resolution level. This is the image's height without accounting for any
+component subsampling or tiling.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getImgHeight(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total image's height in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULX_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgULX(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L462">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULX_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgULX*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULX_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgULX(System.Int32)">getImgULX(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal coordinate of the image origin, the top-left
+corner, in the canvas system, on the reference grid at the specified
+resolution level.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getImgULX(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The horizontal coordinate of the image origin in the canvas
+system, on the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULY_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgULY(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L481">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULY_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgULY*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULY_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgULY(System.Int32)">getImgULY(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical coordinate of the image origin, the top-left
+corner, in the canvas system, on the reference grid at the specified
+resolution level.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getImgULY(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The vertical coordinate of the image origin in the canvas
+system, on the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgWidth_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgWidth(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L207">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgWidth_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgWidth*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgWidth_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getImgWidth(System.Int32)">getImgWidth(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the overall width of the image in pixels, for the given
+resolution level. This is the image's width without accounting for any
+component subsampling or tiling.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getImgWidth(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total image's width in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getNumTiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L512">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getNumTiles*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getNumTiles">getNumTiles()</h4>
+  <div class="markdown level1 summary"><p>Returns the total number of tiles in the image.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getNumTiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total number of tiles in the image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getNumTiles(CSJ2K.j2k.image.Coord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L499">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getNumTiles*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getNumTiles(CSJ2K.j2k.image.Coord)">getNumTiles(Coord)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of tiles in the horizontal and vertical directions.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Coord getNumTiles(Coord co)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><span class="parametername">co</span></td>
+        <td><p>If not null this object is used to return the information. If
+null a new one is created and returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><p>The number of tiles in the horizontal (Coord.x) and vertical
+(Coord.y) directions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULX_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getResULX(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L426">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULX_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getResULX*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULX_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getResULX(System.Int32,System.Int32)">getResULX(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal coordinate of the upper-left corner of the
+specified resolution level in the given component of the current tile.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getResULX(int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULY_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getResULY(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L443">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULY_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getResULY*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULY_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getResULY(System.Int32,System.Int32)">getResULY(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical coordinate of the upper-left corner of the
+specified resolution in the given component of the current tile.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getResULY(int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getSynSubbandTree_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getSynSubbandTree(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L516">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getSynSubbandTree_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getSynSubbandTree*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getSynSubbandTree_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getSynSubbandTree(System.Int32,System.Int32)">getSynSubbandTree(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract SubbandSyn getSynSubbandTree(int param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTile(CSJ2K.j2k.image.Coord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L409">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTile_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTile*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTile(CSJ2K.j2k.image.Coord)">getTile(Coord)</h4>
+  <div class="markdown level1 summary"><p>Returns the indexes of the current tile. These are the horizontal and
+vertical indexes of the current tile.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Coord getTile(Coord co)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><span class="parametername">co</span></td>
+        <td><p>If not null this object is used to return the information. If
+null a new one is created and returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><p>The current tile's indexes (vertical and horizontal indexes).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileCompHeight(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L317">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompHeight_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileCompHeight*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileCompHeight(System.Int32,System.Int32,System.Int32)">getTileCompHeight(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the height in pixels of the specified tile-component for the
+given resolution level.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getTileCompHeight(int t, int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The height in pixels of component <tt>c</tt> in tile
+<tt>t</tt>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileCompWidth(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L293">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompWidth_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileCompWidth*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileCompWidth(System.Int32,System.Int32,System.Int32)">getTileCompWidth(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the width in pixels of the specified tile-component for the
+given resolution level.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getTileCompWidth(int t, int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The width in pixels of component <tt>c</tt> in tile <tt>t</tt>
+for resolution level <tt>rl</tt>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileHeight_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileHeight(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L189">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileHeight_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileHeight*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileHeight_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileHeight(System.Int32)">getTileHeight(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the overall height of the current tile in pixels, for the given
+resolution level. This is the tile's height without accounting for any
+component subsampling.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getTileHeight(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total current tile's height in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileWidth_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileWidth(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L171">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileWidth_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileWidth*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileWidth_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.getTileWidth(System.Int32)">getTileWidth(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the overall width of the current tile in pixels, for the given
+resolution level. This is the tile's width without accounting for any
+component subsampling.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getTileWidth(int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>The resolution level, from 0 to L.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total current tile's width in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_nextTile.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.nextTile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L390">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_nextTile_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.nextTile*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_nextTile" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.nextTile">nextTile()</h4>
+  <div class="markdown level1 summary"><p>Advances to the next tile, in standard scan-line order (by rows then
+columns). An NoNextElementException is thrown if the current tile is
+the last one (i.e. there is no next tile).</p>
+<p>This default implementation just changes the tile in the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void nextTile()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_setTile_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.setTile(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L377">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_setTile_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.setTile*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_setTile_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.setTile(System.Int32,System.Int32)">setTile(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Changes the current tile, given the new indexes. An
+IllegalArgumentException is thrown if the indexes do not correspond to
+a valid tile.</p>
+<p>This default implementation just changes the tile in the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void setTile(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The horizontal indexes the tile.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The vertical indexes of the new tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/MultiResImgDataAdapter.cs/#L68" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

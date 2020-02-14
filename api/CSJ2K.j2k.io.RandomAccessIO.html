@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface RandomAccessIO
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface RandomAccessIO
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.io.RandomAccessIO">
+  
+  
+  <h1 id="CSJ2K_j2k_io_RandomAccessIO" data-uid="CSJ2K.j2k.io.RandomAccessIO" class="text-break">Interface RandomAccessIO
+  </h1>
+  <div class="markdown level0 summary"><p>This abstract class defines the interface to perform random access I/O. It
+implements the <tt>BinaryDataInput</tt> and <tt>BinaryDataOutput</tt>
+interfaces so that binary data input/output can be performed.</p>
+<p>This interface supports streams of up to 2 GB in length.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html#CSJ2K_j2k_io_BinaryDataInput_ByteOrdering">BinaryDataInput.ByteOrdering</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html#CSJ2K_j2k_io_BinaryDataInput_readByte">BinaryDataInput.readByte()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html#CSJ2K_j2k_io_BinaryDataInput_readUnsignedByte">BinaryDataInput.readUnsignedByte()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html#CSJ2K_j2k_io_BinaryDataInput_readShort">BinaryDataInput.readShort()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html#CSJ2K_j2k_io_BinaryDataInput_readUnsignedShort">BinaryDataInput.readUnsignedShort()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html#CSJ2K_j2k_io_BinaryDataInput_readInt">BinaryDataInput.readInt()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html#CSJ2K_j2k_io_BinaryDataInput_readUnsignedInt">BinaryDataInput.readUnsignedInt()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html#CSJ2K_j2k_io_BinaryDataInput_readLong">BinaryDataInput.readLong()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html#CSJ2K_j2k_io_BinaryDataInput_readFloat">BinaryDataInput.readFloat()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html#CSJ2K_j2k_io_BinaryDataInput_readDouble">BinaryDataInput.readDouble()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html#CSJ2K_j2k_io_BinaryDataInput_skipBytes_System_Int32_">BinaryDataInput.skipBytes(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html#CSJ2K_j2k_io_BinaryDataOutput_writeByte_System_Int32_">BinaryDataOutput.writeByte(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html#CSJ2K_j2k_io_BinaryDataOutput_writeShort_System_Int32_">BinaryDataOutput.writeShort(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html#CSJ2K_j2k_io_BinaryDataOutput_writeInt_System_Int32_">BinaryDataOutput.writeInt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html#CSJ2K_j2k_io_BinaryDataOutput_writeLong_System_Int64_">BinaryDataOutput.writeLong(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html#CSJ2K_j2k_io_BinaryDataOutput_writeFloat_System_Single_">BinaryDataOutput.writeFloat(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html#CSJ2K_j2k_io_BinaryDataOutput_writeDouble_System_Double_">BinaryDataOutput.writeDouble(Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html#CSJ2K_j2k_io_BinaryDataOutput_flush">BinaryDataOutput.flush()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.io.html">CSJ2K.j2k.io</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_io_RandomAccessIO_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface RandomAccessIO : BinaryDataInput, BinaryDataOutput</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_RandomAccessIO_Pos.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.RandomAccessIO.Pos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/RandomAccessIO.cs/#L72">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_RandomAccessIO_Pos_" data-uid="CSJ2K.j2k.io.RandomAccessIO.Pos*"></a>
+  <h4 id="CSJ2K_j2k_io_RandomAccessIO_Pos" data-uid="CSJ2K.j2k.io.RandomAccessIO.Pos">Pos</h4>
+  <div class="markdown level1 summary"><p>Returns the current position in the stream, which is the position from
+where the next byte of data would be read. The first byte in the stream
+is in position <tt>0</tt>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Pos { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The offset of the current position, in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_RandomAccessIO_close.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.RandomAccessIO.close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/RandomAccessIO.cs/#L85">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_RandomAccessIO_close_" data-uid="CSJ2K.j2k.io.RandomAccessIO.close*"></a>
+  <h4 id="CSJ2K_j2k_io_RandomAccessIO_close" data-uid="CSJ2K.j2k.io.RandomAccessIO.close">close()</h4>
+  <div class="markdown level1 summary"><p>Closes the I/O stream. Prior to closing the stream, any buffered data
+(at the bit and byte level) should be written.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void close()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_RandomAccessIO_length.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.RandomAccessIO.length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/RandomAccessIO.cs/#L97">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_RandomAccessIO_length_" data-uid="CSJ2K.j2k.io.RandomAccessIO.length*"></a>
+  <h4 id="CSJ2K_j2k_io_RandomAccessIO_length" data-uid="CSJ2K.j2k.io.RandomAccessIO.length">length()</h4>
+  <div class="markdown level1 summary"><p>Returns the current length of the stream, in bytes, taking into account
+any buffering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int length()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The length of the stream, in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_RandomAccessIO_read.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.RandomAccessIO.read%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/RandomAccessIO.cs/#L131">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_RandomAccessIO_read_" data-uid="CSJ2K.j2k.io.RandomAccessIO.read*"></a>
+  <h4 id="CSJ2K_j2k_io_RandomAccessIO_read" data-uid="CSJ2K.j2k.io.RandomAccessIO.read">read()</h4>
+  <div class="markdown level1 summary"><p>Reads a byte of data from the stream. Prior to reading, the stream is
+realigned at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte read()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><p>The byte read, as an int.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_RandomAccessIO_readFully_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.RandomAccessIO.readFully(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/RandomAccessIO.cs/#L156">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_RandomAccessIO_readFully_" data-uid="CSJ2K.j2k.io.RandomAccessIO.readFully*"></a>
+  <h4 id="CSJ2K_j2k_io_RandomAccessIO_readFully_System_Byte___System_Int32_System_Int32_" data-uid="CSJ2K.j2k.io.RandomAccessIO.readFully(System.Byte[],System.Int32,System.Int32)">readFully(Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads up to len bytes of data from this file into an array of
+bytes. This method reads repeatedly from the stream until all the bytes
+are read. This method blocks until all the bytes are read, the end of
+the stream is detected, or an exception is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void readFully(byte[] b, int off, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The buffer into which the data is to be read. It must be long
+enough.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">off</span></td>
+        <td><p>The index in 'b' where to place the first byte read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td><p>The number of bytes to read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_RandomAccessIO_seek_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.RandomAccessIO.seek(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/RandomAccessIO.cs/#L116">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_RandomAccessIO_seek_" data-uid="CSJ2K.j2k.io.RandomAccessIO.seek*"></a>
+  <h4 id="CSJ2K_j2k_io_RandomAccessIO_seek_System_Int32_" data-uid="CSJ2K.j2k.io.RandomAccessIO.seek(System.Int32)">seek(Int32)</h4>
+  <div class="markdown level1 summary"><p>Moves the current position for the next read or write operation to
+offset. The offset is measured from the beginning of the stream. The
+offset may be set beyond the end of the file, if in write mode. Setting
+the offset beyond the end of the file does not change the file
+length. The file length will change only by writing after the offset
+has been set beyond the end of the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void seek(int off)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">off</span></td>
+        <td><p>The offset where to move to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_RandomAccessIO_write_System_Byte_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.RandomAccessIO.write(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/RandomAccessIO.cs/#L169">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_RandomAccessIO_write_" data-uid="CSJ2K.j2k.io.RandomAccessIO.write*"></a>
+  <h4 id="CSJ2K_j2k_io_RandomAccessIO_write_System_Byte_" data-uid="CSJ2K.j2k.io.RandomAccessIO.write(System.Byte)">write(Byte)</h4>
+  <div class="markdown level1 summary"><p>Writes a byte to the stream. Prior to writing, the stream is realigned
+at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void write(byte b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The byte to write. The lower 8 bits of <tt>b</tt> are
+written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html">BinaryDataInput</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html">BinaryDataOutput</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_RandomAccessIO.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.RandomAccessIO%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/RandomAccessIO.cs/#L59" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

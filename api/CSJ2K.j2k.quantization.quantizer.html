@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.j2k.quantization.quantizer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.j2k.quantization.quantizer
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.quantization.quantizer">
+  
+  <h1 id="CSJ2K_j2k_quantization_quantizer" data-uid="CSJ2K.j2k.quantization.quantizer" class="text-break">Namespace CSJ2K.j2k.quantization.quantizer
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.quantization.quantizer.Quantizer.html">Quantizer</a></h4>
+      <section><p>This abstract class provides the general interface for quantizers. The
+input of a quantizer is the output of a wavelet transform. The output of
+the quantizer is the set of quantized wavelet coefficients represented in
+sign-magnitude notation (see below).</p>
+<p>This class provides default implementation for most of the methods
+(wherever it makes sense), under the assumption that the image, component
+dimensions, and the tiles, are not modifed by the quantizer. If it is not
+the case for a particular implementation, then the methods should be
+overriden.</p>
+<p>Sign magnitude representation is used (instead of two&apos;s complement) for
+the output data. The most significant bit is used for the sign (0 if
+positive, 1 if negative). Then the magnitude of the quantized coefficient
+is stored in the next M most significat bits. The rest of the bits (least
+significant bits) can contain a fractional value of the quantized
+coefficient. This fractional value is not to be coded by the entropy
+coder. However, it can be used to compute rate-distortion measures with
+greater precision.</p>
+<p>The value of M is determined for each subband as the sum of the number
+of guard bits G and the nominal range of quantized wavelet coefficients in
+the corresponding subband (Rq), minus 1:</p>
+<p>M = G + Rq -1</p>
+<p>The value of G should be the same for all subbands. The value of Rq
+depends on the quantization step size, the nominal range of the component
+before the wavelet transform and the analysis gain of the subband (see
+Subband).</p>
+<p>The blocks of data that are requested should not cross subband
+boundaries.</p>
+<p>NOTE: At the moment only quantizers that implement the
+&apos;CBlkQuantDataSrcEnc&apos; interface are supported.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.quantization.quantizer.StdQuantizer.html">StdQuantizer</a></h4>
+      <section><p>This class implements scalar quantization of integer or floating-point
+valued source data. The source data is the wavelet transformed image data
+and the output is the quantized wavelet coefficients represented in
+sign-magnitude (see below).</p>
+<p>Sign magnitude representation is used (instead of two&apos;s complement) for
+the output data. The most significant bit is used for the sign (0 if
+positive, 1 if negative). Then the magnitude of the quantized coefficient
+is stored in the next M most significat bits. The rest of the bits (least
+significant bits) can contain a fractional value of the quantized
+coefficient. This fractional value is not to be coded by the entropy
+coder. However, it can be used to compute rate-distortion measures with
+greater precision.</p>
+<p>The value of M is determined for each subband as the sum of the number
+of guard bits G and the nominal range of quantized wavelet coefficients in
+the corresponding subband (Rq), minus 1:</p>
+<p>M = G + Rq -1</p>
+<p>The value of G should be the same for all subbands. The value of Rq
+depends on the quantization step size, the nominal range of the component
+before the wavelet transform and the analysis gain of the subband (see
+Subband).</p>
+<p>The blocks of data that are requested should not cross subband
+boundaries.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc.html">CBlkQuantDataSrcEnc</a></h4>
+      <section><p>This interface defines a source of quantized wavelet coefficients and
+methods to transfer them in a code-block by code-block basis. In each call
+to 'getNextCodeBlock()' or 'getNextInternCodeBlock()' a new code-block is
+returned. The code-blocks are returned in no specific order.</p>
+<p>This class is the source of data for the entropy coder. See the
+&apos;EntropyCoder&apos; class.</p>
+<p>Code-block data is returned in sign-magnitude representation, instead of
+the normal two&apos;s complement one. Only integral types are used. The sign
+magnitude representation is more adequate for entropy coding. In sign
+magnitude representation, the most significant bit is used for the sign (0
+if positive, 1 if negative) and the magnitude of the coefficient is stored
+in the next M most significant bits. The rest of the bits (least
+significant bits) can contain a fractional value of the quantized
+coefficient. The number &apos;M&apos; of magnitude bits is communicated in the
+&apos;magbits&apos; member variable of the &apos;CBlkWTData&apos;.</p>
+<p>Note that no more of one object may request data, otherwise one object
+would get some of the data and another one another part, in no defined
+manner.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

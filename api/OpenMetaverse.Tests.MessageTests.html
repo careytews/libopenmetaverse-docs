@@ -1,0 +1,1359 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MessageTests
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MessageTests
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.Tests.MessageTests">
+  
+  
+  <h1 id="OpenMetaverse_Tests_MessageTests" data-uid="OpenMetaverse.Tests.MessageTests" class="text-break">Class MessageTests
+  </h1>
+  <div class="markdown level0 summary"><p>These unit tests specifically test the Message class can serialize and deserialize its own data properly
+a passed test does not necessarily indicate the formatting is correct in the resulting OSD to be handled
+by the simulator.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">NUnit.Framework.Assert</span></div>
+    <div class="level2"><span class="xref">MessageTests</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsTrue(System.Boolean, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsTrue(System.Boolean, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsTrue(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsFalse(System.Boolean, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsFalse(System.Boolean, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsFalse(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotNull(System.Object, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotNull(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotNull(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNull(System.Object, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNull(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNull(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNaN(System.Double, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNaN(System.Double, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNaN(System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsEmpty(System.String, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsEmpty(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsEmpty(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsEmpty(System.Collections.ICollection, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsEmpty(System.Collections.ICollection, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsEmpty(System.Collections.ICollection)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotEmpty(System.String, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotEmpty(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotEmpty(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotEmpty(System.Collections.ICollection, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotEmpty(System.Collections.ICollection, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotEmpty(System.Collections.ICollection)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsAssignableFrom(System.Type, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsAssignableFrom(System.Type, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsAssignableFrom(System.Type, System.Object, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotAssignableFrom(System.Type, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotAssignableFrom(System.Type, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotAssignableFrom(System.Type, System.Object, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsInstanceOfType(System.Type, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsInstanceOfType(System.Type, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsInstanceOfType(System.Type, System.Object, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotInstanceOfType(System.Type, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotInstanceOfType(System.Type, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.IsNotInstanceOfType(System.Type, System.Object, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Int32, System.Int32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Int32, System.Int32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Int64, System.Int64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Int64, System.Int64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Int64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.UInt32, System.UInt32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.UInt32, System.UInt32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.UInt32, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.UInt64, System.UInt64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.UInt64, System.UInt64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Decimal, System.Decimal, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Decimal, System.Decimal, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Decimal, System.Decimal)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Double, System.Double, System.Double, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Double, System.Double, System.Double, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Double, System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Single, System.Single, System.Single, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Single, System.Single, System.Single, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Single, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Object, System.Object, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Object, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreEqual(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Object, System.Object, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Object, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Int32, System.Int32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Int32, System.Int32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Int64, System.Int64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Int64, System.Int64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Int64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.UInt32, System.UInt32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.UInt32, System.UInt32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.UInt32, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.UInt64, System.UInt64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.UInt64, System.UInt64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Decimal, System.Decimal, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Decimal, System.Decimal, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Decimal, System.Decimal)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Single, System.Single, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Single, System.Single, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Double, System.Double, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Double, System.Double, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotEqual(System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreSame(System.Object, System.Object, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreSame(System.Object, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreSame(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotSame(System.Object, System.Object, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotSame(System.Object, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.AreNotSame(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Int32, System.Int32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Int32, System.Int32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.UInt32, System.UInt32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.UInt32, System.UInt32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.UInt32, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Int64, System.Int64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Int64, System.Int64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Int64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.UInt64, System.UInt64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.UInt64, System.UInt64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Decimal, System.Decimal, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Decimal, System.Decimal, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Decimal, System.Decimal)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Double, System.Double, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Double, System.Double, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Single, System.Single, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Single, System.Single, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.IComparable, System.IComparable, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.IComparable, System.IComparable, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Greater(System.IComparable, System.IComparable)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Int32, System.Int32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Int32, System.Int32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.UInt32, System.UInt32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.UInt32, System.UInt32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.UInt32, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Int64, System.Int64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Int64, System.Int64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Int64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.UInt64, System.UInt64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.UInt64, System.UInt64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Decimal, System.Decimal, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Decimal, System.Decimal, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Decimal, System.Decimal)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Double, System.Double, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Double, System.Double, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Single, System.Single, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Single, System.Single, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.IComparable, System.IComparable, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.IComparable, System.IComparable, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Less(System.IComparable, System.IComparable)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Contains(System.Object, System.Collections.ICollection, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Contains(System.Object, System.Collections.ICollection, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Contains(System.Object, System.Collections.ICollection)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Fail(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Fail(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Fail()</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Ignore(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Ignore(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Ignore()</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.DoAssert(NUnit.Framework.IAsserter)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.That(System.Object, NUnit.Framework.Constraints.Constraint)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.That(System.Object, NUnit.Framework.Constraints.Constraint, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.That(System.Object, NUnit.Framework.Constraints.Constraint, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.That(System.Boolean, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.That(System.Boolean, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.That(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Int32, System.Int32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Int32, System.Int32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.UInt32, System.UInt32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.UInt32, System.UInt32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.UInt32, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Int64, System.Int64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Int64, System.Int64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Int64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.UInt64, System.UInt64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.UInt64, System.UInt64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Decimal, System.Decimal, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Decimal, System.Decimal, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Decimal, System.Decimal)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Double, System.Double, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Double, System.Double, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Single, System.Single, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Single, System.Single, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.IComparable, System.IComparable, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.IComparable, System.IComparable, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.GreaterOrEqual(System.IComparable, System.IComparable)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Int32, System.Int32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Int32, System.Int32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Int32, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.UInt32, System.UInt32, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.UInt32, System.UInt32, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.UInt32, System.UInt32)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Int64, System.Int64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Int64, System.Int64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Int64, System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.UInt64, System.UInt64, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.UInt64, System.UInt64, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.UInt64, System.UInt64)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Decimal, System.Decimal, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Decimal, System.Decimal, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Decimal, System.Decimal)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Double, System.Double, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Double, System.Double, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Double, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Single, System.Single, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Single, System.Single, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.IComparable, System.IComparable, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.IComparable, System.IComparable, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.LessOrEqual(System.IComparable, System.IComparable)</span>
+    </div>
+    <div>
+      <span class="xref">NUnit.Framework.Assert.Counter</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.Tests.html">OpenMetaverse.Tests</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.Tests.dll</h6>
+  <h5 id="OpenMetaverse_Tests_MessageTests_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestFixture]
+public class MessageTests : Assert</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_AgentGroupDataUpdateMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.AgentGroupDataUpdateMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L54">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_AgentGroupDataUpdateMessage_" data-uid="OpenMetaverse.Tests.MessageTests.AgentGroupDataUpdateMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_AgentGroupDataUpdateMessage" data-uid="OpenMetaverse.Tests.MessageTests.AgentGroupDataUpdateMessage">AgentGroupDataUpdateMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void AgentGroupDataUpdateMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ChatSessionAcceptInvitation.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ChatSessionAcceptInvitation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L554">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ChatSessionAcceptInvitation_" data-uid="OpenMetaverse.Tests.MessageTests.ChatSessionAcceptInvitation*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ChatSessionAcceptInvitation" data-uid="OpenMetaverse.Tests.MessageTests.ChatSessionAcceptInvitation">ChatSessionAcceptInvitation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ChatSessionAcceptInvitation()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ChatSessionRequestMuteUpdate.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ChatSessionRequestMuteUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L533">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ChatSessionRequestMuteUpdate_" data-uid="OpenMetaverse.Tests.MessageTests.ChatSessionRequestMuteUpdate*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ChatSessionRequestMuteUpdate" data-uid="OpenMetaverse.Tests.MessageTests.ChatSessionRequestMuteUpdate">ChatSessionRequestMuteUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ChatSessionRequestMuteUpdate()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ChatSessionRequestStartConference.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ChatSessionRequestStartConference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L511">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ChatSessionRequestStartConference_" data-uid="OpenMetaverse.Tests.MessageTests.ChatSessionRequestStartConference*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ChatSessionRequestStartConference" data-uid="OpenMetaverse.Tests.MessageTests.ChatSessionRequestStartConference">ChatSessionRequestStartConference()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ChatSessionRequestStartConference()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ChatterBoxInvitationMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ChatterBoxInvitationMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L204">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ChatterBoxInvitationMessage_" data-uid="OpenMetaverse.Tests.MessageTests.ChatterBoxInvitationMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ChatterBoxInvitationMessage" data-uid="OpenMetaverse.Tests.MessageTests.ChatterBoxInvitationMessage">ChatterBoxInvitationMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ChatterBoxInvitationMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ChatterBoxSessionAgentListUpdatesMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ChatterBoxSessionAgentListUpdatesMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L284">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ChatterBoxSessionAgentListUpdatesMessage_" data-uid="OpenMetaverse.Tests.MessageTests.ChatterBoxSessionAgentListUpdatesMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ChatterBoxSessionAgentListUpdatesMessage" data-uid="OpenMetaverse.Tests.MessageTests.ChatterBoxSessionAgentListUpdatesMessage">ChatterBoxSessionAgentListUpdatesMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ChatterBoxSessionAgentListUpdatesMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ChatterboxSessionEventReplyMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ChatterboxSessionEventReplyMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L242">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ChatterboxSessionEventReplyMessage_" data-uid="OpenMetaverse.Tests.MessageTests.ChatterboxSessionEventReplyMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ChatterboxSessionEventReplyMessage" data-uid="OpenMetaverse.Tests.MessageTests.ChatterboxSessionEventReplyMessage">ChatterboxSessionEventReplyMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ChatterboxSessionEventReplyMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ChatterBoxSessionStartReplyMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ChatterBoxSessionStartReplyMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L258">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ChatterBoxSessionStartReplyMessage_" data-uid="OpenMetaverse.Tests.MessageTests.ChatterBoxSessionStartReplyMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ChatterBoxSessionStartReplyMessage" data-uid="OpenMetaverse.Tests.MessageTests.ChatterBoxSessionStartReplyMessage">ChatterBoxSessionStartReplyMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ChatterBoxSessionStartReplyMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_CopyInventoryFromNotecardMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.CopyInventoryFromNotecardMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L587">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_CopyInventoryFromNotecardMessage_" data-uid="OpenMetaverse.Tests.MessageTests.CopyInventoryFromNotecardMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_CopyInventoryFromNotecardMessage" data-uid="OpenMetaverse.Tests.MessageTests.CopyInventoryFromNotecardMessage">CopyInventoryFromNotecardMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void CopyInventoryFromNotecardMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_DirLandReplyMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.DirLandReplyMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L1103">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_DirLandReplyMessage_" data-uid="OpenMetaverse.Tests.MessageTests.DirLandReplyMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_DirLandReplyMessage" data-uid="OpenMetaverse.Tests.MessageTests.DirLandReplyMessage">DirLandReplyMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void DirLandReplyMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_EnableSimulatorMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.EnableSimulatorMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L826">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_EnableSimulatorMessage_" data-uid="OpenMetaverse.Tests.MessageTests.EnableSimulatorMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_EnableSimulatorMessage" data-uid="OpenMetaverse.Tests.MessageTests.EnableSimulatorMessage">EnableSimulatorMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void EnableSimulatorMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_EstablishAgentCommunicationMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.EstablishAgentCommunicationMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L147">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_EstablishAgentCommunicationMessage_" data-uid="OpenMetaverse.Tests.MessageTests.EstablishAgentCommunicationMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_EstablishAgentCommunicationMessage" data-uid="OpenMetaverse.Tests.MessageTests.EstablishAgentCommunicationMessage">EstablishAgentCommunicationMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void EstablishAgentCommunicationMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_LandStatReplyMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.LandStatReplyMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L943">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_LandStatReplyMessage_" data-uid="OpenMetaverse.Tests.MessageTests.LandStatReplyMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_LandStatReplyMessage" data-uid="OpenMetaverse.Tests.MessageTests.LandStatReplyMessage">LandStatReplyMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void LandStatReplyMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_MapLayerMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.MapLayerMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L462">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_MapLayerMessage_" data-uid="OpenMetaverse.Tests.MessageTests.MapLayerMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_MapLayerMessage" data-uid="OpenMetaverse.Tests.MessageTests.MapLayerMessage">MapLayerMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void MapLayerMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ParcelObjectOwnersMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ParcelObjectOwnersMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L167">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ParcelObjectOwnersMessage_" data-uid="OpenMetaverse.Tests.MessageTests.ParcelObjectOwnersMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ParcelObjectOwnersMessage" data-uid="OpenMetaverse.Tests.MessageTests.ParcelObjectOwnersMessage">ParcelObjectOwnersMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ParcelObjectOwnersMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ParcelPropertiesMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ParcelPropertiesMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L642">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ParcelPropertiesMessage_" data-uid="OpenMetaverse.Tests.MessageTests.ParcelPropertiesMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ParcelPropertiesMessage" data-uid="OpenMetaverse.Tests.MessageTests.ParcelPropertiesMessage">ParcelPropertiesMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ParcelPropertiesMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ParcelPropertiesUpdateMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ParcelPropertiesUpdateMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L764">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ParcelPropertiesUpdateMessage_" data-uid="OpenMetaverse.Tests.MessageTests.ParcelPropertiesUpdateMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ParcelPropertiesUpdateMessage" data-uid="OpenMetaverse.Tests.MessageTests.ParcelPropertiesUpdateMessage">ParcelPropertiesUpdateMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ParcelPropertiesUpdateMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ParcelVoiceInfoRequestMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ParcelVoiceInfoRequestMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L423">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ParcelVoiceInfoRequestMessage_" data-uid="OpenMetaverse.Tests.MessageTests.ParcelVoiceInfoRequestMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ParcelVoiceInfoRequestMessage" data-uid="OpenMetaverse.Tests.MessageTests.ParcelVoiceInfoRequestMessage">ParcelVoiceInfoRequestMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ParcelVoiceInfoRequestMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_PlacesReplyMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.PlacesReplyMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L1030">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_PlacesReplyMessage_" data-uid="OpenMetaverse.Tests.MessageTests.PlacesReplyMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_PlacesReplyMessage" data-uid="OpenMetaverse.Tests.MessageTests.PlacesReplyMessage">PlacesReplyMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void PlacesReplyMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ProvisionVoiceAccountRequestMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ProvisionVoiceAccountRequestMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L609">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ProvisionVoiceAccountRequestMessage_" data-uid="OpenMetaverse.Tests.MessageTests.ProvisionVoiceAccountRequestMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ProvisionVoiceAccountRequestMessage" data-uid="OpenMetaverse.Tests.MessageTests.ProvisionVoiceAccountRequestMessage">ProvisionVoiceAccountRequestMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ProvisionVoiceAccountRequestMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ReflectionPerformanceDirLandReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ReflectionPerformanceDirLandReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L1196">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ReflectionPerformanceDirLandReply_" data-uid="OpenMetaverse.Tests.MessageTests.ReflectionPerformanceDirLandReply*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ReflectionPerformanceDirLandReply" data-uid="OpenMetaverse.Tests.MessageTests.ReflectionPerformanceDirLandReply">ReflectionPerformanceDirLandReply()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+[Category(&quot;Benchmark&quot;)]
+public void ReflectionPerformanceDirLandReply()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ReflectionPerformanceDirLandReply2.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ReflectionPerformanceDirLandReply2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L1308">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ReflectionPerformanceDirLandReply2_" data-uid="OpenMetaverse.Tests.MessageTests.ReflectionPerformanceDirLandReply2*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ReflectionPerformanceDirLandReply2" data-uid="OpenMetaverse.Tests.MessageTests.ReflectionPerformanceDirLandReply2">ReflectionPerformanceDirLandReply2()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+[Category(&quot;Benchmark&quot;)]
+public void ReflectionPerformanceDirLandReply2()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ReflectionPerformanceParcelProperties.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ReflectionPerformanceParcelProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L1368">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ReflectionPerformanceParcelProperties_" data-uid="OpenMetaverse.Tests.MessageTests.ReflectionPerformanceParcelProperties*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ReflectionPerformanceParcelProperties" data-uid="OpenMetaverse.Tests.MessageTests.ReflectionPerformanceParcelProperties">ReflectionPerformanceParcelProperties()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+[Category(&quot;Benchmark&quot;)]
+public void ReflectionPerformanceParcelProperties()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ReflectionPerformanceRemoteParcelResponse.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ReflectionPerformanceRemoteParcelResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L1156">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ReflectionPerformanceRemoteParcelResponse_" data-uid="OpenMetaverse.Tests.MessageTests.ReflectionPerformanceRemoteParcelResponse*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ReflectionPerformanceRemoteParcelResponse" data-uid="OpenMetaverse.Tests.MessageTests.ReflectionPerformanceRemoteParcelResponse">ReflectionPerformanceRemoteParcelResponse()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+[Category(&quot;Benchmark&quot;)]
+public void ReflectionPerformanceRemoteParcelResponse()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_RemoteParcelRequestReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.RemoteParcelRequestReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L857">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_RemoteParcelRequestReply_" data-uid="OpenMetaverse.Tests.MessageTests.RemoteParcelRequestReply*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_RemoteParcelRequestReply" data-uid="OpenMetaverse.Tests.MessageTests.RemoteParcelRequestReply">RemoteParcelRequestReply()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void RemoteParcelRequestReply()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_RequiredVoiceVersionMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.RequiredVoiceVersionMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L569">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_RequiredVoiceVersionMessage_" data-uid="OpenMetaverse.Tests.MessageTests.RequiredVoiceVersionMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_RequiredVoiceVersionMessage" data-uid="OpenMetaverse.Tests.MessageTests.RequiredVoiceVersionMessage">RequiredVoiceVersionMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void RequiredVoiceVersionMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ScriptRunningReplyMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ScriptRunningReplyMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L441">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ScriptRunningReplyMessage_" data-uid="OpenMetaverse.Tests.MessageTests.ScriptRunningReplyMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ScriptRunningReplyMessage" data-uid="OpenMetaverse.Tests.MessageTests.ScriptRunningReplyMessage">ScriptRunningReplyMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ScriptRunningReplyMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_SendPostcardMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.SendPostcardMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L905">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_SendPostcardMessage_" data-uid="OpenMetaverse.Tests.MessageTests.SendPostcardMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_SendPostcardMessage" data-uid="OpenMetaverse.Tests.MessageTests.SendPostcardMessage">SendPostcardMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void SendPostcardMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_TeleportFinishMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.TeleportFinishMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L119">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_TeleportFinishMessage_" data-uid="OpenMetaverse.Tests.MessageTests.TeleportFinishMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_TeleportFinishMessage" data-uid="OpenMetaverse.Tests.MessageTests.TeleportFinishMessage">TeleportFinishMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void TeleportFinishMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_TelportFailedMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.TelportFailedMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L996">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_TelportFailedMessage_" data-uid="OpenMetaverse.Tests.MessageTests.TelportFailedMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_TelportFailedMessage" data-uid="OpenMetaverse.Tests.MessageTests.TelportFailedMessage">TelportFailedMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void TelportFailedMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_UpdateAgentInformationMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.UpdateAgentInformationMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L1017">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_UpdateAgentInformationMessage_" data-uid="OpenMetaverse.Tests.MessageTests.UpdateAgentInformationMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_UpdateAgentInformationMessage" data-uid="OpenMetaverse.Tests.MessageTests.UpdateAgentInformationMessage">UpdateAgentInformationMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void UpdateAgentInformationMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_UpdateAgentLanguageMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.UpdateAgentLanguageMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L625">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_UpdateAgentLanguageMessage_" data-uid="OpenMetaverse.Tests.MessageTests.UpdateAgentLanguageMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_UpdateAgentLanguageMessage" data-uid="OpenMetaverse.Tests.MessageTests.UpdateAgentLanguageMessage">UpdateAgentLanguageMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void UpdateAgentLanguageMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_UpdateNotecardAgentInventoryMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.UpdateNotecardAgentInventoryMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L929">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_UpdateNotecardAgentInventoryMessage_" data-uid="OpenMetaverse.Tests.MessageTests.UpdateNotecardAgentInventoryMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_UpdateNotecardAgentInventoryMessage" data-uid="OpenMetaverse.Tests.MessageTests.UpdateNotecardAgentInventoryMessage">UpdateNotecardAgentInventoryMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void UpdateNotecardAgentInventoryMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_UpdateScriptAgentMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.UpdateScriptAgentMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L889">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_UpdateScriptAgentMessage_" data-uid="OpenMetaverse.Tests.MessageTests.UpdateScriptAgentMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_UpdateScriptAgentMessage" data-uid="OpenMetaverse.Tests.MessageTests.UpdateScriptAgentMessage">UpdateScriptAgentMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void UpdateScriptAgentMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_UpdateScriptTaskMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.UpdateScriptTaskMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L870">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_UpdateScriptTaskMessage_" data-uid="OpenMetaverse.Tests.MessageTests.UpdateScriptTaskMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_UpdateScriptTaskMessage" data-uid="OpenMetaverse.Tests.MessageTests.UpdateScriptTaskMessage">UpdateScriptTaskMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void UpdateScriptTaskMessage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests_ViewerStatsMessage.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests.ViewerStatsMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L327">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Tests_MessageTests_ViewerStatsMessage_" data-uid="OpenMetaverse.Tests.MessageTests.ViewerStatsMessage*"></a>
+  <h4 id="OpenMetaverse_Tests_MessageTests_ViewerStatsMessage" data-uid="OpenMetaverse.Tests.MessageTests.ViewerStatsMessage">ViewerStatsMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Test]
+public void ViewerStatsMessage()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Tests_MessageTests.md&amp;value=---%0Auid%3A%20OpenMetaverse.Tests.MessageTests%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.Tests/MessageTests.cs/#L47" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

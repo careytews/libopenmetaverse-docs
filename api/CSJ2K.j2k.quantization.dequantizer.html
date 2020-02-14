@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.j2k.quantization.dequantizer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.j2k.quantization.dequantizer
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.quantization.dequantizer">
+  
+  <h1 id="CSJ2K_j2k_quantization_dequantizer" data-uid="CSJ2K.j2k.quantization.dequantizer" class="text-break">Namespace CSJ2K.j2k.quantization.dequantizer
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.Dequantizer.html">Dequantizer</a></h4>
+      <section><p>This is the abstract class from which all dequantizers must inherit. This
+class has the concept of a current tile and all operations are performed on
+the current tile.</p>
+<p>This class provides default implemenations for most of the methods
+(wherever it makes sense), under the assumption that the image and
+component dimensions, and the tiles, are not modifed by the dequantizer. If
+that is not the case for a particular implementation then the methods
+should be overriden.</p>
+<p>Sign magnitude representation is used (instead of two&apos;s complement) for
+the input data. The most significant bit is used for the sign (0 if
+positive, 1 if negative). Then the magnitude of the quantized coefficient
+is stored in the next most significat bits. The most significant magnitude
+bit corresponds to the most significant bit-plane and so on.</p>
+<p>The output data is either in floating-point, or in fixed-point two&apos;s
+complement. In case of floating-point data the the value returned by
+getFixedPoint() must be 0. If the case of fixed-point data the number of
+fractional bits must be defined at the constructor of the implementing
+class and all operations must be performed accordingly. Each component may
+have a different number of fractional bits.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.DequantizerParams.html">DequantizerParams</a></h4>
+      <section><p>This is the generic ineterface for dequantization parameters. Generally,
+for each type of dequantizer, there should be a corresponding class to
+store its parameters. The parameters are those that come from the bit
+stream header, that concern dequantization.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.StdDequantizer.html">StdDequantizer</a></h4>
+      <section><p>This class implements a scalar dequantizer with deadzone. The output can be
+either integer ('int') or floating-point ('float') data. The dequantization
+step sizes and other parameters are taken from a StdDequantizerParams
+class, which inherits from DequantizerParams.</p>
+<p>Sign magnitude representation is used (instead of two&apos;s complement) for
+the input data. The most significant bit is used for the sign (0 if
+positive, 1 if negative). Then the magnitude of the quantized coefficient
+is stored in the next most significat bits. The most significant magnitude
+bit corresponds to the most significant bit-plane and so on.</p>
+<p>When reversible quantization is used, this class only converts between
+the sign-magnitude representation and the integer (or eventually
+fixed-point) output, since there is no true quantization.</p>
+<p>The output data is fixed-point two&apos;s complement for &apos;int&apos; output and
+floating-point for &apos;float&apos; output. The type of output and the number number
+of fractional bits for &apos;int&apos; output are defined at the constructor. Each
+component may have a different number of fractional bits.</p>
+<p>The reconstruction levels used by the dequantizer are exactly what is
+received from the entropy decoder. It is assumed that the entropy decoder
+always returns codewords that are midways in the decoded intervals. In this
+way the dequantized values will always lie midways in the quantization
+intervals.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.StdDequantizerParams.html">StdDequantizerParams</a></h4>
+      <section><p>This class holds the parameters for the scalar deadzone dequantizer
+(StdDequantizer class) for the current tile. Its constructor decodes the
+parameters from the main header and tile headers.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec.html">CBlkQuantDataSrcDec</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

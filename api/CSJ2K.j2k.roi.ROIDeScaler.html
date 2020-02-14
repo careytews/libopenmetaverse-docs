@@ -1,0 +1,762 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ROIDeScaler
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ROIDeScaler
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.roi.ROIDeScaler">
+  
+  
+  <h1 id="CSJ2K_j2k_roi_ROIDeScaler" data-uid="CSJ2K.j2k.roi.ROIDeScaler" class="text-break">Class ROIDeScaler
+  </h1>
+  <div class="markdown level0 summary"><p>This class takes care of the de-scaling of ROI coefficients. The de-scaler
+works on a tile basis and any mask that is generated is for the current
+mask only</p>
+<p>Default implementations of the methods in &apos;MultiResImgData&apos; are provided
+through the &apos;MultiResImgDataAdapter&apos; abstract class.</p>
+<p>Sign-magnitude representation is used (instead of two&apos;s complement) for
+the output data. The most significant bit is used for the sign (0 if
+positive, 1 if negative). Then the magnitude of the quantized coefficient
+is stored in the next most significat bits. The most significant magnitude
+bit corresponds to the most significant bit-plane and so on.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html">MultiResImgDataAdapter</a></div>
+    <div class="level2"><span class="xref">ROIDeScaler</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec.html">CBlkQuantDataSrcDec</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTData.html">InvWTData</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileWidth">MultiResImgDataAdapter.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NomTileHeight">MultiResImgDataAdapter.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_NumComps">MultiResImgDataAdapter.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TileIdx">MultiResImgDataAdapter.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULX">MultiResImgDataAdapter.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_TilePartULY">MultiResImgDataAdapter.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_tIdx">MultiResImgDataAdapter.tIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_mressrc">MultiResImgDataAdapter.mressrc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileWidth_System_Int32_">MultiResImgDataAdapter.getTileWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileHeight_System_Int32_">MultiResImgDataAdapter.getTileHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgWidth_System_Int32_">MultiResImgDataAdapter.getImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgHeight_System_Int32_">MultiResImgDataAdapter.getImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsX_System_Int32_">MultiResImgDataAdapter.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompSubsY_System_Int32_">MultiResImgDataAdapter.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_System_Int32_">MultiResImgDataAdapter.getTileCompWidth(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_System_Int32_">MultiResImgDataAdapter.getTileCompHeight(Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgWidth_System_Int32_System_Int32_">MultiResImgDataAdapter.getCompImgWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getCompImgHeight_System_Int32_System_Int32_">MultiResImgDataAdapter.getCompImgHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_setTile_System_Int32_System_Int32_">MultiResImgDataAdapter.setTile(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_nextTile">MultiResImgDataAdapter.nextTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_">MultiResImgDataAdapter.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULX_System_Int32_System_Int32_">MultiResImgDataAdapter.getResULX(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getResULY_System_Int32_System_Int32_">MultiResImgDataAdapter.getResULY(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULX_System_Int32_">MultiResImgDataAdapter.getImgULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getImgULY_System_Int32_">MultiResImgDataAdapter.getImgULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_">MultiResImgDataAdapter.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getNumTiles">MultiResImgDataAdapter.getNumTiles()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.roi.html">CSJ2K.j2k.roi</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_roi_ROIDeScaler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ROIDeScaler : MultiResImgDataAdapter, CBlkQuantDataSrcDec, InvWTData, MultiResImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_roi_ROIDeScaler__ctor_CSJ2K_j2k_quantization_dequantizer_CBlkQuantDataSrcDec_CSJ2K_j2k_roi_MaxShiftSpec_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.roi.ROIDeScaler.%23ctor(CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec%2CCSJ2K.j2k.roi.MaxShiftSpec)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/roi/ROIDeScaler.cs/#L151">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_roi_ROIDeScaler__ctor_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_roi_ROIDeScaler__ctor_CSJ2K_j2k_quantization_dequantizer_CBlkQuantDataSrcDec_CSJ2K_j2k_roi_MaxShiftSpec_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.#ctor(CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec,CSJ2K.j2k.roi.MaxShiftSpec)">ROIDeScaler(CBlkQuantDataSrcDec, MaxShiftSpec)</h4>
+  <div class="markdown level1 summary"><p>Constructor of the ROI descaler, takes EntropyDEcoder as source of data
+to de-scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ROIDeScaler(CBlkQuantDataSrcDec src, MaxShiftSpec mss)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec.html">CBlkQuantDataSrcDec</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>The EntropyDecoder that is the source of data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.roi.MaxShiftSpec.html">MaxShiftSpec</a></td>
+        <td><span class="parametername">mss</span></td>
+        <td><p>The MaxShiftSpec containing the scaling values for all
+tile-components</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_roi_ROIDeScaler_OPT_PREFIX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.roi.ROIDeScaler.OPT_PREFIX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/roi/ROIDeScaler.cs/#L127">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_roi_ROIDeScaler_OPT_PREFIX" data-uid="CSJ2K.j2k.roi.ROIDeScaler.OPT_PREFIX">OPT_PREFIX</h4>
+  <div class="markdown level1 summary"><p>The prefix for ROI decoder options: 'R'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const char OPT_PREFIX = 'R'</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_roi_ROIDeScaler_CbULX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.roi.ROIDeScaler.CbULX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/roi/ROIDeScaler.cs/#L78">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_roi_ROIDeScaler_CbULX_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.CbULX*"></a>
+  <h4 id="CSJ2K_j2k_roi_ROIDeScaler_CbULX" data-uid="CSJ2K.j2k.roi.ROIDeScaler.CbULX">CbULX</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal code-block partition origin. Allowable values
+are 0 and 1, nothing else.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CbULX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_roi_ROIDeScaler_CbULY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.roi.ROIDeScaler.CbULY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/roi/ROIDeScaler.cs/#L90">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_roi_ROIDeScaler_CbULY_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.CbULY*"></a>
+  <h4 id="CSJ2K_j2k_roi_ROIDeScaler_CbULY" data-uid="CSJ2K.j2k.roi.ROIDeScaler.CbULY">CbULY</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical code-block partition origin. Allowable values are
+0 and 1, nothing else.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CbULY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_roi_ROIDeScaler_ParameterInfo.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.roi.ROIDeScaler.ParameterInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/roi/ROIDeScaler.cs/#L112">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_roi_ROIDeScaler_ParameterInfo_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.ParameterInfo*"></a>
+  <h4 id="CSJ2K_j2k_roi_ROIDeScaler_ParameterInfo" data-uid="CSJ2K.j2k.roi.ROIDeScaler.ParameterInfo">ParameterInfo</h4>
+  <div class="markdown level1 summary"><p>Returns the parameters that are used in this class and implementing
+classes. It returns a 2D String array. Each of the 1D arrays is for a
+different option, and they have 3 elements. The first element is the
+option name, the second one is the synopsis and the third one is a long
+description of what the parameter is. The synopsis or description may
+be 'null', in which case it is assumed that there is no synopsis or
+description of the option, respectively. Null may be returned if no
+options are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[][] ParameterInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[][]</td>
+        <td><p>the options name, their synopsis and their explanation, or null
+if no options are supported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_roi_ROIDeScaler_createInstance_CSJ2K_j2k_quantization_dequantizer_CBlkQuantDataSrcDec_CSJ2K_j2k_util_ParameterList_CSJ2K_j2k_decoder_DecoderSpecs_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.roi.ROIDeScaler.createInstance(CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec%2CCSJ2K.j2k.util.ParameterList%2CCSJ2K.j2k.decoder.DecoderSpecs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/roi/ROIDeScaler.cs/#L361">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_roi_ROIDeScaler_createInstance_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.createInstance*"></a>
+  <h4 id="CSJ2K_j2k_roi_ROIDeScaler_createInstance_CSJ2K_j2k_quantization_dequantizer_CBlkQuantDataSrcDec_CSJ2K_j2k_util_ParameterList_CSJ2K_j2k_decoder_DecoderSpecs_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.createInstance(CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec,CSJ2K.j2k.util.ParameterList,CSJ2K.j2k.decoder.DecoderSpecs)">createInstance(CBlkQuantDataSrcDec, ParameterList, DecoderSpecs)</h4>
+  <div class="markdown level1 summary"><p>Creates a ROIDeScaler object. The information needed to create the
+object is the Entropy decoder used and the parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ROIDeScaler createInstance(CBlkQuantDataSrcDec src, ParameterList pl, DecoderSpecs decSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec.html">CBlkQuantDataSrcDec</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>The source of data that is to be descaled</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.util.ParameterList.html">ParameterList</a></td>
+        <td><span class="parametername">pl</span></td>
+        <td><p>The parameter list (or options).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.decoder.DecoderSpecs.html">DecoderSpecs</a></td>
+        <td><span class="parametername">decSpec</span></td>
+        <td><p>The decoding specifications</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.roi.ROIDeScaler.html">ROIDeScaler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_roi_ROIDeScaler_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.roi.ROIDeScaler.getCodeBlock(System.Int32%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.wavelet.synthesis.SubbandSyn%2CCSJ2K.j2k.image.DataBlk)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/roi/ROIDeScaler.cs/#L229">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_roi_ROIDeScaler_getCodeBlock_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.getCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_roi_ROIDeScaler_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.getCodeBlock(System.Int32,System.Int32,System.Int32,CSJ2K.j2k.wavelet.synthesis.SubbandSyn,CSJ2K.j2k.image.DataBlk)">getCodeBlock(Int32, Int32, Int32, SubbandSyn, DataBlk)</h4>
+  <div class="markdown level1 summary"><p>Returns the specified code-block in the current tile for the specified
+component, as a copy (see below).</p>
+<p>The returned code-block may be progressive, which is indicated by
+the &apos;progressive&apos; variable of the returned &apos;DataBlk&apos; object. If a
+code-block is progressive it means that in a later request to this
+method for the same code-block it is possible to retrieve data which is
+a better approximation, since meanwhile more data to decode for the
+code-block could have been received. If the code-block is not
+progressive then later calls to this method for the same code-block
+will return the exact same data values.</p>
+<p>The data returned by this method is always a copy of the internal
+data of this object, if any, and it can be modified &quot;in place&quot; without
+any problems after being returned. The &apos;offset&apos; of the returned data is
+0, and the &apos;scanw&apos; is the same as the code-block width. See the
+&apos;DataBlk&apos; class.</p>
+<p>The &apos;ulx&apos; and &apos;uly&apos; members of the returned &apos;DataBlk&apos; object contain
+the coordinates of the top-left corner of the block, with respect to
+the tile, not the subband.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DataBlk getCodeBlock(int c, int m, int n, SubbandSyn sb, DataBlk cblk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component for which to return the next code-block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The vertical index of the code-block to return, in the
+specified subband.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The horizontal index of the code-block to return, in the
+specified subband.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td><span class="parametername">sb</span></td>
+        <td><p>The subband in which the code-block to return is.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">cblk</span></td>
+        <td><p>If non-null this object will be used to return the new
+code-block. If null a new one will be allocated and returned. If the
+&quot;data&quot; array of the object is non-null it will be reused, if possible,
+to return the data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><p>The next code-block in the current tile for component 'c', or
+null if all code-blocks for the current tile have been returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_roi_ROIDeScaler_getCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_roi_ROIDeScaler_getInternCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.roi.ROIDeScaler.getInternCodeBlock(System.Int32%2CSystem.Int32%2CSystem.Int32%2CCSJ2K.j2k.wavelet.synthesis.SubbandSyn%2CCSJ2K.j2k.image.DataBlk)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/roi/ROIDeScaler.cs/#L282">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_roi_ROIDeScaler_getInternCodeBlock_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.getInternCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_roi_ROIDeScaler_getInternCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.getInternCodeBlock(System.Int32,System.Int32,System.Int32,CSJ2K.j2k.wavelet.synthesis.SubbandSyn,CSJ2K.j2k.image.DataBlk)">getInternCodeBlock(Int32, Int32, Int32, SubbandSyn, DataBlk)</h4>
+  <div class="markdown level1 summary"><p>Returns the specified code-block in the current tile for the specified
+component (as a reference or copy).</p>
+<p>The returned code-block may be progressive, which is indicated by
+the &apos;progressive&apos; variable of the returned &apos;DataBlk&apos; object. If a
+code-block is progressive it means that in a later request to this
+method for the same code-block it is possible to retrieve data which is
+a better approximation, since meanwhile more data to decode for the
+code-block could have been received. If the code-block is not
+progressive then later calls to this method for the same code-block
+will return the exact same data values.</p>
+<p>The data returned by this method can be the data in the internal
+buffer of this object, if any, and thus can not be modified by the
+caller. The &apos;offset&apos; and &apos;scanw&apos; of the returned data can be
+arbitrary. See the &apos;DataBlk&apos; class.</p>
+<p>The &apos;ulx&apos; and &apos;uly&apos; members of the returned &apos;DataBlk&apos; object contain
+the coordinates of the top-left corner of the block, with respect to
+the tile, not the subband.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DataBlk getInternCodeBlock(int c, int m, int n, SubbandSyn sb, DataBlk cblk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component for which to return the next code-block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The vertical index of the code-block to return, in the
+specified subband.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The horizontal index of the code-block to return, in the
+specified subband.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td><span class="parametername">sb</span></td>
+        <td><p>The subband in which the code-block to return is.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">cblk</span></td>
+        <td><p>If non-null this object will be used to return the new
+code-block. If null a new one will be allocated and returned. If the
+&quot;data&quot; array of the object is non-null it will be reused, if possible,
+to return the data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><p>The requested code-block in the current tile for component 'c'.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_roi_ROIDeScaler_getInternCodeBlock_System_Int32_System_Int32_System_Int32_CSJ2K_j2k_wavelet_synthesis_SubbandSyn_CSJ2K_j2k_image_DataBlk__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_roi_ROIDeScaler_getSynSubbandTree_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.roi.ROIDeScaler.getSynSubbandTree(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/roi/ROIDeScaler.cs/#L174">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_roi_ROIDeScaler_getSynSubbandTree_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.getSynSubbandTree*"></a>
+  <h4 id="CSJ2K_j2k_roi_ROIDeScaler_getSynSubbandTree_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.roi.ROIDeScaler.getSynSubbandTree(System.Int32,System.Int32)">getSynSubbandTree(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SubbandSyn getSynSubbandTree(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgDataAdapter.html#CSJ2K_j2k_wavelet_synthesis_MultiResImgDataAdapter_getSynSubbandTree_System_Int32_System_Int32_">MultiResImgDataAdapter.getSynSubbandTree(Int32, Int32)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.quantization.dequantizer.CBlkQuantDataSrcDec.html">CBlkQuantDataSrcDec</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWTData.html">InvWTData</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_roi_ROIDeScaler.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.roi.ROIDeScaler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/roi/ROIDeScaler.cs/#L72" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

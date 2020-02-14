@@ -1,0 +1,2359 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Settings
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Settings
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.Settings">
+  
+  
+  <h1 id="OpenMetaverse_Settings" data-uid="OpenMetaverse.Settings" class="text-break">Class Settings
+  </h1>
+  <div class="markdown level0 summary"><p>Class for controlling various system settings.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Settings</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_Settings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Settings</code></pre>
+  </div>
+  <h5 id="OpenMetaverse_Settings_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Some values are readonly because they affect things that
+happen when the GridClient object is initialized, so changing them at
+runtime won't do any good. Non-readonly values may affect things that
+happen at login or dynamically</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings__ctor_OpenMetaverse_GridClient_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.%23ctor(OpenMetaverse.GridClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L375">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Settings__ctor_" data-uid="OpenMetaverse.Settings.#ctor*"></a>
+  <h4 id="OpenMetaverse_Settings__ctor_OpenMetaverse_GridClient_" data-uid="OpenMetaverse.Settings.#ctor(OpenMetaverse.GridClient)">Settings(GridClient)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Settings(GridClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>Reference to a GridClient object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_ADITI_LOGIN_SERVER.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.ADITI_LOGIN_SERVER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L48">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_ADITI_LOGIN_SERVER" data-uid="OpenMetaverse.Settings.ADITI_LOGIN_SERVER">ADITI_LOGIN_SERVER</h4>
+  <div class="markdown level1 summary"><p>Beta grid login server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ADITI_LOGIN_SERVER = &quot;https://login.aditi.lindenlab.com/cgi-bin/login.cgi&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_AGNI_LOGIN_SERVER.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.AGNI_LOGIN_SERVER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L45">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_AGNI_LOGIN_SERVER" data-uid="OpenMetaverse.Settings.AGNI_LOGIN_SERVER">AGNI_LOGIN_SERVER</h4>
+  <div class="markdown level1 summary"><p>Main grid login server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AGNI_LOGIN_SERVER = &quot;https://login.agni.lindenlab.com/cgi-bin/login.cgi&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_ALWAYS_DECODE_OBJECTS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.ALWAYS_DECODE_OBJECTS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L217">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_ALWAYS_DECODE_OBJECTS" data-uid="OpenMetaverse.Settings.ALWAYS_DECODE_OBJECTS">ALWAYS_DECODE_OBJECTS</h4>
+  <div class="markdown level1 summary"><p>If true, all object update packets will be decoded in to
+native objects. If false, only updates for our own agent will be
+decoded. Registering an event handler will force objects for that
+type to always be decoded. If this is disabled the object tracking
+will have missing or partial prim and avatar information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ALWAYS_DECODE_OBJECTS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_ALWAYS_REQUEST_OBJECTS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.ALWAYS_REQUEST_OBJECTS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L221">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_ALWAYS_REQUEST_OBJECTS" data-uid="OpenMetaverse.Settings.ALWAYS_REQUEST_OBJECTS">ALWAYS_REQUEST_OBJECTS</h4>
+  <div class="markdown level1 summary"><p>If true, when a cached object check is received from the
+server the full object info will automatically be requested</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ALWAYS_REQUEST_OBJECTS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_ALWAYS_REQUEST_PARCEL_ACL.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.ALWAYS_REQUEST_PARCEL_ACL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L279">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_ALWAYS_REQUEST_PARCEL_ACL" data-uid="OpenMetaverse.Settings.ALWAYS_REQUEST_PARCEL_ACL">ALWAYS_REQUEST_PARCEL_ACL</h4>
+  <div class="markdown level1 summary"><p>If true, an incoming parcel properties reply will automatically send
+a request for the parcel access list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ALWAYS_REQUEST_PARCEL_ACL</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_ALWAYS_REQUEST_PARCEL_DWELL.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.ALWAYS_REQUEST_PARCEL_DWELL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L285">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_ALWAYS_REQUEST_PARCEL_DWELL" data-uid="OpenMetaverse.Settings.ALWAYS_REQUEST_PARCEL_DWELL">ALWAYS_REQUEST_PARCEL_DWELL</h4>
+  <div class="markdown level1 summary"><p>if true, an incoming parcel properties reply will automatically send
+a request for the traffic count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ALWAYS_REQUEST_PARCEL_DWELL</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_ASSET_CACHE_DIR.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.ASSET_CACHE_DIR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L297">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_ASSET_CACHE_DIR" data-uid="OpenMetaverse.Settings.ASSET_CACHE_DIR">ASSET_CACHE_DIR</h4>
+  <div class="markdown level1 summary"><p>Path to store cached texture data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ASSET_CACHE_DIR</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_ASSET_CACHE_MAX_SIZE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.ASSET_CACHE_MAX_SIZE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L300">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_ASSET_CACHE_MAX_SIZE" data-uid="OpenMetaverse.Settings.ASSET_CACHE_MAX_SIZE">ASSET_CACHE_MAX_SIZE</h4>
+  <div class="markdown level1 summary"><p>Maximum size cached files are allowed to take on disk (bytes)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ASSET_CACHE_MAX_SIZE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_AVATAR_TRACKING.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.AVATAR_TRACKING%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L248">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_AVATAR_TRACKING" data-uid="OpenMetaverse.Settings.AVATAR_TRACKING">AVATAR_TRACKING</h4>
+  <div class="markdown level1 summary"><p>If true, currently visible avatars will be stored
+in dictionaries inside <pre><code>Simulator.ObjectAvatars</code></pre>.
+If false, a new Avatar or Primitive object will be created
+each time an object update packet is received</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AVATAR_TRACKING</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_BIND_ADDR.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.BIND_ADDR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L57">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_BIND_ADDR" data-uid="OpenMetaverse.Settings.BIND_ADDR">BIND_ADDR</h4>
+  <div class="markdown level1 summary"><p>IP Address the client will bind to</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IPAddress BIND_ADDR</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.IPAddress</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_CACHE_PRIMITIVES.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.CACHE_PRIMITIVES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L168">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_CACHE_PRIMITIVES" data-uid="OpenMetaverse.Settings.CACHE_PRIMITIVES">CACHE_PRIMITIVES</h4>
+  <div class="markdown level1 summary"><p>Primitives will be reused when falling in/out of interest list (and shared between clients)
+prims returning to interest list do not need re-requested
+Helps also in not re-requesting prim.Properties for code that checks for a Properties == null per client</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CACHE_PRIMITIVES</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_CAPS_TIMEOUT.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.CAPS_TIMEOUT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L109">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_CAPS_TIMEOUT" data-uid="OpenMetaverse.Settings.CAPS_TIMEOUT">CAPS_TIMEOUT</h4>
+  <div class="markdown level1 summary"><p>Number of milliseconds before a CAPS call will time out</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CAPS_TIMEOUT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_Settings_CAPS_TIMEOUT_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Setting this too low will cause web requests time out and
+possibly retry repeatedly</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_CLIENT_IDENTIFICATION_TAG.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.CLIENT_IDENTIFICATION_TAG%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L319">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_CLIENT_IDENTIFICATION_TAG" data-uid="OpenMetaverse.Settings.CLIENT_IDENTIFICATION_TAG">CLIENT_IDENTIFICATION_TAG</h4>
+  <div class="markdown level1 summary"><p>UUID of a texture used by some viewers to indentify type of client used</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID CLIENT_IDENTIFICATION_TAG</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_DEFAULT_AGENT_UPDATE_INTERVAL.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.DEFAULT_AGENT_UPDATE_INTERVAL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L129">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_DEFAULT_AGENT_UPDATE_INTERVAL" data-uid="OpenMetaverse.Settings.DEFAULT_AGENT_UPDATE_INTERVAL">DEFAULT_AGENT_UPDATE_INTERVAL</h4>
+  <div class="markdown level1 summary"><p>Number of milliseconds between sending camera updates</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DEFAULT_AGENT_UPDATE_INTERVAL = 500</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_DEFAULT_EFFECT_COLOR.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.DEFAULT_EFFECT_COLOR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L306">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_DEFAULT_EFFECT_COLOR" data-uid="OpenMetaverse.Settings.DEFAULT_EFFECT_COLOR">DEFAULT_EFFECT_COLOR</h4>
+  <div class="markdown level1 summary"><p>Default color used for viewer particle effects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color4 DEFAULT_EFFECT_COLOR</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Color4.html">Color4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_DISABLE_AGENT_UPDATE_DUPLICATE_CHECK.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.DISABLE_AGENT_UPDATE_DUPLICATE_CHECK%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L242">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_DISABLE_AGENT_UPDATE_DUPLICATE_CHECK" data-uid="OpenMetaverse.Settings.DISABLE_AGENT_UPDATE_DUPLICATE_CHECK">DISABLE_AGENT_UPDATE_DUPLICATE_CHECK</h4>
+  <div class="markdown level1 summary"><p>If true, and <pre><code>SEND_AGENT_UPDATES</code></pre> is true,
+AgentUpdate packets will continuously be sent out to give the bot
+smoother movement and autopiloting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DISABLE_AGENT_UPDATE_DUPLICATE_CHECK</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_ENABLE_CAPS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.ENABLE_CAPS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L225">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_ENABLE_CAPS" data-uid="OpenMetaverse.Settings.ENABLE_CAPS">ENABLE_CAPS</h4>
+  <div class="markdown level1 summary"><p>Whether to establish connections to HTTP capabilities
+servers for simulators</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ENABLE_CAPS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_ENABLE_INVENTORY_STORE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.ENABLE_INVENTORY_STORE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L79">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_ENABLE_INVENTORY_STORE" data-uid="OpenMetaverse.Settings.ENABLE_INVENTORY_STORE">ENABLE_INVENTORY_STORE</h4>
+  <div class="markdown level1 summary"><p>InventoryManager requests inventory information on login,
+GridClient initializes an Inventory store for main inventory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const bool ENABLE_INVENTORY_STORE = true</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_ENABLE_LIBRARY_STORE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.ENABLE_LIBRARY_STORE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L84">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_ENABLE_LIBRARY_STORE" data-uid="OpenMetaverse.Settings.ENABLE_LIBRARY_STORE">ENABLE_LIBRARY_STORE</h4>
+  <div class="markdown level1 summary"><p>InventoryManager requests library information on login,
+GridClient initializes an Inventory store for the library.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const bool ENABLE_LIBRARY_STORE = true</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_ENABLE_SIMSTATS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.ENABLE_SIMSTATS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L228">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_ENABLE_SIMSTATS" data-uid="OpenMetaverse.Settings.ENABLE_SIMSTATS">ENABLE_SIMSTATS</h4>
+  <div class="markdown level1 summary"><p>Whether to decode sim stats</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ENABLE_SIMSTATS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_FETCH_MISSING_INVENTORY.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.FETCH_MISSING_INVENTORY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L237">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_FETCH_MISSING_INVENTORY" data-uid="OpenMetaverse.Settings.FETCH_MISSING_INVENTORY">FETCH_MISSING_INVENTORY</h4>
+  <div class="markdown level1 summary"><p>If true, any reference received for a folder or item
+the library is not aware of will automatically be fetched</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FETCH_MISSING_INVENTORY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_HTTP_INVENTORY.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.HTTP_INVENTORY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L88">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_HTTP_INVENTORY" data-uid="OpenMetaverse.Settings.HTTP_INVENTORY">HTTP_INVENTORY</h4>
+  <div class="markdown level1 summary"><p>Use Caps for fetching inventory where available</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HTTP_INVENTORY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_INTERPOLATION_INTERVAL.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.INTERPOLATION_INTERVAL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L133">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_INTERPOLATION_INTERVAL" data-uid="OpenMetaverse.Settings.INTERPOLATION_INTERVAL">INTERPOLATION_INTERVAL</h4>
+  <div class="markdown level1 summary"><p>Number of milliseconds between updating the current
+positions of moving, non-accelerating and non-colliding objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int INTERPOLATION_INTERVAL = 250</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_LOG_ALL_CAPS_ERRORS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.LOG_ALL_CAPS_ERRORS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L233">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_LOG_ALL_CAPS_ERRORS" data-uid="OpenMetaverse.Settings.LOG_ALL_CAPS_ERRORS">LOG_ALL_CAPS_ERRORS</h4>
+  <div class="markdown level1 summary"><p>The capabilities servers are currently designed to
+periodically return a 502 error which signals for the client to
+re-establish a connection. Set this to true to log those 502 errors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LOG_ALL_CAPS_ERRORS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_LOG_DISKCACHE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.LOG_DISKCACHE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L364">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_LOG_DISKCACHE" data-uid="OpenMetaverse.Settings.LOG_DISKCACHE">LOG_DISKCACHE</h4>
+  <div class="markdown level1 summary"><p>Log disk cache misses and other info</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LOG_DISKCACHE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_LOG_LEVEL.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.LOG_LEVEL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L355">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_LOG_LEVEL" data-uid="OpenMetaverse.Settings.LOG_LEVEL">LOG_LEVEL</h4>
+  <div class="markdown level1 summary"><p>Get or set the minimum log level to output to the console by default</p>
+<p>If the library is not compiled with DEBUG defined and this level is set to DEBUG
+You will get no output on the console. This behavior can be overriden by creating
+a logger configuration file for log4net</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Helpers.LogLevel LOG_LEVEL</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Helpers.LogLevel.html">Helpers.LogLevel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_LOG_NAMES.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.LOG_NAMES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L358">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_LOG_NAMES" data-uid="OpenMetaverse.Settings.LOG_NAMES">LOG_NAMES</h4>
+  <div class="markdown level1 summary"><p>Attach avatar names to log messages</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LOG_NAMES</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_LOG_RESENDS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.LOG_RESENDS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L361">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_LOG_RESENDS" data-uid="OpenMetaverse.Settings.LOG_RESENDS">LOG_RESENDS</h4>
+  <div class="markdown level1 summary"><p>Log packet retransmission info</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LOG_RESENDS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_LOGIN_SERVER.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.LOGIN_SERVER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L54">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_LOGIN_SERVER" data-uid="OpenMetaverse.Settings.LOGIN_SERVER">LOGIN_SERVER</h4>
+  <div class="markdown level1 summary"><p>Login server to connect to</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LOGIN_SERVER</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_LOGIN_TIMEOUT.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.LOGIN_TIMEOUT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L112">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_LOGIN_TIMEOUT" data-uid="OpenMetaverse.Settings.LOGIN_TIMEOUT">LOGIN_TIMEOUT</h4>
+  <div class="markdown level1 summary"><p>Number of milliseconds for xml-rpc to timeout</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LOGIN_TIMEOUT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_LOGOUT_TIMEOUT.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.LOGOUT_TIMEOUT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L104">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_LOGOUT_TIMEOUT" data-uid="OpenMetaverse.Settings.LOGOUT_TIMEOUT">LOGOUT_TIMEOUT</h4>
+  <div class="markdown level1 summary"><p>Number of milliseconds before NetworkManager.Logout() will
+time out</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LOGOUT_TIMEOUT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_MAP_REQUEST_TIMEOUT.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.MAP_REQUEST_TIMEOUT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L123">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_MAP_REQUEST_TIMEOUT" data-uid="OpenMetaverse.Settings.MAP_REQUEST_TIMEOUT">MAP_REQUEST_TIMEOUT</h4>
+  <div class="markdown level1 summary"><p>Milliseconds to wait for a simulator info request through
+the grid interface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MAP_REQUEST_TIMEOUT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_MAX_CONCURRENT_TEXTURE_DOWNLOADS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.MAX_CONCURRENT_TEXTURE_DOWNLOADS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L332">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_MAX_CONCURRENT_TEXTURE_DOWNLOADS" data-uid="OpenMetaverse.Settings.MAX_CONCURRENT_TEXTURE_DOWNLOADS">MAX_CONCURRENT_TEXTURE_DOWNLOADS</h4>
+  <div class="markdown level1 summary"><p>The maximum number of concurrent texture downloads allowed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MAX_CONCURRENT_TEXTURE_DOWNLOADS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_Settings_MAX_CONCURRENT_TEXTURE_DOWNLOADS_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Increasing this number will not necessarily increase texture retrieval times due to
+simulator throttles</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_MAX_HTTP_CONNECTIONS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.MAX_HTTP_CONNECTIONS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L69">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_MAX_HTTP_CONNECTIONS" data-uid="OpenMetaverse.Settings.MAX_HTTP_CONNECTIONS">MAX_HTTP_CONNECTIONS</h4>
+  <div class="markdown level1 summary"><p>Maximum number of HTTP connections to open to a particular endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MAX_HTTP_CONNECTIONS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_Settings_MAX_HTTP_CONNECTIONS_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>An endpoint is defined as a commbination of network address and port.  This is used for Caps.
+This is a static variable which applies to all instances.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_MAX_PACKET_SIZE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.MAX_PACKET_SIZE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L146">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_MAX_PACKET_SIZE" data-uid="OpenMetaverse.Settings.MAX_PACKET_SIZE">MAX_PACKET_SIZE</h4>
+  <div class="markdown level1 summary"><p>Maximum size of packet that we want to send over the wire</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MAX_PACKET_SIZE = 1200</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_MAX_PENDING_ACKS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.MAX_PENDING_ACKS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L155">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_MAX_PENDING_ACKS" data-uid="OpenMetaverse.Settings.MAX_PENDING_ACKS">MAX_PENDING_ACKS</h4>
+  <div class="markdown level1 summary"><p>Maximum number of queued ACKs to be sent before SendAcks()
+is forced</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MAX_PENDING_ACKS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_MAX_RESEND_COUNT.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.MAX_RESEND_COUNT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L313">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_MAX_RESEND_COUNT" data-uid="OpenMetaverse.Settings.MAX_RESEND_COUNT">MAX_RESEND_COUNT</h4>
+  <div class="markdown level1 summary"><p>Maximum number of times to resend a failed packet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MAX_RESEND_COUNT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_MAX_SEQUENCE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.MAX_SEQUENCE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L149">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_MAX_SEQUENCE" data-uid="OpenMetaverse.Settings.MAX_SEQUENCE">MAX_SEQUENCE</h4>
+  <div class="markdown level1 summary"><p>The maximum value of a packet sequence number before it
+rolls over back to one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int MAX_SEQUENCE = 16777215</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_MULTIPLE_SIMS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.MULTIPLE_SIMS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L210">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_MULTIPLE_SIMS" data-uid="OpenMetaverse.Settings.MULTIPLE_SIMS">MULTIPLE_SIMS</h4>
+  <div class="markdown level1 summary"><p>Should we connect to multiple sims? This will allow
+viewing in to neighboring simulators and sim crossings
+(Experimental)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MULTIPLE_SIMS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_NETWORK_TICK_INTERVAL.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.NETWORK_TICK_INTERVAL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L137">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_NETWORK_TICK_INTERVAL" data-uid="OpenMetaverse.Settings.NETWORK_TICK_INTERVAL">NETWORK_TICK_INTERVAL</h4>
+  <div class="markdown level1 summary"><p>Millisecond interval between ticks, where all ACKs are
+sent out and the age of unACKed packets is checked</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int NETWORK_TICK_INTERVAL = 500</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_OBJECT_TRACKING.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.OBJECT_TRACKING%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L254">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_OBJECT_TRACKING" data-uid="OpenMetaverse.Settings.OBJECT_TRACKING">OBJECT_TRACKING</h4>
+  <div class="markdown level1 summary"><p>If true, currently visible avatars will be stored
+in dictionaries inside <pre><code>Simulator.ObjectPrimitives</code></pre>.
+If false, a new Avatar or Primitive object will be created
+each time an object update packet is received</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OBJECT_TRACKING</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_PACKET_ARCHIVE_SIZE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.PACKET_ARCHIVE_SIZE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L152">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_PACKET_ARCHIVE_SIZE" data-uid="OpenMetaverse.Settings.PACKET_ARCHIVE_SIZE">PACKET_ARCHIVE_SIZE</h4>
+  <div class="markdown level1 summary"><p>The maximum size of the sequence number archive, used to
+check for resent and/or duplicate packets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PACKET_ARCHIVE_SIZE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_PACKET_INBOX_SIZE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.PACKET_INBOX_SIZE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L144">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_PACKET_INBOX_SIZE" data-uid="OpenMetaverse.Settings.PACKET_INBOX_SIZE">PACKET_INBOX_SIZE</h4>
+  <div class="markdown level1 summary"><p>The initial size of the packet inbox, where packets are
+stored before processing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int PACKET_INBOX_SIZE = 100</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_PARCEL_TRACKING.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.PARCEL_TRACKING%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L273">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_PARCEL_TRACKING" data-uid="OpenMetaverse.Settings.PARCEL_TRACKING">PARCEL_TRACKING</h4>
+  <div class="markdown level1 summary"><p>If true, parcel details will be stored in the</p>
+<pre><code>Simulator.Parcels</code></pre> dictionary as they are received
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PARCEL_TRACKING</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_PING_INTERVAL.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.PING_INTERVAL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L126">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_PING_INTERVAL" data-uid="OpenMetaverse.Settings.PING_INTERVAL">PING_INTERVAL</h4>
+  <div class="markdown level1 summary"><p>Number of milliseconds between sending pings to each sim</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int PING_INTERVAL = 2200</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_PIPELINE_REFRESH_INTERVAL.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.PIPELINE_REFRESH_INTERVAL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L338">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_PIPELINE_REFRESH_INTERVAL" data-uid="OpenMetaverse.Settings.PIPELINE_REFRESH_INTERVAL">PIPELINE_REFRESH_INTERVAL</h4>
+  <div class="markdown level1 summary"><p>The Refresh timer inteval is used to set the delay between checks for stalled texture downloads</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float PIPELINE_REFRESH_INTERVAL</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_Settings_PIPELINE_REFRESH_INTERVAL_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a static variable which applies to all instances</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_PIPELINE_REQUEST_TIMEOUT.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.PIPELINE_REQUEST_TIMEOUT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L343">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_PIPELINE_REQUEST_TIMEOUT" data-uid="OpenMetaverse.Settings.PIPELINE_REQUEST_TIMEOUT">PIPELINE_REQUEST_TIMEOUT</h4>
+  <div class="markdown level1 summary"><p>Textures taking longer than this value will be flagged as timed out and removed from the pipeline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PIPELINE_REQUEST_TIMEOUT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_POOL_PARCEL_DATA.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.POOL_PARCEL_DATA%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L172">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_POOL_PARCEL_DATA" data-uid="OpenMetaverse.Settings.POOL_PARCEL_DATA">POOL_PARCEL_DATA</h4>
+  <div class="markdown level1 summary"><p>Pool parcel data between clients (saves on requesting multiple times when all clients may need it)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool POOL_PARCEL_DATA</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_RESEND_TIMEOUT.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.RESEND_TIMEOUT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L115">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_RESEND_TIMEOUT" data-uid="OpenMetaverse.Settings.RESEND_TIMEOUT">RESEND_TIMEOUT</h4>
+  <div class="markdown level1 summary"><p>Milliseconds before a packet is assumed lost and resent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RESEND_TIMEOUT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_RESOURCE_DIR.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.RESOURCE_DIR%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L51">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_RESOURCE_DIR" data-uid="OpenMetaverse.Settings.RESOURCE_DIR">RESOURCE_DIR</h4>
+  <div class="markdown level1 summary"><p>The relative directory where external resources are kept</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RESOURCE_DIR</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_SEND_AGENT_APPEARANCE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.SEND_AGENT_APPEARANCE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L193">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_SEND_AGENT_APPEARANCE" data-uid="OpenMetaverse.Settings.SEND_AGENT_APPEARANCE">SEND_AGENT_APPEARANCE</h4>
+  <div class="markdown level1 summary"><p>Enable/disable automatically setting agent appearance at
+login and after sim crossing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SEND_AGENT_APPEARANCE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_SEND_AGENT_THROTTLE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.SEND_AGENT_THROTTLE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L201">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_SEND_AGENT_THROTTLE" data-uid="OpenMetaverse.Settings.SEND_AGENT_THROTTLE">SEND_AGENT_THROTTLE</h4>
+  <div class="markdown level1 summary"><p>Enable/disable automatically setting the bandwidth throttle
+after connecting to each simulator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SEND_AGENT_THROTTLE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_Settings_SEND_AGENT_THROTTLE_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default throttle uses the equivalent of the maximum
+bandwidth setting in the official client. If you do not set a
+throttle your connection will by default be throttled well below
+the minimum values and you may experience connection problems</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_SEND_AGENT_UPDATES.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.SEND_AGENT_UPDATES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L189">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_SEND_AGENT_UPDATES" data-uid="OpenMetaverse.Settings.SEND_AGENT_UPDATES">SEND_AGENT_UPDATES</h4>
+  <div class="markdown level1 summary"><p>Enable/disable sending periodic camera updates</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SEND_AGENT_UPDATES</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_SEND_PINGS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.SEND_PINGS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L205">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_SEND_PINGS" data-uid="OpenMetaverse.Settings.SEND_PINGS">SEND_PINGS</h4>
+  <div class="markdown level1 summary"><p>Enable/disable the sending of pings to monitor lag and
+packet loss</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SEND_PINGS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_SIMULATOR_POOL_TIMEOUT.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.SIMULATOR_POOL_TIMEOUT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L178">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_SIMULATOR_POOL_TIMEOUT" data-uid="OpenMetaverse.Settings.SIMULATOR_POOL_TIMEOUT">SIMULATOR_POOL_TIMEOUT</h4>
+  <div class="markdown level1 summary"><p>How long to preserve cached data when no client is connected to a simulator
+The reason for setting it to something like 2 minutes is in case a client
+is running back and forth between region edges or a sim is comming and going</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SIMULATOR_POOL_TIMEOUT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_SIMULATOR_TIMEOUT.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.SIMULATOR_TIMEOUT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L119">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_SIMULATOR_TIMEOUT" data-uid="OpenMetaverse.Settings.SIMULATOR_TIMEOUT">SIMULATOR_TIMEOUT</h4>
+  <div class="markdown level1 summary"><p>Milliseconds without receiving a packet before the
+connection to a simulator is assumed lost</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SIMULATOR_TIMEOUT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_SORT_INVENTORY.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.SORT_INVENTORY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L371">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_SORT_INVENTORY" data-uid="OpenMetaverse.Settings.SORT_INVENTORY">SORT_INVENTORY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SORT_INVENTORY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_STATS_QUEUE_SIZE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.STATS_QUEUE_SIZE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L157">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_STATS_QUEUE_SIZE" data-uid="OpenMetaverse.Settings.STATS_QUEUE_SIZE">STATS_QUEUE_SIZE</h4>
+  <div class="markdown level1 summary"><p>Network stats queue length (seconds)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int STATS_QUEUE_SIZE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_STORE_LAND_PATCHES.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.STORE_LAND_PATCHES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L186">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_STORE_LAND_PATCHES" data-uid="OpenMetaverse.Settings.STORE_LAND_PATCHES">STORE_LAND_PATCHES</h4>
+  <div class="markdown level1 summary"><p>Enable/disable storing terrain heightmaps in the
+TerrainManager</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool STORE_LAND_PATCHES</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_TELEPORT_TIMEOUT.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.TELEPORT_TIMEOUT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L100">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_TELEPORT_TIMEOUT" data-uid="OpenMetaverse.Settings.TELEPORT_TIMEOUT">TELEPORT_TIMEOUT</h4>
+  <div class="markdown level1 summary"><p>Number of milliseconds before a teleport attempt will time
+out</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TELEPORT_TIMEOUT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_THROTTLE_OUTGOING_PACKETS.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.THROTTLE_OUTGOING_PACKETS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L316">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_THROTTLE_OUTGOING_PACKETS" data-uid="OpenMetaverse.Settings.THROTTLE_OUTGOING_PACKETS">THROTTLE_OUTGOING_PACKETS</h4>
+  <div class="markdown level1 summary"><p>Throttle outgoing packet rate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool THROTTLE_OUTGOING_PACKETS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_TRACK_UTILIZATION.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.TRACK_UTILIZATION%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L267">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_TRACK_UTILIZATION" data-uid="OpenMetaverse.Settings.TRACK_UTILIZATION">TRACK_UTILIZATION</h4>
+  <div class="markdown level1 summary"><p>If true, utilization statistics will be tracked. There is a minor penalty
+in CPU time for enabling this option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TRACK_UTILIZATION</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_TRANSFER_TIMEOUT.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.TRANSFER_TIMEOUT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L96">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_TRANSFER_TIMEOUT" data-uid="OpenMetaverse.Settings.TRANSFER_TIMEOUT">TRANSFER_TIMEOUT</h4>
+  <div class="markdown level1 summary"><p>Number of milliseconds before an asset transfer will time
+out</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TRANSFER_TIMEOUT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_USE_ASSET_CACHE.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.USE_ASSET_CACHE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L294">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_USE_ASSET_CACHE" data-uid="OpenMetaverse.Settings.USE_ASSET_CACHE">USE_ASSET_CACHE</h4>
+  <div class="markdown level1 summary"><p>If true, images, and other assets downloaded from the server
+will be cached in a local directory</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool USE_ASSET_CACHE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_USE_HTTP_TEXTURES.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.USE_HTTP_TEXTURES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L327">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_USE_HTTP_TEXTURES" data-uid="OpenMetaverse.Settings.USE_HTTP_TEXTURES">USE_HTTP_TEXTURES</h4>
+  <div class="markdown level1 summary"><p>Download textures using GetTexture capability when available</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool USE_HTTP_TEXTURES</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_USE_INTERPOLATION_TIMER.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.USE_INTERPOLATION_TIMER%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L261">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_USE_INTERPOLATION_TIMER" data-uid="OpenMetaverse.Settings.USE_INTERPOLATION_TIMER">USE_INTERPOLATION_TIMER</h4>
+  <div class="markdown level1 summary"><p>If true, position and velocity will periodically be
+interpolated (extrapolated, technically) for objects and
+avatars that are being tracked by the library. This is
+necessary to increase the accuracy of speed and position
+estimates for simulated objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool USE_INTERPOLATION_TIMER</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_USE_LLSD_LOGIN.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.USE_LLSD_LOGIN%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L60">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_Settings_USE_LLSD_LOGIN" data-uid="OpenMetaverse.Settings.USE_LLSD_LOGIN">USE_LLSD_LOGIN</h4>
+  <div class="markdown level1 summary"><p>Use XML-RPC Login or LLSD Login, default is XML-RPC Login</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool USE_LLSD_LOGIN</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_UPLOAD_COST.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.UPLOAD_COST%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L310">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Settings_UPLOAD_COST_" data-uid="OpenMetaverse.Settings.UPLOAD_COST*"></a>
+  <h4 id="OpenMetaverse_Settings_UPLOAD_COST" data-uid="OpenMetaverse.Settings.UPLOAD_COST">UPLOAD_COST</h4>
+  <div class="markdown level1 summary"><p>Cost of uploading an asset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UPLOAD_COST { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_Settings_UPLOAD_COST_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Read-only since this value is dynamically fetched at login</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings_EconomyDataHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings.EconomyDataHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L387">View Source</a>
+  </span>
+  <a id="OpenMetaverse_Settings_EconomyDataHandler_" data-uid="OpenMetaverse.Settings.EconomyDataHandler*"></a>
+  <h4 id="OpenMetaverse_Settings_EconomyDataHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.Settings.EconomyDataHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">EconomyDataHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EconomyDataHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_Settings.md&amp;value=---%0Auid%3A%20OpenMetaverse.Settings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/Settings.cs/#L40" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

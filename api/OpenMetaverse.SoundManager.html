@@ -1,0 +1,843 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SoundManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SoundManager
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.SoundManager">
+  
+  
+  <h1 id="OpenMetaverse_SoundManager" data-uid="OpenMetaverse.SoundManager" class="text-break">Class SoundManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SoundManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_SoundManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SoundManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager__ctor_OpenMetaverse_GridClient_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.%23ctor(OpenMetaverse.GridClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L146">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager__ctor_" data-uid="OpenMetaverse.SoundManager.#ctor*"></a>
+  <h4 id="OpenMetaverse_SoundManager__ctor_OpenMetaverse_GridClient_" data-uid="OpenMetaverse.SoundManager.#ctor(OpenMetaverse.GridClient)">SoundManager(GridClient)</h4>
+  <div class="markdown level1 summary"><p>Construct a new instance of the SoundManager class, used for playing and receiving
+sound assets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundManager(GridClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>A reference to the current GridClient instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_AttachedSoundGainChangeHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.AttachedSoundGainChangeHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L242">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_AttachedSoundGainChangeHandler_" data-uid="OpenMetaverse.SoundManager.AttachedSoundGainChangeHandler*"></a>
+  <h4 id="OpenMetaverse_SoundManager_AttachedSoundGainChangeHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.SoundManager.AttachedSoundGainChangeHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">AttachedSoundGainChangeHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AttachedSoundGainChangeHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_AttachedSoundHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.AttachedSoundHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L228">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_AttachedSoundHandler_" data-uid="OpenMetaverse.SoundManager.AttachedSoundHandler*"></a>
+  <h4 id="OpenMetaverse_SoundManager_AttachedSoundHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.SoundManager.AttachedSoundHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">AttachedSoundHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AttachedSoundHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_OnAttachedSound_OpenMetaverse_AttachedSoundEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.OnAttachedSound(OpenMetaverse.AttachedSoundEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L49">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_OnAttachedSound_" data-uid="OpenMetaverse.SoundManager.OnAttachedSound*"></a>
+  <h4 id="OpenMetaverse_SoundManager_OnAttachedSound_OpenMetaverse_AttachedSoundEventArgs_" data-uid="OpenMetaverse.SoundManager.OnAttachedSound(OpenMetaverse.AttachedSoundEventArgs)">OnAttachedSound(AttachedSoundEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the AttachedSound Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnAttachedSound(AttachedSoundEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AttachedSoundEventArgs.html">AttachedSoundEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A AttachedSoundEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_OnAttachedSoundGainChange_OpenMetaverse_AttachedSoundGainChangeEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.OnAttachedSoundGainChange(OpenMetaverse.AttachedSoundGainChangeEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L73">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_OnAttachedSoundGainChange_" data-uid="OpenMetaverse.SoundManager.OnAttachedSoundGainChange*"></a>
+  <h4 id="OpenMetaverse_SoundManager_OnAttachedSoundGainChange_OpenMetaverse_AttachedSoundGainChangeEventArgs_" data-uid="OpenMetaverse.SoundManager.OnAttachedSoundGainChange(OpenMetaverse.AttachedSoundGainChangeEventArgs)">OnAttachedSoundGainChange(AttachedSoundGainChangeEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the AttachedSoundGainChange Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnAttachedSoundGainChange(AttachedSoundGainChangeEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AttachedSoundGainChangeEventArgs.html">AttachedSoundGainChangeEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A AttachedSoundGainChangeEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_OnPreloadSound_OpenMetaverse_PreloadSoundEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.OnPreloadSound(OpenMetaverse.PreloadSoundEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L121">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_OnPreloadSound_" data-uid="OpenMetaverse.SoundManager.OnPreloadSound*"></a>
+  <h4 id="OpenMetaverse_SoundManager_OnPreloadSound_OpenMetaverse_PreloadSoundEventArgs_" data-uid="OpenMetaverse.SoundManager.OnPreloadSound(OpenMetaverse.PreloadSoundEventArgs)">OnPreloadSound(PreloadSoundEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the PreloadSound Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPreloadSound(PreloadSoundEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PreloadSoundEventArgs.html">PreloadSoundEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A PreloadSoundEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_OnSoundTrigger_OpenMetaverse_SoundTriggerEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.OnSoundTrigger(OpenMetaverse.SoundTriggerEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L97">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_OnSoundTrigger_" data-uid="OpenMetaverse.SoundManager.OnSoundTrigger*"></a>
+  <h4 id="OpenMetaverse_SoundManager_OnSoundTrigger_OpenMetaverse_SoundTriggerEventArgs_" data-uid="OpenMetaverse.SoundManager.OnSoundTrigger(OpenMetaverse.SoundTriggerEventArgs)">OnSoundTrigger(SoundTriggerEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the SoundTrigger Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSoundTrigger(SoundTriggerEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.SoundTriggerEventArgs.html">SoundTriggerEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A SoundTriggerEventArgs object containing
+the data sent from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_PlaySound_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.PlaySound(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L162">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_PlaySound_" data-uid="OpenMetaverse.SoundManager.PlaySound*"></a>
+  <h4 id="OpenMetaverse_SoundManager_PlaySound_OpenMetaverse_UUID_" data-uid="OpenMetaverse.SoundManager.PlaySound(OpenMetaverse.UUID)">PlaySound(UUID)</h4>
+  <div class="markdown level1 summary"><p>Plays a sound in the current region at full volume from avatar position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySound(UUID soundID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">soundID</span></td>
+        <td><p>UUID of the sound to be played</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_PreloadSoundHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.PreloadSoundHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L254">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_PreloadSoundHandler_" data-uid="OpenMetaverse.SoundManager.PreloadSoundHandler*"></a>
+  <h4 id="OpenMetaverse_SoundManager_PreloadSoundHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.SoundManager.PreloadSoundHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">PreloadSoundHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void PreloadSoundHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_SendSoundTrigger_OpenMetaverse_UUID_OpenMetaverse_Simulator_OpenMetaverse_Vector3_System_Single_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.SendSoundTrigger(OpenMetaverse.UUID%2COpenMetaverse.Simulator%2COpenMetaverse.Vector3%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L194">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_SendSoundTrigger_" data-uid="OpenMetaverse.SoundManager.SendSoundTrigger*"></a>
+  <h4 id="OpenMetaverse_SoundManager_SendSoundTrigger_OpenMetaverse_UUID_OpenMetaverse_Simulator_OpenMetaverse_Vector3_System_Single_" data-uid="OpenMetaverse.SoundManager.SendSoundTrigger(OpenMetaverse.UUID,OpenMetaverse.Simulator,OpenMetaverse.Vector3,System.Single)">SendSoundTrigger(UUID, Simulator, Vector3, Single)</h4>
+  <div class="markdown level1 summary"><p>Plays a sound in the specified sim</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendSoundTrigger(UUID soundID, Simulator sim, Vector3 position, float gain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">soundID</span></td>
+        <td><p>UUID of the sound to be played.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">sim</span></td>
+        <td><p>UUID of the sound to be played.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>position for the sound to be played at. Normally the avatar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">gain</span></td>
+        <td><p>volume of the sound, from 0.0 to 1.0</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_SendSoundTrigger_OpenMetaverse_UUID_OpenMetaverse_Vector3_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.SendSoundTrigger(OpenMetaverse.UUID%2COpenMetaverse.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L172">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_SendSoundTrigger_" data-uid="OpenMetaverse.SoundManager.SendSoundTrigger*"></a>
+  <h4 id="OpenMetaverse_SoundManager_SendSoundTrigger_OpenMetaverse_UUID_OpenMetaverse_Vector3_" data-uid="OpenMetaverse.SoundManager.SendSoundTrigger(OpenMetaverse.UUID,OpenMetaverse.Vector3)">SendSoundTrigger(UUID, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Plays a sound in the current region at full volume</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendSoundTrigger(UUID soundID, Vector3 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">soundID</span></td>
+        <td><p>UUID of the sound to be played.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>position for the sound to be played at. Normally the avatar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_SendSoundTrigger_OpenMetaverse_UUID_OpenMetaverse_Vector3_System_Single_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.SendSoundTrigger(OpenMetaverse.UUID%2COpenMetaverse.Vector3%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L183">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_SendSoundTrigger_" data-uid="OpenMetaverse.SoundManager.SendSoundTrigger*"></a>
+  <h4 id="OpenMetaverse_SoundManager_SendSoundTrigger_OpenMetaverse_UUID_OpenMetaverse_Vector3_System_Single_" data-uid="OpenMetaverse.SoundManager.SendSoundTrigger(OpenMetaverse.UUID,OpenMetaverse.Vector3,System.Single)">SendSoundTrigger(UUID, Vector3, Single)</h4>
+  <div class="markdown level1 summary"><p>Plays a sound in the current region</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendSoundTrigger(UUID soundID, Vector3 position, float gain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">soundID</span></td>
+        <td><p>UUID of the sound to be played.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>position for the sound to be played at. Normally the avatar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">gain</span></td>
+        <td><p>volume of the sound, from 0.0 to 1.0</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_SendSoundTrigger_OpenMetaverse_UUID_System_UInt64_OpenMetaverse_Vector3_System_Single_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.SendSoundTrigger(OpenMetaverse.UUID%2CSystem.UInt64%2COpenMetaverse.Vector3%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L206">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_SendSoundTrigger_" data-uid="OpenMetaverse.SoundManager.SendSoundTrigger*"></a>
+  <h4 id="OpenMetaverse_SoundManager_SendSoundTrigger_OpenMetaverse_UUID_System_UInt64_OpenMetaverse_Vector3_System_Single_" data-uid="OpenMetaverse.SoundManager.SendSoundTrigger(OpenMetaverse.UUID,System.UInt64,OpenMetaverse.Vector3,System.Single)">SendSoundTrigger(UUID, UInt64, Vector3, Single)</h4>
+  <div class="markdown level1 summary"><p>Play a sound asset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendSoundTrigger(UUID soundID, ulong handle, Vector3 position, float gain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">soundID</span></td>
+        <td><p>UUID of the sound to be played.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>handle id for the sim to be played in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>position for the sound to be played at. Normally the avatar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">gain</span></td>
+        <td><p>volume of the sound, from 0.0 to 1.0</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_SoundTriggerHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.SoundTriggerHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L270">View Source</a>
+  </span>
+  <a id="OpenMetaverse_SoundManager_SoundTriggerHandler_" data-uid="OpenMetaverse.SoundManager.SoundTriggerHandler*"></a>
+  <h4 id="OpenMetaverse_SoundManager_SoundTriggerHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.SoundManager.SoundTriggerHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">SoundTriggerHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SoundTriggerHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_AttachedSound.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.AttachedSound%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L61">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_SoundManager_AttachedSound" data-uid="OpenMetaverse.SoundManager.AttachedSound">AttachedSound</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+sound</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;AttachedSoundEventArgs&gt; AttachedSound</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.AttachedSoundEventArgs.html">AttachedSoundEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_AttachedSoundGainChange.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.AttachedSoundGainChange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L85">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_SoundManager_AttachedSoundGainChange" data-uid="OpenMetaverse.SoundManager.AttachedSoundGainChange">AttachedSoundGainChange</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;AttachedSoundGainChangeEventArgs&gt; AttachedSoundGainChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.AttachedSoundGainChangeEventArgs.html">AttachedSoundGainChangeEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_PreloadSound.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.PreloadSound%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L133">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_SoundManager_PreloadSound" data-uid="OpenMetaverse.SoundManager.PreloadSound">PreloadSound</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;PreloadSoundEventArgs&gt; PreloadSound</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.PreloadSoundEventArgs.html">PreloadSoundEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager_SoundTrigger.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager.SoundTrigger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L109">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_SoundManager_SoundTrigger" data-uid="OpenMetaverse.SoundManager.SoundTrigger">SoundTrigger</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us data containing
+...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SoundTriggerEventArgs&gt; SoundTrigger</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.SoundTriggerEventArgs.html">SoundTriggerEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_SoundManager.md&amp;value=---%0Auid%3A%20OpenMetaverse.SoundManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/SoundManager.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DecLyrdCBlk
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DecLyrdCBlk
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk">
+  
+  
+  <h1 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk" class="text-break">Class DecLyrdCBlk
+  </h1>
+  <div class="markdown level0 summary"><p>This class stores coded (compressed) code-blocks that are organized in
+layers. This object can contain either all code-block data (i.e. all
+layers), or a subset of all the layers that make up the whole compressed
+code-block. It is applicable to the decoder engine only. Some data of the
+coded-block is stored in the super class, see CodedCBlk.</p>
+<p>A code-block may have its progressive attribute set (i.e. the &apos;prog&apos;
+flag is true). If a code-block is progressive then it means that more data
+for it may be obtained for an improved quality. If the progressive flag is
+false then no more data is available from the source for this
+code-block.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html">CodedCBlk</a></div>
+    <div class="level2"><span class="xref">DecLyrdCBlk</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html#CSJ2K_j2k_entropy_CodedCBlk_n">CodedCBlk.n</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html#CSJ2K_j2k_entropy_CodedCBlk_m">CodedCBlk.m</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html#CSJ2K_j2k_entropy_CodedCBlk_skipMSBP">CodedCBlk.skipMSBP</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html#CSJ2K_j2k_entropy_CodedCBlk_data">CodedCBlk.data</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.entropy.decoder.html">CSJ2K.j2k.entropy.decoder</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DecLyrdCBlk : CodedCBlk</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_dl.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.dl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L83">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_dl" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.dl">dl</h4>
+  <div class="markdown level1 summary"><p>The coded (compressed) data length. The data is stored in the 'data'
+array (see super class).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int dl</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_ftpIdx.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.ftpIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L92">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_ftpIdx" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.ftpIdx">ftpIdx</h4>
+  <div class="markdown level1 summary"><p>The index of the first truncation point returned</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ftpIdx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_h.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.h%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L78">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_h" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.h">h</h4>
+  <div class="markdown level1 summary"><p>The height of the code-block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int h</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_nl.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.nl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L89">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_nl" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.nl">nl</h4>
+  <div class="markdown level1 summary"><p>The number of layers in the coded data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int nl</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_nTrunc.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.nTrunc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L98">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_nTrunc" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.nTrunc">nTrunc</h4>
+  <div class="markdown level1 summary"><p>The total number of truncation points from layer 1 to the last one in
+this object. The number of truncation points in 'data' is
+'nTrunc-ftpIdx'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int nTrunc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_prog.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.prog%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L86">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_prog" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.prog">prog</h4>
+  <div class="markdown level1 summary"><p>The progressive flag, false by default (see above).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool prog</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_tsLengths.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.tsLengths%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L107">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_tsLengths" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.tsLengths">tsLengths</h4>
+  <div class="markdown level1 summary"><p>The length of each terminated segment. If null then there is only one
+terminated segment, and its length is 'dl'. The number of terminated
+segments is to be deduced from 'ftpIdx', 'nTrunc' and the coding
+options. This array contains all terminated segments from the 'ftpIdx'
+truncation point, upto, and including, the 'nTrunc-1' truncation
+point. Any data after 'nTrunc-1' is not included in any length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] tsLengths</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_ulx.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.ulx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L69">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_ulx" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.ulx">ulx</h4>
+  <div class="markdown level1 summary"><p>The horizontal coordinate of the upper-left corner of the code-block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ulx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_uly.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.uly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L72">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_uly" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.uly">uly</h4>
+  <div class="markdown level1 summary"><p>The vertical coordinate of the upper left corner of the code-block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int uly</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_w.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.w%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L75">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_w" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.w">w</h4>
+  <div class="markdown level1 summary"><p>The width of the code-block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int w</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_ToString.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L115">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_ToString_" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.ToString*"></a>
+  <h4 id="CSJ2K_j2k_entropy_decoder_DecLyrdCBlk_ToString" data-uid="CSJ2K.j2k.entropy.decoder.DecLyrdCBlk.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Object information in a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Information in a string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html#CSJ2K_j2k_entropy_CodedCBlk_ToString">CodedCBlk.ToString()</a></div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html">CodedCBlk</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_decoder_DecLyrdCBlk.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.decoder.DecLyrdCBlk%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/decoder/DecLyrdCBlk.cs/#L65" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

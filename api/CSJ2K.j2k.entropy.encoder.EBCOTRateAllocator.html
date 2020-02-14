@@ -1,0 +1,754 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EBCOTRateAllocator
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EBCOTRateAllocator
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator">
+  
+  
+  <h1 id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator" class="text-break">Class EBCOTRateAllocator
+  </h1>
+  <div class="markdown level0 summary"><p>This implements the EBCOT post compression rate allocation algorithm. This
+algorithm finds the most suitable truncation points for the set of
+code-blocks, for each layer target bitrate. It works by first collecting
+the rate distortion info from all code-blocks, in all tiles and all
+components, and then running the rate-allocation on the whole image at
+once, for each layer.</p>
+<p>This implementation also provides some timing features. They can be
+enabled by setting the &apos;DO_TIMING&apos; constant of this class to true and
+recompiling. The timing uses the &apos;System.currentTimeMillis()&apos; Java API
+call, which returns wall clock time, not the actual CPU time used. The
+timing results will be printed on the message output. Since the times
+reported are wall clock times and not CPU usage times they can not be added
+to find the total used time (i.e. some time might be counted in several
+places). When timing is disabled (&apos;DO_TIMING&apos; is false) there is no penalty
+if the compiler performs some basic optimizations. Even if not the penalty
+should be negligeable.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html">ImgDataAdapter</a></div>
+    <div class="level2"><a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html">PostCompRateAllocator</a></div>
+    <div class="level3"><span class="xref">EBCOTRateAllocator</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html#CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_HeaderEncoder">PostCompRateAllocator.HeaderEncoder</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html#CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_NumLayers">PostCompRateAllocator.NumLayers</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html#CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_ParameterInfo">PostCompRateAllocator.ParameterInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html#CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_OPT_PREFIX">PostCompRateAllocator.OPT_PREFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html#CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_src">PostCompRateAllocator.src</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html#CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_encSpec">PostCompRateAllocator.encSpec</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html#CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_num_Layers">PostCompRateAllocator.num_Layers</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html#CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_createInstance_CSJ2K_j2k_entropy_encoder_CodedCBlkDataSrcEnc_CSJ2K_j2k_util_ParameterList_System_Single_CSJ2K_j2k_codestream_writer_CodestreamWriter_CSJ2K_j2k_encoder_EncoderSpecs_">PostCompRateAllocator.createInstance(CodedCBlkDataSrcEnc, ParameterList, Single, CodestreamWriter, EncoderSpecs)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileWidth">ImgDataAdapter.TileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileHeight">ImgDataAdapter.TileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileWidth">ImgDataAdapter.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileHeight">ImgDataAdapter.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgWidth">ImgDataAdapter.ImgWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgHeight">ImgDataAdapter.ImgHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NumComps">ImgDataAdapter.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileIdx">ImgDataAdapter.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULX">ImgDataAdapter.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULY">ImgDataAdapter.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULX">ImgDataAdapter.ImgULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULY">ImgDataAdapter.ImgULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_tIdx">ImgDataAdapter.tIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_imgdatasrc">ImgDataAdapter.imgdatasrc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsX_System_Int32_">ImgDataAdapter.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsY_System_Int32_">ImgDataAdapter.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_">ImgDataAdapter.getTileCompWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_">ImgDataAdapter.getTileCompHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgWidth_System_Int32_">ImgDataAdapter.getCompImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgHeight_System_Int32_">ImgDataAdapter.getCompImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNomRangeBits_System_Int32_">ImgDataAdapter.getNomRangeBits(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_setTile_System_Int32_System_Int32_">ImgDataAdapter.setTile(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_nextTile">ImgDataAdapter.nextTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULX_System_Int32_">ImgDataAdapter.getCompULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULY_System_Int32_">ImgDataAdapter.getCompULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles">ImgDataAdapter.getNumTiles()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.entropy.encoder.html">CSJ2K.j2k.entropy.encoder</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EBCOTRateAllocator : PostCompRateAllocator, ImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator__ctor_CSJ2K_j2k_entropy_encoder_CodedCBlkDataSrcEnc_CSJ2K_j2k_entropy_encoder_LayersInfo_CSJ2K_j2k_codestream_writer_CodestreamWriter_CSJ2K_j2k_encoder_EncoderSpecs_CSJ2K_j2k_util_ParameterList_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.%23ctor(CSJ2K.j2k.entropy.encoder.CodedCBlkDataSrcEnc%2CCSJ2K.j2k.entropy.encoder.LayersInfo%2CCSJ2K.j2k.codestream.writer.CodestreamWriter%2CCSJ2K.j2k.encoder.EncoderSpecs%2CCSJ2K.j2k.util.ParameterList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/EBCOTRateAllocator.cs/#L214">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator__ctor_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator__ctor_CSJ2K_j2k_entropy_encoder_CodedCBlkDataSrcEnc_CSJ2K_j2k_entropy_encoder_LayersInfo_CSJ2K_j2k_codestream_writer_CodestreamWriter_CSJ2K_j2k_encoder_EncoderSpecs_CSJ2K_j2k_util_ParameterList_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.#ctor(CSJ2K.j2k.entropy.encoder.CodedCBlkDataSrcEnc,CSJ2K.j2k.entropy.encoder.LayersInfo,CSJ2K.j2k.codestream.writer.CodestreamWriter,CSJ2K.j2k.encoder.EncoderSpecs,CSJ2K.j2k.util.ParameterList)">EBCOTRateAllocator(CodedCBlkDataSrcEnc, LayersInfo, CodestreamWriter, EncoderSpecs, ParameterList)</h4>
+  <div class="markdown level1 summary"><p>Initializes the EBCOT rate allocator of entropy coded data. The layout
+of layers, and their bitrate constraints, is specified by the 'lyrs'
+parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EBCOTRateAllocator(CodedCBlkDataSrcEnc src, LayersInfo lyrs, CodestreamWriter writer, EncoderSpecs encSpec, ParameterList pl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.encoder.CodedCBlkDataSrcEnc.html">CodedCBlkDataSrcEnc</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>The source of entropy coded data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.encoder.LayersInfo.html">LayersInfo</a></td>
+        <td><span class="parametername">lyrs</span></td>
+        <td><p>The layers layout specification.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.codestream.writer.CodestreamWriter.html">CodestreamWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The bit stream writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.encoder.EncoderSpecs.html">EncoderSpecs</a></td>
+        <td><span class="parametername">encSpec</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.util.ParameterList.html">ParameterList</a></td>
+        <td><span class="parametername">pl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator__ctor_CSJ2K_j2k_entropy_encoder_CodedCBlkDataSrcEnc_CSJ2K_j2k_entropy_encoder_LayersInfo_CSJ2K_j2k_codestream_writer_CodestreamWriter_CSJ2K_j2k_encoder_EncoderSpecs_CSJ2K_j2k_util_ParameterList__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.codestream.ProgressionType.html">ProgressionType</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_initialize.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/EBCOTRateAllocator.cs/#L472">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_initialize_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.initialize*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_initialize" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.initialize">initialize()</h4>
+  <div class="markdown level1 summary"><p>Initializes the layers array. This must be called after the main header
+has been entirely written or simulated, so as to take its overhead into
+account. This method will get all the code-blocks and then initialize
+the target bitrates for each layer, according to the specifications.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void initialize()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html#CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_initialize">PostCompRateAllocator.initialize()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_runAndWrite.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.runAndWrite%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/EBCOTRateAllocator.cs/#L460">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_runAndWrite_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.runAndWrite*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_runAndWrite" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.runAndWrite">runAndWrite()</h4>
+  <div class="markdown level1 summary"><p>Runs the rate allocation algorithm and writes the data to the bit
+stream writer object provided to the constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void runAndWrite()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html#CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_runAndWrite">PostCompRateAllocator.runAndWrite()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeCompPosResLy_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_____System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeCompPosResLy(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/EBCOTRateAllocator.cs/#L1490">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeCompPosResLy_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeCompPosResLy*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeCompPosResLy_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_____System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeCompPosResLy(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[][],System.Int32)">writeCompPosResLy(Int32, Int32, Int32, Int32, Int32, Int32[][], Int32)</h4>
+  <div class="markdown level1 summary"><p>Write a piece of bit stream according to the
+COMP_POS_RES_LY_PROG progression mode and between given bounds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void writeCompPosResLy(int t, int rs, int re, int cs, int ce, int[][] lys, int lye)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rs</span></td>
+        <td><p>First resolution level index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">re</span></td>
+        <td><p>Last resolution level index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cs</span></td>
+        <td><p>First component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ce</span></td>
+        <td><p>Last component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[][]</td>
+        <td><span class="parametername">lys</span></td>
+        <td><p>First layer index for each component and resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lye</span></td>
+        <td><p>Index of the last layer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeLyResCompPos_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_____System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeLyResCompPos(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/EBCOTRateAllocator.cs/#L1174">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeLyResCompPos_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeLyResCompPos*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeLyResCompPos_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_____System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeLyResCompPos(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[][],System.Int32)">writeLyResCompPos(Int32, Int32, Int32, Int32, Int32, Int32[][], Int32)</h4>
+  <div class="markdown level1 summary"><p>Write a piece of bit stream according to the
+LY_RES_COMP_POS_PROG progression mode and between given bounds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void writeLyResCompPos(int t, int rs, int re, int cs, int ce, int[][] lys, int lye)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rs</span></td>
+        <td><p>First resolution level index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">re</span></td>
+        <td><p>Last resolution level index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cs</span></td>
+        <td><p>First component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ce</span></td>
+        <td><p>Last component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[][]</td>
+        <td><span class="parametername">lys</span></td>
+        <td><p>First layer index for each component and resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lye</span></td>
+        <td><p>Index of the last layer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writePosCompResLy_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_____System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writePosCompResLy(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/EBCOTRateAllocator.cs/#L1273">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writePosCompResLy_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writePosCompResLy*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writePosCompResLy_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_____System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writePosCompResLy(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[][],System.Int32)">writePosCompResLy(Int32, Int32, Int32, Int32, Int32, Int32[][], Int32)</h4>
+  <div class="markdown level1 summary"><p>Write a piece of bit stream according to the
+COMP_POS_RES_LY_PROG progression mode and between given bounds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void writePosCompResLy(int t, int rs, int re, int cs, int ce, int[][] lys, int lye)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rs</span></td>
+        <td><p>First resolution level index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">re</span></td>
+        <td><p>Last resolution level index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cs</span></td>
+        <td><p>First component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ce</span></td>
+        <td><p>Last component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[][]</td>
+        <td><span class="parametername">lys</span></td>
+        <td><p>First layer index for each component and resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lye</span></td>
+        <td><p>Index of the last layer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeResLyCompPos_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_____System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeResLyCompPos(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/EBCOTRateAllocator.cs/#L1063">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeResLyCompPos_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeResLyCompPos*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeResLyCompPos_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_____System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeResLyCompPos(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[][],System.Int32)">writeResLyCompPos(Int32, Int32, Int32, Int32, Int32, Int32[][], Int32)</h4>
+  <div class="markdown level1 summary"><p>Write a piece of bit stream according to the
+RES_LY_COMP_POS_PROG progression mode and between given bounds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void writeResLyCompPos(int t, int rs, int re, int cs, int ce, int[][] lys, int lye)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rs</span></td>
+        <td><p>First resolution level index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">re</span></td>
+        <td><p>Last resolution level index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cs</span></td>
+        <td><p>First component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ce</span></td>
+        <td><p>Last component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[][]</td>
+        <td><span class="parametername">lys</span></td>
+        <td><p>First layer index for each component and resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lye</span></td>
+        <td><p>Index of the last layer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeResPosCompLy_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_____System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeResPosCompLy(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/EBCOTRateAllocator.cs/#L1710">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeResPosCompLy_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeResPosCompLy*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator_writeResPosCompLy_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_____System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.writeResPosCompLy(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[][],System.Int32)">writeResPosCompLy(Int32, Int32, Int32, Int32, Int32, Int32[][], Int32)</h4>
+  <div class="markdown level1 summary"><p>Write a piece of bit stream according to the
+RES_POS_COMP_LY_PROG progression mode and between given bounds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void writeResPosCompLy(int t, int rs, int re, int cs, int ce, int[][] lys, int lye)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rs</span></td>
+        <td><p>First resolution level index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">re</span></td>
+        <td><p>Last resolution level index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cs</span></td>
+        <td><p>First component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ce</span></td>
+        <td><p>Last component index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[][]</td>
+        <td><span class="parametername">lys</span></td>
+        <td><p>First layer index for each component and resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lye</span></td>
+        <td><p>Last layer index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html">PostCompRateAllocator</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.CodedCBlkDataSrcEnc.html">CodedCBlkDataSrcEnc</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_EBCOTRateAllocator.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/EBCOTRateAllocator.cs/#L82" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

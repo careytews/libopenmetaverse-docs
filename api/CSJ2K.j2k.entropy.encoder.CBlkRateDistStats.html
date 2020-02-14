@@ -1,0 +1,735 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CBlkRateDistStats
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CBlkRateDistStats
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats">
+  
+  
+  <h1 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats" class="text-break">Class CBlkRateDistStats
+  </h1>
+  <div class="markdown level0 summary"><p>This class stores coded (compressed) code-blocks with their associated
+rate-distortion statistics. This object should always contain all the
+compressed data of the code-block. It is applicable to the encoder engine
+only. Some data of the coded-block is stored in the super class, see
+CodedCBlk.</p>
+<p>The rate-distortion statistics (i.e. R-D slope) is stored for valid
+points only. The set of valid points is determined by the entropy coder
+engine itself. Normally they are selected so as to lye in a convex hull,
+which can be achived by using the &apos;selectConvexHull&apos; method of this class,
+but some other strategies might be employed.</p>
+<p>The rate (in bytes) for each truncation point (valid or not) is stored
+in the &apos;truncRates&apos; array. The rate of a truncation point is the total
+number of bytes in &apos;data&apos; (see super class) that have to be decoded to
+reach the truncation point.</p>
+<p>The slope (reduction of distortion divided by the increase in rate) at
+each of the valid truncation points is stored in &apos;truncSlopes&apos;.</p>
+<p>The index of each valid truncation point is stored in &apos;truncIdxs&apos;. The
+index should be interpreted in the following way: a valid truncation point
+at position &apos;n&apos; has the index &apos;truncIdxs[n]&apos;, the rate
+&apos;truncRates[truncIdxs[n]]&apos; and the slope &apos;truncSlopes[n]&apos;. The arrays
+&apos;truncIdxs&apos; and &apos;truncRates&apos; have at least &apos;nVldTrunc&apos; elements. The
+&apos;truncRates&apos; array has at least &apos;nTotTrunc&apos; elements.</p>
+<p>In addition the &apos;isTermPass&apos; array contains a flag for each truncation
+point (valid and non-valid ones) that tells if the pass is terminated or
+not. If this variable is null then it means that no pass is terminated,
+except the last one which always is.</p>
+<p>The compressed data is stored in the &apos;data&apos; member variable of the super
+class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html">CodedCBlk</a></div>
+    <div class="level2"><span class="xref">CBlkRateDistStats</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html#CSJ2K_j2k_entropy_CodedCBlk_n">CodedCBlk.n</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html#CSJ2K_j2k_entropy_CodedCBlk_m">CodedCBlk.m</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html#CSJ2K_j2k_entropy_CodedCBlk_skipMSBP">CodedCBlk.skipMSBP</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html#CSJ2K_j2k_entropy_CodedCBlk_data">CodedCBlk.data</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.entropy.encoder.html">CSJ2K.j2k.entropy.encoder</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CBlkRateDistStats : CodedCBlk</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats__ctor.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L132">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats__ctor_" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats__ctor" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.#ctor">CBlkRateDistStats()</h4>
+  <div class="markdown level1 summary"><p>Creates a new CBlkRateDistStats object without allocating any space for
+'truncRates', 'truncSlopes', 'truncDists' and 'truncIdxs' or 'data'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CBlkRateDistStats()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats__ctor_System_Int32_System_Int32_System_Int32_System_Byte___System_Int32___System_Double___System_Boolean___System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Byte%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Double%5B%5D%2CSystem.Boolean%5B%5D%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L190">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats__ctor_" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats__ctor_System_Int32_System_Int32_System_Int32_System_Byte___System_Int32___System_Double___System_Boolean___System_Int32_System_Boolean_" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.#ctor(System.Int32,System.Int32,System.Int32,System.Byte[],System.Int32[],System.Double[],System.Boolean[],System.Int32,System.Boolean)">CBlkRateDistStats(Int32, Int32, Int32, Byte[], Int32[], Double[], Boolean[], Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CBlkRateDistStats object and initializes the valid
+truncation points, their rates and their slopes, from the 'rates' and
+'dist' arrays. The 'rates', 'dist' and 'termp' arrays must contain the
+rate (in bytes), the reduction in distortion (from nothing coded) and
+the flag indicating if termination is used, respectively, for each
+truncation point.</p>
+<p>The valid truncation points are selected by taking them as lying on
+a convex hull. This is done by calling the method
+selectConvexHull().</p>
+<p>Note that the arrays &apos;rates&apos; and &apos;termp&apos; are copied, not referenced,
+so they can be modified after a call to this constructor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CBlkRateDistStats(int m, int n, int skipMSBP, byte[] data, int[] rates, double[] dists, bool[] termp, int np, bool inclast)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">m</span></td>
+        <td><p>The horizontal index of the code-block, within the subband.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The vertical index of the code-block, within the subband.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skipMSBP</span></td>
+        <td><p>The number of skipped most significant bit-planes for
+this code-block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The compressed data. This array is referenced by this
+object so it should not be modified after.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">rates</span></td>
+        <td><p>The rates (in bytes) for each truncation point in the
+compressed data. This array is modified by the method but no reference
+is kept to it.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">dists</span></td>
+        <td><p>The reduction in distortion (with respect to no
+information coded) for each truncation point. This array is modified by
+the method but no reference is kept to it.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span>[]</td>
+        <td><span class="parametername">termp</span></td>
+        <td><p>An array of boolean flags indicating, for each pass, if a
+pass is terminated or not (true if terminated). If null then it is
+assumed that no pass is terminated except the last one which always is.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">np</span></td>
+        <td><p>The number of truncation points contained in 'rates', 'dist'
+and 'termp'.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">inclast</span></td>
+        <td><p>If false the convex hull is constructed as for lossy
+coding. If true it is constructed as for lossless coding, in which case
+it is ensured that all bit-planes are sent (i.e. the last truncation
+point is always included).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_isTermPass.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.isTermPass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L120">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_isTermPass" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.isTermPass">isTermPass</h4>
+  <div class="markdown level1 summary"><p>Array of flags indicating terminated passes (valid or non-valid
+truncation points).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool[] isTermPass</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_nROIcoeff.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.nROIcoeff%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L123">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_nROIcoeff" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.nROIcoeff">nROIcoeff</h4>
+  <div class="markdown level1 summary"><p>The number of ROI coefficients in the code-block</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int nROIcoeff</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_nROIcp.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.nROIcp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L126">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_nROIcp" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.nROIcp">nROIcp</h4>
+  <div class="markdown level1 summary"><p>Number of ROI coding passes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int nROIcp</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_nTotTrunc.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.nTotTrunc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L96">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_nTotTrunc" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.nTotTrunc">nTotTrunc</h4>
+  <div class="markdown level1 summary"><p>The total number of truncation points</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int nTotTrunc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_nVldTrunc.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.nVldTrunc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L99">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_nVldTrunc" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.nVldTrunc">nVldTrunc</h4>
+  <div class="markdown level1 summary"><p>The number of valid truncation points</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int nVldTrunc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_sb.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.sb%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L93">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_sb" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.sb">sb</h4>
+  <div class="markdown level1 summary"><p>The subband to which the code-block belongs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubbandAn sb</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.SubbandAn.html">SubbandAn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_truncDists.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.truncDists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L107">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_truncDists" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.truncDists">truncDists</h4>
+  <div class="markdown level1 summary"><p>The distortion for each truncation point (valid and non-valid ones)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] truncDists</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_truncIdxs.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.truncIdxs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L115">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_truncIdxs" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.truncIdxs">truncIdxs</h4>
+  <div class="markdown level1 summary"><p>The indices of the valid truncation points, in increasing order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] truncIdxs</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_truncRates.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.truncRates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L104">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_truncRates" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.truncRates">truncRates</h4>
+  <div class="markdown level1 summary"><p>The rate (in bytes) for each truncation point (valid and non-valid
+ones)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] truncRates</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_truncSlopes.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.truncSlopes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L112">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_truncSlopes" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.truncSlopes">truncSlopes</h4>
+  <div class="markdown level1 summary"><p>The negative of the rate-distortion slope for each valid truncation
+point</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] truncSlopes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_selectConvexHull_System_Int32___System_Double___System_Boolean___System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.selectConvexHull(System.Int32%5B%5D%2CSystem.Double%5B%5D%2CSystem.Boolean%5B%5D%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L230">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_selectConvexHull_" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.selectConvexHull*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_selectConvexHull_System_Int32___System_Double___System_Boolean___System_Int32_System_Boolean_" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.selectConvexHull(System.Int32[],System.Double[],System.Boolean[],System.Int32,System.Boolean)">selectConvexHull(Int32[], Double[], Boolean[], Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Compute the rate-distorsion slopes and selects those that lie in a
+convex hull. It will compute the slopes, select the ones that form the
+convex hull and initialize the 'truncIdxs' and 'truncSlopes' arrays, as
+well as 'nVldTrunc', with the selected truncation points. It will also
+initialize 'truncRates' and 'isTermPass' arrays, as well as
+'nTotTrunc', with all the truncation points (selected or not).</p>
+<p> Note that the arrays &apos;rates&apos; and &apos;termp&apos; are copied, not
+referenced, so they can be modified after a call to this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void selectConvexHull(int[] rates, double[] dists, bool[] termp, int n, bool inclast)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">rates</span></td>
+        <td><p>The rates (in bytes) for each truncation point in the
+compressed data. This array is modified by the method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span>[]</td>
+        <td><span class="parametername">dists</span></td>
+        <td><p>The reduction in distortion (with respect to no
+information coded) for each truncation point. This array is modified by
+the method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span>[]</td>
+        <td><span class="parametername">termp</span></td>
+        <td><p>An array of boolean flags indicating, for each pass, if a
+pass is terminated or not (true if terminated). If null then it is
+assumed that no pass is terminated except the last one which always is.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The number of truncation points contained in 'rates', 'dist'
+and 'termp'.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">inclast</span></td>
+        <td><p>If false the convex hull is constructed as for lossy
+coding. If true it is constructed as for lossless coding, in which case
+it is ensured that all bit-planes are sent (i.e. the last truncation
+point is always included).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_ToString.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L380">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_ToString_" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.ToString*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_ToString" data-uid="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns the contents of the object in a string. This is used for
+debugging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string with the contents of the object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html#CSJ2K_j2k_entropy_CodedCBlk_ToString">CodedCBlk.ToString()</a></div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.entropy.CodedCBlk.html">CodedCBlk</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_CBlkRateDistStats.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.CBlkRateDistStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/CBlkRateDistStats.cs/#L89" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

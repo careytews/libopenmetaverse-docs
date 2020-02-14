@@ -1,0 +1,920 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BEBufferedRandomAccessFile
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BEBufferedRandomAccessFile
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile">
+  
+  
+  <h1 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile" class="text-break">Class BEBufferedRandomAccessFile
+  </h1>
+  <div class="markdown level0 summary"><p>This class defines a Buffered Random Access File, where all I/O is
+considered to be big-endian. It extends the
+<tt>BufferedRandomAccessFile</tt> class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html">BufferedRandomAccessFile</a></div>
+    <div class="level2"><span class="xref">BEBufferedRandomAccessFile</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.io.RandomAccessIO.html">RandomAccessIO</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html">BinaryDataInput</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html">BinaryDataOutput</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.io.EndianType.html">EndianType</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_Pos">BufferedRandomAccessFile.Pos</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_ByteOrdering">BufferedRandomAccessFile.ByteOrdering</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_byteBuffer">BufferedRandomAccessFile.byteBuffer</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_byteBufferChanged">BufferedRandomAccessFile.byteBufferChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_offset">BufferedRandomAccessFile.offset</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_position">BufferedRandomAccessFile.position</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_maxByte">BufferedRandomAccessFile.maxByte</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_isEOFInBuffer">BufferedRandomAccessFile.isEOFInBuffer</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_byte_Ordering">BufferedRandomAccessFile.byte_Ordering</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_readNewBuffer_System_Int32_">BufferedRandomAccessFile.readNewBuffer(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_close">BufferedRandomAccessFile.close()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_length">BufferedRandomAccessFile.length()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_seek_System_Int32_">BufferedRandomAccessFile.seek(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_readByte">BufferedRandomAccessFile.readByte()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_readUnsignedByte">BufferedRandomAccessFile.readUnsignedByte()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_read">BufferedRandomAccessFile.read()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_readFully_System_Byte___System_Int32_System_Int32_">BufferedRandomAccessFile.readFully(Byte[], Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_write_System_Int32_">BufferedRandomAccessFile.write(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_write_System_Byte_">BufferedRandomAccessFile.write(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_write_System_Byte___System_Int32_System_Int32_">BufferedRandomAccessFile.write(Byte[], Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_writeByte_System_Int32_">BufferedRandomAccessFile.writeByte(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_flush">BufferedRandomAccessFile.flush()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_skipBytes_System_Int32_">BufferedRandomAccessFile.skipBytes(Int32)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.io.html">CSJ2K.j2k.io</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BEBufferedRandomAccessFile : BufferedRandomAccessFile, RandomAccessIO, BinaryDataInput, BinaryDataOutput, EndianType</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_System_IO_FileInfo_System_String_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.%23ctor(System.IO.FileInfo%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L103">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_System_IO_FileInfo_System_String_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.#ctor(System.IO.FileInfo,System.String)">BEBufferedRandomAccessFile(FileInfo, String)</h4>
+  <div class="markdown level1 summary"><p>Constructor. Uses the default value for the byte-buffer size (512
+bytes).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BEBufferedRandomAccessFile(FileInfo file, string mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileInfo</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file associated with the buffer</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>&quot;r&quot; for read, &quot;rw&quot; or &quot;rw+&quot; for read and write mode (&quot;rw+&quot;
+opens the file for update whereas &quot;rw&quot; removes it
+before. So the 2 modes are different only if the file
+already exists).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_System_IO_FileInfo_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.%23ctor(System.IO.FileInfo%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L82">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_System_IO_FileInfo_System_String_System_Int32_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.#ctor(System.IO.FileInfo,System.String,System.Int32)">BEBufferedRandomAccessFile(FileInfo, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructor. Always needs a size for the buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BEBufferedRandomAccessFile(FileInfo file, string mode, int bufferSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileInfo</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The file associated with the buffer</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>&quot;r&quot; for read, &quot;rw&quot; or &quot;rw+&quot; for read and write mode (&quot;rw+&quot;
+opens the file for update whereas &quot;rw&quot; removes it
+before. So the 2 modes are different only if the file
+already exists).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">bufferSize</span></td>
+        <td><p>The number of bytes to buffer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_System_String_System_String_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.%23ctor(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L147">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_System_String_System_String_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.#ctor(System.String,System.String)">BEBufferedRandomAccessFile(String, String)</h4>
+  <div class="markdown level1 summary"><p>Constructor. Uses the default value for the byte-buffer size (512
+bytes).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BEBufferedRandomAccessFile(string name, string mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the file associated with the buffer</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>&quot;r&quot; for read, &quot;rw&quot; or &quot;rw+&quot; for read and write mode (&quot;rw+&quot;
+opens the file for update whereas &quot;rw&quot; removes it
+before. So the 2 modes are different only if the file
+already exists).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.%23ctor(System.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L126">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile__ctor_System_String_System_String_System_Int32_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.#ctor(System.String,System.String,System.Int32)">BEBufferedRandomAccessFile(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructor. Always needs a size for the buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BEBufferedRandomAccessFile(string name, string mode, int bufferSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the file associated with the buffer</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>&quot;r&quot; for read, &quot;rw&quot; or &quot;rw+&quot; for read and write mode (&quot;rw+&quot;
+opens the file for update whereas &quot;rw&quot; removes it
+before. So the 2 modes are different only if the file
+already exists).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">bufferSize</span></td>
+        <td><p>The number of bytes to buffer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_readDouble.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.readDouble%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L418">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readDouble_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readDouble*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readDouble" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readDouble">readDouble()</h4>
+  <div class="markdown level1 summary"><p>Reads an IEEE double precision (i.e., 64 bit) floating-point number
+from the input. Prior to reading, the input should be realigned at the
+byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override double readDouble()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The next byte-aligned IEEE double (64 bit) from the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_readDouble">BufferedRandomAccessFile.readDouble()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_readFloat.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.readFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L390">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readFloat_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readFloat*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readFloat" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readFloat">readFloat()</h4>
+  <div class="markdown level1 summary"><p>Reads an IEEE single precision (i.e., 32 bit) floating-point number
+from the input. Prior to reading, the input should be realigned at the
+byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float readFloat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The next byte-aligned IEEE float (32 bit) from the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_readFloat">BufferedRandomAccessFile.readFloat()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_readInt.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.readInt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L327">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readInt_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readInt*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readInt" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readInt">readInt()</h4>
+  <div class="markdown level1 summary"><p>Reads a signed int (i.e., 32 bit) from the input. Prior to reading, the
+input should be realigned at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int readInt()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The next byte-aligned signed int (32 bit) from the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_readInt">BufferedRandomAccessFile.readInt()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_readLong.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.readLong%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L367">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readLong_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readLong*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readLong" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readLong">readLong()</h4>
+  <div class="markdown level1 summary"><p>Reads a signed long (i.e., 64 bit) from the input. Prior to reading,
+the input should be realigned at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long readLong()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The next byte-aligned signed long (64 bit) from the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_readLong">BufferedRandomAccessFile.readLong()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_readShort.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.readShort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L286">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readShort_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readShort*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readShort" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readShort">readShort()</h4>
+  <div class="markdown level1 summary"><p>Reads a signed short (i.e. 16 bit) from the input. Prior to reading,
+the input should be realigned at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override short readShort()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><p>The next byte-aligned signed short (16 bit) from the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_readShort">BufferedRandomAccessFile.readShort()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_readUnsignedInt.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.readUnsignedInt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L348">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readUnsignedInt_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readUnsignedInt*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readUnsignedInt" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readUnsignedInt">readUnsignedInt()</h4>
+  <div class="markdown level1 summary"><p>Reads an unsigned int (i.e., 32 bit) from the input. It is returned as
+a <tt>long</tt> since Java does not have an unsigned short type. Prior
+to reading, the input should be realigned at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long readUnsignedInt()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The next byte-aligned unsigned int (32 bit) from the input, as
+a <tt>long</tt>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_readUnsignedInt">BufferedRandomAccessFile.readUnsignedInt()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_readUnsignedShort.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.readUnsignedShort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L308">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readUnsignedShort_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readUnsignedShort*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_readUnsignedShort" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.readUnsignedShort">readUnsignedShort()</h4>
+  <div class="markdown level1 summary"><p>Reads an unsigned short (i.e., 16 bit) from the input. It is returned
+as an <tt>int</tt> since Java does not have an unsigned short
+type. Prior to reading, the input should be realigned at the byte
+level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int readUnsignedShort()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The next byte-aligned unsigned short (16 bit) from the input,
+as an <tt>int</tt>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_readUnsignedShort">BufferedRandomAccessFile.readUnsignedShort()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_ToString.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L435">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_ToString_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.ToString*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_ToString" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string of information about the file and the endianess</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_ToString">BufferedRandomAccessFile.ToString()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeDouble_System_Double_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeDouble(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L253">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeDouble_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeDouble*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeDouble_System_Double_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeDouble(System.Double)">writeDouble(Double)</h4>
+  <div class="markdown level1 summary"><p>Writes the IEEE double value <tt>v</tt> (i.e., 64 bits) to the
+output. Prior to writing, the output should be realigned at the byte
+level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void writeDouble(double v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The value to write to the output</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_writeDouble_System_Double_">BufferedRandomAccessFile.writeDouble(Double)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeFloat_System_Single_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeFloat(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L227">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeFloat_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeFloat*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeFloat_System_Single_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeFloat(System.Single)">writeFloat(Single)</h4>
+  <div class="markdown level1 summary"><p>Writes the IEEE float value <tt>v</tt> (i.e., 32 bits) to the
+output. Prior to writing, the output should be realigned at the byte
+level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void writeFloat(float v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The value to write to the output</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_writeFloat_System_Single_">BufferedRandomAccessFile.writeFloat(Single)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeInt_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeInt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L185">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeInt_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeInt*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeInt_System_Int32_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeInt(System.Int32)">writeInt(Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes the int value of <tt>v</tt> (i.e., the 32 bits) to the
+output. Prior to writing, the output should be realigned at the byte
+level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void writeInt(int v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The value to write to the output</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_writeInt_System_Int32_">BufferedRandomAccessFile.writeInt(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeLong_System_Int64_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeLong(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L204">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeLong_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeLong*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeLong_System_Int64_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeLong(System.Int64)">writeLong(Int64)</h4>
+  <div class="markdown level1 summary"><p>Writes the long value of <tt>v</tt> (i.e., the 64 bits) to the
+output. Prior to writing, the output should be realigned at the byte
+level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void writeLong(long v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The value to write to the output</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_writeLong_System_Int64_">BufferedRandomAccessFile.writeLong(Int64)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeShort_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeShort(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L168">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeShort_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeShort*"></a>
+  <h4 id="CSJ2K_j2k_io_BEBufferedRandomAccessFile_writeShort_System_Int32_" data-uid="CSJ2K.j2k.io.BEBufferedRandomAccessFile.writeShort(System.Int32)">writeShort(Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes the short value of <tt>v</tt> (i.e., 16 least significant bits)
+to the output. Prior to writing, the output should be realigned at the
+byte level.</p>
+<p>Signed or unsigned data can be written. To write a signed value just
+pass the <tt>short</tt> value as an argument. To write unsigned data
+pass the <tt>int</tt> value as an argument (it will be automatically
+casted, and only the 16 least significant bits will be written).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void writeShort(int v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">v</span></td>
+        <td><p>The value to write to the output</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html#CSJ2K_j2k_io_BufferedRandomAccessFile_writeShort_System_Int32_">BufferedRandomAccessFile.writeShort(Int32)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.io.RandomAccessIO.html">RandomAccessIO</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html">BinaryDataInput</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html">BinaryDataOutput</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.io.EndianType.html">EndianType</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.io.RandomAccessIO.html">RandomAccessIO</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html">BinaryDataOutput</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.io.BinaryDataInput.html">BinaryDataInput</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.io.BufferedRandomAccessFile.html">BufferedRandomAccessFile</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BEBufferedRandomAccessFile.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BEBufferedRandomAccessFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BEBufferedRandomAccessFile.cs/#L61" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

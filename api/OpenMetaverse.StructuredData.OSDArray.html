@@ -1,0 +1,1314 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OSDArray
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OSDArray
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.StructuredData.OSDArray">
+  
+  
+  <h1 id="OpenMetaverse_StructuredData_OSDArray" data-uid="OpenMetaverse.StructuredData.OSDArray" class="text-break">Class OSDArray
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></div>
+    <div class="level2"><span class="xref">OSDArray</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a>&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a>&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsInteger">OSD.AsInteger()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsReal">OSD.AsReal()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsString">OSD.AsString()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsUUID">OSD.AsUUID()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsDate">OSD.AsDate()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsUri">OSD.AsUri()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromBoolean_System_Boolean_">OSD.FromBoolean(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromInteger_System_Int32_">OSD.FromInteger(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromInteger_System_UInt32_">OSD.FromInteger(UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromInteger_System_Int16_">OSD.FromInteger(Int16)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromInteger_System_UInt16_">OSD.FromInteger(UInt16)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromInteger_System_SByte_">OSD.FromInteger(SByte)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromInteger_System_Byte_">OSD.FromInteger(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromUInteger_System_UInt32_">OSD.FromUInteger(UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromLong_System_Int64_">OSD.FromLong(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromULong_System_UInt64_">OSD.FromULong(UInt64)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromReal_System_Double_">OSD.FromReal(Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromReal_System_Single_">OSD.FromReal(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromString_System_String_">OSD.FromString(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromUUID_OpenMetaverse_UUID_">OSD.FromUUID(UUID)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromDate_System_DateTime_">OSD.FromDate(DateTime)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromUri_System_Uri_">OSD.FromUri(Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromBinary_System_Byte___">OSD.FromBinary(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromVector2_OpenMetaverse_Vector2_">OSD.FromVector2(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromVector3_OpenMetaverse_Vector3_">OSD.FromVector3(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromVector3d_OpenMetaverse_Vector3d_">OSD.FromVector3d(Vector3d)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromVector4_OpenMetaverse_Vector4_">OSD.FromVector4(Vector4)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromQuaternion_OpenMetaverse_Quaternion_">OSD.FromQuaternion(Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromColor4_OpenMetaverse_Color4_">OSD.FromColor4(Color4)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_FromObject_System_Object_">OSD.FromObject(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_ToObject_System_Type_OpenMetaverse_StructuredData_OSD_">OSD.ToObject(Type, OSD)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_SerializeMembers_System_Object_">OSD.SerializeMembers(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_DeserializeMembers_System_Object__OpenMetaverse_StructuredData_OSDMap_">OSD.DeserializeMembers(Object, OSDMap)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.StructuredData.html">OpenMetaverse.StructuredData</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.StructuredData.dll</h6>
+  <h5 id="OpenMetaverse_StructuredData_OSDArray_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class OSDArray : OSD, IList&lt;OSD&gt;, ICollection&lt;OSD&gt;, IEnumerable&lt;OSD&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray__ctor.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L986">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray__ctor_" data-uid="OpenMetaverse.StructuredData.OSDArray.#ctor*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray__ctor" data-uid="OpenMetaverse.StructuredData.OSDArray.#ctor">OSDArray()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OSDArray()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray__ctor_System_Collections_Generic_List_OpenMetaverse_StructuredData_OSD__.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.%23ctor(System.Collections.Generic.List%7BOpenMetaverse.StructuredData.OSD%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L996">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray__ctor_" data-uid="OpenMetaverse.StructuredData.OSDArray.#ctor*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray__ctor_System_Collections_Generic_List_OpenMetaverse_StructuredData_OSD__" data-uid="OpenMetaverse.StructuredData.OSDArray.#ctor(System.Collections.Generic.List{OpenMetaverse.StructuredData.OSD})">OSDArray(List&lt;OSD&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OSDArray(List&lt;OSD&gt; value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L991">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray__ctor_" data-uid="OpenMetaverse.StructuredData.OSDArray.#ctor*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray__ctor_System_Int32_" data-uid="OpenMetaverse.StructuredData.OSDArray.#ctor(System.Int32)">OSDArray(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OSDArray(int capacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">capacity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_Count.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1132">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_Count_" data-uid="OpenMetaverse.StructuredData.OSDArray.Count*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_Count" data-uid="OpenMetaverse.StructuredData.OSDArray.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_IsReadOnly.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1133">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_IsReadOnly_" data-uid="OpenMetaverse.StructuredData.OSDArray.IsReadOnly*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_IsReadOnly" data-uid="OpenMetaverse.StructuredData.OSDArray.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_Item_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1134">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_Item_" data-uid="OpenMetaverse.StructuredData.OSDArray.Item*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_Item_System_Int32_" data-uid="OpenMetaverse.StructuredData.OSDArray.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OSD this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_Type.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L984">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_Type_" data-uid="OpenMetaverse.StructuredData.OSDArray.Type*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_Type" data-uid="OpenMetaverse.StructuredData.OSDArray.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override OSDType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSDType.html">OSDType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_Type">OSD.Type</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_Add_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.Add(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1155">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_Add_" data-uid="OpenMetaverse.StructuredData.OSDArray.Add*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_Add_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDArray.Add(OpenMetaverse.StructuredData.OSD)">Add(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(OSD llsd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">llsd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_AsBinary.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.AsBinary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1004">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_AsBinary_" data-uid="OpenMetaverse.StructuredData.OSDArray.AsBinary*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_AsBinary" data-uid="OpenMetaverse.StructuredData.OSDArray.AsBinary">AsBinary()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override byte[] AsBinary()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsBinary">OSD.AsBinary()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_AsBoolean.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.AsBoolean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1123">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_AsBoolean_" data-uid="OpenMetaverse.StructuredData.OSDArray.AsBoolean*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_AsBoolean" data-uid="OpenMetaverse.StructuredData.OSDArray.AsBoolean">AsBoolean()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool AsBoolean()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsBoolean">OSD.AsBoolean()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_AsColor4.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.AsColor4%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1103">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_AsColor4_" data-uid="OpenMetaverse.StructuredData.OSDArray.AsColor4*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_AsColor4" data-uid="OpenMetaverse.StructuredData.OSDArray.AsColor4">AsColor4()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Color4 AsColor4()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Color4.html">Color4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsColor4">OSD.AsColor4()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_AsLong.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.AsLong%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1014">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_AsLong_" data-uid="OpenMetaverse.StructuredData.OSDArray.AsLong*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_AsLong" data-uid="OpenMetaverse.StructuredData.OSDArray.AsLong">AsLong()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long AsLong()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsLong">OSD.AsLong()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_AsQuaternion.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.AsQuaternion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1088">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_AsQuaternion_" data-uid="OpenMetaverse.StructuredData.OSDArray.AsQuaternion*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_AsQuaternion" data-uid="OpenMetaverse.StructuredData.OSDArray.AsQuaternion">AsQuaternion()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Quaternion AsQuaternion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Quaternion.html">Quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsQuaternion">OSD.AsQuaternion()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_AsUInteger.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.AsUInteger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1026">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_AsUInteger_" data-uid="OpenMetaverse.StructuredData.OSDArray.AsUInteger*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_AsUInteger" data-uid="OpenMetaverse.StructuredData.OSDArray.AsUInteger">AsUInteger()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override uint AsUInteger()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsUInteger">OSD.AsUInteger()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_AsULong.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.AsULong%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1020">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_AsULong_" data-uid="OpenMetaverse.StructuredData.OSDArray.AsULong*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_AsULong" data-uid="OpenMetaverse.StructuredData.OSDArray.AsULong">AsULong()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ulong AsULong()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsULong">OSD.AsULong()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_AsVector2.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.AsVector2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1032">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_AsVector2_" data-uid="OpenMetaverse.StructuredData.OSDArray.AsVector2*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_AsVector2" data-uid="OpenMetaverse.StructuredData.OSDArray.AsVector2">AsVector2()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector2 AsVector2()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsVector2">OSD.AsVector2()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_AsVector3.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.AsVector3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1045">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_AsVector3_" data-uid="OpenMetaverse.StructuredData.OSDArray.AsVector3*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_AsVector3" data-uid="OpenMetaverse.StructuredData.OSDArray.AsVector3">AsVector3()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector3 AsVector3()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsVector3">OSD.AsVector3()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_AsVector3d.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.AsVector3d%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1059">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_AsVector3d_" data-uid="OpenMetaverse.StructuredData.OSDArray.AsVector3d*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_AsVector3d" data-uid="OpenMetaverse.StructuredData.OSDArray.AsVector3d">AsVector3d()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector3d AsVector3d()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3d.html">Vector3d</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsVector3d">OSD.AsVector3d()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_AsVector4.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.AsVector4%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1073">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_AsVector4_" data-uid="OpenMetaverse.StructuredData.OSDArray.AsVector4*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_AsVector4" data-uid="OpenMetaverse.StructuredData.OSDArray.AsVector4">AsVector4()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector4 AsVector4()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector4.html">Vector4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_AsVector4">OSD.AsVector4()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_Clear.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1160">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_Clear_" data-uid="OpenMetaverse.StructuredData.OSDArray.Clear*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_Clear" data-uid="OpenMetaverse.StructuredData.OSDArray.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_Contains_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.Contains(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1165">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_Contains_" data-uid="OpenMetaverse.StructuredData.OSDArray.Contains*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_Contains_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDArray.Contains(OpenMetaverse.StructuredData.OSD)">Contains(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(OSD llsd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">llsd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_Contains_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.Contains(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1170">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_Contains_" data-uid="OpenMetaverse.StructuredData.OSDArray.Contains*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_Contains_System_String_" data-uid="OpenMetaverse.StructuredData.OSDArray.Contains(System.String)">Contains(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(string element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">element</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_Copy.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.Copy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1118">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_Copy_" data-uid="OpenMetaverse.StructuredData.OSDArray.Copy*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_Copy" data-uid="OpenMetaverse.StructuredData.OSDArray.Copy">Copy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override OSD Copy()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_Copy">OSD.Copy()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_CopyTo_OpenMetaverse_StructuredData_OSD___System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.CopyTo(OpenMetaverse.StructuredData.OSD%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1181">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_CopyTo_" data-uid="OpenMetaverse.StructuredData.OSDArray.CopyTo*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_CopyTo_OpenMetaverse_StructuredData_OSD___System_Int32_" data-uid="OpenMetaverse.StructuredData.OSDArray.CopyTo(OpenMetaverse.StructuredData.OSD[],System.Int32)">CopyTo(OSD[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(OSD[] array, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a>[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_IndexOf_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.IndexOf(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1140">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_IndexOf_" data-uid="OpenMetaverse.StructuredData.OSDArray.IndexOf*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_IndexOf_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDArray.IndexOf(OpenMetaverse.StructuredData.OSD)">IndexOf(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(OSD llsd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">llsd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_Insert_System_Int32_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.Insert(System.Int32%2COpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1145">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_Insert_" data-uid="OpenMetaverse.StructuredData.OSDArray.Insert*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_Insert_System_Int32_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDArray.Insert(System.Int32,OpenMetaverse.StructuredData.OSD)">Insert(Int32, OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, OSD llsd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">llsd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_Remove_OpenMetaverse_StructuredData_OSD_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.Remove(OpenMetaverse.StructuredData.OSD)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1186">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_Remove_" data-uid="OpenMetaverse.StructuredData.OSDArray.Remove*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_Remove_OpenMetaverse_StructuredData_OSD_" data-uid="OpenMetaverse.StructuredData.OSDArray.Remove(OpenMetaverse.StructuredData.OSD)">Remove(OSD)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(OSD llsd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a></td>
+        <td><span class="parametername">llsd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.RemoveAt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1150">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_RemoveAt_" data-uid="OpenMetaverse.StructuredData.OSDArray.RemoveAt*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_RemoveAt_System_Int32_" data-uid="OpenMetaverse.StructuredData.OSDArray.RemoveAt(System.Int32)">RemoveAt(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_ToString.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1125">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_ToString_" data-uid="OpenMetaverse.StructuredData.OSDArray.ToString*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_ToString" data-uid="OpenMetaverse.StructuredData.OSDArray.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenMetaverse.StructuredData.OSD.html#OpenMetaverse_StructuredData_OSD_ToString">OSD.ToString()</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_System_Collections_Generic_IEnumerable_OpenMetaverse_StructuredData_OSD__GetEnumerator.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.System%23Collections%23Generic%23IEnumerable%7BOpenMetaverse%23StructuredData%23OSD%7D%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1196">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_System_Collections_Generic_IEnumerable_OpenMetaverse_StructuredData_OSD__GetEnumerator_" data-uid="OpenMetaverse.StructuredData.OSDArray.System#Collections#Generic#IEnumerable{OpenMetaverse#StructuredData#OSD}#GetEnumerator*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_System_Collections_Generic_IEnumerable_OpenMetaverse_StructuredData_OSD__GetEnumerator" data-uid="OpenMetaverse.StructuredData.OSDArray.System#Collections#Generic#IEnumerable{OpenMetaverse#StructuredData#OSD}#GetEnumerator">IEnumerable&lt;OSD&gt;.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator&lt;OSD&gt; IEnumerable&lt;OSD&gt;.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="OpenMetaverse.StructuredData.OSD.html">OSD</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray_System_Collections_IEnumerable_GetEnumerator.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray.System%23Collections%23IEnumerable%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L1191">View Source</a>
+  </span>
+  <a id="OpenMetaverse_StructuredData_OSDArray_System_Collections_IEnumerable_GetEnumerator_" data-uid="OpenMetaverse.StructuredData.OSDArray.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="OpenMetaverse_StructuredData_OSDArray_System_Collections_IEnumerable_GetEnumerator" data-uid="OpenMetaverse.StructuredData.OSDArray.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_StructuredData_OSDArray.md&amp;value=---%0Auid%3A%20OpenMetaverse.StructuredData.OSDArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse.StructuredData/StructuredData.cs/#L980" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

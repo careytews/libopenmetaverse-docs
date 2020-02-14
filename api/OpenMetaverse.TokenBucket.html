@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TokenBucket
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TokenBucket
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.TokenBucket">
+  
+  
+  <h1 id="OpenMetaverse_TokenBucket" data-uid="OpenMetaverse.TokenBucket" class="text-break">Class TokenBucket
+  </h1>
+  <div class="markdown level0 summary"><p>A hierarchical token bucket for bandwidth throttling. See
+<a href="http://en.wikipedia.org/wiki/Token_bucket">http://en.wikipedia.org/wiki/Token_bucket</a> for more information</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TokenBucket</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverseTypes.dll</h6>
+  <h5 id="OpenMetaverse_TokenBucket_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TokenBucket</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TokenBucket__ctor_OpenMetaverse_TokenBucket_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TokenBucket.%23ctor(OpenMetaverse.TokenBucket%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/TokenBucket.cs/#L117">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TokenBucket__ctor_" data-uid="OpenMetaverse.TokenBucket.#ctor*"></a>
+  <h4 id="OpenMetaverse_TokenBucket__ctor_OpenMetaverse_TokenBucket_System_Int32_System_Int32_" data-uid="OpenMetaverse.TokenBucket.#ctor(OpenMetaverse.TokenBucket,System.Int32,System.Int32)">TokenBucket(TokenBucket, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Default constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TokenBucket(TokenBucket parent, int maxBurst, int dripRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TokenBucket.html">TokenBucket</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>Parent bucket if this is a child bucket, or
+null if this is a root bucket</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxBurst</span></td>
+        <td><p>Maximum size of the bucket in bytes, or
+zero if this bucket has no maximum capacity</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dripRate</span></td>
+        <td><p>Rate that the bucket fills, in bytes per
+second. If zero, the bucket always remains full</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TokenBucket_Content.md&amp;value=---%0Auid%3A%20OpenMetaverse.TokenBucket.Content%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/TokenBucket.cs/#L101">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TokenBucket_Content_" data-uid="OpenMetaverse.TokenBucket.Content*"></a>
+  <h4 id="OpenMetaverse_TokenBucket_Content" data-uid="OpenMetaverse.TokenBucket.Content">Content</h4>
+  <div class="markdown level1 summary"><p>The number of bytes that can be sent at this moment. This is the
+current number of tokens in the bucket
+<remarks>If this bucket has a parent bucket that does not have
+enough tokens for a request, <a class="xref" href="OpenMetaverse.TokenBucket.html#OpenMetaverse_TokenBucket_RemoveTokens_System_Int32_">RemoveTokens(Int32)</a> will
+return false regardless of the content of this bucket</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Content { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TokenBucket_DripRate.md&amp;value=---%0Auid%3A%20OpenMetaverse.TokenBucket.DripRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/TokenBucket.cs/#L80">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TokenBucket_DripRate_" data-uid="OpenMetaverse.TokenBucket.DripRate*"></a>
+  <h4 id="OpenMetaverse_TokenBucket_DripRate" data-uid="OpenMetaverse.TokenBucket.DripRate">DripRate</h4>
+  <div class="markdown level1 summary"><p>The speed limit of this bucket in bytes per second. This is the
+number of tokens that are added to the bucket per second</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DripRate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_TokenBucket_DripRate_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Tokens are added to the bucket any time
+<a class="xref" href="OpenMetaverse.TokenBucket.html#OpenMetaverse_TokenBucket_RemoveTokens_System_Int32_">RemoveTokens(Int32)</a> is called, at the granularity of
+the system tick interval (typically around 15-22ms)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TokenBucket_MaxBurst.md&amp;value=---%0Auid%3A%20OpenMetaverse.TokenBucket.MaxBurst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/TokenBucket.cs/#L67">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TokenBucket_MaxBurst_" data-uid="OpenMetaverse.TokenBucket.MaxBurst*"></a>
+  <h4 id="OpenMetaverse_TokenBucket_MaxBurst" data-uid="OpenMetaverse.TokenBucket.MaxBurst">MaxBurst</h4>
+  <div class="markdown level1 summary"><p>Maximum burst rate in bytes per second. This is the maximum number
+of tokens that can accumulate in the bucket at any one time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxBurst { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TokenBucket_Parent.md&amp;value=---%0Auid%3A%20OpenMetaverse.TokenBucket.Parent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/TokenBucket.cs/#L58">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TokenBucket_Parent_" data-uid="OpenMetaverse.TokenBucket.Parent*"></a>
+  <h4 id="OpenMetaverse_TokenBucket_Parent" data-uid="OpenMetaverse.TokenBucket.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>The parent bucket of this bucket, or null if this bucket has no
+parent. The parent bucket will limit the aggregate bandwidth of all
+of its children buckets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TokenBucket Parent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TokenBucket.html">TokenBucket</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TokenBucket_RemoveTokens_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.TokenBucket.RemoveTokens(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/TokenBucket.cs/#L131">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TokenBucket_RemoveTokens_" data-uid="OpenMetaverse.TokenBucket.RemoveTokens*"></a>
+  <h4 id="OpenMetaverse_TokenBucket_RemoveTokens_System_Int32_" data-uid="OpenMetaverse.TokenBucket.RemoveTokens(System.Int32)">RemoveTokens(Int32)</h4>
+  <div class="markdown level1 summary"><p>Remove a given number of tokens from the bucket</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveTokens(int amount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>Number of tokens to remove from the bucket</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the requested number of tokens were removed from
+the bucket, otherwise false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TokenBucket_RemoveTokens_System_Int32_System_Boolean__.md&amp;value=---%0Auid%3A%20OpenMetaverse.TokenBucket.RemoveTokens(System.Int32%2CSystem.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/TokenBucket.cs/#L145">View Source</a>
+  </span>
+  <a id="OpenMetaverse_TokenBucket_RemoveTokens_" data-uid="OpenMetaverse.TokenBucket.RemoveTokens*"></a>
+  <h4 id="OpenMetaverse_TokenBucket_RemoveTokens_System_Int32_System_Boolean__" data-uid="OpenMetaverse.TokenBucket.RemoveTokens(System.Int32,System.Boolean@)">RemoveTokens(Int32, out Boolean)</h4>
+  <div class="markdown level1 summary"><p>Remove a given number of tokens from the bucket</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveTokens(int amount, out bool dripSucceeded)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>Number of tokens to remove from the bucket</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">dripSucceeded</span></td>
+        <td><p>True if tokens were added to the bucket
+during this call, otherwise false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the requested number of tokens were removed from
+the bucket, otherwise false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_TokenBucket.md&amp;value=---%0Auid%3A%20OpenMetaverse.TokenBucket%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/TokenBucket.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

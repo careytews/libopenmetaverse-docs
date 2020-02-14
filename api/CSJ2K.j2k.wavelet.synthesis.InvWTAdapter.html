@@ -1,0 +1,1636 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class InvWTAdapter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class InvWTAdapter
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter">
+  
+  
+  <h1 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter" class="text-break">Class InvWTAdapter
+  </h1>
+  <div class="markdown level0 summary"><p>This class provides default implementation of the methods in the 'InvWT'
+interface. The source is always a 'MultiResImgData', which is a
+multi-resolution image. The default implementation is just to return the
+value of the source at the current image resolution level, which is set by
+the 'setImgResLevel()' method.</p>
+<p>This abstract class can be used to facilitate the development of other
+classes that implement the &apos;InvWT&apos; interface, because most of the trivial
+methods are already implemented.</p>
+<p>If the default implementation of a method provided in this class does
+not suit a particular implementation of the &apos;InvWT&apos; interface, the method
+can be overriden to implement the proper behaviour.</p>
+<p>If the &apos;setImgResLevel()&apos; method is overriden then it is very important
+that the one of this class is called from the overriding method, so that
+the other methods in this class return the correct values.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">InvWTAdapter</span></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InverseWT.html">InverseWT</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWT.html">InvWT</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.WaveletTransform.html">WaveletTransform</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.html">CSJ2K.j2k.wavelet.synthesis</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class InvWTAdapter : InvWT, WaveletTransform, ImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter__ctor_CSJ2K_j2k_wavelet_synthesis_MultiResImgData_CSJ2K_j2k_decoder_DecoderSpecs_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.%23ctor(CSJ2K.j2k.wavelet.synthesis.MultiResImgData%2CCSJ2K.j2k.decoder.DecoderSpecs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L331">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter__ctor_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter__ctor_CSJ2K_j2k_wavelet_synthesis_MultiResImgData_CSJ2K_j2k_decoder_DecoderSpecs_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.#ctor(CSJ2K.j2k.wavelet.synthesis.MultiResImgData,CSJ2K.j2k.decoder.DecoderSpecs)">InvWTAdapter(MultiResImgData, DecoderSpecs)</h4>
+  <div class="markdown level1 summary"><p>Instantiates the 'InvWTAdapter' object using the specified
+'MultiResImgData' source. The reconstruction resolution level is set to
+full resolution (i.e. the maximum resolution level).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected InvWTAdapter(MultiResImgData src, DecoderSpecs decSpec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>From where to obtain the values to return</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.decoder.DecoderSpecs.html">DecoderSpecs</a></td>
+        <td><span class="parametername">decSpec</span></td>
+        <td><p>The decoder specifications</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_decSpec.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.decSpec%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L309">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_decSpec" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.decSpec">decSpec</h4>
+  <div class="markdown level1 summary"><p>The decoder specifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DecoderSpecs decSpec</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.decoder.DecoderSpecs.html">DecoderSpecs</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_maxImgRes.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.maxImgRes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L318">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_maxImgRes" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.maxImgRes">maxImgRes</h4>
+  <div class="markdown level1 summary"><p>The maximum available image resolution level</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int maxImgRes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_mressrc.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.mressrc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L312">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_mressrc" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.mressrc">mressrc</h4>
+  <div class="markdown level1 summary"><p>The 'MultiResImgData' source</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MultiResImgData mressrc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.MultiResImgData.html">MultiResImgData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_reslvl.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.reslvl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L315">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_reslvl" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.reslvl">reslvl</h4>
+  <div class="markdown level1 summary"><p>The resquested image resolution level for reconstruction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int reslvl</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgHeight.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L212">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgHeight_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgHeight*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgHeight" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgHeight">ImgHeight</h4>
+  <div class="markdown level1 summary"><p>Returns the overall height of the image in pixels. This is the
+image's height without accounting for any component subsampling
+or tiling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ImgHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total image's height in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgResLevel.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgResLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L95">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgResLevel_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgResLevel*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgResLevel" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgResLevel">ImgResLevel</h4>
+  <div class="markdown level1 summary"><p>Sets the image reconstruction resolution level. A value of 0 means
+reconstruction of an image with the lowest resolution (dimension)
+available.</p>
+<p>Note: Image resolution level indexes may differ from tile-component
+resolution index. They are indeed indexed starting from the lowest
+number of decomposition levels of each component of each tile.</p>
+<p>Example: For an image (1 tile) with 2 components (component 0 having
+2 decomposition levels and component 1 having 3 decomposition levels),
+the first (tile-) component has 3 resolution levels and the second one
+has 4 resolution levels, whereas the image has only 3 resolution levels
+available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ImgResLevel { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The vertical coordinate of the image origin in the canvas
+system, on the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgULX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgULX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L262">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgULX_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgULX*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgULX" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgULX">ImgULX</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal coordinate of the image origin, the top-left
+corner, in the canvas system, on the reference grid.</p>
+<p>This default implementation returns the value of the source at the
+current reconstruction resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ImgULX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The horizontal coordinate of the image origin in the canvas
+system, on the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgULY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgULY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L281">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgULY_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgULY*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgULY" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgULY">ImgULY</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical coordinate of the image origin, the top-left
+corner, in the canvas system, on the reference grid.</p>
+<p>This default implementation returns the value of the source at the
+current reconstruction resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ImgULY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The vertical coordinate of the image origin in the canvas
+system, on the reference grid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgWidth.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L196">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgWidth_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgWidth*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_ImgWidth" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.ImgWidth">ImgWidth</h4>
+  <div class="markdown level1 summary"><p>Returns the overall width of the image in pixels. This is the
+image's width without accounting for any component subsampling
+or tiling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int ImgWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total image's width in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NomTileHeight.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.NomTileHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L180">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NomTileHeight_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.NomTileHeight*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NomTileHeight" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.NomTileHeight">NomTileHeight</h4>
+  <div class="markdown level1 summary"><p>Returns the nominal height of tiles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NomTileHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NomTileWidth.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.NomTileWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L171">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NomTileWidth_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.NomTileWidth*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NomTileWidth" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.NomTileWidth">NomTileWidth</h4>
+  <div class="markdown level1 summary"><p>Returns the nominal width of tiles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NomTileWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NumComps.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.NumComps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L226">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NumComps_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.NumComps*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_NumComps" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.NumComps">NumComps</h4>
+  <div class="markdown level1 summary"><p>Returns the number of components in the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int NumComps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of components in the image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileHeight.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TileHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L150">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileHeight_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TileHeight*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileHeight" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TileHeight">TileHeight</h4>
+  <div class="markdown level1 summary"><p>Returns the overall height of the current tile in pixels. This
+is the tile's height without accounting for any component
+subsampling. This is also referred as the reference grid height
+in the current tile.</p>
+<p>This default implementation returns the value of the source at the
+current reconstruction resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TileHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total current tile's height in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileIdx.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TileIdx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L243">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileIdx_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TileIdx*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileIdx" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TileIdx">TileIdx</h4>
+  <div class="markdown level1 summary"><p>Returns the index of the current tile, relative to a standard scan-line
+order.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TileIdx { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The current tile's index (starts at 0).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TilePartULX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TilePartULX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L290">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TilePartULX_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TilePartULX*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TilePartULX" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TilePartULX">TilePartULX</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal tile partition offset in the reference grid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TilePartULX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TilePartULY.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TilePartULY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L299">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TilePartULY_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TilePartULY*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TilePartULY" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TilePartULY">TilePartULY</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical tile partition offset in the reference grid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TilePartULY { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileWidth.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TileWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L118">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileWidth_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TileWidth*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_TileWidth" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.TileWidth">TileWidth</h4>
+  <div class="markdown level1 summary"><p>Returns the overall width of the current tile in pixels. This is the
+tile's width without accounting for any component subsampling. This is
+also referred as the reference grid width in the current tile.</p>
+<p>This default implementation returns the value of the source at the
+current reconstruction resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TileWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total current tile's width in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompImgHeight_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompImgHeight(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L457">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompImgHeight_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompImgHeight*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompImgHeight_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompImgHeight(System.Int32)">getCompImgHeight(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the height in pixels of the specified component in the overall
+image.</p>
+<p>This default implementation returns the value of the source at the
+current reconstruction resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getCompImgHeight(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The height in pixels of component <tt>n</tt> in the overall
+image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompImgWidth_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompImgWidth(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L435">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompImgWidth_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompImgWidth*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompImgWidth_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompImgWidth(System.Int32)">getCompImgWidth(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the width in pixels of the specified component in the overall
+image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getCompImgWidth(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The width in pixels of component <tt>c</tt> in the overall
+image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompSubsX_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompSubsX(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L354">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompSubsX_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompSubsX*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompSubsX_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompSubsX(System.Int32)">getCompSubsX(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the component subsampling factor in the horizontal
+direction, for the specified component. This is, approximately,
+the ratio of dimensions between the reference grid and the
+component itself, see the 'ImgData' interface desription for
+details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getCompSubsX(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component (between 0 and N-1).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The horizontal subsampling factor of component 'c'.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompSubsY_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompSubsY(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L375">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompSubsY_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompSubsY*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompSubsY_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompSubsY(System.Int32)">getCompSubsY(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the component subsampling factor in the vertical
+direction, for the specified component. This is, approximately,
+the ratio of dimensions between the reference grid and the
+component itself, see the 'ImgData' interface desription for
+details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getCompSubsY(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component (between 0 and N-1).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The vertical subsampling factor of component 'c'.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompULX_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompULX(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L520">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompULX_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompULX*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompULX_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompULX(System.Int32)">getCompULX(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the horizontal coordinate of the upper-left corner of the
+specified component in the current tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getCompULX(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompULY_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompULY(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L536">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompULY_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompULY*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getCompULY_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getCompULY(System.Int32)">getCompULY(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the vertical coordinate of the upper-left corner of the
+specified component in the current tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getCompULY(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getImplementationType_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getImplementationType(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L591">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getImplementationType_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getImplementationType*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getImplementationType_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getImplementationType(System.Int32)">getImplementationType(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int getImplementationType(int param1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNomRangeBits_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getNomRangeBits(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L590">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNomRangeBits_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getNomRangeBits*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNomRangeBits_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getNomRangeBits(System.Int32)">getNomRangeBits(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int getNomRangeBits(int param1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNumTiles.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getNumTiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L571">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNumTiles_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getNumTiles*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNumTiles" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getNumTiles">getNumTiles()</h4>
+  <div class="markdown level1 summary"><p>Returns the total number of tiles in the image.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getNumTiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The total number of tiles in the image.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNumTiles_CSJ2K_j2k_image_Coord_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getNumTiles(CSJ2K.j2k.image.Coord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L558">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNumTiles_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getNumTiles*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getNumTiles_CSJ2K_j2k_image_Coord_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getNumTiles(CSJ2K.j2k.image.Coord)">getNumTiles(Coord)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of tiles in the horizontal and vertical directions.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Coord getNumTiles(Coord co)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><span class="parametername">co</span></td>
+        <td><p>If not null this object is used to return the information. If
+null a new one is created and returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><p>The number of tiles in the horizontal (Coord.x) and vertical
+(Coord.y) directions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getSynSubbandTree_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getSynSubbandTree(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L585">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getSynSubbandTree_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getSynSubbandTree*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getSynSubbandTree_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getSynSubbandTree(System.Int32,System.Int32)">getSynSubbandTree(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the specified synthesis subband tree</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual SubbandSyn getSynSubbandTree(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Component index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SubbandSyn.html">SubbandSyn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTile_CSJ2K_j2k_image_Coord_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getTile(CSJ2K.j2k.image.Coord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L508">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTile_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getTile*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTile_CSJ2K_j2k_image_Coord_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getTile(CSJ2K.j2k.image.Coord)">getTile(Coord)</h4>
+  <div class="markdown level1 summary"><p>Returns the indixes of the current tile. These are the horizontal and
+vertical indexes of the current tile.</p>
+<p>This default implementation returns the value of the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Coord getTile(Coord co)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><span class="parametername">co</span></td>
+        <td><p>If not null this object is used to return the information. If
+null a new one is created and returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><p>The current tile's indices (vertical and horizontal indexes).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTileCompHeight_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getTileCompHeight(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L416">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTileCompHeight_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getTileCompHeight*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTileCompHeight_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getTileCompHeight(System.Int32,System.Int32)">getTileCompHeight(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the height in pixels of the specified tile-component.</p>
+<p>This default implementation returns the value of the source at the
+current reconstruction resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getTileCompHeight(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The height in pixels of component <tt>n</tt> in tile
+<tt>t</tt>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTileCompWidth_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getTileCompWidth(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L392">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTileCompWidth_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getTileCompWidth*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_getTileCompWidth_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.getTileCompWidth(System.Int32,System.Int32)">getTileCompWidth(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the width in pixels of the specified tile-component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int getTileCompWidth(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The width in pixels of component <tt>n</tt> in tile <tt>t</tt>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_isReversible_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.isReversible(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L589">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_isReversible_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.isReversible*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_isReversible_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.isReversible(System.Int32,System.Int32)">isReversible(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool isReversible(int param1, int param2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">param2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_nextTile.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.nextTile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L490">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_nextTile_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.nextTile*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_nextTile" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.nextTile">nextTile()</h4>
+  <div class="markdown level1 summary"><p>Advances to the next tile, in standard scan-line order (by rows then
+columns). An NoNextElementException is thrown if the current tile is
+the last one (i.e. there is no next tile).</p>
+<p>This default implementation calls the same method on the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void nextTile()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_setTile_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.setTile(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L478">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_setTile_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.setTile*"></a>
+  <h4 id="CSJ2K_j2k_wavelet_synthesis_InvWTAdapter_setTile_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.wavelet.synthesis.InvWTAdapter.setTile(System.Int32,System.Int32)">setTile(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Changes the current tile, given the new indices. An
+IllegalArgumentException is thrown if the coordinates do not correspond
+to a valid tile.</p>
+<p>This default implementation calls the same method on the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void setTile(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The horizontal index of the tile.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The vertical index of the new tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWT.html">InvWT</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.WaveletTransform.html">WaveletTransform</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.InvWT.html">InvWT</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_wavelet_synthesis_InvWTAdapter.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.wavelet.synthesis.InvWTAdapter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/wavelet/synthesis/InvWTAdapter.cs/#L71" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

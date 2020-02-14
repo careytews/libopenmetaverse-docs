@@ -1,0 +1,833 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SYccColorSpaceMapper
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SYccColorSpaceMapper
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.Color.SYccColorSpaceMapper">
+  
+  
+  <h1 id="CSJ2K_Color_SYccColorSpaceMapper" data-uid="CSJ2K.Color.SYccColorSpaceMapper" class="text-break">Class SYccColorSpaceMapper
+  </h1>
+  <div class="markdown level0 summary"><p>This decodes maps which are defined in the sYCC
+colorspace into the sRGB colorspadce.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html">ImgDataAdapter</a></div>
+    <div class="level2"><a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html">ColorSpaceMapper</a></div>
+    <div class="level3"><span class="xref">SYccColorSpaceMapper</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_ParameterInfo">ColorSpaceMapper.ParameterInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_InternalBuffer">ColorSpaceMapper.InternalBuffer</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_OPT_PREFIX">ColorSpaceMapper.OPT_PREFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_eol">ColorSpaceMapper.eol</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_inInt">ColorSpaceMapper.inInt</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_inFloat">ColorSpaceMapper.inFloat</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_workInt">ColorSpaceMapper.workInt</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_workFloat">ColorSpaceMapper.workFloat</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_dataInt">ColorSpaceMapper.dataInt</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_dataFloat">ColorSpaceMapper.dataFloat</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_workDataFloat">ColorSpaceMapper.workDataFloat</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_workDataInt">ColorSpaceMapper.workDataInt</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_shiftValueArray">ColorSpaceMapper.shiftValueArray</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_maxValueArray">ColorSpaceMapper.maxValueArray</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_fixedPtBitsArray">ColorSpaceMapper.fixedPtBitsArray</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_pl">ColorSpaceMapper.pl</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_csMap">ColorSpaceMapper.csMap</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_ncomps">ColorSpaceMapper.ncomps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_src">ColorSpaceMapper.src</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_srcBlk">ColorSpaceMapper.srcBlk</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_computed">ColorSpaceMapper.computed</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_copyGeometry_CSJ2K_j2k_image_DataBlk_CSJ2K_j2k_image_DataBlk_">ColorSpaceMapper.copyGeometry(DataBlk, DataBlk)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_getFixedPoint_System_Int32_">ColorSpaceMapper.getFixedPoint(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileWidth">ImgDataAdapter.TileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileHeight">ImgDataAdapter.TileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileWidth">ImgDataAdapter.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileHeight">ImgDataAdapter.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgWidth">ImgDataAdapter.ImgWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgHeight">ImgDataAdapter.ImgHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NumComps">ImgDataAdapter.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileIdx">ImgDataAdapter.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULX">ImgDataAdapter.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULY">ImgDataAdapter.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULX">ImgDataAdapter.ImgULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULY">ImgDataAdapter.ImgULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_tIdx">ImgDataAdapter.tIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_imgdatasrc">ImgDataAdapter.imgdatasrc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsX_System_Int32_">ImgDataAdapter.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsY_System_Int32_">ImgDataAdapter.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_">ImgDataAdapter.getTileCompWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_">ImgDataAdapter.getTileCompHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgWidth_System_Int32_">ImgDataAdapter.getCompImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgHeight_System_Int32_">ImgDataAdapter.getCompImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNomRangeBits_System_Int32_">ImgDataAdapter.getNomRangeBits(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_setTile_System_Int32_System_Int32_">ImgDataAdapter.setTile(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_nextTile">ImgDataAdapter.nextTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULX_System_Int32_">ImgDataAdapter.getCompULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULY_System_Int32_">ImgDataAdapter.getCompULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles">ImgDataAdapter.getNumTiles()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.Color.html">CSJ2K.Color</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_Color_SYccColorSpaceMapper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SYccColorSpaceMapper : ColorSpaceMapper, BlkImgDataSrc, ImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper__ctor_CSJ2K_j2k_image_BlkImgDataSrc_CSJ2K_Color_ColorSpace_.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.%23ctor(CSJ2K.j2k.image.BlkImgDataSrc%2CCSJ2K.Color.ColorSpace)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L78">View Source</a>
+  </span>
+  <a id="CSJ2K_Color_SYccColorSpaceMapper__ctor_" data-uid="CSJ2K.Color.SYccColorSpaceMapper.#ctor*"></a>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper__ctor_CSJ2K_j2k_image_BlkImgDataSrc_CSJ2K_Color_ColorSpace_" data-uid="CSJ2K.Color.SYccColorSpaceMapper.#ctor(CSJ2K.j2k.image.BlkImgDataSrc,CSJ2K.Color.ColorSpace)">SYccColorSpaceMapper(BlkImgDataSrc, ColorSpace)</h4>
+  <div class="markdown level1 summary"><p>Ctor which creates an ICCProfile for the image and initializes
+all data objects (input, working, and output).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SYccColorSpaceMapper(BlkImgDataSrc src, ColorSpace csMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>-- Source of image data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.Color.ColorSpace.html">ColorSpace</a></td>
+        <td><span class="parametername">csMap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_Matrix00.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.Matrix00%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L37">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_Matrix00" data-uid="CSJ2K.Color.SYccColorSpaceMapper.Matrix00">Matrix00</h4>
+  <div class="markdown level1 summary"><p>Matrix component for ycc transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static float Matrix00</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_Matrix01.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.Matrix01%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L39">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_Matrix01" data-uid="CSJ2K.Color.SYccColorSpaceMapper.Matrix01">Matrix01</h4>
+  <div class="markdown level1 summary"><p>Matrix component for ycc transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static float Matrix01</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_Matrix02.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.Matrix02%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L41">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_Matrix02" data-uid="CSJ2K.Color.SYccColorSpaceMapper.Matrix02">Matrix02</h4>
+  <div class="markdown level1 summary"><p>Matrix component for ycc transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static float Matrix02</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_Matrix10.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.Matrix10%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L43">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_Matrix10" data-uid="CSJ2K.Color.SYccColorSpaceMapper.Matrix10">Matrix10</h4>
+  <div class="markdown level1 summary"><p>Matrix component for ycc transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static float Matrix10</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_Matrix11.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.Matrix11%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L46">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_Matrix11" data-uid="CSJ2K.Color.SYccColorSpaceMapper.Matrix11">Matrix11</h4>
+  <div class="markdown level1 summary"><p>Matrix component for ycc transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static float Matrix11</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_Matrix12.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.Matrix12%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L49">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_Matrix12" data-uid="CSJ2K.Color.SYccColorSpaceMapper.Matrix12">Matrix12</h4>
+  <div class="markdown level1 summary"><p>Matrix component for ycc transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static float Matrix12</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_Matrix20.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.Matrix20%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L51">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_Matrix20" data-uid="CSJ2K.Color.SYccColorSpaceMapper.Matrix20">Matrix20</h4>
+  <div class="markdown level1 summary"><p>Matrix component for ycc transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static float Matrix20</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_Matrix21.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.Matrix21%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L53">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_Matrix21" data-uid="CSJ2K.Color.SYccColorSpaceMapper.Matrix21">Matrix21</h4>
+  <div class="markdown level1 summary"><p>Matrix component for ycc transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static float Matrix21</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_Matrix22.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.Matrix22%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L55">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_Matrix22" data-uid="CSJ2K.Color.SYccColorSpaceMapper.Matrix22">Matrix22</h4>
+  <div class="markdown level1 summary"><p>Matrix component for ycc transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static float Matrix22</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_createInstance_CSJ2K_j2k_image_BlkImgDataSrc_CSJ2K_Color_ColorSpace_.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.createInstance(CSJ2K.j2k.image.BlkImgDataSrc%2CCSJ2K.Color.ColorSpace)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L65">View Source</a>
+  </span>
+  <a id="CSJ2K_Color_SYccColorSpaceMapper_createInstance_" data-uid="CSJ2K.Color.SYccColorSpaceMapper.createInstance*"></a>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_createInstance_CSJ2K_j2k_image_BlkImgDataSrc_CSJ2K_Color_ColorSpace_" data-uid="CSJ2K.Color.SYccColorSpaceMapper.createInstance(CSJ2K.j2k.image.BlkImgDataSrc,CSJ2K.Color.ColorSpace)">createInstance(BlkImgDataSrc, ColorSpace)</h4>
+  <div class="markdown level1 summary"><p>Factory method for creating instances of this class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BlkImgDataSrc createInstance(BlkImgDataSrc src, ColorSpace csMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>-- source of image data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.Color.ColorSpace.html">ColorSpace</a></td>
+        <td><span class="parametername">csMap</span></td>
+        <td><p>-- provides colorspace info</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></td>
+        <td><p>SYccColorSpaceMapper instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.getCompData(CSJ2K.j2k.image.DataBlk%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L132">View Source</a>
+  </span>
+  <a id="CSJ2K_Color_SYccColorSpaceMapper_getCompData_" data-uid="CSJ2K.Color.SYccColorSpaceMapper.getCompData*"></a>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_" data-uid="CSJ2K.Color.SYccColorSpaceMapper.getCompData(CSJ2K.j2k.image.DataBlk,System.Int32)">getCompData(DataBlk, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataBlk getCompData(DataBlk outblk, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">outblk</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_">ColorSpaceMapper.getCompData(DataBlk, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.getInternCompData(CSJ2K.j2k.image.DataBlk%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L228">View Source</a>
+  </span>
+  <a id="CSJ2K_Color_SYccColorSpaceMapper_getInternCompData_" data-uid="CSJ2K.Color.SYccColorSpaceMapper.getInternCompData*"></a>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_" data-uid="CSJ2K.Color.SYccColorSpaceMapper.getInternCompData(CSJ2K.j2k.image.DataBlk,System.Int32)">getInternCompData(DataBlk, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataBlk getInternCompData(DataBlk out_Renamed, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">out_Renamed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html#CSJ2K_Color_ColorSpaceMapper_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_">ColorSpaceMapper.getInternCompData(DataBlk, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper_ToString.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L326">View Source</a>
+  </span>
+  <a id="CSJ2K_Color_SYccColorSpaceMapper_ToString_" data-uid="CSJ2K.Color.SYccColorSpaceMapper.ToString*"></a>
+  <h4 id="CSJ2K_Color_SYccColorSpaceMapper_ToString" data-uid="CSJ2K.Color.SYccColorSpaceMapper.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Return a suitable String representation of the class instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Color_SYccColorSpaceMapper.md&amp;value=---%0Auid%3A%20CSJ2K.Color.SYccColorSpaceMapper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Color/SYccColorSpaceMapper.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

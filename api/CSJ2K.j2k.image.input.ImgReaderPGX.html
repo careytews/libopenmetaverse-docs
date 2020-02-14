@@ -1,0 +1,643 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImgReaderPGX
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImgReaderPGX
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX">
+  
+  
+  <h1 id="CSJ2K_j2k_image_input_ImgReaderPGX" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX" class="text-break">Class ImgReaderPGX
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html">ImgReader</a></div>
+    <div class="level2"><span class="xref">ImgReaderPGX</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.io.EndianType.html">EndianType</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_TileWidth">ImgReader.TileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_TileHeight">ImgReader.TileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_NomTileWidth">ImgReader.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_NomTileHeight">ImgReader.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_ImgWidth">ImgReader.ImgWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_ImgHeight">ImgReader.ImgHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_NumComps">ImgReader.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_TileIdx">ImgReader.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_TilePartULX">ImgReader.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_TilePartULY">ImgReader.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_ImgULX">ImgReader.ImgULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_ImgULY">ImgReader.ImgULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_w">ImgReader.w</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_h">ImgReader.h</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_nc">ImgReader.nc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getCompSubsX_System_Int32_">ImgReader.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getCompSubsY_System_Int32_">ImgReader.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getTileCompWidth_System_Int32_System_Int32_">ImgReader.getTileCompWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getTileCompHeight_System_Int32_System_Int32_">ImgReader.getTileCompHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getCompImgWidth_System_Int32_">ImgReader.getCompImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getCompImgHeight_System_Int32_">ImgReader.getCompImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_setTile_System_Int32_System_Int32_">ImgReader.setTile(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_nextTile">ImgReader.nextTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getTile_CSJ2K_j2k_image_Coord_">ImgReader.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getCompULX_System_Int32_">ImgReader.getCompULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getCompULY_System_Int32_">ImgReader.getCompULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getNumTiles_CSJ2K_j2k_image_Coord_">ImgReader.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getNumTiles">ImgReader.getNumTiles()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.image.input.html">CSJ2K.j2k.image.input</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_image_input_ImgReaderPGX_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ImgReaderPGX : ImgReader, BlkImgDataSrc, ImgData, EndianType</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_input_ImgReaderPGX__ctor_System_IO_FileInfo_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.input.ImgReaderPGX.%23ctor(System.IO.FileInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/input/ImgReaderPGX.cs/#L148">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_input_ImgReaderPGX__ctor_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_image_input_ImgReaderPGX__ctor_System_IO_FileInfo_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.#ctor(System.IO.FileInfo)">ImgReaderPGX(FileInfo)</h4>
+  <div class="markdown level1 summary"><p>Creates a new PGX file reader from the specified File object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImgReaderPGX(FileInfo in_Renamed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileInfo</span></td>
+        <td><span class="parametername">in_Renamed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_input_ImgReaderPGX__ctor_System_String_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.input.ImgReaderPGX.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/input/ImgReaderPGX.cs/#L252">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_input_ImgReaderPGX__ctor_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_image_input_ImgReaderPGX__ctor_System_String_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.#ctor(System.String)">ImgReaderPGX(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new PGX file reader from the specified file name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImgReaderPGX(string inName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">inName</span></td>
+        <td><p>The input file name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_input_ImgReaderPGX_close.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.input.ImgReaderPGX.close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/input/ImgReaderPGX.cs/#L263">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_input_ImgReaderPGX_close_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.close*"></a>
+  <h4 id="CSJ2K_j2k_image_input_ImgReaderPGX_close" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.close">close()</h4>
+  <div class="markdown level1 summary"><p>Closes the underlying RandomAccessIO from where the image data is being
+read. No operations are possible after a call to this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void close()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_close">ImgReader.close()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_input_ImgReaderPGX_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.input.ImgReaderPGX.getCompData(CSJ2K.j2k.image.DataBlk%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/input/ImgReaderPGX.cs/#L633">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_input_ImgReaderPGX_getCompData_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.getCompData*"></a>
+  <h4 id="CSJ2K_j2k_image_input_ImgReaderPGX_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.getCompData(CSJ2K.j2k.image.DataBlk,System.Int32)">getCompData(DataBlk, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataBlk getCompData(DataBlk blk, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">blk</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getCompData_CSJ2K_j2k_image_DataBlk_System_Int32_">ImgReader.getCompData(DataBlk, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_input_ImgReaderPGX_getFixedPoint_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.input.ImgReaderPGX.getFixedPoint(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/input/ImgReaderPGX.cs/#L307">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_input_ImgReaderPGX_getFixedPoint_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.getFixedPoint*"></a>
+  <h4 id="CSJ2K_j2k_image_input_ImgReaderPGX_getFixedPoint_System_Int32_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.getFixedPoint(System.Int32)">getFixedPoint(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the position of the fixed point in the specified component
+(i.e. the number of fractional bits), which is always 0 for this
+ImgReader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getFixedPoint(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The position of the fixed-point (i.e. the number of fractional
+bits). Always 0 for this ImgReader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getFixedPoint_System_Int32_">ImgReader.getFixedPoint(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_input_ImgReaderPGX_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.input.ImgReaderPGX.getInternCompData(CSJ2K.j2k.image.DataBlk%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/input/ImgReaderPGX.cs/#L362">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_input_ImgReaderPGX_getInternCompData_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.getInternCompData*"></a>
+  <h4 id="CSJ2K_j2k_image_input_ImgReaderPGX_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.getInternCompData(CSJ2K.j2k.image.DataBlk,System.Int32)">getInternCompData(DataBlk, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DataBlk getInternCompData(DataBlk blk, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td><span class="parametername">blk</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlk.html">DataBlk</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getInternCompData_CSJ2K_j2k_image_DataBlk_System_Int32_">ImgReader.getInternCompData(DataBlk, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_input_ImgReaderPGX_getNomRangeBits_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.input.ImgReaderPGX.getNomRangeBits(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/input/ImgReaderPGX.cs/#L286">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_input_ImgReaderPGX_getNomRangeBits_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.getNomRangeBits*"></a>
+  <h4 id="CSJ2K_j2k_image_input_ImgReaderPGX_getNomRangeBits_System_Int32_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.getNomRangeBits(System.Int32)">getNomRangeBits(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getNomRangeBits(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_getNomRangeBits_System_Int32_">ImgReader.getNomRangeBits(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_input_ImgReaderPGX_isOrigSigned_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.input.ImgReaderPGX.isOrigSigned(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/input/ImgReaderPGX.cs/#L648">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_input_ImgReaderPGX_isOrigSigned_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.isOrigSigned*"></a>
+  <h4 id="CSJ2K_j2k_image_input_ImgReaderPGX_isOrigSigned_System_Int32_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.isOrigSigned(System.Int32)">isOrigSigned(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the data read was originally signed in the specified
+component, false if not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool isOrigSigned(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The index of the component, from 0 to N-1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the data was originally signed, false if not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.input.ImgReader.html#CSJ2K_j2k_image_input_ImgReader_isOrigSigned_System_Int32_">ImgReader.isOrigSigned(Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_input_ImgReaderPGX_ToString.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.input.ImgReaderPGX.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/input/ImgReaderPGX.cs/#L664">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_image_input_ImgReaderPGX_ToString_" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.ToString*"></a>
+  <h4 id="CSJ2K_j2k_image_input_ImgReaderPGX_ToString" data-uid="CSJ2K.j2k.image.input.ImgReaderPGX.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string of information about the object, more than 1 line
+long. The information string includes information from the underlying
+RandomAccessIO (its toString() method is called in turn).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A string of information about the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.BlkImgDataSrc.html">BlkImgDataSrc</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.io.EndianType.html">EndianType</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_image_input_ImgReaderPGX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.image.input.ImgReaderPGX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/image/input/ImgReaderPGX.cs/#L104" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

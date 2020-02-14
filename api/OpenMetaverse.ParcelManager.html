@@ -1,0 +1,2537 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ParcelManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ParcelManager
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.ParcelManager">
+  
+  
+  <h1 id="OpenMetaverse_ParcelManager" data-uid="OpenMetaverse.ParcelManager" class="text-break">Class ParcelManager
+  </h1>
+  <div class="markdown level0 summary"><p>Parcel (subdivided simulator lots) subsystem</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ParcelManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_ParcelManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ParcelManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager__ctor_OpenMetaverse_GridClient_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.%23ctor(OpenMetaverse.GridClient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L966">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager__ctor_" data-uid="OpenMetaverse.ParcelManager.#ctor*"></a>
+  <h4 id="OpenMetaverse_ParcelManager__ctor_OpenMetaverse_GridClient_" data-uid="OpenMetaverse.ParcelManager.#ctor(OpenMetaverse.GridClient)">ParcelManager(GridClient)</h4>
+  <div class="markdown level1 summary"><p>Default constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParcelManager(GridClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.GridClient.html">GridClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>A reference to the GridClient object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_Buy_OpenMetaverse_Simulator_System_Int32_System_Boolean_OpenMetaverse_UUID_System_Boolean_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.Buy(OpenMetaverse.Simulator%2CSystem.Int32%2CSystem.Boolean%2COpenMetaverse.UUID%2CSystem.Boolean%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1171">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_Buy_" data-uid="OpenMetaverse.ParcelManager.Buy*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_Buy_OpenMetaverse_Simulator_System_Int32_System_Boolean_OpenMetaverse_UUID_System_Boolean_System_Int32_System_Int32_" data-uid="OpenMetaverse.ParcelManager.Buy(OpenMetaverse.Simulator,System.Int32,System.Boolean,OpenMetaverse.UUID,System.Boolean,System.Int32,System.Int32)">Buy(Simulator, Int32, Boolean, UUID, Boolean, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Send a request to Purchase a parcel of land</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Buy(Simulator simulator, int localID, bool forGroup, UUID groupID, bool removeContribution, int parcelArea, int parcelPrice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>The Simulator the parcel is located in</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>The parcels region specific local ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">forGroup</span></td>
+        <td><p>true if this parcel is being purchased by a group</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td><p>The groups <a class="xref" href="OpenMetaverse.UUID.html">UUID</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">removeContribution</span></td>
+        <td><p>true to remove tier contribution if purchase is successful</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">parcelArea</span></td>
+        <td><p>The parcels size</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">parcelPrice</span></td>
+        <td><p>The purchase price of the parcel</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_DeedToGroup_OpenMetaverse_Simulator_System_Int32_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.DeedToGroup(OpenMetaverse.Simulator%2CSystem.Int32%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1213">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_DeedToGroup_" data-uid="OpenMetaverse.ParcelManager.DeedToGroup*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_DeedToGroup_OpenMetaverse_Simulator_System_Int32_OpenMetaverse_UUID_" data-uid="OpenMetaverse.ParcelManager.DeedToGroup(OpenMetaverse.Simulator,System.Int32,OpenMetaverse.UUID)">DeedToGroup(Simulator, Int32, UUID)</h4>
+  <div class="markdown level1 summary"><p>Deed a parcel to a group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeedToGroup(Simulator simulator, int localID, UUID groupID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>The simulator the parcel is in</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>The parcels region specific local ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td><p>The groups <a class="xref" href="OpenMetaverse.UUID.html">UUID</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_EjectUser_OpenMetaverse_UUID_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.EjectUser(OpenMetaverse.UUID%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1496">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_EjectUser_" data-uid="OpenMetaverse.ParcelManager.EjectUser*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_EjectUser_OpenMetaverse_UUID_System_Boolean_" data-uid="OpenMetaverse.ParcelManager.EjectUser(OpenMetaverse.UUID,System.Boolean)">EjectUser(UUID, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Eject and optionally ban a user from a parcel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EjectUser(UUID targetID, bool ban)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">targetID</span></td>
+        <td><p>target key of avatar to eject</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ban</span></td>
+        <td><p>true to also ban target</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_FreezeUser_OpenMetaverse_UUID_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.FreezeUser(OpenMetaverse.UUID%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1513">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_FreezeUser_" data-uid="OpenMetaverse.ParcelManager.FreezeUser*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_FreezeUser_OpenMetaverse_UUID_System_Boolean_" data-uid="OpenMetaverse.ParcelManager.FreezeUser(OpenMetaverse.UUID,System.Boolean)">FreezeUser(UUID, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Freeze or unfreeze an avatar over your land</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreezeUser(UUID targetID, bool freeze)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">targetID</span></td>
+        <td><p>target key to freeze</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">freeze</span></td>
+        <td><p>true to freeze, false to unfreeze</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_GetParcelLocalID_OpenMetaverse_Simulator_OpenMetaverse_Vector3_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.GetParcelLocalID(OpenMetaverse.Simulator%2COpenMetaverse.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1331">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_GetParcelLocalID_" data-uid="OpenMetaverse.ParcelManager.GetParcelLocalID*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_GetParcelLocalID_OpenMetaverse_Simulator_OpenMetaverse_Vector3_" data-uid="OpenMetaverse.ParcelManager.GetParcelLocalID(OpenMetaverse.Simulator,OpenMetaverse.Vector3)">GetParcelLocalID(Simulator, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Get a parcels LocalID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetParcelLocalID(Simulator simulator, Vector3 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator parcel is in</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Vector3 position in simulator (Z not used)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>0 on failure, or parcel LocalID on success.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_ParcelManager_GetParcelLocalID_OpenMetaverse_Simulator_OpenMetaverse_Vector3__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A call to <pre><code>Parcels.RequestAllSimParcels</code></pre> is required to populate map and
+dictionary.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_GetParcelResouces_OpenMetaverse_UUID_System_Boolean_OpenMetaverse_ParcelManager_LandResourcesCallback_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.GetParcelResouces(OpenMetaverse.UUID%2CSystem.Boolean%2COpenMetaverse.ParcelManager.LandResourcesCallback)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1585">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_GetParcelResouces_" data-uid="OpenMetaverse.ParcelManager.GetParcelResouces*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_GetParcelResouces_OpenMetaverse_UUID_System_Boolean_OpenMetaverse_ParcelManager_LandResourcesCallback_" data-uid="OpenMetaverse.ParcelManager.GetParcelResouces(OpenMetaverse.UUID,System.Boolean,OpenMetaverse.ParcelManager.LandResourcesCallback)">GetParcelResouces(UUID, Boolean, ParcelManager.LandResourcesCallback)</h4>
+  <div class="markdown level1 summary"><p>Retrieves information on resources used by the parcel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetParcelResouces(UUID parcelID, bool getDetails, ParcelManager.LandResourcesCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">parcelID</span></td>
+        <td><p>UUID of the parcel</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">getDetails</span></td>
+        <td><p>Should per object resource usage be requested</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ParcelManager.LandResourcesCallback.html">ParcelManager.LandResourcesCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Callback invoked when the request is complete</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_OnForceSelectObjectsReply_OpenMetaverse_ForceSelectObjectsReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.OnForceSelectObjectsReply(OpenMetaverse.ForceSelectObjectsReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L893">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_OnForceSelectObjectsReply_" data-uid="OpenMetaverse.ParcelManager.OnForceSelectObjectsReply*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_OnForceSelectObjectsReply_OpenMetaverse_ForceSelectObjectsReplyEventArgs_" data-uid="OpenMetaverse.ParcelManager.OnForceSelectObjectsReply(OpenMetaverse.ForceSelectObjectsReplyEventArgs)">OnForceSelectObjectsReply(ForceSelectObjectsReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the ForceSelectObjectsReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnForceSelectObjectsReply(ForceSelectObjectsReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ForceSelectObjectsReplyEventArgs.html">ForceSelectObjectsReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A ForceSelectObjectsReplyEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_OnParcelAccessListReply_OpenMetaverse_ParcelAccessListReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.OnParcelAccessListReply(OpenMetaverse.ParcelAccessListReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L824">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_OnParcelAccessListReply_" data-uid="OpenMetaverse.ParcelManager.OnParcelAccessListReply*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_OnParcelAccessListReply_OpenMetaverse_ParcelAccessListReplyEventArgs_" data-uid="OpenMetaverse.ParcelManager.OnParcelAccessListReply(OpenMetaverse.ParcelAccessListReplyEventArgs)">OnParcelAccessListReply(ParcelAccessListReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the ParcelAccessListReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnParcelAccessListReply(ParcelAccessListReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ParcelAccessListReplyEventArgs.html">ParcelAccessListReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A ParcelAccessListReplyEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_OnParcelDwellReply_OpenMetaverse_ParcelDwellReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.OnParcelDwellReply(OpenMetaverse.ParcelDwellReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L755">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_OnParcelDwellReply_" data-uid="OpenMetaverse.ParcelManager.OnParcelDwellReply*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_OnParcelDwellReply_OpenMetaverse_ParcelDwellReplyEventArgs_" data-uid="OpenMetaverse.ParcelManager.OnParcelDwellReply(OpenMetaverse.ParcelDwellReplyEventArgs)">OnParcelDwellReply(ParcelDwellReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the ParcelDwellReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnParcelDwellReply(ParcelDwellReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ParcelDwellReplyEventArgs.html">ParcelDwellReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A ParcelDwellReplyEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_OnParcelInfoReply_OpenMetaverse_ParcelInfoReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.OnParcelInfoReply(OpenMetaverse.ParcelInfoReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L778">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_OnParcelInfoReply_" data-uid="OpenMetaverse.ParcelManager.OnParcelInfoReply*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_OnParcelInfoReply_OpenMetaverse_ParcelInfoReplyEventArgs_" data-uid="OpenMetaverse.ParcelManager.OnParcelInfoReply(OpenMetaverse.ParcelInfoReplyEventArgs)">OnParcelInfoReply(ParcelInfoReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the ParcelInfoReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnParcelInfoReply(ParcelInfoReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ParcelInfoReplyEventArgs.html">ParcelInfoReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A ParcelInfoReplyEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_OnParcelMediaCommand_OpenMetaverse_ParcelMediaCommandEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.OnParcelMediaCommand(OpenMetaverse.ParcelMediaCommandEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L939">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_OnParcelMediaCommand_" data-uid="OpenMetaverse.ParcelManager.OnParcelMediaCommand*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_OnParcelMediaCommand_OpenMetaverse_ParcelMediaCommandEventArgs_" data-uid="OpenMetaverse.ParcelManager.OnParcelMediaCommand(OpenMetaverse.ParcelMediaCommandEventArgs)">OnParcelMediaCommand(ParcelMediaCommandEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the ParcelMediaCommand event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnParcelMediaCommand(ParcelMediaCommandEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ParcelMediaCommandEventArgs.html">ParcelMediaCommandEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A ParcelMediaCommandEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_OnParcelMediaUpdateReply_OpenMetaverse_ParcelMediaUpdateReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.OnParcelMediaUpdateReply(OpenMetaverse.ParcelMediaUpdateReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L916">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_OnParcelMediaUpdateReply_" data-uid="OpenMetaverse.ParcelManager.OnParcelMediaUpdateReply*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_OnParcelMediaUpdateReply_OpenMetaverse_ParcelMediaUpdateReplyEventArgs_" data-uid="OpenMetaverse.ParcelManager.OnParcelMediaUpdateReply(OpenMetaverse.ParcelMediaUpdateReplyEventArgs)">OnParcelMediaUpdateReply(ParcelMediaUpdateReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the ParcelMediaUpdateReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnParcelMediaUpdateReply(ParcelMediaUpdateReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ParcelMediaUpdateReplyEventArgs.html">ParcelMediaUpdateReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A ParcelMediaUpdateReplyEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_OnParcelObjectOwnersReply_OpenMetaverse_ParcelObjectOwnersReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.OnParcelObjectOwnersReply(OpenMetaverse.ParcelObjectOwnersReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L847">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_OnParcelObjectOwnersReply_" data-uid="OpenMetaverse.ParcelManager.OnParcelObjectOwnersReply*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_OnParcelObjectOwnersReply_OpenMetaverse_ParcelObjectOwnersReplyEventArgs_" data-uid="OpenMetaverse.ParcelManager.OnParcelObjectOwnersReply(OpenMetaverse.ParcelObjectOwnersReplyEventArgs)">OnParcelObjectOwnersReply(ParcelObjectOwnersReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the ParcelObjectOwnersReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnParcelObjectOwnersReply(ParcelObjectOwnersReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ParcelObjectOwnersReplyEventArgs.html">ParcelObjectOwnersReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A ParcelObjectOwnersReplyEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_OnParcelProperties_OpenMetaverse_ParcelPropertiesEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.OnParcelProperties(OpenMetaverse.ParcelPropertiesEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L801">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_OnParcelProperties_" data-uid="OpenMetaverse.ParcelManager.OnParcelProperties*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_OnParcelProperties_OpenMetaverse_ParcelPropertiesEventArgs_" data-uid="OpenMetaverse.ParcelManager.OnParcelProperties(OpenMetaverse.ParcelPropertiesEventArgs)">OnParcelProperties(ParcelPropertiesEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the ParcelProperties event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnParcelProperties(ParcelPropertiesEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ParcelPropertiesEventArgs.html">ParcelPropertiesEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A ParcelPropertiesEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_OnSimParcelsDownloaded_OpenMetaverse_SimParcelsDownloadedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.OnSimParcelsDownloaded(OpenMetaverse.SimParcelsDownloadedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L870">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_OnSimParcelsDownloaded_" data-uid="OpenMetaverse.ParcelManager.OnSimParcelsDownloaded*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_OnSimParcelsDownloaded_OpenMetaverse_SimParcelsDownloadedEventArgs_" data-uid="OpenMetaverse.ParcelManager.OnSimParcelsDownloaded(OpenMetaverse.SimParcelsDownloadedEventArgs)">OnSimParcelsDownloaded(SimParcelsDownloadedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the SimParcelsDownloaded event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSimParcelsDownloaded(SimParcelsDownloadedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.SimParcelsDownloadedEventArgs.html">SimParcelsDownloadedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A SimParcelsDownloadedEventArgs object containing the
+data returned from the simulator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelAccessListReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelAccessListReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1826">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ParcelAccessListReplyHandler_" data-uid="OpenMetaverse.ParcelManager.ParcelAccessListReplyHandler*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelAccessListReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.ParcelManager.ParcelAccessListReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">ParcelAccessListReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ParcelAccessListReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_ParcelManager_ParcelAccessListReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Raises the <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_ParcelAccessListReply">ParcelAccessListReply</a> event</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelDwellReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelDwellReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1644">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ParcelDwellReplyHandler_" data-uid="OpenMetaverse.ParcelManager.ParcelDwellReplyHandler*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelDwellReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.ParcelManager.ParcelDwellReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">ParcelDwellReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ParcelDwellReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_ParcelManager_ParcelDwellReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Raises the <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_ParcelDwellReply">ParcelDwellReply</a> event</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelInfoReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelInfoReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1674">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ParcelInfoReplyHandler_" data-uid="OpenMetaverse.ParcelManager.ParcelInfoReplyHandler*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelInfoReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.ParcelManager.ParcelInfoReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">ParcelInfoReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ParcelInfoReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_ParcelManager_ParcelInfoReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Raises the <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_ParcelInfoReply">ParcelInfoReply</a> event</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelJoin_OpenMetaverse_Simulator_System_Single_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelJoin(OpenMetaverse.Simulator%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1310">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ParcelJoin_" data-uid="OpenMetaverse.ParcelManager.ParcelJoin*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelJoin_OpenMetaverse_Simulator_System_Single_System_Single_System_Single_System_Single_" data-uid="OpenMetaverse.ParcelManager.ParcelJoin(OpenMetaverse.Simulator,System.Single,System.Single,System.Single,System.Single)">ParcelJoin(Simulator, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Join two parcels of land creating a single parcel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ParcelJoin(Simulator simulator, float west, float south, float east, float north)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">west</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">south</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">east</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">north</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelMediaCommandMessagePacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelMediaCommandMessagePacketHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1980">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ParcelMediaCommandMessagePacketHandler_" data-uid="OpenMetaverse.ParcelManager.ParcelMediaCommandMessagePacketHandler*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelMediaCommandMessagePacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.ParcelManager.ParcelMediaCommandMessagePacketHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">ParcelMediaCommandMessagePacketHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ParcelMediaCommandMessagePacketHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_ParcelManager_ParcelMediaCommandMessagePacketHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Raises the <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_ParcelMediaCommand">ParcelMediaCommand</a> event</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelMediaUpdateHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelMediaUpdateHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1921">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ParcelMediaUpdateHandler_" data-uid="OpenMetaverse.ParcelManager.ParcelMediaUpdateHandler*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelMediaUpdateHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.ParcelManager.ParcelMediaUpdateHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">ParcelMediaUpdateHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ParcelMediaUpdateHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_ParcelManager_ParcelMediaUpdateHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Raises the <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_ParcelMediaUpdateReply">ParcelMediaUpdateReply</a> event</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelObjectOwnersReplyHandler_System_String_OpenMetaverse_Interfaces_IMessage_OpenMetaverse_Simulator_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelObjectOwnersReplyHandler(System.String%2COpenMetaverse.Interfaces.IMessage%2COpenMetaverse.Simulator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1870">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ParcelObjectOwnersReplyHandler_" data-uid="OpenMetaverse.ParcelManager.ParcelObjectOwnersReplyHandler*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelObjectOwnersReplyHandler_System_String_OpenMetaverse_Interfaces_IMessage_OpenMetaverse_Simulator_" data-uid="OpenMetaverse.ParcelManager.ParcelObjectOwnersReplyHandler(System.String,OpenMetaverse.Interfaces.IMessage,OpenMetaverse.Simulator)">ParcelObjectOwnersReplyHandler(String, IMessage, Simulator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ParcelObjectOwnersReplyHandler(string capsKey, IMessage message, Simulator simulator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">capsKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Interfaces.IMessage.html">IMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelOverlayHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelOverlayHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1947">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ParcelOverlayHandler_" data-uid="OpenMetaverse.ParcelManager.ParcelOverlayHandler*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelOverlayHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.ParcelManager.ParcelOverlayHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">ParcelOverlayHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ParcelOverlayHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelPropertiesReplyHandler_System_String_OpenMetaverse_Interfaces_IMessage_OpenMetaverse_Simulator_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelPropertiesReplyHandler(System.String%2COpenMetaverse.Interfaces.IMessage%2COpenMetaverse.Simulator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1703">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ParcelPropertiesReplyHandler_" data-uid="OpenMetaverse.ParcelManager.ParcelPropertiesReplyHandler*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelPropertiesReplyHandler_System_String_OpenMetaverse_Interfaces_IMessage_OpenMetaverse_Simulator_" data-uid="OpenMetaverse.ParcelManager.ParcelPropertiesReplyHandler(System.String,OpenMetaverse.Interfaces.IMessage,OpenMetaverse.Simulator)">ParcelPropertiesReplyHandler(String, IMessage, Simulator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ParcelPropertiesReplyHandler(string capsKey, IMessage message, Simulator simulator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">capsKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Interfaces.IMessage.html">IMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelSubdivide_OpenMetaverse_Simulator_System_Single_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelSubdivide(OpenMetaverse.Simulator%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1289">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ParcelSubdivide_" data-uid="OpenMetaverse.ParcelManager.ParcelSubdivide*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelSubdivide_OpenMetaverse_Simulator_System_Single_System_Single_System_Single_System_Single_" data-uid="OpenMetaverse.ParcelManager.ParcelSubdivide(OpenMetaverse.Simulator,System.Single,System.Single,System.Single,System.Single)">ParcelSubdivide(Simulator, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Subdivide (split) a parcel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ParcelSubdivide(Simulator simulator, float west, float south, float east, float north)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">west</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">south</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">east</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">north</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_Reclaim_OpenMetaverse_Simulator_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.Reclaim(OpenMetaverse.Simulator%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1196">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_Reclaim_" data-uid="OpenMetaverse.ParcelManager.Reclaim*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_Reclaim_OpenMetaverse_Simulator_System_Int32_" data-uid="OpenMetaverse.ParcelManager.Reclaim(OpenMetaverse.Simulator,System.Int32)">Reclaim(Simulator, Int32)</h4>
+  <div class="markdown level1 summary"><p>Reclaim a parcel of land</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reclaim(Simulator simulator, int localID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>The simulator the parcel is in</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>The parcels region specific local ID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ReleaseParcel_OpenMetaverse_Simulator_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ReleaseParcel(OpenMetaverse.Simulator%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1530">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ReleaseParcel_" data-uid="OpenMetaverse.ParcelManager.ReleaseParcel*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ReleaseParcel_OpenMetaverse_Simulator_System_Int32_" data-uid="OpenMetaverse.ParcelManager.ReleaseParcel(OpenMetaverse.Simulator,System.Int32)">ReleaseParcel(Simulator, Int32)</h4>
+  <div class="markdown level1 summary"><p>Abandon a parcel of land</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseParcel(Simulator simulator, int localID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator parcel is in</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>Simulator local ID of parcel</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_RequestAllSimParcels_OpenMetaverse_Simulator_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.RequestAllSimParcels(OpenMetaverse.Simulator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1076">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_RequestAllSimParcels_" data-uid="OpenMetaverse.ParcelManager.RequestAllSimParcels*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_RequestAllSimParcels_OpenMetaverse_Simulator_" data-uid="OpenMetaverse.ParcelManager.RequestAllSimParcels(OpenMetaverse.Simulator)">RequestAllSimParcels(Simulator)</h4>
+  <div class="markdown level1 summary"><p>Request all simulator parcel properties (used for populating the <pre><code>Simulator.Parcels</code></pre>
+dictionary)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestAllSimParcels(Simulator simulator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator to request parcels from (must be connected)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_RequestAllSimParcels_OpenMetaverse_Simulator_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.RequestAllSimParcels(OpenMetaverse.Simulator%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1088">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_RequestAllSimParcels_" data-uid="OpenMetaverse.ParcelManager.RequestAllSimParcels*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_RequestAllSimParcels_OpenMetaverse_Simulator_System_Boolean_System_Int32_" data-uid="OpenMetaverse.ParcelManager.RequestAllSimParcels(OpenMetaverse.Simulator,System.Boolean,System.Int32)">RequestAllSimParcels(Simulator, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>Request all simulator parcel properties (used for populating the <pre><code>Simulator.Parcels</code></pre>
+dictionary)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestAllSimParcels(Simulator simulator, bool refresh, int msDelay)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator to request parcels from (must be connected)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">refresh</span></td>
+        <td><p>If TRUE, will force a full refresh</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">msDelay</span></td>
+        <td><p>Number of milliseconds to pause in between each request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_RequestDwell_OpenMetaverse_Simulator_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.RequestDwell(OpenMetaverse.Simulator%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1149">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_RequestDwell_" data-uid="OpenMetaverse.ParcelManager.RequestDwell*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_RequestDwell_OpenMetaverse_Simulator_System_Int32_" data-uid="OpenMetaverse.ParcelManager.RequestDwell(OpenMetaverse.Simulator,System.Int32)">RequestDwell(Simulator, Int32)</h4>
+  <div class="markdown level1 summary"><p>Request the dwell value for a parcel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestDwell(Simulator simulator, int localID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator containing the parcel</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>Simulator-local ID of the parcel</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_RequestObjectOwners_OpenMetaverse_Simulator_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.RequestObjectOwners(OpenMetaverse.Simulator%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1230">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_RequestObjectOwners_" data-uid="OpenMetaverse.ParcelManager.RequestObjectOwners*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_RequestObjectOwners_OpenMetaverse_Simulator_System_Int32_" data-uid="OpenMetaverse.ParcelManager.RequestObjectOwners(OpenMetaverse.Simulator,System.Int32)">RequestObjectOwners(Simulator, Int32)</h4>
+  <div class="markdown level1 summary"><p>Request prim owners of a parcel of land.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestObjectOwners(Simulator simulator, int localID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator parcel is in</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>The parcels region specific local ID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_RequestParcelAccessList_OpenMetaverse_Simulator_System_Int32_OpenMetaverse_AccessList_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.RequestParcelAccessList(OpenMetaverse.Simulator%2CSystem.Int32%2COpenMetaverse.AccessList%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1027">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_RequestParcelAccessList_" data-uid="OpenMetaverse.ParcelManager.RequestParcelAccessList*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_RequestParcelAccessList_OpenMetaverse_Simulator_System_Int32_OpenMetaverse_AccessList_System_Int32_" data-uid="OpenMetaverse.ParcelManager.RequestParcelAccessList(OpenMetaverse.Simulator,System.Int32,OpenMetaverse.AccessList,System.Int32)">RequestParcelAccessList(Simulator, Int32, AccessList, Int32)</h4>
+  <div class="markdown level1 summary"><p>Request the access list for a single parcel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestParcelAccessList(Simulator simulator, int localID, AccessList flags, int sequenceID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator containing the parcel</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>Simulator-local ID of the parcel</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.AccessList.html">AccessList</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequenceID</span></td>
+        <td><p>An arbitrary integer that will be returned
+with the ParcelAccessList reply, useful for distinguishing between
+multiple simultaneous requests</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_RequestParcelInfo_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.RequestParcelInfo(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L987">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_RequestParcelInfo_" data-uid="OpenMetaverse.ParcelManager.RequestParcelInfo*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_RequestParcelInfo_OpenMetaverse_UUID_" data-uid="OpenMetaverse.ParcelManager.RequestParcelInfo(OpenMetaverse.UUID)">RequestParcelInfo(UUID)</h4>
+  <div class="markdown level1 summary"><p>Request basic information for a single parcel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestParcelInfo(UUID parcelID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">parcelID</span></td>
+        <td><p>Simulator-local ID of the parcel</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_RequestParcelProperties_OpenMetaverse_Simulator_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.RequestParcelProperties(OpenMetaverse.Simulator%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1005">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_RequestParcelProperties_" data-uid="OpenMetaverse.ParcelManager.RequestParcelProperties*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_RequestParcelProperties_OpenMetaverse_Simulator_System_Int32_System_Int32_" data-uid="OpenMetaverse.ParcelManager.RequestParcelProperties(OpenMetaverse.Simulator,System.Int32,System.Int32)">RequestParcelProperties(Simulator, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Request properties of a single parcel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestParcelProperties(Simulator simulator, int localID, int sequenceID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator containing the parcel</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>Simulator-local ID of the parcel</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequenceID</span></td>
+        <td><p>An arbitrary integer that will be returned
+with the ParcelProperties reply, useful for distinguishing between
+multiple simultaneous requests</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_RequestParcelProperties_OpenMetaverse_Simulator_System_Single_System_Single_System_Single_System_Single_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.RequestParcelProperties(OpenMetaverse.Simulator%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1054">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_RequestParcelProperties_" data-uid="OpenMetaverse.ParcelManager.RequestParcelProperties*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_RequestParcelProperties_OpenMetaverse_Simulator_System_Single_System_Single_System_Single_System_Single_System_Int32_System_Boolean_" data-uid="OpenMetaverse.ParcelManager.RequestParcelProperties(OpenMetaverse.Simulator,System.Single,System.Single,System.Single,System.Single,System.Int32,System.Boolean)">RequestParcelProperties(Simulator, Single, Single, Single, Single, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Request properties of parcels using a bounding box selection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestParcelProperties(Simulator simulator, float north, float east, float south, float west, int sequenceID, bool snapSelection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator containing the parcel</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">north</span></td>
+        <td><p>Northern boundary of the parcel selection</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">east</span></td>
+        <td><p>Eastern boundary of the parcel selection</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">south</span></td>
+        <td><p>Southern boundary of the parcel selection</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">west</span></td>
+        <td><p>Western boundary of the parcel selection</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sequenceID</span></td>
+        <td><p>An arbitrary integer that will be returned
+with the ParcelProperties reply, useful for distinguishing between
+different types of parcel property requests</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">snapSelection</span></td>
+        <td><p>A boolean that is returned with the
+ParcelProperties reply, useful for snapping focus to a single
+parcel</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_RequestRemoteParcelID_OpenMetaverse_Vector3_System_UInt64_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.RequestRemoteParcelID(OpenMetaverse.Vector3%2CSystem.UInt64%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1547">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_RequestRemoteParcelID_" data-uid="OpenMetaverse.ParcelManager.RequestRemoteParcelID*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_RequestRemoteParcelID_OpenMetaverse_Vector3_System_UInt64_OpenMetaverse_UUID_" data-uid="OpenMetaverse.ParcelManager.RequestRemoteParcelID(OpenMetaverse.Vector3,System.UInt64,OpenMetaverse.UUID)">RequestRemoteParcelID(Vector3, UInt64, UUID)</h4>
+  <div class="markdown level1 summary"><p>Requests the UUID of the parcel in a remote region at a specified location</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID RequestRemoteParcelID(Vector3 location, ulong regionHandle, UUID regionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>Location of the parcel in the remote region</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">regionHandle</span></td>
+        <td><p>Remote region handle</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">regionID</span></td>
+        <td><p>Remote region UUID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><p>If successful UUID of the remote parcel, UUID.Zero otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_RequestSelectObjects_System_Int32_OpenMetaverse_ObjectReturnType_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.RequestSelectObjects(System.Int32%2COpenMetaverse.ObjectReturnType%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1475">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_RequestSelectObjects_" data-uid="OpenMetaverse.ParcelManager.RequestSelectObjects*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_RequestSelectObjects_System_Int32_OpenMetaverse_ObjectReturnType_OpenMetaverse_UUID_" data-uid="OpenMetaverse.ParcelManager.RequestSelectObjects(System.Int32,OpenMetaverse.ObjectReturnType,OpenMetaverse.UUID)">RequestSelectObjects(Int32, ObjectReturnType, UUID)</h4>
+  <div class="markdown level1 summary"><p>Sends a request to the simulator to return a list of objects owned by specific owners</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestSelectObjects(int localID, ObjectReturnType selectType, UUID ownerID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>Simulator local ID of parcel</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ObjectReturnType.html">ObjectReturnType</a></td>
+        <td><span class="parametername">selectType</span></td>
+        <td><p>Owners, Others, Etc</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">ownerID</span></td>
+        <td><p>List containing keys of avatars objects to select;
+if List is null will return Objects of type <code>selectType</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_ParcelManager_RequestSelectObjects_System_Int32_OpenMetaverse_ObjectReturnType_OpenMetaverse_UUID__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Response data is returned in the event <span class="xref">ForceSelectObjectsReply</span></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ReturnObjects_OpenMetaverse_Simulator_System_Int32_OpenMetaverse_ObjectReturnType_System_Collections_Generic_List_OpenMetaverse_UUID__.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ReturnObjects(OpenMetaverse.Simulator%2CSystem.Int32%2COpenMetaverse.ObjectReturnType%2CSystem.Collections.Generic.List%7BOpenMetaverse.UUID%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1248">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_ReturnObjects_" data-uid="OpenMetaverse.ParcelManager.ReturnObjects*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_ReturnObjects_OpenMetaverse_Simulator_System_Int32_OpenMetaverse_ObjectReturnType_System_Collections_Generic_List_OpenMetaverse_UUID__" data-uid="OpenMetaverse.ParcelManager.ReturnObjects(OpenMetaverse.Simulator,System.Int32,OpenMetaverse.ObjectReturnType,System.Collections.Generic.List{OpenMetaverse.UUID})">ReturnObjects(Simulator, Int32, ObjectReturnType, List&lt;UUID&gt;)</h4>
+  <div class="markdown level1 summary"><p>Return objects from a parcel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReturnObjects(Simulator simulator, int localID, ObjectReturnType type, List&lt;UUID&gt; ownerIDs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator parcel is in</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>The parcels region specific local ID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.ObjectReturnType.html">ObjectReturnType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>the type of objects to return, <a class="xref" href="OpenMetaverse.ObjectReturnType.html">ObjectReturnType</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>&gt;</td>
+        <td><span class="parametername">ownerIDs</span></td>
+        <td><p>A list containing object owners <a class="xref" href="OpenMetaverse.UUID.html">UUID</a>s to return</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_SelectParcelObjectsReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.SelectParcelObjectsReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1898">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_SelectParcelObjectsReplyHandler_" data-uid="OpenMetaverse.ParcelManager.SelectParcelObjectsReplyHandler*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_SelectParcelObjectsReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.ParcelManager.SelectParcelObjectsReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">SelectParcelObjectsReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SelectParcelObjectsReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_ParcelManager_SelectParcelObjectsReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Raises the <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_ForceSelectObjectsReply">ForceSelectObjectsReply</a> event</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_Terraform_OpenMetaverse_Simulator_System_Int32_OpenMetaverse_TerraformAction_OpenMetaverse_TerraformBrushSize_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.Terraform(OpenMetaverse.Simulator%2CSystem.Int32%2COpenMetaverse.TerraformAction%2COpenMetaverse.TerraformBrushSize)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1354">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_Terraform_" data-uid="OpenMetaverse.ParcelManager.Terraform*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_Terraform_OpenMetaverse_Simulator_System_Int32_OpenMetaverse_TerraformAction_OpenMetaverse_TerraformBrushSize_" data-uid="OpenMetaverse.ParcelManager.Terraform(OpenMetaverse.Simulator,System.Int32,OpenMetaverse.TerraformAction,OpenMetaverse.TerraformBrushSize)">Terraform(Simulator, Int32, TerraformAction, TerraformBrushSize)</h4>
+  <div class="markdown level1 summary"><p>Terraform (raise, lower, etc) an area or whole parcel of land</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Terraform(Simulator simulator, int localID, TerraformAction action, TerraformBrushSize brushSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator land area is in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>LocalID of parcel, or -1 if using bounding box</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TerraformAction.html">TerraformAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>From Enum, Raise, Lower, Level, Smooth, Etc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TerraformBrushSize.html">TerraformBrushSize</a></td>
+        <td><span class="parametername">brushSize</span></td>
+        <td><p>Size of area to modify</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true on successful request sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_ParcelManager_Terraform_OpenMetaverse_Simulator_System_Int32_OpenMetaverse_TerraformAction_OpenMetaverse_TerraformBrushSize__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Settings.STORE_LAND_PATCHES must be true,
+Parcel information must be downloaded using <pre><code>RequestAllSimParcels()</code></pre></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_Terraform_OpenMetaverse_Simulator_System_Int32_System_Single_System_Single_System_Single_System_Single_OpenMetaverse_TerraformAction_OpenMetaverse_TerraformBrushSize_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.Terraform(OpenMetaverse.Simulator%2CSystem.Int32%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2COpenMetaverse.TerraformAction%2COpenMetaverse.TerraformBrushSize%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1393">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_Terraform_" data-uid="OpenMetaverse.ParcelManager.Terraform*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_Terraform_OpenMetaverse_Simulator_System_Int32_System_Single_System_Single_System_Single_System_Single_OpenMetaverse_TerraformAction_OpenMetaverse_TerraformBrushSize_System_Int32_" data-uid="OpenMetaverse.ParcelManager.Terraform(OpenMetaverse.Simulator,System.Int32,System.Single,System.Single,System.Single,System.Single,OpenMetaverse.TerraformAction,OpenMetaverse.TerraformBrushSize,System.Int32)">Terraform(Simulator, Int32, Single, Single, Single, Single, TerraformAction, TerraformBrushSize, Int32)</h4>
+  <div class="markdown level1 summary"><p>Terraform (raise, lower, etc) an area or whole parcel of land</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Terraform(Simulator simulator, int localID, float west, float south, float east, float north, TerraformAction action, TerraformBrushSize brushSize, int seconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator land area is in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>LocalID of parcel, or -1 if using bounding box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">west</span></td>
+        <td><p>west border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">south</span></td>
+        <td><p>south border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">east</span></td>
+        <td><p>east border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">north</span></td>
+        <td><p>north border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TerraformAction.html">TerraformAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>From Enum, Raise, Lower, Level, Smooth, Etc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TerraformBrushSize.html">TerraformBrushSize</a></td>
+        <td><span class="parametername">brushSize</span></td>
+        <td><p>Size of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">seconds</span></td>
+        <td><p>How many meters + or - to lower, 1 = 1 meter</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true on successful request sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_ParcelManager_Terraform_OpenMetaverse_Simulator_System_Int32_System_Single_System_Single_System_Single_System_Single_OpenMetaverse_TerraformAction_OpenMetaverse_TerraformBrushSize_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Settings.STORE_LAND_PATCHES must be true,
+Parcel information must be downloaded using <pre><code>RequestAllSimParcels()</code></pre></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_Terraform_OpenMetaverse_Simulator_System_Int32_System_Single_System_Single_System_Single_System_Single_OpenMetaverse_TerraformAction_OpenMetaverse_TerraformBrushSize_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.Terraform(OpenMetaverse.Simulator%2CSystem.Int32%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2COpenMetaverse.TerraformAction%2COpenMetaverse.TerraformBrushSize%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1440">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_Terraform_" data-uid="OpenMetaverse.ParcelManager.Terraform*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_Terraform_OpenMetaverse_Simulator_System_Int32_System_Single_System_Single_System_Single_System_Single_OpenMetaverse_TerraformAction_OpenMetaverse_TerraformBrushSize_System_Int32_System_Single_" data-uid="OpenMetaverse.ParcelManager.Terraform(OpenMetaverse.Simulator,System.Int32,System.Single,System.Single,System.Single,System.Single,OpenMetaverse.TerraformAction,OpenMetaverse.TerraformBrushSize,System.Int32,System.Single)">Terraform(Simulator, Int32, Single, Single, Single, Single, TerraformAction, TerraformBrushSize, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Terraform (raise, lower, etc) an area or whole parcel of land</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Terraform(Simulator simulator, int localID, float west, float south, float east, float north, TerraformAction action, TerraformBrushSize brushSize, int seconds, float height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator land area is in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">localID</span></td>
+        <td><p>LocalID of parcel, or -1 if using bounding box</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">west</span></td>
+        <td><p>west border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">south</span></td>
+        <td><p>south border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">east</span></td>
+        <td><p>east border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">north</span></td>
+        <td><p>north border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TerraformAction.html">TerraformAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>From Enum, Raise, Lower, Level, Smooth, Etc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TerraformBrushSize.html">TerraformBrushSize</a></td>
+        <td><span class="parametername">brushSize</span></td>
+        <td><p>Size of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">seconds</span></td>
+        <td><p>How many meters + or - to lower, 1 = 1 meter</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height at which the terraform operation is acting at</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_Terraform_OpenMetaverse_Simulator_System_Single_System_Single_System_Single_System_Single_OpenMetaverse_TerraformAction_OpenMetaverse_TerraformBrushSize_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.Terraform(OpenMetaverse.Simulator%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2COpenMetaverse.TerraformAction%2COpenMetaverse.TerraformBrushSize)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L1372">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ParcelManager_Terraform_" data-uid="OpenMetaverse.ParcelManager.Terraform*"></a>
+  <h4 id="OpenMetaverse_ParcelManager_Terraform_OpenMetaverse_Simulator_System_Single_System_Single_System_Single_System_Single_OpenMetaverse_TerraformAction_OpenMetaverse_TerraformBrushSize_" data-uid="OpenMetaverse.ParcelManager.Terraform(OpenMetaverse.Simulator,System.Single,System.Single,System.Single,System.Single,OpenMetaverse.TerraformAction,OpenMetaverse.TerraformBrushSize)">Terraform(Simulator, Single, Single, Single, Single, TerraformAction, TerraformBrushSize)</h4>
+  <div class="markdown level1 summary"><p>Terraform (raise, lower, etc) an area or whole parcel of land</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Terraform(Simulator simulator, float west, float south, float east, float north, TerraformAction action, TerraformBrushSize brushSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>Simulator land area is in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">west</span></td>
+        <td><p>west border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">south</span></td>
+        <td><p>south border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">east</span></td>
+        <td><p>east border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">north</span></td>
+        <td><p>north border of area to modify</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TerraformAction.html">TerraformAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>From Enum, Raise, Lower, Level, Smooth, Etc.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.TerraformBrushSize.html">TerraformBrushSize</a></td>
+        <td><span class="parametername">brushSize</span></td>
+        <td><p>Size of area to modify</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true on successful request sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_ParcelManager_Terraform_OpenMetaverse_Simulator_System_Single_System_Single_System_Single_System_Single_OpenMetaverse_TerraformAction_OpenMetaverse_TerraformBrushSize__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Settings.STORE_LAND_PATCHES must be true,
+Parcel information must be downloaded using <pre><code>RequestAllSimParcels()</code></pre></p>
+</div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ForceSelectObjectsReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ForceSelectObjectsReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L904">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_ParcelManager_ForceSelectObjectsReply" data-uid="OpenMetaverse.ParcelManager.ForceSelectObjectsReply">ForceSelectObjectsReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <see cref="!:RequestForceSelectObjects"></see> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ForceSelectObjectsReplyEventArgs&gt; ForceSelectObjectsReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.ForceSelectObjectsReplyEventArgs.html">ForceSelectObjectsReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelAccessListReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelAccessListReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L835">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelAccessListReply" data-uid="OpenMetaverse.ParcelManager.ParcelAccessListReply">ParcelAccessListReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_RequestParcelAccessList_OpenMetaverse_Simulator_System_Int32_OpenMetaverse_AccessList_System_Int32_">RequestParcelAccessList(Simulator, Int32, AccessList, Int32)</a> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ParcelAccessListReplyEventArgs&gt; ParcelAccessListReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.ParcelAccessListReplyEventArgs.html">ParcelAccessListReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelDwellReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelDwellReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L766">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelDwellReply" data-uid="OpenMetaverse.ParcelManager.ParcelDwellReply">ParcelDwellReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_RequestDwell_OpenMetaverse_Simulator_System_Int32_">RequestDwell(Simulator, Int32)</a> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ParcelDwellReplyEventArgs&gt; ParcelDwellReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.ParcelDwellReplyEventArgs.html">ParcelDwellReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelInfoReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelInfoReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L789">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelInfoReply" data-uid="OpenMetaverse.ParcelManager.ParcelInfoReply">ParcelInfoReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_RequestParcelInfo_OpenMetaverse_UUID_">RequestParcelInfo(UUID)</a> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ParcelInfoReplyEventArgs&gt; ParcelInfoReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.ParcelInfoReplyEventArgs.html">ParcelInfoReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelMediaCommand.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelMediaCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L950">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelMediaCommand" data-uid="OpenMetaverse.ParcelManager.ParcelMediaCommand">ParcelMediaCommand</h4>
+  <div class="markdown level1 summary"><p>Raised when the parcel your agent is located sends a ParcelMediaCommand</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ParcelMediaCommandEventArgs&gt; ParcelMediaCommand</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.ParcelMediaCommandEventArgs.html">ParcelMediaCommandEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelMediaUpdateReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelMediaUpdateReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L927">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelMediaUpdateReply" data-uid="OpenMetaverse.ParcelManager.ParcelMediaUpdateReply">ParcelMediaUpdateReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a Parcel Update request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ParcelMediaUpdateReplyEventArgs&gt; ParcelMediaUpdateReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.ParcelMediaUpdateReplyEventArgs.html">ParcelMediaUpdateReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelObjectOwnersReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelObjectOwnersReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L858">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelObjectOwnersReply" data-uid="OpenMetaverse.ParcelManager.ParcelObjectOwnersReply">ParcelObjectOwnersReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_RequestObjectOwners_OpenMetaverse_Simulator_System_Int32_">RequestObjectOwners(Simulator, Int32)</a> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ParcelObjectOwnersReplyEventArgs&gt; ParcelObjectOwnersReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.ParcelObjectOwnersReplyEventArgs.html">ParcelObjectOwnersReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_ParcelProperties.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.ParcelProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L812">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_ParcelManager_ParcelProperties" data-uid="OpenMetaverse.ParcelManager.ParcelProperties">ParcelProperties</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_RequestParcelProperties_OpenMetaverse_Simulator_System_Int32_System_Int32_">RequestParcelProperties(Simulator, Int32, Int32)</a> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ParcelPropertiesEventArgs&gt; ParcelProperties</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.ParcelPropertiesEventArgs.html">ParcelPropertiesEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager_SimParcelsDownloaded.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager.SimParcelsDownloaded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L881">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_ParcelManager_SimParcelsDownloaded" data-uid="OpenMetaverse.ParcelManager.SimParcelsDownloaded">SimParcelsDownloaded</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator responds to a <a class="xref" href="OpenMetaverse.ParcelManager.html#OpenMetaverse_ParcelManager_RequestAllSimParcels_OpenMetaverse_Simulator_">RequestAllSimParcels(Simulator)</a> request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SimParcelsDownloadedEventArgs&gt; SimParcelsDownloaded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.SimParcelsDownloadedEventArgs.html">SimParcelsDownloadedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ParcelManager.md&amp;value=---%0Auid%3A%20OpenMetaverse.ParcelManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ParcelManager.cs/#L705" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

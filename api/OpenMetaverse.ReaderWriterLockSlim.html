@@ -1,0 +1,872 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ReaderWriterLockSlim
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ReaderWriterLockSlim
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.ReaderWriterLockSlim">
+  
+  
+  <h1 id="OpenMetaverse_ReaderWriterLockSlim" data-uid="OpenMetaverse.ReaderWriterLockSlim" class="text-break">Class ReaderWriterLockSlim
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ReaderWriterLockSlim</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverseTypes.dll</h6>
+  <h5 id="OpenMetaverse_ReaderWriterLockSlim_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HostProtection(SecurityAction.LinkDemand, MayLeakOnAbort = true)]
+[HostProtection(SecurityAction.LinkDemand, Synchronization = true, ExternalThreading = true)]
+public class ReaderWriterLockSlim : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim__ctor.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L127">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim__ctor_" data-uid="OpenMetaverse.ReaderWriterLockSlim.#ctor*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim__ctor" data-uid="OpenMetaverse.ReaderWriterLockSlim.#ctor">ReaderWriterLockSlim()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReaderWriterLockSlim()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_CurrentReadCount.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.CurrentReadCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L418">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_CurrentReadCount_" data-uid="OpenMetaverse.ReaderWriterLockSlim.CurrentReadCount*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_CurrentReadCount" data-uid="OpenMetaverse.ReaderWriterLockSlim.CurrentReadCount">CurrentReadCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentReadCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_IsReadLockHeld.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.IsReadLockHeld%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L403">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_IsReadLockHeld_" data-uid="OpenMetaverse.ReaderWriterLockSlim.IsReadLockHeld*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_IsReadLockHeld" data-uid="OpenMetaverse.ReaderWriterLockSlim.IsReadLockHeld">IsReadLockHeld</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadLockHeld { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_IsUpgradeableReadLockHeld.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.IsUpgradeableReadLockHeld%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L413">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_IsUpgradeableReadLockHeld_" data-uid="OpenMetaverse.ReaderWriterLockSlim.IsUpgradeableReadLockHeld*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_IsUpgradeableReadLockHeld" data-uid="OpenMetaverse.ReaderWriterLockSlim.IsUpgradeableReadLockHeld">IsUpgradeableReadLockHeld</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUpgradeableReadLockHeld { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_IsWriteLockHeld.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.IsWriteLockHeld%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L408">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_IsWriteLockHeld_" data-uid="OpenMetaverse.ReaderWriterLockSlim.IsWriteLockHeld*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_IsWriteLockHeld" data-uid="OpenMetaverse.ReaderWriterLockSlim.IsWriteLockHeld">IsWriteLockHeld</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWriteLockHeld { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_RecursiveReadCount.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.RecursiveReadCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L423">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_RecursiveReadCount_" data-uid="OpenMetaverse.ReaderWriterLockSlim.RecursiveReadCount*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_RecursiveReadCount" data-uid="OpenMetaverse.ReaderWriterLockSlim.RecursiveReadCount">RecursiveReadCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RecursiveReadCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_RecursiveUpgradeCount.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.RecursiveUpgradeCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L435">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_RecursiveUpgradeCount_" data-uid="OpenMetaverse.ReaderWriterLockSlim.RecursiveUpgradeCount*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_RecursiveUpgradeCount" data-uid="OpenMetaverse.ReaderWriterLockSlim.RecursiveUpgradeCount">RecursiveUpgradeCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RecursiveUpgradeCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_RecursiveWriteCount.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.RecursiveWriteCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L440">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_RecursiveWriteCount_" data-uid="OpenMetaverse.ReaderWriterLockSlim.RecursiveWriteCount*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_RecursiveWriteCount" data-uid="OpenMetaverse.ReaderWriterLockSlim.RecursiveWriteCount">RecursiveWriteCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RecursiveWriteCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_WaitingReadCount.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.WaitingReadCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L445">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_WaitingReadCount_" data-uid="OpenMetaverse.ReaderWriterLockSlim.WaitingReadCount*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_WaitingReadCount" data-uid="OpenMetaverse.ReaderWriterLockSlim.WaitingReadCount">WaitingReadCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WaitingReadCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_WaitingUpgradeCount.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.WaitingUpgradeCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L450">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_WaitingUpgradeCount_" data-uid="OpenMetaverse.ReaderWriterLockSlim.WaitingUpgradeCount*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_WaitingUpgradeCount" data-uid="OpenMetaverse.ReaderWriterLockSlim.WaitingUpgradeCount">WaitingUpgradeCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WaitingUpgradeCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_WaitingWriteCount.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.WaitingWriteCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L455">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_WaitingWriteCount_" data-uid="OpenMetaverse.ReaderWriterLockSlim.WaitingWriteCount*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_WaitingWriteCount" data-uid="OpenMetaverse.ReaderWriterLockSlim.WaitingWriteCount">WaitingWriteCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WaitingWriteCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_Dispose.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L398">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_Dispose_" data-uid="OpenMetaverse.ReaderWriterLockSlim.Dispose*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_Dispose" data-uid="OpenMetaverse.ReaderWriterLockSlim.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_EnterReadLock.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.EnterReadLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L132">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_EnterReadLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.EnterReadLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_EnterReadLock" data-uid="OpenMetaverse.ReaderWriterLockSlim.EnterReadLock">EnterReadLock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnterReadLock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_EnterUpgradeableReadLock.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.EnterUpgradeableReadLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L329">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_EnterUpgradeableReadLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.EnterUpgradeableReadLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_EnterUpgradeableReadLock" data-uid="OpenMetaverse.ReaderWriterLockSlim.EnterUpgradeableReadLock">EnterUpgradeableReadLock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnterUpgradeableReadLock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_EnterWriteLock.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.EnterWriteLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L215">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_EnterWriteLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.EnterWriteLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_EnterWriteLock" data-uid="OpenMetaverse.ReaderWriterLockSlim.EnterWriteLock">EnterWriteLock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnterWriteLock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_ExitReadLock.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.ExitReadLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L199">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_ExitReadLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.ExitReadLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_ExitReadLock" data-uid="OpenMetaverse.ReaderWriterLockSlim.ExitReadLock">ExitReadLock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExitReadLock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_ExitUpgradeableReadLock.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.ExitUpgradeableReadLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L389">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_ExitUpgradeableReadLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.ExitUpgradeableReadLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_ExitUpgradeableReadLock" data-uid="OpenMetaverse.ReaderWriterLockSlim.ExitUpgradeableReadLock">ExitUpgradeableReadLock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExitUpgradeableReadLock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_ExitWriteLock.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.ExitWriteLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L313">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_ExitWriteLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.ExitWriteLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_ExitWriteLock" data-uid="OpenMetaverse.ReaderWriterLockSlim.ExitWriteLock">ExitWriteLock()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExitWriteLock()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_TryEnterReadLock_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.TryEnterReadLock(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L137">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_TryEnterReadLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterReadLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_TryEnterReadLock_System_Int32_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterReadLock(System.Int32)">TryEnterReadLock(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryEnterReadLock(int millisecondsTimeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">millisecondsTimeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_TryEnterReadLock_System_TimeSpan_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.TryEnterReadLock(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L191">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_TryEnterReadLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterReadLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_TryEnterReadLock_System_TimeSpan_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterReadLock(System.TimeSpan)">TryEnterReadLock(TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryEnterReadLock(TimeSpan timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_TryEnterUpgradeableReadLock_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L338">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_TryEnterUpgradeableReadLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterUpgradeableReadLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_TryEnterUpgradeableReadLock_System_Int32_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.Int32)">TryEnterUpgradeableReadLock(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryEnterUpgradeableReadLock(int millisecondsTimeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">millisecondsTimeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_TryEnterUpgradeableReadLock_System_TimeSpan_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L384">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_TryEnterUpgradeableReadLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterUpgradeableReadLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_TryEnterUpgradeableReadLock_System_TimeSpan_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.TimeSpan)">TryEnterUpgradeableReadLock(TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryEnterUpgradeableReadLock(TimeSpan timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_TryEnterWriteLock_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.TryEnterWriteLock(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L220">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_TryEnterWriteLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterWriteLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_TryEnterWriteLock_System_Int32_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterWriteLock(System.Int32)">TryEnterWriteLock(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryEnterWriteLock(int millisecondsTimeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">millisecondsTimeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim_TryEnterWriteLock_System_TimeSpan_.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim.TryEnterWriteLock(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L308">View Source</a>
+  </span>
+  <a id="OpenMetaverse_ReaderWriterLockSlim_TryEnterWriteLock_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterWriteLock*"></a>
+  <h4 id="OpenMetaverse_ReaderWriterLockSlim_TryEnterWriteLock_System_TimeSpan_" data-uid="OpenMetaverse.ReaderWriterLockSlim.TryEnterWriteLock(System.TimeSpan)">TryEnterWriteLock(TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryEnterWriteLock(TimeSpan timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_ReaderWriterLockSlim.md&amp;value=---%0Auid%3A%20OpenMetaverse.ReaderWriterLockSlim%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverseTypes/ReaderWriterLockSlim.cs/#L81" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

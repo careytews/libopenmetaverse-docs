@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.Color
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.Color
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.Color">
+  
+  <h1 id="CSJ2K_Color" data-uid="CSJ2K.Color" class="text-break">Namespace CSJ2K.Color
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.Color.ChannelDefinitionMapper.html">ChannelDefinitionMapper</a></h4>
+      <section><p>This class is responsible for the mapping between
+requested components and image channels.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Color.ColorSpace.html">ColorSpace</a></h4>
+      <section><p>This class analyzes the image to provide colorspace
+information for the decoding chain.  It does this by
+examining the box structure of the JP2 image.
+It also provides access to the parameter list information,
+which is stored as a public final field.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Color.ColorSpaceException.html">ColorSpaceException</a></h4>
+      <section><p>This exception is thrown when the content of an
+image contains an incorrect colorspace box</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Color.ColorSpaceMapper.html">ColorSpaceMapper</a></h4>
+      <section><p>This is the base class for all modules in the colorspace and icc
+profiling steps of the decoding chain.  It is responsible for the
+allocation and iniitialization of all working storage.  It provides
+several utilities which are of generic use in preparing DataBlks
+for use and provides default implementations for the getCompData
+and getInternCompData methods.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Color.ColorSpaceMapper.ComputedComponents.html">ColorSpaceMapper.ComputedComponents</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.Color.EnumeratedColorSpaceMapper.html">EnumeratedColorSpaceMapper</a></h4>
+      <section><p>This class provides Enumerated ColorSpace API for the jj2000.j2k imaging chain
+by implementing the BlkImgDataSrc interface, in particular the getCompData
+and getInternCompData methods.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Color.EsRgbColorSpaceMapper.html">EsRgbColorSpaceMapper</a></h4>
+      <section><p>This decodes maps which are defined in the e-sRGB
+colorspace into the sRGB colorspace.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Color.PalettizedColorSpaceMapper.html">PalettizedColorSpaceMapper</a></h4>
+      <section><p>This class provides decoding of images with palettized colorspaces.
+Here each sample in the input is treated as an index into a color
+palette of triplet sRGB output values.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Color.Resampler.html">Resampler</a></h4>
+      <section><p>This class resamples the components of an image so that
+all have the same number of samples.  The current implementation
+only handles the case of 2:1 upsampling.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Color.SYccColorSpaceMapper.html">SYccColorSpaceMapper</a></h4>
+      <section><p>This decodes maps which are defined in the sYCC
+colorspace into the sRGB colorspadce.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="CSJ2K.Color.ColorSpace.CSEnum.html">ColorSpace.CSEnum</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.Color.ColorSpace.MethodEnum.html">ColorSpace.MethodEnum</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MonochromeTransformTosRGB
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MonochromeTransformTosRGB
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB">
+  
+  
+  <h1 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB" class="text-break">Class MonochromeTransformTosRGB
+  </h1>
+  <div class="markdown level0 summary"><p>This class constructs a LookUpTableFP from a RestrictedICCProfile.
+The values in this table are used to calculate a second lookup table (simply a short []).<br>
+table.  When this transform is applied to an input DataBlk, an output data block is
+constructed by using the input samples as indices into the lookup table, whose values
+are used to populate the output DataBlk.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MonochromeTransformTosRGB</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.Icc.Lut.html">CSJ2K.Icc.Lut</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MonochromeTransformTosRGB</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Icc_Lut_MonochromeTransformTosRGB__ctor_CSJ2K_Icc_RestrictedICCProfile_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.Icc.Lut.MonochromeTransformTosRGB.%23ctor(CSJ2K.Icc.RestrictedICCProfile%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Icc/Lut/MonochromeTransformTosRGB.cs/#L98">View Source</a>
+  </span>
+  <a id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB__ctor_" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.#ctor*"></a>
+  <h4 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB__ctor_CSJ2K_Icc_RestrictedICCProfile_System_Int32_System_Int32_" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.#ctor(CSJ2K.Icc.RestrictedICCProfile,System.Int32,System.Int32)">MonochromeTransformTosRGB(RestrictedICCProfile, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Construct the lut from the RestrictedICCProfile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MonochromeTransformTosRGB(RestrictedICCProfile ricc, int dwInputMaxValue, int dwInputShiftValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.Icc.RestrictedICCProfile.html">RestrictedICCProfile</a></td>
+        <td><span class="parametername">ricc</span></td>
+        <td><p>input RestrictedICCProfile</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dwInputMaxValue</span></td>
+        <td><p>size of the output lut.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dwInputShiftValue</span></td>
+        <td><p>value used to shift samples to positive</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGB8ReduceAfterExp.md&amp;value=---%0Auid%3A%20CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGB8ReduceAfterExp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Icc/Lut/MonochromeTransformTosRGB.cs/#L53">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGB8ReduceAfterExp" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGB8ReduceAfterExp">ksRGB8ReduceAfterExp</h4>
+  <div class="markdown level1 summary"><p>Transform parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double ksRGB8ReduceAfterExp = 14.025</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGB8ScaleAfterExp.md&amp;value=---%0Auid%3A%20CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGB8ScaleAfterExp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Icc/Lut/MonochromeTransformTosRGB.cs/#L51">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGB8ScaleAfterExp" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGB8ScaleAfterExp">ksRGB8ScaleAfterExp</h4>
+  <div class="markdown level1 summary"><p>Transform parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double ksRGB8ScaleAfterExp = 269.025</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGB8ShadowSlope.md&amp;value=---%0Auid%3A%20CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGB8ShadowSlope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Icc/Lut/MonochromeTransformTosRGB.cs/#L47">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGB8ShadowSlope" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGB8ShadowSlope">ksRGB8ShadowSlope</h4>
+  <div class="markdown level1 summary"><p>Transform parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly double ksRGB8ShadowSlope</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGBExponent.md&amp;value=---%0Auid%3A%20CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGBExponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Icc/Lut/MonochromeTransformTosRGB.cs/#L49">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGBExponent" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGBExponent">ksRGBExponent</h4>
+  <div class="markdown level1 summary"><p>Transform parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double ksRGBExponent = 0.41666666666666669</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGBShadowCutoff.md&amp;value=---%0Auid%3A%20CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGBShadowCutoff%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Icc/Lut/MonochromeTransformTosRGB.cs/#L42">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGBShadowCutoff" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGBShadowCutoff">ksRGBShadowCutoff</h4>
+  <div class="markdown level1 summary"><p>Transform parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double ksRGBShadowCutoff = 0.0031308</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGBShadowSlope.md&amp;value=---%0Auid%3A%20CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGBShadowSlope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Icc/Lut/MonochromeTransformTosRGB.cs/#L44">View Source</a>
+  </span>
+  <h4 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ksRGBShadowSlope" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ksRGBShadowSlope">ksRGBShadowSlope</h4>
+  <div class="markdown level1 summary"><p>Transform parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double ksRGBShadowSlope = 12.92</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Icc_Lut_MonochromeTransformTosRGB_apply_CSJ2K_j2k_image_DataBlkFloat_CSJ2K_j2k_image_DataBlkFloat_.md&amp;value=---%0Auid%3A%20CSJ2K.Icc.Lut.MonochromeTransformTosRGB.apply(CSJ2K.j2k.image.DataBlkFloat%2CCSJ2K.j2k.image.DataBlkFloat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Icc/Lut/MonochromeTransformTosRGB.cs/#L175">View Source</a>
+  </span>
+  <a id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_apply_" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.apply*"></a>
+  <h4 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_apply_CSJ2K_j2k_image_DataBlkFloat_CSJ2K_j2k_image_DataBlkFloat_" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.apply(CSJ2K.j2k.image.DataBlkFloat,CSJ2K.j2k.image.DataBlkFloat)">apply(DataBlkFloat, DataBlkFloat)</h4>
+  <div class="markdown level1 summary"><p>Populate the output block by looking up the values in the lut, using the input
+as lut indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void apply(DataBlkFloat inb, DataBlkFloat outb)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlkFloat.html">DataBlkFloat</a></td>
+        <td><span class="parametername">inb</span></td>
+        <td><p>input samples</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlkFloat.html">DataBlkFloat</a></td>
+        <td><span class="parametername">outb</span></td>
+        <td><p>output samples.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.Icc.Lut.MonochromeTransformException.html">MonochromeTransformException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Icc_Lut_MonochromeTransformTosRGB_apply_CSJ2K_j2k_image_DataBlkInt_CSJ2K_j2k_image_DataBlkInt_.md&amp;value=---%0Auid%3A%20CSJ2K.Icc.Lut.MonochromeTransformTosRGB.apply(CSJ2K.j2k.image.DataBlkInt%2CCSJ2K.j2k.image.DataBlkInt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Icc/Lut/MonochromeTransformTosRGB.cs/#L133">View Source</a>
+  </span>
+  <a id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_apply_" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.apply*"></a>
+  <h4 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_apply_CSJ2K_j2k_image_DataBlkInt_CSJ2K_j2k_image_DataBlkInt_" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.apply(CSJ2K.j2k.image.DataBlkInt,CSJ2K.j2k.image.DataBlkInt)">apply(DataBlkInt, DataBlkInt)</h4>
+  <div class="markdown level1 summary"><p>Populate the output block by looking up the values in the lut, using the input
+as lut indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void apply(DataBlkInt inb, DataBlkInt outb)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlkInt.html">DataBlkInt</a></td>
+        <td><span class="parametername">inb</span></td>
+        <td><p>input samples</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.DataBlkInt.html">DataBlkInt</a></td>
+        <td><span class="parametername">outb</span></td>
+        <td><p>output samples.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.Icc.Lut.MonochromeTransformException.html">MonochromeTransformException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ToString.md&amp;value=---%0Auid%3A%20CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Icc/Lut/MonochromeTransformTosRGB.cs/#L63">View Source</a>
+  </span>
+  <a id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ToString_" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ToString*"></a>
+  <h4 id="CSJ2K_Icc_Lut_MonochromeTransformTosRGB_ToString" data-uid="CSJ2K.Icc.Lut.MonochromeTransformTosRGB.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>String representation of class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>suitable representation for class</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_Icc_Lut_MonochromeTransformTosRGB.md&amp;value=---%0Auid%3A%20CSJ2K.Icc.Lut.MonochromeTransformTosRGB%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/Icc/Lut/MonochromeTransformTosRGB.cs/#L35" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

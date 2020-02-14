@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface BinaryDataInput
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface BinaryDataInput
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.io.BinaryDataInput">
+  
+  
+  <h1 id="CSJ2K_j2k_io_BinaryDataInput" data-uid="CSJ2K.j2k.io.BinaryDataInput" class="text-break">Interface BinaryDataInput
+  </h1>
+  <div class="markdown level0 summary"><p>This interface defines the input of binary data from streams and/or files.</p>
+<p>Byte level input (i.e., for byte, int, long, float, etc.) should always
+be byte aligned. For example, a request to read an <tt>int</tt> should
+always realign the input at the byte level.</p>
+<p>The implementation of this interface should clearly define if multi-byte
+input data is read in little- or big-endian byte ordering (least
+significant byte first or most significant byte first, respectively).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.io.html">CSJ2K.j2k.io</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_io_BinaryDataInput_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface BinaryDataInput</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput_ByteOrdering.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput.ByteOrdering%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L76">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BinaryDataInput_ByteOrdering_" data-uid="CSJ2K.j2k.io.BinaryDataInput.ByteOrdering*"></a>
+  <h4 id="CSJ2K_j2k_io_BinaryDataInput_ByteOrdering" data-uid="CSJ2K.j2k.io.BinaryDataInput.ByteOrdering">ByteOrdering</h4>
+  <div class="markdown level1 summary"><p>Returns the endianess (i.e., byte ordering) of the implementing
+class. Note that an implementing class may implement only one type of
+endianness or both, which would be decided at creatiuon time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ByteOrdering { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Either <tt>EndianType.BIG_ENDIAN</tt> or
+<tt>EndianType.LITTLE_ENDIAN</tt></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_io_BinaryDataInput_ByteOrdering_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.io.EndianType.html">EndianType</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput_readByte.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput.readByte%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L96">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BinaryDataInput_readByte_" data-uid="CSJ2K.j2k.io.BinaryDataInput.readByte*"></a>
+  <h4 id="CSJ2K_j2k_io_BinaryDataInput_readByte" data-uid="CSJ2K.j2k.io.BinaryDataInput.readByte">readByte()</h4>
+  <div class="markdown level1 summary"><p>Should read a signed byte (i.e., 8 bit) from the input.  reading, the
+input should be realigned at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte readByte()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><p>The next byte-aligned signed byte (8 bit) from the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput_readDouble.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput.readDouble%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L235">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BinaryDataInput_readDouble_" data-uid="CSJ2K.j2k.io.BinaryDataInput.readDouble*"></a>
+  <h4 id="CSJ2K_j2k_io_BinaryDataInput_readDouble" data-uid="CSJ2K.j2k.io.BinaryDataInput.readDouble">readDouble()</h4>
+  <div class="markdown level1 summary"><p>Should read an IEEE double precision (i.e., 64 bit) floating-point
+number from the input. Prior to reading, the input should be realigned
+at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double readDouble()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The next byte-aligned IEEE double (64 bit) from the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput_readFloat.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput.readFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L218">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BinaryDataInput_readFloat_" data-uid="CSJ2K.j2k.io.BinaryDataInput.readFloat*"></a>
+  <h4 id="CSJ2K_j2k_io_BinaryDataInput_readFloat" data-uid="CSJ2K.j2k.io.BinaryDataInput.readFloat">readFloat()</h4>
+  <div class="markdown level1 summary"><p>Should read an IEEE single precision (i.e., 32 bit) floating-point
+number from the input. Prior to reading, the input should be realigned
+at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float readFloat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The next byte-aligned IEEE float (32 bit) from the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput_readInt.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput.readInt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L166">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BinaryDataInput_readInt_" data-uid="CSJ2K.j2k.io.BinaryDataInput.readInt*"></a>
+  <h4 id="CSJ2K_j2k_io_BinaryDataInput_readInt" data-uid="CSJ2K.j2k.io.BinaryDataInput.readInt">readInt()</h4>
+  <div class="markdown level1 summary"><p>Should read a signed int (i.e., 32 bit) from the input. Prior to
+reading, the input should be realigned at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int readInt()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The next byte-aligned signed int (32 bit) from the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput_readLong.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput.readLong%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L201">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BinaryDataInput_readLong_" data-uid="CSJ2K.j2k.io.BinaryDataInput.readLong*"></a>
+  <h4 id="CSJ2K_j2k_io_BinaryDataInput_readLong" data-uid="CSJ2K.j2k.io.BinaryDataInput.readLong">readLong()</h4>
+  <div class="markdown level1 summary"><p>Should read a signed long (i.e., 64 bit) from the input. Prior to
+reading, the input should be realigned at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long readLong()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The next byte-aligned signed long (64 bit) from the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput_readShort.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput.readShort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L131">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BinaryDataInput_readShort_" data-uid="CSJ2K.j2k.io.BinaryDataInput.readShort*"></a>
+  <h4 id="CSJ2K_j2k_io_BinaryDataInput_readShort" data-uid="CSJ2K.j2k.io.BinaryDataInput.readShort">readShort()</h4>
+  <div class="markdown level1 summary"><p>Should read a signed short (i.e., 16 bit) from the input. Prior to
+reading, the input should be realigned at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">short readShort()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><p>The next byte-aligned signed short (16 bit) from the input.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput_readUnsignedByte.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput.readUnsignedByte%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L115">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BinaryDataInput_readUnsignedByte_" data-uid="CSJ2K.j2k.io.BinaryDataInput.readUnsignedByte*"></a>
+  <h4 id="CSJ2K_j2k_io_BinaryDataInput_readUnsignedByte" data-uid="CSJ2K.j2k.io.BinaryDataInput.readUnsignedByte">readUnsignedByte()</h4>
+  <div class="markdown level1 summary"><p>Should read an unsigned byte (i.e., 8 bit) from the input. It is
+returned as an <tt>int</tt> since Java does not have an unsigned byte
+type. Prior to reading, the input should be realigned at the byte
+level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte readUnsignedByte()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><p>The next byte-aligned unsigned byte (8 bit) from the input, as
+an <tt>int</tt>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput_readUnsignedInt.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput.readUnsignedInt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L185">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BinaryDataInput_readUnsignedInt_" data-uid="CSJ2K.j2k.io.BinaryDataInput.readUnsignedInt*"></a>
+  <h4 id="CSJ2K_j2k_io_BinaryDataInput_readUnsignedInt" data-uid="CSJ2K.j2k.io.BinaryDataInput.readUnsignedInt">readUnsignedInt()</h4>
+  <div class="markdown level1 summary"><p>Should read an unsigned int (i.e., 32 bit) from the input. It is
+returned as a <tt>long</tt> since Java does not have an unsigned short
+type. Prior to reading, the input should be realigned at the byte
+level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long readUnsignedInt()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The next byte-aligned unsigned int (32 bit) from the input, as
+a <tt>long</tt>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput_readUnsignedShort.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput.readUnsignedShort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L150">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BinaryDataInput_readUnsignedShort_" data-uid="CSJ2K.j2k.io.BinaryDataInput.readUnsignedShort*"></a>
+  <h4 id="CSJ2K_j2k_io_BinaryDataInput_readUnsignedShort" data-uid="CSJ2K.j2k.io.BinaryDataInput.readUnsignedShort">readUnsignedShort()</h4>
+  <div class="markdown level1 summary"><p>Should read an unsigned short (i.e., 16 bit) from the input. It is
+returned as an <tt>int</tt> since Java does not have an unsigned short
+type. Prior to reading, the input should be realigned at the byte
+level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int readUnsignedShort()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The next byte-aligned unsigned short (16 bit) from the input,
+as an <tt>int</tt>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput_skipBytes_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput.skipBytes(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L251">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_io_BinaryDataInput_skipBytes_" data-uid="CSJ2K.j2k.io.BinaryDataInput.skipBytes*"></a>
+  <h4 id="CSJ2K_j2k_io_BinaryDataInput_skipBytes_System_Int32_" data-uid="CSJ2K.j2k.io.BinaryDataInput.skipBytes(System.Int32)">skipBytes(Int32)</h4>
+  <div class="markdown level1 summary"><p>Skips <tt>n</tt> bytes from the input. Prior to skipping, the input
+should be realigned at the byte level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int skipBytes(int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The number of bytes to skip</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.io.EndianType.html">EndianType</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_io_BinaryDataInput.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.io.BinaryDataInput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/io/BinaryDataInput.cs/#L62" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

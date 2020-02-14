@@ -1,0 +1,1480 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ModuleSpec
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ModuleSpec
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.ModuleSpec">
+  
+  
+  <h1 id="CSJ2K_j2k_ModuleSpec" data-uid="CSJ2K.j2k.ModuleSpec" class="text-break">Class ModuleSpec
+  </h1>
+  <div class="markdown level0 summary"><p>This generic class is used to handle values to be used by a module for each
+tile and component.  It uses attribute to determine which value to use. It
+should be extended by each module needing this feature.</p>
+<p>This class might be used for values that are only tile specific or
+component specific but not both.</p>
+<p>The attributes to use are defined by a hierarchy. The hierarchy is:
+<ul>
+<li> Tile and component specific attribute</li>
+<li> Tile specific default attribute</li>
+<li> Component main default attribute</li>
+<li> Main default attribute</li>
+</ul></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ModuleSpec</span></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.entropy.CBlkSizeSpec.html">CBlkSizeSpec</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.entropy.PrecinctSizeSpec.html">PrecinctSizeSpec</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.entropy.ProgressionSpec.html">ProgressionSpec</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.image.CompTransfSpec.html">CompTransfSpec</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.IntegerSpec.html">IntegerSpec</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.quantization.GuardBitsSpec.html">GuardBitsSpec</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.quantization.QuantStepSizeSpec.html">QuantStepSizeSpec</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.quantization.QuantTypeSpec.html">QuantTypeSpec</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.roi.MaxShiftSpec.html">MaxShiftSpec</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.wavelet.analysis.AnWTFilterSpec.html">AnWTFilterSpec</a></div>
+      <div class="level2"><a class="xref" href="CSJ2K.j2k.wavelet.synthesis.SynWTFilterSpec.html">SynWTFilterSpec</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.html">CSJ2K.j2k</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_ModuleSpec_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ModuleSpec : ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec__ctor_System_Int32_System_Int32_System_Byte_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L271">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec__ctor_" data-uid="CSJ2K.j2k.ModuleSpec.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec__ctor_System_Int32_System_Int32_System_Byte_" data-uid="CSJ2K.j2k.ModuleSpec.#ctor(System.Int32,System.Int32,System.Byte)">ModuleSpec(Int32, Int32, Byte)</h4>
+  <div class="markdown level1 summary"><p>Constructs a 'ModuleSpec' object, initializing all the components and
+tiles to the 'SPEC_DEF' spec val type, for the specified number of
+components and tiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleSpec(int nt, int nc, byte type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nt</span></td>
+        <td><p>The number of tiles</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nc</span></td>
+        <td><p>The number of components</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>the type of the specification module i.e. tile specific,
+component specific or both.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_compDef.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.compDef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L121">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_compDef" data-uid="CSJ2K.j2k.ModuleSpec.compDef">compDef</h4>
+  <div class="markdown level1 summary"><p>The default value for each component. Null if no component
+specific value is defined</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object[] compDef</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_def.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.def%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L116">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_def" data-uid="CSJ2K.j2k.ModuleSpec.def">def</h4>
+  <div class="markdown level1 summary"><p>Default value for each tile-component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object def</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_nComp.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.nComp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L108">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_nComp" data-uid="CSJ2K.j2k.ModuleSpec.nComp">nComp</h4>
+  <div class="markdown level1 summary"><p>The number of components</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int nComp</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_nTiles.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.nTiles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L105">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_nTiles" data-uid="CSJ2K.j2k.ModuleSpec.nTiles">nTiles</h4>
+  <div class="markdown level1 summary"><p>The number of tiles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int nTiles</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_SPEC_COMP_DEF.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.SPEC_COMP_DEF%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L93">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_SPEC_COMP_DEF" data-uid="CSJ2K.j2k.ModuleSpec.SPEC_COMP_DEF">SPEC_COMP_DEF</h4>
+  <div class="markdown level1 summary"><p>The identifier for &quot;component default&quot; specification</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte SPEC_COMP_DEF = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_SPEC_DEF.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.SPEC_DEF%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L90">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_SPEC_DEF" data-uid="CSJ2K.j2k.ModuleSpec.SPEC_DEF">SPEC_DEF</h4>
+  <div class="markdown level1 summary"><p>The identifier for default specification</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte SPEC_DEF = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_SPEC_TILE_COMP.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.SPEC_TILE_COMP%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L99">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_SPEC_TILE_COMP" data-uid="CSJ2K.j2k.ModuleSpec.SPEC_TILE_COMP">SPEC_TILE_COMP</h4>
+  <div class="markdown level1 summary"><p>The identifier for a &quot;tile-component&quot; specification</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte SPEC_TILE_COMP = 3</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_SPEC_TILE_DEF.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.SPEC_TILE_DEF%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L96">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_SPEC_TILE_DEF" data-uid="CSJ2K.j2k.ModuleSpec.SPEC_TILE_DEF">SPEC_TILE_DEF</h4>
+  <div class="markdown level1 summary"><p>The identifier for &quot;tile default&quot; specification</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte SPEC_TILE_DEF = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_SPEC_TYPE_COMP.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.SPEC_TYPE_COMP%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L79">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_SPEC_TYPE_COMP" data-uid="CSJ2K.j2k.ModuleSpec.SPEC_TYPE_COMP">SPEC_TYPE_COMP</h4>
+  <div class="markdown level1 summary"><p>The identifier for a specification module that applies only to
+components</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte SPEC_TYPE_COMP = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_SPEC_TYPE_TILE.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.SPEC_TYPE_TILE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L82">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_SPEC_TYPE_TILE" data-uid="CSJ2K.j2k.ModuleSpec.SPEC_TYPE_TILE">SPEC_TYPE_TILE</h4>
+  <div class="markdown level1 summary"><p>The identifier for a specification module that applies only to tiles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte SPEC_TYPE_TILE = 1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_SPEC_TYPE_TILE_COMP.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.SPEC_TYPE_TILE_COMP%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L87">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_SPEC_TYPE_TILE_COMP" data-uid="CSJ2K.j2k.ModuleSpec.SPEC_TYPE_TILE_COMP">SPEC_TYPE_TILE_COMP</h4>
+  <div class="markdown level1 summary"><p>The identifier for a specification module that applies both to tiles
+and components</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const byte SPEC_TYPE_TILE_COMP = 2</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_specType.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.specType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L102">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_specType" data-uid="CSJ2K.j2k.ModuleSpec.specType">specType</h4>
+  <div class="markdown level1 summary"><p>The type of the specification module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int specType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_specValType.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.specValType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L113">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_specValType" data-uid="CSJ2K.j2k.ModuleSpec.specValType">specValType</h4>
+  <div class="markdown level1 summary"><p>The spec type for each tile-component. The first index is the tile
+index, the second is the component index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected byte[][] specValType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[][]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_tileCompVal.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.tileCompVal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L132">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_tileCompVal" data-uid="CSJ2K.j2k.ModuleSpec.tileCompVal">tileCompVal</h4>
+  <div class="markdown level1 summary"><p>The specific value for each tile-component. Value of tile 16 component
+3 is accessible through the hash value &quot;t16c3&quot;. Null if no
+tile-component specific value is defined</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Hashtable tileCompVal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Hashtable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_tileDef.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.tileDef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L126">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_ModuleSpec_tileDef" data-uid="CSJ2K.j2k.ModuleSpec.tileDef">tileDef</h4>
+  <div class="markdown level1 summary"><p>The default value for each tile. Null if no tile specific value is
+defined</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object[] tileDef</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_Copy.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.Copy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L67">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_Copy_" data-uid="CSJ2K.j2k.ModuleSpec.Copy*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_Copy" data-uid="CSJ2K.j2k.ModuleSpec.Copy">Copy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ModuleSpec Copy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.ModuleSpec.html">ModuleSpec</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_Clone.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L134">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_Clone_" data-uid="CSJ2K.j2k.ModuleSpec.Clone*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_Clone" data-uid="CSJ2K.j2k.ModuleSpec.Clone">Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_getCompDef_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.getCompDef(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L359">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_getCompDef_" data-uid="CSJ2K.j2k.ModuleSpec.getCompDef*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_getCompDef_System_Int32_" data-uid="CSJ2K.j2k.ModuleSpec.getCompDef(System.Int32)">getCompDef(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets default value of the specified component. If no specification have
+been entered for this component, returns default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object getCompDef(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Component index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The default value for this component (Must be casted before
+use)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_ModuleSpec_getCompDef_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.ModuleSpec.html#CSJ2K_j2k_ModuleSpec_setCompDef_System_Int32_System_Object_">setCompDef(Int32, Object)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_getDefault.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.getDefault%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L311">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_getDefault_" data-uid="CSJ2K.j2k.ModuleSpec.getDefault*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_getDefault" data-uid="CSJ2K.j2k.ModuleSpec.getDefault">getDefault()</h4>
+  <div class="markdown level1 summary"><p>Gets default value for this module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object getDefault()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The default value (Must be casted before use)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_getSpec_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.getSpec(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L511">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_getSpec_" data-uid="CSJ2K.j2k.ModuleSpec.getSpec*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_getSpec_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.ModuleSpec.getSpec(System.Int32,System.Int32)">getSpec(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets value of specified tile-component without knowing if a specific
+tile-component value has been previously entered. It first check if a
+tile-component specific value has been entered, then if a tile specific
+value exist, then if a component specific value exist. If not the
+default value is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object getSpec(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Component index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Value for this tile component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_getSpecValType_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.getSpecValType(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L543">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_getSpecValType_" data-uid="CSJ2K.j2k.ModuleSpec.getSpecValType*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_getSpecValType_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.ModuleSpec.getSpecValType(System.Int32,System.Int32)">getSpecValType(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Return the spec type of the given tile-component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte getSpecValType(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Component index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_getTileCompVal_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.getTileCompVal(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L486">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_getTileCompVal_" data-uid="CSJ2K.j2k.ModuleSpec.getTileCompVal*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_getTileCompVal_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.ModuleSpec.getTileCompVal(System.Int32,System.Int32)">getTileCompVal(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets value of specified tile-component. This method calls getSpec but
+has a public access.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object getTileCompVal(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Component index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The value of this tile-component (Must be casted before use)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_ModuleSpec_getTileCompVal_System_Int32_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.ModuleSpec.html#CSJ2K_j2k_ModuleSpec_setTileCompVal_System_Int32_System_Int32_System_Object_">setTileCompVal(Int32, Int32, Object)</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.ModuleSpec.html#CSJ2K_j2k_ModuleSpec_getSpec_System_Int32_System_Int32_">getSpec(Int32, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_getTileDef_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.getTileDef(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L417">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_getTileDef_" data-uid="CSJ2K.j2k.ModuleSpec.getTileDef*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_getTileDef_System_Int32_" data-uid="CSJ2K.j2k.ModuleSpec.getTileDef(System.Int32)">getTileDef(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets default value of the specified tile. If no specification has been
+entered, it returns the default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object getTileDef(int t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The default value for this tile (Must be casted before use)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_ModuleSpec_getTileDef_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.ModuleSpec.html#CSJ2K_j2k_ModuleSpec_setTileDef_System_Int32_System_Object_">setTileDef(Int32, Object)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_isCompSpecified_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.isCompSpecified(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L558">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_isCompSpecified_" data-uid="CSJ2K.j2k.ModuleSpec.isCompSpecified*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_isCompSpecified_System_Int32_" data-uid="CSJ2K.j2k.ModuleSpec.isCompSpecified(System.Int32)">isCompSpecified(Int32)</h4>
+  <div class="markdown level1 summary"><p>Whether or not specifications have been entered for the given
+component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isCompSpecified(int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Index of the component</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if component specification has been defined</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_isTileCompSpecified_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.isTileCompSpecified(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L603">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_isTileCompSpecified_" data-uid="CSJ2K.j2k.ModuleSpec.isTileCompSpecified*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_isTileCompSpecified_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.ModuleSpec.isTileCompSpecified(System.Int32,System.Int32)">isTileCompSpecified(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Whether or not a tile-component specification has been defined</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isTileCompSpecified(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Component index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if a tile-component specification has been defined.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_isTileSpecified_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.isTileSpecified(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L579">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_isTileSpecified_" data-uid="CSJ2K.j2k.ModuleSpec.isTileSpecified*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_isTileSpecified_System_Int32_" data-uid="CSJ2K.j2k.ModuleSpec.isTileSpecified(System.Int32)">isTileSpecified(Int32)</h4>
+  <div class="markdown level1 summary"><p>Whether or not specifications have been entered for the given tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool isTileSpecified(int t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Index of the tile</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if tile specification has been entered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_parseIdx_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.parseIdx(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L639">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_parseIdx_" data-uid="CSJ2K.j2k.ModuleSpec.parseIdx*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_parseIdx_System_String_System_Int32_" data-uid="CSJ2K.j2k.ModuleSpec.parseIdx(System.String,System.Int32)">parseIdx(String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool[] parseIdx(string word, int maxIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">word</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxIdx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_rotate90_CSJ2K_j2k_image_Coord_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.rotate90(CSJ2K.j2k.image.Coord)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L194">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_rotate90_" data-uid="CSJ2K.j2k.ModuleSpec.rotate90*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_rotate90_CSJ2K_j2k_image_Coord_" data-uid="CSJ2K.j2k.ModuleSpec.rotate90(CSJ2K.j2k.image.Coord)">rotate90(Coord)</h4>
+  <div class="markdown level1 summary"><p>Rotate the ModuleSpec instance by 90 degrees (this modifies only tile
+and tile-component specifications).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void rotate90(Coord anT)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Coord.html">Coord</a></td>
+        <td><span class="parametername">anT</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_setCompDef_System_Int32_System_Object_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.setCompDef(System.Int32%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L323">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_setCompDef_" data-uid="CSJ2K.j2k.ModuleSpec.setCompDef*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_setCompDef_System_Int32_System_Object_" data-uid="CSJ2K.j2k.ModuleSpec.setCompDef(System.Int32,System.Object)">setCompDef(Int32, Object)</h4>
+  <div class="markdown level1 summary"><p>Sets default value for specified component and specValType tag if
+allowed by its priority.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void setCompDef(int c, object value_Renamed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Component index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value_Renamed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_setDefault_System_Object_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.setDefault(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L300">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_setDefault_" data-uid="CSJ2K.j2k.ModuleSpec.setDefault*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_setDefault_System_Object_" data-uid="CSJ2K.j2k.ModuleSpec.setDefault(System.Object)">setDefault(Object)</h4>
+  <div class="markdown level1 summary"><p>Sets default value for this module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void setDefault(object value_Renamed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value_Renamed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_setTileCompVal_System_Int32_System_Int32_System_Object_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.setTileCompVal(System.Int32%2CSystem.Int32%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L442">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_setTileCompVal_" data-uid="CSJ2K.j2k.ModuleSpec.setTileCompVal*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_setTileCompVal_System_Int32_System_Int32_System_Object_" data-uid="CSJ2K.j2k.ModuleSpec.setTileCompVal(System.Int32,System.Int32,System.Object)">setTileCompVal(Int32, Int32, Object)</h4>
+  <div class="markdown level1 summary"><p>Sets value for specified tile-component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void setTileCompVal(int t, int c, object value_Renamed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tie index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>Component index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value_Renamed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec_setTileDef_System_Int32_System_Object_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec.setTileDef(System.Int32%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L382">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_ModuleSpec_setTileDef_" data-uid="CSJ2K.j2k.ModuleSpec.setTileDef*"></a>
+  <h4 id="CSJ2K_j2k_ModuleSpec_setTileDef_System_Int32_System_Object_" data-uid="CSJ2K.j2k.ModuleSpec.setTileDef(System.Int32,System.Object)">setTileDef(Int32, Object)</h4>
+  <div class="markdown level1 summary"><p>Sets default value for specified tile and specValType tag if allowed by
+its priority.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void setTileDef(int t, object value_Renamed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value_Renamed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ICloneable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_ModuleSpec.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.ModuleSpec%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/ModuleSpec.cs/#L65" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

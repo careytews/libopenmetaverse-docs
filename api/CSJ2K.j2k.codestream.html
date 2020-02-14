@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.j2k.codestream
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.j2k.codestream
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.codestream">
+  
+  <h1 id="CSJ2K_j2k_codestream" data-uid="CSJ2K.j2k.codestream" class="text-break">Namespace CSJ2K.j2k.codestream
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.CBlkCoordInfo.html">CBlkCoordInfo</a></h4>
+      <section><p>This class is used to store the coordinates of code-blocks.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.CoordInfo.html">CoordInfo</a></h4>
+      <section><p>This class is used to store the coordinates of objects such as code-blocks
+or precincts. As this is an abstract class, it cannot be used directly but
+derived classes have been created for code-blocks and packets
+(CBlkCoordInfo and PrecCoordInfo).</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.CorruptedCodestreamException.html">CorruptedCodestreamException</a></h4>
+      <section><p>This exception is thrown whenever an illegal value is read from a bit
+stream. The cause can be either a corrupted bit stream, or a a bit stream
+which is illegal.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.html">HeaderInfo</a></h4>
+      <section><p>Classe that holds information found in the marker segments of the main and
+tile-part headers. There is one inner-class per marker segment type found
+in these headers.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.COC.html">HeaderInfo.COC</a></h4>
+      <section><p>Internal class holding information found in the COC marker segments</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.COD.html">HeaderInfo.COD</a></h4>
+      <section><p>Internal class holding information found in the COD marker segments</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.COM.html">HeaderInfo.COM</a></h4>
+      <section><p>Internal class holding information found in the COM marker segments</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.CRG.html">HeaderInfo.CRG</a></h4>
+      <section><p>Internal class holding information found in the CRG marker segment</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.POC.html">HeaderInfo.POC</a></h4>
+      <section><p>Internal class holding information found in the POC marker segments</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.QCC.html">HeaderInfo.QCC</a></h4>
+      <section><p>Internal class holding information found in the QCC marker segments</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.QCD.html">HeaderInfo.QCD</a></h4>
+      <section><p>Internal class holding information found in the QCD marker segments</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.RGN.html">HeaderInfo.RGN</a></h4>
+      <section><p>Internal class holding information found in the RGN marker segments</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.SIZ.html">HeaderInfo.SIZ</a></h4>
+      <section><p>Internal class holding information found in the SIZ marker segment</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.HeaderInfo.SOT.html">HeaderInfo.SOT</a></h4>
+      <section><p>Internal class holding information found in the SOt marker segments</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.PrecCoordInfo.html">PrecCoordInfo</a></h4>
+      <section><p>This class is used to store the coordinates of precincts.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.PrecInfo.html">PrecInfo</a></h4>
+      <section><p>Class that holds precinct coordinates and references to contained
+code-blocks in each subband.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.Markers.html">Markers</a></h4>
+      <section><p>This interface defines the values of the different markers in the JPEG 2000
+codestream. There are 16 bit values, always appearing in big-endian (most
+significant byte first) and byte-aligned in the codestream. This interface
+also defines some other constants such as bit-masks and bit-shifts.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.codestream.ProgressionType.html">ProgressionType</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

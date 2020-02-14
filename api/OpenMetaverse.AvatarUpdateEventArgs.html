@@ -1,0 +1,384 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AvatarUpdateEventArgs
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AvatarUpdateEventArgs
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.AvatarUpdateEventArgs">
+  
+  
+  <h1 id="OpenMetaverse_AvatarUpdateEventArgs" data-uid="OpenMetaverse.AvatarUpdateEventArgs" class="text-break">Class AvatarUpdateEventArgs
+  </h1>
+  <div class="markdown level0 summary"><p>Provides data for the <a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_AvatarUpdate">AvatarUpdate</a> event</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.EventArgs</span></div>
+    <div class="level2"><span class="xref">AvatarUpdateEventArgs</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.EventArgs.Empty</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_AvatarUpdateEventArgs_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AvatarUpdateEventArgs : EventArgs</code></pre>
+  </div>
+  <h5 id="OpenMetaverse_AvatarUpdateEventArgs_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_AvatarUpdate">AvatarUpdate</a> event occurs when the simulator sends
+     an <a class="xref" href="OpenMetaverse.Packets.ObjectUpdatePacket.html">ObjectUpdatePacket</a> containing Avatar data</p>    
+<p>Note 1: The <a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_AvatarUpdate">AvatarUpdate</a> event will not be raised when the object is an Avatar</p>
+<p>Note 2: It is possible for the <a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_AvatarUpdate">AvatarUpdate</a> to be 
+raised twice for the same avatar if for example the avatar moved to a new simulator, then returned to the current simulator</p>
+</div>
+  <h5 id="OpenMetaverse_AvatarUpdateEventArgs_examples"><strong>Examples</strong></h5>
+  <p>The following code example uses the <a class="xref" href="OpenMetaverse.AvatarUpdateEventArgs.html#OpenMetaverse_AvatarUpdateEventArgs_Avatar">Avatar</a> property to make a request for the top picks
+using the <a class="xref" href="OpenMetaverse.AvatarManager.html#OpenMetaverse_AvatarManager_RequestAvatarPicks_OpenMetaverse_UUID_">RequestAvatarPicks(UUID)</a> method in the <a class="xref" href="OpenMetaverse.AvatarManager.html">AvatarManager</a> class to display the names
+of our own agents picks listings on the <span class="xref">System.Console</span> window.</p>
+<pre><code>    // subscribe to the AvatarUpdate event to get our information
+    Client.Objects.AvatarUpdate += Objects_AvatarUpdate;
+    Client.Avatars.AvatarPicksReply += Avatars_AvatarPicksReply;
+
+    private void Objects_AvatarUpdate(object sender, AvatarUpdateEventArgs e)
+    {
+        // we only want our own data
+        if (e.Avatar.LocalID == Client.Self.LocalID)
+        {    
+            // Unsubscribe from the avatar update event to prevent a loop
+            // where we continually request the picks every time we get an update for ourselves
+            Client.Objects.AvatarUpdate -= Objects_AvatarUpdate;
+            // make the top picks request through AvatarManager
+            Client.Avatars.RequestAvatarPicks(e.Avatar.ID);
+        }
+    }
+
+    private void Avatars_AvatarPicksReply(object sender, AvatarPicksReplyEventArgs e)
+    {
+        // we&apos;ll unsubscribe from the AvatarPicksReply event since we now have the data 
+        // we were looking for
+        Client.Avatars.AvatarPicksReply -= Avatars_AvatarPicksReply;
+        // loop through the dictionary and extract the names of the top picks from our profile
+        foreach (var pickName in e.Picks.Values)
+        {
+            Console.WriteLine(pickName);
+        }
+    }</code></pre>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AvatarUpdateEventArgs__ctor_OpenMetaverse_Simulator_OpenMetaverse_Avatar_System_UInt16_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenMetaverse.AvatarUpdateEventArgs.%23ctor(OpenMetaverse.Simulator%2COpenMetaverse.Avatar%2CSystem.UInt16%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ObjectManager.cs/#L3472">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AvatarUpdateEventArgs__ctor_" data-uid="OpenMetaverse.AvatarUpdateEventArgs.#ctor*"></a>
+  <h4 id="OpenMetaverse_AvatarUpdateEventArgs__ctor_OpenMetaverse_Simulator_OpenMetaverse_Avatar_System_UInt16_System_Boolean_" data-uid="OpenMetaverse.AvatarUpdateEventArgs.#ctor(OpenMetaverse.Simulator,OpenMetaverse.Avatar,System.UInt16,System.Boolean)">AvatarUpdateEventArgs(Simulator, Avatar, UInt16, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Construct a new instance of the AvatarUpdateEventArgs class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AvatarUpdateEventArgs(Simulator simulator, Avatar avatar, ushort timeDilation, bool isNew)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td><span class="parametername">simulator</span></td>
+        <td><p>The simulator the packet originated from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Avatar.html">Avatar</a></td>
+        <td><span class="parametername">avatar</span></td>
+        <td><p>The <a class="xref" href="OpenMetaverse.AvatarUpdateEventArgs.html#OpenMetaverse_AvatarUpdateEventArgs_Avatar">Avatar</a> data</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">timeDilation</span></td>
+        <td><p>The simulator time dilation</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isNew</span></td>
+        <td><p>The avatar was not in the dictionary before this update</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AvatarUpdateEventArgs_Avatar.md&amp;value=---%0Auid%3A%20OpenMetaverse.AvatarUpdateEventArgs.Avatar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ObjectManager.cs/#L3459">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AvatarUpdateEventArgs_Avatar_" data-uid="OpenMetaverse.AvatarUpdateEventArgs.Avatar*"></a>
+  <h4 id="OpenMetaverse_AvatarUpdateEventArgs_Avatar" data-uid="OpenMetaverse.AvatarUpdateEventArgs.Avatar">Avatar</h4>
+  <div class="markdown level1 summary"><p>Get the <a class="xref" href="OpenMetaverse.AvatarUpdateEventArgs.html#OpenMetaverse_AvatarUpdateEventArgs_Avatar">Avatar</a> data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Avatar Avatar { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Avatar.html">Avatar</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AvatarUpdateEventArgs_IsNew.md&amp;value=---%0Auid%3A%20OpenMetaverse.AvatarUpdateEventArgs.IsNew%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ObjectManager.cs/#L3463">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AvatarUpdateEventArgs_IsNew_" data-uid="OpenMetaverse.AvatarUpdateEventArgs.IsNew*"></a>
+  <h4 id="OpenMetaverse_AvatarUpdateEventArgs_IsNew" data-uid="OpenMetaverse.AvatarUpdateEventArgs.IsNew">IsNew</h4>
+  <div class="markdown level1 summary"><p>true if the <a class="xref" href="OpenMetaverse.AvatarUpdateEventArgs.html#OpenMetaverse_AvatarUpdateEventArgs_Avatar">Avatar</a> did not exist in the dictionary before this update (always true if avatar tracking has been disabled)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNew { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AvatarUpdateEventArgs_Simulator.md&amp;value=---%0Auid%3A%20OpenMetaverse.AvatarUpdateEventArgs.Simulator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ObjectManager.cs/#L3457">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AvatarUpdateEventArgs_Simulator_" data-uid="OpenMetaverse.AvatarUpdateEventArgs.Simulator*"></a>
+  <h4 id="OpenMetaverse_AvatarUpdateEventArgs_Simulator" data-uid="OpenMetaverse.AvatarUpdateEventArgs.Simulator">Simulator</h4>
+  <div class="markdown level1 summary"><p>Get the simulator the object originated from</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Simulator Simulator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.Simulator.html">Simulator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AvatarUpdateEventArgs_TimeDilation.md&amp;value=---%0Auid%3A%20OpenMetaverse.AvatarUpdateEventArgs.TimeDilation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ObjectManager.cs/#L3461">View Source</a>
+  </span>
+  <a id="OpenMetaverse_AvatarUpdateEventArgs_TimeDilation_" data-uid="OpenMetaverse.AvatarUpdateEventArgs.TimeDilation*"></a>
+  <h4 id="OpenMetaverse_AvatarUpdateEventArgs_TimeDilation" data-uid="OpenMetaverse.AvatarUpdateEventArgs.TimeDilation">TimeDilation</h4>
+  <div class="markdown level1 summary"><p>Get the simulator time dilation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort TimeDilation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="OpenMetaverse.ObjectManager.html#OpenMetaverse_ObjectManager_ObjectUpdate">ObjectUpdate</a></div>
+      <div><a class="xref" href="OpenMetaverse.PrimEventArgs.html">PrimEventArgs</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_AvatarUpdateEventArgs.md&amp;value=---%0Auid%3A%20OpenMetaverse.AvatarUpdateEventArgs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/ObjectManager.cs/#L3449" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

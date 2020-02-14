@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface CBlkQuantDataSrcEnc
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface CBlkQuantDataSrcEnc
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc">
+  
+  
+  <h1 id="CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc" data-uid="CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc" class="text-break">Interface CBlkQuantDataSrcEnc
+  </h1>
+  <div class="markdown level0 summary"><p>This interface defines a source of quantized wavelet coefficients and
+methods to transfer them in a code-block by code-block basis. In each call
+to 'getNextCodeBlock()' or 'getNextInternCodeBlock()' a new code-block is
+returned. The code-blocks are returned in no specific order.</p>
+<p>This class is the source of data for the entropy coder. See the
+&apos;EntropyCoder&apos; class.</p>
+<p>Code-block data is returned in sign-magnitude representation, instead of
+the normal two&apos;s complement one. Only integral types are used. The sign
+magnitude representation is more adequate for entropy coding. In sign
+magnitude representation, the most significant bit is used for the sign (0
+if positive, 1 if negative) and the magnitude of the coefficient is stored
+in the next M most significant bits. The rest of the bits (least
+significant bits) can contain a fractional value of the quantized
+coefficient. The number &apos;M&apos; of magnitude bits is communicated in the
+&apos;magbits&apos; member variable of the &apos;CBlkWTData&apos;.</p>
+<p>Note that no more of one object may request data, otherwise one object
+would get some of the data and another one another part, in no defined
+manner.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html#CSJ2K_j2k_wavelet_analysis_ForwWTDataProps_CbULX">ForwWTDataProps.CbULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html#CSJ2K_j2k_wavelet_analysis_ForwWTDataProps_CbULY">ForwWTDataProps.CbULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html#CSJ2K_j2k_wavelet_analysis_ForwWTDataProps_isReversible_System_Int32_System_Int32_">ForwWTDataProps.isReversible(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html#CSJ2K_j2k_wavelet_analysis_ForwWTDataProps_getAnSubbandTree_System_Int32_System_Int32_">ForwWTDataProps.getAnSubbandTree(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_TileWidth">ImgData.TileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_TileHeight">ImgData.TileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_NomTileWidth">ImgData.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_NomTileHeight">ImgData.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_ImgWidth">ImgData.ImgWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_ImgHeight">ImgData.ImgHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_NumComps">ImgData.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_TileIdx">ImgData.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_TilePartULX">ImgData.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_TilePartULY">ImgData.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_ImgULX">ImgData.ImgULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_ImgULY">ImgData.ImgULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getCompSubsX_System_Int32_">ImgData.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getCompSubsY_System_Int32_">ImgData.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getTileCompWidth_System_Int32_System_Int32_">ImgData.getTileCompWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getTileCompHeight_System_Int32_System_Int32_">ImgData.getTileCompHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getCompImgWidth_System_Int32_">ImgData.getCompImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getCompImgHeight_System_Int32_">ImgData.getCompImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getNomRangeBits_System_Int32_">ImgData.getNomRangeBits(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_setTile_System_Int32_System_Int32_">ImgData.setTile(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_nextTile">ImgData.nextTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getTile_CSJ2K_j2k_image_Coord_">ImgData.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getCompULX_System_Int32_">ImgData.getCompULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getCompULY_System_Int32_">ImgData.getCompULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getNumTiles_CSJ2K_j2k_image_Coord_">ImgData.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html#CSJ2K_j2k_image_ImgData_getNumTiles">ImgData.getNumTiles()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.quantization.quantizer.html">CSJ2K.j2k.quantization.quantizer</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface CBlkQuantDataSrcEnc : ForwWTDataProps, ImgData</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_getNextCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc.getNextCodeBlock(System.Int32%2CCSJ2K.j2k.wavelet.analysis.CBlkWTData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/CBlkQuantDataSrcEnc.cs/#L127">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_getNextCodeBlock_" data-uid="CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc.getNextCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_getNextCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_" data-uid="CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc.getNextCodeBlock(System.Int32,CSJ2K.j2k.wavelet.analysis.CBlkWTData)">getNextCodeBlock(Int32, CBlkWTData)</h4>
+  <div class="markdown level1 summary"><p>Returns the next code-block in the current tile for the specified
+component, as a copy (see below). The order in which code-blocks are
+returned is not specified. However each code-block is returned only
+once and all code-blocks will be returned if the method is called 'N'
+times, where 'N' is the number of code-blocks in the tile. After all
+the code-blocks have been returned for the current tile calls to this
+method will return 'null'.</p>
+<p>When changing the current tile (through &apos;setTile()&apos; or &apos;nextTile()&apos;)
+this method will always return the first code-block, as if this method
+was never called before for the new current tile.</p>
+<p>The data returned by this method is always a copy of the internal
+data of this object, if any, and it can be modified &quot;in place&quot; without
+any problems after being returned. The &apos;offset&apos; of the returned data is
+0, and the &apos;scanw&apos; is the same as the code-block width. See the
+&apos;CBlkWTData&apos; class.</p>
+<p>The &apos;ulx&apos; and &apos;uly&apos; members of the returned &apos;CBlkWTData&apos; object
+contain the coordinates of the top-left corner of the block, with
+respect to the tile, not the subband.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CBlkWTData getNextCodeBlock(int c, CBlkWTData cblk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component for which to return the next code-block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td><span class="parametername">cblk</span></td>
+        <td><p>If non-null this object will be used to return the new
+code-block. If null a new one will be allocated and returned. If the
+&quot;data&quot; array of the object is non-null it will be reused, if possible,
+to return the data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td><p>The next code-block in the current tile for component 'c', or
+null if all code-blocks for the current tile have been returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_getNextCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_getNextInternCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc.getNextInternCodeBlock(System.Int32%2CCSJ2K.j2k.wavelet.analysis.CBlkWTData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/CBlkQuantDataSrcEnc.cs/#L167">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_getNextInternCodeBlock_" data-uid="CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc.getNextInternCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_getNextInternCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData_" data-uid="CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc.getNextInternCodeBlock(System.Int32,CSJ2K.j2k.wavelet.analysis.CBlkWTData)">getNextInternCodeBlock(Int32, CBlkWTData)</h4>
+  <div class="markdown level1 summary"><p>Returns the next code-block in the current tile for the specified
+component. The order in which code-blocks are returned is not
+specified. However each code-block is returned only once and all
+code-blocks will be returned if the method is called 'N' times, where
+'N' is the number of code-blocks in the tile. After all the code-blocks
+have been returned for the current tile calls to this method will
+return 'null'.</p>
+<p>When changing the current tile (through &apos;setTile()&apos; or &apos;nextTile()&apos;)
+this method will always return the first code-block, as if this method
+was never called before for the new current tile.</p>
+<p>The data returned by this method can be the data in the internal
+buffer of this object, if any, and thus can not be modified by the
+caller. The &apos;offset&apos; and &apos;scanw&apos; of the returned data can be
+arbitrary. See the &apos;CBlkWTData&apos; class.</p>
+<p>The &apos;ulx&apos; and &apos;uly&apos; members of the returned &apos;CBlkWTData&apos; object
+contain the coordinates of the top-left corner of the block, with
+respect to the tile, not the subband.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CBlkWTData getNextInternCodeBlock(int c, CBlkWTData cblk)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component for which to return the next code-block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td><span class="parametername">cblk</span></td>
+        <td><p>If non-null this object will be used to return the new
+code-block. If null a new one will be allocated and returned. If the
+&quot;data&quot; array of the object is non-null it will be reused, if possible,
+to return the data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></td>
+        <td><p>The next code-block in the current tile for component 'n', or
+null if all code-blocks for the current tile have been returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_getNextInternCodeBlock_System_Int32_CSJ2K_j2k_wavelet_analysis_CBlkWTData__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></div>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html">ForwWTDataProps</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTDataSrc.html">CBlkWTDataSrc</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.quantization.quantizer.Quantizer.html">Quantizer</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html">EntropyCoder</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/quantization/quantizer/CBlkQuantDataSrcEnc.cs/#L85" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

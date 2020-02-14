@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.j2k.entropy.encoder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.j2k.entropy.encoder
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.entropy.encoder">
+  
+  <h1 id="CSJ2K_j2k_entropy_encoder" data-uid="CSJ2K.j2k.entropy.encoder" class="text-break">Namespace CSJ2K.j2k.entropy.encoder
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.encoder.ByteOutputBuffer.html">ByteOutputBuffer</a></h4>
+      <section><p>This class provides a buffering output stream similar to
+ByteArrayOutputStream, with some additional methods.</p>
+<p>Once an array has been written to an output stream or to a byte array,
+the object can be reused as a new stream if the reset() method is
+called.</p>
+<p>Unlike the ByteArrayOutputStream class, this class is not thread
+safe.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.html">CBlkRateDistStats</a></h4>
+      <section><p>This class stores coded (compressed) code-blocks with their associated
+rate-distortion statistics. This object should always contain all the
+compressed data of the code-block. It is applicable to the encoder engine
+only. Some data of the coded-block is stored in the super class, see
+CodedCBlk.</p>
+<p>The rate-distortion statistics (i.e. R-D slope) is stored for valid
+points only. The set of valid points is determined by the entropy coder
+engine itself. Normally they are selected so as to lye in a convex hull,
+which can be achived by using the &apos;selectConvexHull&apos; method of this class,
+but some other strategies might be employed.</p>
+<p>The rate (in bytes) for each truncation point (valid or not) is stored
+in the &apos;truncRates&apos; array. The rate of a truncation point is the total
+number of bytes in &apos;data&apos; (see super class) that have to be decoded to
+reach the truncation point.</p>
+<p>The slope (reduction of distortion divided by the increase in rate) at
+each of the valid truncation points is stored in &apos;truncSlopes&apos;.</p>
+<p>The index of each valid truncation point is stored in &apos;truncIdxs&apos;. The
+index should be interpreted in the following way: a valid truncation point
+at position &apos;n&apos; has the index &apos;truncIdxs[n]&apos;, the rate
+&apos;truncRates[truncIdxs[n]]&apos; and the slope &apos;truncSlopes[n]&apos;. The arrays
+&apos;truncIdxs&apos; and &apos;truncRates&apos; have at least &apos;nVldTrunc&apos; elements. The
+&apos;truncRates&apos; array has at least &apos;nTotTrunc&apos; elements.</p>
+<p>In addition the &apos;isTermPass&apos; array contains a flag for each truncation
+point (valid and non-valid ones) that tells if the pass is terminated or
+not. If this variable is null then it means that no pass is terminated,
+except the last one which always is.</p>
+<p>The compressed data is stored in the &apos;data&apos; member variable of the super
+class.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.html">EBCOTRateAllocator</a></h4>
+      <section><p>This implements the EBCOT post compression rate allocation algorithm. This
+algorithm finds the most suitable truncation points for the set of
+code-blocks, for each layer target bitrate. It works by first collecting
+the rate distortion info from all code-blocks, in all tiles and all
+components, and then running the rate-allocation on the whole image at
+once, for each layer.</p>
+<p>This implementation also provides some timing features. They can be
+enabled by setting the &apos;DO_TIMING&apos; constant of this class to true and
+recompiling. The timing uses the &apos;System.currentTimeMillis()&apos; Java API
+call, which returns wall clock time, not the actual CPU time used. The
+timing results will be printed on the message output. Since the times
+reported are wall clock times and not CPU usage times they can not be added
+to find the total used time (i.e. some time might be counted in several
+places). When timing is disabled (&apos;DO_TIMING&apos; is false) there is no penalty
+if the compiler performs some basic optimizations. Even if not the penalty
+should be negligeable.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html">EntropyCoder</a></h4>
+      <section><p>This abstract class provides the general interface for block-based entropy
+encoders. The input to the entropy coder is the quantized wavelet
+coefficients, or codewords, represented in sign magnitude. The output is a
+compressed code-block with rate-distortion information.</p>
+<p>The source of data for objects of this class are &apos;CBlkQuantDataSrcEnc&apos;
+objects.</p>
+<p>For more details on the sign magnitude representation used see the
+Quantizer class.</p>
+<p>This class provides default implemenations for most of the methods
+(wherever it makes sense), under the assumption that the image and
+component dimensions, and the tiles, are not modifed by the entropy
+coder. If that is not the case for a particular implementation then the
+methods should be overriden.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.encoder.LayersInfo.html">LayersInfo</a></h4>
+      <section><p>This class stores the specification of a layer distribution in the bit
+stream. The specification is made of optimization points and a number of
+extra layers to add between the optimization points. Each optimization
+point creates a layer which is optimized by the rate allocator to the
+specified target bitrate. The extra layers are added by the rate allocator
+between the optimized layers, with the difference that they are not
+optimized (i.e. they have no precise target bitrate).</p>
+<p>The overall target bitrate for the bit stream is always added as the
+last optimization point without any extra layers after it. If there are
+some optimization points whose target bitrate is larger than the overall
+target bitrate, the overall target bitrate will still appear as the last
+optimization point, even though it does not follow the increasing target
+bitrate order of the other optimization points. The rate allocator is
+responsible for eliminating layers that have target bitrates larger than
+the overall target bitrate.</p>
+<p>Optimization points can be added with the addOptPoint() method. It takes
+the target bitrate for the optimized layer and the number of extra layers
+to add after it.</p>
+<p>Information about the total number of layers, total number of
+optimization points, target bitrates, etc. can be obtained with the other
+methods.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.encoder.MQCoder.html">MQCoder</a></h4>
+      <section></section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html">PostCompRateAllocator</a></h4>
+      <section><p>This is the abstract class from which post-compression rate allocators
+which generate layers should inherit. The source of data is a
+'CodedCBlkDataSrcEnc' which delivers entropy coded blocks with
+rate-distortion statistics.</p>
+<p>The post compression rate allocator implementation should create the
+layers, according to a rate allocation policy, and send the packets to a
+CodestreamWriter. Since the rate allocator sends the packets to the bit
+stream then it should output the packets to the bit stream in the order
+imposed by the bit stream profiles.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.html">StdEntropyCoder</a></h4>
+      <section><p>This class implements the JPEG 2000 entropy coder, which codes stripes in
+code-blocks. This entropy coding engine can function in a single-threaded
+mode where one code-block is encoded at a time, or in a multi-threaded mode
+where multiple code-blocks are entropy coded in parallel. The interface
+presented by this class is the same in both modes.</p>
+<p>The number of threads used by this entropy coder is specified by the
+&quot;jj2000.j2k.entropy.encoder.StdEntropyCoder.nthreads&quot; Java system
+property. If set to &quot;0&quot; the single threaded implementation is used. If set
+to &apos;n&apos; (&apos;n&apos; larger than 0) then &apos;n&apos; extra threads are started by this class
+which are used to encode the code-blocks in parallel (i.e. ideally &apos;n&apos;
+code-blocks will be encoded in parallel at a time). On multiprocessor
+machines under a &quot;native threads&quot; Java Virtual Machine implementation each
+one of these threads can run on a separate processor speeding up the
+encoding time. By default the single-threaded implementation is used. The
+multi-threaded implementation currently assumes that the vast majority of
+consecutive calls to &apos;getNextCodeBlock()&apos; will be done on the same
+component. If this is not the case, the speed-up that can be expected on
+multiprocessor machines might be significantly decreased.</p>
+<p>The code-blocks are rectangular, with dimensions which must be powers of
+2. Each dimension has to be no smaller than 4 and no larger than 256. The
+product of the two dimensions (i.e. area of the code-block) may not exceed
+4096.</p>
+<p>Context 0 of the MQ-coder is used as the uniform one (uniform,
+non-adaptive probability distribution). Context 1 is used for RLC
+coding. Contexts 2-10 are used for zero-coding (ZC), contexts 11-15 are
+used for sign-coding (SC) and contexts 16-18 are used for
+magnitude-refinement (MR).</p>
+<p>This implementation buffers the symbols and calls the MQ coder only once
+per stripe and per coding pass, to reduce the method call overhead.</p>
+<p>This implementation also provides some timing features. They can be
+enabled by setting the &apos;DO_TIMING&apos; constant of this class to true and
+recompiling. The timing uses the &apos;System.currentTimeMillis()&apos; Java API
+call, which returns wall clock time, not the actual CPU time used. The
+timing results will be printed on the message output. Since the times
+reported are wall clock times and not CPU usage times they can not be added
+to find the total used time (i.e. some time might be counted in several
+places). When timing is disabled (&apos;DO_TIMING&apos; is false) there is no penalty
+if the compiler performs some basic optimizations. Even if not the penalty
+should be negligeable.</p>
+<p>The source module must implement the CBlkQuantDataSrcEnc interface and
+code-block&apos;s data is received in a CBlkWTData instance. This modules sends
+code-block&apos;s information in a CBlkRateDistStats instance.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="CSJ2K.j2k.entropy.encoder.CodedCBlkDataSrcEnc.html">CodedCBlkDataSrcEnc</a></h4>
+      <section><p>This interface defines a source of entropy coded data and methods to
+transfer it in a code-block by code-block basis. In each call to
+'getNextCodeBlock()' a new coded code-block is returned. The code-block are
+retruned in no specific-order.</p>
+<p>This interface is the source of data for the rate allocator. See the
+&apos;PostCompRateAllocator&apos; class.</p>
+<p>For each coded-code-block the entropy-coded data is returned along with
+the rate-distortion statistics in a &apos;CBlkRateDistStats&apos; object.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

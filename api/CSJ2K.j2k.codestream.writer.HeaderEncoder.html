@@ -1,0 +1,1155 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HeaderEncoder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HeaderEncoder
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder">
+  
+  
+  <h1 id="CSJ2K_j2k_codestream_writer_HeaderEncoder" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder" class="text-break">Class HeaderEncoder
+  </h1>
+  <div class="markdown level0 summary"><p>This class writes almost of the markers and marker segments in main header
+and in tile-part headers. It is created by the run() method of the Encoder
+instance.</p>
+<p>A marker segment includes a marker and eventually marker segment
+parameters. It is designed by the three letter code of the marker
+associated with the marker segment. JPEG 2000 part I defines 6 types of
+markers:
+<ul> 
+<li>Delimiting : SOC,SOT,SOD,EOC (written in FileCodestreamWriter).</li>
+<li>Fixed information: SIZ.</li> 
+<li>Functional: COD,COC,RGN,QCD,QCC,POC.</li>
+<li> In bit-stream: SOP,EPH.</li>
+<li> Pointer: TLM,PLM,PLT,PPM,PPT.</li> 
+<li> Informational: CRG,COM.</li>
+</ul></p>
+<p>Main Header is written when Encoder instance calls encodeMainHeader
+whereas tile-part headers are written when the EBCOTRateAllocator instance
+calls encodeTilePartHeader.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">HeaderEncoder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.codestream.writer.html">CSJ2K.j2k.codestream.writer</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HeaderEncoder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder__ctor_CSJ2K_j2k_image_ImgData_System_Boolean___CSJ2K_j2k_wavelet_analysis_ForwardWT_CSJ2K_j2k_image_Tiler_CSJ2K_j2k_encoder_EncoderSpecs_CSJ2K_j2k_roi_encoder_ROIScaler_CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_CSJ2K_j2k_util_ParameterList_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.%23ctor(CSJ2K.j2k.image.ImgData%2CSystem.Boolean%5B%5D%2CCSJ2K.j2k.wavelet.analysis.ForwardWT%2CCSJ2K.j2k.image.Tiler%2CCSJ2K.j2k.encoder.EncoderSpecs%2CCSJ2K.j2k.roi.encoder.ROIScaler%2CCSJ2K.j2k.entropy.encoder.PostCompRateAllocator%2CCSJ2K.j2k.util.ParameterList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L258">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder__ctor_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder__ctor_CSJ2K_j2k_image_ImgData_System_Boolean___CSJ2K_j2k_wavelet_analysis_ForwardWT_CSJ2K_j2k_image_Tiler_CSJ2K_j2k_encoder_EncoderSpecs_CSJ2K_j2k_roi_encoder_ROIScaler_CSJ2K_j2k_entropy_encoder_PostCompRateAllocator_CSJ2K_j2k_util_ParameterList_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.#ctor(CSJ2K.j2k.image.ImgData,System.Boolean[],CSJ2K.j2k.wavelet.analysis.ForwardWT,CSJ2K.j2k.image.Tiler,CSJ2K.j2k.encoder.EncoderSpecs,CSJ2K.j2k.roi.encoder.ROIScaler,CSJ2K.j2k.entropy.encoder.PostCompRateAllocator,CSJ2K.j2k.util.ParameterList)">HeaderEncoder(ImgData, Boolean[], ForwardWT, Tiler, EncoderSpecs, ROIScaler, PostCompRateAllocator, ParameterList)</h4>
+  <div class="markdown level1 summary"><p>Initializes the header writer with the references to the coding chain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HeaderEncoder(ImgData origsrc, bool[] isorigsig, ForwardWT dwt, Tiler tiler, EncoderSpecs encSpec, ROIScaler roiSc, PostCompRateAllocator ralloc, ParameterList pl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></td>
+        <td><span class="parametername">origsrc</span></td>
+        <td><p>The original image data (before any component mixing,
+tiling, etc.)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span>[]</td>
+        <td><span class="parametername">isorigsig</span></td>
+        <td><p>An array specifying for each component if it was
+originally signed or not.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwardWT.html">ForwardWT</a></td>
+        <td><span class="parametername">dwt</span></td>
+        <td><p>The discrete wavelet transform module.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Tiler.html">Tiler</a></td>
+        <td><span class="parametername">tiler</span></td>
+        <td><p>The tiler module.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.encoder.EncoderSpecs.html">EncoderSpecs</a></td>
+        <td><span class="parametername">encSpec</span></td>
+        <td><p>The encoder specifications</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.roi.encoder.ROIScaler.html">ROIScaler</a></td>
+        <td><span class="parametername">roiSc</span></td>
+        <td><p>The ROI scaler module.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html">PostCompRateAllocator</a></td>
+        <td><span class="parametername">ralloc</span></td>
+        <td><p>The post compression rate allocator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.util.ParameterList.html">ParameterList</a></td>
+        <td><span class="parametername">pl</span></td>
+        <td><p>ParameterList instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_baos.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.baos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L193">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_baos" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.baos">baos</h4>
+  <div class="markdown level1 summary"><p>The ByteArrayOutputStream to store header data. This handler is kept
+in order to use methods not accessible from a general
+DataOutputStream. For the other methods, it's better to use variable
+hbuf.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected MemoryStream baos</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.MemoryStream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_baos_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.codestream.writer.HeaderEncoder.html#CSJ2K_j2k_codestream_writer_HeaderEncoder_hbuf">hbuf</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_dwt.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.dwt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L218">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_dwt" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.dwt">dwt</h4>
+  <div class="markdown level1 summary"><p>Reference to the DWT module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ForwardWT dwt</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwardWT.html">ForwardWT</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_encSpec.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.encSpec%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L227">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_encSpec" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.encSpec">encSpec</h4>
+  <div class="markdown level1 summary"><p>The encoder specifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EncoderSpecs encSpec</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.encoder.EncoderSpecs.html">EncoderSpecs</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_hbuf.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.hbuf%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L204">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_hbuf" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.hbuf">hbuf</h4>
+  <div class="markdown level1 summary"><p>The DataOutputStream to store header data. This kind of object is
+useful to write short, int, .... It's constructor takes baos as
+parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BinaryWriter hbuf</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_hbuf_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.codestream.writer.HeaderEncoder.html#CSJ2K_j2k_codestream_writer_HeaderEncoder_baos">baos</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_isOrigSig.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.isOrigSig%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L212">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_isOrigSig" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.isOrigSig">isOrigSig</h4>
+  <div class="markdown level1 summary"><p>An array specifying, for each component,if the data was signed or not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool[] isOrigSig</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_OPT_PREFIX.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.OPT_PREFIX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L158">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_OPT_PREFIX" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.OPT_PREFIX">OPT_PREFIX</h4>
+  <div class="markdown level1 summary"><p>The prefix for the header encoder options: 'H'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const char OPT_PREFIX = 'H'</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_origSrc.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.origSrc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L207">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_origSrc" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.origSrc">origSrc</h4>
+  <div class="markdown level1 summary"><p>The image data reader. Source of original data info</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ImgData origSrc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_ralloc.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.ralloc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L215">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_ralloc" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.ralloc">ralloc</h4>
+  <div class="markdown level1 summary"><p>Reference to the rate allocator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PostCompRateAllocator ralloc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.encoder.PostCompRateAllocator.html">PostCompRateAllocator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_roiSc.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.roiSc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L224">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_roiSc" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.roiSc">roiSc</h4>
+  <div class="markdown level1 summary"><p>Reference to the ROI module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ROIScaler roiSc</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.roi.encoder.ROIScaler.html">ROIScaler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_tiler.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.tiler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L221">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_tiler" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.tiler">tiler</h4>
+  <div class="markdown level1 summary"><p>Reference to the tiler module</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Tiler tiler</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.image.Tiler.html">Tiler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_Buffer.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.Buffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L120">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_Buffer_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.Buffer*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_Buffer" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.Buffer">Buffer</h4>
+  <div class="markdown level1 summary"><p>Returns the byte-buffer used to store the codestream header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] Buffer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>A byte array countaining codestream header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_BufferLength.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.BufferLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L148">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_BufferLength_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.BufferLength*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_BufferLength" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.BufferLength">BufferLength</h4>
+  <div class="markdown level1 summary"><p>Returns the number of bytes used in the codestream header's buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int BufferLength { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Header length in buffer (without any header overhead)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_Length.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L134">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_Length_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.Length*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_Length" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Returns the length of the header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The length of the header in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_ParameterInfo.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.ParameterInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L106">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_ParameterInfo_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.ParameterInfo*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_ParameterInfo" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.ParameterInfo">ParameterInfo</h4>
+  <div class="markdown level1 summary"><p>Returns the parameters that are used in this class and implementing
+classes. It returns a 2D String array. Each of the 1D arrays is for a
+different option, and they have 3 elements. The first element is the
+option name, the second one is the synopsis, the third one is a long
+description of what the parameter is and the fourth is its default
+value. The synopsis or description may be 'null', in which case it is
+assumed that there is no synopsis or description of the option,
+respectively. Null may be returned if no options are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[][] ParameterInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[][]</td>
+        <td><p>the options name, their synopsis and their explanation, or null
+if no options are supported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_encodeMainHeader.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.encodeMainHeader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L1762">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_encodeMainHeader_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.encodeMainHeader*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_encodeMainHeader" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.encodeMainHeader">encodeMainHeader()</h4>
+  <div class="markdown level1 summary"><p>Write main header. JJ2000 main header corresponds to the following
+sequence of marker segments:</p>
+<ol>
+<li>SOC</li>
+<li>SIZ</li>
+<li>COD</li>
+<li>COC (if needed)</li>
+<li>QCD</li>
+<li>QCC (if needed)</li>
+<li>POC (if needed)</li>
+</ol>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void encodeMainHeader()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_encodeTilePartHeader_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.encodeTilePartHeader(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L1953">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_encodeTilePartHeader_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.encodeTilePartHeader*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_encodeTilePartHeader_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.encodeTilePartHeader(System.Int32,System.Int32)">encodeTilePartHeader(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes tile-part header. JJ2000 tile-part header corresponds to the
+following sequence of marker segments:</p>
+<ol> 
+<li>SOT</li> 
+<li>COD (if needed)</li> 
+<li>COC (if needed)</li> 
+<li>QCD (if needed)</li> 
+<li>QCC (if needed)</li> 
+<li>RGN (if needed)</li> 
+<li>POC (if needed)</li>
+<li>SOD</li> 
+</ol>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void encodeTilePartHeader(int tileLength, int tileIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tileLength</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tileIdx</span></td>
+        <td><p>Index of the tile to write</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_reset.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L286">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_reset_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.reset*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_reset" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.reset">reset()</h4>
+  <div class="markdown level1 summary"><p>Resets the contents of this HeaderEncoder to its initial state. It
+erases all the data in the header buffer and reactualizes the
+headerLength field of the bit stream writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void reset()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_writeCOC_System_Boolean_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.writeCOC(System.Boolean%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L724">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeCOC_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeCOC*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeCOC_System_Boolean_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeCOC(System.Boolean,System.Int32,System.Int32)">writeCOC(Boolean, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes COC marker segment . It is a functional marker containing the
+coding style for one component (coding style, decomposition, layering).</p>
+<p>Its values overrides any value previously set in COD in the main
+header or in the tile header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void writeCOC(bool mh, int tileIdx, int compIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">mh</span></td>
+        <td><p>Flag indicating whether the main header is to be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tileIdx</span></td>
+        <td><p>Tile index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">compIdx</span></td>
+        <td><p>index of the component which need use of the COC marker
+segment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeCOC_System_Boolean_System_Int32_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.codestream.writer.HeaderEncoder.html#CSJ2K_j2k_codestream_writer_HeaderEncoder_writeCOD_System_Boolean_System_Int32_">writeCOD(Boolean, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_writeCOD_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.writeCOD(System.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L429">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeCOD_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeCOD*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeCOD_System_Boolean_System_Int32_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeCOD(System.Boolean,System.Int32)">writeCOD(Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes COD marker segment. COD is a functional marker segment
+containing the code style default (coding style, decomposition,
+layering) used for compressing all the components in an image.</p>
+<p>The values can be overriden for an individual component by a COC
+marker in either the main or the tile header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void writeCOD(bool mh, int tileIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">mh</span></td>
+        <td><p>Flag indicating whether this marker belongs to the main
+header</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tileIdx</span></td>
+        <td><p>Tile index if the marker belongs to a tile-part header</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeCOD_System_Boolean_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.codestream.writer.HeaderEncoder.html#CSJ2K_j2k_codestream_writer_HeaderEncoder_writeCOC_System_Boolean_System_Int32_System_Int32_">writeCOC(Boolean, Int32, Int32)</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_writeMainQCC_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.writeMainQCC(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L1121">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeMainQCC_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeMainQCC*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeMainQCC_System_Int32_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeMainQCC(System.Int32)">writeMainQCC(Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes QCC marker segment in main header. It is a functional marker
+segment countaining the quantization used for compressing the specified
+component in an image. The values override for the specified component
+what was defined by a QCC marker in either the main or the tile header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void writeMainQCC(int compIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">compIdx</span></td>
+        <td><p>Index of the component which needs QCC marker segment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_writeMainQCD.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.writeMainQCD%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L948">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeMainQCD_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeMainQCD*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeMainQCD" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeMainQCD">writeMainQCD()</h4>
+  <div class="markdown level1 summary"><p>Writes QCD marker segment in main header. QCD is a functional marker
+segment countaining the quantization default used for compressing all
+the components in an image. The values can be overriden for an
+individual component by a QCC marker in either the main or the tile
+header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void writeMainQCD()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_writePOC_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.writePOC(System.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L1681">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writePOC_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writePOC*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writePOC_System_Boolean_System_Int32_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writePOC(System.Boolean,System.Int32)">writePOC(Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes POC marker segment. POC is a functional marker segment
+containing the bounds and progression order for any progression order
+other than default in the codestream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void writePOC(bool mh, int tileIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">mh</span></td>
+        <td><p>Flag indicating whether the main header is to be written</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tileIdx</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTileQCC_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTileQCC(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L1500">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTileQCC_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTileQCC*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTileQCC_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTileQCC(System.Int32,System.Int32)">writeTileQCC(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes QCC marker segment in tile header. It is a functional marker
+segment countaining the quantization used for compressing the specified
+component in an image. The values override for the specified component
+what was defined by a QCC marker in either the main or the tile header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void writeTileQCC(int t, int compIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">compIdx</span></td>
+        <td><p>Index of the component which needs QCC marker segment.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTileQCD_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTileQCD(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L1327">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTileQCD_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTileQCD*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTileQCD_System_Int32_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTileQCD(System.Int32)">writeTileQCD(Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes QCD marker segment in tile header. QCD is a functional marker
+segment countaining the quantization default used for compressing all
+the components in an image. The values can be overriden for an
+individual component by a QCC marker in either the main or the tile
+header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void writeTileQCD(int tIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tIdx</span></td>
+        <td><p>Tile index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTo_CSJ2K_j2k_io_BinaryDataOutput_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTo(CSJ2K.j2k.io.BinaryDataOutput)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L302">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTo_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTo*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTo_CSJ2K_j2k_io_BinaryDataOutput_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTo(CSJ2K.j2k.io.BinaryDataOutput)">writeTo(BinaryDataOutput)</h4>
+  <div class="markdown level1 summary"><p>Writes the header to the specified BinaryDataOutput.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void writeTo(BinaryDataOutput out_Renamed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.io.BinaryDataOutput.html">BinaryDataOutput</a></td>
+        <td><span class="parametername">out_Renamed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTo_System_IO_Stream_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTo(System.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L322">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTo_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTo*"></a>
+  <h4 id="CSJ2K_j2k_codestream_writer_HeaderEncoder_writeTo_System_IO_Stream_" data-uid="CSJ2K.j2k.codestream.writer.HeaderEncoder.writeTo(System.IO.Stream)">writeTo(Stream)</h4>
+  <div class="markdown level1 summary"><p>Writes the header to the specified OutputStream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void writeTo(Stream out_Renamed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">out_Renamed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.codestream.Markers.html">Markers</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.EBCOTRateAllocator.html">EBCOTRateAllocator</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_codestream_writer_HeaderEncoder.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.codestream.writer.HeaderEncoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/codestream/writer/HeaderEncoder.cs/#L90" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

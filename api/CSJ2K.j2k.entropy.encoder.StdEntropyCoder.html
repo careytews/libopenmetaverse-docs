@@ -1,0 +1,1221 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StdEntropyCoder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StdEntropyCoder
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder">
+  
+  
+  <h1 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder" class="text-break">Class StdEntropyCoder
+  </h1>
+  <div class="markdown level0 summary"><p>This class implements the JPEG 2000 entropy coder, which codes stripes in
+code-blocks. This entropy coding engine can function in a single-threaded
+mode where one code-block is encoded at a time, or in a multi-threaded mode
+where multiple code-blocks are entropy coded in parallel. The interface
+presented by this class is the same in both modes.</p>
+<p>The number of threads used by this entropy coder is specified by the
+&quot;jj2000.j2k.entropy.encoder.StdEntropyCoder.nthreads&quot; Java system
+property. If set to &quot;0&quot; the single threaded implementation is used. If set
+to &apos;n&apos; (&apos;n&apos; larger than 0) then &apos;n&apos; extra threads are started by this class
+which are used to encode the code-blocks in parallel (i.e. ideally &apos;n&apos;
+code-blocks will be encoded in parallel at a time). On multiprocessor
+machines under a &quot;native threads&quot; Java Virtual Machine implementation each
+one of these threads can run on a separate processor speeding up the
+encoding time. By default the single-threaded implementation is used. The
+multi-threaded implementation currently assumes that the vast majority of
+consecutive calls to &apos;getNextCodeBlock()&apos; will be done on the same
+component. If this is not the case, the speed-up that can be expected on
+multiprocessor machines might be significantly decreased.</p>
+<p>The code-blocks are rectangular, with dimensions which must be powers of
+2. Each dimension has to be no smaller than 4 and no larger than 256. The
+product of the two dimensions (i.e. area of the code-block) may not exceed
+4096.</p>
+<p>Context 0 of the MQ-coder is used as the uniform one (uniform,
+non-adaptive probability distribution). Context 1 is used for RLC
+coding. Contexts 2-10 are used for zero-coding (ZC), contexts 11-15 are
+used for sign-coding (SC) and contexts 16-18 are used for
+magnitude-refinement (MR).</p>
+<p>This implementation buffers the symbols and calls the MQ coder only once
+per stripe and per coding pass, to reduce the method call overhead.</p>
+<p>This implementation also provides some timing features. They can be
+enabled by setting the &apos;DO_TIMING&apos; constant of this class to true and
+recompiling. The timing uses the &apos;System.currentTimeMillis()&apos; Java API
+call, which returns wall clock time, not the actual CPU time used. The
+timing results will be printed on the message output. Since the times
+reported are wall clock times and not CPU usage times they can not be added
+to find the total used time (i.e. some time might be counted in several
+places). When timing is disabled (&apos;DO_TIMING&apos; is false) there is no penalty
+if the compiler performs some basic optimizations. Even if not the penalty
+should be negligeable.</p>
+<p>The source module must implement the CBlkQuantDataSrcEnc interface and
+code-block&apos;s data is received in a CBlkWTData instance. This modules sends
+code-block&apos;s information in a CBlkRateDistStats instance.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html">ImgDataAdapter</a></div>
+    <div class="level2"><a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html">EntropyCoder</a></div>
+    <div class="level3"><span class="xref">StdEntropyCoder</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.CodedCBlkDataSrcEnc.html">CodedCBlkDataSrcEnc</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html">ForwWTDataProps</a></div>
+    <div><a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_CbULX">EntropyCoder.CbULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_CbULY">EntropyCoder.CbULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_ParameterInfo">EntropyCoder.ParameterInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_OPT_PREFIX">EntropyCoder.OPT_PREFIX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_src">EntropyCoder.src</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_isReversible_System_Int32_System_Int32_">EntropyCoder.isReversible(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_getAnSubbandTree_System_Int32_System_Int32_">EntropyCoder.getAnSubbandTree(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_createInstance_CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_CSJ2K_j2k_util_ParameterList_CSJ2K_j2k_entropy_CBlkSizeSpec_CSJ2K_j2k_entropy_PrecinctSizeSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_">EntropyCoder.createInstance(CBlkQuantDataSrcEnc, ParameterList, CBlkSizeSpec, PrecinctSizeSpec, StringSpec, StringSpec, StringSpec, StringSpec, StringSpec, StringSpec, StringSpec)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileWidth">ImgDataAdapter.TileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileHeight">ImgDataAdapter.TileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileWidth">ImgDataAdapter.NomTileWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NomTileHeight">ImgDataAdapter.NomTileHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgWidth">ImgDataAdapter.ImgWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgHeight">ImgDataAdapter.ImgHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_NumComps">ImgDataAdapter.NumComps</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TileIdx">ImgDataAdapter.TileIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULX">ImgDataAdapter.TilePartULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_TilePartULY">ImgDataAdapter.TilePartULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULX">ImgDataAdapter.ImgULX</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_ImgULY">ImgDataAdapter.ImgULY</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_tIdx">ImgDataAdapter.tIdx</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_imgdatasrc">ImgDataAdapter.imgdatasrc</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsX_System_Int32_">ImgDataAdapter.getCompSubsX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompSubsY_System_Int32_">ImgDataAdapter.getCompSubsY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompWidth_System_Int32_System_Int32_">ImgDataAdapter.getTileCompWidth(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTileCompHeight_System_Int32_System_Int32_">ImgDataAdapter.getTileCompHeight(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgWidth_System_Int32_">ImgDataAdapter.getCompImgWidth(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompImgHeight_System_Int32_">ImgDataAdapter.getCompImgHeight(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNomRangeBits_System_Int32_">ImgDataAdapter.getNomRangeBits(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getTile_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getTile(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULX_System_Int32_">ImgDataAdapter.getCompULX(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getCompULY_System_Int32_">ImgDataAdapter.getCompULY(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles_CSJ2K_j2k_image_Coord_">ImgDataAdapter.getNumTiles(Coord)</a>
+    </div>
+    <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_getNumTiles">ImgDataAdapter.getNumTiles()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CSJ2K.j2k.entropy.encoder.html">CSJ2K.j2k.entropy.encoder</a></h6>
+  <h6><strong>Assembly</strong>: CSJ2K.dll</h6>
+  <h5 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StdEntropyCoder : EntropyCoder, CodedCBlkDataSrcEnc, ForwWTDataProps, ImgData</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder__ctor_CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_CSJ2K_j2k_entropy_CBlkSizeSpec_CSJ2K_j2k_entropy_PrecinctSizeSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.%23ctor(CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc%2CCSJ2K.j2k.entropy.CBlkSizeSpec%2CCSJ2K.j2k.entropy.PrecinctSizeSpec%2CCSJ2K.j2k.StringSpec%2CCSJ2K.j2k.StringSpec%2CCSJ2K.j2k.StringSpec%2CCSJ2K.j2k.StringSpec%2CCSJ2K.j2k.StringSpec%2CCSJ2K.j2k.StringSpec%2CCSJ2K.j2k.StringSpec)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L788">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder__ctor_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.#ctor*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder__ctor_CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_CSJ2K_j2k_entropy_CBlkSizeSpec_CSJ2K_j2k_entropy_PrecinctSizeSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.#ctor(CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc,CSJ2K.j2k.entropy.CBlkSizeSpec,CSJ2K.j2k.entropy.PrecinctSizeSpec,CSJ2K.j2k.StringSpec,CSJ2K.j2k.StringSpec,CSJ2K.j2k.StringSpec,CSJ2K.j2k.StringSpec,CSJ2K.j2k.StringSpec,CSJ2K.j2k.StringSpec,CSJ2K.j2k.StringSpec)">StdEntropyCoder(CBlkQuantDataSrcEnc, CBlkSizeSpec, PrecinctSizeSpec, StringSpec, StringSpec, StringSpec, StringSpec, StringSpec, StringSpec, StringSpec)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a new entropy coder engine, with the specified source of
+data, nominal block width and height.</p>
+<p>If the &apos;OPT_PRED_TERM&apos; option is given then the MQ termination must
+be &apos;TERM_PRED_ER&apos; or an exception is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StdEntropyCoder(CBlkQuantDataSrcEnc src, CBlkSizeSpec cblks, PrecinctSizeSpec pss, StringSpec bms, StringSpec mqrs, StringSpec rts, StringSpec css, StringSpec sss, StringSpec lcs, StringSpec tts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc.html">CBlkQuantDataSrcEnc</a></td>
+        <td><span class="parametername">src</span></td>
+        <td><p>The source of data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.CBlkSizeSpec.html">CBlkSizeSpec</a></td>
+        <td><span class="parametername">cblks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.PrecinctSizeSpec.html">PrecinctSizeSpec</a></td>
+        <td><span class="parametername">pss</span></td>
+        <td><p>Precinct partition specifications</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td><span class="parametername">bms</span></td>
+        <td><p>By-pass mode specifications</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td><span class="parametername">mqrs</span></td>
+        <td><p>MQ-reset specifications</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td><span class="parametername">rts</span></td>
+        <td><p>Regular termination specifications</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td><span class="parametername">css</span></td>
+        <td><p>Causal stripes specifications</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td><span class="parametername">sss</span></td>
+        <td><p>Error resolution segment symbol use specifications</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td><span class="parametername">lcs</span></td>
+        <td><p>Length computation specifications</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td><span class="parametername">tts</span></td>
+        <td><p>Termination type specifications</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder__ctor_CSJ2K_j2k_quantization_quantizer_CBlkQuantDataSrcEnc_CSJ2K_j2k_entropy_CBlkSizeSpec_CSJ2K_j2k_entropy_PrecinctSizeSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec_CSJ2K_j2k_StringSpec__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.MQCoder.html">MQCoder</a></div>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_bms.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.bms%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L186">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_bms" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.bms">bms</h4>
+  <div class="markdown level1 summary"><p>By-pass mode specifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringSpec bms</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_css.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.css%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L195">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_css" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.css">css</h4>
+  <div class="markdown level1 summary"><p>Causal stripes specifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringSpec css</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_DEF_THREADS_NUM.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.DEF_THREADS_NUM%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L135">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_DEF_THREADS_NUM" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.DEF_THREADS_NUM">DEF_THREADS_NUM</h4>
+  <div class="markdown level1 summary"><p>The default value for the property in THREADS_PROP_NAME: 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DEF_THREADS_NUM = &quot;0&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_lcs.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.lcs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L201">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_lcs" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.lcs">lcs</h4>
+  <div class="markdown level1 summary"><p>The length calculation specifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringSpec lcs</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_mqrs.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.mqrs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L189">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_mqrs" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.mqrs">mqrs</h4>
+  <div class="markdown level1 summary"><p>MQ reset specifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringSpec mqrs</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_rts.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.rts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L192">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_rts" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.rts">rts</h4>
+  <div class="markdown level1 summary"><p>Regular termination specifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringSpec rts</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_sss.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.sss%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L198">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_sss" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.sss">sss</h4>
+  <div class="markdown level1 summary"><p>Error resilience segment symbol use specifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringSpec sss</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_THREADS_PRIORITY_INC.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.THREADS_PRIORITY_INC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L142">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_THREADS_PRIORITY_INC" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.THREADS_PRIORITY_INC">THREADS_PRIORITY_INC</h4>
+  <div class="markdown level1 summary"><p>The increase in priority for the compressor threads, currently 3. The
+compressor threads will have a priority of THREADS_PRIORITY_INC more
+than the priority of the thread calling this class constructor. Used
+only in the multi-threaded implementation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int THREADS_PRIORITY_INC = 0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_THREADS_PROP_NAME.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.THREADS_PROP_NAME%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L132">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_THREADS_PROP_NAME" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.THREADS_PROP_NAME">THREADS_PROP_NAME</h4>
+  <div class="markdown level1 summary"><p>The Java system property name for the number of threads to use:
+jj2000.j2k.entropy.encoder.StdEntropyCoder.nthreads</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string THREADS_PROP_NAME = &quot;jj2000.j2k.entropy.encoder.StdEntropyCoder.nthreads&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_tts.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.tts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L204">View Source</a>
+  </span>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_tts" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.tts">tts</h4>
+  <div class="markdown level1 summary"><p>The termination type specifications</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringSpec tts</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.StringSpec.html">StringSpec</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getCBlkHeight_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getCBlkHeight(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L1020">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getCBlkHeight_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getCBlkHeight*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getCBlkHeight_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getCBlkHeight(System.Int32,System.Int32)">getCBlkHeight(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the code-block height for the specified tile and component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getCBlkHeight(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The code-block height for the specified tile and component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_getCBlkHeight_System_Int32_System_Int32_">EntropyCoder.getCBlkHeight(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getCBlkWidth_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getCBlkWidth(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L1003">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getCBlkWidth_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getCBlkWidth*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getCBlkWidth_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getCBlkWidth(System.Int32,System.Int32)">getCBlkWidth(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the code-block width for the specified tile and component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getCBlkWidth(int t, int c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>the component index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The code-block width for the specified tile and component</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_getCBlkWidth_System_Int32_System_Int32_">EntropyCoder.getCBlkWidth(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getNextCodeBlock_System_Int32_CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getNextCodeBlock(System.Int32%2CCSJ2K.j2k.entropy.encoder.CBlkRateDistStats)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L1059">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getNextCodeBlock_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getNextCodeBlock*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getNextCodeBlock_System_Int32_CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getNextCodeBlock(System.Int32,CSJ2K.j2k.entropy.encoder.CBlkRateDistStats)">getNextCodeBlock(Int32, CBlkRateDistStats)</h4>
+  <div class="markdown level1 summary"><p>Returns the next coded code-block in the current tile for the specified
+component, as a copy (see below). The order in which code-blocks are
+returned is not specified. However each code-block is returned only
+once and all code-blocks will be returned if the method is called 'N'
+times, where 'N' is the number of code-blocks in the tile. After all
+the code-blocks have been returned for the current tile calls to this
+method will return 'null'.</p>
+<p>When changing the current tile (through &apos;setTile()&apos; or &apos;nextTile()&apos;)
+this method will always return the first code-block, as if this method
+was never called before for the new current tile.</p>
+<p>The data returned by this method is always a copy of the internal
+data of this object, if any, and it can be modified &quot;in place&quot; without
+any problems after being returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override CBlkRateDistStats getNextCodeBlock(int c, CBlkRateDistStats ccb)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component for which to return the next code-block.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.html">CBlkRateDistStats</a></td>
+        <td><span class="parametername">ccb</span></td>
+        <td><p>If non-null this object might be used in returning the coded
+code-block in this or any subsequent call to this method. If null a new
+one is created and returned. If the 'data' array of 'cbb' is not null
+it may be reused to return the compressed data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.html">CBlkRateDistStats</a></td>
+        <td><p>The next coded code-block in the current tile for component
+'n', or null if all code-blocks for the current tile have been
+returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_getNextCodeBlock_System_Int32_CSJ2K_j2k_entropy_encoder_CBlkRateDistStats_">EntropyCoder.getNextCodeBlock(Int32, CBlkRateDistStats)</a></div>
+  <h5 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getNextCodeBlock_System_Int32_CSJ2K_j2k_entropy_encoder_CBlkRateDistStats__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.html">CBlkRateDistStats</a></div>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getPPX_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getPPX(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L3422">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getPPX_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getPPX*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getPPX_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getPPX(System.Int32,System.Int32,System.Int32)">getPPX(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the precinct partition width for the specified component, tile
+and resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getPPX(int t, int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>the tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>the resolution level</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The precinct partition width for the specified component, tile
+and resolution level</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_getPPX_System_Int32_System_Int32_System_Int32_">EntropyCoder.getPPX(Int32, Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getPPY_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getPPY(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L3444">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getPPY_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getPPY*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_getPPY_System_Int32_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.getPPY(System.Int32,System.Int32,System.Int32)">getPPY(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the precinct partition height for the specified component, tile
+and resolution level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int getPPY(int t, int c, int rl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>the tile index</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>the component</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">rl</span></td>
+        <td><p>the resolution level</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The precinct partition height for the specified component, tile
+and resolution level</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_getPPY_System_Int32_System_Int32_System_Int32_">EntropyCoder.getPPY(Int32, Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_initTileComp_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.initTileComp(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L3304">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_initTileComp_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.initTileComp*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_initTileComp_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.initTileComp(System.Int32,System.Int32)">initTileComp(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Load options, length calculation type and termination type for each
+tile-component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void initTileComp(int nt, int nc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nt</span></td>
+        <td><p>The number of tiles</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nc</span></td>
+        <td><p>The number of components</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_nextTile.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.nextTile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L1237">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_nextTile_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.nextTile*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_nextTile" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.nextTile">nextTile()</h4>
+  <div class="markdown level1 summary"><p>Advances to the next tile, in standard scan-line order (by rows then
+columns). An NoNextElementException is thrown if the current tile is
+the last one (i.e. there is no next tile).</p>
+<p>This default implementation just advances to the next tile in the
+source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void nextTile()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_nextTile">ImgDataAdapter.nextTile()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_precinctPartitionUsed_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.precinctPartitionUsed(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L3463">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_precinctPartitionUsed_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.precinctPartitionUsed*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_precinctPartitionUsed_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.precinctPartitionUsed(System.Int32,System.Int32)">precinctPartitionUsed(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns true if precinct partition is used for the specified component
+and tile, returns false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool precinctPartitionUsed(int c, int t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">c</span></td>
+        <td><p>The component</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The tile</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if precinct partition is used for the specified component
+and tile, returns false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.EntropyCoder.html#CSJ2K_j2k_entropy_encoder_EntropyCoder_precinctPartitionUsed_System_Int32_System_Int32_">EntropyCoder.precinctPartitionUsed(Int32, Int32)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder_setTile_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder.setTile(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L1216">View Source</a>
+  </span>
+  <a id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_setTile_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.setTile*"></a>
+  <h4 id="CSJ2K_j2k_entropy_encoder_StdEntropyCoder_setTile_System_Int32_System_Int32_" data-uid="CSJ2K.j2k.entropy.encoder.StdEntropyCoder.setTile(System.Int32,System.Int32)">setTile(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Changes the current tile, given the new indexes. An
+IllegalArgumentException is thrown if the indexes do not correspond to
+a valid tile.</p>
+<p>This default implementation just changes the tile in the source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void setTile(int x, int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The horizontal index of the tile.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The vertical index of the new tile.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CSJ2K.j2k.image.ImgDataAdapter.html#CSJ2K_j2k_image_ImgDataAdapter_setTile_System_Int32_System_Int32_">ImgDataAdapter.setTile(Int32, Int32)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.entropy.encoder.CodedCBlkDataSrcEnc.html">CodedCBlkDataSrcEnc</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.wavelet.analysis.ForwWTDataProps.html">ForwWTDataProps</a>
+  </div>
+  <div>
+      <a class="xref" href="CSJ2K.j2k.image.ImgData.html">ImgData</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CSJ2K.j2k.quantization.quantizer.CBlkQuantDataSrcEnc.html">CBlkQuantDataSrcEnc</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.wavelet.analysis.CBlkWTData.html">CBlkWTData</a></div>
+      <div><a class="xref" href="CSJ2K.j2k.entropy.encoder.CBlkRateDistStats.html">CBlkRateDistStats</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=CSJ2K_j2k_entropy_encoder_StdEntropyCoder.md&amp;value=---%0Auid%3A%20CSJ2K.j2k.entropy.encoder.StdEntropyCoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/CSJ2K/j2k/entropy/encoder/StdEntropyCoder.cs/#L114" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

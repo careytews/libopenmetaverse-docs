@@ -1,0 +1,1204 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FriendsManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FriendsManager
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.FriendsManager">
+  
+  
+  <h1 id="OpenMetaverse_FriendsManager" data-uid="OpenMetaverse.FriendsManager" class="text-break">Class FriendsManager
+  </h1>
+  <div class="markdown level0 summary"><p>This class is used to add and remove avatars from your friends list and to manage their permission.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FriendsManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_FriendsManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FriendsManager</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_FriendList.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.FriendList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L437">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_FriendsManager_FriendList" data-uid="OpenMetaverse.FriendsManager.FriendList">FriendList</h4>
+  <div class="markdown level1 summary"><p>A dictionary of key/value pairs containing known friends of this avatar.</p>
+<p>The Key is the <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the friend, the value is a <a class="xref" href="OpenMetaverse.FriendInfo.html">FriendInfo</a>
+object that contains detailed information including permissions you have and have given to the friend</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InternalDictionary&lt;UUID, FriendInfo&gt; FriendList</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.InternalDictionary-2.html">InternalDictionary</a>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>, <a class="xref" href="OpenMetaverse.FriendInfo.html">FriendInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_FriendRequests.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.FriendRequests%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L446">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_FriendsManager_FriendRequests" data-uid="OpenMetaverse.FriendsManager.FriendRequests">FriendRequests</h4>
+  <div class="markdown level1 summary"><p>A Dictionary of key/value pairs containing current pending frienship offers.</p>
+<p>The key is the <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the avatar making the request,
+the value is the <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the request which is used to accept
+or decline the friendship offer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InternalDictionary&lt;UUID, UUID&gt; FriendRequests</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.InternalDictionary-2.html">InternalDictionary</a>&lt;<a class="xref" href="OpenMetaverse.UUID.html">UUID</a>, <a class="xref" href="OpenMetaverse.UUID.html">UUID</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_AcceptFriendship_OpenMetaverse_UUID_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.AcceptFriendship(OpenMetaverse.UUID%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L477">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_AcceptFriendship_" data-uid="OpenMetaverse.FriendsManager.AcceptFriendship*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_AcceptFriendship_OpenMetaverse_UUID_OpenMetaverse_UUID_" data-uid="OpenMetaverse.FriendsManager.AcceptFriendship(OpenMetaverse.UUID,OpenMetaverse.UUID)">AcceptFriendship(UUID, UUID)</h4>
+  <div class="markdown level1 summary"><p>Accept a friendship request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AcceptFriendship(UUID fromAgentID, UUID imSessionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">fromAgentID</span></td>
+        <td><p>agentID of avatatar to form friendship with</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">imSessionID</span></td>
+        <td><p>imSessionID of the friendship request message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_DeclineFriendship_OpenMetaverse_UUID_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.DeclineFriendship(OpenMetaverse.UUID%2COpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L508">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_DeclineFriendship_" data-uid="OpenMetaverse.FriendsManager.DeclineFriendship*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_DeclineFriendship_OpenMetaverse_UUID_OpenMetaverse_UUID_" data-uid="OpenMetaverse.FriendsManager.DeclineFriendship(OpenMetaverse.UUID,OpenMetaverse.UUID)">DeclineFriendship(UUID, UUID)</h4>
+  <div class="markdown level1 summary"><p>Decline a friendship request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeclineFriendship(UUID fromAgentID, UUID imSessionID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">fromAgentID</span></td>
+        <td><p><a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of friend</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">imSessionID</span></td>
+        <td><p>imSessionID of the friendship request message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_GrantRights_OpenMetaverse_UUID_OpenMetaverse_FriendRights_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.GrantRights(OpenMetaverse.UUID%2COpenMetaverse.FriendRights)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L594">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_GrantRights_" data-uid="OpenMetaverse.FriendsManager.GrantRights*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_GrantRights_OpenMetaverse_UUID_OpenMetaverse_FriendRights_" data-uid="OpenMetaverse.FriendsManager.GrantRights(OpenMetaverse.UUID,OpenMetaverse.FriendRights)">GrantRights(UUID, FriendRights)</h4>
+  <div class="markdown level1 summary"><p>Change the rights of a friend avatar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GrantRights(UUID friendID, FriendRights rights)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">friendID</span></td>
+        <td><p>the <a class="xref" href="OpenMetaverse.UUID.html">UUID</a> of the friend</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.FriendRights.html">FriendRights</a></td>
+        <td><span class="parametername">rights</span></td>
+        <td><p>the new rights to give the friend</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_FriendsManager_GrantRights_OpenMetaverse_UUID_OpenMetaverse_FriendRights__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will implicitly set the rights to those passed in the rights parameter.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_MapFriend_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.MapFriend(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L612">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_MapFriend_" data-uid="OpenMetaverse.FriendsManager.MapFriend*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_MapFriend_OpenMetaverse_UUID_" data-uid="OpenMetaverse.FriendsManager.MapFriend(OpenMetaverse.UUID)">MapFriend(UUID)</h4>
+  <div class="markdown level1 summary"><p>Use to map a friends location on the grid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MapFriend(UUID friendID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">friendID</span></td>
+        <td><p>Friends UUID to find</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_FriendsManager_MapFriend_OpenMetaverse_UUID__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><span class="xref">OnFriendFound</span></p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OfferFriendship_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OfferFriendship(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L524">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OfferFriendship_" data-uid="OpenMetaverse.FriendsManager.OfferFriendship*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OfferFriendship_OpenMetaverse_UUID_" data-uid="OpenMetaverse.FriendsManager.OfferFriendship(OpenMetaverse.UUID)">OfferFriendship(UUID)</h4>
+  <div class="markdown level1 summary"><p>Overload: Offer friendship to an avatar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OfferFriendship(UUID agentID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">agentID</span></td>
+        <td><p>System ID of the avatar you are offering friendship to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OfferFriendship_OpenMetaverse_UUID_System_String_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OfferFriendship(OpenMetaverse.UUID%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L534">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OfferFriendship_" data-uid="OpenMetaverse.FriendsManager.OfferFriendship*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OfferFriendship_OpenMetaverse_UUID_System_String_" data-uid="OpenMetaverse.FriendsManager.OfferFriendship(OpenMetaverse.UUID,System.String)">OfferFriendship(UUID, String)</h4>
+  <div class="markdown level1 summary"><p>Offer friendship to an avatar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OfferFriendship(UUID agentID, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">agentID</span></td>
+        <td><p>System ID of the avatar you are offering friendship to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>A message to send with the request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OfflineNotificationHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OfflineNotificationHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L764">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OfflineNotificationHandler_" data-uid="OpenMetaverse.FriendsManager.OfflineNotificationHandler*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OfflineNotificationHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.FriendsManager.OfflineNotificationHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">OfflineNotificationHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OfflineNotificationHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OnFindAgentReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OnFindAgentReplyHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L834">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OnFindAgentReplyHandler_" data-uid="OpenMetaverse.FriendsManager.OnFindAgentReplyHandler*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OnFindAgentReplyHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.FriendsManager.OnFindAgentReplyHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">OnFindAgentReplyHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFindAgentReplyHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OnFriendFoundReply_OpenMetaverse_FriendFoundReplyEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OnFriendFoundReply(OpenMetaverse.FriendFoundReplyEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L406">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OnFriendFoundReply_" data-uid="OpenMetaverse.FriendsManager.OnFriendFoundReply*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OnFriendFoundReply_OpenMetaverse_FriendFoundReplyEventArgs_" data-uid="OpenMetaverse.FriendsManager.OnFriendFoundReply(OpenMetaverse.FriendFoundReplyEventArgs)">OnFriendFoundReply(FriendFoundReplyEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the FriendFoundReply event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFriendFoundReply(FriendFoundReplyEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.FriendFoundReplyEventArgs.html">FriendFoundReplyEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A FriendFoundReplyEventArgs object containing the
+data returned from the data server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OnFriendNames_OpenMetaverse_FriendNamesEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OnFriendNames(OpenMetaverse.FriendNamesEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L313">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OnFriendNames_" data-uid="OpenMetaverse.FriendsManager.OnFriendNames*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OnFriendNames_OpenMetaverse_FriendNamesEventArgs_" data-uid="OpenMetaverse.FriendsManager.OnFriendNames(OpenMetaverse.FriendNamesEventArgs)">OnFriendNames(FriendNamesEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the FriendNames event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFriendNames(FriendNamesEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.FriendNamesEventArgs.html">FriendNamesEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A FriendNamesEventArgs object containing the
+data returned from the data server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OnFriendOffline_OpenMetaverse_FriendInfoEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OnFriendOffline(OpenMetaverse.FriendInfoEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L267">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OnFriendOffline_" data-uid="OpenMetaverse.FriendsManager.OnFriendOffline*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OnFriendOffline_OpenMetaverse_FriendInfoEventArgs_" data-uid="OpenMetaverse.FriendsManager.OnFriendOffline(OpenMetaverse.FriendInfoEventArgs)">OnFriendOffline(FriendInfoEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the FriendOffline event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFriendOffline(FriendInfoEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.FriendInfoEventArgs.html">FriendInfoEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A FriendInfoEventArgs object containing the
+data returned from the data server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OnFriendOnline_OpenMetaverse_FriendInfoEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OnFriendOnline(OpenMetaverse.FriendInfoEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L244">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OnFriendOnline_" data-uid="OpenMetaverse.FriendsManager.OnFriendOnline*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OnFriendOnline_OpenMetaverse_FriendInfoEventArgs_" data-uid="OpenMetaverse.FriendsManager.OnFriendOnline(OpenMetaverse.FriendInfoEventArgs)">OnFriendOnline(FriendInfoEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the FriendOnline event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFriendOnline(FriendInfoEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.FriendInfoEventArgs.html">FriendInfoEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A FriendInfoEventArgs object containing the
+data returned from the data server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OnFriendRights_OpenMetaverse_FriendInfoEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OnFriendRights(OpenMetaverse.FriendInfoEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L290">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OnFriendRights_" data-uid="OpenMetaverse.FriendsManager.OnFriendRights*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OnFriendRights_OpenMetaverse_FriendInfoEventArgs_" data-uid="OpenMetaverse.FriendsManager.OnFriendRights(OpenMetaverse.FriendInfoEventArgs)">OnFriendRights(FriendInfoEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the FriendRightsUpdate event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFriendRights(FriendInfoEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.FriendInfoEventArgs.html">FriendInfoEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A FriendInfoEventArgs object containing the
+data returned from the data server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OnFriendshipOffered_OpenMetaverse_FriendshipOfferedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OnFriendshipOffered(OpenMetaverse.FriendshipOfferedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L336">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OnFriendshipOffered_" data-uid="OpenMetaverse.FriendsManager.OnFriendshipOffered*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OnFriendshipOffered_OpenMetaverse_FriendshipOfferedEventArgs_" data-uid="OpenMetaverse.FriendsManager.OnFriendshipOffered(OpenMetaverse.FriendshipOfferedEventArgs)">OnFriendshipOffered(FriendshipOfferedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the FriendshipOffered event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFriendshipOffered(FriendshipOfferedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.FriendshipOfferedEventArgs.html">FriendshipOfferedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A FriendshipOfferedEventArgs object containing the
+data returned from the data server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OnFriendshipResponse_OpenMetaverse_FriendshipResponseEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OnFriendshipResponse(OpenMetaverse.FriendshipResponseEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L359">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OnFriendshipResponse_" data-uid="OpenMetaverse.FriendsManager.OnFriendshipResponse*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OnFriendshipResponse_OpenMetaverse_FriendshipResponseEventArgs_" data-uid="OpenMetaverse.FriendsManager.OnFriendshipResponse(OpenMetaverse.FriendshipResponseEventArgs)">OnFriendshipResponse(FriendshipResponseEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the FriendshipResponse event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFriendshipResponse(FriendshipResponseEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.FriendshipResponseEventArgs.html">FriendshipResponseEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A FriendshipResponseEventArgs object containing the
+data returned from the data server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OnFriendshipTerminated_OpenMetaverse_FriendshipTerminatedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OnFriendshipTerminated(OpenMetaverse.FriendshipTerminatedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L382">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OnFriendshipTerminated_" data-uid="OpenMetaverse.FriendsManager.OnFriendshipTerminated*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OnFriendshipTerminated_OpenMetaverse_FriendshipTerminatedEventArgs_" data-uid="OpenMetaverse.FriendsManager.OnFriendshipTerminated(OpenMetaverse.FriendshipTerminatedEventArgs)">OnFriendshipTerminated(FriendshipTerminatedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the FriendshipTerminated event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFriendshipTerminated(FriendshipTerminatedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.FriendshipTerminatedEventArgs.html">FriendshipTerminatedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A FriendshipTerminatedEventArgs object containing the
+data returned from the data server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_OnlineNotificationHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.OnlineNotificationHandler(System.Object%2COpenMetaverse.PacketReceivedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L726">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_OnlineNotificationHandler_" data-uid="OpenMetaverse.FriendsManager.OnlineNotificationHandler*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_OnlineNotificationHandler_System_Object_OpenMetaverse_PacketReceivedEventArgs_" data-uid="OpenMetaverse.FriendsManager.OnlineNotificationHandler(System.Object,OpenMetaverse.PacketReceivedEventArgs)">OnlineNotificationHandler(Object, PacketReceivedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Process an incoming packet and raise the appropriate events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnlineNotificationHandler(object sender, PacketReceivedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The sender</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.PacketReceivedEventArgs.html">PacketReceivedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>The EventArgs object containing the packet data</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_RequestOnlineNotification_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.RequestOnlineNotification(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L644">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_RequestOnlineNotification_" data-uid="OpenMetaverse.FriendsManager.RequestOnlineNotification*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_RequestOnlineNotification_OpenMetaverse_UUID_" data-uid="OpenMetaverse.FriendsManager.RequestOnlineNotification(OpenMetaverse.UUID)">RequestOnlineNotification(UUID)</h4>
+  <div class="markdown level1 summary"><p>Ask for a notification of friend's online status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestOnlineNotification(UUID friendID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">friendID</span></td>
+        <td><p>Friend's UUID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_TerminateFriendship_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.TerminateFriendship(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L552">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_TerminateFriendship_" data-uid="OpenMetaverse.FriendsManager.TerminateFriendship*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_TerminateFriendship_OpenMetaverse_UUID_" data-uid="OpenMetaverse.FriendsManager.TerminateFriendship(OpenMetaverse.UUID)">TerminateFriendship(UUID)</h4>
+  <div class="markdown level1 summary"><p>Terminate a friendship with an avatar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TerminateFriendship(UUID agentID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">agentID</span></td>
+        <td><p>System ID of the avatar you are terminating the friendship with</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_TrackFriend_OpenMetaverse_UUID_.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.TrackFriend(OpenMetaverse.UUID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L630">View Source</a>
+  </span>
+  <a id="OpenMetaverse_FriendsManager_TrackFriend_" data-uid="OpenMetaverse.FriendsManager.TrackFriend*"></a>
+  <h4 id="OpenMetaverse_FriendsManager_TrackFriend_OpenMetaverse_UUID_" data-uid="OpenMetaverse.FriendsManager.TrackFriend(OpenMetaverse.UUID)">TrackFriend(UUID)</h4>
+  <div class="markdown level1 summary"><p>Use to track a friends movement on the grid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TrackFriend(UUID friendID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenMetaverse.UUID.html">UUID</a></td>
+        <td><span class="parametername">friendID</span></td>
+        <td><p>Friends Key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_FriendFoundReply.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.FriendFoundReply%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L418">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_FriendsManager_FriendFoundReply" data-uid="OpenMetaverse.FriendsManager.FriendFoundReply">FriendFoundReply</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends the location of a friend we have
+requested map location info for</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;FriendFoundReplyEventArgs&gt; FriendFoundReply</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.FriendFoundReplyEventArgs.html">FriendFoundReplyEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_FriendNames.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.FriendNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L324">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_FriendsManager_FriendNames" data-uid="OpenMetaverse.FriendsManager.FriendNames">FriendNames</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends us the names on our friends list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;FriendNamesEventArgs&gt; FriendNames</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.FriendNamesEventArgs.html">FriendNamesEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_FriendOffline.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.FriendOffline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L278">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_FriendsManager_FriendOffline" data-uid="OpenMetaverse.FriendsManager.FriendOffline">FriendOffline</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends notification one of the members in our friends list goes offline</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;FriendInfoEventArgs&gt; FriendOffline</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.FriendInfoEventArgs.html">FriendInfoEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_FriendOnline.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.FriendOnline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L255">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_FriendsManager_FriendOnline" data-uid="OpenMetaverse.FriendsManager.FriendOnline">FriendOnline</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends notification one of the members in our friends list comes online</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;FriendInfoEventArgs&gt; FriendOnline</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.FriendInfoEventArgs.html">FriendInfoEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_FriendRightsUpdate.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.FriendRightsUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L301">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_FriendsManager_FriendRightsUpdate" data-uid="OpenMetaverse.FriendsManager.FriendRightsUpdate">FriendRightsUpdate</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends notification one of the members in our friends list grants or revokes permissions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;FriendInfoEventArgs&gt; FriendRightsUpdate</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.FriendInfoEventArgs.html">FriendInfoEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_FriendshipOffered.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.FriendshipOffered%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L347">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_FriendsManager_FriendshipOffered" data-uid="OpenMetaverse.FriendsManager.FriendshipOffered">FriendshipOffered</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends notification another agent is offering us friendship</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;FriendshipOfferedEventArgs&gt; FriendshipOffered</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.FriendshipOfferedEventArgs.html">FriendshipOfferedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_FriendshipResponse.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.FriendshipResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L370">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_FriendsManager_FriendshipResponse" data-uid="OpenMetaverse.FriendsManager.FriendshipResponse">FriendshipResponse</h4>
+  <div class="markdown level1 summary"><p>Raised when a request we sent to friend another agent is accepted or declined</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;FriendshipResponseEventArgs&gt; FriendshipResponse</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.FriendshipResponseEventArgs.html">FriendshipResponseEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager_FriendshipTerminated.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager.FriendshipTerminated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L394">View Source</a>
+  </span>
+  <h4 id="OpenMetaverse_FriendsManager_FriendshipTerminated" data-uid="OpenMetaverse.FriendsManager.FriendshipTerminated">FriendshipTerminated</h4>
+  <div class="markdown level1 summary"><p>Raised when the simulator sends notification one of the members in our friends list has terminated
+our friendship</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;FriendshipTerminatedEventArgs&gt; FriendshipTerminated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="OpenMetaverse.FriendshipTerminatedEventArgs.html">FriendshipTerminatedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_FriendsManager.md&amp;value=---%0Auid%3A%20OpenMetaverse.FriendsManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/FriendsManager.cs/#L234" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

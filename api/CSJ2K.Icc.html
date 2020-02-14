@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CSJ2K.Icc
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CSJ2K.Icc
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CSJ2K.Icc">
+  
+  <h1 id="CSJ2K_Icc" data-uid="CSJ2K.Icc" class="text-break">Namespace CSJ2K.Icc
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="CSJ2K.Icc.ICCMatrixBasedInputProfile.html">ICCMatrixBasedInputProfile</a></h4>
+      <section><p>This class enables an application to construct an 3 component ICCProfile</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Icc.ICCMonochromeInputProfile.html">ICCMonochromeInputProfile</a></h4>
+      <section><p>The monochrome ICCProfile.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Icc.ICCProfile.html">ICCProfile</a></h4>
+      <section><p>This class models the ICCProfile file.  This file is a binary file which is divided
+into two parts, an ICCProfileHeader followed by an ICCTagTable. The header is a
+straightforward list of descriptive parameters such as profile size, version, date and various
+more esoteric parameters.  The tag table is a structured list of more complexly aggragated data
+describing things such as ICC curves, copyright information, descriptive text blocks, etc.</p>
+<p>Classes exist to model the header and tag table and their various constituent parts the developer
+is refered to these for further information on the structure and contents of the header and tag table.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Icc.ICCProfileException.html">ICCProfileException</a></h4>
+      <section><p>This exception is thrown when the content of a profile
+is incorrect.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Icc.ICCProfileInvalidException.html">ICCProfileInvalidException</a></h4>
+      <section><p>This exception is thrown when the content of an an icc profile
+is in someway incorrect.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Icc.ICCProfileNotFoundException.html">ICCProfileNotFoundException</a></h4>
+      <section><p>This exception is thrown when an image contains no icc profile.
+is incorrect.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Icc.ICCProfiler.html">ICCProfiler</a></h4>
+      <section><p>This class provides ICC Profiling API for the jj2000.j2k imaging chain
+by implementing the BlkImgDataSrc interface, in particular the getCompData
+and getInternCompData methods.</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Icc.MatrixBasedRestrictedProfile.html">MatrixBasedRestrictedProfile</a></h4>
+      <section><p>This class is a 3 component RestrictedICCProfile</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Icc.MonochromeInputRestrictedProfile.html">MonochromeInputRestrictedProfile</a></h4>
+      <section><p>This class is a 1 component RestrictedICCProfile</p>
+</section>
+      <h4><a class="xref" href="CSJ2K.Icc.RestrictedICCProfile.html">RestrictedICCProfile</a></h4>
+      <section><p>This profile is constructed by parsing an ICCProfile and
+is the profile actually applied to the image.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

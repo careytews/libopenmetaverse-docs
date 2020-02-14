@@ -1,0 +1,858 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class InternalDictionary&lt;TKey, TValue&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class InternalDictionary&lt;TKey, TValue&gt;
+   ">
+    <meta name="generator" content="docfx 2.48.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenMetaverse.InternalDictionary`2">
+  
+  
+  <h1 id="OpenMetaverse_InternalDictionary_2" data-uid="OpenMetaverse.InternalDictionary`2" class="text-break">Class InternalDictionary&lt;TKey, TValue&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>The InternalDictionary class is used through the library for storing key/value pairs.
+It is intended to be a replacement for the generic Dictionary class and should
+be used in its place. It contains several methods for allowing access to the data from
+outside the library that are read only and thread safe.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">InternalDictionary&lt;TKey, TValue&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenMetaverse.html">OpenMetaverse</a></h6>
+  <h6><strong>Assembly</strong>: OpenMetaverse.dll</h6>
+  <h5 id="OpenMetaverse_InternalDictionary_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InternalDictionary&lt;TKey, TValue&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td><p>Key <span class="xref">langword_csharp_Tkey</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td><p>Value <span class="xref">langword_csharp_TValue</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2__ctor.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L69">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2__ctor_" data-uid="OpenMetaverse.InternalDictionary`2.#ctor*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2__ctor" data-uid="OpenMetaverse.InternalDictionary`2.#ctor">InternalDictionary()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <span class="xref">InternalDictionary</span> Class
+with the specified key/value, has the default initial capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InternalDictionary()</code></pre>
+  </div>
+  <h5 id="OpenMetaverse_InternalDictionary_2__ctor_examples">Examples</h5>
+  <pre><code>// initialize a new InternalDictionary named testDict with a string as the key and an int as the value.
+public InternalDictionary&lt;string, int> testDict = new InternalDictionary&lt;string, int>();</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2__ctor_System_Collections_Generic_IDictionary__0__1__.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.%23ctor(System.Collections.Generic.IDictionary%7B%600%2C%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L95">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2__ctor_" data-uid="OpenMetaverse.InternalDictionary`2.#ctor*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2__ctor_System_Collections_Generic_IDictionary__0__1__" data-uid="OpenMetaverse.InternalDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})">InternalDictionary(IDictionary&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <span class="xref">InternalDictionary</span> Class
+with the specified key/value, has its initial valies copied from the specified
+<span class="xref">System.Collections.Generic.Dictionary</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InternalDictionary(IDictionary&lt;TKey, TValue&gt; dictionary)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dictionary</span></td>
+        <td><p><span class="xref">System.Collections.Generic.Dictionary</span>
+to copy initial values from</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_InternalDictionary_2__ctor_System_Collections_Generic_IDictionary__0__1___examples">Examples</h5>
+  <pre><code>// initialize a new InternalDictionary named testAvName with a UUID as the key and an string as the value.
+// populates with copied values from example KeyNameCache Dictionary.
+
+// create source dictionary
+Dictionary&lt;UUID, string> KeyNameCache = new Dictionary&lt;UUID, string>();
+KeyNameCache.Add(&quot;8300f94a-7970-7810-cf2c-fc9aa6cdda24&quot;, &quot;Jack Avatar&quot;);
+KeyNameCache.Add(&quot;27ba1e40-13f7-0708-3e98-5819d780bd62&quot;, &quot;Jill Avatar&quot;);
+
+// Initialize new dictionary.
+public InternalDictionary&lt;UUID, string> testAvName = new InternalDictionary&lt;UUID, string>(KeyNameCache);</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L112">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2__ctor_" data-uid="OpenMetaverse.InternalDictionary`2.#ctor*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2__ctor_System_Int32_" data-uid="OpenMetaverse.InternalDictionary`2.#ctor(System.Int32)">InternalDictionary(Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <span class="xref">OpenMetaverse.InternalDictionary</span> Class
+with the specified key/value, With its initial capacity specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InternalDictionary(int capacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">capacity</span></td>
+        <td><p>Initial size of dictionary</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_InternalDictionary_2__ctor_System_Int32__examples">Examples</h5>
+  <pre><code>// initialize a new InternalDictionary named testDict with a string as the key and an int as the value, 
+// initially allocated room for 10 entries.
+public InternalDictionary&lt;string, int> testDict = new InternalDictionary&lt;string, int>(10);</code></pre>
+
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_Count.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L57">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_Count_" data-uid="OpenMetaverse.InternalDictionary`2.Count*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_Count" data-uid="OpenMetaverse.InternalDictionary`2.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the number of Key/Value pairs contained in the <span class="xref">InternalDictionary</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_Item__0_.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.Item(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L322">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_Item_" data-uid="OpenMetaverse.InternalDictionary`2.Item*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_Item__0_" data-uid="OpenMetaverse.InternalDictionary`2.Item(`0)">Item[TKey]</h4>
+  <div class="markdown level1 summary"><p>Indexer for the dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TValue this[TKey key] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><p>The value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_ContainsKey__0_.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.ContainsKey(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L281">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_ContainsKey_" data-uid="OpenMetaverse.InternalDictionary`2.ContainsKey*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_ContainsKey__0_" data-uid="OpenMetaverse.InternalDictionary`2.ContainsKey(`0)">ContainsKey(TKey)</h4>
+  <div class="markdown level1 summary"><p>Check if Key exists in Dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsKey(TKey key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to check for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if found, <span class="xref">false</span> otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_ContainsValue__1_.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.ContainsValue(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L289">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_ContainsValue_" data-uid="OpenMetaverse.InternalDictionary`2.ContainsValue*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_ContainsValue__1_" data-uid="OpenMetaverse.InternalDictionary`2.ContainsValue(`1)">ContainsValue(TValue)</h4>
+  <div class="markdown level1 summary"><p>Check if Value exists in Dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsValue(TValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to check for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if found, <span class="xref">false</span> otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_Copy.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.Copy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L48">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_Copy_" data-uid="OpenMetaverse.InternalDictionary`2.Copy*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_Copy" data-uid="OpenMetaverse.InternalDictionary`2.Copy">Copy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;TKey, TValue&gt; Copy()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;TKey, TValue&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_Find_System_Predicate__1__.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.Find(System.Predicate%7B%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L154">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_Find_" data-uid="OpenMetaverse.InternalDictionary`2.Find*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_Find_System_Predicate__1__" data-uid="OpenMetaverse.InternalDictionary`2.Find(System.Predicate{`1})">Find(Predicate&lt;TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Finds the specified match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TValue Find(Predicate&lt;TValue&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;TValue&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>The match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><p>Matched value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_InternalDictionary_2_Find_System_Predicate__1___examples">Examples</h5>
+  <pre><code>// use a delegate to find a prim in the ObjectsPrimitives InternalDictionary
+// with the ID 95683496
+uint findID = 95683496;
+Primitive findPrim = sim.ObjectsPrimitives.Find(
+            delegate(Primitive prim) { return prim.ID == findID; });</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_FindAll_System_Predicate__0__.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.FindAll(System.Predicate%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L209">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_FindAll_" data-uid="OpenMetaverse.InternalDictionary`2.FindAll*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_FindAll_System_Predicate__0__" data-uid="OpenMetaverse.InternalDictionary`2.FindAll(System.Predicate{`0})">FindAll(Predicate&lt;TKey&gt;)</h4>
+  <div class="markdown level1 summary"><p>Find All items in an <span class="xref">InternalDictionary</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TKey&gt; FindAll(Predicate&lt;TKey&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;TKey&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>return matching keys.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;TKey&gt;</td>
+        <td><p>a <span class="xref">System.Collections.Generic.List</span> containing found keys.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_InternalDictionary_2_FindAll_System_Predicate__0___examples">Examples</h5>
+  <p>Find All keys which also exist in another dictionary</p>
+<pre><code>List&lt;UUID> matches = myDict.FindAll(
+        delegate(UUID id) {
+            return myOtherDict.ContainsKey(id);
+        }
+   ); </code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_FindAll_System_Predicate__1__.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.FindAll(System.Predicate%7B%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L182">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_FindAll_" data-uid="OpenMetaverse.InternalDictionary`2.FindAll*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_FindAll_System_Predicate__1__" data-uid="OpenMetaverse.InternalDictionary`2.FindAll(System.Predicate{`1})">FindAll(Predicate&lt;TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Find All items in an <span class="xref">InternalDictionary</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TValue&gt; FindAll(Predicate&lt;TValue&gt; match)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;TValue&gt;</td>
+        <td><span class="parametername">match</span></td>
+        <td><p>return matching items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;TValue&gt;</td>
+        <td><p>a <span class="xref">System.Collections.Generic.List</span> containing found items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_InternalDictionary_2_FindAll_System_Predicate__1___examples">Examples</h5>
+  <p>Find All prims within 20 meters and store them in a List</p>
+<pre><code>int radius = 20;
+List&lt;Primitive> prims = Client.Network.CurrentSim.ObjectsPrimitives.FindAll(
+        delegate(Primitive prim) {
+            Vector3 pos = prim.Position;
+            return ((prim.ParentID == 0) &amp;&amp; (pos != Vector3.Zero) &amp;&amp; (Vector3.Distance(pos, location) &lt; radius));
+        }
+   ); </code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_ForEach_System_Action__0__.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.ForEach(System.Action%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L252">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_ForEach_" data-uid="OpenMetaverse.InternalDictionary`2.ForEach*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_ForEach_System_Action__0__" data-uid="OpenMetaverse.InternalDictionary`2.ForEach(System.Action{`0})">ForEach(Action&lt;TKey&gt;)</h4>
+  <div class="markdown level1 summary"><p>Perform an <span class="xref">System.Action</span> on each key of an <span class="xref">OpenMetaverse.InternalDictionary</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEach(Action&lt;TKey&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TKey&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p><span class="xref">System.Action</span> to perform</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_ForEach_System_Action__1__.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.ForEach(System.Action%7B%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L239">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_ForEach_" data-uid="OpenMetaverse.InternalDictionary`2.ForEach*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_ForEach_System_Action__1__" data-uid="OpenMetaverse.InternalDictionary`2.ForEach(System.Action{`1})">ForEach(Action&lt;TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Perform an <span class="xref">System.Action</span> on each entry in an <span class="xref">OpenMetaverse.InternalDictionary</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEach(Action&lt;TValue&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TValue&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p><span class="xref">System.Action</span> to perform</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_InternalDictionary_2_ForEach_System_Action__1___examples">Examples</h5>
+  <pre><code>// Iterates over the ObjectsPrimitives InternalDictionary and prints out some information.
+Client.Network.CurrentSim.ObjectsPrimitives.ForEach(
+    delegate(Primitive prim)
+    {
+        if (prim.Text != null)
+        {
+            Console.WriteLine(&quot;NAME={0} ID = {1} TEXT = &apos;{2}&apos;&quot;, 
+                prim.PropertiesFamily.Name, prim.ID, prim.Text);
+        }
+    });</code></pre>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_ForEach_System_Action_System_Collections_Generic_KeyValuePair__0__1___.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.ForEach(System.Action%7BSystem.Collections.Generic.KeyValuePair%7B%600%2C%601%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L267">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_ForEach_" data-uid="OpenMetaverse.InternalDictionary`2.ForEach*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_ForEach_System_Action_System_Collections_Generic_KeyValuePair__0__1___" data-uid="OpenMetaverse.InternalDictionary`2.ForEach(System.Action{System.Collections.Generic.KeyValuePair{`0,`1}})">ForEach(Action&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Perform an <span class="xref">System.Action</span> on each KeyValuePair of an <span class="xref">OpenMetaverse.InternalDictionary</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEach(Action&lt;KeyValuePair&lt;TKey, TValue&gt;&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;TKey, TValue&gt;&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p><span class="xref">System.Action</span> to perform</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2_TryGetValue__0__1__.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602.TryGetValue(%600%2C%601%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L132">View Source</a>
+  </span>
+  <a id="OpenMetaverse_InternalDictionary_2_TryGetValue_" data-uid="OpenMetaverse.InternalDictionary`2.TryGetValue*"></a>
+  <h4 id="OpenMetaverse_InternalDictionary_2_TryGetValue__0__1__" data-uid="OpenMetaverse.InternalDictionary`2.TryGetValue(`0,`1@)">TryGetValue(TKey, out TValue)</h4>
+  <div class="markdown level1 summary"><p>Try to get entry from <span class="xref">OpenMetaverse.InternalDictionary</span> with specified key</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValue(TKey key, out TValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Key to use for lookup</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value returned</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if specified key exists,  <span class="xref">false</span> if not found</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenMetaverse_InternalDictionary_2_TryGetValue__0__1___examples">Examples</h5>
+  <pre><code>// find your avatar using the Simulator.ObjectsAvatars InternalDictionary:
+   Avatar av;
+   if (Client.Network.CurrentSim.ObjectsAvatars.TryGetValue(Client.Self.AgentID, out av))
+       Console.WriteLine(&quot;Found Avatar {0}&quot;, av.Name);</code></pre>
+<p><a class="xref" href="OpenMetaverse.Simulator.html#OpenMetaverse_Simulator_ObjectsAvatars">ObjectsAvatars</a></p>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/new/master/apiSpec/new?filename=OpenMetaverse_InternalDictionary_2.md&amp;value=---%0Auid%3A%20OpenMetaverse.InternalDictionary%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/careytews/libopenmetaverse/blob/master/OpenMetaverse/InternalDictionary.cs/#L41" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
